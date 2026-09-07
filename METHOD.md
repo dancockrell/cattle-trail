@@ -102,7 +102,7 @@ Commit small coherent stages: source recovery, extraction and metadata, scene in
 
 ## 8. Rich kits extend coverage while the room stays bounded
 
-The expanded art brief adds complete kits for the existing seven actor families and connected grass, tree, rock, scrub, fence, and camp families. The planning baseline is 24 extracted actor frames. The first actor target is 384 useful frames/states, sixteen times that aggregate baseline, plus at least 96 environment modules. These are planned targets, not achieved or accepted counts.
+The expanded art brief adds complete kits for the existing seven actor families and connected grass, tree, rock, scrub, fence, and camp families. The planning baseline is 24 extracted actor frames. The revised allocation is 400 actor/prop frames and states, approximately 16.7 times that aggregate baseline, plus 96 environment modules. The first pass extracted 496 unique candidate cells and rendered all 13 families in Godot. This is measured extraction and playback, not production acceptance or completed connected terrain. See kits/DELIVERY.md for the remaining coverage and integration gaps.
 
 Richness means useful directions, actions, and functional states. Duplicate cells, mirrors, repeated exports, and recolor padding do not count as new coverage. Each actor needs a coherent kit; unrelated props do not fill missing animation. Environment kits need matching edges, anchors, layers, and state pairs so they can compose into the same playable room.
 
