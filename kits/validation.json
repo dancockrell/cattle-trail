@@ -54,6 +54,83 @@
       "binary_alpha": true,
       "source_hashes_verified": true
     },
+    "rustler": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        64,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "eleanor": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        64,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "wagon": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        112,
+        96
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "rocks": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        80,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "scrub": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        80,
+        80
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "fence": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        96,
+        80
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "camp": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        80,
+        80
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
     "grass": {
       "extracted": 16,
       "unique_rgba_cells": 16,
@@ -74,9 +151,10 @@
         128
       ],
       "binary_alpha": true,
-      "source_hashes_verified": true
+      "source_hashes_verified": true,
+      "layer_reconstruction_exact": true
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 288
+  "total_extracted": 496
 }

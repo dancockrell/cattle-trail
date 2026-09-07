@@ -13,6 +13,8 @@ OUT=KIT/'atlases'; OUT.mkdir(exist_ok=True)
 REV=KIT/'reviews'; REV.mkdir(exist_ok=True)
 JOBS=json.loads((KIT/'generation-jobs.json').read_text())
 JOBS += [{'id':f,'family':f,'ref':2} for f in ['grass','trees']]
+replaced={j['replace_id'] for j in JOBS if j.get('replace_id') and (KIT/'source'/f"{j['id']}.png").exists()}
+JOBS=[j for j in JOBS if j['id'] not in replaced]
 COLORS=(112,119,62)
 CELL={'rider':(96,96),'longhorn':(72,64),'cream':(72,64),'spotted':(72,64),'eleanor':(64,64),'rustler':(64,64),'wagon':(112,96),'grass':(64,48),'trees':(128,128),'rocks':(80,64),'scrub':(80,80),'fence':(96,80),'camp':(80,80)}
 TARGET={'rider':62,'longhorn':38,'cream':38,'spotted':38,'eleanor':40,'rustler':40,'wagon':58,'grass':30,'trees':100,'rocks':42,'scrub':50,'fence':50,'camp':48}
@@ -33,6 +35,8 @@ def separators(projection):
         cuts.append(round(float(np.mean(run))))
     return cuts+[length]
 groups={}
+for rejected in sorted(replaced):
+    catalog['rejections'].append({'source':rejected+'.png','reason':'Wrong facing; replaced by v2. Preserved, excluded from count.'})
 for job in JOBS:
     source=KIT/'source'/f"{job['id']}.png"
     if not source.exists(): continue
@@ -40,6 +44,7 @@ for job in JOBS:
     a=np.array(im); rgb=a[:,:,:3].astype(np.int16)
     key=(rgb[:,:,0]-rgb[:,:,1]>25)&(rgb[:,:,2]-rgb[:,:,1]>25)
     a[:,:,3]=np.where(key,0,255)
+    a[key]=0
     clean=Image.fromarray(a)
     items=[]
     ycuts=separators((~key).sum(axis=1))
@@ -54,6 +59,7 @@ for job in JOBS:
             # Remove only tiny isolated chroma specks, preserving separated rope/shot/dust details.
             alpha=np.where(sizes[labels]>=5,255,0).astype(np.uint8)
             crop.putalpha(Image.fromarray(alpha))
+            rgba=np.array(crop); rgba[alpha==0]=0; crop=Image.fromarray(rgba)
             bounds=crop.getbbox()
             if not bounds: raise ValueError(f"Empty cell {job['id']} {row} {col}")
             trim=crop.crop(bounds)
@@ -94,6 +100,26 @@ for family,items in groups.items():
             walk=spec['clips'].get('walk_'+direction)
             if walk: spec['clips']['idle_'+direction]={'frames':[walk['frames'][0]],'fps':1,'loop':True}
     atlas.save(OUT/f'{family}.png')
+    spec['review_notes']=['Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.']
+    if family in ('longhorn','cream','spotted'):
+        spec['review_notes'].append('North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage.')
+    if family=='eleanor':
+        spec['review_notes'].append('Medical bag hand and attachment position vary; curate before production animation.')
+    if family in ('fence','grass'):
+        spec['review_notes'].append('Decorative variants; seamless connections/autotile rules have not been authored or verified.')
+    if family=='trees':
+        # Exact complementary image layers: their alpha union recreates the original tree.
+        # They enable foreground canopy sorting without inventing unseen trunk artwork.
+        canopy=Image.new('RGBA',atlas.size); trunk=Image.new('RGBA',atlas.size)
+        for frame in spec['frames']:
+            x,y,w,h=frame['atlas_rect']
+            tile=atlas.crop((x,y,x+w,y+h)); box=tile.getbbox()
+            split=box[1]+round((box[3]-box[1])*.65)
+            canopy.paste(tile.crop((0,0,w,split)),(x,y))
+            trunk.paste(tile.crop((0,split,w,h)),(x,y+split))
+            frame['canopy_split_y']=split
+        canopy.save(OUT/'trees-canopy.png'); trunk.save(OUT/'trees-trunk.png')
+        spec['layers']={'canopy':'res://kits/atlases/trees-canopy.png','trunk':'res://kits/atlases/trees-trunk.png','same_regions_and_anchors':True,'method':'complementary horizontal split at65% silhouette height; no hidden trunk pixels invented','counted_as_new_variants':False}
     # Keep atlas alpha proof on muted terrain at integer2x for close visual review.
     review=Image.new('RGB',(atlas.width,atlas.height),COLORS); review.paste(atlas,(0,0),atlas)
     review.resize((review.width*2,review.height*2),Image.Resampling.NEAREST).save(REV/f'{family}.png')

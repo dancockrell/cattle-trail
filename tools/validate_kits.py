@@ -35,6 +35,12 @@ for name,spec in manifest['families'].items():
     assert unique==len(hashes),f'{name}: exact duplicate cells cannot count toward richness'
     total+=len(hashes)
     report['families'][name]={'extracted':len(hashes),'unique_rgba_cells':unique,'clips':len(spec['clips']),'cell':spec['cell'],'binary_alpha':True,'source_hashes_verified':True}
+    if name=='trees':
+        canopy=Image.open(root/spec['layers']['canopy'].replace('res://',''))
+        trunk=Image.open(root/spec['layers']['trunk'].replace('res://',''))
+        combined=Image.alpha_composite(trunk,canopy)
+        assert np.array_equal(np.array(combined),pixels),'Tree layers must exactly reconstruct source atlas'
+        report['families'][name]['layer_reconstruction_exact']=True
 report['checks']=['RGBA alpha binary','every cell nonempty and within atlas','consistent dimensions and anchors','original file hashes match','source crop bounds valid','clips reference present frames at positive rates','no exact duplicate RGBA cells']
 report['total_extracted']=total
 assert total==manifest['total_extracted']
