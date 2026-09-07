@@ -13055,7 +13055,7 @@
       ],
       "position": [
         280,
-        79
+        108
       ],
       "collision_radius": 9,
       "source_frame_id": "trees_006"
@@ -13076,7 +13076,7 @@
       ],
       "position": [
         436,
-        70
+        100
       ],
       "collision_radius": 9,
       "source_frame_id": "trees_005"
@@ -13118,7 +13118,7 @@
       ],
       "position": [
         363,
-        62
+        80
       ],
       "collision_radius": 9,
       "source_frame_id": "trees_000"
@@ -13860,6 +13860,21 @@
     }
   ],
   "excluded": "Cattle graze/rest turns; Eleanor medical/camp bag changes; rustler reaction strips; unverified environment connections.",
+  "ground": {
+    "texture": "res://assets/ground-v2.png",
+    "source": "source/ground-v2.png",
+    "sha256": "5a2dcf6ad1f502f1b1ea44cf5e64d5a417aa4bb043e7b37a84a279ceed197531",
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "output_dimensions": [
+      640,
+      360
+    ],
+    "sampling": "nearest",
+    "provenance": "New empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v2-prompt.txt"
+  },
   "integrated_unique_actor_frames": 131,
   "integrated_unique_scenery_frames": 30
 }

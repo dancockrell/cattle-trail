@@ -57,7 +57,7 @@ func _ready() -> void:
 	world = Node2D.new()
 	viewport.add_child(world)
 	var background := Sprite2D.new()
-	background.texture = load("res://assets/room.png")
+	background.texture = load(manifest.get("ground", {}).get("texture", "res://assets/room.png"))
 	background.centered = false
 	world.add_child(background)
 	actors = Node2D.new()
@@ -69,7 +69,8 @@ func _ready() -> void:
 	player = spawn("rider", Vector2(199, 231))
 	rustler = spawn("rustler", Vector2(550, 164))
 	for i in range(6):
-		var cow := spawn(["longhorn", "cream", "spotted"][i % 3], Vector2(284 + (i % 3) * 44, 168 + (i / 3) * 63))
+		var positions := [Vector2(294,158),Vector2(350,183),Vector2(408,155),Vector2(278,240),Vector2(360,253),Vector2(421,223)]
+		var cow := spawn(["longhorn", "cream", "spotted"][i % 3], positions[i])
 		cows.append(cow)
 	var gathering := Label.new()
 	gathering.text = "EAST GATHERING\nBring all six here"
@@ -301,7 +302,11 @@ func limit_position(at: Vector2) -> Vector2:
 		var delta := result - center
 		var radius := float(entry.collision_radius) + 7.0
 		if delta.length() < radius:
-			result = center + (delta.normalized() if delta.length() > 0 else Vector2.DOWN) * radius
+			var push := delta.normalized() if delta.length() > 0 else center.direction_to(WORLD / 2)
+			var candidate := center + push * radius
+			if candidate.x < 24 or candidate.x > 616 or candidate.y < 71 or candidate.y > 303:
+				candidate = center + center.direction_to(Vector2(320,187)) * radius
+			result = candidate
 	return result.clamp(Vector2(24, 71), Vector2(616, 303))
 
 func secured_count() -> int:
@@ -388,6 +393,19 @@ func run_qa() -> void:
 	target = initial + Vector2(30, 0)
 	await get_tree().create_timer(0.4).timeout
 	assert(player.position.x > initial.x + 20, "Tap movement must move the rider")
+	if player.directional:
+		for direction in [Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2.RIGHT]:
+			player.pose(true, direction)
+			assert(str(player.art.animation) == "walk_" + player.direction_name(direction))
+		player.action("lasso", Vector2.LEFT)
+		assert(player.art.animation == "lasso_west")
+		player.pose(true, Vector2.RIGHT)
+		assert(player.art.animation == "lasso_west", "Movement must not erase the lasso action")
+		await get_tree().create_timer(0.6).timeout
+		assert(player.action_time == 0)
+		for entry in solid_scenery:
+			var center := Vector2(entry.position[0],entry.position[1])
+			assert(limit_position(center).distance_to(center) >= float(entry.collision_radius))
 	target = Vector2.INF
 	player.position = eleanor.position + Vector2(35, 0)
 	interact()
@@ -395,6 +413,7 @@ func run_qa() -> void:
 	player.position = Vector2(430, 175)
 	shoot()
 	assert(hits == 1 and ammo == 5)
+	if player.directional: assert(str(player.art.animation).begins_with("shoot_"))
 	await get_tree().create_timer(0.4).timeout
 	shoot()
 	assert(not rustler_active and ammo == 4)

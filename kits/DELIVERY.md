@@ -1,6 +1,6 @@
 # Rich sprite library — measured delivery
 
-2026-09-07. First extraction and engine-preview pass complete. Production visual admission and integration of the expanded kits into the gameplay room remain incomplete.
+2026-09-07. First extraction and engine-preview pass complete; a selected subset is now integrated into the gameplay room. Final production visual admission remains incomplete. See ../ROOM-INTEGRATION.md.
 
 | Family | Unique extracted cells | Candidate coverage |
 |---|---:|---|
@@ -35,4 +35,4 @@ Some north-requested cattle graze/rest poses turn toward the camera. Eleanor's b
 
 Grass/fence variants are decorative assets; seamless tiling, measured connectors, collision footprints and gate passability have not been authored. Tree layers use an exact horizontal split of existing pixels; unseen trunk art is absent. Camp variants provide useful props, but do not fulfill every originally planned matched state pair.
 
-No expanded kit family is recorded as production-admitted. The 496 cells are available in the kit viewer; the gameplay room still uses the 24 original extracted frames. Its narrow original facing coverage remains visible. The requested final visual bar and full conversion of the room to curated rich kits are therefore still open. Keep the room/feature scope fixed while addressing those gaps.
+No full expanded family is recorded as production-admitted. All 496 cells remain available in the kit viewer. The default gameplay room now selects 130 expanded actor frames, one original wagon frame, and 30 scenery variants in 40 placements through assets/room-art.json. Known cattle graze/rest turns and Eleanor medical/camp attachment changes are excluded from gameplay. This selected integration passed engine checks; final visual acceptance remains open. Keep the room/feature scope fixed while addressing those gaps.

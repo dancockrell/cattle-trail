@@ -1,6 +1,6 @@
 # Cattle Trail — Clear Fork
 
-A real Godot 4.3 playable room using the original Cattle Trail sprite sheets and the approved concept video's scenery pixels. This is the one-room visual and interaction proof, not the full cattle-drive simulation.
+A real Godot 4.3 playable room using recovered Cattle Trail art plus rich sprite and terrain derivatives generated from those approved references. This is the one-room visual and interaction proof, not the full cattle-drive simulation.
 
 ## Play
 
@@ -24,7 +24,7 @@ No replacement character drawings are used. Actor sprites, scenery, and the wood
 
 ## Reusable method
 
-The expanded library contains 496 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. See `kits/DELIVERY.md` for measured coverage, `kits/manifest.json` for exact metadata, and `kits/overview.png` for the visual inventory. The gameplay room continues to use the original 24-frame baseline while the new kits undergo visual curation.
+The expanded library contains 496 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 131 selected actor frames and 30 scenery variants in 40 placements. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
 
 See `METHOD.md` for the agent-authored conversion method for other games: approved visual reference → preserved sources → reproducible sprite extraction → exact metadata → one playable Godot room → actual visual and interaction verification → acceptance before expansion.
 
@@ -32,7 +32,7 @@ See `METHOD.md` for the agent-authored conversion method for other games: approv
 
 `VALIDATION.md` separates tested behavior, inspected renders, and remaining art limitations. The room has fixed high three-quarter 2D presentation, nearest filtering, binary alpha, pixel snapping, integer world enlargement, and responsive interface placement. Narrow phone windows reduce the complete world with nearest filtering; that preserves hard edges but cannot preserve equal integer pixel sizes.
 
-Only the original northeast mounted direction exists. West is mirrored, and north/south movement retains that pose. All cattle appearances use four extracted poses during movement, but true four-direction coverage is absent. These limitations are intentionally exposed, not filled with invented art. The broad source style is present, but complete directional animation and final scene-art acceptance remain outstanding. Do not expand into the larger journey, economy, towns, or relationship simulation before the room meets the visual bar.
+The default room now has four-way selected movement and rider action clips from the expanded kit. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. Animation cadence and cross-facing proportions still need polish. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding; do not expand into the larger journey, economy, towns or relationship simulation before the room meets the visual bar.
 
 ## Reproduce checks
 
