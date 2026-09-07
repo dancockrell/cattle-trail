@@ -16,11 +16,11 @@ Speak with Eleanor, clear the rustler, and gather all six cattle in the east cle
 
 ## Art authority
 
-`source/PROVENANCE.md` records recovered sources. `assets/sprites.json` is the runtime source of truth for every atlas, original crop, mask polygon, frame rectangle, foot anchor, frame sequence, playback speed, and looping rule. `tools/extract_assets.py` rebuilds all atlases and room textures from the immutable source images. It needs Python, Pillow, and NumPy.
+`source/PROVENANCE.md` records recovered sources. `assets/sprites.json` defines the original comparison art; `kits/manifest.json` defines expanded extraction; `assets/room-art.json` defines the selected default room. These record original crops, frame rectangles, ground anchors, sequences, speeds and looping. Rebuild the original assets with `tools/extract_assets.py`, expanded atlases with `tools/extract_kits.py`, then the default room selection with `tools/curate_room.py`. Requirements are Python, Pillow, NumPy and SciPy.
 
 The seven atlases contain 24 extracted frames. The rider and each of three cattle appearances have four source poses; Eleanor has three; the rustler has four; the wagon has one. The human sheet's printed frame counts are not treated as evidence that those frames exist.
 
-No replacement character drawings are used. Actor sprites, scenery, and the wood/paper interface come from the original assets. The rope and brief shot trace are simple runtime line effects, not replacements for actor art or claims of a finished lasso/shoot animation set.
+No geometric actor stand-ins are used. The original wagon and wood/paper interface are recovered art; selected actor and scenery sprites are reference-derived expansions. The ground derivative has preserved source and prompt metadata. Rope and shot traces remain runtime line effects alongside the selected rider action poses.
 
 ## Reusable method
 
