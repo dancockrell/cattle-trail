@@ -262,8 +262,10 @@ func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
 	if "--sequence-review" in OS.get_cmdline_user_args():
 		if sequence_walking:
-			var travel := Vector2(1,-1).normalized()*72*delta
+			var review_speed := 18.75 if "--stride-trial" in OS.get_cmdline_user_args() else 72.0
+			var travel := Vector2(1,-1).normalized()*review_speed*delta
 			player.position += travel
+			# Hold the same .96-second cycle to expose travel/stride mismatch.
 			player.pose(true,travel,72)
 		update_rope(delta)
 		return
@@ -280,6 +282,8 @@ func _physics_process(delta: float) -> void:
 			target = Vector2.INF
 	direction = direction.normalized()
 	if won: direction = Vector2.ZERO
+	# These casts/shots use a planted mount. Resume the queued ride after recovery.
+	if player.action_time > 0: direction = Vector2.ZERO
 	if direction != Vector2.ZERO: facing = direction
 	var previous_position: Vector2 = player.position
 	player.position = limit_position(player.position + direction * 96 * delta)
@@ -521,6 +525,8 @@ func run_sequence_review() -> void:
 	rustler_active = false
 	objective.text = "SEQUENCE REVIEW / northeast walk / travel over fixed ground"
 	journal.text = "Three moving cycles expose foot sliding; then two stationary cycles and timed lasso casts."
+	if "--stride-trial" in OS.get_cmdline_user_args():
+		objective.text = "STRIDE TRIAL / 18 px per cycle / diagnostic, not accepted"
 	player.art.play("walk_northeast")
 	sequence_walking = true
 	await get_tree().create_timer(2.88).timeout
@@ -641,8 +647,13 @@ func run_qa() -> void:
 		assert(player.art.animation == "lasso_west")
 		player.pose(true, Vector2.RIGHT)
 		assert(player.art.animation == "lasso_west", "Movement must not erase the lasso action")
-		await get_tree().create_timer(0.6).timeout
+		var planted_position: Vector2 = player.position
+		target = planted_position + Vector2(70,0)
+		await get_tree().create_timer(0.2).timeout
+		assert(player.position.distance_to(planted_position)<0.1, "Planted cast must stop actual travel, not just hold its frame")
+		await get_tree().create_timer(0.4).timeout
 		assert(player.action_time == 0)
+		assert(player.position.distance_to(planted_position)>1, "Queued ride must resume after cast recovery")
 		for entry in solid_scenery:
 			var center := Vector2(entry.position[0],entry.position[1])
 			assert(limit_position(center).distance_to(center) >= float(entry.collision_radius))
