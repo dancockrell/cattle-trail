@@ -86,8 +86,8 @@ out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])
 def add(family,index,x,y,solid=0):
     spec=kit['families'][family]
     out['scenery'].append({'family':family,'frame':index,'texture':spec['texture'],'region':spec['frames'][index]['atlas_rect'],'anchor':spec['anchor'],'position':[x,y],'collision_radius':solid,'source_frame_id':spec['frames'][index]['id']})
-for item in [(1,55,103),(6,280,108),(5,436,100),(2,586,104),(14,363,94)]:add('trees',*item,solid=9)
-for item in [(0,32,276),(3,603,288),(9,437,302),(14,163,303),(1,360,103)]:add('rocks',*item,solid=6)
+for item in [(1,55,103),(20,280,108),(22,436,100),(2,586,104),(14,363,94)]:add('trees',*item,solid=9)
+for item in [(16,32,276),(3,603,288),(9,437,302),(25,163,303),(1,360,103)]:add('rocks',*item,solid=6)
 for item in [(0,50,323),(2,205,93),(4,464,303),(8,578,317),(12,322,315)]:add('scrub',*item)
 for item in [(0,64,139),(4,51,119),(9,108,148),(7,125,139),(12,49,163)]:add('camp',*item)
 for i,(x,y) in enumerate([(76,285),(123,304),(216,305),(255,318),(346,292),(398,313),(522,297),(565,277),(598,121),(410,96),(315,109),(169,97),(234,72),(462,91),(542,95),(37,205),(611,223),(90,185),(446,267),(194,278)]):

@@ -855,5 +855,136 @@
     "clip_prefix": "v8_",
     "prompt_file": "kits/source/rider-ne-walk-sequence-v8-prompt.txt",
     "ref": 0
+  },
+  {
+    "id": "trees-rich-v3",
+    "family": "trees",
+    "rows": 4,
+    "columns": 4,
+    "prompt_file": "kits/source/trees-rich-v3-prompt.txt",
+    "ref": 2
+  },
+  {
+    "id": "rocks-rich-v2",
+    "family": "rocks",
+    "rows": 4,
+    "columns": 4,
+    "prompt_file": "kits/source/rocks-rich-v2-prompt.txt",
+    "ref": 2
+  },
+  {
+    "id": "eleanor-gesture-v2",
+    "family": "eleanor",
+    "rows": 4,
+    "columns": 4,
+    "column_directions": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ],
+    "actions": [
+      "relaxed",
+      "wave",
+      "amused",
+      "point"
+    ],
+    "clip_prefix": "gesture_v2_",
+    "prompt_file": "kits/source/eleanor-gesture-v2-prompt.txt",
+    "ref": 1
+  },
+  {
+    "id": "eleanor-social-v3",
+    "family": "eleanor",
+    "actions": [
+      "encourage",
+      "laugh",
+      "listen",
+      "welcome"
+    ],
+    "clip_prefix": "social_v3_",
+    "ref": 1,
+    "rows": 4,
+    "columns": 4,
+    "column_directions": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ],
+    "prompt_file": "kits/source/eleanor-social-v3-prompt.txt"
+  },
+  {
+    "id": "rider-social-v1",
+    "family": "rider",
+    "actions": [
+      "relaxed",
+      "lookout",
+      "hat_tip",
+      "braced"
+    ],
+    "clip_prefix": "social_v1_",
+    "ref": 0,
+    "rows": 4,
+    "columns": 4,
+    "column_directions": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ],
+    "prompt_file": "kits/source/rider-social-v1-prompt.txt"
+  },
+  {
+    "id": "rustler-state-upper-v2",
+    "source_file": "rustler-state-v2.png",
+    "family": "rustler",
+    "selected_rows": [
+      0,
+      1,
+      2
+    ],
+    "column_directions": [
+      "north",
+      "northeast",
+      "southeast",
+      "southwest"
+    ],
+    "actions": [
+      "relaxed",
+      "wary",
+      "surrender",
+      "recoil"
+    ],
+    "clip_prefix": "state_v2_",
+    "ref": 1,
+    "rows": 4,
+    "columns": 4,
+    "prompt_file": "kits/source/rustler-state-v2-prompt.txt"
+  },
+  {
+    "id": "rustler-state-lower-v2",
+    "source_file": "rustler-state-v2.png",
+    "family": "rustler",
+    "selected_rows": [
+      3
+    ],
+    "column_directions": [
+      "east",
+      "east",
+      "southeast",
+      "southwest"
+    ],
+    "actions": [
+      "relaxed",
+      "wary",
+      "surrender",
+      "recoil"
+    ],
+    "clip_prefix": "state_v2_",
+    "ref": 1,
+    "rows": 4,
+    "columns": 4,
+    "prompt_file": "kits/source/rustler-state-v2-prompt.txt"
   }
 ]

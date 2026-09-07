@@ -1,0 +1,14 @@
+Cattle Trail mounted rider production SOCIAL/ALERT STATIC STATES, exactly 16 whole rider-and-horse sprites on a 4 COLUMN by 4 ROW sheet. Solid flat #FF00FF magenta background, broad empty gutters, equal cells and ample outer margin, no text.
+Use reference1 for original cowboy and horse identity and northeast rear-oblique camera, reference2 for northwest rear-oblique camera, reference3 for southeast front-oblique camera. Southwest is the corresponding front-oblique view pointing lower left. Ignore ropes, weapons, dust and moving legs in references.
+COLUMN DIRECTIONS ARE FIXED FOR EVERY ROW:
+column1 NORTHEAST horse head UPPER RIGHT, cowboy back visible.
+column2 NORTHWEST horse head UPPER LEFT, cowboy back visible.
+column3 SOUTHEAST horse head LOWER RIGHT, cowboy front/face visible.
+column4 SOUTHWEST horse head LOWER LEFT, cowboy front/face visible.
+Four rows of distinct STATIC STATES, not a walk cycle:
+ROW1 relaxed, shoulders easy, reins held quietly low at saddle.
+ROW2 looking over the trail, rider turns head slightly to scan outward and sits more upright, hands still holding reins, horse retains column direction.
+ROW3 small friendly hat-tip, cowboy raises RIGHT hand to brown hat brim and tips brim slightly, LEFT hand holds reins.
+ROW4 braced alert, rider slightly leans forward, both hands gather reins near saddle, elbows firmly bent, attentive posture.
+Same exact cowboy: brown brimmed hat, blue shirt, red neck scarf, tan trousers, brown boots. Same chestnut horse, black mane and tail, brown western saddle and bridle. Horse is stationary with all FOUR HOOVES PLANTED in every cell. Same horse body and leg pose within each direction column across four rows; no stepping, galloping, jumping or body rotation. Full rider and full horse in each cell, no cropped parts. No new props, ropes/lassos, guns, dust, effects, ground tiles or shadows.
+Fixed high three-quarter top-down game camera, coherent native pixel density and proportions as references. Crisp hard pixel clusters, stepped shading, warm limited palette, no smoothing/antialiasing or painted gradients. All16 sprites fully separated by generous magenta.

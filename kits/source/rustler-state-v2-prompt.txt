@@ -1,0 +1,16 @@
+Create one Cattle Trail RUSTLER character state sprite kit, exactly4columns×4rows, sixteen isolated WHOLE human sprites. Pure flat #FF00FF magenta background, generous clean gutters and outer margins, no text/grid/effects/shadows/scenery. Show complete hat, hands, coat tails and boots inside everycell.
+
+Identity references: rustler-east.png, rustler-north-v2.png and rustler-south.png. Preserve this SAME adult male rustler: dark charcoal broad-brim hat with brown band, long black hair, dark brown worn long coat, cream shirt, brown trousers, dark boots, leather belt and holstered revolver. No new costume, bags, props or drawn weapon. Warm restrained pixel clusters and dark contours match these actual game sprites. Fixed highthree-quarter top-down game camera, crisp hard square pixels, no smoothing/painterly texture. Constant character size and proportions.
+
+Columns EXACT and constant:
+1 NE facing screenUPRIGHT, rear three-quarter view showing back of coat.
+2 NW facing screenUPLEFT, rear three-quarter view showing back of coat.
+3 SE facing screenDOWNRIGHT, front three-quarter view showing cream shirt.
+4 SW facing screenDOWNLEFT, front three-quarter view showing cream shirt.
+Rows EXACT:
+1 Relaxed threatening stance: boots planted shoulderwidth, hands low near belt, slight forward intent.
+2 Wary looking over shoulder: torso and feet KEEP column heading, head looks back over shoulder, guarded stance, one hand near belt. Do not rotate whole body tofront.
+3 Surrender: both EMPTY hands raised visibly beside/above hat, open palms; body andfeet keep columnheading. Revolver stays holstered.
+4 Recoiling backward WITHOUT injury: lean torso back away from heading, elbows bend protectively, one foot braced behind, face startled where visible. No gore, wounds, muzzleflash, smoke or falling body. Keepfullsprite.
+
+These are independent STATICSTATE variants, not a walk/animation cycle. Each state must read clearly, all16wholebodies anatomically consistent, exactly4directions repeated bycolumn. No guns inhands and no newitems.

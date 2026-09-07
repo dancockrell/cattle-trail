@@ -1804,6 +1804,262 @@
         }
       }
     },
+    "social_v1_relaxed_northeast": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        220
+      ],
+      "observed": {
+        "220": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 109
+        }
+      }
+    },
+    "social_v1_relaxed_northwest": {
+      "anchor": [
+        48,
+        93
+      ],
+      "frames": [
+        221
+      ],
+      "observed": {
+        "221": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 110
+        }
+      }
+    },
+    "social_v1_relaxed_southeast": {
+      "anchor": [
+        42,
+        93
+      ],
+      "frames": [
+        222
+      ],
+      "observed": {
+        "222": {
+          "shirt_x": 42.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        }
+      }
+    },
+    "social_v1_relaxed_southwest": {
+      "anchor": [
+        52,
+        93
+      ],
+      "frames": [
+        223
+      ],
+      "observed": {
+        "223": {
+          "shirt_x": 52.0,
+          "hoof_y": 93,
+          "blue_pixels": 86
+        }
+      }
+    },
+    "social_v1_lookout_northeast": {
+      "anchor": [
+        46,
+        93
+      ],
+      "frames": [
+        224
+      ],
+      "observed": {
+        "224": {
+          "shirt_x": 46.0,
+          "hoof_y": 93,
+          "blue_pixels": 102
+        }
+      }
+    },
+    "social_v1_lookout_northwest": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        225
+      ],
+      "observed": {
+        "225": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 101
+        }
+      }
+    },
+    "social_v1_lookout_southeast": {
+      "anchor": [
+        41,
+        93
+      ],
+      "frames": [
+        226
+      ],
+      "observed": {
+        "226": {
+          "shirt_x": 41.0,
+          "hoof_y": 93,
+          "blue_pixels": 92
+        }
+      }
+    },
+    "social_v1_lookout_southwest": {
+      "anchor": [
+        52,
+        93
+      ],
+      "frames": [
+        227
+      ],
+      "observed": {
+        "227": {
+          "shirt_x": 52.5,
+          "hoof_y": 93,
+          "blue_pixels": 92
+        }
+      }
+    },
+    "social_v1_hat_tip_northeast": {
+      "anchor": [
+        48,
+        93
+      ],
+      "frames": [
+        228
+      ],
+      "observed": {
+        "228": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 153
+        }
+      }
+    },
+    "social_v1_hat_tip_northwest": {
+      "anchor": [
+        46,
+        93
+      ],
+      "frames": [
+        229
+      ],
+      "observed": {
+        "229": {
+          "shirt_x": 46.0,
+          "hoof_y": 93,
+          "blue_pixels": 150
+        }
+      }
+    },
+    "social_v1_hat_tip_southeast": {
+      "anchor": [
+        45,
+        93
+      ],
+      "frames": [
+        230
+      ],
+      "observed": {
+        "230": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 138
+        }
+      }
+    },
+    "social_v1_hat_tip_southwest": {
+      "anchor": [
+        49,
+        93
+      ],
+      "frames": [
+        231
+      ],
+      "observed": {
+        "231": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 147
+        }
+      }
+    },
+    "social_v1_braced_northeast": {
+      "anchor": [
+        46,
+        93
+      ],
+      "frames": [
+        232
+      ],
+      "observed": {
+        "232": {
+          "shirt_x": 46.0,
+          "hoof_y": 93,
+          "blue_pixels": 113
+        }
+      }
+    },
+    "social_v1_braced_northwest": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        233
+      ],
+      "observed": {
+        "233": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 108
+        }
+      }
+    },
+    "social_v1_braced_southeast": {
+      "anchor": [
+        42,
+        93
+      ],
+      "frames": [
+        234
+      ],
+      "observed": {
+        "234": {
+          "shirt_x": 42.0,
+          "hoof_y": 93,
+          "blue_pixels": 101
+        }
+      }
+    },
+    "social_v1_braced_southwest": {
+      "anchor": [
+        52,
+        93
+      ],
+      "frames": [
+        235
+      ],
+      "observed": {
+        "235": {
+          "shirt_x": 52.0,
+          "hoof_y": 93,
+          "blue_pixels": 89
+        }
+      }
+    },
     "idle": {
       "anchor": [
         47,

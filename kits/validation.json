@@ -11,9 +11,9 @@
   ],
   "families": {
     "rider": {
-      "extracted": 220,
-      "unique_rgba_cells": 220,
-      "clips": 48,
+      "extracted": 236,
+      "unique_rgba_cells": 236,
+      "clips": 64,
       "cell": [
         96,
         96
@@ -55,9 +55,9 @@
       "source_hashes_verified": true
     },
     "rustler": {
-      "extracted": 64,
-      "unique_rgba_cells": 64,
-      "clips": 20,
+      "extracted": 80,
+      "unique_rgba_cells": 80,
+      "clips": 35,
       "cell": [
         64,
         64
@@ -66,9 +66,9 @@
       "source_hashes_verified": true
     },
     "eleanor": {
-      "extracted": 64,
-      "unique_rgba_cells": 64,
-      "clips": 20,
+      "extracted": 96,
+      "unique_rgba_cells": 96,
+      "clips": 52,
       "cell": [
         64,
         64
@@ -88,9 +88,9 @@
       "source_hashes_verified": true
     },
     "rocks": {
-      "extracted": 16,
-      "unique_rgba_cells": 16,
-      "clips": 16,
+      "extracted": 32,
+      "unique_rgba_cells": 32,
+      "clips": 32,
       "cell": [
         80,
         64
@@ -132,9 +132,9 @@
       "source_hashes_verified": true
     },
     "trees": {
-      "extracted": 16,
-      "unique_rgba_cells": 16,
-      "clips": 16,
+      "extracted": 32,
+      "unique_rgba_cells": 32,
+      "clips": 32,
       "cell": [
         128,
         128
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 816
+  "total_extracted": 912
 }

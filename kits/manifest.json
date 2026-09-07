@@ -7362,6 +7362,550 @@
             93
           ],
           "id": "rider_219"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            324,
+            318
+          ],
+          "trim": [
+            79,
+            69,
+            245,
+            289
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            384,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_220"
+        },
+        {
+          "source_rect": [
+            324,
+            0,
+            634,
+            318
+          ],
+          "trim": [
+            79,
+            69,
+            243,
+            289
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            480,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_221"
+        },
+        {
+          "source_rect": [
+            634,
+            0,
+            922,
+            318
+          ],
+          "trim": [
+            68,
+            70,
+            217,
+            280
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            576,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_222"
+        },
+        {
+          "source_rect": [
+            922,
+            0,
+            1254,
+            318
+          ],
+          "trim": [
+            72,
+            69,
+            221,
+            280
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            672,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_223"
+        },
+        {
+          "source_rect": [
+            0,
+            318,
+            323,
+            604
+          ],
+          "trim": [
+            79,
+            29,
+            243,
+            251
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            0,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_224"
+        },
+        {
+          "source_rect": [
+            323,
+            318,
+            634,
+            604
+          ],
+          "trim": [
+            81,
+            29,
+            243,
+            251
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            96,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_225"
+        },
+        {
+          "source_rect": [
+            634,
+            318,
+            921,
+            604
+          ],
+          "trim": [
+            69,
+            30,
+            219,
+            243
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            192,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_226"
+        },
+        {
+          "source_rect": [
+            921,
+            318,
+            1254,
+            604
+          ],
+          "trim": [
+            69,
+            29,
+            219,
+            243
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            288,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_227"
+        },
+        {
+          "source_rect": [
+            0,
+            604,
+            323,
+            895
+          ],
+          "trim": [
+            78,
+            35,
+            245,
+            259
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            384,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_228"
+        },
+        {
+          "source_rect": [
+            323,
+            604,
+            634,
+            895
+          ],
+          "trim": [
+            79,
+            35,
+            244,
+            260
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            480,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_229"
+        },
+        {
+          "source_rect": [
+            634,
+            604,
+            922,
+            895
+          ],
+          "trim": [
+            67,
+            36,
+            216,
+            251
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            576,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_230"
+        },
+        {
+          "source_rect": [
+            922,
+            604,
+            1254,
+            895
+          ],
+          "trim": [
+            72,
+            36,
+            220,
+            251
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            672,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_231"
+        },
+        {
+          "source_rect": [
+            0,
+            895,
+            324,
+            1254
+          ],
+          "trim": [
+            74,
+            33,
+            243,
+            257
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            0,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_232"
+        },
+        {
+          "source_rect": [
+            324,
+            895,
+            634,
+            1254
+          ],
+          "trim": [
+            81,
+            36,
+            246,
+            256
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            96,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_233"
+        },
+        {
+          "source_rect": [
+            634,
+            895,
+            922,
+            1254
+          ],
+          "trim": [
+            67,
+            36,
+            216,
+            247
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            192,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_234"
+        },
+        {
+          "source_rect": [
+            922,
+            895,
+            1254,
+            1254
+          ],
+          "trim": [
+            72,
+            36,
+            221,
+            247
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            288,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_235"
         }
       ],
       "clips": {
@@ -7872,10 +8416,122 @@
           ],
           "fps": 7,
           "loop": true
+        },
+        "social_v1_relaxed_northeast": {
+          "frames": [
+            220
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_relaxed_northwest": {
+          "frames": [
+            221
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_relaxed_southeast": {
+          "frames": [
+            222
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_relaxed_southwest": {
+          "frames": [
+            223
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_lookout_northeast": {
+          "frames": [
+            224
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_lookout_northwest": {
+          "frames": [
+            225
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_lookout_southeast": {
+          "frames": [
+            226
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_lookout_southwest": {
+          "frames": [
+            227
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_hat_tip_northeast": {
+          "frames": [
+            228
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_hat_tip_northwest": {
+          "frames": [
+            229
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_hat_tip_southeast": {
+          "frames": [
+            230
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_hat_tip_southwest": {
+          "frames": [
+            231
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_braced_northeast": {
+          "frames": [
+            232
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_braced_northwest": {
+          "frames": [
+            233
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_braced_southeast": {
+          "frames": [
+            234
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v1_braced_southwest": {
+          "frames": [
+            235
+          ],
+          "fps": 5,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 220,
+      "count": 236,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -22281,6 +22937,550 @@
             61
           ],
           "id": "rustler_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            353,
+            329
+          ],
+          "trim": [
+            148,
+            66,
+            271,
+            295
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            0,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_064"
+        },
+        {
+          "source_rect": [
+            353,
+            0,
+            628,
+            329
+          ],
+          "trim": [
+            83,
+            66,
+            199,
+            294
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            64,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_065"
+        },
+        {
+          "source_rect": [
+            628,
+            0,
+            914,
+            329
+          ],
+          "trim": [
+            76,
+            60,
+            199,
+            298
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            128,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_066"
+        },
+        {
+          "source_rect": [
+            914,
+            0,
+            1254,
+            329
+          ],
+          "trim": [
+            87,
+            60,
+            210,
+            297
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            192,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_067"
+        },
+        {
+          "source_rect": [
+            0,
+            329,
+            346,
+            634
+          ],
+          "trim": [
+            147,
+            32,
+            268,
+            271
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            256,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_068"
+        },
+        {
+          "source_rect": [
+            346,
+            329,
+            623,
+            634
+          ],
+          "trim": [
+            80,
+            35,
+            201,
+            271
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            320,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_069"
+        },
+        {
+          "source_rect": [
+            623,
+            329,
+            910,
+            634
+          ],
+          "trim": [
+            77,
+            34,
+            204,
+            273
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            384,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_070"
+        },
+        {
+          "source_rect": [
+            910,
+            329,
+            1254,
+            634
+          ],
+          "trim": [
+            84,
+            34,
+            208,
+            273
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            448,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_071"
+        },
+        {
+          "source_rect": [
+            0,
+            634,
+            348,
+            924
+          ],
+          "trim": [
+            123,
+            41,
+            281,
+            263
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            0,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_072"
+        },
+        {
+          "source_rect": [
+            348,
+            634,
+            622,
+            924
+          ],
+          "trim": [
+            68,
+            38,
+            211,
+            263
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            64,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_073"
+        },
+        {
+          "source_rect": [
+            622,
+            634,
+            908,
+            924
+          ],
+          "trim": [
+            64,
+            34,
+            215,
+            267
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            128,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_074"
+        },
+        {
+          "source_rect": [
+            908,
+            634,
+            1254,
+            924
+          ],
+          "trim": [
+            72,
+            36,
+            226,
+            266
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            192,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_075"
+        },
+        {
+          "source_rect": [
+            0,
+            924,
+            340,
+            1254
+          ],
+          "trim": [
+            120,
+            26,
+            275,
+            241
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "east",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            256,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_076"
+        },
+        {
+          "source_rect": [
+            340,
+            924,
+            628,
+            1254
+          ],
+          "trim": [
+            65,
+            28,
+            223,
+            241
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "east",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            320,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_077"
+        },
+        {
+          "source_rect": [
+            628,
+            924,
+            906,
+            1254
+          ],
+          "trim": [
+            66,
+            28,
+            219,
+            248
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            384,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_078"
+        },
+        {
+          "source_rect": [
+            906,
+            924,
+            1254,
+            1254
+          ],
+          "trim": [
+            61,
+            25,
+            216,
+            248
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            448,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_079"
         }
       ],
       "clips": {
@@ -22444,6 +23644,112 @@
           "fps": 5,
           "loop": false
         },
+        "state_v2_relaxed_north": {
+          "frames": [
+            64
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_relaxed_northeast": {
+          "frames": [
+            65
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_relaxed_southeast": {
+          "frames": [
+            66
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_relaxed_southwest": {
+          "frames": [
+            67
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_wary_north": {
+          "frames": [
+            68
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_wary_northeast": {
+          "frames": [
+            69
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_wary_southeast": {
+          "frames": [
+            70
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_wary_southwest": {
+          "frames": [
+            71
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_surrender_north": {
+          "frames": [
+            72
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_surrender_northeast": {
+          "frames": [
+            73
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_surrender_southeast": {
+          "frames": [
+            74
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_surrender_southwest": {
+          "frames": [
+            75
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_recoil_east": {
+          "frames": [
+            76,
+            77
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_recoil_southeast": {
+          "frames": [
+            78
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v2_recoil_southwest": {
+          "frames": [
+            79
+          ],
+          "fps": 5,
+          "loop": true
+        },
         "idle_east": {
           "frames": [
             0
@@ -22474,7 +23780,7 @@
         }
       },
       "status": "extracted_candidate",
-      "count": 64,
+      "count": 80,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -24602,6 +25908,1094 @@
             61
           ],
           "id": "eleanor_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            330,
+            334
+          ],
+          "trim": [
+            128,
+            48,
+            238,
+            312
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            0,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_064"
+        },
+        {
+          "source_rect": [
+            330,
+            0,
+            627,
+            334
+          ],
+          "trim": [
+            93,
+            48,
+            202,
+            312
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            64,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_065"
+        },
+        {
+          "source_rect": [
+            627,
+            0,
+            923,
+            334
+          ],
+          "trim": [
+            96,
+            50,
+            201,
+            313
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            128,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_066"
+        },
+        {
+          "source_rect": [
+            923,
+            0,
+            1254,
+            334
+          ],
+          "trim": [
+            96,
+            50,
+            201,
+            313
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            192,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_067"
+        },
+        {
+          "source_rect": [
+            0,
+            334,
+            330,
+            634
+          ],
+          "trim": [
+            118,
+            23,
+            251,
+            283
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            256,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_068"
+        },
+        {
+          "source_rect": [
+            330,
+            334,
+            626,
+            634
+          ],
+          "trim": [
+            80,
+            23,
+            212,
+            283
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            320,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_069"
+        },
+        {
+          "source_rect": [
+            626,
+            334,
+            920,
+            634
+          ],
+          "trim": [
+            86,
+            23,
+            223,
+            284
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            384,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_070"
+        },
+        {
+          "source_rect": [
+            920,
+            334,
+            1254,
+            634
+          ],
+          "trim": [
+            73,
+            23,
+            211,
+            285
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            448,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_071"
+        },
+        {
+          "source_rect": [
+            0,
+            634,
+            328,
+            923
+          ],
+          "trim": [
+            112,
+            17,
+            229,
+            273
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            0,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_072"
+        },
+        {
+          "source_rect": [
+            328,
+            634,
+            626,
+            923
+          ],
+          "trim": [
+            100,
+            17,
+            219,
+            273
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            64,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_073"
+        },
+        {
+          "source_rect": [
+            626,
+            634,
+            922,
+            923
+          ],
+          "trim": [
+            81,
+            17,
+            197,
+            272
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            128,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_074"
+        },
+        {
+          "source_rect": [
+            922,
+            634,
+            1254,
+            923
+          ],
+          "trim": [
+            99,
+            17,
+            214,
+            273
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            192,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_075"
+        },
+        {
+          "source_rect": [
+            0,
+            923,
+            329,
+            1254
+          ],
+          "trim": [
+            118,
+            17,
+            276,
+            273
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            256,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_076"
+        },
+        {
+          "source_rect": [
+            329,
+            923,
+            627,
+            1254
+          ],
+          "trim": [
+            54,
+            18,
+            212,
+            273
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            320,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_077"
+        },
+        {
+          "source_rect": [
+            627,
+            923,
+            922,
+            1254
+          ],
+          "trim": [
+            87,
+            17,
+            246,
+            273
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            384,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_078"
+        },
+        {
+          "source_rect": [
+            922,
+            923,
+            1254,
+            1254
+          ],
+          "trim": [
+            49,
+            17,
+            207,
+            273
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            448,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            328,
+            326
+          ],
+          "trim": [
+            117,
+            45,
+            253,
+            303
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            0,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_080"
+        },
+        {
+          "source_rect": [
+            328,
+            0,
+            626,
+            326
+          ],
+          "trim": [
+            77,
+            46,
+            213,
+            303
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            64,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_081"
+        },
+        {
+          "source_rect": [
+            626,
+            0,
+            922,
+            326
+          ],
+          "trim": [
+            87,
+            46,
+            219,
+            303
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            128,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_082"
+        },
+        {
+          "source_rect": [
+            922,
+            0,
+            1254,
+            326
+          ],
+          "trim": [
+            77,
+            46,
+            210,
+            303
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            192,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_083"
+        },
+        {
+          "source_rect": [
+            0,
+            326,
+            326,
+            624
+          ],
+          "trim": [
+            110,
+            23,
+            228,
+            278
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            256,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_084"
+        },
+        {
+          "source_rect": [
+            326,
+            326,
+            626,
+            624
+          ],
+          "trim": [
+            100,
+            23,
+            217,
+            279
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            320,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_085"
+        },
+        {
+          "source_rect": [
+            626,
+            326,
+            922,
+            624
+          ],
+          "trim": [
+            83,
+            23,
+            207,
+            279
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            384,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_086"
+        },
+        {
+          "source_rect": [
+            922,
+            326,
+            1254,
+            624
+          ],
+          "trim": [
+            89,
+            23,
+            211,
+            278
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            448,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_087"
+        },
+        {
+          "source_rect": [
+            0,
+            624,
+            326,
+            915
+          ],
+          "trim": [
+            109,
+            19,
+            232,
+            274
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            0,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_088"
+        },
+        {
+          "source_rect": [
+            326,
+            624,
+            626,
+            915
+          ],
+          "trim": [
+            96,
+            19,
+            219,
+            274
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            64,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_089"
+        },
+        {
+          "source_rect": [
+            626,
+            624,
+            920,
+            915
+          ],
+          "trim": [
+            81,
+            21,
+            198,
+            274
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            128,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_090"
+        },
+        {
+          "source_rect": [
+            920,
+            624,
+            1254,
+            915
+          ],
+          "trim": [
+            98,
+            21,
+            216,
+            272
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            192,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_091"
+        },
+        {
+          "source_rect": [
+            0,
+            915,
+            325,
+            1254
+          ],
+          "trim": [
+            109,
+            19,
+            285,
+            277
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            256,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_092"
+        },
+        {
+          "source_rect": [
+            325,
+            915,
+            621,
+            1254
+          ],
+          "trim": [
+            41,
+            20,
+            216,
+            277
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            320,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_093"
+        },
+        {
+          "source_rect": [
+            621,
+            915,
+            919,
+            1254
+          ],
+          "trim": [
+            81,
+            18,
+            252,
+            273
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            384,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_094"
+        },
+        {
+          "source_rect": [
+            919,
+            915,
+            1254,
+            1254
+          ],
+          "trim": [
+            47,
+            20,
+            214,
+            273
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            448,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_095"
         }
       ],
       "clips": {
@@ -24765,6 +27159,230 @@
           "fps": 5,
           "loop": true
         },
+        "gesture_v2_relaxed_northeast": {
+          "frames": [
+            64
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_relaxed_northwest": {
+          "frames": [
+            65
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_relaxed_southeast": {
+          "frames": [
+            66
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_relaxed_southwest": {
+          "frames": [
+            67
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_wave_northeast": {
+          "frames": [
+            68
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_wave_northwest": {
+          "frames": [
+            69
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_wave_southeast": {
+          "frames": [
+            70
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_wave_southwest": {
+          "frames": [
+            71
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_amused_northeast": {
+          "frames": [
+            72
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_amused_northwest": {
+          "frames": [
+            73
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_amused_southeast": {
+          "frames": [
+            74
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_amused_southwest": {
+          "frames": [
+            75
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_point_northeast": {
+          "frames": [
+            76
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_point_northwest": {
+          "frames": [
+            77
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_point_southeast": {
+          "frames": [
+            78
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "gesture_v2_point_southwest": {
+          "frames": [
+            79
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_encourage_northeast": {
+          "frames": [
+            80
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_encourage_northwest": {
+          "frames": [
+            81
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_encourage_southeast": {
+          "frames": [
+            82
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_encourage_southwest": {
+          "frames": [
+            83
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_laugh_northeast": {
+          "frames": [
+            84
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_laugh_northwest": {
+          "frames": [
+            85
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_laugh_southeast": {
+          "frames": [
+            86
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_laugh_southwest": {
+          "frames": [
+            87
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_listen_northeast": {
+          "frames": [
+            88
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_listen_northwest": {
+          "frames": [
+            89
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_listen_southeast": {
+          "frames": [
+            90
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_listen_southwest": {
+          "frames": [
+            91
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_welcome_northeast": {
+          "frames": [
+            92
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_welcome_northwest": {
+          "frames": [
+            93
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_welcome_southeast": {
+          "frames": [
+            94
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "social_v3_welcome_southwest": {
+          "frames": [
+            95
+          ],
+          "fps": 5,
+          "loop": true
+        },
         "idle_east": {
           "frames": [
             0
@@ -24795,7 +27413,7 @@
         }
       },
       "status": "extracted_candidate",
-      "count": 64,
+      "count": 96,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -25607,8 +28225,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
+            320,
             0,
-            64,
             80,
             64
           ],
@@ -25639,8 +28257,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            80,
-            64,
+            400,
+            0,
             80,
             64
           ],
@@ -25671,8 +28289,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            160,
-            64,
+            480,
+            0,
             80,
             64
           ],
@@ -25703,8 +28321,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            240,
-            64,
+            560,
+            0,
             80,
             64
           ],
@@ -25736,7 +28354,7 @@
           "job": "rocks",
           "atlas_rect": [
             0,
-            128,
+            64,
             80,
             64
           ],
@@ -25768,7 +28386,7 @@
           "job": "rocks",
           "atlas_rect": [
             80,
-            128,
+            64,
             80,
             64
           ],
@@ -25800,7 +28418,7 @@
           "job": "rocks",
           "atlas_rect": [
             160,
-            128,
+            64,
             80,
             64
           ],
@@ -25832,7 +28450,7 @@
           "job": "rocks",
           "atlas_rect": [
             240,
-            128,
+            64,
             80,
             64
           ],
@@ -25863,8 +28481,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            0,
-            192,
+            320,
+            64,
             80,
             64
           ],
@@ -25895,8 +28513,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            80,
-            192,
+            400,
+            64,
             80,
             64
           ],
@@ -25927,8 +28545,8 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
-            160,
-            192,
+            480,
+            64,
             80,
             64
           ],
@@ -25959,6 +28577,390 @@
           "scale": 0.19004524886877827,
           "job": "rocks",
           "atlas_rect": [
+            560,
+            64,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_015"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            304,
+            322
+          ],
+          "trim": [
+            45,
+            110,
+            269,
+            246
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            0,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_016"
+        },
+        {
+          "source_rect": [
+            304,
+            0,
+            614,
+            322
+          ],
+          "trim": [
+            35,
+            128,
+            271,
+            246
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            80,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_017"
+        },
+        {
+          "source_rect": [
+            614,
+            0,
+            924,
+            322
+          ],
+          "trim": [
+            40,
+            100,
+            270,
+            253
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            160,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_018"
+        },
+        {
+          "source_rect": [
+            924,
+            0,
+            1254,
+            322
+          ],
+          "trim": [
+            41,
+            144,
+            278,
+            245
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            240,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_019"
+        },
+        {
+          "source_rect": [
+            0,
+            322,
+            306,
+            637
+          ],
+          "trim": [
+            69,
+            76,
+            261,
+            238
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            320,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_020"
+        },
+        {
+          "source_rect": [
+            306,
+            322,
+            606,
+            637
+          ],
+          "trim": [
+            47,
+            70,
+            253,
+            245
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            400,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_021"
+        },
+        {
+          "source_rect": [
+            606,
+            322,
+            934,
+            637
+          ],
+          "trim": [
+            48,
+            84,
+            281,
+            240
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            480,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_022"
+        },
+        {
+          "source_rect": [
+            934,
+            322,
+            1254,
+            637
+          ],
+          "trim": [
+            48,
+            81,
+            252,
+            239
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            560,
+            128,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_023"
+        },
+        {
+          "source_rect": [
+            0,
+            637,
+            314,
+            917
+          ],
+          "trim": [
+            47,
+            75,
+            272,
+            214
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            0,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_024"
+        },
+        {
+          "source_rect": [
+            314,
+            637,
+            606,
+            917
+          ],
+          "trim": [
+            42,
+            79,
+            251,
+            205
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            80,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_025"
+        },
+        {
+          "source_rect": [
+            606,
+            637,
+            922,
+            917
+          ],
+          "trim": [
+            42,
+            70,
+            283,
+            214
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            160,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_026"
+        },
+        {
+          "source_rect": [
+            922,
+            637,
+            1254,
+            917
+          ],
+          "trim": [
+            33,
+            83,
+            277,
+            209
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
             240,
             192,
             80,
@@ -25968,7 +28970,135 @@
             40,
             61
           ],
-          "id": "rocks_015"
+          "id": "rocks_027"
+        },
+        {
+          "source_rect": [
+            0,
+            917,
+            306,
+            1254
+          ],
+          "trim": [
+            55,
+            67,
+            265,
+            231
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            320,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_028"
+        },
+        {
+          "source_rect": [
+            306,
+            917,
+            618,
+            1254
+          ],
+          "trim": [
+            42,
+            80,
+            270,
+            223
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            400,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_029"
+        },
+        {
+          "source_rect": [
+            618,
+            917,
+            922,
+            1254
+          ],
+          "trim": [
+            41,
+            72,
+            270,
+            220
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            480,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_030"
+        },
+        {
+          "source_rect": [
+            922,
+            917,
+            1254,
+            1254
+          ],
+          "trim": [
+            34,
+            107,
+            265,
+            220
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rocks-rich-v2.png",
+          "source_sha256": "aff277b1eddb48dff04b257fd3c34659c887890be3679d53682758194d19fd7e",
+          "direction": "none",
+          "scale": 0.24,
+          "job": "rocks-rich-v2",
+          "atlas_rect": [
+            560,
+            192,
+            80,
+            64
+          ],
+          "anchor": [
+            40,
+            61
+          ],
+          "id": "rocks_031"
         }
       ],
       "clips": {
@@ -26083,10 +29213,122 @@
           ],
           "fps": 1,
           "loop": true
+        },
+        "variant_16": {
+          "frames": [
+            16
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_17": {
+          "frames": [
+            17
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_18": {
+          "frames": [
+            18
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_19": {
+          "frames": [
+            19
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_20": {
+          "frames": [
+            20
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_21": {
+          "frames": [
+            21
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_22": {
+          "frames": [
+            22
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_23": {
+          "frames": [
+            23
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_24": {
+          "frames": [
+            24
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_25": {
+          "frames": [
+            25
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_26": {
+          "frames": [
+            26
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_27": {
+          "frames": [
+            27
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_28": {
+          "frames": [
+            28
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_29": {
+          "frames": [
+            29
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_30": {
+          "frames": [
+            30
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_31": {
+          "frames": [
+            31
+          ],
+          "fps": 1,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 16,
+      "count": 32,
       "world_body_height": 42,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -28192,8 +31434,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
+            512,
             0,
-            128,
             128,
             128
           ],
@@ -28225,8 +31467,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
-            128,
-            128,
+            640,
+            0,
             128,
             128
           ],
@@ -28258,8 +31500,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
-            256,
-            128,
+            768,
+            0,
             128,
             128
           ],
@@ -28291,8 +31533,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
-            384,
-            128,
+            896,
+            0,
             128,
             128
           ],
@@ -28325,7 +31567,7 @@
           "job": "trees-v2",
           "atlas_rect": [
             0,
-            256,
+            128,
             128,
             128
           ],
@@ -28358,7 +31600,7 @@
           "job": "trees-v2",
           "atlas_rect": [
             128,
-            256,
+            128,
             128,
             128
           ],
@@ -28391,7 +31633,7 @@
           "job": "trees-v2",
           "atlas_rect": [
             256,
-            256,
+            128,
             128,
             128
           ],
@@ -28424,7 +31666,7 @@
           "job": "trees-v2",
           "atlas_rect": [
             384,
-            256,
+            128,
             128,
             128
           ],
@@ -28456,8 +31698,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
-            0,
-            384,
+            512,
+            128,
             128,
             128
           ],
@@ -28489,8 +31731,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
+            640,
             128,
-            384,
             128,
             128
           ],
@@ -28522,8 +31764,8 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
-            256,
-            384,
+            768,
+            128,
             128,
             128
           ],
@@ -28555,6 +31797,402 @@
           "scale": 0.390625,
           "job": "trees-v2",
           "atlas_rect": [
+            896,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_015",
+          "canopy_split_y": 92
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            304,
+            312
+          ],
+          "trim": [
+            110,
+            50,
+            260,
+            280
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            0,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_016",
+          "canopy_split_y": 92
+        },
+        {
+          "source_rect": [
+            304,
+            0,
+            628,
+            312
+          ],
+          "trim": [
+            44,
+            134,
+            272,
+            280
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            128,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_017",
+          "canopy_split_y": 104
+        },
+        {
+          "source_rect": [
+            628,
+            0,
+            905,
+            312
+          ],
+          "trim": [
+            54,
+            75,
+            204,
+            280
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            256,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_018",
+          "canopy_split_y": 96
+        },
+        {
+          "source_rect": [
+            905,
+            0,
+            1254,
+            312
+          ],
+          "trim": [
+            74,
+            54,
+            188,
+            278
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            384,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_019",
+          "canopy_split_y": 93
+        },
+        {
+          "source_rect": [
+            0,
+            312,
+            346,
+            608
+          ],
+          "trim": [
+            27,
+            50,
+            324,
+            262
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            512,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_020",
+          "canopy_split_y": 95
+        },
+        {
+          "source_rect": [
+            346,
+            312,
+            612,
+            608
+          ],
+          "trim": [
+            23,
+            50,
+            236,
+            264
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            640,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_021",
+          "canopy_split_y": 95
+        },
+        {
+          "source_rect": [
+            612,
+            312,
+            918,
+            608
+          ],
+          "trim": [
+            30,
+            64,
+            286,
+            268
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            768,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_022",
+          "canopy_split_y": 96
+        },
+        {
+          "source_rect": [
+            918,
+            312,
+            1254,
+            608
+          ],
+          "trim": [
+            20,
+            32,
+            310,
+            265
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            896,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_023",
+          "canopy_split_y": 92
+        },
+        {
+          "source_rect": [
+            0,
+            608,
+            300,
+            906
+          ],
+          "trim": [
+            70,
+            68,
+            258,
+            257
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            0,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_024",
+          "canopy_split_y": 98
+        },
+        {
+          "source_rect": [
+            300,
+            608,
+            586,
+            906
+          ],
+          "trim": [
+            42,
+            31,
+            254,
+            257
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            128,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_025",
+          "canopy_split_y": 93
+        },
+        {
+          "source_rect": [
+            586,
+            608,
+            942,
+            906
+          ],
+          "trim": [
+            33,
+            77,
+            328,
+            259
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            256,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_026",
+          "canopy_split_y": 99
+        },
+        {
+          "source_rect": [
+            942,
+            608,
+            1254,
+            906
+          ],
+          "trim": [
+            30,
+            30,
+            211,
+            257
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
             384,
             384,
             128,
@@ -28564,7 +32202,139 @@
             64,
             125
           ],
-          "id": "trees_015",
+          "id": "trees_027",
+          "canopy_split_y": 93
+        },
+        {
+          "source_rect": [
+            0,
+            906,
+            304,
+            1254
+          ],
+          "trim": [
+            97,
+            39,
+            237,
+            268
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            512,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_028",
+          "canopy_split_y": 92
+        },
+        {
+          "source_rect": [
+            304,
+            906,
+            628,
+            1254
+          ],
+          "trim": [
+            69,
+            51,
+            273,
+            268
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            640,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_029",
+          "canopy_split_y": 94
+        },
+        {
+          "source_rect": [
+            628,
+            906,
+            898,
+            1254
+          ],
+          "trim": [
+            52,
+            62,
+            207,
+            268
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            768,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_030",
+          "canopy_split_y": 96
+        },
+        {
+          "source_rect": [
+            898,
+            906,
+            1254,
+            1254
+          ],
+          "trim": [
+            65,
+            39,
+            249,
+            268
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/trees-rich-v3.png",
+          "source_sha256": "0b319c2857b7136a08fc00d8f49e7b6f6acb01180fd092fe1344e8bc0b893ba7",
+          "direction": "none",
+          "scale": 0.40404040404040403,
+          "job": "trees-rich-v3",
+          "atlas_rect": [
+            896,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_031",
           "canopy_split_y": 92
         }
       ],
@@ -28680,10 +32450,122 @@
           ],
           "fps": 1,
           "loop": true
+        },
+        "variant_16": {
+          "frames": [
+            16
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_17": {
+          "frames": [
+            17
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_18": {
+          "frames": [
+            18
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_19": {
+          "frames": [
+            19
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_20": {
+          "frames": [
+            20
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_21": {
+          "frames": [
+            21
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_22": {
+          "frames": [
+            22
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_23": {
+          "frames": [
+            23
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_24": {
+          "frames": [
+            24
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_25": {
+          "frames": [
+            25
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_26": {
+          "frames": [
+            26
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_27": {
+          "frames": [
+            27
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_28": {
+          "frames": [
+            28
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_29": {
+          "frames": [
+            29
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_30": {
+          "frames": [
+            30
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_31": {
+          "frames": [
+            31
+          ],
+          "fps": 1,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 16,
+      "count": 32,
       "world_body_height": 100,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -29985,5 +33867,5 @@
       "reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count."
     }
   ],
-  "total_extracted": 816
+  "total_extracted": 912
 }

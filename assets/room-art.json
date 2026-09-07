@@ -7361,6 +7361,550 @@
             93
           ],
           "id": "rider_219"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            324,
+            318
+          ],
+          "trim": [
+            79,
+            69,
+            245,
+            289
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            384,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_220"
+        },
+        {
+          "source_rect": [
+            324,
+            0,
+            634,
+            318
+          ],
+          "trim": [
+            79,
+            69,
+            243,
+            289
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            480,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_221"
+        },
+        {
+          "source_rect": [
+            634,
+            0,
+            922,
+            318
+          ],
+          "trim": [
+            68,
+            70,
+            217,
+            280
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            576,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_222"
+        },
+        {
+          "source_rect": [
+            922,
+            0,
+            1254,
+            318
+          ],
+          "trim": [
+            72,
+            69,
+            221,
+            280
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "relaxed",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            672,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_223"
+        },
+        {
+          "source_rect": [
+            0,
+            318,
+            323,
+            604
+          ],
+          "trim": [
+            79,
+            29,
+            243,
+            251
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            0,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_224"
+        },
+        {
+          "source_rect": [
+            323,
+            318,
+            634,
+            604
+          ],
+          "trim": [
+            81,
+            29,
+            243,
+            251
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            96,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_225"
+        },
+        {
+          "source_rect": [
+            634,
+            318,
+            921,
+            604
+          ],
+          "trim": [
+            69,
+            30,
+            219,
+            243
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            192,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_226"
+        },
+        {
+          "source_rect": [
+            921,
+            318,
+            1254,
+            604
+          ],
+          "trim": [
+            69,
+            29,
+            219,
+            243
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "lookout",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            288,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_227"
+        },
+        {
+          "source_rect": [
+            0,
+            604,
+            323,
+            895
+          ],
+          "trim": [
+            78,
+            35,
+            245,
+            259
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            384,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_228"
+        },
+        {
+          "source_rect": [
+            323,
+            604,
+            634,
+            895
+          ],
+          "trim": [
+            79,
+            35,
+            244,
+            260
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            480,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_229"
+        },
+        {
+          "source_rect": [
+            634,
+            604,
+            922,
+            895
+          ],
+          "trim": [
+            67,
+            36,
+            216,
+            251
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            576,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_230"
+        },
+        {
+          "source_rect": [
+            922,
+            604,
+            1254,
+            895
+          ],
+          "trim": [
+            72,
+            36,
+            220,
+            251
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "hat_tip",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            672,
+            2688,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_231"
+        },
+        {
+          "source_rect": [
+            0,
+            895,
+            324,
+            1254
+          ],
+          "trim": [
+            74,
+            33,
+            243,
+            257
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            0,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_232"
+        },
+        {
+          "source_rect": [
+            324,
+            895,
+            634,
+            1254
+          ],
+          "trim": [
+            81,
+            36,
+            246,
+            256
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "northwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            96,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_233"
+        },
+        {
+          "source_rect": [
+            634,
+            895,
+            922,
+            1254
+          ],
+          "trim": [
+            67,
+            36,
+            216,
+            247
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southeast",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            192,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_234"
+        },
+        {
+          "source_rect": [
+            922,
+            895,
+            1254,
+            1254
+          ],
+          "trim": [
+            72,
+            36,
+            221,
+            247
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-social-v1.png",
+          "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+          "direction": "southwest",
+          "scale": 0.2877030162412993,
+          "job": "rider-social-v1",
+          "action": "braced",
+          "clip_prefix": "social_v1_",
+          "atlas_rect": [
+            288,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_235"
         }
       ],
       "clips": {
@@ -7795,7 +8339,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 220,
+      "count": 236,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -7991,6 +8535,70 @@
         ],
         "v8_walk_northeast": [
           47,
+          93
+        ],
+        "social_v1_relaxed_northeast": [
+          47,
+          93
+        ],
+        "social_v1_relaxed_northwest": [
+          48,
+          93
+        ],
+        "social_v1_relaxed_southeast": [
+          42,
+          93
+        ],
+        "social_v1_relaxed_southwest": [
+          52,
+          93
+        ],
+        "social_v1_lookout_northeast": [
+          46,
+          93
+        ],
+        "social_v1_lookout_northwest": [
+          47,
+          93
+        ],
+        "social_v1_lookout_southeast": [
+          41,
+          93
+        ],
+        "social_v1_lookout_southwest": [
+          52,
+          93
+        ],
+        "social_v1_hat_tip_northeast": [
+          48,
+          93
+        ],
+        "social_v1_hat_tip_northwest": [
+          46,
+          93
+        ],
+        "social_v1_hat_tip_southeast": [
+          45,
+          93
+        ],
+        "social_v1_hat_tip_southwest": [
+          49,
+          93
+        ],
+        "social_v1_braced_northeast": [
+          46,
+          93
+        ],
+        "social_v1_braced_northwest": [
+          47,
+          93
+        ],
+        "social_v1_braced_southeast": [
+          42,
+          93
+        ],
+        "social_v1_braced_southwest": [
+          52,
           93
         ],
         "idle": [
@@ -24726,6 +25334,1094 @@
             61
           ],
           "id": "eleanor_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            330,
+            334
+          ],
+          "trim": [
+            128,
+            48,
+            238,
+            312
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            0,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_064"
+        },
+        {
+          "source_rect": [
+            330,
+            0,
+            627,
+            334
+          ],
+          "trim": [
+            93,
+            48,
+            202,
+            312
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            64,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_065"
+        },
+        {
+          "source_rect": [
+            627,
+            0,
+            923,
+            334
+          ],
+          "trim": [
+            96,
+            50,
+            201,
+            313
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            128,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_066"
+        },
+        {
+          "source_rect": [
+            923,
+            0,
+            1254,
+            334
+          ],
+          "trim": [
+            96,
+            50,
+            201,
+            313
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "relaxed",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            192,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_067"
+        },
+        {
+          "source_rect": [
+            0,
+            334,
+            330,
+            634
+          ],
+          "trim": [
+            118,
+            23,
+            251,
+            283
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            256,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_068"
+        },
+        {
+          "source_rect": [
+            330,
+            334,
+            626,
+            634
+          ],
+          "trim": [
+            80,
+            23,
+            212,
+            283
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            320,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_069"
+        },
+        {
+          "source_rect": [
+            626,
+            334,
+            920,
+            634
+          ],
+          "trim": [
+            86,
+            23,
+            223,
+            284
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            384,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_070"
+        },
+        {
+          "source_rect": [
+            920,
+            334,
+            1254,
+            634
+          ],
+          "trim": [
+            73,
+            23,
+            211,
+            285
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "wave",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            448,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_071"
+        },
+        {
+          "source_rect": [
+            0,
+            634,
+            328,
+            923
+          ],
+          "trim": [
+            112,
+            17,
+            229,
+            273
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            0,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_072"
+        },
+        {
+          "source_rect": [
+            328,
+            634,
+            626,
+            923
+          ],
+          "trim": [
+            100,
+            17,
+            219,
+            273
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            64,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_073"
+        },
+        {
+          "source_rect": [
+            626,
+            634,
+            922,
+            923
+          ],
+          "trim": [
+            81,
+            17,
+            197,
+            272
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            128,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_074"
+        },
+        {
+          "source_rect": [
+            922,
+            634,
+            1254,
+            923
+          ],
+          "trim": [
+            99,
+            17,
+            214,
+            273
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "amused",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            192,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_075"
+        },
+        {
+          "source_rect": [
+            0,
+            923,
+            329,
+            1254
+          ],
+          "trim": [
+            118,
+            17,
+            276,
+            273
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            256,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_076"
+        },
+        {
+          "source_rect": [
+            329,
+            923,
+            627,
+            1254
+          ],
+          "trim": [
+            54,
+            18,
+            212,
+            273
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "northwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            320,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_077"
+        },
+        {
+          "source_rect": [
+            627,
+            923,
+            922,
+            1254
+          ],
+          "trim": [
+            87,
+            17,
+            246,
+            273
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southeast",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            384,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_078"
+        },
+        {
+          "source_rect": [
+            922,
+            923,
+            1254,
+            1254
+          ],
+          "trim": [
+            49,
+            17,
+            207,
+            273
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/eleanor-gesture-v2.png",
+          "source_sha256": "7573898510d493127f0bc4bb72b832e8700430c55a251372a9f20975e6808489",
+          "direction": "southwest",
+          "scale": 0.15180265654648956,
+          "job": "eleanor-gesture-v2",
+          "action": "point",
+          "clip_prefix": "gesture_v2_",
+          "atlas_rect": [
+            448,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            328,
+            326
+          ],
+          "trim": [
+            117,
+            45,
+            253,
+            303
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            0,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_080"
+        },
+        {
+          "source_rect": [
+            328,
+            0,
+            626,
+            326
+          ],
+          "trim": [
+            77,
+            46,
+            213,
+            303
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            64,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_081"
+        },
+        {
+          "source_rect": [
+            626,
+            0,
+            922,
+            326
+          ],
+          "trim": [
+            87,
+            46,
+            219,
+            303
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            128,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_082"
+        },
+        {
+          "source_rect": [
+            922,
+            0,
+            1254,
+            326
+          ],
+          "trim": [
+            77,
+            46,
+            210,
+            303
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "encourage",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            192,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_083"
+        },
+        {
+          "source_rect": [
+            0,
+            326,
+            326,
+            624
+          ],
+          "trim": [
+            110,
+            23,
+            228,
+            278
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            256,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_084"
+        },
+        {
+          "source_rect": [
+            326,
+            326,
+            626,
+            624
+          ],
+          "trim": [
+            100,
+            23,
+            217,
+            279
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            320,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_085"
+        },
+        {
+          "source_rect": [
+            626,
+            326,
+            922,
+            624
+          ],
+          "trim": [
+            83,
+            23,
+            207,
+            279
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            384,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_086"
+        },
+        {
+          "source_rect": [
+            922,
+            326,
+            1254,
+            624
+          ],
+          "trim": [
+            89,
+            23,
+            211,
+            278
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "laugh",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            448,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_087"
+        },
+        {
+          "source_rect": [
+            0,
+            624,
+            326,
+            915
+          ],
+          "trim": [
+            109,
+            19,
+            232,
+            274
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            0,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_088"
+        },
+        {
+          "source_rect": [
+            326,
+            624,
+            626,
+            915
+          ],
+          "trim": [
+            96,
+            19,
+            219,
+            274
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            64,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_089"
+        },
+        {
+          "source_rect": [
+            626,
+            624,
+            920,
+            915
+          ],
+          "trim": [
+            81,
+            21,
+            198,
+            274
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            128,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_090"
+        },
+        {
+          "source_rect": [
+            920,
+            624,
+            1254,
+            915
+          ],
+          "trim": [
+            98,
+            21,
+            216,
+            272
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "listen",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            192,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_091"
+        },
+        {
+          "source_rect": [
+            0,
+            915,
+            325,
+            1254
+          ],
+          "trim": [
+            109,
+            19,
+            285,
+            277
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            256,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_092"
+        },
+        {
+          "source_rect": [
+            325,
+            915,
+            621,
+            1254
+          ],
+          "trim": [
+            41,
+            20,
+            216,
+            277
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "northwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            320,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_093"
+        },
+        {
+          "source_rect": [
+            621,
+            915,
+            919,
+            1254
+          ],
+          "trim": [
+            81,
+            18,
+            252,
+            273
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southeast",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            384,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_094"
+        },
+        {
+          "source_rect": [
+            919,
+            915,
+            1254,
+            1254
+          ],
+          "trim": [
+            47,
+            20,
+            214,
+            273
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/eleanor-social-v3.png",
+          "source_sha256": "58a0a814ee880027bf614904b73ff0bc2c3e59604756b20f30d815b6015be8b7",
+          "direction": "southwest",
+          "scale": 0.1556420233463035,
+          "job": "eleanor-social-v3",
+          "action": "welcome",
+          "clip_prefix": "social_v3_",
+          "atlas_rect": [
+            448,
+            704,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_095"
         }
       ],
       "clips": {
@@ -24816,7 +26512,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 64,
+      "count": 96,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -26956,6 +28652,550 @@
             61
           ],
           "id": "rustler_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            353,
+            329
+          ],
+          "trim": [
+            148,
+            66,
+            271,
+            295
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            0,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_064"
+        },
+        {
+          "source_rect": [
+            353,
+            0,
+            628,
+            329
+          ],
+          "trim": [
+            83,
+            66,
+            199,
+            294
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            64,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_065"
+        },
+        {
+          "source_rect": [
+            628,
+            0,
+            914,
+            329
+          ],
+          "trim": [
+            76,
+            60,
+            199,
+            298
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            128,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_066"
+        },
+        {
+          "source_rect": [
+            914,
+            0,
+            1254,
+            329
+          ],
+          "trim": [
+            87,
+            60,
+            210,
+            297
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "relaxed",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            192,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_067"
+        },
+        {
+          "source_rect": [
+            0,
+            329,
+            346,
+            634
+          ],
+          "trim": [
+            147,
+            32,
+            268,
+            271
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            256,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_068"
+        },
+        {
+          "source_rect": [
+            346,
+            329,
+            623,
+            634
+          ],
+          "trim": [
+            80,
+            35,
+            201,
+            271
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            320,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_069"
+        },
+        {
+          "source_rect": [
+            623,
+            329,
+            910,
+            634
+          ],
+          "trim": [
+            77,
+            34,
+            204,
+            273
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            384,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_070"
+        },
+        {
+          "source_rect": [
+            910,
+            329,
+            1254,
+            634
+          ],
+          "trim": [
+            84,
+            34,
+            208,
+            273
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "wary",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            448,
+            512,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_071"
+        },
+        {
+          "source_rect": [
+            0,
+            634,
+            348,
+            924
+          ],
+          "trim": [
+            123,
+            41,
+            281,
+            263
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "north",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            0,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_072"
+        },
+        {
+          "source_rect": [
+            348,
+            634,
+            622,
+            924
+          ],
+          "trim": [
+            68,
+            38,
+            211,
+            263
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "northeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            64,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_073"
+        },
+        {
+          "source_rect": [
+            622,
+            634,
+            908,
+            924
+          ],
+          "trim": [
+            64,
+            34,
+            215,
+            267
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            128,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_074"
+        },
+        {
+          "source_rect": [
+            908,
+            634,
+            1254,
+            924
+          ],
+          "trim": [
+            72,
+            36,
+            226,
+            266
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.17167381974248927,
+          "job": "rustler-state-upper-v2",
+          "action": "surrender",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            192,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_075"
+        },
+        {
+          "source_rect": [
+            0,
+            924,
+            340,
+            1254
+          ],
+          "trim": [
+            120,
+            26,
+            275,
+            241
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "east",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            256,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_076"
+        },
+        {
+          "source_rect": [
+            340,
+            924,
+            628,
+            1254
+          ],
+          "trim": [
+            65,
+            28,
+            223,
+            241
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "east",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            320,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_077"
+        },
+        {
+          "source_rect": [
+            628,
+            924,
+            906,
+            1254
+          ],
+          "trim": [
+            66,
+            28,
+            219,
+            248
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southeast",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            384,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_078"
+        },
+        {
+          "source_rect": [
+            906,
+            924,
+            1254,
+            1254
+          ],
+          "trim": [
+            61,
+            25,
+            216,
+            248
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rustler-state-v2.png",
+          "source_sha256": "ed1f85c1957d6586c9d3084ee1bf567862e8fe29a459916262718345b148a167",
+          "direction": "southwest",
+          "scale": 0.1839080459770115,
+          "job": "rustler-state-lower-v2",
+          "action": "recoil",
+          "clip_prefix": "state_v2_",
+          "atlas_rect": [
+            448,
+            576,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_079"
         }
       ],
       "clips": {
@@ -27036,7 +29276,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 64,
+      "count": 80,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -27127,11 +29367,11 @@
     },
     {
       "family": "trees",
-      "frame": 6,
+      "frame": 20,
       "texture": "res://kits/atlases/trees.png",
       "region": [
+        512,
         256,
-        128,
         128,
         128
       ],
@@ -27144,15 +29384,15 @@
         108
       ],
       "collision_radius": 9,
-      "source_frame_id": "trees_006"
+      "source_frame_id": "trees_020"
     },
     {
       "family": "trees",
-      "frame": 5,
+      "frame": 22,
       "texture": "res://kits/atlases/trees.png",
       "region": [
-        128,
-        128,
+        768,
+        256,
         128,
         128
       ],
@@ -27165,7 +29405,7 @@
         100
       ],
       "collision_radius": 9,
-      "source_frame_id": "trees_005"
+      "source_frame_id": "trees_022"
     },
     {
       "family": "trees",
@@ -27193,8 +29433,8 @@
       "frame": 14,
       "texture": "res://kits/atlases/trees.png",
       "region": [
-        256,
-        384,
+        768,
+        128,
         128,
         128
       ],
@@ -27211,11 +29451,11 @@
     },
     {
       "family": "rocks",
-      "frame": 0,
+      "frame": 16,
       "texture": "res://kits/atlases/rocks.png",
       "region": [
         0,
-        0,
+        128,
         80,
         64
       ],
@@ -27228,7 +29468,7 @@
         276
       ],
       "collision_radius": 6,
-      "source_frame_id": "rocks_000"
+      "source_frame_id": "rocks_016"
     },
     {
       "family": "rocks",
@@ -27257,7 +29497,7 @@
       "texture": "res://kits/atlases/rocks.png",
       "region": [
         80,
-        128,
+        64,
         80,
         64
       ],
@@ -27274,10 +29514,10 @@
     },
     {
       "family": "rocks",
-      "frame": 14,
+      "frame": 25,
       "texture": "res://kits/atlases/rocks.png",
       "region": [
-        160,
+        80,
         192,
         80,
         64
@@ -27291,7 +29531,7 @@
         303
       ],
       "collision_radius": 6,
-      "source_frame_id": "rocks_014"
+      "source_frame_id": "rocks_025"
     },
     {
       "family": "rocks",
