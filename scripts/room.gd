@@ -37,6 +37,8 @@ var elapsed := 0.0
 var escaped := false
 var qa_mode := false
 var qa_done := false
+var scenery: Node2D
+var solid_scenery: Array = []
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -44,7 +46,8 @@ func _ready() -> void:
 		get_tree().change_scene_to_file.call_deferred("res://scenes/kit_browser.tscn")
 		return
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://assets/sprites.json"))
+	var art_path := "res://assets/sprites.json" if "--original" in OS.get_cmdline_user_args() else "res://assets/room-art.json"
+	manifest = JSON.parse_string(FileAccess.get_file_as_string(art_path))
 	viewport = SubViewport.new()
 	viewport.size = Vector2i(WORLD)
 	viewport.disable_3d = true
@@ -60,6 +63,7 @@ func _ready() -> void:
 	actors = Node2D.new()
 	actors.y_sort_enabled = true
 	world.add_child(actors)
+	place_scenery()
 	spawn("wagon", Vector2(91, 111))
 	eleanor = spawn("eleanor", Vector2(148, 127))
 	player = spawn("rider", Vector2(199, 231))
@@ -105,6 +109,26 @@ func spawn(id: String, at: Vector2) -> Node2D:
 	actor.position = at
 	actors.add_child(actor)
 	return actor
+
+func place_scenery() -> void:
+	for entry in manifest.get("scenery", []):
+		var prop := Sprite2D.new()
+		var region := AtlasTexture.new()
+		region.atlas = load(entry.texture)
+		region.region = Rect2(entry.region[0], entry.region[1], entry.region[2], entry.region[3])
+		prop.texture = region
+		prop.centered = false
+		prop.offset = -Vector2(entry.anchor[0], entry.anchor[1])
+		prop.position = Vector2(entry.position[0], entry.position[1])
+		prop.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+		# Ground-cover stays under hooves; tall props share the actors' ground Y sort.
+		if entry.family == "grass":
+			world.add_child(prop)
+			world.move_child(prop, actors.get_index())
+		else:
+			actors.add_child(prop)
+		if float(entry.collision_radius) > 0:
+			solid_scenery.append(entry)
 
 func panel_style() -> StyleBoxTexture:
 	var style := StyleBoxTexture.new()
@@ -271,7 +295,14 @@ func _physics_process(delta: float) -> void:
 		run_qa()
 
 func limit_position(at: Vector2) -> Vector2:
-	return at.clamp(Vector2(24, 71), Vector2(616, 303))
+	var result := at.clamp(Vector2(24, 71), Vector2(616, 303))
+	for entry in solid_scenery:
+		var center := Vector2(entry.position[0], entry.position[1])
+		var delta := result - center
+		var radius := float(entry.collision_radius) + 7.0
+		if delta.length() < radius:
+			result = center + (delta.normalized() if delta.length() > 0 else Vector2.DOWN) * radius
+	return result.clamp(Vector2(24, 71), Vector2(616, 303))
 
 func secured_count() -> int:
 	var count := 0
@@ -282,7 +313,7 @@ func secured_count() -> int:
 func interact() -> void:
 	if player.position.distance_to(eleanor.position) < 65:
 		talked = true
-		eleanor.art.play("talk")
+		eleanor.action("talk", Vector2.RIGHT)
 		message = "Eleanor: Push from behind. Lasso a stray. Drive off the rustler first."
 	else:
 		message = "Ride near Eleanor by the wagon, then Talk. Click or tap the ground to ride."
@@ -291,6 +322,7 @@ func interact() -> void:
 func lasso() -> void:
 	if won: return
 	if rustler_active and player.position.distance_to(rustler.position) < 110:
+		player.action("lasso", rustler.position - player.position)
 		rope_target = rustler
 		rope_time = 0.7
 		clear_rustler("Your loop catches his gun arm. The rustler flees.")
@@ -303,6 +335,7 @@ func lasso() -> void:
 			nearest = cow
 			distance = d
 	if nearest:
+		player.action("lasso", nearest.position - player.position)
 		rope_target = nearest
 		rope_time = 7.0
 		message = "Roped! Ride toward the east gathering. The steer follows for seven seconds."
@@ -328,6 +361,7 @@ func shoot() -> void:
 	else:
 		message = "The shot goes wide. Get within range of the rustler."
 	shot.points = PackedVector2Array([origin, endpoint])
+	player.action("shoot", endpoint - origin)
 	refresh()
 
 func clear_rustler(text: String) -> void:
@@ -404,6 +438,7 @@ func run_qa() -> void:
 func export_smoke() -> void:
 	await get_tree().create_timer(0.5).timeout
 	for actor in actors.get_children():
+		if not actor is Actor: continue
 		if actor.art.sprite_frames.get_frame_texture("idle", 0) == null:
 			push_error("Missing exported actor texture")
 			get_tree().quit(2)

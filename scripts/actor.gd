@@ -5,6 +5,9 @@ var kind: String
 var velocity := Vector2.ZERO
 var secured := false
 var base_speed := 36.0
+var facing := "east"
+var directional := false
+var action_time := 0.0
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
@@ -27,10 +30,18 @@ func configure(id: String, spec: Dictionary) -> void:
 			region.region = Rect2(rect[0], rect[1], rect[2], rect[3])
 			frames.add_frame(clip_name, region)
 	art.sprite_frames = frames
+	directional = frames.has_animation("walk_east")
 	add_child(art)
 	art.play("idle")
 
 func pose(moving: bool, direction: Vector2 = Vector2.ZERO) -> void:
+	if action_time > 0: return
+	if directional:
+		if direction.length_squared() > 0.01:
+			facing = direction_name(direction)
+		var name := ("walk_" if moving else "idle_") + facing
+		if art.animation != name: art.play(name)
+		return
 	if absf(direction.x) > 0.1:
 		# Reflect the complete anchored sprite, not its texture within the atlas cell.
 		art.scale.x = -1.0 if direction.x < 0.0 else 1.0
@@ -41,3 +52,21 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO) -> void:
 		clip = "idle"
 	if art.animation != clip:
 		art.play(clip)
+
+func direction_name(direction: Vector2) -> String:
+	if absf(direction.x) >= absf(direction.y):
+		return "east" if direction.x >= 0 else "west"
+	return "south" if direction.y >= 0 else "north"
+
+func action(name: String, direction := Vector2.RIGHT) -> void:
+	var clip := name + "_" + direction_name(direction) if directional else name
+	if not art.sprite_frames.has_animation(clip): return
+	facing = direction_name(direction)
+	art.play(clip)
+	art.set_frame_and_progress(0,0)
+	action_time = float(art.sprite_frames.get_frame_count(clip)) / art.sprite_frames.get_animation_speed(clip)
+
+func _process(delta: float) -> void:
+	if action_time > 0:
+		action_time = maxf(0, action_time - delta)
+		if action_time == 0: pose(false)
