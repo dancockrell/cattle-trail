@@ -436,11 +436,18 @@ func reset_room() -> void:
 
 func run_pose_review() -> void:
 	# Stationary animation inspection; separate from gameplay verification.
-	player.position = Vector2(320,245)
+	for actor in actors.get_children():
+		actor.visible = actor == player
+	player.position = Vector2(380,245)
+	var reference := Actor.new()
+	var source_art: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/sprites.json"))
+	reference.configure("rider",source_art.sprites.rider)
+	reference.position = Vector2(240,245)
+	actors.add_child(reference)
 	for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN]:
 		for action in ["walk","lasso","shoot"]:
 			objective.text = "POSE REVIEW / " + action + " / " + player.direction_name(direction)
-			journal.text = "One fixed world anchor; movement paused to inspect the actual sprite transitions."
+			journal.text = "Left: original approved rider. Right: selected rider. Fixed world anchors; movement paused."
 			player.action(action,direction)
 			await get_tree().create_timer(0.85).timeout
 	print("POSE REVIEW PASS: 12 actual engine action/facing transitions rendered")
@@ -503,6 +510,9 @@ func run_qa() -> void:
 	if player.directional:
 		for direction in [Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2.RIGHT]:
 			player.pose(true, direction)
+			assert(str(player.art.animation) == "walk_" + player.direction_name(direction))
+		for direction in [Vector2(1,-1),Vector2(-1,-1)]:
+			player.pose(true,direction)
 			assert(str(player.art.animation) == "walk_" + player.direction_name(direction))
 		player.art.set_frame_and_progress(2, 0.4)
 		player.pose(true, Vector2.UP, 72)

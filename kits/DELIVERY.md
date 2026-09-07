@@ -1,6 +1,6 @@
 # Rich sprite library — measured delivery
 
-2026-09-07. First extraction and engine-preview pass complete; a selected subset is now integrated into the gameplay room. Final production visual admission remains incomplete. See ../ROOM-INTEGRATION.md.
+2026-09-07. The original extraction pass below contains 496 candidates. A subsequent oblique rider pass adds 32 cells, making the current manifest total 528 (rider 96; other families unchanged). The default room currently selects 161 expanded actor frames plus one original wagon and 30 scenery variants. See ../ROOM-INTEGRATION.md for current integration and remaining art gaps. The table below preserves the first-pass baseline rather than claiming its original totals are current.
 
 | Family | Unique extracted cells | Candidate coverage |
 |---|---:|---|

@@ -8,7 +8,7 @@ font=ImageFont.truetype('C:/Windows/Fonts/consola.ttf',18)
 small=ImageFont.truetype('C:/Windows/Fonts/consola.ttf',14)
 out=Image.new('RGB',(1440,100+math.ceil(len(families)/3)*300),'#222820')
 d=ImageDraw.Draw(out)
-d.text((24,18),'CATTLE TRAIL / 496 EXTRACTED SPRITE CANDIDATES',font=font,fill='#efd7a3')
+d.text((24,18),f"CATTLE TRAIL / {manifest['total_extracted']} EXTRACTED SPRITE CANDIDATES",font=font,fill='#efd7a3')
 d.text((24,50),'13 families | Actual transparent atlas pixels | Motion and visual acceptance pending',font=small,fill='#c8c8a7')
 for n,(name,spec) in enumerate(families.items()):
     x=(n%3)*480;y=100+(n//3)*300

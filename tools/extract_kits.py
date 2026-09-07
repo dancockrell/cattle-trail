@@ -75,6 +75,7 @@ for job in JOBS:
     for p in items:
         p['image']=p['image'].resize((max(1,round(p['image'].width*factor)),max(1,round(p['image'].height*factor))),Image.Resampling.NEAREST)
         p.update({'source':f"kits/source/{job['id']}.png",'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'direction':job.get('direction','none'),'scale':factor,'job':job['id']})
+        if family in ACTIONS: p['action']=job.get('actions',ACTIONS[family])[p['row']]
     groups.setdefault(family,[]).extend(items)
 
 for family,items in groups.items():
@@ -90,7 +91,7 @@ for family,items in groups.items():
         record.update({'atlas_rect':[x,y,*cell],'anchor':spec['anchor'],'id':f'{family}_{i:03d}'})
         spec['frames'].append(record)
         if family in ACTIONS:
-            action=ACTIONS[family][p['row']]
+            action=p['action']
             clip=f"{action}_{p['direction']}"
             spec['clips'].setdefault(clip,{'frames':[],'fps':7 if action in ('walk','trot','run') else 5,'loop':action not in ('shoot','react','medical','rest')})['frames'].append(i)
         else:
@@ -98,7 +99,7 @@ for family,items in groups.items():
     if family in ACTIONS:
         for direction in sorted(set(p['direction'] for p in items)):
             walk=spec['clips'].get('walk_'+direction)
-            if walk: spec['clips']['idle_'+direction]={'frames':[walk['frames'][0]],'fps':1,'loop':True}
+            if walk and 'idle_'+direction not in spec['clips']: spec['clips']['idle_'+direction]={'frames':[walk['frames'][0]],'fps':1,'loop':True}
     atlas.save(OUT/f'{family}.png')
     spec['review_notes']=['Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.']
     if family in ('longhorn','cream','spotted'):

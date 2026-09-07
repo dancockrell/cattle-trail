@@ -1,10 +1,14 @@
 # Rich-kit room integration — 2026-09-07
 
-The default playable Clear Fork room now uses selected rich-kit actors and scenery. Original assets remain preserved; `--original` runs the previous comparison room. The full 496-cell kit browser remains available with K.
+The default playable Clear Fork room uses selected rich-kit actors and scenery. Original assets remain preserved; `--original` runs the previous comparison room. The current 528-cell kit browser remains available with K.
 
 ## Measured runtime selection
 
-`assets/room-art.json` is the default room's source of truth; `tools/curate_room.py` rebuilds it from the extraction catalog and original wagon metadata. Selection contains 131 distinct actor frames (130 from expanded kits plus one original wagon), 30 distinct scenery variants, and 40 scenery placements. Only named selected clips are constructed by the room. Unused frames in the source atlas are not counted as integrated behavior.
+`assets/room-art.json` is the default room's source of truth; `tools/curate_room.py` rebuilds it from the extraction catalog and original wagon metadata. Current selection contains 162 distinct actor frames (161 from expanded kits plus one original wagon), 30 distinct scenery variants, and 40 scenery placements. Only named selected clips are constructed by the room. Unused frames in the source atlas are not counted as integrated behavior.
+
+The rider now also has northeast/northwest oblique sheets generated directly from the approved original rider reference, including planted, dust-free idle strips. The runtime chooses these angles on diagonal travel and starts in northeast idle. The northwest sheet's wrong-side extended lasso frame is excluded, with a correctly facing overhead hold in its place. Other oblique rider/cattle directions remain open work.
+
+`assets/rider-anchors.json` measures shared per-clip body/hoof anchors. It corrects action-strip centering (up to eight native pixels in north shooting) without editing atlas pixels or cancelling motion within a strip. Rebuild with tools/align_rider.py before tools/curate_room.py. `tools/validate_room_art.py` checks selected frame bounds, anchors, event indices and terrain provenance. `--pose-review` renders stationary action/facing comparisons against the original approved rider.
 
 - Rider: four requested facings for walk/idle, lasso and shoot. Short actions retain their pose until playback completes instead of being overwritten by movement every frame.
 - Three cattle appearances: walk/idle in four facings. Graze/rest strips with known camera turns are excluded.

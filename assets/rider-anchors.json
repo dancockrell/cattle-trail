@@ -548,23 +548,293 @@
         }
       }
     },
-    "idle_east": {
+    "idle_northeast": {
       "anchor": [
         48,
         93
       ],
       "frames": [
-        0
-      ]
+        64,
+        65,
+        66,
+        67
+      ],
+      "observed": {
+        "64": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 109
+        },
+        "65": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 104
+        },
+        "66": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 100
+        },
+        "67": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 96
+        }
+      }
     },
-    "idle_west": {
+    "walk_northeast": {
       "anchor": [
-        50,
-        92
+        47,
+        93
       ],
       "frames": [
-        16
-      ]
+        68,
+        69,
+        70,
+        71
+      ],
+      "observed": {
+        "68": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 96
+        },
+        "69": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 95
+        },
+        "70": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 90
+        },
+        "71": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 87
+        }
+      }
+    },
+    "lasso_northeast": {
+      "anchor": [
+        45,
+        93
+      ],
+      "frames": [
+        72,
+        73,
+        74,
+        75
+      ],
+      "observed": {
+        "72": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 133
+        },
+        "73": {
+          "shirt_x": 42.0,
+          "hoof_y": 93,
+          "blue_pixels": 139
+        },
+        "74": {
+          "shirt_x": 28.0,
+          "hoof_y": 93,
+          "blue_pixels": 127
+        },
+        "75": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 134
+        }
+      }
+    },
+    "shoot_northeast": {
+      "anchor": [
+        44,
+        93
+      ],
+      "frames": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "observed": {
+        "76": {
+          "shirt_x": 46.0,
+          "hoof_y": 93,
+          "blue_pixels": 137
+        },
+        "77": {
+          "shirt_x": 42.0,
+          "hoof_y": 93,
+          "blue_pixels": 128
+        },
+        "78": {
+          "shirt_x": 43.0,
+          "hoof_y": 93,
+          "blue_pixels": 128
+        },
+        "79": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 120
+        }
+      }
+    },
+    "idle_northwest": {
+      "anchor": [
+        50,
+        93
+      ],
+      "frames": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "observed": {
+        "80": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 92
+        },
+        "81": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 90
+        },
+        "82": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 97
+        },
+        "83": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 92
+        }
+      }
+    },
+    "walk_northwest": {
+      "anchor": [
+        48,
+        93
+      ],
+      "frames": [
+        84,
+        85,
+        86,
+        87
+      ],
+      "observed": {
+        "84": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        },
+        "85": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        },
+        "86": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 90
+        },
+        "87": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        }
+      }
+    },
+    "lasso_northwest": {
+      "anchor": [
+        49,
+        93
+      ],
+      "frames": [
+        88,
+        89,
+        90,
+        91
+      ],
+      "observed": {
+        "88": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 95
+        },
+        "89": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 114
+        },
+        "90": {
+          "shirt_x": 42.0,
+          "hoof_y": 93,
+          "blue_pixels": 125
+        },
+        "91": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 96
+        }
+      }
+    },
+    "shoot_northwest": {
+      "anchor": [
+        49,
+        93
+      ],
+      "frames": [
+        92,
+        93,
+        94,
+        95
+      ],
+      "observed": {
+        "92": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 97
+        },
+        "93": {
+          "shirt_x": 55.0,
+          "hoof_y": 93,
+          "blue_pixels": 96
+        },
+        "94": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 110
+        },
+        "95": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        }
+      }
+    },
+    "idle_east": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        0
+      ],
+      "observed": {
+        "0": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 106
+        }
+      }
     },
     "idle_north": {
       "anchor": [
@@ -573,20 +843,50 @@
       ],
       "frames": [
         32
-      ]
+      ],
+      "observed": {
+        "32": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 100
+        }
+      }
     },
     "idle_south": {
       "anchor": [
-        46,
+        45,
         93
       ],
       "frames": [
         48
-      ]
+      ],
+      "observed": {
+        "48": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 85
+        }
+      }
+    },
+    "idle_west": {
+      "anchor": [
+        50,
+        92
+      ],
+      "frames": [
+        16
+      ],
+      "observed": {
+        "16": {
+          "shirt_x": 49.5,
+          "hoof_y": 92,
+          "blue_pixels": 98
+        }
+      }
     },
     "idle": {
       "anchor": [
-        48,
+        47,
         93
       ],
       "frames": [

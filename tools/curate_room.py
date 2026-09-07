@@ -15,9 +15,11 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     spec=copy.deepcopy(kit['families'][name]); spec['clips']={}
     source=kit['families'][name]['clips']
     directions=['east','west','north','south']
+    if name=='rider': directions += [d for d in ['northeast','northwest','southeast','southwest'] if 'walk_'+d in source]
     for direction in directions:
         for action in ['idle','walk']:
             spec['clips'][action+'_'+direction]=copy.deepcopy(source[action+'_'+direction])
+            if action=='idle': spec['clips'][action+'_'+direction]['fps']=3
     if name=='rider':
         alignment=json.loads((root/'assets/rider-anchors.json').read_text())
         spec['clip_anchors']={clip:data['anchor'] for clip,data in alignment['clips'].items()}
@@ -27,11 +29,18 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
             for action in ['lasso','shoot']:
                 clip=copy.deepcopy(source[action+'_'+direction]);clip['loop']=False;clip['fps']=10 if action=='shoot' else 8
                 spec['clips'][action+'_'+direction]=clip
+                if action=='lasso' and direction=='northwest':
+                    # Exclude the candidate's wrong-side extension; hold its correctly facing overhead loop.
+                    f=clip['frames'];clip['frames']=[f[0],f[1],f[1],f[3]]
                 spec['action_events'][action+'_'+direction]={'name':'fire' if action=='shoot' else 'rope_release','frame':(0 if direction=='north' else 1) if action=='shoot' else 2,'basis':'Visible muzzle flash for shoot; extended loop pose for lasso','once_per_action':True}
     if name=='eleanor':
         # Two standing hand gestures keep the bag out of the animation.
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}
     spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_east'])
+    if name=='rider' and 'idle_northeast' in spec['clips']:
+        spec['default_facing']='northeast'
+        spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_northeast'])
+        spec['clip_anchors']['idle']=spec['clip_anchors']['idle_northeast']
     spec['status']='selected_for_room_review'
     spec['locomotion']={'nominal_speed':72 if name=='rider' else 36,'facing_bias':1.2,'phase_policy':'Preserve walk-cycle phase across facing changes','speed_scale_limits':[0.35,1.8],'idle_when_blocked':True}
     spec['selection_note']='Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate.'

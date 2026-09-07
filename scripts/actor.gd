@@ -19,6 +19,7 @@ var clip_anchors: Dictionary = {}
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
+	facing = str(spec.get("default_facing", "east"))
 	clip_events = spec.get("action_events", {})
 	clip_anchors = spec.get("clip_anchors", {})
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
@@ -57,14 +58,12 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) 
 	if action_time > 0: return
 	if directional:
 		if direction.length_squared() > 0.01:
-			# Retain the current axis near diagonals to avoid one-frame facing chatter.
-			var horizontal := facing in ["east", "west"]
-			if horizontal and absf(direction.y) <= absf(direction.x) * facing_bias:
-				facing = "east" if direction.x >= 0 else "west"
-			elif not horizontal and absf(direction.x) <= absf(direction.y) * facing_bias:
-				facing = "south" if direction.y >= 0 else "north"
-			else:
-				facing = direction_name(direction)
+			var desired := direction_name(direction)
+			var vectors := {"east":Vector2.RIGHT,"west":Vector2.LEFT,"north":Vector2.UP,"south":Vector2.DOWN,"northeast":Vector2(1,-1).normalized(),"northwest":Vector2(-1,-1).normalized(),"southeast":Vector2(1,1).normalized(),"southwest":Vector2(-1,1).normalized()}
+			var old_direction: Vector2 = vectors[facing]
+			var new_direction: Vector2 = vectors[desired]
+			var boundary := absf(old_direction.angle_to(new_direction)) * 0.5 + deg_to_rad(5)
+			if desired == facing or absf(old_direction.angle_to(direction)) > boundary: facing = desired
 		var name := ("walk_" if moving else "idle_") + facing
 		art.speed_scale = clampf(speed / nominal_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
 		if art.animation != name:
@@ -86,6 +85,9 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) 
 		art.play(clip)
 
 func direction_name(direction: Vector2) -> String:
+	if absf(direction.x) > absf(direction.y) * 0.4142 and absf(direction.y) > absf(direction.x) * 0.4142:
+		var diagonal := ("north" if direction.y < 0 else "south") + ("east" if direction.x >= 0 else "west")
+		if art.sprite_frames.has_animation("walk_" + diagonal): return diagonal
 	if absf(direction.x) >= absf(direction.y):
 		return "east" if direction.x >= 0 else "west"
 	return "south" if direction.y >= 0 else "north"

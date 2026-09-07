@@ -35,6 +35,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -67,6 +68,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "walk",
           "atlas_rect": [
             96,
             0,
@@ -99,6 +101,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "walk",
           "atlas_rect": [
             192,
             0,
@@ -131,6 +134,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "walk",
           "atlas_rect": [
             288,
             0,
@@ -163,6 +167,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "trot",
           "atlas_rect": [
             384,
             0,
@@ -195,6 +200,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "trot",
           "atlas_rect": [
             480,
             0,
@@ -227,6 +233,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "trot",
           "atlas_rect": [
             576,
             0,
@@ -259,6 +266,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "trot",
           "atlas_rect": [
             672,
             0,
@@ -291,6 +299,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "lasso",
           "atlas_rect": [
             0,
             96,
@@ -323,6 +332,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "lasso",
           "atlas_rect": [
             96,
             96,
@@ -355,6 +365,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "lasso",
           "atlas_rect": [
             192,
             96,
@@ -387,6 +398,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "lasso",
           "atlas_rect": [
             288,
             96,
@@ -419,6 +431,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "shoot",
           "atlas_rect": [
             384,
             96,
@@ -451,6 +464,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "shoot",
           "atlas_rect": [
             480,
             96,
@@ -483,6 +497,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "shoot",
           "atlas_rect": [
             576,
             96,
@@ -515,6 +530,7 @@
           "direction": "east",
           "scale": 0.2811791383219955,
           "job": "rider-east",
+          "action": "shoot",
           "atlas_rect": [
             672,
             96,
@@ -547,6 +563,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "walk",
           "atlas_rect": [
             0,
             192,
@@ -579,6 +596,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "walk",
           "atlas_rect": [
             96,
             192,
@@ -611,6 +629,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "walk",
           "atlas_rect": [
             192,
             192,
@@ -643,6 +662,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "walk",
           "atlas_rect": [
             288,
             192,
@@ -675,6 +695,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "trot",
           "atlas_rect": [
             384,
             192,
@@ -707,6 +728,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "trot",
           "atlas_rect": [
             480,
             192,
@@ -739,6 +761,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "trot",
           "atlas_rect": [
             576,
             192,
@@ -771,6 +794,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "trot",
           "atlas_rect": [
             672,
             192,
@@ -803,6 +827,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "lasso",
           "atlas_rect": [
             0,
             288,
@@ -835,6 +860,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "lasso",
           "atlas_rect": [
             96,
             288,
@@ -867,6 +893,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "lasso",
           "atlas_rect": [
             192,
             288,
@@ -899,6 +926,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "lasso",
           "atlas_rect": [
             288,
             288,
@@ -931,6 +959,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "shoot",
           "atlas_rect": [
             384,
             288,
@@ -963,6 +992,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "shoot",
           "atlas_rect": [
             480,
             288,
@@ -995,6 +1025,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "shoot",
           "atlas_rect": [
             576,
             288,
@@ -1027,6 +1058,7 @@
           "direction": "west",
           "scale": 0.30317848410757947,
           "job": "rider-west",
+          "action": "shoot",
           "atlas_rect": [
             672,
             288,
@@ -1059,6 +1091,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -1091,6 +1124,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "walk",
           "atlas_rect": [
             96,
             384,
@@ -1123,6 +1157,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "walk",
           "atlas_rect": [
             192,
             384,
@@ -1155,6 +1190,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "walk",
           "atlas_rect": [
             288,
             384,
@@ -1187,6 +1223,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "trot",
           "atlas_rect": [
             384,
             384,
@@ -1219,6 +1256,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "trot",
           "atlas_rect": [
             480,
             384,
@@ -1251,6 +1289,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "trot",
           "atlas_rect": [
             576,
             384,
@@ -1283,6 +1322,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "trot",
           "atlas_rect": [
             672,
             384,
@@ -1315,6 +1355,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "lasso",
           "atlas_rect": [
             0,
             480,
@@ -1347,6 +1388,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "lasso",
           "atlas_rect": [
             96,
             480,
@@ -1379,6 +1421,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "lasso",
           "atlas_rect": [
             192,
             480,
@@ -1411,6 +1454,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "lasso",
           "atlas_rect": [
             288,
             480,
@@ -1443,6 +1487,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "shoot",
           "atlas_rect": [
             384,
             480,
@@ -1475,6 +1520,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "shoot",
           "atlas_rect": [
             480,
             480,
@@ -1507,6 +1553,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "shoot",
           "atlas_rect": [
             576,
             480,
@@ -1539,6 +1586,7 @@
           "direction": "north",
           "scale": 0.2749445676274945,
           "job": "rider-north",
+          "action": "shoot",
           "atlas_rect": [
             672,
             480,
@@ -1571,6 +1619,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             576,
@@ -1603,6 +1652,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "walk",
           "atlas_rect": [
             96,
             576,
@@ -1635,6 +1685,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "walk",
           "atlas_rect": [
             192,
             576,
@@ -1667,6 +1718,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "walk",
           "atlas_rect": [
             288,
             576,
@@ -1699,6 +1751,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "trot",
           "atlas_rect": [
             384,
             576,
@@ -1731,6 +1784,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "trot",
           "atlas_rect": [
             480,
             576,
@@ -1763,6 +1817,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "trot",
           "atlas_rect": [
             576,
             576,
@@ -1795,6 +1850,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "trot",
           "atlas_rect": [
             672,
             576,
@@ -1827,6 +1883,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "lasso",
           "atlas_rect": [
             0,
             672,
@@ -1859,6 +1916,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "lasso",
           "atlas_rect": [
             96,
             672,
@@ -1891,6 +1949,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "lasso",
           "atlas_rect": [
             192,
             672,
@@ -1923,6 +1982,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "lasso",
           "atlas_rect": [
             288,
             672,
@@ -1955,6 +2015,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "shoot",
           "atlas_rect": [
             384,
             672,
@@ -1987,6 +2048,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "shoot",
           "atlas_rect": [
             480,
             672,
@@ -2019,6 +2081,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "shoot",
           "atlas_rect": [
             576,
             672,
@@ -2051,6 +2114,7 @@
           "direction": "south",
           "scale": 0.23574144486692014,
           "job": "rider-south",
+          "action": "shoot",
           "atlas_rect": [
             672,
             672,
@@ -2062,6 +2126,1062 @@
             93
           ],
           "id": "rider_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            302,
+            322
+          ],
+          "trim": [
+            76,
+            68,
+            239,
+            282
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_064"
+        },
+        {
+          "source_rect": [
+            302,
+            0,
+            600,
+            322
+          ],
+          "trim": [
+            64,
+            72,
+            225,
+            282
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_065"
+        },
+        {
+          "source_rect": [
+            600,
+            0,
+            918,
+            322
+          ],
+          "trim": [
+            74,
+            73,
+            243,
+            282
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_066"
+        },
+        {
+          "source_rect": [
+            918,
+            0,
+            1254,
+            322
+          ],
+          "trim": [
+            77,
+            72,
+            228,
+            282
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_067"
+        },
+        {
+          "source_rect": [
+            0,
+            322,
+            290,
+            596
+          ],
+          "trim": [
+            63,
+            40,
+            226,
+            247
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            384,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_068"
+        },
+        {
+          "source_rect": [
+            290,
+            322,
+            594,
+            596
+          ],
+          "trim": [
+            66,
+            41,
+            228,
+            253
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            480,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_069"
+        },
+        {
+          "source_rect": [
+            594,
+            322,
+            904,
+            596
+          ],
+          "trim": [
+            77,
+            41,
+            240,
+            248
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            576,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_070"
+        },
+        {
+          "source_rect": [
+            904,
+            322,
+            1254,
+            596
+          ],
+          "trim": [
+            71,
+            41,
+            237,
+            248
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            672,
+            768,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_071"
+        },
+        {
+          "source_rect": [
+            0,
+            596,
+            295,
+            928
+          ],
+          "trim": [
+            68,
+            56,
+            229,
+            295
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            0,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_072"
+        },
+        {
+          "source_rect": [
+            295,
+            596,
+            614,
+            928
+          ],
+          "trim": [
+            67,
+            22,
+            266,
+            297
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            96,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_073"
+        },
+        {
+          "source_rect": [
+            614,
+            596,
+            974,
+            928
+          ],
+          "trim": [
+            53,
+            58,
+            344,
+            295
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            192,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_074"
+        },
+        {
+          "source_rect": [
+            974,
+            596,
+            1254,
+            928
+          ],
+          "trim": [
+            16,
+            61,
+            176,
+            298
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            288,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_075"
+        },
+        {
+          "source_rect": [
+            0,
+            928,
+            296,
+            1254
+          ],
+          "trim": [
+            65,
+            35,
+            230,
+            251
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            384,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_076"
+        },
+        {
+          "source_rect": [
+            296,
+            928,
+            616,
+            1254
+          ],
+          "trim": [
+            66,
+            37,
+            261,
+            251
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            480,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_077"
+        },
+        {
+          "source_rect": [
+            616,
+            928,
+            924,
+            1254
+          ],
+          "trim": [
+            59,
+            35,
+            245,
+            251
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            576,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_078"
+        },
+        {
+          "source_rect": [
+            924,
+            928,
+            1254,
+            1254
+          ],
+          "trim": [
+            65,
+            37,
+            224,
+            251
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-northeast-v3.png",
+          "source_sha256": "d4684dfc1e13ff8c08915170eb51bc5e1bc52f590ebbbd9bd67197d6710144a4",
+          "direction": "northeast",
+          "scale": 0.29523809523809524,
+          "job": "rider-northeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            672,
+            864,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            336,
+            335
+          ],
+          "trim": [
+            101,
+            80,
+            260,
+            298
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_080"
+        },
+        {
+          "source_rect": [
+            336,
+            0,
+            638,
+            335
+          ],
+          "trim": [
+            78,
+            80,
+            235,
+            295
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_081"
+        },
+        {
+          "source_rect": [
+            638,
+            0,
+            933,
+            335
+          ],
+          "trim": [
+            67,
+            81,
+            226,
+            297
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_082"
+        },
+        {
+          "source_rect": [
+            933,
+            0,
+            1254,
+            335
+          ],
+          "trim": [
+            70,
+            81,
+            230,
+            298
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_083"
+        },
+        {
+          "source_rect": [
+            0,
+            335,
+            342,
+            613
+          ],
+          "trim": [
+            105,
+            39,
+            266,
+            254
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            384,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_084"
+        },
+        {
+          "source_rect": [
+            342,
+            335,
+            643,
+            613
+          ],
+          "trim": [
+            76,
+            39,
+            239,
+            254
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            480,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_085"
+        },
+        {
+          "source_rect": [
+            643,
+            335,
+            938,
+            613
+          ],
+          "trim": [
+            63,
+            39,
+            236,
+            251
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            576,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_086"
+        },
+        {
+          "source_rect": [
+            938,
+            335,
+            1254,
+            613
+          ],
+          "trim": [
+            61,
+            38,
+            224,
+            251
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            672,
+            960,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_087"
+        },
+        {
+          "source_rect": [
+            0,
+            613,
+            329,
+            923
+          ],
+          "trim": [
+            101,
+            51,
+            255,
+            269
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            0,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_088"
+        },
+        {
+          "source_rect": [
+            329,
+            613,
+            632,
+            923
+          ],
+          "trim": [
+            74,
+            25,
+            235,
+            269
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            96,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_089"
+        },
+        {
+          "source_rect": [
+            632,
+            613,
+            957,
+            923
+          ],
+          "trim": [
+            70,
+            29,
+            282,
+            274
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            192,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_090"
+        },
+        {
+          "source_rect": [
+            957,
+            613,
+            1254,
+            923
+          ],
+          "trim": [
+            44,
+            52,
+            195,
+            269
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            288,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_091"
+        },
+        {
+          "source_rect": [
+            0,
+            923,
+            308,
+            1254
+          ],
+          "trim": [
+            99,
+            45,
+            256,
+            263
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            384,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_092"
+        },
+        {
+          "source_rect": [
+            308,
+            923,
+            630,
+            1254
+          ],
+          "trim": [
+            54,
+            37,
+            253,
+            264
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            480,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_093"
+        },
+        {
+          "source_rect": [
+            630,
+            923,
+            932,
+            1254
+          ],
+          "trim": [
+            70,
+            49,
+            232,
+            266
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            576,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_094"
+        },
+        {
+          "source_rect": [
+            932,
+            923,
+            1254,
+            1254
+          ],
+          "trim": [
+            72,
+            46,
+            229,
+            266
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-northwest-v3.png",
+          "source_sha256": "ed61fae05805ed0f23724177be1e5b9bbe947394b8b230672484563f6fa7daf3",
+          "direction": "northwest",
+          "scale": 0.2863741339491917,
+          "job": "rider-northwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            672,
+            1056,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_095"
         }
       ],
       "clips": {
@@ -2225,6 +3345,86 @@
           "fps": 5,
           "loop": false
         },
+        "idle_northeast": {
+          "frames": [
+            64,
+            65,
+            66,
+            67
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            68,
+            69,
+            70,
+            71
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "lasso_northeast": {
+          "frames": [
+            72,
+            73,
+            74,
+            75
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "shoot_northeast": {
+          "frames": [
+            76,
+            77,
+            78,
+            79
+          ],
+          "fps": 5,
+          "loop": false
+        },
+        "idle_northwest": {
+          "frames": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_northwest": {
+          "frames": [
+            84,
+            85,
+            86,
+            87
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "lasso_northwest": {
+          "frames": [
+            88,
+            89,
+            90,
+            91
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "shoot_northwest": {
+          "frames": [
+            92,
+            93,
+            94,
+            95
+          ],
+          "fps": 5,
+          "loop": false
+        },
         "idle_east": {
           "frames": [
             0
@@ -2255,7 +3455,7 @@
         }
       },
       "status": "extracted_candidate",
-      "count": 64,
+      "count": 96,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -2292,6 +3492,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -2324,6 +3525,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "walk",
           "atlas_rect": [
             72,
             0,
@@ -2356,6 +3558,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "walk",
           "atlas_rect": [
             144,
             0,
@@ -2388,6 +3591,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "walk",
           "atlas_rect": [
             216,
             0,
@@ -2420,6 +3624,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "run",
           "atlas_rect": [
             288,
             0,
@@ -2452,6 +3657,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "run",
           "atlas_rect": [
             360,
             0,
@@ -2484,6 +3690,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "run",
           "atlas_rect": [
             432,
             0,
@@ -2516,6 +3723,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "run",
           "atlas_rect": [
             504,
             0,
@@ -2548,6 +3756,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "graze",
           "atlas_rect": [
             0,
             64,
@@ -2580,6 +3789,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "graze",
           "atlas_rect": [
             72,
             64,
@@ -2612,6 +3822,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "graze",
           "atlas_rect": [
             144,
             64,
@@ -2644,6 +3855,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "graze",
           "atlas_rect": [
             216,
             64,
@@ -2676,6 +3888,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "rest",
           "atlas_rect": [
             288,
             64,
@@ -2708,6 +3921,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "rest",
           "atlas_rect": [
             360,
             64,
@@ -2740,6 +3954,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "rest",
           "atlas_rect": [
             432,
             64,
@@ -2772,6 +3987,7 @@
           "direction": "east",
           "scale": 0.2116991643454039,
           "job": "longhorn-east",
+          "action": "rest",
           "atlas_rect": [
             504,
             64,
@@ -2804,6 +4020,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "walk",
           "atlas_rect": [
             0,
             128,
@@ -2836,6 +4053,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "walk",
           "atlas_rect": [
             72,
             128,
@@ -2868,6 +4086,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "walk",
           "atlas_rect": [
             144,
             128,
@@ -2900,6 +4119,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "walk",
           "atlas_rect": [
             216,
             128,
@@ -2932,6 +4152,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "run",
           "atlas_rect": [
             288,
             128,
@@ -2964,6 +4185,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "run",
           "atlas_rect": [
             360,
             128,
@@ -2996,6 +4218,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "run",
           "atlas_rect": [
             432,
             128,
@@ -3028,6 +4251,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "run",
           "atlas_rect": [
             504,
             128,
@@ -3060,6 +4284,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "graze",
           "atlas_rect": [
             0,
             192,
@@ -3092,6 +4317,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "graze",
           "atlas_rect": [
             72,
             192,
@@ -3124,6 +4350,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "graze",
           "atlas_rect": [
             144,
             192,
@@ -3156,6 +4383,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "graze",
           "atlas_rect": [
             216,
             192,
@@ -3188,6 +4416,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "rest",
           "atlas_rect": [
             288,
             192,
@@ -3220,6 +4449,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "rest",
           "atlas_rect": [
             360,
             192,
@@ -3252,6 +4482,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "rest",
           "atlas_rect": [
             432,
             192,
@@ -3284,6 +4515,7 @@
           "direction": "west",
           "scale": 0.21965317919075145,
           "job": "longhorn-west",
+          "action": "rest",
           "atlas_rect": [
             504,
             192,
@@ -3316,6 +4548,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "walk",
           "atlas_rect": [
             0,
             256,
@@ -3348,6 +4581,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "walk",
           "atlas_rect": [
             72,
             256,
@@ -3380,6 +4614,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "walk",
           "atlas_rect": [
             144,
             256,
@@ -3412,6 +4647,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "walk",
           "atlas_rect": [
             216,
             256,
@@ -3444,6 +4680,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "run",
           "atlas_rect": [
             288,
             256,
@@ -3476,6 +4713,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "run",
           "atlas_rect": [
             360,
             256,
@@ -3508,6 +4746,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "run",
           "atlas_rect": [
             432,
             256,
@@ -3540,6 +4779,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "run",
           "atlas_rect": [
             504,
             256,
@@ -3572,6 +4812,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "graze",
           "atlas_rect": [
             0,
             320,
@@ -3604,6 +4845,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "graze",
           "atlas_rect": [
             72,
             320,
@@ -3636,6 +4878,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "graze",
           "atlas_rect": [
             144,
             320,
@@ -3668,6 +4911,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "graze",
           "atlas_rect": [
             216,
             320,
@@ -3700,6 +4944,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "rest",
           "atlas_rect": [
             288,
             320,
@@ -3732,6 +4977,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "rest",
           "atlas_rect": [
             360,
             320,
@@ -3764,6 +5010,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "rest",
           "atlas_rect": [
             432,
             320,
@@ -3796,6 +5043,7 @@
           "direction": "north",
           "scale": 0.17117117117117117,
           "job": "longhorn-north",
+          "action": "rest",
           "atlas_rect": [
             504,
             320,
@@ -3828,6 +5076,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -3860,6 +5109,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "walk",
           "atlas_rect": [
             72,
             384,
@@ -3892,6 +5142,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "walk",
           "atlas_rect": [
             144,
             384,
@@ -3924,6 +5175,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "walk",
           "atlas_rect": [
             216,
             384,
@@ -3956,6 +5208,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "run",
           "atlas_rect": [
             288,
             384,
@@ -3988,6 +5241,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "run",
           "atlas_rect": [
             360,
             384,
@@ -4020,6 +5274,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "run",
           "atlas_rect": [
             432,
             384,
@@ -4052,6 +5307,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "run",
           "atlas_rect": [
             504,
             384,
@@ -4084,6 +5340,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "graze",
           "atlas_rect": [
             0,
             448,
@@ -4116,6 +5373,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "graze",
           "atlas_rect": [
             72,
             448,
@@ -4148,6 +5406,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "graze",
           "atlas_rect": [
             144,
             448,
@@ -4180,6 +5439,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "graze",
           "atlas_rect": [
             216,
             448,
@@ -4212,6 +5472,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "rest",
           "atlas_rect": [
             288,
             448,
@@ -4244,6 +5505,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "rest",
           "atlas_rect": [
             360,
             448,
@@ -4276,6 +5538,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "rest",
           "atlas_rect": [
             432,
             448,
@@ -4308,6 +5571,7 @@
           "direction": "south",
           "scale": 0.1645021645021645,
           "job": "longhorn-south",
+          "action": "rest",
           "atlas_rect": [
             504,
             448,
@@ -4550,6 +5814,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -4582,6 +5847,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "walk",
           "atlas_rect": [
             72,
             0,
@@ -4614,6 +5880,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "walk",
           "atlas_rect": [
             144,
             0,
@@ -4646,6 +5913,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "walk",
           "atlas_rect": [
             216,
             0,
@@ -4678,6 +5946,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "run",
           "atlas_rect": [
             288,
             0,
@@ -4710,6 +5979,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "run",
           "atlas_rect": [
             360,
             0,
@@ -4742,6 +6012,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "run",
           "atlas_rect": [
             432,
             0,
@@ -4774,6 +6045,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "run",
           "atlas_rect": [
             504,
             0,
@@ -4806,6 +6078,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "graze",
           "atlas_rect": [
             0,
             64,
@@ -4838,6 +6111,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "graze",
           "atlas_rect": [
             72,
             64,
@@ -4870,6 +6144,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "graze",
           "atlas_rect": [
             144,
             64,
@@ -4902,6 +6177,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "graze",
           "atlas_rect": [
             216,
             64,
@@ -4934,6 +6210,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "rest",
           "atlas_rect": [
             288,
             64,
@@ -4966,6 +6243,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "rest",
           "atlas_rect": [
             360,
             64,
@@ -4998,6 +6276,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "rest",
           "atlas_rect": [
             432,
             64,
@@ -5030,6 +6309,7 @@
           "direction": "east",
           "scale": 0.23030303030303031,
           "job": "cream-east",
+          "action": "rest",
           "atlas_rect": [
             504,
             64,
@@ -5062,6 +6342,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "walk",
           "atlas_rect": [
             0,
             128,
@@ -5094,6 +6375,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "walk",
           "atlas_rect": [
             72,
             128,
@@ -5126,6 +6408,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "walk",
           "atlas_rect": [
             144,
             128,
@@ -5158,6 +6441,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "walk",
           "atlas_rect": [
             216,
             128,
@@ -5190,6 +6474,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "run",
           "atlas_rect": [
             288,
             128,
@@ -5222,6 +6507,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "run",
           "atlas_rect": [
             360,
             128,
@@ -5254,6 +6540,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "run",
           "atlas_rect": [
             432,
             128,
@@ -5286,6 +6573,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "run",
           "atlas_rect": [
             504,
             128,
@@ -5318,6 +6606,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "graze",
           "atlas_rect": [
             0,
             192,
@@ -5350,6 +6639,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "graze",
           "atlas_rect": [
             72,
             192,
@@ -5382,6 +6672,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "graze",
           "atlas_rect": [
             144,
             192,
@@ -5414,6 +6705,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "graze",
           "atlas_rect": [
             216,
             192,
@@ -5446,6 +6738,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "rest",
           "atlas_rect": [
             288,
             192,
@@ -5478,6 +6771,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "rest",
           "atlas_rect": [
             360,
             192,
@@ -5510,6 +6804,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "rest",
           "atlas_rect": [
             432,
             192,
@@ -5542,6 +6837,7 @@
           "direction": "west",
           "scale": 0.2389937106918239,
           "job": "cream-west",
+          "action": "rest",
           "atlas_rect": [
             504,
             192,
@@ -5574,6 +6870,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "walk",
           "atlas_rect": [
             0,
             256,
@@ -5606,6 +6903,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "walk",
           "atlas_rect": [
             72,
             256,
@@ -5638,6 +6936,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "walk",
           "atlas_rect": [
             144,
             256,
@@ -5670,6 +6969,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "walk",
           "atlas_rect": [
             216,
             256,
@@ -5702,6 +7002,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "run",
           "atlas_rect": [
             288,
             256,
@@ -5734,6 +7035,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "run",
           "atlas_rect": [
             360,
             256,
@@ -5766,6 +7068,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "run",
           "atlas_rect": [
             432,
             256,
@@ -5798,6 +7101,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "run",
           "atlas_rect": [
             504,
             256,
@@ -5830,6 +7134,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "graze",
           "atlas_rect": [
             0,
             320,
@@ -5862,6 +7167,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "graze",
           "atlas_rect": [
             72,
             320,
@@ -5894,6 +7200,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "graze",
           "atlas_rect": [
             144,
             320,
@@ -5926,6 +7233,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "graze",
           "atlas_rect": [
             216,
             320,
@@ -5958,6 +7266,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "rest",
           "atlas_rect": [
             288,
             320,
@@ -5990,6 +7299,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "rest",
           "atlas_rect": [
             360,
             320,
@@ -6022,6 +7332,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "rest",
           "atlas_rect": [
             432,
             320,
@@ -6054,6 +7365,7 @@
           "direction": "north",
           "scale": 0.168141592920354,
           "job": "cream-north",
+          "action": "rest",
           "atlas_rect": [
             504,
             320,
@@ -6086,6 +7398,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -6118,6 +7431,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "walk",
           "atlas_rect": [
             72,
             384,
@@ -6150,6 +7464,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "walk",
           "atlas_rect": [
             144,
             384,
@@ -6182,6 +7497,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "walk",
           "atlas_rect": [
             216,
             384,
@@ -6214,6 +7530,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "run",
           "atlas_rect": [
             288,
             384,
@@ -6246,6 +7563,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "run",
           "atlas_rect": [
             360,
             384,
@@ -6278,6 +7596,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "run",
           "atlas_rect": [
             432,
             384,
@@ -6310,6 +7629,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "run",
           "atlas_rect": [
             504,
             384,
@@ -6342,6 +7662,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "graze",
           "atlas_rect": [
             0,
             448,
@@ -6374,6 +7695,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "graze",
           "atlas_rect": [
             72,
             448,
@@ -6406,6 +7728,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "graze",
           "atlas_rect": [
             144,
             448,
@@ -6438,6 +7761,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "graze",
           "atlas_rect": [
             216,
             448,
@@ -6470,6 +7794,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "rest",
           "atlas_rect": [
             288,
             448,
@@ -6502,6 +7827,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "rest",
           "atlas_rect": [
             360,
             448,
@@ -6534,6 +7860,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "rest",
           "atlas_rect": [
             432,
             448,
@@ -6566,6 +7893,7 @@
           "direction": "south",
           "scale": 0.1589958158995816,
           "job": "cream-south",
+          "action": "rest",
           "atlas_rect": [
             504,
             448,
@@ -6808,6 +8136,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -6840,6 +8169,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "walk",
           "atlas_rect": [
             72,
             0,
@@ -6872,6 +8202,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "walk",
           "atlas_rect": [
             144,
             0,
@@ -6904,6 +8235,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "walk",
           "atlas_rect": [
             216,
             0,
@@ -6936,6 +8268,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "run",
           "atlas_rect": [
             288,
             0,
@@ -6968,6 +8301,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "run",
           "atlas_rect": [
             360,
             0,
@@ -7000,6 +8334,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "run",
           "atlas_rect": [
             432,
             0,
@@ -7032,6 +8367,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "run",
           "atlas_rect": [
             504,
             0,
@@ -7064,6 +8400,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "graze",
           "atlas_rect": [
             0,
             64,
@@ -7096,6 +8433,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "graze",
           "atlas_rect": [
             72,
             64,
@@ -7128,6 +8466,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "graze",
           "atlas_rect": [
             144,
             64,
@@ -7160,6 +8499,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "graze",
           "atlas_rect": [
             216,
             64,
@@ -7192,6 +8532,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "rest",
           "atlas_rect": [
             288,
             64,
@@ -7224,6 +8565,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "rest",
           "atlas_rect": [
             360,
             64,
@@ -7256,6 +8598,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "rest",
           "atlas_rect": [
             432,
             64,
@@ -7288,6 +8631,7 @@
           "direction": "east",
           "scale": 0.22822822822822822,
           "job": "spotted-east",
+          "action": "rest",
           "atlas_rect": [
             504,
             64,
@@ -7320,6 +8664,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "walk",
           "atlas_rect": [
             0,
             128,
@@ -7352,6 +8697,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "walk",
           "atlas_rect": [
             72,
             128,
@@ -7384,6 +8730,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "walk",
           "atlas_rect": [
             144,
             128,
@@ -7416,6 +8763,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "walk",
           "atlas_rect": [
             216,
             128,
@@ -7448,6 +8796,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "run",
           "atlas_rect": [
             288,
             128,
@@ -7480,6 +8829,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "run",
           "atlas_rect": [
             360,
             128,
@@ -7512,6 +8862,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "run",
           "atlas_rect": [
             432,
             128,
@@ -7544,6 +8895,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "run",
           "atlas_rect": [
             504,
             128,
@@ -7576,6 +8928,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "graze",
           "atlas_rect": [
             0,
             192,
@@ -7608,6 +8961,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "graze",
           "atlas_rect": [
             72,
             192,
@@ -7640,6 +8994,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "graze",
           "atlas_rect": [
             144,
             192,
@@ -7672,6 +9027,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "graze",
           "atlas_rect": [
             216,
             192,
@@ -7704,6 +9060,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "rest",
           "atlas_rect": [
             288,
             192,
@@ -7736,6 +9093,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "rest",
           "atlas_rect": [
             360,
             192,
@@ -7768,6 +9126,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "rest",
           "atlas_rect": [
             432,
             192,
@@ -7800,6 +9159,7 @@
           "direction": "west",
           "scale": 0.22686567164179106,
           "job": "spotted-west",
+          "action": "rest",
           "atlas_rect": [
             504,
             192,
@@ -7832,6 +9192,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "walk",
           "atlas_rect": [
             0,
             256,
@@ -7864,6 +9225,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "walk",
           "atlas_rect": [
             72,
             256,
@@ -7896,6 +9258,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "walk",
           "atlas_rect": [
             144,
             256,
@@ -7928,6 +9291,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "walk",
           "atlas_rect": [
             216,
             256,
@@ -7960,6 +9324,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "run",
           "atlas_rect": [
             288,
             256,
@@ -7992,6 +9357,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "run",
           "atlas_rect": [
             360,
             256,
@@ -8024,6 +9390,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "run",
           "atlas_rect": [
             432,
             256,
@@ -8056,6 +9423,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "run",
           "atlas_rect": [
             504,
             256,
@@ -8088,6 +9456,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "graze",
           "atlas_rect": [
             0,
             320,
@@ -8120,6 +9489,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "graze",
           "atlas_rect": [
             72,
             320,
@@ -8152,6 +9522,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "graze",
           "atlas_rect": [
             144,
             320,
@@ -8184,6 +9555,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "graze",
           "atlas_rect": [
             216,
             320,
@@ -8216,6 +9588,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "rest",
           "atlas_rect": [
             288,
             320,
@@ -8248,6 +9621,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "rest",
           "atlas_rect": [
             360,
             320,
@@ -8280,6 +9654,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "rest",
           "atlas_rect": [
             432,
             320,
@@ -8312,6 +9687,7 @@
           "direction": "north",
           "scale": 0.15510204081632653,
           "job": "spotted-north",
+          "action": "rest",
           "atlas_rect": [
             504,
             320,
@@ -8344,6 +9720,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -8376,6 +9753,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "walk",
           "atlas_rect": [
             72,
             384,
@@ -8408,6 +9786,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "walk",
           "atlas_rect": [
             144,
             384,
@@ -8440,6 +9819,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "walk",
           "atlas_rect": [
             216,
             384,
@@ -8472,6 +9852,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "run",
           "atlas_rect": [
             288,
             384,
@@ -8504,6 +9885,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "run",
           "atlas_rect": [
             360,
             384,
@@ -8536,6 +9918,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "run",
           "atlas_rect": [
             432,
             384,
@@ -8568,6 +9951,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "run",
           "atlas_rect": [
             504,
             384,
@@ -8600,6 +9984,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "graze",
           "atlas_rect": [
             0,
             448,
@@ -8632,6 +10017,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "graze",
           "atlas_rect": [
             72,
             448,
@@ -8664,6 +10050,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "graze",
           "atlas_rect": [
             144,
             448,
@@ -8696,6 +10083,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "graze",
           "atlas_rect": [
             216,
             448,
@@ -8728,6 +10116,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "rest",
           "atlas_rect": [
             288,
             448,
@@ -8760,6 +10149,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "rest",
           "atlas_rect": [
             360,
             448,
@@ -8792,6 +10182,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "rest",
           "atlas_rect": [
             432,
             448,
@@ -8824,6 +10215,7 @@
           "direction": "south",
           "scale": 0.14990138067061143,
           "job": "spotted-south",
+          "action": "rest",
           "atlas_rect": [
             504,
             448,
@@ -9066,6 +10458,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -9098,6 +10491,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "walk",
           "atlas_rect": [
             64,
             0,
@@ -9130,6 +10524,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "walk",
           "atlas_rect": [
             128,
             0,
@@ -9162,6 +10557,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "walk",
           "atlas_rect": [
             192,
             0,
@@ -9194,6 +10590,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "run",
           "atlas_rect": [
             256,
             0,
@@ -9226,6 +10623,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "run",
           "atlas_rect": [
             320,
             0,
@@ -9258,6 +10656,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "run",
           "atlas_rect": [
             384,
             0,
@@ -9290,6 +10689,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "run",
           "atlas_rect": [
             448,
             0,
@@ -9322,6 +10722,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "shoot",
           "atlas_rect": [
             0,
             64,
@@ -9354,6 +10755,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "shoot",
           "atlas_rect": [
             64,
             64,
@@ -9386,6 +10788,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "shoot",
           "atlas_rect": [
             128,
             64,
@@ -9418,6 +10821,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "shoot",
           "atlas_rect": [
             192,
             64,
@@ -9450,6 +10854,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "react",
           "atlas_rect": [
             256,
             64,
@@ -9482,6 +10887,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "react",
           "atlas_rect": [
             320,
             64,
@@ -9514,6 +10920,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "react",
           "atlas_rect": [
             384,
             64,
@@ -9546,6 +10953,7 @@
           "direction": "east",
           "scale": 0.17429193899782136,
           "job": "rustler-east",
+          "action": "react",
           "atlas_rect": [
             448,
             64,
@@ -9578,6 +10986,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             128,
@@ -9610,6 +11019,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "walk",
           "atlas_rect": [
             64,
             128,
@@ -9642,6 +11052,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "walk",
           "atlas_rect": [
             128,
             128,
@@ -9674,6 +11085,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "walk",
           "atlas_rect": [
             192,
             128,
@@ -9706,6 +11118,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "run",
           "atlas_rect": [
             256,
             128,
@@ -9738,6 +11151,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "run",
           "atlas_rect": [
             320,
             128,
@@ -9770,6 +11184,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "run",
           "atlas_rect": [
             384,
             128,
@@ -9802,6 +11217,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "run",
           "atlas_rect": [
             448,
             128,
@@ -9834,6 +11250,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "shoot",
           "atlas_rect": [
             0,
             192,
@@ -9866,6 +11283,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "shoot",
           "atlas_rect": [
             64,
             192,
@@ -9898,6 +11316,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "shoot",
           "atlas_rect": [
             128,
             192,
@@ -9930,6 +11349,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "shoot",
           "atlas_rect": [
             192,
             192,
@@ -9962,6 +11382,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "react",
           "atlas_rect": [
             256,
             192,
@@ -9994,6 +11415,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "react",
           "atlas_rect": [
             320,
             192,
@@ -10026,6 +11448,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "react",
           "atlas_rect": [
             384,
             192,
@@ -10058,6 +11481,7 @@
           "direction": "south",
           "scale": 0.18779342723004694,
           "job": "rustler-south",
+          "action": "react",
           "atlas_rect": [
             448,
             192,
@@ -10090,6 +11514,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "walk",
           "atlas_rect": [
             0,
             256,
@@ -10122,6 +11547,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "walk",
           "atlas_rect": [
             64,
             256,
@@ -10154,6 +11580,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "walk",
           "atlas_rect": [
             128,
             256,
@@ -10186,6 +11613,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "walk",
           "atlas_rect": [
             192,
             256,
@@ -10218,6 +11646,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "run",
           "atlas_rect": [
             256,
             256,
@@ -10250,6 +11679,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "run",
           "atlas_rect": [
             320,
             256,
@@ -10282,6 +11712,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "run",
           "atlas_rect": [
             384,
             256,
@@ -10314,6 +11745,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "run",
           "atlas_rect": [
             448,
             256,
@@ -10346,6 +11778,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "shoot",
           "atlas_rect": [
             0,
             320,
@@ -10378,6 +11811,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "shoot",
           "atlas_rect": [
             64,
             320,
@@ -10410,6 +11844,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "shoot",
           "atlas_rect": [
             128,
             320,
@@ -10442,6 +11877,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "shoot",
           "atlas_rect": [
             192,
             320,
@@ -10474,6 +11910,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "react",
           "atlas_rect": [
             256,
             320,
@@ -10506,6 +11943,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "react",
           "atlas_rect": [
             320,
             320,
@@ -10538,6 +11976,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "react",
           "atlas_rect": [
             384,
             320,
@@ -10570,6 +12009,7 @@
           "direction": "west",
           "scale": 0.1694915254237288,
           "job": "rustler-west-v2",
+          "action": "react",
           "atlas_rect": [
             448,
             320,
@@ -10602,6 +12042,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -10634,6 +12075,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "walk",
           "atlas_rect": [
             64,
             384,
@@ -10666,6 +12108,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "walk",
           "atlas_rect": [
             128,
             384,
@@ -10698,6 +12141,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "walk",
           "atlas_rect": [
             192,
             384,
@@ -10730,6 +12174,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "run",
           "atlas_rect": [
             256,
             384,
@@ -10762,6 +12207,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "run",
           "atlas_rect": [
             320,
             384,
@@ -10794,6 +12240,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "run",
           "atlas_rect": [
             384,
             384,
@@ -10826,6 +12273,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "run",
           "atlas_rect": [
             448,
             384,
@@ -10858,6 +12306,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "shoot",
           "atlas_rect": [
             0,
             448,
@@ -10890,6 +12339,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "shoot",
           "atlas_rect": [
             64,
             448,
@@ -10922,6 +12372,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "shoot",
           "atlas_rect": [
             128,
             448,
@@ -10954,6 +12405,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "shoot",
           "atlas_rect": [
             192,
             448,
@@ -10986,6 +12438,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "react",
           "atlas_rect": [
             256,
             448,
@@ -11018,6 +12471,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "react",
           "atlas_rect": [
             320,
             448,
@@ -11050,6 +12504,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "react",
           "atlas_rect": [
             384,
             448,
@@ -11082,6 +12537,7 @@
           "direction": "north",
           "scale": 0.1724137931034483,
           "job": "rustler-north-v2",
+          "action": "react",
           "atlas_rect": [
             448,
             448,
@@ -11323,6 +12779,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "walk",
           "atlas_rect": [
             0,
             0,
@@ -11355,6 +12812,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "walk",
           "atlas_rect": [
             64,
             0,
@@ -11387,6 +12845,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "walk",
           "atlas_rect": [
             128,
             0,
@@ -11419,6 +12878,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "walk",
           "atlas_rect": [
             192,
             0,
@@ -11451,6 +12911,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "talk",
           "atlas_rect": [
             256,
             0,
@@ -11483,6 +12944,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "talk",
           "atlas_rect": [
             320,
             0,
@@ -11515,6 +12977,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "talk",
           "atlas_rect": [
             384,
             0,
@@ -11547,6 +13010,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "talk",
           "atlas_rect": [
             448,
             0,
@@ -11579,6 +13043,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "medical",
           "atlas_rect": [
             0,
             64,
@@ -11611,6 +13076,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "medical",
           "atlas_rect": [
             64,
             64,
@@ -11643,6 +13109,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "medical",
           "atlas_rect": [
             128,
             64,
@@ -11675,6 +13142,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "medical",
           "atlas_rect": [
             192,
             64,
@@ -11707,6 +13175,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "camp",
           "atlas_rect": [
             256,
             64,
@@ -11739,6 +13208,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "camp",
           "atlas_rect": [
             320,
             64,
@@ -11771,6 +13241,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "camp",
           "atlas_rect": [
             384,
             64,
@@ -11803,6 +13274,7 @@
           "direction": "east",
           "scale": 0.16632016632016633,
           "job": "eleanor-east",
+          "action": "camp",
           "atlas_rect": [
             448,
             64,
@@ -11835,6 +13307,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "walk",
           "atlas_rect": [
             0,
             128,
@@ -11867,6 +13340,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "walk",
           "atlas_rect": [
             64,
             128,
@@ -11899,6 +13373,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "walk",
           "atlas_rect": [
             128,
             128,
@@ -11931,6 +13406,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "walk",
           "atlas_rect": [
             192,
             128,
@@ -11963,6 +13439,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "talk",
           "atlas_rect": [
             256,
             128,
@@ -11995,6 +13472,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "talk",
           "atlas_rect": [
             320,
             128,
@@ -12027,6 +13505,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "talk",
           "atlas_rect": [
             384,
             128,
@@ -12059,6 +13538,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "talk",
           "atlas_rect": [
             448,
             128,
@@ -12091,6 +13571,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "medical",
           "atlas_rect": [
             0,
             192,
@@ -12123,6 +13604,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "medical",
           "atlas_rect": [
             64,
             192,
@@ -12155,6 +13637,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "medical",
           "atlas_rect": [
             128,
             192,
@@ -12187,6 +13670,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "medical",
           "atlas_rect": [
             192,
             192,
@@ -12219,6 +13703,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "camp",
           "atlas_rect": [
             256,
             192,
@@ -12251,6 +13736,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "camp",
           "atlas_rect": [
             320,
             192,
@@ -12283,6 +13769,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "camp",
           "atlas_rect": [
             384,
             192,
@@ -12315,6 +13802,7 @@
           "direction": "north",
           "scale": 0.16161616161616163,
           "job": "eleanor-north",
+          "action": "camp",
           "atlas_rect": [
             448,
             192,
@@ -12347,6 +13835,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "walk",
           "atlas_rect": [
             0,
             256,
@@ -12379,6 +13868,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "walk",
           "atlas_rect": [
             64,
             256,
@@ -12411,6 +13901,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "walk",
           "atlas_rect": [
             128,
             256,
@@ -12443,6 +13934,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "walk",
           "atlas_rect": [
             192,
             256,
@@ -12475,6 +13967,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "talk",
           "atlas_rect": [
             256,
             256,
@@ -12507,6 +14000,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "talk",
           "atlas_rect": [
             320,
             256,
@@ -12539,6 +14033,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "talk",
           "atlas_rect": [
             384,
             256,
@@ -12571,6 +14066,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "talk",
           "atlas_rect": [
             448,
             256,
@@ -12603,6 +14099,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "medical",
           "atlas_rect": [
             0,
             320,
@@ -12635,6 +14132,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "medical",
           "atlas_rect": [
             64,
             320,
@@ -12667,6 +14165,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "medical",
           "atlas_rect": [
             128,
             320,
@@ -12699,6 +14198,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "medical",
           "atlas_rect": [
             192,
             320,
@@ -12731,6 +14231,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "camp",
           "atlas_rect": [
             256,
             320,
@@ -12763,6 +14264,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "camp",
           "atlas_rect": [
             320,
             320,
@@ -12795,6 +14297,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "camp",
           "atlas_rect": [
             384,
             320,
@@ -12827,6 +14330,7 @@
           "direction": "south",
           "scale": 0.16227180527383367,
           "job": "eleanor-south",
+          "action": "camp",
           "atlas_rect": [
             448,
             320,
@@ -12859,6 +14363,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "walk",
           "atlas_rect": [
             0,
             384,
@@ -12891,6 +14396,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "walk",
           "atlas_rect": [
             64,
             384,
@@ -12923,6 +14429,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "walk",
           "atlas_rect": [
             128,
             384,
@@ -12955,6 +14462,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "walk",
           "atlas_rect": [
             192,
             384,
@@ -12987,6 +14495,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "talk",
           "atlas_rect": [
             256,
             384,
@@ -13019,6 +14528,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "talk",
           "atlas_rect": [
             320,
             384,
@@ -13051,6 +14561,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "talk",
           "atlas_rect": [
             384,
             384,
@@ -13083,6 +14594,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "talk",
           "atlas_rect": [
             448,
             384,
@@ -13115,6 +14627,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "medical",
           "atlas_rect": [
             0,
             448,
@@ -13147,6 +14660,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "medical",
           "atlas_rect": [
             64,
             448,
@@ -13179,6 +14693,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "medical",
           "atlas_rect": [
             128,
             448,
@@ -13211,6 +14726,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "medical",
           "atlas_rect": [
             192,
             448,
@@ -13243,6 +14759,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "camp",
           "atlas_rect": [
             256,
             448,
@@ -13275,6 +14792,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "camp",
           "atlas_rect": [
             320,
             448,
@@ -13307,6 +14825,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "camp",
           "atlas_rect": [
             384,
             448,
@@ -13339,6 +14858,7 @@
           "direction": "west",
           "scale": 0.1724137931034483,
           "job": "eleanor-west",
+          "action": "camp",
           "atlas_rect": [
             448,
             448,
@@ -18105,5 +19625,5 @@
       "reason": "Wrong facing; replaced by v2. Preserved, excluded from count."
     }
   ],
-  "total_extracted": 496
+  "total_extracted": 528
 }

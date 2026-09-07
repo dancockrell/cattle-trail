@@ -24,7 +24,7 @@ No geometric actor stand-ins are used. The original wagon and wood/paper interfa
 
 ## Reusable method
 
-The expanded library contains 496 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 131 selected actor frames and 30 scenery variants in 40 placements. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
+The expanded library currently contains 528 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 162 selected actor frames and 30 scenery variants in 40 placements, including new northeast/northwest rider poses and measured action anchors. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
 
 See `METHOD.md` for the agent-authored conversion method for other games: approved visual reference → preserved sources → reproducible sprite extraction → exact metadata → one playable Godot room → actual visual and interaction verification → acceptance before expansion.
 
