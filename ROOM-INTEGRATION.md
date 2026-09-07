@@ -1,6 +1,6 @@
 # Clear Fork room integration — 2026-09-08
 
-The default room uses 322 distinct actor frames, including the recovered original wagon, and 30 scenery variants in 40 placements. The source library contains 936 extracted candidate cells across 13 families. These are separate counts; extraction is not animation acceptance. Press K for the candidate browser. Original comparison art remains available with --original.
+The default room uses 326 distinct actor frames, including the recovered original wagon, and 30 scenery variants in 40 placements. The source library contains 936 extracted candidate cells across 13 families. These are separate counts; extraction is not animation acceptance. Press K for the candidate browser. Original comparison art remains available with --original.
 
 assets/room-art.json is the selected runtime authority. tools/curate_room.py builds it from kits/manifest.json, original wagon metadata, measured rider anchors and assets/sequence-curation.json. Exact source hashes, crop rectangles, frame regions, clip orders, timings and sockets remain traceable.
 
@@ -42,3 +42,11 @@ Finish physical walk sequencing, inspect close-range leading/overlap in actual m
 The catch now tightens a directional neck wrap rather than drawing a complete ellipse over the animal. Its far arc renders behind the actual cattle sprite; its near arc joins the lead at the closest side. Northeast attachment moved from jaw-side [47,36] to neck [44,38]. Eight-direction catch review and full gameplay QA pass; visual review remains distinct. rope-wrap-review.mp4 records the current wrap construction and adjusted socket.
 
 The latest 40 candidates add 16 longhorn states, 16 grass/plant clusters and 8 whole rider walk poses. Longhorn bottom rows actually face SE/SW and are catalogued accordingly. The room uses the new grass clusters; the state and walk candidates are available in the kit browser.
+
+## Action-time comments and character reactions
+
+Four once-per-room speech beats now appear during existing actions: Eleanor introduction, first cattle catch, rustler retreat and completion. One warm speech panel follows its speaker, with bounded placement, text-based duration and priority; no modal dialogue pause. Narrow layout places a low-speaker bubble over the lower verge and allocates separate space for journal/objective text. Core instructions remain in the journal.
+
+Eleanor holds the existing bag-free frame4 between comments. The northwest mounted greeting uses source frames221→229→221 for0.8 seconds. Rustler clearance holds actual southwest recoil79 and surrender75 for0.85 seconds, then starts the existing eastward escape. Character-owned selection records are in assets/curation/. The actor API accepts an explicit clip name so a southwest reaction works with the rustler's existing four-direction locomotion. These held poses do not certify a new walk cycle.
+
+speech-room.png, speech-phone.png and reaction-room.png are engine captures. The dedicated review verifies desktop/phone bounds, continued movement and reaction-before-flee behavior; full room QA also passes.

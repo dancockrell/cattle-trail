@@ -1,6 +1,7 @@
 extends Control
 
 const Actor = preload("res://scripts/actor.gd")
+const SpeechBubble = preload("res://scripts/speech_bubble.gd")
 const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
@@ -50,6 +51,8 @@ var scenery: Node2D
 var solid_scenery: Array = []
 var sequence_walking := false
 var stride_subjects: Array[Node2D] = []
+var speech: Control
+var spoken_beats := {}
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -114,6 +117,8 @@ func _ready() -> void:
 	view.gui_input.connect(world_input)
 	add_child(view)
 	build_ui()
+	speech = SpeechBubble.new()
+	add_child(speech)
 	resized.connect(layout_ui)
 	layout_ui()
 	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args() or "--sequence-review" in OS.get_cmdline_user_args() or "--stride-compare" in OS.get_cmdline_user_args()
@@ -142,6 +147,10 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_movement_batch.call_deferred()
+	if "--speech-review" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_speech_review.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -149,6 +158,13 @@ func spawn(id: String, at: Vector2) -> Node2D:
 	actor.position = at
 	actors.add_child(actor)
 	return actor
+
+func _process(delta: float) -> void:
+	if is_instance_valid(speech): speech.tick(delta,view)
+
+func say_once(beat: String, actor: Node2D, name_text: String, line: String, importance := 0) -> void:
+	if spoken_beats.has(beat): return
+	if speech.say(actor,name_text,line,62 if actor==player else 42,importance): spoken_beats[beat] = true
 
 func place_scenery() -> void:
 	for entry in manifest.get("scenery", []):
@@ -239,14 +255,14 @@ func layout_ui() -> void:
 	stats.position = Vector2(left, 46)
 	stats.add_theme_font_size_override("font_size", 14 if size.x < 600 else 17)
 	paper.position = Vector2(left, view.position.y + view.size.y + 8)
-	paper.size = Vector2(width, 112)
+	paper.size = Vector2(width, 154 if size.x<600 else 112)
 	objective.position = Vector2(14, 10)
-	objective.size = Vector2(width - 28, 44)
-	journal.position = Vector2(14, 53)
-	journal.size = Vector2(width - 28, 57)
+	objective.size = Vector2(width - 28, 64 if size.x<600 else 44)
+	journal.position = Vector2(14, 78 if size.x<600 else 53)
+	journal.size = Vector2(width - 28, 68 if size.x<600 else 57)
 	journal.add_theme_font_size_override("font_size", 14 if size.x < 600 else 16)
 	objective.add_theme_font_size_override("font_size", 16 if size.x < 600 else 18)
-	buttons.position = Vector2(left, paper.position.y + 121)
+	buttons.position = Vector2(left, paper.position.y + paper.size.y + 9)
 	buttons.columns = 2 if size.x < 600 else 4
 	buttons.size = Vector2(width, 98 if size.x < 600 else 46)
 	for button in buttons.get_children():
@@ -344,7 +360,7 @@ func _physics_process(delta: float) -> void:
 	update_rope(delta)
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()
-	if escaped:
+	if escaped and rustler.action_time<=0:
 		rustler.position.x += 105 * delta
 		rustler.pose(true, Vector2.RIGHT, 105.0)
 		if rustler.position.x > 670:
@@ -354,6 +370,7 @@ func _physics_process(delta: float) -> void:
 		won = true
 		cash += 60
 		message = "Eleanor: All six accounted for. Clear Fork is behind us. +$60"
+		say_once("room_complete",player,"TRAIL BOSS","Six cattle. One very long afternoon.",2)
 	refresh()
 	if qa_mode and not qa_done and elapsed > 0.3:
 		qa_done = true
@@ -388,8 +405,11 @@ func secured_count() -> int:
 
 func interact() -> void:
 	if player.position.distance_to(eleanor.position) < 65:
+		if not talked and player.action_time<=0 and rope_time<=0:
+			player.action("greeting",eleanor.position-player.position)
 		talked = true
 		eleanor.action("talk", Vector2.RIGHT)
+		say_once("eleanor_intro",eleanor,"ELEANOR","Spirits spooked them. Cattle never miss an excuse.",2)
 		message = "Eleanor: Spirits spooked the herd. Push from behind; rope strays. Clear that rustler first."
 	else:
 		message = "Ride near Eleanor by the wagon, then Talk. Click or tap the ground to ride."
@@ -474,6 +494,7 @@ func catch_rope(caught: Node2D) -> void:
 		rope_target = caught
 		rope_time = 7.0
 		message = "Roped! Ride east. The steer follows for seven seconds."
+		say_once("first_catch",player,"TRAIL BOSS","That's one opinionated steer.")
 	refresh()
 
 func update_rope(delta: float) -> void:
@@ -526,6 +547,8 @@ func append_rope_loop(points: PackedVector2Array, center: Vector2, radius: Vecto
 		points.append((center+Vector2(cos(angle)*radius.x,sin(angle)*radius.y)).round())
 
 func clear_rustler(text: String) -> void:
+	say_once("rustler_retreat",rustler,"RUSTLER","All right! Keep your cattle!",1)
+	rustler.action("yield_southwest",Vector2(-1,1))
 	rustler_active = false
 	escaped = true
 	cash += 18
@@ -603,6 +626,35 @@ func run_movement_batch() -> void:
 	journal.text = "Whole-sprite movement candidates at native room scale."
 	await get_tree().create_timer(5.0).timeout
 	print("MOVEMENT BATCH: three new character sequences rendered at native room scale")
+	get_tree().quit()
+
+func run_speech_review() -> void:
+	player.position = Vector2(181,152)
+	interact()
+	await get_tree().create_timer(0.35).timeout
+	assert(speech.visible,"Action comment must be visible")
+	assert(view.get_rect().encloses(speech.get_rect()),"Desktop bubble stays within the world")
+	get_viewport().get_texture().get_image().save_png("res://speech-room.png")
+	get_window().size = Vector2i(390,844)
+	await get_tree().create_timer(0.35).timeout
+	assert(view.get_rect().encloses(speech.get_rect()),"Phone bubble stays within the world")
+	get_viewport().get_texture().get_image().save_png("res://speech-phone.png")
+	var before: Vector2 = player.position
+	target = player.position+Vector2(30,0)
+	await get_tree().create_timer(0.2).timeout
+	assert(player.position.distance_to(before)>5,"Speech must not stop movement")
+	get_window().size = Vector2i(1280,1000)
+	speech.remaining = 0
+	player.position = Vector2(490,190)
+	target = Vector2.INF
+	await get_tree().create_timer(0.3).timeout
+	shoot()
+	await get_tree().create_timer(0.5).timeout
+	shoot()
+	await get_tree().create_timer(0.3).timeout
+	assert(not rustler_active and rustler.action_time>0,"Rustler must react before fleeing")
+	get_viewport().get_texture().get_image().save_png("res://reaction-room.png")
+	print("SPEECH REVIEW PASS: desktop and phone bounds, actor attachment, movement continues")
 	get_tree().quit()
 
 func run_sequence_review() -> void:

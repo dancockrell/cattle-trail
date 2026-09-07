@@ -6,7 +6,7 @@ Goal remains active. The user explicitly rejected the lasso quality and animatio
 
 Recovered approved sprites, style images and concept video are preserved. Real sprites, fixed high-three-quarter staging, hard pixel rendering and the complete room objective are implemented. Warm ground-v3 and simpler trees-v2 now match the reference texture density more closely.
 
-The library has 936 extracted candidates. The room selects 322 actor frames and 30 scenery variants. Neither count proves a coherent cycle.
+The library has 936 extracted candidates. The room selects 326 actor frames and 30 scenery variants. Neither count proves a coherent cycle.
 
 Rendered gameplay and a fresh continuous scripted run pass the objective. All eight cast directions now have clean-hand lasso poses, declared per-frame durations, hand/neck sockets and one engine rope through wind, cast, flight, catch and lead. An independent visual review found this a substantial improvement. The full room also passed with a wider, eased following distance.
 

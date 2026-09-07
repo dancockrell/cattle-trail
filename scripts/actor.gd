@@ -116,6 +116,7 @@ func direction_name(direction: Vector2) -> String:
 
 func action(name: String, direction := Vector2.RIGHT) -> void:
 	var clip := name + "_" + direction_name(direction) if directional else name
+	if art.sprite_frames.has_animation(name): clip = name
 	if not art.sprite_frames.has_animation(clip): return
 	facing = direction_name(direction)
 	art.speed_scale = 1.0

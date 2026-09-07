@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "character": "eleanor",
+  "status": "selected_existing_room_gestures_for_integration",
+  "runtime_authority": "assets/room-art.json",
+  "texture": "res://kits/atlases/eleanor.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "selection_basis": "Compared original assets/eleanor.png, current room frames and gesture-v2/social-v3 at native atlas size. Retain the two existing room talk poses for identity continuity. New social poses have a broader head/shorter adult silhouette relative to the original and are not selected.",
+  "reactions": [
+    {
+      "id": "attentive_comment",
+      "source_clip": "talk_east",
+      "atlas_frame_indices": [
+        4
+      ],
+      "atlas_rects": [
+        [
+          256,
+          0,
+          64,
+          64
+        ]
+      ],
+      "source": "kits/source/eleanor-east.png",
+      "source_row": 1,
+      "source_column": 0,
+      "actual_facing": "east / front-right shallow three-quarter",
+      "duration_ms": 1000,
+      "loop": false,
+      "identity_rationale": "Already selected by the room talk clip; preserves its slim adult silhouette, face, cream blouse, brown vest, blue skirt and planted stance. Small hand-near-face gesture is readable beneath a short speech bubble."
+    },
+    {
+      "id": "explain_trail",
+      "source_clip": "talk_east",
+      "atlas_frame_indices": [
+        5
+      ],
+      "atlas_rects": [
+        [
+          320,
+          0,
+          64,
+          64
+        ]
+      ],
+      "source": "kits/source/eleanor-east.png",
+      "source_row": 1,
+      "source_column": 1,
+      "actual_facing": "east / front-right shallow three-quarter",
+      "duration_ms": 1400,
+      "loop": false,
+      "identity_rationale": "Same existing sheet, camera and standing proportions as frame4; open hand supports a brief observation or instruction without introducing a newly proportioned character."
+    }
+  ],
+  "playback_contract": {
+    "kind": "static_whole_sprite_states",
+    "timing_status": "provisional_readability_timing",
+    "on_complete": "Return to the same bag-free standing frame4 when holding a conversation; preserve normal room behavior otherwise.",
+    "no_automatic_cycle": true,
+    "attachment_note": "Selected frames4/5 have no medical bag; current idle_east frame0 does. Do not alternate idle0 and gestures repeatedly during a speech bubble because the bag would pop in/out.",
+    "camera_limit": "These retain the existing room camera; they do not claim corrected high-oblique NE/NW/SE/SW coverage."
+  },
+  "excluded_sources": [
+    {
+      "source": "kits/source/eleanor-social-v3.png",
+      "reason": "Head and body proportions drift from original; do not replace the current room face during a brief comment."
+    },
+    {
+      "source": "kits/source/eleanor-gesture-v2.png",
+      "reason": "Additional facings are candidates; unnecessary identity/camera change for the two requested reactions."
+    }
+  ]
+}

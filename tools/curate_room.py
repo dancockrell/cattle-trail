@@ -42,6 +42,12 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     if name=='eleanor':
         # Two standing hand gestures keep the bag out of the animation.
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}
+        spec['clips']['idle_east']={'frames':[4],'fps':1,'loop':True}
+    if name=='rustler':
+        reaction_path=root/'assets/curation/rustler-reaction.json'
+        if reaction_path.exists():
+            reaction=json.loads(reaction_path.read_text())
+            spec['clips']['yield_southwest']={'frames':reaction['frames'],'fps':1,'loop':False,'durations':reaction['durations']}
     if name=='rider' and 'v5_lasso_northeast' in source:
         sequence=json.loads((root/'assets/sequence-curation.json').read_text())
         spec['frame_sockets']={}
@@ -70,6 +76,11 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
             spec['clip_anchors']['idle_'+direction]=spec['clip_anchors'][clip_name]
             spec['action_events'][clip_name]={'name':'rope_release','frame':recipe['release_ordinal'],'basis':'Clean directional open-hand release; engine owns the single rope','once_per_action':True}
             spec['procedural_rope_clips'].append(clip_name)
+        greeting_path=root/'assets/curation/rider-greeting.json'
+        if greeting_path.exists():
+            greeting=json.loads(greeting_path.read_text())
+            spec['clips']['greeting_northwest']={'frames':greeting['frames'],'fps':greeting['fps'],'loop':False,'durations':greeting['durations']}
+            spec['clip_anchors']['greeting_northwest']=greeting['anchor']
     if name in ['longhorn','cream','spotted']:
         necks={'east':[53,40],'west':[18,40],'north':[36,31],'south':[36,43],'northeast':[44,38],'northwest':[24,36],'southeast':[48,42],'southwest':[23,42]}
         spec['frame_sockets']={str(i):{'rope_neck':necks[frame['direction']]} for i,frame in enumerate(spec['frames']) if frame['direction'] in necks}

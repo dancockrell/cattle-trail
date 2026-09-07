@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "status": "selected_candidate_for_in_room_greeting",
+  "family": "rider",
+  "clip_name": "greeting_northwest",
+  "direction": "northwest",
+  "source_catalog": "kits/manifest.json",
+  "texture": "res://kits/atlases/rider.png",
+  "cell": [
+    96,
+    96
+  ],
+  "frame_index_space": "families.rider.frames in kits/manifest.json; resolve by id/source before integration if catalog changes",
+  "source_clip": "social_v1_hat_tip_northwest",
+  "source_clips": [
+    "social_v1_relaxed_northwest",
+    "social_v1_hat_tip_northwest",
+    "social_v1_relaxed_northwest"
+  ],
+  "frames": [
+    221,
+    229,
+    221
+  ],
+  "frame_ids": [
+    "rider_221",
+    "rider_229",
+    "rider_221"
+  ],
+  "anchor": [
+    48,
+    93
+  ],
+  "fps": 10,
+  "durations": [
+    0.14,
+    0.5,
+    0.16
+  ],
+  "duration_seconds": 0.8,
+  "loop": false,
+  "frame_records": [
+    {
+      "source_rect": [
+        324,
+        0,
+        634,
+        318
+      ],
+      "trim": [
+        79,
+        69,
+        243,
+        289
+      ],
+      "row": 0,
+      "col": 1,
+      "source": "kits/source/rider-social-v1.png",
+      "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+      "direction": "northwest",
+      "scale": 0.2877030162412993,
+      "job": "rider-social-v1",
+      "action": "relaxed",
+      "clip_prefix": "social_v1_",
+      "atlas_rect": [
+        480,
+        2592,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_221",
+      "catalog_index": 221
+    },
+    {
+      "source_rect": [
+        323,
+        604,
+        634,
+        895
+      ],
+      "trim": [
+        79,
+        35,
+        244,
+        260
+      ],
+      "row": 2,
+      "col": 1,
+      "source": "kits/source/rider-social-v1.png",
+      "source_sha256": "6868bab3384b8b4c98f504f8502f6e22cfc0b719a6840b42b1d2305f699dde5d",
+      "direction": "northwest",
+      "scale": 0.2877030162412993,
+      "job": "rider-social-v1",
+      "action": "hat_tip",
+      "clip_prefix": "social_v1_",
+      "atlas_rect": [
+        480,
+        2688,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_229",
+      "catalog_index": 229
+    }
+  ],
+  "return_clip": "idle_northwest",
+  "return_catalog_frame": 163,
+  "default_room_context": {
+    "player_position": [
+      199,
+      231
+    ],
+    "eleanor_position": [
+      148,
+      127
+    ],
+    "toward_eleanor": [
+      -51,
+      -104
+    ]
+  },
+  "selection_notes": [
+    "Whole mounted sprites only. Social relaxed pose brackets the actual hat-tip so the planted mount stays within one source sheet during the greeting.",
+    "Compared native atlas cells, enlarged nearest-neighbor for inspection, against current northwest room idle frame163 and lasso ready frame156. Identity, outfit, mount color and ground anchor match; source-sheet body silhouette varies slightly on entry/exit.",
+    "Hat-tip hand is screen-left for northwest and is not claimed to be anatomical right hand. This is a friendly social pose, not a rope action.",
+    "Play the single held tip for0.5seconds; these three entries are two distinct source states, not a three-frame animation cycle.",
+    "Northwest selected for greeting toward Eleanor from default room approach. Do not reuse this facing when standing on her opposite side without directional selection.",
+    "In-room transition playback remains for root integration; this selection does not claim engine visual approval."
+  ]
+}

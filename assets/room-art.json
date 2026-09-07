@@ -8602,6 +8602,20 @@
           "fps": 10,
           "loop": false
         },
+        "greeting_northwest": {
+          "frames": [
+            221,
+            229,
+            221
+          ],
+          "fps": 10,
+          "loop": false,
+          "durations": [
+            0.14,
+            0.5,
+            0.16
+          ]
+        },
         "idle": {
           "frames": [
             155
@@ -8875,6 +8889,10 @@
         ],
         "idle": [
           47,
+          93
+        ],
+        "greeting_northwest": [
+          48,
           93
         ]
       },
@@ -26971,9 +26989,9 @@
       "clips": {
         "idle_east": {
           "frames": [
-            0
+            4
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_east": {
@@ -27049,9 +27067,9 @@
         },
         "idle": {
           "frames": [
-            0
+            4
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         }
       },
@@ -30083,6 +30101,18 @@
           "fps": 7,
           "loop": true
         },
+        "yield_southwest": {
+          "frames": [
+            79,
+            75
+          ],
+          "fps": 1,
+          "loop": false,
+          "durations": [
+            0.2,
+            0.65
+          ]
+        },
         "idle": {
           "frames": [
             0
@@ -31017,6 +31047,6 @@
     "sampling": "nearest",
     "provenance": "Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt"
   },
-  "integrated_unique_actor_frames": 322,
+  "integrated_unique_actor_frames": 326,
   "integrated_unique_scenery_frames": 30
 }
