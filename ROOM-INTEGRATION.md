@@ -25,7 +25,7 @@ The user's explicit critique of the lasso and cycles is an open acceptance requi
 
 The full rendered gameplay test passed movement, facing selection, action retention, frame-event effects, collision, Eleanor, rustler clearance, lasso following, all-six settlement, completion cash and 360/390-pixel control bounds.
 
-continuous-play.mp4 is a 33-second four-cast-build actual engine recording from normal spawn through complete objective, with normal travel/actions and no actor teleports. It is scripted input, not manual play.
+continuous-play.mp4 is an80-second actual engine recording from normal spawn through the complete objective at the revised riding pace, with normal travel/actions and no actor teleports. It includes the current speech and reaction integration. It is scripted input, not manual play.
 
 sequence-review.mp4 isolates the northeast repair: three moving walk cycles over fixed ground, two stationary cycles and three lasso casts. Assertions verify visible flight before catch, a loop/tether and low-hand recovery. This is a visual review mode and deliberately resets the rider between the movement and action sections.
 

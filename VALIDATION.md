@@ -20,3 +20,5 @@ Movement production follow-up: 24 additional whole sprites extracted, bringing t
 Speech/reaction integration: native desktop and390px-phone captures pass world-bound checks; movement continues during a displayed comment. The rustler reacts before fleeing after two public shoot actions. Full gameplay QA passes with the greeting, explicit reaction clip and revised phone HUD spacing.
 
 Paced locomotion update: full gameplay QA passed with32px/sec mounted movement, the compact V8 NE walk,48px/sec rustler run and18-second leads. Eight-direction cast review passed with cycle timing derived from the active clip. Tests verify behavior and timing, not anatomical perfection.
+
+The continuous paced demo completed all six cattle through normal travel and actions in80 seconds (4,802 recorded frames at60fps), without actor teleports. Windows export launch and the desktop/phone speech checks passed again with the revised movement pace.
