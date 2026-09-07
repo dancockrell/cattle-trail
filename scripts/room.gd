@@ -55,6 +55,7 @@ var sequence_walking := false
 var stride_subjects: Array[Node2D] = []
 var speech: Control
 var spoken_beats := {}
+var motion_review_heading := Vector2.RIGHT
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -154,6 +155,10 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_speech_review.call_deferred()
+	if "--motion-review" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_motion_review.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -295,6 +300,12 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--motion-review" in OS.get_cmdline_user_args():
+		for subject in stride_subjects:
+			var speed := ride_speed if subject==player else 24.0
+			subject.position += motion_review_heading*speed*delta
+			subject.pose(true,motion_review_heading,speed)
+		return
 	if "--movement-batch" in OS.get_cmdline_user_args():
 		for subject in stride_subjects:
 			var heading: Vector2 = subject.get_meta("review_direction")
@@ -632,6 +643,24 @@ func run_movement_batch() -> void:
 	journal.text = "Whole-sprite movement candidates at native room scale."
 	await get_tree().create_timer(5.0).timeout
 	print("MOVEMENT BATCH: three new character sequences rendered at native room scale")
+	get_tree().quit()
+
+func run_motion_review() -> void:
+	for actor in actors.get_children(): actor.visible = false
+	stride_subjects = [player,cows[0],cows[1],cows[2]]
+	for subject in stride_subjects: subject.visible = true
+	var headings := {"east":Vector2.RIGHT,"southeast":Vector2(1,1).normalized(),"south":Vector2.DOWN,"southwest":Vector2(-1,1).normalized(),"west":Vector2.LEFT,"northwest":Vector2(-1,-1).normalized(),"north":Vector2.UP,"northeast":Vector2(1,-1).normalized()}
+	for direction in headings:
+		motion_review_heading = headings[direction]
+		for index in range(stride_subjects.size()):
+			var subject: Node2D = stride_subjects[index]
+			subject.position = Vector2(95+index*145,200)
+			subject.pose(true,motion_review_heading,ride_speed if index==0 else 24)
+			assert(subject.art.animation=="walk_"+direction,"Every actor must select the requested actual facing")
+		objective.text = "MOVING DIRECTIONS / "+direction+" / rider, longhorn, cream, spotted"
+		journal.text = "Current gameplay sprites moving over fixed ground at their tuned pace."
+		await get_tree().create_timer(2.0).timeout
+	print("MOTION REVIEW PASS: all eight directions for rider and three cattle appearances")
 	get_tree().quit()
 
 func run_speech_review() -> void:

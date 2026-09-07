@@ -98,6 +98,16 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     if name=='rider':
         spec['locomotion'].update(travel_speed=32,clip_nominal_speeds={'walk_northeast':24},stride_basis='NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review.')
     if name=='rustler': spec['locomotion'].update(escape_speed=48,clip_nominal_speeds={'run_east':48})
+    if name=='rider':
+        walk_path=root/'assets/curation/rider-next-walk.json'
+        if walk_path.exists():
+            walk=json.loads(walk_path.read_text(encoding='utf-8'))
+            clip_name=walk['target_clip']
+            assert all(spec['frames'][i]['id']==fid for i,fid in zip(walk['frames'],walk['frame_ids']))
+            spec['clips'][clip_name]={'frames':walk['frames'],'fps':walk['fps'],'loop':True,'durations':walk['durations']}
+            spec['clip_anchors'][clip_name]=walk['anchor']
+            spec['locomotion']['clip_nominal_speeds'][clip_name]=walk['nominal_speed']
+            spec['frame_sockets'].update(walk.get('frame_sockets',{}))
     spec['selection_note']='Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate.'
     out['sprites'][name]=spec
 out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])

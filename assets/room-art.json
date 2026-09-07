@@ -8189,13 +8189,19 @@
         },
         "walk_east": {
           "frames": [
-            0,
-            1,
-            2,
-            3
+            236,
+            239,
+            242,
+            243
           ],
-          "fps": 7,
-          "loop": true
+          "fps": 8,
+          "loop": true,
+          "durations": [
+            0.13,
+            0.11,
+            0.11,
+            0.15
+          ]
         },
         "idle_west": {
           "frames": [
@@ -8624,7 +8630,7 @@
       ],
       "clip_anchors": {
         "walk_east": [
-          48,
+          46,
           93
         ],
         "trot_east": [
@@ -9587,6 +9593,30 @@
             43,
             52
           ]
+        },
+        "236": {
+          "rope_hand": [
+            53,
+            54
+          ]
+        },
+        "239": {
+          "rope_hand": [
+            53,
+            54
+          ]
+        },
+        "242": {
+          "rope_hand": [
+            53,
+            53
+          ]
+        },
+        "243": {
+          "rope_hand": [
+            54,
+            54
+          ]
         }
       },
       "procedural_rope_clips": [
@@ -9611,7 +9641,8 @@
         "idle_when_blocked": true,
         "travel_speed": 32,
         "clip_nominal_speeds": {
-          "walk_northeast": 24
+          "walk_northeast": 24,
+          "walk_east": 24.0
         },
         "stride_basis": "NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review."
       },

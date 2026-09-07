@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "optional_short_step_candidate_pending_native_review",
+  "family": "rustler",
+  "selection_type": "non_looping_step",
+  "clip_name": "step_northeast",
+  "texture": "res://kits/atlases/rustler.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "actual_facing": "northeast",
+  "source_catalog": "kits/manifest.json",
+  "source": "kits/source/rustler-ne-walk-v3.png",
+  "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+  "source_clip": "v3_walk_northeast",
+  "frames": [
+    80,
+    81,
+    82
+  ],
+  "durations": [
+    0.14,
+    0.14,
+    0.16
+  ],
+  "loop": false,
+  "total_seconds": 0.44,
+  "selection_reason": "A short extension-to-passing step retains actual northeast rear-oblique facing. Omitting a loop avoids repeating the source's near-identical extended poses as a claimed complete gait.",
+  "frame_sources": [
+    {
+      "atlas_index": 80,
+      "frame_id": "rustler_080",
+      "atlas_rect": [
+        0,
+        640,
+        64,
+        64
+      ],
+      "source_row": 0,
+      "source_col": 0,
+      "visual_stage": "Extended legs, trailing boot visible."
+    },
+    {
+      "atlas_index": 81,
+      "frame_id": "rustler_081",
+      "atlas_rect": [
+        64,
+        640,
+        64,
+        64
+      ],
+      "source_row": 0,
+      "source_col": 1,
+      "visual_stage": "Trailing boot lifts while the other boot supports."
+    },
+    {
+      "atlas_index": 82,
+      "frame_id": "rustler_082",
+      "atlas_rect": [
+        128,
+        640,
+        64,
+        64
+      ],
+      "source_row": 0,
+      "source_col": 2,
+      "visual_stage": "Feet close/pass under coat; support identity partially obscured."
+    }
+  ],
+  "phase_order_verified": false,
+  "full_walk_cycle_supported": false,
+  "limitations": [
+    "This is not a complete walk cycle and must not be looped or aliased to walk_northeast.",
+    "Durations are staging estimates; no stride or world movement distance is established by these three images.",
+    "The final passing pose is not a stable idle pose. Use only a short native comparison until an appropriate continuation or settling pose is selected.",
+    "Frames80,83,84,87 repeat similar extended silhouettes; a supported opposite-leg full-cycle progression is not established.",
+    "Torso/coat motion and obscured boots limit anatomical contact certainty."
+  ],
+  "preserve_existing": [
+    "run_east frames4–7 and its admitted48px/s escape remain unchanged.",
+    "Do not route the current eastward escape through this northeast candidate."
+  ],
+  "next_validation": "Preview a single northeast step at native room scale, then settle separately; do not mark gait verified from the source row order."
+}

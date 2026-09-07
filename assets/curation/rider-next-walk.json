@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "status": "selected_candidate_for_engine_playback",
+  "family": "rider",
+  "direction": "east",
+  "target_clip": "walk_east",
+  "source_clip": "v9_walk_east",
+  "source_catalog": "kits/manifest.json",
+  "source": "kits/source/rider-east-walk-v9.png",
+  "texture": "res://kits/atlases/rider.png",
+  "frame_index_space": "families.rider.frames in current kits catalog; resolve frame_ids if regenerated",
+  "frames": [
+    236,
+    239,
+    242,
+    243
+  ],
+  "frame_ids": [
+    "rider_236",
+    "rider_239",
+    "rider_242",
+    "rider_243"
+  ],
+  "source_frame_order_one_based": [
+    1,
+    4,
+    7,
+    8
+  ],
+  "durations": [
+    0.13,
+    0.11,
+    0.11,
+    0.15
+  ],
+  "fps": 8,
+  "loop": true,
+  "anchor": [
+    46,
+    93
+  ],
+  "nominal_speed": 24.0,
+  "cycle_seconds_at_nominal_speed": 0.5,
+  "estimated_stride_world_pixels": 12,
+  "speed_scale_at_gameplay_32": 1.3333333333333333,
+  "cycle_seconds_at_gameplay_32": 0.375,
+  "frame_records": [
+    {
+      "source_rect": [
+        0,
+        0,
+        358,
+        540
+      ],
+      "trim": [
+        58,
+        192,
+        338,
+        477
+      ],
+      "row": 0,
+      "col": 0,
+      "source": "kits/source/rider-east-walk-v9.png",
+      "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+      "direction": "east",
+      "scale": 0.21754385964912282,
+      "job": "rider-east-walk-v9",
+      "action": "walk",
+      "clip_prefix": "v9_",
+      "atlas_rect": [
+        384,
+        2784,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_236",
+      "catalog_index": 236
+    },
+    {
+      "source_rect": [
+        1005,
+        0,
+        1402,
+        540
+      ],
+      "trim": [
+        20,
+        192,
+        301,
+        477
+      ],
+      "row": 0,
+      "col": 3,
+      "source": "kits/source/rider-east-walk-v9.png",
+      "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+      "direction": "east",
+      "scale": 0.21754385964912282,
+      "job": "rider-east-walk-v9",
+      "action": "walk",
+      "clip_prefix": "v9_",
+      "atlas_rect": [
+        672,
+        2784,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_239",
+      "catalog_index": 239
+    },
+    {
+      "source_rect": [
+        679,
+        540,
+        1000,
+        1122
+      ],
+      "trim": [
+        21,
+        63,
+        302,
+        349
+      ],
+      "row": 1,
+      "col": 2,
+      "source": "kits/source/rider-east-walk-v9.png",
+      "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+      "direction": "east",
+      "scale": 0.21754385964912282,
+      "job": "rider-east-walk-v9",
+      "action": "walk",
+      "clip_prefix": "v9_",
+      "atlas_rect": [
+        192,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_242",
+      "catalog_index": 242
+    },
+    {
+      "source_rect": [
+        1000,
+        540,
+        1402,
+        1122
+      ],
+      "trim": [
+        21,
+        63,
+        305,
+        349
+      ],
+      "row": 1,
+      "col": 3,
+      "source": "kits/source/rider-east-walk-v9.png",
+      "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+      "direction": "east",
+      "scale": 0.21754385964912282,
+      "job": "rider-east-walk-v9",
+      "action": "walk",
+      "clip_prefix": "v9_",
+      "atlas_rect": [
+        288,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_243",
+      "catalog_index": 243
+    }
+  ],
+  "replaces_frames": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "selection_reason": "Concrete improvement is removal of the baked dust blobs in current east locomotion, using existing complete mounted sprites with the same direction and identity. Choose v9 source1/4/7/8 for reach, bent recovery, lower rearward recovery and reach return. Skip source2/3 repeated forward extension and source5/6 redundant alternatives.",
+  "comparison_scope": [
+    "Inspected current native east/west/north/south/northwest/southeast/southwest atlas strips.",
+    "Compared all eight v9 east poses at native size and nearest-neighbor2x against current east frames0\u20133."
+  ],
+  "uncertainty": [
+    "This is a four-pose low-step candidate, not a verified anatomical eight-phase cycle. Native moving proof should check frame4-to7 and wrap8-to1 transitions.",
+    "12px stride is a shared initial visual estimate rather than measured ground-contact displacement. Tune playback using actual post-collision travel."
+  ],
+  "scope": "One east clip only; do not replace other directions or idle/action clips from this selection.",
+  "frame_sockets": {
+    "236": {
+      "rope_hand": [
+        53,
+        54
+      ]
+    },
+    "239": {
+      "rope_hand": [
+        53,
+        54
+      ]
+    },
+    "242": {
+      "rope_hand": [
+        53,
+        53
+      ]
+    },
+    "243": {
+      "rope_hand": [
+        54,
+        54
+      ]
+    }
+  },
+  "alignment_measurement": {
+    "reference_idle_clip": "idle_east",
+    "reference_idle_frame": 170,
+    "reference_idle_anchor": [
+      42,
+      93
+    ],
+    "idle_alpha_bounds": [
+      20,
+      31,
+      76,
+      93
+    ],
+    "selected_walk_alpha_bounds": {
+      "236": [
+        17,
+        31,
+        78,
+        93
+      ],
+      "239": [
+        17,
+        31,
+        78,
+        93
+      ],
+      "242": [
+        17,
+        31,
+        78,
+        93
+      ],
+      "243": [
+        17,
+        31,
+        79,
+        93
+      ]
+    },
+    "idle_blue_shirt_centroid": [
+      41.59,
+      49.02
+    ],
+    "walk_blue_shirt_centroids": [
+      [
+        44.83,
+        49.44
+      ],
+      [
+        45.38,
+        49.22
+      ],
+      [
+        45.24,
+        49.55
+      ],
+      [
+        45.92,
+        49.37
+      ]
+    ],
+    "method": "Native atlas pixel inspection, matching shirt position rather than changing leg or tail silhouette. Walk shirt mean is3.75px right of idle; add4px to idle anchor42. Common y93 because hat top31 and hoof bottom93 match. No per-frame body offsets.",
+    "socket_method": "Visible near-hand palm centers measured in native96x96 cell coordinates, not atlas-global coordinates; matches actor.socket_world contract.",
+    "residual": "Approximately1px frame-to-frame shirt variation plus2px difference in hat proportions; sprites are different drawings, so one translation cannot align every feature."
+  }
+}

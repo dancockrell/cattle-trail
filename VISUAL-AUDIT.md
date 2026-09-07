@@ -25,3 +25,8 @@ GAME-DESIGN.md records the newly accepted adult Weird West companion-romance ide
 The V7 whole-sprite edit again repeats foreleg phases and remains excluded. The subsequent nine-part cutout rig was explicitly rejected by the user on 2026-09-08. Its mathematical contact test is not visual acceptance. Stop that approach; retain RIG-TRIAL.md and experimental files as rejected evidence only. Neither experiment changed the room selection.
 
 The compact V8 loop and reduced travel speed are integrated, not just browser candidates. The runtime now budgets12 nominal pixels per NE cycle; exact hoof support remains a visual question. Rustler escape uses actual running poses at48px/sec. Full slow-paced gathering QA passes, including the boundary-settling fix.
+# Dedicated character sequence pass
+
+The rider's east walk now uses v9 source poses 1, 4, 7 and 8, with durations 0.13, 0.11, 0.11 and 0.15 seconds at nominal speed 24. The shared clip anchor is [46,93], aligned to the admitted idle's torso. Each frame has a measured rope-hand socket. This removes the old east walk's baked dust without introducing detached sprite parts. Exact provenance and measurements are in assets/curation/rider-next-walk.json.
+
+moving-eight-directions.mp4 records the current rider and all three cattle appearances translating over fixed ground in every direction. kits/reviews/moving-eight-directions.png is a sampled contact sheet, not proof of complete anatomical cycles. The northwest rider's raised forelegs and the remaining contact-phase consistency still need improvement. Eleanor's owner retained the admitted movement; the rustler's optional short northeast step remains a candidate, while the actual east escape run stays admitted.
