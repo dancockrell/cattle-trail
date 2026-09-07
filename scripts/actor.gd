@@ -11,6 +11,7 @@ var facing := "east"
 var directional := false
 var action_time := 0.0
 var nominal_speed := 36.0
+var clip_nominal_speeds: Dictionary = {}
 var facing_bias := 1.2
 var clip_events: Dictionary = {}
 var active_clip := ""
@@ -28,6 +29,7 @@ func configure(id: String, spec: Dictionary) -> void:
 	frame_sockets = spec.get("frame_sockets", {})
 	procedural_rope_clips = spec.get("procedural_rope_clips", [])
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
+	clip_nominal_speeds = spec.get("locomotion", {}).get("clip_nominal_speeds", {})
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
 	art = AnimatedSprite2D.new()
 	art.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -73,7 +75,7 @@ func socket_world(socket_name: String, fallback: Vector2) -> Vector2:
 func uses_procedural_rope() -> bool:
 	return str(art.animation) in procedural_rope_clips
 
-func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) -> void:
+func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, gait: String = "walk") -> void:
 	if action_time > 0: return
 	if directional:
 		if direction.length_squared() > 0.01:
@@ -83,8 +85,10 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) 
 			var new_direction: Vector2 = vectors[desired]
 			var boundary := absf(old_direction.angle_to(new_direction)) * 0.5 + deg_to_rad(5)
 			if desired == facing or absf(old_direction.angle_to(direction)) > boundary: facing = desired
-		var name := ("walk_" if moving else "idle_") + facing
-		art.speed_scale = clampf(speed / nominal_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
+		var name := (gait+"_" if moving else "idle_") + facing
+		if not art.sprite_frames.has_animation(name): name = ("walk_" if moving else "idle_")+facing
+		var clip_speed := float(clip_nominal_speeds.get(name,nominal_speed))
+		art.speed_scale = clampf(speed / clip_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
 		if art.animation != name:
 			var keep_phase := moving and str(art.animation).begins_with("walk_")
 			var old_frame := art.frame

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "eight_direction_casts_under_engine_review",
-  "scope": "Eight directional clean-hand casts; northeast walk remains under review.",
+  "scope": "Eight directional clean-hand casts; compact northeast walk selected for speed-matched room review.",
   "lasso_northwest": {
     "source_clip": "v5_lasso_northwest",
     "order": [
@@ -96,28 +96,23 @@
     "rope_pixels_baked_into_source": false
   },
   "walk": {
-    "source_clip": "v5_walk_northeast",
+    "source_clip": "v8_walk_northeast",
     "order": [
       0,
       1,
       2,
-      3,
-      4,
-      5,
-      6,
-      7
+      3
     ],
     "durations": [
-      0.12,
-      0.12,
-      0.12,
-      0.12,
-      0.12,
-      0.12,
-      0.12,
-      0.12
+      0.14,
+      0.11,
+      0.11,
+      0.14
     ],
-    "phase_order_verified": false
+    "phase_order_verified": false,
+    "selection_record": "assets/curation/rider-walk.json",
+    "estimated_stride_world_pixels": 12,
+    "reference_speed": 24
   },
   "lasso": {
     "source_clip": "v5_lasso_northeast",

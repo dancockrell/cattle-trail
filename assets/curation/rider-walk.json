@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "status": "selected_candidate_for_speed_matched_engine_review",
+  "family": "rider",
+  "direction": "northeast",
+  "clip_name": "walk_northeast",
+  "source_catalog": "kits/manifest.json",
+  "source_clip": "v8_walk_northeast",
+  "source": "kits/source/rider-ne-walk-sequence-v8.png",
+  "texture": "res://kits/atlases/rider.png",
+  "anchor": [
+    48,
+    93
+  ],
+  "frame_index_space": "families.rider.frames; verify frame_ids and source before integration",
+  "frames": [
+    212,
+    213,
+    214,
+    215
+  ],
+  "frame_ids": [
+    "rider_212",
+    "rider_213",
+    "rider_214",
+    "rider_215"
+  ],
+  "source_frame_order_one_based": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "fps": 8,
+  "loop": true,
+  "durations": [
+    0.14,
+    0.11,
+    0.11,
+    0.14
+  ],
+  "base_cycle_seconds": 0.5,
+  "estimated_stride_world_pixels": 12,
+  "estimated_stride_range_world_pixels": [
+    8,
+    16
+  ],
+  "reference_speed_world_pixels_per_second": 24,
+  "target_speed_range": [
+    18,
+    32
+  ],
+  "playback_rule": {
+    "speed_scale": "actual_travel_speed / 24.0",
+    "at_speed_18": 0.75,
+    "at_speed_24": 1.0,
+    "at_speed_32": 1.3333333333,
+    "cycle_seconds": "12.0 / actual_travel_speed",
+    "when_blocked": "hold idle rather than advancing gait"
+  },
+  "frame_records": [
+    {
+      "source_rect": [
+        0,
+        0,
+        360,
+        505
+      ],
+      "trim": [
+        62,
+        118,
+        310,
+        435
+      ],
+      "row": 0,
+      "col": 0,
+      "source": "kits/source/rider-ne-walk-sequence-v8.png",
+      "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+      "direction": "northeast",
+      "scale": 0.2016260162601626,
+      "job": "rider-ne-walk-sequence-v8",
+      "action": "walk",
+      "clip_prefix": "v8_",
+      "atlas_rect": [
+        384,
+        2496,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_212",
+      "catalog_index": 212
+    },
+    {
+      "source_rect": [
+        360,
+        0,
+        720,
+        505
+      ],
+      "trim": [
+        52,
+        118,
+        302,
+        424
+      ],
+      "row": 0,
+      "col": 1,
+      "source": "kits/source/rider-ne-walk-sequence-v8.png",
+      "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+      "direction": "northeast",
+      "scale": 0.2016260162601626,
+      "job": "rider-ne-walk-sequence-v8",
+      "action": "walk",
+      "clip_prefix": "v8_",
+      "atlas_rect": [
+        480,
+        2496,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_213",
+      "catalog_index": 213
+    },
+    {
+      "source_rect": [
+        720,
+        0,
+        1083,
+        505
+      ],
+      "trim": [
+        59,
+        118,
+        315,
+        427
+      ],
+      "row": 0,
+      "col": 2,
+      "source": "kits/source/rider-ne-walk-sequence-v8.png",
+      "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+      "direction": "northeast",
+      "scale": 0.2016260162601626,
+      "job": "rider-ne-walk-sequence-v8",
+      "action": "walk",
+      "clip_prefix": "v8_",
+      "atlas_rect": [
+        576,
+        2496,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_214",
+      "catalog_index": 214
+    },
+    {
+      "source_rect": [
+        1083,
+        0,
+        1491,
+        505
+      ],
+      "trim": [
+        48,
+        118,
+        303,
+        424
+      ],
+      "row": 0,
+      "col": 3,
+      "source": "kits/source/rider-ne-walk-sequence-v8.png",
+      "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+      "direction": "northeast",
+      "scale": 0.2016260162601626,
+      "job": "rider-ne-walk-sequence-v8",
+      "action": "walk",
+      "clip_prefix": "v8_",
+      "atlas_rect": [
+        672,
+        2496,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_215",
+      "catalog_index": 215
+    }
+  ],
+  "observed_pose_order": [
+    "fore reach with hind leg trailing",
+    "lower fore recovery and hind passing",
+    "hind recovery raised with alternate fore support",
+    "hind settles while fore reaches, returns to first pose"
+  ],
+  "selection_reason": "Use the first four v8 poses as a short whole-sprite loop. They retain similar upper-body silhouette and provide clearer low-leg changes than v5. Omit the second row, which mostly reintroduces forward-fore variants and an elevated recovery rather than completing a trustworthy eight-phase progression.",
+  "alternatives_inspected": {
+    "v5": "Native atlas examined: repeated near-fore silhouettes make eight-frame playback read held for too long.",
+    "v6": "Source plus native-scale extraction examined: conspicuous bent foreleg lift gives prancing rather than low walking. Not in current admitted catalog.",
+    "v8": "Native atlas and full source examined; first-row subset selected.",
+    "v7": "Excluded as directed; not reconsidered."
+  },
+  "uncertainty": [
+    "Stride12pixels is an initial visual calibration estimate, not a measured planted-hoof displacement: generated occlusions prevent reliable foot identity tracking. Plausible tuning range8\u201316pixels per cycle.",
+    "This four-pose subset improves readability; it does not prove anatomical four-beat locomotion or eliminate foot sliding. Inspect actual travel at18,24,32pixels per second before admission.",
+    "Durations are seconds per frame at speed_scale1. Actor configuration converts seconds to SpriteFrames weights by multiplying fps; do not apply this conversion twice.",
+    "Use actual post-collision travel speed. A prior72px/s animation reference would under-animate this slow12px stride."
+  ]
+}

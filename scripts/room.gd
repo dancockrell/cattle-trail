@@ -5,6 +5,8 @@ const SpeechBubble = preload("res://scripts/speech_bubble.gd")
 const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
+const LEAD_SECONDS := 18.0
+var ride_speed := 32.0
 var manifest: Dictionary
 var world: Node2D
 var actors: Node2D
@@ -62,6 +64,7 @@ func _ready() -> void:
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	var art_path := "res://assets/sprites.json" if "--original" in OS.get_cmdline_user_args() else "res://assets/room-art.json"
 	manifest = JSON.parse_string(FileAccess.get_file_as_string(art_path))
+	ride_speed = float(manifest.sprites.rider.get("locomotion",{}).get("travel_speed",96.0))
 	viewport = SubViewport.new()
 	viewport.size = Vector2i(WORLD)
 	viewport.disable_3d = true
@@ -306,11 +309,10 @@ func _physics_process(delta: float) -> void:
 		return
 	if "--sequence-review" in OS.get_cmdline_user_args():
 		if sequence_walking:
-			var review_speed := 18.75 if "--stride-trial" in OS.get_cmdline_user_args() else 72.0
+			var review_speed := 18.75 if "--stride-trial" in OS.get_cmdline_user_args() else ride_speed
 			var travel := Vector2(1,-1).normalized()*review_speed*delta
 			player.position += travel
-			# Hold the same .96-second cycle to expose travel/stride mismatch.
-			player.pose(true,travel,72)
+			player.pose(true,travel,review_speed)
 		update_rope(delta)
 		return
 	if "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args(): return
@@ -330,7 +332,7 @@ func _physics_process(delta: float) -> void:
 	if player.action_time > 0: direction = Vector2.ZERO
 	if direction != Vector2.ZERO: facing = direction
 	var previous_position: Vector2 = player.position
-	player.position = limit_position(player.position + direction * 96 * delta)
+	player.position = limit_position(player.position + direction * ride_speed * delta)
 	var actual_motion: Vector2 = player.position - previous_position
 	player.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
@@ -341,6 +343,9 @@ func _physics_process(delta: float) -> void:
 			continue
 		if cow == rope_target and rope_time > 0:
 			var follow: Vector2 = player.position - facing * 64
+			if CORRAL.has_point(player.position):
+				var settling_area := CORRAL.grow(-12)
+				follow = follow.clamp(settling_area.position,settling_area.end)
 			if cow.position.distance_to(follow) > 8:
 				velocity = cow.position.direction_to(follow) * minf(85, (cow.position.distance_to(follow)-8)*4)
 		elif away.length() < 70 and away.length() > 0.1:
@@ -361,8 +366,9 @@ func _physics_process(delta: float) -> void:
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()
 	if escaped and rustler.action_time<=0:
-		rustler.position.x += 105 * delta
-		rustler.pose(true, Vector2.RIGHT, 105.0)
+		var escape_speed := float(manifest.sprites.rustler.get("locomotion",{}).get("escape_speed",48))
+		rustler.position.x += escape_speed * delta
+		rustler.pose(true, Vector2.RIGHT, escape_speed,"run")
 		if rustler.position.x > 670:
 			rustler.visible = false
 			escaped = false
@@ -492,8 +498,8 @@ func catch_rope(caught: Node2D) -> void:
 		clear_rustler("Your loop catches his gun arm. The rustler flees.")
 	elif caught in cows and not caught.secured:
 		rope_target = caught
-		rope_time = 7.0
-		message = "Roped! Ride east. The steer follows for seven seconds."
+		rope_time = LEAD_SECONDS
+		message = "Roped! Keep a steady pace toward the east gathering."
 		say_once("first_catch",player,"TRAIL BOSS","That's one opinionated steer.")
 	refresh()
 
@@ -640,6 +646,7 @@ func run_speech_review() -> void:
 	assert(view.get_rect().encloses(speech.get_rect()),"Phone bubble stays within the world")
 	get_viewport().get_texture().get_image().save_png("res://speech-phone.png")
 	var before: Vector2 = player.position
+	await get_tree().create_timer(player.action_time+0.05).timeout
 	target = player.position+Vector2(30,0)
 	await get_tree().create_timer(0.2).timeout
 	assert(player.position.distance_to(before)>5,"Speech must not stop movement")
@@ -672,11 +679,16 @@ func run_sequence_review() -> void:
 	if "--stride-trial" in OS.get_cmdline_user_args():
 		objective.text = "STRIDE TRIAL / 18 px per cycle / diagnostic, not accepted"
 	player.art.play("walk_northeast")
+	var cycle_seconds := 0.0
+	var walk_clip: Dictionary = manifest.sprites.rider.clips.walk_northeast
+	for duration in walk_clip.durations: cycle_seconds += float(duration)
+	var review_speed := 18.75 if "--stride-trial" in OS.get_cmdline_user_args() else ride_speed
+	cycle_seconds /= review_speed/player.nominal_speed
 	sequence_walking = true
-	await get_tree().create_timer(2.88).timeout
+	await get_tree().create_timer(cycle_seconds*3).timeout
 	sequence_walking = false
 	player.position = Vector2(240,230)
-	await get_tree().create_timer(1.92).timeout
+	await get_tree().create_timer(cycle_seconds*2).timeout
 	player.pose(false,Vector2(1,-1))
 	await get_tree().create_timer(0.6).timeout
 	var review_directions := ["northwest","northwest","northwest"] if "--northwest-review" in OS.get_cmdline_user_args() else ["northeast","northeast","northeast"]
@@ -723,7 +735,7 @@ func run_herd_review() -> void:
 	print("HERD REVIEW PASS: 64 native actor idle/walk facing strips rendered against originals")
 	get_tree().quit()
 
-func demo_ride(destination: Vector2, seconds: float = 8.0) -> bool:
+func demo_ride(destination: Vector2, seconds: float = 18.0) -> bool:
 	target = destination
 	var deadline := elapsed + seconds
 	while player.position.distance_to(destination) > 5 and elapsed < deadline:
@@ -743,7 +755,7 @@ func run_demo() -> void:
 	shoot()
 	await get_tree().create_timer(0.6).timeout
 	assert(not rustler_active)
-	var deadline := elapsed + 120
+	var deadline := elapsed + 240
 	while not won and elapsed < deadline:
 		var nearest: Node2D
 		var distance := INF
@@ -761,7 +773,7 @@ func run_demo() -> void:
 		await wait_for_lasso_resolution()
 		if rope_target in cows:
 			var destination := Vector2(585,clampf(rope_target.position.y,145,225))
-			await demo_ride(destination,7.0)
+			await demo_ride(destination,LEAD_SECONDS)
 			await get_tree().create_timer(0.4).timeout
 		rope_time = 0
 	assert(won, "Continuous demo must complete without teleporting actors")
@@ -776,7 +788,7 @@ func run_qa() -> void:
 	var initial: Vector2 = player.position
 	target = initial + Vector2(30, 0)
 	await get_tree().create_timer(0.4).timeout
-	assert(player.position.x > initial.x + 20, "Tap movement must move the rider")
+	assert(player.position.x > initial.x + 10, "Tap movement must move the rider promptly")
 	if player.directional:
 		for direction in [Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2.RIGHT]:
 			player.pose(true, direction)
@@ -791,7 +803,7 @@ func run_qa() -> void:
 		assert(player.facing == "southeast")
 		player.pose(true, Vector2(1.05,1), 72)
 		assert(player.facing == "southeast", "Small diagonal variations must not chatter between facings")
-		player.pose(true, Vector2.RIGHT, 36)
+		player.pose(true, Vector2.RIGHT, player.nominal_speed*0.5)
 		assert(is_equal_approx(player.art.speed_scale, 0.5))
 		player.action("lasso", Vector2.LEFT)
 		assert(player.art.position == -Vector2(player.clip_anchors["lasso_west"][0],player.clip_anchors["lasso_west"][1]), "Action must use its measured ground anchor")
@@ -838,7 +850,7 @@ func run_qa() -> void:
 	target = Vector2.INF
 	rope_time = 0
 	# Bring every steer in using actual lasso following; never teleport cattle to win.
-	var gathering_deadline := elapsed + 60.0
+	var gathering_deadline := elapsed + 180.0
 	while secured_count() < 6 and elapsed < gathering_deadline:
 		var cow: Node2D
 		for candidate in cows:
@@ -851,7 +863,7 @@ func run_qa() -> void:
 		assert(is_instance_valid(rope_target))
 		var selected: Node2D = rope_target
 		target = Vector2(586, clampf(selected.position.y, 145, 225))
-		var deadline := elapsed + 7.5
+		var deadline := elapsed + LEAD_SECONDS+0.5
 		while not selected.secured and elapsed < deadline:
 			await get_tree().physics_frame
 		if not selected.secured:

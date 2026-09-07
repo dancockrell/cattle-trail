@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "selected_escape_candidate_pending_native_playback",
+  "family": "rustler",
+  "texture": "res://kits/atlases/rustler.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "source_catalog": "kits/manifest.json",
+  "source": "kits/source/rustler-east.png",
+  "source_sha256": "378593ca747430624de628dbaf73824d14e36a74e897d6b78f6db2e551645672",
+  "source_clip": "run_east",
+  "clip_name": "escape_east",
+  "actual_facing": "east",
+  "frames": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "durations": [
+    0.125,
+    0.125,
+    0.125,
+    0.125
+  ],
+  "loop": true,
+  "nominal_speed_world_px_per_second": 48,
+  "nominal_stride_world_px": 24,
+  "nominal_cycle_seconds": 0.5,
+  "playback_rule": "Advance the loop by actual eastward displacement divided by 24 pixels; at 48 pixels/second this yields a 0.5-second cycle. Stop advancing when displacement is zero.",
+  "selection_reason": "The existing run_east frames lean forward, swing bent arms and trail the coat, which reads as escape more clearly than the upright walk_east. All retain actual east heading. The 48-pixel/second target reduces the current 105-pixel/second mismatch.",
+  "phase_order_verified": false,
+  "stride_physically_measured": false,
+  "limitations": [
+    "All four frames are broad running-pose variants with limited distinct foot-contact information. The selected source order is conservative; no stronger permutation is visually established.",
+    "24 pixels/cycle is a nominal tuning value for native review, not a measured no-slip physical stride.",
+    "Frame6 turns the torso more side-on, though heading remains east. Review at room scale before treating this as finished animation."
+  ],
+  "frame_sources": [
+    {
+      "atlas_index": 4,
+      "frame_id": "rustler_004",
+      "atlas_rect": [
+        256,
+        0,
+        64,
+        64
+      ],
+      "source_row": 1,
+      "source_col": 0
+    },
+    {
+      "atlas_index": 5,
+      "frame_id": "rustler_005",
+      "atlas_rect": [
+        320,
+        0,
+        64,
+        64
+      ],
+      "source_row": 1,
+      "source_col": 1
+    },
+    {
+      "atlas_index": 6,
+      "frame_id": "rustler_006",
+      "atlas_rect": [
+        384,
+        0,
+        64,
+        64
+      ],
+      "source_row": 1,
+      "source_col": 2
+    },
+    {
+      "atlas_index": 7,
+      "frame_id": "rustler_007",
+      "atlas_rect": [
+        448,
+        0,
+        64,
+        64
+      ],
+      "source_row": 1,
+      "source_col": 3
+    }
+  ],
+  "integration_notes": [
+    "Begin after the stationary recoil/surrender hold.",
+    "Select escape_east or run_east explicitly; generic pose(true,RIGHT) currently selects walk_east and will not use this choice.",
+    "Use the same 48-pixel/second value for actual translation and nominal animation calibration; report actual displacement to playback."
+  ]
+}

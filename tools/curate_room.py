@@ -48,6 +48,10 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         if reaction_path.exists():
             reaction=json.loads(reaction_path.read_text())
             spec['clips']['yield_southwest']={'frames':reaction['frames'],'fps':1,'loop':False,'durations':reaction['durations']}
+        escape_path=root/'assets/curation/rustler-escape.json'
+        if escape_path.exists():
+            escape=json.loads(escape_path.read_text())
+            spec['clips']['run_east']={'frames':escape['frames'],'fps':8,'loop':True,'durations':escape['durations']}
     if name=='rider' and 'v5_lasso_northeast' in source:
         sequence=json.loads((root/'assets/sequence-curation.json').read_text())
         spec['frame_sockets']={}
@@ -90,7 +94,10 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_northeast'])
         if name=='rider': spec['clip_anchors']['idle']=spec['clip_anchors']['idle_northeast']
     spec['status']='selected_for_room_review'
-    spec['locomotion']={'nominal_speed':72 if name=='rider' else 36,'facing_bias':1.2,'phase_policy':'Preserve walk-cycle phase across facing changes','speed_scale_limits':[0.35,1.8],'idle_when_blocked':True}
+    spec['locomotion']={'nominal_speed':24 if name=='rider' else 36,'facing_bias':1.2,'phase_policy':'Preserve walk-cycle phase across facing changes','speed_scale_limits':[0.35,1.8],'idle_when_blocked':True}
+    if name=='rider':
+        spec['locomotion'].update(travel_speed=32,clip_nominal_speeds={'walk_northeast':24},stride_basis='NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review.')
+    if name=='rustler': spec['locomotion'].update(escape_speed=48,clip_nominal_speeds={'run_east':48})
     spec['selection_note']='Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate.'
     out['sprites'][name]=spec
 out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])

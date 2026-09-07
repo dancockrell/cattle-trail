@@ -18,3 +18,5 @@ Latest parallel batch: 16 longhorn state sprites, 16 grass/plant clusters and 8 
 Movement production follow-up: 24 additional whole sprites extracted, bringing the current candidate count to 936. movement-batch-review.mp4 renders the east rider and rear-oblique human movement strips at native room scale. stride-v8-comparison.mp4 compares the existing and newer northeast rider sequences. These review modes preserve the current room selection. Windows export/launch and kit browser loading passed for 936 cells.
 
 Speech/reaction integration: native desktop and390px-phone captures pass world-bound checks; movement continues during a displayed comment. The rustler reacts before fleeing after two public shoot actions. Full gameplay QA passes with the greeting, explicit reaction clip and revised phone HUD spacing.
+
+Paced locomotion update: full gameplay QA passed with32px/sec mounted movement, the compact V8 NE walk,48px/sec rustler run and18-second leads. Eight-direction cast review passed with cycle timing derived from the active clip. Tests verify behavior and timing, not anatomical perfection.

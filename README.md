@@ -8,7 +8,7 @@ Launch `build/CattleTrail.exe` on Windows, or import `project.godot` in Godot 4.
 
 - **WASD / arrow keys:** ride. **Click or tap ground:** ride to that point.
 - **E / Space / Talk:** speak with Eleanor near the wagon.
-- **L / Lasso:** catch a nearby steer for seven seconds, then lead it east. At close range, the same action can disarm the rustler.
+- **L / Lasso:** catch a nearby steer for eighteen seconds, then lead it east. At close range, the same action can disarm the rustler.
 - **F / Shoot:** fire at the rustler within 190 world pixels. Two hits drive him away. Six rounds available; the lasso remains usable when ammunition runs out.
 - **R / Reset:** restart the room.
 
@@ -32,7 +32,7 @@ See `METHOD.md` for the agent-authored conversion method for other games: approv
 
 `VALIDATION.md` separates tested behavior, inspected renders, and remaining art limitations. The room has fixed high three-quarter 2D presentation, nearest filtering, binary alpha, pixel snapping, integer world enlargement, and responsive interface placement. Narrow phone windows reduce the complete world with nearest filtering; that preserves hard edges but cannot preserve equal integer pixel sizes.
 
-The default room has eight-way selected rider/cattle movement. The northeast rider tests an eight-frame walk. All eight directions now use clean-hand lasso sequences with timed rope flight, neck attachment and recovery. Southwest releases at ordinal 3; the other directions release at ordinal 4. These are engine-reviewed replacements; final visual acceptance remains separate. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. The user's sequence critique remains an open visual gate. Valid direction labels and more frames do not prove a closed gait. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding; do not expand into the larger journey, economy, towns or relationship simulation before the room meets the visual bar.
+The default room has eight-way selected rider/cattle movement. The northeast rider uses a compact four-pose walk selected from V8, with playback matched to the slower travel pace. All eight directions now use clean-hand lasso sequences with timed rope flight, neck attachment and recovery. Southwest releases at ordinal 3; the other directions release at ordinal 4. These are engine-reviewed replacements; final visual acceptance remains separate. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. The user's sequence critique remains an open visual gate. Valid direction labels and more frames do not prove a closed gait. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding; do not expand into the larger journey, economy, towns or relationship simulation before the room meets the visual bar.
 
 ## Reproduce checks
 

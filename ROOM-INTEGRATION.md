@@ -15,11 +15,11 @@ GAME-DESIGN.md now establishes the adult Weird West harem-romance RPG identity. 
 The user's explicit critique of the lasso and cycles is an open acceptance requirement. Auditing every rider direction showed that source row order did not establish coherent gait or cast sequences.
 
 - Rider and three cattle appearances have eight-way selected poses. Corrected cardinal cattle strips fix north-facing direction and south camera mismatch.
-- The northeast walk has an eight-frame sequence candidate. All eight casts now use clean-hand sequence strips with individual durations.
+- The northeast walk uses V8 source poses1–4, with0.14/0.11/0.11/0.14-second durations at24px/sec reference speed. All eight casts now use clean-hand sequence strips with individual durations.
 - These eight casts use one engine-drawn construction: hand-attached wind-up, cast, visible flight, neck catch and low-hand recovery. No rope is baked into these replacement actor frames.
 - Rope effects use frame-local hand sockets and direction-specific cattle neck sockets. The steer follows farther behind the mount with eased approach.
 - All legacy lasso strips are superseded in the room. Southwest uses its visibly earlier open-hand release rather than a copied ordinal.
-- The new northeast walk improves identity and pose progression, but hoof contact and the 143→144 support transition remain under review. phase_order_verified stays false.
+- The compact northeast selection removes the earlier V5 support transition from gameplay. Its12-pixel nominal stride is an estimate; phase_order_verified stays false until contact anatomy is established.
 
 ## Evidence
 
@@ -50,3 +50,9 @@ Four once-per-room speech beats now appear during existing actions: Eleanor intr
 Eleanor holds the existing bag-free frame4 between comments. The northwest mounted greeting uses source frames221→229→221 for0.8 seconds. Rustler clearance holds actual southwest recoil79 and surrender75 for0.85 seconds, then starts the existing eastward escape. Character-owned selection records are in assets/curation/. The actor API accepts an explicit clip name so a southwest reaction works with the rustler's existing four-direction locomotion. These held poses do not certify a new walk cycle.
 
 speech-room.png, speech-phone.png and reaction-room.png are engine captures. The dedicated review verifies desktop/phone bounds, continued movement and reaction-before-flee behavior; full room QA also passes.
+
+## Travel and stride integration
+
+Mounted travel is32worldpx/sec, reduced from96. Walk playback scales against24px/sec reference speed rather than72; the compact NE cycle has a12-pixel nominal stride, with an8–16pixel estimate range recorded in assets/curation/rider-walk.json. Actions retain their own timing. Rustler escape now uses selected run_east frames4–7 at48px/sec, rather than walking at105. Its24-pixel nominal running stride remains a tuning estimate. Both selections are now used in gameplay.
+
+The lead window is18seconds to support travel at the revised pace. When the rider enters the gathering area, the trailing target is clamped into its interior so a steer can settle instead of stopping just outside its lower boundary. Full gameplay QA passes at this pace. stride-matched-review.mp4 renders three translated and two stationary compact cycles plus all eight cast directions.
