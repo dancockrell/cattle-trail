@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "title": "Cattle Trail bounded first rich library",
+  "status": "planned_not_delivery_inventory",
+  "baseline": {
+    "extracted_actor_frames": 24,
+    "note": "Baseline snapshot for expansion arithmetic; current runtime manifest remains authoritative."
+  },
+  "counting_rule": "Count distinct useful action/direction/state frames or environment modules. Do not count duplicated cells, recolor padding, mirrors, or repeated atlas exports as new coverage.",
+  "targets": {
+    "actor_frames": 384,
+    "environment_modules_minimum": 96,
+    "total_minimum": 480,
+    "actor_expansion_over_baseline": 16
+  },
+  "directions": [
+    "northeast",
+    "southeast",
+    "southwest",
+    "northwest"
+  ],
+  "families": [
+    {
+      "id": "rider",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 64,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "ride": {
+            "frames_per_direction": 6
+          },
+          "lasso": {
+            "frames_per_direction": 4
+          },
+          "shoot": {
+            "frames_per_direction": 4
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "longhorn",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 64,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "walk": {
+            "frames_per_direction": 4
+          },
+          "run": {
+            "frames_per_direction": 4
+          },
+          "graze": {
+            "frames_per_direction": 3
+          },
+          "startle": {
+            "frames_per_direction": 3
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "cream",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 64,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "walk": {
+            "frames_per_direction": 4
+          },
+          "run": {
+            "frames_per_direction": 4
+          },
+          "graze": {
+            "frames_per_direction": 3
+          },
+          "startle": {
+            "frames_per_direction": 3
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "spotted",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 64,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "walk": {
+            "frames_per_direction": 4
+          },
+          "run": {
+            "frames_per_direction": 4
+          },
+          "graze": {
+            "frames_per_direction": 3
+          },
+          "startle": {
+            "frames_per_direction": 3
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "eleanor",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 48,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "walk": {
+            "frames_per_direction": 4
+          },
+          "talk": {
+            "frames_per_direction": 3
+          },
+          "gesture": {
+            "frames_per_direction": 3
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "rustler",
+      "type": "actor",
+      "target_unique_usable_frames_or_modules": 64,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "clips": {
+          "idle": {
+            "frames_per_direction": 2
+          },
+          "walk": {
+            "frames_per_direction": 4
+          },
+          "shoot": {
+            "frames_per_direction": 4
+          },
+          "flee": {
+            "frames_per_direction": 4
+          },
+          "lasso_reaction": {
+            "frames_per_direction": 2
+          }
+        }
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "wagon",
+      "type": "actor_prop",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "directions": [
+          "northeast",
+          "southeast",
+          "southwest",
+          "northwest"
+        ],
+        "states": [
+          "rest",
+          "loaded",
+          "open_supply_access",
+          "repair_needed"
+        ],
+        "note": "Each directional state must have useful silhouette/content differences, not color substitutions."
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "grass",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "4 interior density patches",
+          "4 path-edge transitions",
+          "4 corner transitions",
+          "4 sparse or trampled variants"
+        ],
+        "requirements": [
+          "seam review",
+          "consistent ground scale"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "trees",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "4 silhouettes each with whole tree, trunk/foreground split, canopy split, stump state"
+        ],
+        "requirements": [
+          "matched canopy/trunk anchors",
+          "occlusion and collision footprint"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "rocks",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "4 size/silhouette groups each with isolated, paired, cluster, broken state"
+        ],
+        "requirements": [
+          "consistent ground contact",
+          "collision footprint"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "scrub",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "4 silhouettes each with sparse, full, dry, trampled state"
+        ],
+        "requirements": [
+          "readable at native resolution",
+          "matching growth scale"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "fence",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "4 directional straight runs",
+          "4 corners",
+          "2 end posts",
+          "2 junctions",
+          "2 gate directions each open and closed"
+        ],
+        "requirements": [
+          "matching endpoints",
+          "passability state",
+          "no seam gaps"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    },
+    {
+      "id": "camp",
+      "type": "environment",
+      "target_unique_usable_frames_or_modules": 16,
+      "status": "planned",
+      "admitted_count": null,
+      "coverage": {
+        "modules": [
+          "2 bedroll states",
+          "2 supply-crate states",
+          "2 barrel states",
+          "2 campfire states",
+          "2 cooking-rig states",
+          "2 hitching-post states",
+          "2 shelter states",
+          "2 water-trough states"
+        ],
+        "requirements": [
+          "coherent assembled camp",
+          "functional state pairs",
+          "interaction anchors"
+        ]
+      },
+      "acceptance": [
+        "approved-style continuity",
+        "source provenance and checksum",
+        "clean transparent extraction or intentional opaque terrain",
+        "exact dimensions and ground anchors",
+        "in-engine visual review"
+      ]
+    }
+  ],
+  "admission_policy": {
+    "generation_is_not_admission": true,
+    "missing_cells": "mark missing and retain unmet target",
+    "runtime_authority": "../assets/sprites.json",
+    "future_delivery_inventory": "Maintain a separate measured extraction/admission inventory; do not replace these planned goals with claims inferred from sheet size."
+  }
+}

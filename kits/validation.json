@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "checks": [
+    "RGBA alpha binary",
+    "every cell nonempty and within atlas",
+    "consistent dimensions and anchors",
+    "original file hashes match",
+    "source crop bounds valid",
+    "clips reference present frames at positive rates",
+    "no exact duplicate RGBA cells"
+  ],
+  "families": {
+    "rider": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        96,
+        96
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "longhorn": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        72,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "cream": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        72,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "spotted": {
+      "extracted": 64,
+      "unique_rgba_cells": 64,
+      "clips": 20,
+      "cell": [
+        72,
+        64
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "grass": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        64,
+        48
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    },
+    "trees": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        128,
+        128
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
+    }
+  },
+  "visual_acceptance": false,
+  "total_extracted": 288
+}
