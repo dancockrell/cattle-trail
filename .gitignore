@@ -1,4 +1,5 @@
 .godot/
+__pycache__/
 build/
 *.tmp
 /*.png.import

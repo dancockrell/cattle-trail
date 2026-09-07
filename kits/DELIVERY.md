@@ -1,6 +1,6 @@
 # Rich sprite library — measured delivery
 
-2026-09-07. The original extraction pass below contains 496 candidates. A subsequent oblique rider pass adds 32 cells, making the current manifest total 528 (rider 96; other families unchanged). The default room currently selects 161 expanded actor frames plus one original wagon and 30 scenery variants. See ../ROOM-INTEGRATION.md for current integration and remaining art gaps. The table below preserves the first-pass baseline rather than claiming its original totals are current.
+2026-09-08. Current manifest: 720 extracted candidates across13 families (rider156; longhorn108, cream108, spotted108; Eleanor64, rustler64; wagon16; six environment families16each). The room selects315 actor frames including the original wagon, plus30 scenery variants. The northeast sequence proof is under review; other cycles remain unaccepted. See ../ROOM-INTEGRATION.md. The table below preserves the historical496-cell first pass, not current totals.
 
 | Family | Unique extracted cells | Candidate coverage |
 |---|---:|---|

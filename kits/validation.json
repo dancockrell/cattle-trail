@@ -11,9 +11,9 @@
   ],
   "families": {
     "rider": {
-      "extracted": 132,
-      "unique_rgba_cells": 132,
-      "clips": 36,
+      "extracted": 156,
+      "unique_rgba_cells": 156,
+      "clips": 40,
       "cell": [
         96,
         96
@@ -22,9 +22,9 @@
       "source_hashes_verified": true
     },
     "longhorn": {
-      "extracted": 100,
-      "unique_rgba_cells": 100,
-      "clips": 28,
+      "extracted": 108,
+      "unique_rgba_cells": 108,
+      "clips": 30,
       "cell": [
         72,
         64
@@ -33,9 +33,9 @@
       "source_hashes_verified": true
     },
     "cream": {
-      "extracted": 100,
-      "unique_rgba_cells": 100,
-      "clips": 28,
+      "extracted": 108,
+      "unique_rgba_cells": 108,
+      "clips": 30,
       "cell": [
         72,
         64
@@ -44,9 +44,9 @@
       "source_hashes_verified": true
     },
     "spotted": {
-      "extracted": 100,
-      "unique_rgba_cells": 100,
-      "clips": 28,
+      "extracted": 108,
+      "unique_rgba_cells": 108,
+      "clips": 30,
       "cell": [
         72,
         64
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 672
+  "total_extracted": 720
 }

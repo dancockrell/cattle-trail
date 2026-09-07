@@ -5,6 +5,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 import numpy as np
 from scipy import ndimage
+from sprite_grid import extract_cells
 import json, hashlib, math
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -42,30 +43,12 @@ for job in JOBS:
     source=KIT/'source'/job.get('source_file',f"{job['id']}.png")
     if not source.exists(): continue
     im=Image.open(source).convert('RGBA')
-    a=np.array(im); rgb=a[:,:,:3].astype(np.int16)
-    key=(rgb[:,:,0]-rgb[:,:,1]>25)&(rgb[:,:,2]-rgb[:,:,1]>25)
-    a[:,:,3]=np.where(key,0,255)
-    a[key]=0
-    clean=Image.fromarray(a)
+    cells, grid = extract_cells(im,job.get('columns',4),job.get('rows',4))
     items=[]
-    ycuts=separators((~key).sum(axis=1))
-    for row in range(4):
+    for trim,record in zip(cells,grid['cells']):
+        row=record['row']; col=record['column']
         if 'selected_rows' in job and row not in job['selected_rows']: continue
-        xcuts=separators((~key)[ycuts[row]:ycuts[row+1]].sum(axis=0))
-        for col in range(4):
-            box=(xcuts[col],ycuts[row],xcuts[col+1],ycuts[row+1])
-            crop=clean.crop(box)
-            alpha=np.array(crop.getchannel('A'))
-            labels,count=ndimage.label(alpha>0)
-            sizes=np.bincount(labels.ravel()); sizes[0]=0
-            # Remove only tiny isolated chroma specks, preserving separated rope/shot/dust details.
-            alpha=np.where(sizes[labels]>=5,255,0).astype(np.uint8)
-            crop.putalpha(Image.fromarray(alpha))
-            rgba=np.array(crop); rgba[alpha==0]=0; crop=Image.fromarray(rgba)
-            bounds=crop.getbbox()
-            if not bounds: raise ValueError(f"Empty cell {job['id']} {row} {col}")
-            trim=crop.crop(bounds)
-            items.append({'image':trim,'source_rect':box,'trim':bounds,'row':row,'col':col})
+        items.append({'image':trim,'source_rect':record['source_rect'],'trim':record['trim_rect_in_cell'],'row':row,'col':col})
     family=job['family']
     # Actor scale follows body height in the walk row; tool effects don't shrink the body.
     heights=[p['image'].height for p in (items[:4] if family in ACTIONS else items)]
@@ -80,6 +63,7 @@ for job in JOBS:
         if 'row_directions' in job: p['direction']=job['row_directions'][p['row']]
         if 'column_directions' in job: p['direction']=job['column_directions'][p['col']]
         if family in ACTIONS: p['action']=job.get('actions',ACTIONS[family])[p['row']]
+        if 'clip_prefix' in job: p['clip_prefix']=job['clip_prefix']
     groups.setdefault(family,[]).extend(items)
 
 for family,items in groups.items():
@@ -96,7 +80,7 @@ for family,items in groups.items():
         spec['frames'].append(record)
         if family in ACTIONS:
             action=p['action']
-            clip=f"{action}_{p['direction']}"
+            clip=p.get('clip_prefix','')+f"{action}_{p['direction']}"
             spec['clips'].setdefault(clip,{'frames':[],'fps':7 if action in ('walk','trot','run') else 5,'loop':action not in ('shoot','react','medical','rest')})['frames'].append(i)
         else:
             spec['clips'][f'variant_{i:02d}']={'frames':[i],'fps':1,'loop':True}

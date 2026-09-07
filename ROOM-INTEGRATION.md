@@ -1,33 +1,36 @@
-# Rich-kit room integration — 2026-09-07
+# Clear Fork room integration — 2026-09-08
 
-The default playable Clear Fork room uses selected rich-kit actors and scenery. Original assets remain preserved; `--original` runs the previous comparison room. The current 528-cell kit browser remains available with K.
+The default room uses 315 distinct actor frames, including the recovered original wagon, and 30 scenery variants in 40 placements. The source library contains 720 extracted candidate cells across 13 families. These are separate counts; extraction is not animation acceptance. Press K for the candidate browser. Original comparison art remains available with --original.
 
-## Measured runtime selection
+assets/room-art.json is the selected runtime authority. tools/curate_room.py builds it from kits/manifest.json, original wagon metadata, measured rider anchors and assets/sequence-curation.json. Exact source hashes, crop rectangles, frame regions, clip orders, timings and sockets remain traceable.
 
-`assets/room-art.json` is the default room's source of truth; `tools/curate_room.py` rebuilds it from the extraction catalog and original wagon metadata. Current selection contains 162 distinct actor frames (161 from expanded kits plus one original wagon), 30 distinct scenery variants, and 40 scenery placements. Only named selected clips are constructed by the room. Unused frames in the source atlas are not counted as integrated behavior.
+## Current presentation
 
-The rider now also has northeast/northwest oblique sheets generated directly from the approved original rider reference, including planted, dust-free idle strips. The runtime chooses these angles on diagonal travel and starts in northeast idle. The northwest sheet's wrong-side extended lasso frame is excluded, with a correctly facing overhead hold in its place. Other oblique rider/cattle directions remain open work.
+Fixed high-three-quarter camera; 640×360 world; nearest filtering and pixel snapping; warm Texas ground; real rider, cattle, Eleanor, rustler, wagon and scenery sprites. The ground-v3 and trees-v2 sources replace noisy earlier derivatives with broader tonal clusters. Earlier sources remain preserved. HUD text dates the opening to May 12, 1872.
 
-`assets/rider-anchors.json` measures shared per-clip body/hoof anchors. It corrects action-strip centering (up to eight native pixels in north shooting) without editing atlas pixels or cancelling motion within a strip. Rebuild with tools/align_rider.py before tools/curate_room.py. `tools/validate_room_art.py` checks selected frame bounds, anchors, event indices and terrain provenance. `--pose-review` renders stationary action/facing comparisons against the original approved rider.
+GAME-DESIGN.md now establishes the adult Weird West harem-romance RPG identity. Companion control, relationship adventures, perks, universal madness, spirits and machinery are designed foundations, not implemented systems in this room.
 
-- Rider: four requested facings for walk/idle, lasso and shoot. Short actions retain their pose until playback completes instead of being overwritten by movement every frame.
-- Three cattle appearances: walk/idle in four facings. Graze/rest strips with known camera turns are excluded.
-- Eleanor: directional walk/idle frames and two standing talk gestures. Bag-changing medical/camp strips are excluded.
-- Rustler: directional walk/idle, including corrected north/west source sheets. Reaction strips are excluded.
-- Scenery: grass, trees, rocks, scrub and camp variants use actual transparent atlas pixels. Tall props and actors share ground-anchor Y sorting; grass renders below hooves. Tree/rock foot circles provide collision data without visible geometric art. Fence connectivity is still excluded.
+## Sequence repair
 
-## Verification
+The user's explicit critique of the lasso and cycles is an open acceptance requirement. Auditing every rider direction showed that source row order did not establish coherent gait or cast sequences.
 
-Latest pass: action events are explicit in the selected sprite manifest. Shooting applies damage and the trace on the firing pose; lasso attachment waits for the extended-loop pose. Events fire once per action. The HUD shows remaining rope time. Movement cadence tracks actual travel, facing changes retain gait phase, and small diagonal changes use hysteresis. Wagon collision applies to cattle as well as the rider. Compact controls use two rows and are bounds-checked at 360/390-pixel widths.
+- Rider and three cattle appearances have eight-way selected poses. Corrected cardinal cattle strips fix north-facing direction and south camera mismatch.
+- Only the northeast rider has the new sequence-first proof: eight walk frames and eight clean-hand lasso poses, with individual durations.
+- The northeast rope has one engine-drawn construction: hand-attached wind-up, cast, visible flight, neck catch and low-hand recovery. No rope is baked into these replacement actor frames.
+- Rope effects use frame-local hand sockets and direction-specific cattle neck sockets. The steer follows farther behind the mount with eased approach.
+- Other rider lasso directions remain legacy candidates; overhead winding is not a complete cast, and known wrong-side extensions remain excluded.
+- The new northeast walk improves identity and pose progression, but hoof contact and the 143→144 support transition remain under review. phase_order_verified stays false.
 
-`continuous-play.mp4` is a 31-second actual Godot recording that starts at the normal spawn, rides to Eleanor, clears the rustler, and gathers all six cattle. The controller is scripted, but it uses normal travel and public actions throughout with no actor teleports. The run passed its completion assertion. This provides stronger gameplay evidence than the isolated setup-based test, which is retained separately. Final anatomical/anchor consistency remains an art review task.
+## Evidence
 
-Godot 4.3 rendered the complete updated room. The integration test passed real target movement, four-direction selection, lasso action retention, action expiry, scenery contact resolution, dialogue, shooting, rustler clearance, cattle following, all-six settlement, cash completion and narrow layout. It caught a boundary collision defect, which was fixed and retested.
+The full rendered gameplay test passed movement, facing selection, action retention, frame-event effects, collision, Eleanor, rustler clearance, lasso following, all-six settlement, completion cash and 360/390-pixel control bounds.
 
-`room-desktop.png`, `room-complete.png` and `room-phone.png` are current engine screenshots. `room-playback.mp4` is a 16-second recording of the automated engine integration test: it deliberately moves the player to setup positions between scenarios, then uses actual herding/lasso following. It is not a claim of uninterrupted manual play.
+continuous-play.mp4 is a fresh 31-second actual engine recording from normal spawn through complete objective, with normal travel/actions and no actor teleports. It is scripted input, not manual play.
 
-## Visual assessment
+sequence-review.mp4 isolates the northeast repair: three moving walk cycles over fixed ground, two stationary cycles and three lasso casts. Assertions verify visible flight before catch, a loop/tether and low-hand recovery. This is a visual review mode and deliberately resets the rider between the movement and action sections.
 
-The room now visibly contains the richer sprites, the original wagon and sampled interface textures. A new empty-ground derivative made from the approved concept replaces the repeated strip collage; its raw source, exact prompt, checksum and nearest reduction are preserved. It has irregular shoulders and continuous wagon ruts, with no characters baked into it. Trees were repositioned to keep new crowns inside the room; cattle starts were staggered. Nearest sampling and pixel snapping remain enabled.
+room-desktop.png, room-complete.png and room-phone.png are fresh full-room engine captures. Earlier room-playback.mp4, pose-review.mp4 and herd-review.mp4 remain historical comparison evidence; they do not show every latest change.
 
-This is an integrated visual-review build, not final art approval. Generated action cadence, foot contact and cross-facing proportions require further polish; cardinal sprite poses do not reproduce every diagonal in the approved concept. The field remains a single room with the same objective. No wider journey, economy or faction scope was added.
+## Remaining gate
+
+Finish physical walk sequencing, extend the proven action method across required directions, inspect close-range leading/overlap in actual motion, and verify the final Windows build against those corrected assets. The larger journey and relationship gameplay remain outside this room milestone. No final visual approval is claimed.

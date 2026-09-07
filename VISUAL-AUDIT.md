@@ -1,22 +1,21 @@
-# Visual completion audit — current evidence
+# Visual completion audit — 2026-09-08
 
-Goal remains active. Passing gameplay is established; the entire visual target is not yet proven.
+Goal remains active. The user explicitly rejected the lasso quality and animation sequencing; the room is not visually complete.
 
-## Confirmed progress
+## Current evidence
 
-- Real approved source art is recovered, preserved and traceable. The comparison rider is drawn directly from that art.
-- The default room has fixed high-three-quarter staging, hard pixel rendering, actual actors/props, mounted movement, herding/lasso, Eleanor, rustler/shoot, completion and responsive controls.
-- A continuous scripted engine run completes the objective with normal travel/actions and no actor teleports. Action effects have measured frame events.
-- Per-clip rider anchors correct action-strip centering. The measured north shoot anchor is [40,93] instead of the generic [48,93], removing an eight-pixel body displacement. These changes preserve the atlas pixels and intra-strip gait/recoil.
-- The first oblique expansion adds northeast/northwest rider poses, planted dust-free idles, walk, lasso and shoot. Current extraction is 528 cells; selected room behavior references 162 actor frames. One wrong-side northwest lasso extension is excluded.
-- kits/reviews/oblique-engine-comparison.png compares the original rider (left) and northeast candidate (right) at the same native world scale. The new silhouette closely follows the approved back/top-plane view. pose-review.mp4 renders 18 stationary action/facing transitions.
+Recovered approved sprites, style images and concept video are preserved. Real sprites, fixed high-three-quarter staging, hard pixel rendering and the complete room objective are implemented. Warm ground-v3 and simpler trees-v2 now match the reference texture density more closely.
 
-## Concrete remaining visual work
+The library has 720 extracted candidates. The room selects 315 actor frames and 30 scenery variants. Neither count proves a coherent cycle.
 
-1. Finish corresponding southeast/southwest rider directions with neutral planted idle and coherent actions. The old front/side strips cannot be relabeled to satisfy oblique coverage.
-2. Produce matched oblique locomotion and planted idle for the three cattle appearances. Current cattle remain largely profile/front/rear; their rest frames reuse a walk pose.
-3. Simplify scenery texture density toward the reference's broader tonal clusters. The current ground and tree foliage remain finer-grained than the approved clip. Preserve the warm palette and actual reference-derived art.
-4. View the resulting transitions in the engine and re-run full-room movement, lasso, shoot, overlap and completion. Source-grid counts and anchor equations alone cannot prove anatomy or motion quality.
-5. Refresh current Windows/source packages, method documentation and periodic shared candidate snapshot after the visual pass. Keep admission, extraction and selected integration counts distinct.
+Rendered gameplay and a fresh continuous scripted run pass the objective. A northeast sequence proof now has clean-hand lasso poses, declared per-frame durations, hand/neck sockets and one engine rope through wind, cast, flight, catch and lead. An independent visual review found this a substantial improvement. The full room also passed with a wider, eased following distance.
 
-This audit preserves the one-room goal. It does not authorize a wider campaign or treat a larger candidate library as completion.
+## Unfinished requirements
+
+1. Prove near/far hoof contact through a complete moving northeast walk cycle. The new eight-frame strip improves body stability, but frame143→144 changes support abruptly. The source record retains phase_order_verified=false.
+2. Repair remaining directional walk/lasso sequences using the proven method. Cardinal legacy lasso sheets depict winding without a true release; wrong-side oblique extensions were excluded, not magically repaired.
+3. Check the lasso's acceleration-to-release and follow-through-to-low-hand transitions closely. Maintain one visible hand-attached rope and a readable neck catch while moving.
+4. Refresh engine review evidence and distributable builds after each admitted correction. Earlier movies remain historical rather than proof of the latest pixels.
+5. Meet the user's visual bar in the whole playable room before broader implementation.
+
+GAME-DESIGN.md records the newly accepted adult Weird West companion-romance identity. Those design contracts do not count as implemented romance, madness or companion switching.

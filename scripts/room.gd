@@ -30,6 +30,9 @@ var target := Vector2.INF
 var facing := Vector2.RIGHT
 var rope_target: Node2D
 var rope_time := 0.0
+var rope_flight_target: Node2D
+var rope_flight_time := 0.0
+const ROPE_FLIGHT_SECONDS := 0.20
 var rope: Line2D
 var shot: Line2D
 var shot_time := 0.0
@@ -43,6 +46,7 @@ var pending_shot := false
 var pending_aim := Vector2.RIGHT
 var scenery: Node2D
 var solid_scenery: Array = []
+var sequence_walking := false
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -118,6 +122,10 @@ func _ready() -> void:
 	if "--herd-review" in OS.get_cmdline_user_args():
 		qa_done = true
 		run_herd_review.call_deferred()
+	if "--sequence-review" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_sequence_review.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -252,6 +260,13 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--sequence-review" in OS.get_cmdline_user_args():
+		if sequence_walking:
+			var travel := Vector2(1,-1).normalized()*72*delta
+			player.position += travel
+			player.pose(true,travel,72)
+		update_rope(delta)
+		return
 	if "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args(): return
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
@@ -277,9 +292,9 @@ func _physics_process(delta: float) -> void:
 			cow.pose(false)
 			continue
 		if cow == rope_target and rope_time > 0:
-			var follow: Vector2 = player.position - facing * 36
+			var follow: Vector2 = player.position - facing * 64
 			if cow.position.distance_to(follow) > 8:
-				velocity = cow.position.direction_to(follow) * 85
+				velocity = cow.position.direction_to(follow) * minf(85, (cow.position.distance_to(follow)-8)*4)
 		elif away.length() < 70 and away.length() > 0.1:
 			velocity = away.normalized() * (70 - away.length()) * 1.25
 		for other in cows:
@@ -294,12 +309,7 @@ func _physics_process(delta: float) -> void:
 		if CORRAL.has_point(cow.position) and not rustler_active:
 			cow.secured = true
 			message = "A steer settles in the east gathering. %d of 6 safe." % secured_count()
-	if rope_time > 0 and is_instance_valid(rope_target):
-		rope_time -= delta
-		rope.points = PackedVector2Array([player.position + Vector2(0,-31), (player.position + rope_target.position) / 2 + Vector2(0,-15), rope_target.position + Vector2(0,-16)])
-	else:
-		rope.clear_points()
-		rope_target = null
+	update_rope(delta)
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()
 	if escaped:
@@ -348,7 +358,7 @@ func interact() -> void:
 	if player.position.distance_to(eleanor.position) < 65:
 		talked = true
 		eleanor.action("talk", Vector2.RIGHT)
-		message = "Eleanor: Push from behind. Lasso a stray. Drive off the rustler first."
+		message = "Eleanor: Spirits spooked the herd. Push from behind; rope strays. Clear that rustler first."
 	else:
 		message = "Ride near Eleanor by the wagon, then Talk. Click or tap the ground to ride."
 	refresh()
@@ -393,17 +403,10 @@ func on_player_action_event(event_name: String) -> void:
 	if event_name == "rope_release" and is_instance_valid(pending_lasso):
 		var caught := pending_lasso
 		pending_lasso = null
-		if player.position.distance_to(caught.position) > 130:
-			message = "The loop falls short. Ride closer and cast again."
-		elif caught == rustler and rustler_active:
-			rope_target = caught
-			rope_time = 0.7
-			clear_rustler("Your loop catches his gun arm. The rustler flees.")
-		elif caught in cows and not caught.secured:
-			rope_target = caught
-			rope_time = 7.0
-			message = "Roped! Ride east. The steer follows for seven seconds."
-		refresh()
+		if str(player.art.animation) == "lasso_northeast":
+			rope_flight_target = caught
+			rope_flight_time = ROPE_FLIGHT_SECONDS
+		else: catch_rope(caught)
 	if event_name != "fire" or not pending_shot: return
 	pending_shot = false
 	shot_time = 0.10
@@ -419,6 +422,56 @@ func on_player_action_event(event_name: String) -> void:
 	shot.points = PackedVector2Array([origin, endpoint])
 	refresh()
 
+func catch_rope(caught: Node2D) -> void:
+	if not is_instance_valid(caught): return
+	if player.position.distance_to(caught.position) > 140:
+		message = "The loop falls short. Ride closer and cast again."
+	elif caught == rustler and rustler_active:
+		rope_target = caught
+		rope_time = 0.7
+		clear_rustler("Your loop catches his gun arm. The rustler flees.")
+	elif caught in cows and not caught.secured:
+		rope_target = caught
+		rope_time = 7.0
+		message = "Roped! Ride east. The steer follows for seven seconds."
+	refresh()
+
+func update_rope(delta: float) -> void:
+	var hand: Vector2 = player.socket_world("rope_hand",Vector2(8,-42))
+	var points := PackedVector2Array()
+	if rope_flight_time > 0 and is_instance_valid(rope_flight_target):
+		rope_flight_time = maxf(0,rope_flight_time-delta)
+		var progress := 1.0-rope_flight_time/ROPE_FLIGHT_SECONDS
+		var neck: Vector2 = rope_flight_target.socket_world("rope_neck",Vector2(0,-22))
+		var loop_center := hand.lerp(neck,progress) + Vector2(0,-sin(progress*PI)*12)
+		append_rope_curve(points,hand,loop_center+Vector2(6,0),3)
+		append_rope_loop(points,loop_center,Vector2(6,3))
+		if rope_flight_time == 0:
+			catch_rope(rope_flight_target)
+			rope_flight_target = null
+	elif rope_time > 0 and is_instance_valid(rope_target):
+		rope_time -= delta
+		var neck: Vector2 = rope_target.socket_world("rope_neck",Vector2(0,-22))
+		append_rope_curve(points,hand,neck+Vector2(5,0),clampf((90-hand.distance_to(neck))*0.12,1,8))
+		append_rope_loop(points,neck,Vector2(5,3))
+	elif is_instance_valid(pending_lasso) and str(player.art.animation)=="lasso_northeast" and player.art.frame>0:
+		var center := hand+Vector2(-11,-4)
+		points.append(hand.round())
+		append_rope_loop(points,center,Vector2(11,4))
+	else:
+		rope_target = null
+	rope.points = points
+
+func append_rope_curve(points: PackedVector2Array, start: Vector2, finish: Vector2, sag: float) -> void:
+	for i in range(9):
+		var t := float(i)/8.0
+		points.append((start.lerp(finish,t)+Vector2(0,sin(t*PI)*sag)).round())
+
+func append_rope_loop(points: PackedVector2Array, center: Vector2, radius: Vector2) -> void:
+	for i in range(17):
+		var angle := float(i)/16.0*TAU
+		points.append((center+Vector2(cos(angle)*radius.x,sin(angle)*radius.y)).round())
+
 func clear_rustler(text: String) -> void:
 	rustler_active = false
 	escaped = true
@@ -428,7 +481,7 @@ func clear_rustler(text: String) -> void:
 
 func refresh() -> void:
 	if not is_instance_valid(stats): return
-	stats.text = "$%d    CATTLE %d/6    AMMO %d    MAY 12, 1868" % [cash,secured_count(),ammo]
+	stats.text = "$%d    CATTLE %d/6    AMMO %d    MAY 12, 1872" % [cash,secured_count(),ammo]
 	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
 	if not won and rope_time > 0 and rope_target in cows:
 		objective.text = "STEER ROPED  /  %.1fs remaining  /  Ride toward the east gathering" % rope_time
@@ -454,6 +507,41 @@ func run_pose_review() -> void:
 			player.action(action,direction)
 			await get_tree().create_timer(0.85).timeout
 	print("POSE REVIEW PASS: 24 actual engine action/facing transitions rendered against original art")
+	get_tree().quit()
+
+func run_sequence_review() -> void:
+	# Focused animation evidence; this mode is distinct from full gameplay QA.
+	for actor in actors.get_children(): actor.visible = actor == player
+	for cow in cows: cow.position = Vector2(600,300)
+	player.position = Vector2(160,275)
+	var steer: Node2D = cows[0]
+	steer.position = Vector2(320,170)
+	steer.visible = true
+	steer.pose(false,Vector2(1,-1))
+	rustler_active = false
+	objective.text = "SEQUENCE REVIEW / northeast walk / travel over fixed ground"
+	journal.text = "Three moving cycles expose foot sliding; then two stationary cycles and timed lasso casts."
+	player.art.play("walk_northeast")
+	sequence_walking = true
+	await get_tree().create_timer(2.88).timeout
+	sequence_walking = false
+	player.position = Vector2(240,230)
+	await get_tree().create_timer(1.92).timeout
+	player.pose(false,Vector2(1,-1))
+	await get_tree().create_timer(0.6).timeout
+	for repetition in range(3):
+		rope_time = 0
+		rope_target = null
+		objective.text = "SEQUENCE REVIEW / wind → cast → flight → catch → low-hand lead"
+		lasso()
+		await get_tree().create_timer(0.6).timeout
+		assert(rope_target == null and rope_flight_time > 0, "Catch must wait for visible loop flight")
+		assert(rope.get_point_count()>8, "The single rope must have a visible loop and hand tether")
+		await get_tree().create_timer(0.25).timeout
+		assert(rope_target == steer, "The loop must reach the neck before attachment")
+		await get_tree().create_timer(1.5).timeout
+		assert(player.art.animation == "idle_northeast", "Completed cast must settle to low-hand lead")
+	print("SEQUENCE REVIEW PASS: 5 walk cycles; 3 timed single-rope casts, neck catches and low-hand recoveries")
 	get_tree().quit()
 
 func run_herd_review() -> void:

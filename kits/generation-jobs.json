@@ -511,5 +511,177 @@
     "replace_id": "trees",
     "replacement_reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count.",
     "prompt": "Create a Cattle Trail production TREE KIT: exactly16 isolated trees in a spacious4x4grid on pure solid magenta #FF00FF. Use attached approved game concept for EXACT chunky pixel-art density, warm olive palette, darkbrown contours and fixed high-three-quarter orthographic camera with visible canopy tops. Each tree fully separate with huge gutters, entire crown+trunk+rootcontact visible. NO grass patches, soil bases, cast shadows, rocks, labels, gridlines, people or props. VARIANTS row1:4 mature broad Texas live oaks with differently balanced rounded crowns and solid readable twisted trunks; row2:4 smaller mesquite trees with open forked branches; row3:4 young cottonwood saplings and sparse upright trees; row4:4 weathered partly bare or dead trees with readable branching silhouettes. Richness is useful silhouette variety and size stages, not granular surface detail. CRITICAL simplify foliage: big contiguous leaf masses, broad stepped clusters,5-6colorspercanopy, dark contour around crown; absolutely NO thousands of separate tiny leaf speckles or fine noisy filigree. Branches and trunks also limited4shadepixelclusters. Match compact original screenshot trees, do not use highly detailed fantasy asset aesthetic. No smoothing, gradients, softbrushes, photorealism, 3D. Bottomgroundcontact clean and centered, lightingupperleft, proportionsconsistent withinrow. Each tree must remain readable rendered100pixels high."
+  },
+  {
+    "id": "cardinal-motion-north-v4-longhorn",
+    "source_file": "cardinal-motion-north-v4.png",
+    "family": "longhorn",
+    "selected_rows": [
+      0
+    ],
+    "direction": "north",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY NORTH directly away from viewer. Match the FIRST reference's THIRD COLUMN neutral cattle. Symmetric rear view, spine vertical, rump below head, head mostly occluded, NEVER turn northeast/northwest. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY EAST/right, matching SECOND reference firstrow side-oriented horse/rider viewing angle , NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-north-v4-cream",
+    "source_file": "cardinal-motion-north-v4.png",
+    "family": "cream",
+    "selected_rows": [
+      1
+    ],
+    "direction": "north",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY NORTH directly away from viewer. Match the FIRST reference's THIRD COLUMN neutral cattle. Symmetric rear view, spine vertical, rump below head, head mostly occluded, NEVER turn northeast/northwest. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY EAST/right, matching SECOND reference firstrow side-oriented horse/rider viewing angle , NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-north-v4-spotted",
+    "source_file": "cardinal-motion-north-v4.png",
+    "family": "spotted",
+    "selected_rows": [
+      2
+    ],
+    "direction": "north",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY NORTH directly away from viewer. Match the FIRST reference's THIRD COLUMN neutral cattle. Symmetric rear view, spine vertical, rump below head, head mostly occluded, NEVER turn northeast/northwest. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY EAST/right, matching SECOND reference firstrow side-oriented horse/rider viewing angle , NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-north-v4-rider",
+    "source_file": "cardinal-motion-north-v4.png",
+    "family": "rider",
+    "selected_rows": [
+      3
+    ],
+    "direction": "east",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY NORTH directly away from viewer. Match the FIRST reference's THIRD COLUMN neutral cattle. Symmetric rear view, spine vertical, rump below head, head mostly occluded, NEVER turn northeast/northwest. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY EAST/right, matching SECOND reference firstrow side-oriented horse/rider viewing angle , NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-south-v4-longhorn",
+    "source_file": "cardinal-motion-south-v4.png",
+    "family": "longhorn",
+    "selected_rows": [
+      0
+    ],
+    "direction": "south",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY SOUTH directly toward viewer. Match the FIRST reference's FOURTH COLUMN neutral cattle EXACTLY. Upright readable head/chest with front legs fully visible; modest back top-plane only, NEVER steep overhead/back-dominant silhouette. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY WEST/left, matching SECOND reference firstrow side-oriented horse/rider viewing angle but facing left, NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-south-v4-cream",
+    "source_file": "cardinal-motion-south-v4.png",
+    "family": "cream",
+    "selected_rows": [
+      1
+    ],
+    "direction": "south",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY SOUTH directly toward viewer. Match the FIRST reference's FOURTH COLUMN neutral cattle EXACTLY. Upright readable head/chest with front legs fully visible; modest back top-plane only, NEVER steep overhead/back-dominant silhouette. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY WEST/left, matching SECOND reference firstrow side-oriented horse/rider viewing angle but facing left, NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-south-v4-spotted",
+    "source_file": "cardinal-motion-south-v4.png",
+    "family": "spotted",
+    "selected_rows": [
+      2
+    ],
+    "direction": "south",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY SOUTH directly toward viewer. Match the FIRST reference's FOURTH COLUMN neutral cattle EXACTLY. Upright readable head/chest with front legs fully visible; modest back top-plane only, NEVER steep overhead/back-dominant silhouette. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY WEST/left, matching SECOND reference firstrow side-oriented horse/rider viewing angle but facing left, NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "cardinal-motion-south-v4-rider",
+    "source_file": "cardinal-motion-south-v4.png",
+    "family": "rider",
+    "selected_rows": [
+      3
+    ],
+    "direction": "west",
+    "actions": [
+      "walk",
+      "walk",
+      "walk",
+      "idle"
+    ],
+    "clip_prefix": "v4_",
+    "prompt": "Create a production Cattle Trail corrective sprite board, EXACTLY4columns×4rows =16 isolatedsprites on solid pure magenta #FF00FF. Wide clean gutters. Attached FIRST reference is identity and cattle camera source; SECOND is rider angle/style source. Rows1-3 are 4-frame slow WALK cycles: row1 reddish brown longhorn; row2 cream cattle; row3 white/red-brown spotted cattle. All twelve cattle face STRICTLY SOUTH directly toward viewer. Match the FIRST reference's FOURTH COLUMN neutral cattle EXACTLY. Upright readable head/chest with front legs fully visible; modest back top-plane only, NEVER steep overhead/back-dominant silhouette. Same fixed high-three-quarter camera elevation and body proportions as those neutral reference poses. Feet animate clear fourbeat slowwalking steps; frame1contact,2passing,3oppositecontact,4passing. Bodies stay same size and direction, no turning, galloping, deformations or perspective shift. Row4 is mounted cowboy IDLE facing STRICTLY WEST/left, matching SECOND reference firstrow side-oriented horse/rider viewing angle but facing left, NOT rear-diagonal. Blue shirtredscarfbrownhat, chestnutmountblackmane. Allfouridleframes have every visible hoof planted, seated relaxed riderholdingreins, subtle ear/tail/breath changesonly; NO raisedlegs, rope, gun, dust or effects. Wholehorse+wholecowboyin eachcell. Allsixteen sprites compact crisp dark-outlined pixelart with broad tonalclusters fromreferences, no microspeckle/shadows/ground/smoothing/labels. Eachrow has exactly4nonoverlappingcompletefigures; do not insert asecondrider or anyprops.",
+    "ref": 0
+  },
+  {
+    "id": "rider-ne-walk-sequence-v5",
+    "family": "rider",
+    "rows": 2,
+    "columns": 4,
+    "direction": "northeast",
+    "actions": [
+      "walk",
+      "walk"
+    ],
+    "clip_prefix": "v5_",
+    "prompt": "Use attached Cattle Trail mounted cowboy northeast sprite sheet as exact identity/camera reference. Create EXACTLY8 full mounted rider sprites in a4column×2rowgrid on solid puremagenta#FF00FF with large gutters. Each complete horse+rider same size, facing upper-right NORTHEAST at the same fixed highthreequarter camera. Chestnutmountblackmane, blueshirtredscarfbrownhat. CRITICAL preserve same body/neck/head/saddle proportions and pixel contours in every frame; do not redraw into different horses. Align pelvis and groundcontact consistently, no zoom or orientation drift. Crisp compact pixelart, darkbrown contours, no smoothing, no extra people/labels/ground/dust/shadows. Sequence order left-to-right top row then bottom row. This is ONE anatomically coherent8frame SLOW FOUR-BEAT WALK CYCLE, NOT eight varied actionposes. Rider stays seated, reinssteady. Horse walks inplace atconstantworldposition. Track four distinct legs throughout: near hind NH, near fore NF, far hind FH, far fore FF. Ground contacts occur NH frame1, NF frame3, FH frame5, FF frame7, intermediate passingposes at2,4,6,8. Planted hooves travel backward relative to torso during stance; lifted hoof swings forward only during recovery. Always2-3hooves in support, never airborne/galloping. Frame1 NH reachesforwardandplants, NF remainsnearrearstance; frame2 NHloadswhileNF liftsandswings; frame3NFforwardcontact; frame4FHswings; frame5FHforwardcontact; frame6FFswings; frame7FFforwardcontact; frame8NHswingsforward returning smoothlytoframe1. Near/farlegs keepidentityandocclusion. Torso andsaddle moveatmost1nativepixelvertically; no limb multiplying/disappearing and no same-pose duplicatepairing. Reference supplies identity; replaceits incoherentwalkposes with thisstrictsequence.",
+    "ref": 0
+  },
+  {
+    "id": "rider-ne-lasso-sequence-v5",
+    "family": "rider",
+    "rows": 2,
+    "columns": 4,
+    "direction": "northeast",
+    "actions": [
+      "lasso",
+      "lasso"
+    ],
+    "clip_prefix": "v5_",
+    "prompt": "Use attached Cattle Trail mounted cowboy northeast sprite sheet as exact identity/camera reference. Create EXACTLY8 full mounted rider sprites in a4column×2rowgrid on solid puremagenta#FF00FF with large gutters. Each complete horse+rider same size, facing upper-right NORTHEAST at the same fixed highthreequarter camera. Chestnutmountblackmane, blueshirtredscarfbrownhat. CRITICAL preserve same body/neck/head/saddle proportions and pixel contours in every frame; do not redraw into different horses. Align pelvis and groundcontact consistently, no zoom or orientation drift. Crisp compact pixelart, darkbrown contours, no smoothing, no extra people/labels/ground/dust/shadows. Sequence order left-to-right top row then bottom row. This is ONE8pose mounted LASSO action with HORSE STATIONARY, ALL FOUR HOOVES PLANTED identically in everyframe. Animate ONLY cowboy rightthrowingarm+smalltorsorotation, lefthandreinssteady. NO ROPE PIXELS ANYWHERE: gameengine drawsonecontinuousrope throughhandsocket. Do not draw loop/string/coils/weapon, eveninwindupposes. Frame1ready: righthandlowatbeltheight. Frame2raise: elbowbent,righthandbesidehat. Frame3wind: righthandaboverightshoulder,elbowhigh. Frame4castacceleration: torsotwistandforearmdrivesNORTHEAST. Frame5release: righthandfullyextendedtowardupperrighttarget, fingersopen. Frame6followthrough: armstillforward,slightlylower. Frame7takeup: elbowbendsdrawingrighthandtowardsaddlefront. Frame8lead: righthandfirmlylowinfrontofwaist, readyholdtautrope. Do NOTreturntooverheadwindatend. Entirebody/saddle/horse islockedacrossframes,onlyrightarmchanges. Accurateclearvisiblehandineachcell isessentialforropeattachment. NOBAKEDROPES.",
+    "ref": 0
   }
 ]

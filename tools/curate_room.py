@@ -18,11 +18,15 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     if name in ['rider','longhorn','cream','spotted']: directions += [d for d in ['northeast','northwest','southeast','southwest'] if 'walk_'+d in source]
     for direction in directions:
         for action in ['idle','walk']:
-            spec['clips'][action+'_'+direction]=copy.deepcopy(source[action+'_'+direction])
+            clip_name=action+'_'+direction
+            source_name='v4_'+clip_name if 'v4_'+clip_name in source else clip_name
+            spec['clips'][clip_name]=copy.deepcopy(source[source_name])
             if action=='idle': spec['clips'][action+'_'+direction]['fps']=3
     if name=='rider':
         alignment=json.loads((root/'assets/rider-anchors.json').read_text())
         spec['clip_anchors']={clip:data['anchor'] for clip,data in alignment['clips'].items()}
+        for clip in spec['clips']:
+            if 'v4_'+clip in alignment['clips']: spec['clip_anchors'][clip]=alignment['clips']['v4_'+clip]['anchor']
         spec['anchor_policy']=alignment['method']
         spec['action_events']={}
         for direction in directions:
@@ -38,6 +42,24 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     if name=='eleanor':
         # Two standing hand gestures keep the bag out of the animation.
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}
+    if name=='rider' and 'v5_lasso_northeast' in source:
+        sequence=json.loads((root/'assets/sequence-curation.json').read_text())
+        spec['frame_sockets']={}
+        for action in ['walk','lasso']:
+            recipe=sequence[action]; frames=source[recipe['source_clip']]['frames']
+            clip_name=action+'_northeast'
+            spec['clips'][clip_name]={'frames':[frames[i] for i in recipe['order']],'fps':8,'loop':action=='walk','durations':recipe['durations']}
+            spec['clip_anchors'][clip_name]=alignment['clips'][recipe['source_clip']]['anchor']
+        lasso_frames=source[sequence['lasso']['source_clip']]['frames']
+        for frame,point in zip(lasso_frames,sequence['lasso']['hand_sockets']): spec['frame_sockets'][str(frame)]={'rope_hand':point}
+        for frame in source[sequence['walk']['source_clip']]['frames']: spec['frame_sockets'][str(frame)]={'rope_hand':[54,51]}
+        spec['clips']['idle_northeast']={'frames':[lasso_frames[-1]],'fps':1,'loop':True}
+        spec['clip_anchors']['idle_northeast']=spec['clip_anchors']['lasso_northeast']
+        spec['action_events']['lasso_northeast']={'name':'rope_release','frame':sequence['lasso']['release_ordinal'],'basis':'Clean open-hand release; engine owns the single rope','once_per_action':True}
+        spec['procedural_rope_clips']=['lasso_northeast']
+    if name in ['longhorn','cream','spotted']:
+        necks={'east':[53,40],'west':[18,40],'north':[36,31],'south':[36,43],'northeast':[47,36],'northwest':[24,36],'southeast':[48,42],'southwest':[23,42]}
+        spec['frame_sockets']={str(i):{'rope_neck':necks[frame['direction']]} for i,frame in enumerate(spec['frames']) if frame['direction'] in necks}
     spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_east'])
     if 'idle_northeast' in spec['clips']:
         spec['default_facing']='northeast'

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "northeast_sequence_under_engine_review",
+  "scope": "One rider direction proves sequencing before expansion; other directions remain legacy candidates.",
+  "walk": {"source_clip": "v5_walk_northeast", "order": [0,1,2,3,4,5,6,7], "durations": [0.12,0.12,0.12,0.12,0.12,0.12,0.12,0.12], "phase_order_verified": false},
+  "lasso": {"source_clip": "v5_lasso_northeast", "order": [0,1,2,3,4,5,6,7], "durations": [0.10,0.14,0.20,0.08,0.12,0.14,0.14,0.12], "release_ordinal": 4, "hand_sockets": [[55,51],[54,38],[60,35],[68,41],[68,39],[68,42],[54,51],[55,52]], "stages": ["ready","raise","wind","accelerate","release","follow_through","take_up","lead"], "rope_pixels_baked_into_source": false},
+  "acceptance": "Inspect repeated native engine gait and single-rope cast/catch/lead before declaring corrected. Source row order is a proposal, not proof."
+}

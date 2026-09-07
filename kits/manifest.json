@@ -4370,6 +4370,822 @@
             93
           ],
           "id": "rider_131"
+        },
+        {
+          "source_rect": [
+            0,
+            890,
+            318,
+            1254
+          ],
+          "trim": [
+            56,
+            37,
+            288,
+            282
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "east",
+          "scale": 0.2540983606557377,
+          "job": "cardinal-motion-north-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            384,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_132"
+        },
+        {
+          "source_rect": [
+            318,
+            890,
+            618,
+            1254
+          ],
+          "trim": [
+            31,
+            38,
+            268,
+            282
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "east",
+          "scale": 0.2540983606557377,
+          "job": "cardinal-motion-north-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            480,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_133"
+        },
+        {
+          "source_rect": [
+            618,
+            890,
+            913,
+            1254
+          ],
+          "trim": [
+            33,
+            38,
+            267,
+            282
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "east",
+          "scale": 0.2540983606557377,
+          "job": "cardinal-motion-north-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            576,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_134"
+        },
+        {
+          "source_rect": [
+            913,
+            890,
+            1254,
+            1254
+          ],
+          "trim": [
+            29,
+            39,
+            270,
+            282
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "east",
+          "scale": 0.2540983606557377,
+          "job": "cardinal-motion-north-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            672,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_135"
+        },
+        {
+          "source_rect": [
+            0,
+            866,
+            312,
+            1254
+          ],
+          "trim": [
+            46,
+            43,
+            288,
+            297
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "west",
+          "scale": 0.2440944881889764,
+          "job": "cardinal-motion-south-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            0,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_136"
+        },
+        {
+          "source_rect": [
+            312,
+            866,
+            613,
+            1254
+          ],
+          "trim": [
+            25,
+            43,
+            268,
+            297
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "west",
+          "scale": 0.2440944881889764,
+          "job": "cardinal-motion-south-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            96,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_137"
+        },
+        {
+          "source_rect": [
+            613,
+            866,
+            922,
+            1254
+          ],
+          "trim": [
+            35,
+            43,
+            285,
+            297
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "west",
+          "scale": 0.2440944881889764,
+          "job": "cardinal-motion-south-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            192,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_138"
+        },
+        {
+          "source_rect": [
+            922,
+            866,
+            1254,
+            1254
+          ],
+          "trim": [
+            25,
+            43,
+            274,
+            297
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "west",
+          "scale": 0.2440944881889764,
+          "job": "cardinal-motion-south-v4-rider",
+          "action": "idle",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            288,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_139"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            357,
+            506
+          ],
+          "trim": [
+            64,
+            118,
+            303,
+            434
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_140"
+        },
+        {
+          "source_rect": [
+            357,
+            0,
+            718,
+            506
+          ],
+          "trim": [
+            55,
+            119,
+            299,
+            435
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_141"
+        },
+        {
+          "source_rect": [
+            718,
+            0,
+            1084,
+            506
+          ],
+          "trim": [
+            62,
+            119,
+            311,
+            435
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_142"
+        },
+        {
+          "source_rect": [
+            1084,
+            0,
+            1491,
+            506
+          ],
+          "trim": [
+            56,
+            119,
+            297,
+            434
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            1632,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_143"
+        },
+        {
+          "source_rect": [
+            0,
+            506,
+            356,
+            1055
+          ],
+          "trim": [
+            58,
+            71,
+            302,
+            386
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_144"
+        },
+        {
+          "source_rect": [
+            356,
+            506,
+            714,
+            1055
+          ],
+          "trim": [
+            56,
+            71,
+            300,
+            388
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_145"
+        },
+        {
+          "source_rect": [
+            714,
+            506,
+            1076,
+            1055
+          ],
+          "trim": [
+            60,
+            71,
+            305,
+            382
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_146"
+        },
+        {
+          "source_rect": [
+            1076,
+            506,
+            1491,
+            1055
+          ],
+          "trim": [
+            57,
+            71,
+            304,
+            388
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "source_sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "direction": "northeast",
+          "scale": 0.1962025316455696,
+          "job": "rider-ne-walk-sequence-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_147"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            381,
+            472
+          ],
+          "trim": [
+            87,
+            97,
+            323,
+            407
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_148"
+        },
+        {
+          "source_rect": [
+            381,
+            0,
+            734,
+            472
+          ],
+          "trim": [
+            59,
+            98,
+            294,
+            407
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_149"
+        },
+        {
+          "source_rect": [
+            734,
+            0,
+            1102,
+            472
+          ],
+          "trim": [
+            59,
+            98,
+            294,
+            407
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_150"
+        },
+        {
+          "source_rect": [
+            1102,
+            0,
+            1567,
+            472
+          ],
+          "trim": [
+            74,
+            97,
+            313,
+            407
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            1728,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_151"
+        },
+        {
+          "source_rect": [
+            0,
+            472,
+            394,
+            1004
+          ],
+          "trim": [
+            88,
+            66,
+            342,
+            378
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            1824,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_152"
+        },
+        {
+          "source_rect": [
+            394,
+            472,
+            750,
+            1004
+          ],
+          "trim": [
+            53,
+            66,
+            312,
+            378
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            1824,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_153"
+        },
+        {
+          "source_rect": [
+            750,
+            472,
+            1103,
+            1004
+          ],
+          "trim": [
+            45,
+            66,
+            280,
+            378
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            1824,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_154"
+        },
+        {
+          "source_rect": [
+            1103,
+            472,
+            1567,
+            1004
+          ],
+          "trim": [
+            73,
+            66,
+            309,
+            378
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-ne-lasso-sequence-v5.png",
+          "source_sha256": "d8f3f3e0a84947ad51138699f4c625502f9357c47328fe6c3eee0ecf258156a7",
+          "direction": "northeast",
+          "scale": 0.20032310177705978,
+          "job": "rider-ne-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            1824,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_155"
         }
       ],
       "clips": {
@@ -4720,10 +5536,58 @@
           ],
           "fps": 5,
           "loop": true
+        },
+        "v4_idle_east": {
+          "frames": [
+            132,
+            133,
+            134,
+            135
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "v4_idle_west": {
+          "frames": [
+            136,
+            137,
+            138,
+            139
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "v5_walk_northeast": {
+          "frames": [
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "v5_lasso_northeast": {
+          "frames": [
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+          ],
+          "fps": 5,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 132,
+      "count": 156,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -8039,6 +8903,278 @@
             61
           ],
           "id": "longhorn_099"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            334,
+            320
+          ],
+          "trim": [
+            123,
+            73,
+            246,
+            284
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18181818181818182,
+          "job": "cardinal-motion-north-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            288,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_100"
+        },
+        {
+          "source_rect": [
+            334,
+            0,
+            627,
+            320
+          ],
+          "trim": [
+            88,
+            74,
+            206,
+            284
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18181818181818182,
+          "job": "cardinal-motion-north-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            360,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_101"
+        },
+        {
+          "source_rect": [
+            627,
+            0,
+            922,
+            320
+          ],
+          "trim": [
+            87,
+            76,
+            206,
+            280
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18181818181818182,
+          "job": "cardinal-motion-north-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            432,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_102"
+        },
+        {
+          "source_rect": [
+            922,
+            0,
+            1254,
+            320
+          ],
+          "trim": [
+            89,
+            74,
+            208,
+            282
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18181818181818182,
+          "job": "cardinal-motion-north-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            504,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_103"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            328,
+            314
+          ],
+          "trim": [
+            116,
+            94,
+            248,
+            261
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22822822822822822,
+          "job": "cardinal-motion-south-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            0,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_104"
+        },
+        {
+          "source_rect": [
+            328,
+            0,
+            622,
+            314
+          ],
+          "trim": [
+            80,
+            98,
+            206,
+            262
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22822822822822822,
+          "job": "cardinal-motion-south-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            72,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_105"
+        },
+        {
+          "source_rect": [
+            622,
+            0,
+            914,
+            314
+          ],
+          "trim": [
+            88,
+            97,
+            214,
+            263
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22822822822822822,
+          "job": "cardinal-motion-south-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            144,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_106"
+        },
+        {
+          "source_rect": [
+            914,
+            0,
+            1254,
+            314
+          ],
+          "trim": [
+            80,
+            95,
+            209,
+            262
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22822822822822822,
+          "job": "cardinal-motion-south-v4-longhorn",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            216,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_107"
         }
       ],
       "clips": {
@@ -8309,10 +9445,30 @@
           ],
           "fps": 5,
           "loop": true
+        },
+        "v4_walk_north": {
+          "frames": [
+            100,
+            101,
+            102,
+            103
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "v4_walk_south": {
+          "frames": [
+            104,
+            105,
+            106,
+            107
+          ],
+          "fps": 7,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 100,
+      "count": 108,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -11629,6 +12785,278 @@
             61
           ],
           "id": "cream_099"
+        },
+        {
+          "source_rect": [
+            0,
+            320,
+            332,
+            606
+          ],
+          "trim": [
+            126,
+            37,
+            243,
+            250
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.17966903073286053,
+          "job": "cardinal-motion-north-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            288,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_100"
+        },
+        {
+          "source_rect": [
+            332,
+            320,
+            626,
+            606
+          ],
+          "trim": [
+            89,
+            38,
+            207,
+            250
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.17966903073286053,
+          "job": "cardinal-motion-north-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            360,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_101"
+        },
+        {
+          "source_rect": [
+            626,
+            320,
+            922,
+            606
+          ],
+          "trim": [
+            88,
+            37,
+            206,
+            247
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.17966903073286053,
+          "job": "cardinal-motion-north-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            432,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_102"
+        },
+        {
+          "source_rect": [
+            922,
+            320,
+            1254,
+            606
+          ],
+          "trim": [
+            90,
+            37,
+            207,
+            248
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.17966903073286053,
+          "job": "cardinal-motion-north-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            504,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_103"
+        },
+        {
+          "source_rect": [
+            0,
+            314,
+            328,
+            595
+          ],
+          "trim": [
+            115,
+            51,
+            252,
+            224
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.21902017291066284,
+          "job": "cardinal-motion-south-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            0,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_104"
+        },
+        {
+          "source_rect": [
+            328,
+            314,
+            622,
+            595
+          ],
+          "trim": [
+            76,
+            54,
+            212,
+            228
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.21902017291066284,
+          "job": "cardinal-motion-south-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            72,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_105"
+        },
+        {
+          "source_rect": [
+            622,
+            314,
+            916,
+            595
+          ],
+          "trim": [
+            84,
+            55,
+            218,
+            229
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.21902017291066284,
+          "job": "cardinal-motion-south-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            144,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_106"
+        },
+        {
+          "source_rect": [
+            916,
+            314,
+            1254,
+            595
+          ],
+          "trim": [
+            77,
+            53,
+            207,
+            225
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.21902017291066284,
+          "job": "cardinal-motion-south-v4-cream",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            216,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_107"
         }
       ],
       "clips": {
@@ -11899,10 +13327,30 @@
           ],
           "fps": 5,
           "loop": true
+        },
+        "v4_walk_north": {
+          "frames": [
+            100,
+            101,
+            102,
+            103
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "v4_walk_south": {
+          "frames": [
+            104,
+            105,
+            106,
+            107
+          ],
+          "fps": 7,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 100,
+      "count": 108,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -15219,6 +16667,278 @@
             61
           ],
           "id": "spotted_099"
+        },
+        {
+          "source_rect": [
+            0,
+            606,
+            332,
+            890
+          ],
+          "trim": [
+            126,
+            37,
+            243,
+            249
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18095238095238095,
+          "job": "cardinal-motion-north-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            288,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_100"
+        },
+        {
+          "source_rect": [
+            332,
+            606,
+            626,
+            890
+          ],
+          "trim": [
+            89,
+            38,
+            207,
+            249
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18095238095238095,
+          "job": "cardinal-motion-north-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            360,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_101"
+        },
+        {
+          "source_rect": [
+            626,
+            606,
+            921,
+            890
+          ],
+          "trim": [
+            88,
+            39,
+            206,
+            246
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18095238095238095,
+          "job": "cardinal-motion-north-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            432,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_102"
+        },
+        {
+          "source_rect": [
+            921,
+            606,
+            1254,
+            890
+          ],
+          "trim": [
+            90,
+            37,
+            208,
+            246
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-north-v4.png",
+          "source_sha256": "b3f0465bd50f76ae0d602d614ac64d633f22df349ca957c20b9994579ac588bb",
+          "direction": "north",
+          "scale": 0.18095238095238095,
+          "job": "cardinal-motion-north-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            504,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_103"
+        },
+        {
+          "source_rect": [
+            0,
+            595,
+            326,
+            866
+          ],
+          "trim": [
+            115,
+            53,
+            249,
+            225
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22093023255813954,
+          "job": "cardinal-motion-south-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            0,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_104"
+        },
+        {
+          "source_rect": [
+            326,
+            595,
+            622,
+            866
+          ],
+          "trim": [
+            78,
+            55,
+            213,
+            227
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22093023255813954,
+          "job": "cardinal-motion-south-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            72,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_105"
+        },
+        {
+          "source_rect": [
+            622,
+            595,
+            916,
+            866
+          ],
+          "trim": [
+            84,
+            57,
+            217,
+            229
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22093023255813954,
+          "job": "cardinal-motion-south-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            144,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_106"
+        },
+        {
+          "source_rect": [
+            916,
+            595,
+            1254,
+            866
+          ],
+          "trim": [
+            77,
+            55,
+            206,
+            226
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cardinal-motion-south-v4.png",
+          "source_sha256": "2eb59104b82a776a2daaef030d63bb28f40b264fc59c30d8c86f08f6b5d963aa",
+          "direction": "south",
+          "scale": 0.22093023255813954,
+          "job": "cardinal-motion-south-v4-spotted",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            216,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_107"
         }
       ],
       "clips": {
@@ -15489,10 +17209,30 @@
           ],
           "fps": 5,
           "loop": true
+        },
+        "v4_walk_north": {
+          "frames": [
+            100,
+            101,
+            102,
+            103
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "v4_walk_south": {
+          "frames": [
+            104,
+            105,
+            106,
+            107
+          ],
+          "fps": 7,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 100,
+      "count": 108,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -24701,5 +26441,5 @@
       "reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count."
     }
   ],
-  "total_extracted": 672
+  "total_extracted": 720
 }
