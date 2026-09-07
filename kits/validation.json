@@ -11,9 +11,9 @@
   ],
   "families": {
     "rider": {
-      "extracted": 96,
-      "unique_rgba_cells": 96,
-      "clips": 28,
+      "extracted": 128,
+      "unique_rgba_cells": 128,
+      "clips": 36,
       "cell": [
         96,
         96
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 528
+  "total_extracted": 560
 }

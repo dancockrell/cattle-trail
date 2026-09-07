@@ -75,6 +75,7 @@ for job in JOBS:
     for p in items:
         p['image']=p['image'].resize((max(1,round(p['image'].width*factor)),max(1,round(p['image'].height*factor))),Image.Resampling.NEAREST)
         p.update({'source':f"kits/source/{job['id']}.png",'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'direction':job.get('direction','none'),'scale':factor,'job':job['id']})
+        if 'row_directions' in job: p['direction']=job['row_directions'][p['row']]
         if family in ACTIONS: p['action']=job.get('actions',ACTIONS[family])[p['row']]
     groups.setdefault(family,[]).extend(items)
 

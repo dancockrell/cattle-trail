@@ -3182,6 +3182,1062 @@
             93
           ],
           "id": "rider_095"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            355,
+            291
+          ],
+          "trim": [
+            95,
+            46,
+            263,
+            265
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_096"
+        },
+        {
+          "source_rect": [
+            355,
+            0,
+            706,
+            291
+          ],
+          "trim": [
+            93,
+            46,
+            262,
+            265
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_097"
+        },
+        {
+          "source_rect": [
+            706,
+            0,
+            1051,
+            291
+          ],
+          "trim": [
+            90,
+            47,
+            258,
+            265
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_098"
+        },
+        {
+          "source_rect": [
+            1051,
+            0,
+            1402,
+            291
+          ],
+          "trim": [
+            89,
+            46,
+            255,
+            265
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_099"
+        },
+        {
+          "source_rect": [
+            0,
+            291,
+            347,
+            557
+          ],
+          "trim": [
+            85,
+            27,
+            259,
+            241
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            384,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_100"
+        },
+        {
+          "source_rect": [
+            347,
+            291,
+            697,
+            557
+          ],
+          "trim": [
+            89,
+            29,
+            265,
+            248
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            480,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_101"
+        },
+        {
+          "source_rect": [
+            697,
+            291,
+            1042,
+            557
+          ],
+          "trim": [
+            86,
+            29,
+            261,
+            240
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            576,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_102"
+        },
+        {
+          "source_rect": [
+            1042,
+            291,
+            1402,
+            557
+          ],
+          "trim": [
+            84,
+            27,
+            259,
+            244
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "walk",
+          "atlas_rect": [
+            672,
+            1152,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_103"
+        },
+        {
+          "source_rect": [
+            0,
+            557,
+            358,
+            843
+          ],
+          "trim": [
+            108,
+            27,
+            267,
+            259
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            0,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_104"
+        },
+        {
+          "source_rect": [
+            358,
+            557,
+            676,
+            843
+          ],
+          "trim": [
+            92,
+            18,
+            251,
+            274
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            96,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_105"
+        },
+        {
+          "source_rect": [
+            676,
+            557,
+            1047,
+            843
+          ],
+          "trim": [
+            67,
+            36,
+            288,
+            255
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            192,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_106"
+        },
+        {
+          "source_rect": [
+            1047,
+            557,
+            1402,
+            843
+          ],
+          "trim": [
+            84,
+            35,
+            248,
+            255
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            288,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_107"
+        },
+        {
+          "source_rect": [
+            0,
+            843,
+            356,
+            1122
+          ],
+          "trim": [
+            100,
+            14,
+            266,
+            235
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            384,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_108"
+        },
+        {
+          "source_rect": [
+            356,
+            843,
+            720,
+            1122
+          ],
+          "trim": [
+            91,
+            13,
+            286,
+            234
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            480,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_109"
+        },
+        {
+          "source_rect": [
+            720,
+            843,
+            1050,
+            1122
+          ],
+          "trim": [
+            79,
+            13,
+            245,
+            234
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            576,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_110"
+        },
+        {
+          "source_rect": [
+            1050,
+            843,
+            1402,
+            1122
+          ],
+          "trim": [
+            86,
+            13,
+            251,
+            234
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-southeast-v3.png",
+          "source_sha256": "044717dc222d952f3287b83e9a64f2fefe6e1c5d4e10927b0ce6b9ef75c604d7",
+          "direction": "southeast",
+          "scale": 0.2831050228310502,
+          "job": "rider-southeast-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            672,
+            1248,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_111"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            322,
+            327
+          ],
+          "trim": [
+            81,
+            66,
+            268,
+            304
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_112"
+        },
+        {
+          "source_rect": [
+            322,
+            0,
+            623,
+            327
+          ],
+          "trim": [
+            54,
+            66,
+            245,
+            304
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_113"
+        },
+        {
+          "source_rect": [
+            623,
+            0,
+            923,
+            327
+          ],
+          "trim": [
+            57,
+            66,
+            245,
+            304
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_114"
+        },
+        {
+          "source_rect": [
+            923,
+            0,
+            1254,
+            327
+          ],
+          "trim": [
+            56,
+            66,
+            247,
+            304
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_115"
+        },
+        {
+          "source_rect": [
+            0,
+            327,
+            318,
+            604
+          ],
+          "trim": [
+            74,
+            25,
+            268,
+            263
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            384,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_116"
+        },
+        {
+          "source_rect": [
+            318,
+            327,
+            618,
+            604
+          ],
+          "trim": [
+            51,
+            25,
+            246,
+            260
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            480,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_117"
+        },
+        {
+          "source_rect": [
+            618,
+            327,
+            920,
+            604
+          ],
+          "trim": [
+            53,
+            24,
+            248,
+            260
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            576,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_118"
+        },
+        {
+          "source_rect": [
+            920,
+            327,
+            1254,
+            604
+          ],
+          "trim": [
+            55,
+            24,
+            250,
+            257
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "walk",
+          "atlas_rect": [
+            672,
+            1344,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_119"
+        },
+        {
+          "source_rect": [
+            0,
+            604,
+            320,
+            917
+          ],
+          "trim": [
+            78,
+            29,
+            268,
+            291
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            0,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_120"
+        },
+        {
+          "source_rect": [
+            320,
+            604,
+            591,
+            917
+          ],
+          "trim": [
+            54,
+            16,
+            242,
+            291
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            96,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_121"
+        },
+        {
+          "source_rect": [
+            591,
+            604,
+            938,
+            917
+          ],
+          "trim": [
+            31,
+            52,
+            293,
+            291
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            192,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_122"
+        },
+        {
+          "source_rect": [
+            938,
+            604,
+            1254,
+            917
+          ],
+          "trim": [
+            54,
+            29,
+            244,
+            291
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "lasso",
+          "atlas_rect": [
+            288,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_123"
+        },
+        {
+          "source_rect": [
+            0,
+            917,
+            302,
+            1254
+          ],
+          "trim": [
+            71,
+            23,
+            259,
+            261
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            384,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_124"
+        },
+        {
+          "source_rect": [
+            302,
+            917,
+            614,
+            1254
+          ],
+          "trim": [
+            45,
+            23,
+            259,
+            261
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            480,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_125"
+        },
+        {
+          "source_rect": [
+            614,
+            917,
+            922,
+            1254
+          ],
+          "trim": [
+            53,
+            25,
+            253,
+            261
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            576,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_126"
+        },
+        {
+          "source_rect": [
+            922,
+            917,
+            1254,
+            1254
+          ],
+          "trim": [
+            56,
+            23,
+            246,
+            261
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/rider-southwest-v3.png",
+          "source_sha256": "6ab73511dfeabdddd0e0bac17c1497e02aad6136572dc7413e893c896aceb188",
+          "direction": "southwest",
+          "scale": 0.2605042016806723,
+          "job": "rider-southwest-v3",
+          "action": "shoot",
+          "atlas_rect": [
+            672,
+            1440,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_127"
         }
       ],
       "clips": {
@@ -3425,6 +4481,86 @@
           "fps": 5,
           "loop": false
         },
+        "idle_southeast": {
+          "frames": [
+            96,
+            97,
+            98,
+            99
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_southeast": {
+          "frames": [
+            100,
+            101,
+            102,
+            103
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "lasso_southeast": {
+          "frames": [
+            104,
+            105,
+            106,
+            107
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "shoot_southeast": {
+          "frames": [
+            108,
+            109,
+            110,
+            111
+          ],
+          "fps": 5,
+          "loop": false
+        },
+        "idle_southwest": {
+          "frames": [
+            112,
+            113,
+            114,
+            115
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_southwest": {
+          "frames": [
+            116,
+            117,
+            118,
+            119
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "lasso_southwest": {
+          "frames": [
+            120,
+            121,
+            122,
+            123
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "shoot_southwest": {
+          "frames": [
+            124,
+            125,
+            126,
+            127
+          ],
+          "fps": 5,
+          "loop": false
+        },
         "idle_east": {
           "frames": [
             0
@@ -3455,7 +4591,7 @@
         }
       },
       "status": "extracted_candidate",
-      "count": 96,
+      "count": 128,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -19625,5 +20761,5 @@
       "reason": "Wrong facing; replaced by v2. Preserved, excluded from count."
     }
   ],
-  "total_extracted": 528
+  "total_extracted": 560
 }
