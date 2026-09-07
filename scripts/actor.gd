@@ -1,5 +1,7 @@
 extends Node2D
 
+signal action_event(event_name: String)
+
 var art: AnimatedSprite2D
 var kind: String
 var velocity := Vector2.ZERO
@@ -10,9 +12,13 @@ var directional := false
 var action_time := 0.0
 var nominal_speed := 36.0
 var facing_bias := 1.2
+var clip_events: Dictionary = {}
+var active_clip := ""
+var event_fired := false
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
+	clip_events = spec.get("action_events", {})
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
 	art = AnimatedSprite2D.new()
@@ -80,11 +86,18 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 	if not art.sprite_frames.has_animation(clip): return
 	facing = direction_name(direction)
 	art.speed_scale = 1.0
+	active_clip = clip
+	event_fired = false
 	art.play(clip)
 	art.set_frame_and_progress(0,0)
 	action_time = float(art.sprite_frames.get_frame_count(clip)) / art.sprite_frames.get_animation_speed(clip)
 
 func _process(delta: float) -> void:
 	if action_time > 0:
+		if not event_fired and clip_events.has(active_clip):
+			var event: Dictionary = clip_events[active_clip]
+			if art.frame >= int(event.frame):
+				event_fired = true
+				action_event.emit(str(event.name))
 		action_time = maxf(0, action_time - delta)
 		if action_time == 0: pose(false)

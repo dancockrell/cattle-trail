@@ -38,6 +38,9 @@ var elapsed := 0.0
 var escaped := false
 var qa_mode := false
 var qa_done := false
+var pending_lasso: Node2D
+var pending_shot := false
+var pending_aim := Vector2.RIGHT
 var scenery: Node2D
 var solid_scenery: Array = []
 
@@ -68,6 +71,7 @@ func _ready() -> void:
 	spawn("wagon", Vector2(91, 111))
 	eleanor = spawn("eleanor", Vector2(148, 127))
 	player = spawn("rider", Vector2(199, 231))
+	player.action_event.connect(on_player_action_event)
 	rustler = spawn("rustler", Vector2(550, 164))
 	for i in range(6):
 		var positions := [Vector2(294,158),Vector2(350,183),Vector2(408,155),Vector2(278,240),Vector2(360,253),Vector2(421,223)]
@@ -100,11 +104,14 @@ func _ready() -> void:
 	build_ui()
 	resized.connect(layout_ui)
 	layout_ui()
-	qa_mode = "--qa" in OS.get_cmdline_user_args()
+	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args()
 	for button in buttons.get_children(): button.disabled = qa_mode
 	refresh()
 	if "--smoke" in OS.get_cmdline_user_args():
 		export_smoke.call_deferred()
+	if "--demo" in OS.get_cmdline_user_args():
+		qa_done = true
+		run_demo.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -340,12 +347,11 @@ func interact() -> void:
 	refresh()
 
 func lasso() -> void:
-	if won: return
+	if won or player.action_time > 0: return
 	if rustler_active and player.position.distance_to(rustler.position) < 110:
+		pending_lasso = rustler
 		player.action("lasso", rustler.position - player.position)
-		rope_target = rustler
-		rope_time = 0.7
-		clear_rustler("Your loop catches his gun arm. The rustler flees.")
+		if not player.directional: on_player_action_event("rope_release")
 		return
 	var nearest: Node2D
 	var distance := 115.0
@@ -355,24 +361,47 @@ func lasso() -> void:
 			nearest = cow
 			distance = d
 	if nearest:
+		pending_lasso = nearest
 		player.action("lasso", nearest.position - player.position)
-		rope_target = nearest
-		rope_time = 7.0
-		message = "Roped! Ride toward the east gathering. The steer follows for seven seconds."
+		message = "Casting the loop..."
+		if not player.directional: on_player_action_event("rope_release")
 	else:
 		message = "Out of rope range. Ride closer to a stray or the rustler."
 	refresh()
 
 func shoot() -> void:
-	if won or shot_cooldown > 0: return
+	if won or shot_cooldown > 0 or player.action_time > 0: return
 	if ammo == 0:
 		message = "Empty. You can still lasso the rustler at close range."
 		return
 	ammo -= 1
-	shot_cooldown = 0.35
+	shot_cooldown = 0.4
+	pending_shot = true
+	pending_aim = player.position.direction_to(rustler.position) if rustler_active and player.position.distance_to(rustler.position) < 190 else facing
+	player.action("shoot", pending_aim)
+	if not player.directional: on_player_action_event("fire")
+	refresh()
+
+func on_player_action_event(event_name: String) -> void:
+	if event_name == "rope_release" and is_instance_valid(pending_lasso):
+		var caught := pending_lasso
+		pending_lasso = null
+		if player.position.distance_to(caught.position) > 130:
+			message = "The loop falls short. Ride closer and cast again."
+		elif caught == rustler and rustler_active:
+			rope_target = caught
+			rope_time = 0.7
+			clear_rustler("Your loop catches his gun arm. The rustler flees.")
+		elif caught in cows and not caught.secured:
+			rope_target = caught
+			rope_time = 7.0
+			message = "Roped! Ride east. The steer follows for seven seconds."
+		refresh()
+	if event_name != "fire" or not pending_shot: return
+	pending_shot = false
 	shot_time = 0.10
 	var origin: Vector2 = player.position + Vector2(0,-31)
-	var endpoint: Vector2 = origin + facing * 150
+	var endpoint: Vector2 = origin + pending_aim * 150
 	if rustler_active and player.position.distance_to(rustler.position) < 190:
 		hits += 1
 		endpoint = rustler.position + Vector2(0,-20)
@@ -381,7 +410,6 @@ func shoot() -> void:
 	else:
 		message = "The shot goes wide. Get within range of the rustler."
 	shot.points = PackedVector2Array([origin, endpoint])
-	player.action("shoot", endpoint - origin)
 	refresh()
 
 func clear_rustler(text: String) -> void:
@@ -395,10 +423,58 @@ func refresh() -> void:
 	if not is_instance_valid(stats): return
 	stats.text = "$%d    CATTLE %d/6    AMMO %d    MAY 12, 1868" % [cash,secured_count(),ammo]
 	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
+	if not won and rope_time > 0 and rope_target in cows:
+		objective.text = "STEER ROPED  /  %.1fs remaining  /  Ride toward the east gathering" % rope_time
 	journal.text = message
 
 func reset_room() -> void:
 	get_tree().reload_current_scene()
+
+func demo_ride(destination: Vector2, seconds: float = 8.0) -> bool:
+	target = destination
+	var deadline := elapsed + seconds
+	while player.position.distance_to(destination) > 5 and elapsed < deadline:
+		await get_tree().physics_frame
+	target = Vector2.INF
+	return player.position.distance_to(destination) <= 5
+
+func run_demo() -> void:
+	# Continuous scripted play through normal travel/actions: no actor teleports.
+	await get_tree().create_timer(1.0).timeout
+	assert(await demo_ride(Vector2(183,145)))
+	interact()
+	await get_tree().create_timer(1.0).timeout
+	assert(await demo_ride(Vector2(430,180)))
+	shoot()
+	await get_tree().create_timer(0.6).timeout
+	shoot()
+	await get_tree().create_timer(0.6).timeout
+	assert(not rustler_active)
+	var deadline := elapsed + 120
+	while not won and elapsed < deadline:
+		var nearest: Node2D
+		var distance := INF
+		for cow in cows:
+			if not cow.secured and player.position.distance_to(cow.position) < distance:
+				nearest = cow
+				distance = player.position.distance_to(cow.position)
+		if nearest == null: break
+		# Enter casting range using real movement; the target can move while approached.
+		while player.position.distance_to(nearest.position) > 95 and elapsed < deadline:
+			target = nearest.position
+			await get_tree().physics_frame
+		target = Vector2.INF
+		lasso()
+		await get_tree().create_timer(0.55).timeout
+		if rope_target in cows:
+			var destination := Vector2(585,clampf(rope_target.position.y,145,225))
+			await demo_ride(destination,7.0)
+			await get_tree().create_timer(0.4).timeout
+		rope_time = 0
+	assert(won, "Continuous demo must complete without teleporting actors")
+	await get_tree().create_timer(2.0).timeout
+	print("CONTINUOUS PLAY PASS: all-six objective completed through travel and actions; no actor teleports")
+	get_tree().quit()
 
 func run_qa() -> void:
 	# Integration checks invoke the same public actions and movement loop as play.
@@ -439,13 +515,19 @@ func run_qa() -> void:
 	assert(talked)
 	player.position = Vector2(430, 175)
 	shoot()
-	assert(hits == 1 and ammo == 5)
+	assert(ammo == 5)
+	if player.directional: assert(hits == 0 and pending_shot, "Damage waits for the visible firing pose")
+	await get_tree().create_timer(0.15).timeout
+	assert(hits == 1 and not pending_shot)
 	if player.directional: assert(str(player.art.animation).begins_with("shoot_"))
 	await get_tree().create_timer(0.4).timeout
 	shoot()
+	await get_tree().create_timer(0.5).timeout
 	assert(not rustler_active and ammo == 4)
 	player.position = cows[0].position - Vector2(45, 0)
 	lasso()
+	if player.directional: assert(pending_lasso == cows[0], "Lasso must wind up before attachment")
+	await get_tree().create_timer(0.3).timeout
 	assert(rope_target == cows[0])
 	var old: Vector2 = cows[0].position
 	target = Vector2(500, 190)
@@ -463,6 +545,7 @@ func run_qa() -> void:
 				break
 		player.position = cow.position - Vector2(30, 0)
 		lasso()
+		await get_tree().create_timer(0.3).timeout
 		assert(is_instance_valid(rope_target))
 		var selected: Node2D = rope_target
 		target = Vector2(586, clampf(selected.position.y, 145, 225))

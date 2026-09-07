@@ -19,10 +19,12 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         for action in ['idle','walk']:
             spec['clips'][action+'_'+direction]=copy.deepcopy(source[action+'_'+direction])
     if name=='rider':
+        spec['action_events']={}
         for direction in directions:
             for action in ['lasso','shoot']:
                 clip=copy.deepcopy(source[action+'_'+direction]);clip['loop']=False;clip['fps']=10 if action=='shoot' else 8
                 spec['clips'][action+'_'+direction]=clip
+                spec['action_events'][action+'_'+direction]={'name':'fire' if action=='shoot' else 'rope_release','frame':(0 if direction=='north' else 1) if action=='shoot' else 2,'basis':'Visible muzzle flash for shoot; extended loop pose for lasso','once_per_action':True}
     if name=='eleanor':
         # Two standing hand gestures keep the bag out of the animation.
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}

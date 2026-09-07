@@ -2226,6 +2226,56 @@
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
       ],
+      "action_events": {
+        "lasso_east": {
+          "name": "rope_release",
+          "frame": 2,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "shoot_east": {
+          "name": "fire",
+          "frame": 1,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "lasso_west": {
+          "name": "rope_release",
+          "frame": 2,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "shoot_west": {
+          "name": "fire",
+          "frame": 1,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "lasso_north": {
+          "name": "rope_release",
+          "frame": 2,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "shoot_north": {
+          "name": "fire",
+          "frame": 0,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "lasso_south": {
+          "name": "rope_release",
+          "frame": 2,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        },
+        "shoot_south": {
+          "name": "fire",
+          "frame": 1,
+          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "once_per_action": true
+        }
+      },
       "locomotion": {
         "nominal_speed": 72,
         "facing_bias": 1.2,
