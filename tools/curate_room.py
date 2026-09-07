@@ -71,7 +71,7 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
             spec['action_events'][clip_name]={'name':'rope_release','frame':recipe['release_ordinal'],'basis':'Clean directional open-hand release; engine owns the single rope','once_per_action':True}
             spec['procedural_rope_clips'].append(clip_name)
     if name in ['longhorn','cream','spotted']:
-        necks={'east':[53,40],'west':[18,40],'north':[36,31],'south':[36,43],'northeast':[47,36],'northwest':[24,36],'southeast':[48,42],'southwest':[23,42]}
+        necks={'east':[53,40],'west':[18,40],'north':[36,31],'south':[36,43],'northeast':[44,38],'northwest':[24,36],'southeast':[48,42],'southwest':[23,42]}
         spec['frame_sockets']={str(i):{'rope_neck':necks[frame['direction']]} for i,frame in enumerate(spec['frames']) if frame['direction'] in necks}
     spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_east'])
     if 'idle_northeast' in spec['clips']:

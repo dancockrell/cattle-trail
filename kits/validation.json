@@ -11,9 +11,9 @@
   ],
   "families": {
     "rider": {
-      "extracted": 212,
-      "unique_rgba_cells": 212,
-      "clips": 47,
+      "extracted": 220,
+      "unique_rgba_cells": 220,
+      "clips": 48,
       "cell": [
         96,
         96
@@ -22,9 +22,9 @@
       "source_hashes_verified": true
     },
     "longhorn": {
-      "extracted": 108,
-      "unique_rgba_cells": 108,
-      "clips": 30,
+      "extracted": 124,
+      "unique_rgba_cells": 124,
+      "clips": 42,
       "cell": [
         72,
         64
@@ -144,9 +144,9 @@
       "layer_reconstruction_exact": true
     },
     "grass": {
-      "extracted": 16,
-      "unique_rgba_cells": 16,
-      "clips": 16,
+      "extracted": 32,
+      "unique_rgba_cells": 32,
+      "clips": 32,
       "cell": [
         64,
         48
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 776
+  "total_extracted": 816
 }

@@ -1746,6 +1746,64 @@
         }
       }
     },
+    "v8_walk_northeast": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219
+      ],
+      "observed": {
+        "212": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 103
+        },
+        "213": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 103
+        },
+        "214": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 102
+        },
+        "215": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 101
+        },
+        "216": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 105
+        },
+        "217": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 108
+        },
+        "218": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 99
+        },
+        "219": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 100
+        }
+      }
+    },
     "idle": {
       "anchor": [
         47,

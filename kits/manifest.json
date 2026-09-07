@@ -7090,6 +7090,278 @@
             93
           ],
           "id": "rider_211"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            360,
+            505
+          ],
+          "trim": [
+            62,
+            118,
+            310,
+            435
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            384,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_212"
+        },
+        {
+          "source_rect": [
+            360,
+            0,
+            720,
+            505
+          ],
+          "trim": [
+            52,
+            118,
+            302,
+            424
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            480,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_213"
+        },
+        {
+          "source_rect": [
+            720,
+            0,
+            1083,
+            505
+          ],
+          "trim": [
+            59,
+            118,
+            315,
+            427
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            576,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_214"
+        },
+        {
+          "source_rect": [
+            1083,
+            0,
+            1491,
+            505
+          ],
+          "trim": [
+            48,
+            118,
+            303,
+            424
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            672,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_215"
+        },
+        {
+          "source_rect": [
+            0,
+            505,
+            360,
+            1055
+          ],
+          "trim": [
+            62,
+            71,
+            310,
+            387
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            0,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_216"
+        },
+        {
+          "source_rect": [
+            360,
+            505,
+            720,
+            1055
+          ],
+          "trim": [
+            51,
+            71,
+            302,
+            381
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            96,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_217"
+        },
+        {
+          "source_rect": [
+            720,
+            505,
+            1082,
+            1055
+          ],
+          "trim": [
+            58,
+            71,
+            308,
+            383
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            192,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_218"
+        },
+        {
+          "source_rect": [
+            1082,
+            505,
+            1491,
+            1055
+          ],
+          "trim": [
+            54,
+            71,
+            304,
+            383
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            288,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_219"
         }
       ],
       "clips": {
@@ -7586,10 +7858,24 @@
           ],
           "fps": 5,
           "loop": true
+        },
+        "v8_walk_northeast": {
+          "frames": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219
+          ],
+          "fps": 7,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 212,
+      "count": 220,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -11177,6 +11463,550 @@
             61
           ],
           "id": "longhorn_107"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            325,
+            330
+          ],
+          "trim": [
+            66,
+            98,
+            269,
+            286
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            288,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_108"
+        },
+        {
+          "source_rect": [
+            325,
+            0,
+            628,
+            330
+          ],
+          "trim": [
+            57,
+            97,
+            256,
+            285
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            360,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_109"
+        },
+        {
+          "source_rect": [
+            628,
+            0,
+            928,
+            330
+          ],
+          "trim": [
+            49,
+            143,
+            235,
+            291
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            432,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_110"
+        },
+        {
+          "source_rect": [
+            928,
+            0,
+            1254,
+            330
+          ],
+          "trim": [
+            65,
+            139,
+            238,
+            291
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            504,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_111"
+        },
+        {
+          "source_rect": [
+            0,
+            330,
+            324,
+            636
+          ],
+          "trim": [
+            56,
+            40,
+            255,
+            240
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            0,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_112"
+        },
+        {
+          "source_rect": [
+            324,
+            330,
+            636,
+            636
+          ],
+          "trim": [
+            71,
+            40,
+            270,
+            240
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            72,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_113"
+        },
+        {
+          "source_rect": [
+            636,
+            330,
+            922,
+            636
+          ],
+          "trim": [
+            43,
+            51,
+            218,
+            241
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            144,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_114"
+        },
+        {
+          "source_rect": [
+            922,
+            330,
+            1254,
+            636
+          ],
+          "trim": [
+            70,
+            51,
+            239,
+            241
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            216,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_115"
+        },
+        {
+          "source_rect": [
+            0,
+            636,
+            321,
+            922
+          ],
+          "trim": [
+            66,
+            65,
+            263,
+            219
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            288,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_116"
+        },
+        {
+          "source_rect": [
+            321,
+            636,
+            624,
+            922
+          ],
+          "trim": [
+            59,
+            65,
+            257,
+            219
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            360,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_117"
+        },
+        {
+          "source_rect": [
+            624,
+            636,
+            922,
+            922
+          ],
+          "trim": [
+            48,
+            65,
+            247,
+            219
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            432,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_118"
+        },
+        {
+          "source_rect": [
+            922,
+            636,
+            1254,
+            922
+          ],
+          "trim": [
+            53,
+            65,
+            248,
+            219
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            504,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_119"
+        },
+        {
+          "source_rect": [
+            0,
+            922,
+            320,
+            1254
+          ],
+          "trim": [
+            62,
+            67,
+            275,
+            223
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            0,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_120"
+        },
+        {
+          "source_rect": [
+            320,
+            922,
+            632,
+            1254
+          ],
+          "trim": [
+            48,
+            67,
+            262,
+            223
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            72,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_121"
+        },
+        {
+          "source_rect": [
+            632,
+            922,
+            922,
+            1254
+          ],
+          "trim": [
+            50,
+            67,
+            244,
+            223
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            144,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_122"
+        },
+        {
+          "source_rect": [
+            922,
+            922,
+            1254,
+            1254
+          ],
+          "trim": [
+            47,
+            67,
+            242,
+            223
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            216,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_123"
         }
       ],
       "clips": {
@@ -11467,10 +12297,98 @@
           ],
           "fps": 7,
           "loop": true
+        },
+        "state_v5_quiet_northeast": {
+          "frames": [
+            108
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_quiet_northwest": {
+          "frames": [
+            109
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_quiet_southeast": {
+          "frames": [
+            110
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_quiet_southwest": {
+          "frames": [
+            111
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_alert_northeast": {
+          "frames": [
+            112
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_alert_northwest": {
+          "frames": [
+            113
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_alert_southeast": {
+          "frames": [
+            114
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_alert_southwest": {
+          "frames": [
+            115
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_graze_southeast": {
+          "frames": [
+            116,
+            118
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_graze_southwest": {
+          "frames": [
+            117,
+            119
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_relaxed_southeast": {
+          "frames": [
+            120,
+            122
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "state_v5_relaxed_southwest": {
+          "frames": [
+            121,
+            123
+          ],
+          "fps": 5,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 108,
+      "count": 124,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -27793,6 +28711,518 @@
           "source_rect": [
             0,
             0,
+            300,
+            304
+          ],
+          "trim": [
+            99,
+            143,
+            234,
+            248
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_000"
+        },
+        {
+          "source_rect": [
+            300,
+            0,
+            619,
+            304
+          ],
+          "trim": [
+            67,
+            142,
+            265,
+            270
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            64,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_001"
+        },
+        {
+          "source_rect": [
+            619,
+            0,
+            894,
+            304
+          ],
+          "trim": [
+            55,
+            135,
+            224,
+            260
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            128,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_002"
+        },
+        {
+          "source_rect": [
+            894,
+            0,
+            1254,
+            304
+          ],
+          "trim": [
+            52,
+            148,
+            261,
+            257
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            192,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_003"
+        },
+        {
+          "source_rect": [
+            0,
+            304,
+            308,
+            637
+          ],
+          "trim": [
+            71,
+            34,
+            264,
+            288
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            256,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_004"
+        },
+        {
+          "source_rect": [
+            308,
+            304,
+            608,
+            637
+          ],
+          "trim": [
+            46,
+            95,
+            262,
+            285
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            320,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_005"
+        },
+        {
+          "source_rect": [
+            608,
+            304,
+            909,
+            637
+          ],
+          "trim": [
+            40,
+            101,
+            270,
+            288
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            384,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_006"
+        },
+        {
+          "source_rect": [
+            909,
+            304,
+            1254,
+            637
+          ],
+          "trim": [
+            32,
+            83,
+            253,
+            288
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            448,
+            0,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_007"
+        },
+        {
+          "source_rect": [
+            0,
+            637,
+            316,
+            904
+          ],
+          "trim": [
+            94,
+            73,
+            265,
+            209
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            0,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_008"
+        },
+        {
+          "source_rect": [
+            316,
+            637,
+            604,
+            904
+          ],
+          "trim": [
+            51,
+            51,
+            238,
+            227
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            64,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_009"
+        },
+        {
+          "source_rect": [
+            604,
+            637,
+            896,
+            904
+          ],
+          "trim": [
+            49,
+            45,
+            249,
+            227
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            128,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_010"
+        },
+        {
+          "source_rect": [
+            896,
+            637,
+            1254,
+            904
+          ],
+          "trim": [
+            44,
+            88,
+            249,
+            220
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            192,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_011"
+        },
+        {
+          "source_rect": [
+            0,
+            904,
+            319,
+            1254
+          ],
+          "trim": [
+            77,
+            81,
+            279,
+            216
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            256,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_012"
+        },
+        {
+          "source_rect": [
+            319,
+            904,
+            610,
+            1254
+          ],
+          "trim": [
+            41,
+            67,
+            251,
+            229
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            320,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_013"
+        },
+        {
+          "source_rect": [
+            610,
+            904,
+            900,
+            1254
+          ],
+          "trim": [
+            43,
+            87,
+            251,
+            227
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            384,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_014"
+        },
+        {
+          "source_rect": [
+            900,
+            904,
+            1254,
+            1254
+          ],
+          "trim": [
+            41,
+            42,
+            257,
+            236
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/grass-rich-v2.png",
+          "source_sha256": "b85dd0eddae9fbaa28df7c64371151eec758be327f311a86a0b1de8a86e3d5bd",
+          "direction": "none",
+          "scale": 0.11811023622047244,
+          "job": "grass-rich-v2",
+          "atlas_rect": [
+            448,
+            48,
+            64,
+            48
+          ],
+          "anchor": [
+            32,
+            45
+          ],
+          "id": "grass_015"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
             305,
             331
           ],
@@ -27811,7 +29241,7 @@
           "job": "grass",
           "atlas_rect": [
             0,
-            0,
+            96,
             64,
             48
           ],
@@ -27819,7 +29249,7 @@
             32,
             45
           ],
-          "id": "grass_000"
+          "id": "grass_016"
         },
         {
           "source_rect": [
@@ -27843,7 +29273,7 @@
           "job": "grass",
           "atlas_rect": [
             64,
-            0,
+            96,
             64,
             48
           ],
@@ -27851,7 +29281,7 @@
             32,
             45
           ],
-          "id": "grass_001"
+          "id": "grass_017"
         },
         {
           "source_rect": [
@@ -27875,7 +29305,7 @@
           "job": "grass",
           "atlas_rect": [
             128,
-            0,
+            96,
             64,
             48
           ],
@@ -27883,7 +29313,7 @@
             32,
             45
           ],
-          "id": "grass_002"
+          "id": "grass_018"
         },
         {
           "source_rect": [
@@ -27907,7 +29337,7 @@
           "job": "grass",
           "atlas_rect": [
             192,
-            0,
+            96,
             64,
             48
           ],
@@ -27915,7 +29345,7 @@
             32,
             45
           ],
-          "id": "grass_003"
+          "id": "grass_019"
         },
         {
           "source_rect": [
@@ -27938,8 +29368,8 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            0,
-            48,
+            256,
+            96,
             64,
             48
           ],
@@ -27947,7 +29377,7 @@
             32,
             45
           ],
-          "id": "grass_004"
+          "id": "grass_020"
         },
         {
           "source_rect": [
@@ -27970,8 +29400,8 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            64,
-            48,
+            320,
+            96,
             64,
             48
           ],
@@ -27979,7 +29409,7 @@
             32,
             45
           ],
-          "id": "grass_005"
+          "id": "grass_021"
         },
         {
           "source_rect": [
@@ -28002,8 +29432,8 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            128,
-            48,
+            384,
+            96,
             64,
             48
           ],
@@ -28011,7 +29441,7 @@
             32,
             45
           ],
-          "id": "grass_006"
+          "id": "grass_022"
         },
         {
           "source_rect": [
@@ -28034,8 +29464,8 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            192,
-            48,
+            448,
+            96,
             64,
             48
           ],
@@ -28043,7 +29473,7 @@
             32,
             45
           ],
-          "id": "grass_007"
+          "id": "grass_023"
         },
         {
           "source_rect": [
@@ -28067,7 +29497,7 @@
           "job": "grass",
           "atlas_rect": [
             0,
-            96,
+            144,
             64,
             48
           ],
@@ -28075,7 +29505,7 @@
             32,
             45
           ],
-          "id": "grass_008"
+          "id": "grass_024"
         },
         {
           "source_rect": [
@@ -28099,7 +29529,7 @@
           "job": "grass",
           "atlas_rect": [
             64,
-            96,
+            144,
             64,
             48
           ],
@@ -28107,7 +29537,7 @@
             32,
             45
           ],
-          "id": "grass_009"
+          "id": "grass_025"
         },
         {
           "source_rect": [
@@ -28131,7 +29561,7 @@
           "job": "grass",
           "atlas_rect": [
             128,
-            96,
+            144,
             64,
             48
           ],
@@ -28139,7 +29569,7 @@
             32,
             45
           ],
-          "id": "grass_010"
+          "id": "grass_026"
         },
         {
           "source_rect": [
@@ -28163,7 +29593,7 @@
           "job": "grass",
           "atlas_rect": [
             192,
-            96,
+            144,
             64,
             48
           ],
@@ -28171,7 +29601,7 @@
             32,
             45
           ],
-          "id": "grass_011"
+          "id": "grass_027"
         },
         {
           "source_rect": [
@@ -28194,7 +29624,7 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            0,
+            256,
             144,
             64,
             48
@@ -28203,7 +29633,7 @@
             32,
             45
           ],
-          "id": "grass_012"
+          "id": "grass_028"
         },
         {
           "source_rect": [
@@ -28226,7 +29656,7 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            64,
+            320,
             144,
             64,
             48
@@ -28235,7 +29665,7 @@
             32,
             45
           ],
-          "id": "grass_013"
+          "id": "grass_029"
         },
         {
           "source_rect": [
@@ -28258,7 +29688,7 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            128,
+            384,
             144,
             64,
             48
@@ -28267,7 +29697,7 @@
             32,
             45
           ],
-          "id": "grass_014"
+          "id": "grass_030"
         },
         {
           "source_rect": [
@@ -28290,7 +29720,7 @@
           "scale": 0.14018691588785046,
           "job": "grass",
           "atlas_rect": [
-            192,
+            448,
             144,
             64,
             48
@@ -28299,7 +29729,7 @@
             32,
             45
           ],
-          "id": "grass_015"
+          "id": "grass_031"
         }
       ],
       "clips": {
@@ -28414,10 +29844,122 @@
           ],
           "fps": 1,
           "loop": true
+        },
+        "variant_16": {
+          "frames": [
+            16
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_17": {
+          "frames": [
+            17
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_18": {
+          "frames": [
+            18
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_19": {
+          "frames": [
+            19
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_20": {
+          "frames": [
+            20
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_21": {
+          "frames": [
+            21
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_22": {
+          "frames": [
+            22
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_23": {
+          "frames": [
+            23
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_24": {
+          "frames": [
+            24
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_25": {
+          "frames": [
+            25
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_26": {
+          "frames": [
+            26
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_27": {
+          "frames": [
+            27
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_28": {
+          "frames": [
+            28
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_29": {
+          "frames": [
+            29
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_30": {
+          "frames": [
+            30
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_31": {
+          "frames": [
+            31
+          ],
+          "fps": 1,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 16,
+      "count": 32,
       "world_body_height": 30,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -28443,5 +29985,5 @@
       "reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count."
     }
   ],
-  "total_extracted": 776
+  "total_extracted": 816
 }

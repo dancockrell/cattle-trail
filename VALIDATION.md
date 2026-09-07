@@ -2,7 +2,7 @@
 
 Godot 4.3 stable, Windows, OpenGL compatibility renderer on NVIDIA RTX 4070.
 
-- Extraction checks pass 13 families and 776 distinct RGBA cells: binary alpha, nonempty padded bounds, source checksums, valid frames/clips and exact tree-layer reconstruction.
+- Extraction checks pass 13 families and 816 distinct RGBA cells: binary alpha, nonempty padded bounds, source checksums, valid frames/clips and exact tree-layer reconstruction.
 - Selected-art checks pass 322 actor frames, valid clip anchors, optional frame durations, attachment sockets, event ordinals and ground provenance.
 - Reusable variable-grid integration reproduced every existing atlas byte-for-byte before adding new two-row sequence sheets.
 - Full native room QA passes mounted movement, eight-direction selection, gait-phase retention, planted cast travel-stop and queued movement resumption, action timing, scenery/wagon collision, conversation, shooting, lasso following, all-six objective, cash and narrow control bounds.
@@ -12,3 +12,5 @@ Godot 4.3 stable, Windows, OpenGL compatibility renderer on NVIDIA RTX 4070.
 - Current Windows export starts successfully, renders all actor textures, and passes the exported kit browser check for all 13 families and 776 cells. This is a review build; the open animation gate remains.
 
 Current room screenshots are actual engine output. Older room-playback, pose-review and herd-review movies are historical comparison records. Source tests and exports do not imply user visual approval. See VISUAL-AUDIT.md for the concrete remaining animation work. Git history is local; no push or remote publication is claimed.
+
+Latest parallel batch: 16 longhorn state sprites, 16 grass/plant clusters and 8 rider walk candidates extracted; all 816 kit cells pass source/alpha/bounds checks. Full gameplay QA passed with the new grass selection and revised neck attachment. The earlier Windows export evidence covers 776 cells until the next export.

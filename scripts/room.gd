@@ -34,6 +34,8 @@ var rope_flight_target: Node2D
 var rope_flight_time := 0.0
 const ROPE_FLIGHT_SECONDS := 0.20
 var rope: Line2D
+var rope_far_wrap: Line2D
+var rope_catch_age := 0.0
 var shot: Line2D
 var shot_time := 0.0
 var shot_cooldown := 0.0
@@ -95,6 +97,11 @@ func _ready() -> void:
 	rope.width = 1.0
 	rope.default_color = Color("edcf87")
 	world.add_child(rope)
+	rope_far_wrap = Line2D.new()
+	rope_far_wrap.width = 1.0
+	rope_far_wrap.default_color = Color("c4a368")
+	world.add_child(rope_far_wrap)
+	world.move_child(rope_far_wrap,world.get_children().find(actors))
 	shot = Line2D.new()
 	shot.width = 1.0
 	shot.default_color = Color("ffe9a7")
@@ -446,6 +453,7 @@ func on_player_action_event(event_name: String) -> void:
 
 func catch_rope(caught: Node2D) -> void:
 	if not is_instance_valid(caught): return
+	rope_catch_age = 0.0
 	if player.position.distance_to(caught.position) > 140:
 		message = "The loop falls short. Ride closer and cast again."
 	elif caught == rustler and rustler_active:
@@ -461,6 +469,7 @@ func catch_rope(caught: Node2D) -> void:
 func update_rope(delta: float) -> void:
 	var hand: Vector2 = player.socket_world("rope_hand",Vector2(8,-42))
 	var points := PackedVector2Array()
+	rope_far_wrap.clear_points()
 	if rope_flight_time > 0 and is_instance_valid(rope_flight_target):
 		rope_flight_time = maxf(0,rope_flight_time-delta)
 		var progress := 1.0-rope_flight_time/ROPE_FLIGHT_SECONDS
@@ -473,9 +482,21 @@ func update_rope(delta: float) -> void:
 			rope_flight_target = null
 	elif rope_time > 0 and is_instance_valid(rope_target):
 		rope_time -= delta
+		rope_catch_age += delta
 		var neck: Vector2 = rope_target.socket_world("rope_neck",Vector2(0,-22))
-		append_rope_curve(points,hand,neck+Vector2(5,0),clampf((90-hand.distance_to(neck))*0.12,1,8))
-		append_rope_loop(points,neck,Vector2(5,3))
+		var direction := String(rope_target.art.animation).get_slice("_",1)
+		var cross_sections := {"east":Vector2(2,3),"west":Vector2(2,-3),"north":Vector2(4,0),"south":Vector2(4,0),"northeast":Vector2(3,2),"northwest":Vector2(3,-2),"southeast":Vector2(3,-2),"southwest":Vector2(3,2)}
+		var cross_section: Vector2 = cross_sections.get(direction,Vector2(3,2))
+		cross_section *= lerpf(1.5,1.0,clampf(rope_catch_age/0.15,0,1))
+		if hand.distance_squared_to(neck-cross_section)<hand.distance_squared_to(neck+cross_section): cross_section = -cross_section
+		append_rope_curve(points,hand,neck+cross_section,clampf((90-hand.distance_to(neck))*0.12,1,8))
+		# Near half lies across the chest; far half is occluded by the actual cattle sprite.
+		var far_points := PackedVector2Array()
+		for i in range(9):
+			var angle := float(i)/8.0*PI
+			points.append((neck+cross_section*cos(angle)+Vector2(0,1.5*sin(angle))).round())
+			far_points.append((neck+cross_section*cos(angle)-Vector2(0,1.5*sin(angle))).round())
+		rope_far_wrap.points = far_points
 	elif is_instance_valid(pending_lasso) and player.uses_procedural_rope() and player.art.frame>0:
 		var center := hand+Vector2(-11,-4)
 		points.append(hand.round())

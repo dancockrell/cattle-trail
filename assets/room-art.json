@@ -7089,6 +7089,278 @@
             93
           ],
           "id": "rider_211"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            360,
+            505
+          ],
+          "trim": [
+            62,
+            118,
+            310,
+            435
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            384,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_212"
+        },
+        {
+          "source_rect": [
+            360,
+            0,
+            720,
+            505
+          ],
+          "trim": [
+            52,
+            118,
+            302,
+            424
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            480,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_213"
+        },
+        {
+          "source_rect": [
+            720,
+            0,
+            1083,
+            505
+          ],
+          "trim": [
+            59,
+            118,
+            315,
+            427
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            576,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_214"
+        },
+        {
+          "source_rect": [
+            1083,
+            0,
+            1491,
+            505
+          ],
+          "trim": [
+            48,
+            118,
+            303,
+            424
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            672,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_215"
+        },
+        {
+          "source_rect": [
+            0,
+            505,
+            360,
+            1055
+          ],
+          "trim": [
+            62,
+            71,
+            310,
+            387
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            0,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_216"
+        },
+        {
+          "source_rect": [
+            360,
+            505,
+            720,
+            1055
+          ],
+          "trim": [
+            51,
+            71,
+            302,
+            381
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            96,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_217"
+        },
+        {
+          "source_rect": [
+            720,
+            505,
+            1082,
+            1055
+          ],
+          "trim": [
+            58,
+            71,
+            308,
+            383
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            192,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_218"
+        },
+        {
+          "source_rect": [
+            1082,
+            505,
+            1491,
+            1055
+          ],
+          "trim": [
+            54,
+            71,
+            304,
+            383
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-ne-walk-sequence-v8.png",
+          "source_sha256": "8e5e116bba41602c4903baf835507b5d04c40c1861d7cf0853dbd0c9fcfe99ef",
+          "direction": "northeast",
+          "scale": 0.2016260162601626,
+          "job": "rider-ne-walk-sequence-v8",
+          "action": "walk",
+          "clip_prefix": "v8_",
+          "atlas_rect": [
+            288,
+            2592,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_219"
         }
       ],
       "clips": {
@@ -7523,7 +7795,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 212,
+      "count": 220,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -7715,6 +7987,10 @@
         ],
         "v5_lasso_southwest": [
           48,
+          93
+        ],
+        "v8_walk_northeast": [
+          47,
           93
         ],
         "idle": [
@@ -12028,6 +12304,550 @@
             61
           ],
           "id": "longhorn_107"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            325,
+            330
+          ],
+          "trim": [
+            66,
+            98,
+            269,
+            286
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            288,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_108"
+        },
+        {
+          "source_rect": [
+            325,
+            0,
+            628,
+            330
+          ],
+          "trim": [
+            57,
+            97,
+            256,
+            285
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            360,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_109"
+        },
+        {
+          "source_rect": [
+            628,
+            0,
+            928,
+            330
+          ],
+          "trim": [
+            49,
+            143,
+            235,
+            291
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            432,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_110"
+        },
+        {
+          "source_rect": [
+            928,
+            0,
+            1254,
+            330
+          ],
+          "trim": [
+            65,
+            139,
+            238,
+            291
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "quiet",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            504,
+            832,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_111"
+        },
+        {
+          "source_rect": [
+            0,
+            330,
+            324,
+            636
+          ],
+          "trim": [
+            56,
+            40,
+            255,
+            240
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            0,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_112"
+        },
+        {
+          "source_rect": [
+            324,
+            330,
+            636,
+            636
+          ],
+          "trim": [
+            71,
+            40,
+            270,
+            240
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "northwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            72,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_113"
+        },
+        {
+          "source_rect": [
+            636,
+            330,
+            922,
+            636
+          ],
+          "trim": [
+            43,
+            51,
+            218,
+            241
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            144,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_114"
+        },
+        {
+          "source_rect": [
+            922,
+            330,
+            1254,
+            636
+          ],
+          "trim": [
+            70,
+            51,
+            239,
+            241
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.2235294117647059,
+          "job": "longhorn-state-upper-v5",
+          "action": "alert",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            216,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_115"
+        },
+        {
+          "source_rect": [
+            0,
+            636,
+            321,
+            922
+          ],
+          "trim": [
+            66,
+            65,
+            263,
+            219
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            288,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_116"
+        },
+        {
+          "source_rect": [
+            321,
+            636,
+            624,
+            922
+          ],
+          "trim": [
+            59,
+            65,
+            257,
+            219
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            360,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_117"
+        },
+        {
+          "source_rect": [
+            624,
+            636,
+            922,
+            922
+          ],
+          "trim": [
+            48,
+            65,
+            247,
+            219
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            432,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_118"
+        },
+        {
+          "source_rect": [
+            922,
+            636,
+            1254,
+            922
+          ],
+          "trim": [
+            53,
+            65,
+            248,
+            219
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "graze",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            504,
+            896,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_119"
+        },
+        {
+          "source_rect": [
+            0,
+            922,
+            320,
+            1254
+          ],
+          "trim": [
+            62,
+            67,
+            275,
+            223
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            0,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_120"
+        },
+        {
+          "source_rect": [
+            320,
+            922,
+            632,
+            1254
+          ],
+          "trim": [
+            48,
+            67,
+            262,
+            223
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            72,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_121"
+        },
+        {
+          "source_rect": [
+            632,
+            922,
+            922,
+            1254
+          ],
+          "trim": [
+            50,
+            67,
+            244,
+            223
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southeast",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            144,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_122"
+        },
+        {
+          "source_rect": [
+            922,
+            922,
+            1254,
+            1254
+          ],
+          "trim": [
+            47,
+            67,
+            242,
+            223
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/longhorn-state-kit-v5.png",
+          "source_sha256": "250db718e3e3250855f6576504cdbcb9f47168df15d18682aac60b0d3e1c5753",
+          "direction": "southwest",
+          "scale": 0.24675324675324675,
+          "job": "longhorn-state-lower-v5",
+          "action": "relaxed",
+          "clip_prefix": "state_v5_",
+          "atlas_rect": [
+            216,
+            960,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_123"
         }
       ],
       "clips": {
@@ -12191,7 +13011,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 108,
+      "count": 124,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -12584,50 +13404,50 @@
         },
         "64": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "65": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "66": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "67": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "68": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "69": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "70": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "71": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "72": {
@@ -12844,6 +13664,102 @@
           "rope_neck": [
             36,
             43
+          ]
+        },
+        "108": {
+          "rope_neck": [
+            44,
+            38
+          ]
+        },
+        "109": {
+          "rope_neck": [
+            24,
+            36
+          ]
+        },
+        "110": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "111": {
+          "rope_neck": [
+            23,
+            42
+          ]
+        },
+        "112": {
+          "rope_neck": [
+            44,
+            38
+          ]
+        },
+        "113": {
+          "rope_neck": [
+            24,
+            36
+          ]
+        },
+        "114": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "115": {
+          "rope_neck": [
+            23,
+            42
+          ]
+        },
+        "116": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "117": {
+          "rope_neck": [
+            23,
+            42
+          ]
+        },
+        "118": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "119": {
+          "rope_neck": [
+            23,
+            42
+          ]
+        },
+        "120": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "121": {
+          "rope_neck": [
+            23,
+            42
+          ]
+        },
+        "122": {
+          "rope_neck": [
+            48,
+            42
+          ]
+        },
+        "123": {
+          "rope_neck": [
+            23,
+            42
           ]
         }
       },
@@ -16998,50 +17914,50 @@
         },
         "64": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "65": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "66": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "67": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "68": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "69": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "70": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "71": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "72": {
@@ -21412,50 +22328,50 @@
         },
         "64": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "65": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "66": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "67": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "68": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "69": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "70": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "71": {
           "rope_neck": [
-            47,
-            36
+            44,
+            38
           ]
         },
         "72": {
@@ -26676,8 +27592,8 @@
       "frame": 4,
       "texture": "res://kits/atlases/grass.png",
       "region": [
+        256,
         0,
-        48,
         64,
         48
       ],
@@ -26697,8 +27613,8 @@
       "frame": 5,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        64,
-        48,
+        320,
+        0,
         64,
         48
       ],
@@ -26719,7 +27635,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         0,
-        96,
+        48,
         64,
         48
       ],
@@ -26740,7 +27656,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         64,
-        96,
+        48,
         64,
         48
       ],
@@ -26761,7 +27677,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         128,
-        96,
+        48,
         64,
         48
       ],
@@ -26781,8 +27697,8 @@
       "frame": 12,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        0,
-        144,
+        256,
+        48,
         64,
         48
       ],
@@ -26802,8 +27718,8 @@
       "frame": 13,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        64,
-        144,
+        320,
+        48,
         64,
         48
       ],
@@ -26886,8 +27802,8 @@
       "frame": 4,
       "texture": "res://kits/atlases/grass.png",
       "region": [
+        256,
         0,
-        48,
         64,
         48
       ],
@@ -26907,8 +27823,8 @@
       "frame": 5,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        64,
-        48,
+        320,
+        0,
         64,
         48
       ],
@@ -26929,7 +27845,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         0,
-        96,
+        48,
         64,
         48
       ],
@@ -26950,7 +27866,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         64,
-        96,
+        48,
         64,
         48
       ],
@@ -26971,7 +27887,7 @@
       "texture": "res://kits/atlases/grass.png",
       "region": [
         128,
-        96,
+        48,
         64,
         48
       ],
@@ -26991,8 +27907,8 @@
       "frame": 12,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        0,
-        144,
+        256,
+        48,
         64,
         48
       ],
@@ -27012,8 +27928,8 @@
       "frame": 13,
       "texture": "res://kits/atlases/grass.png",
       "region": [
-        64,
-        144,
+        320,
+        48,
         64,
         48
       ],

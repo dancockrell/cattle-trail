@@ -1,0 +1,17 @@
+Create one production pixel-art sprite kit for Cattle Trail: exactly 4 columns by 4 rows, sixteen isolated WHOLE longhorn cattle sprites on pure solid #FF00FF magenta, broad empty gutters between every cell, generous outer margins. No lettering, grid lines, labels, scenery, ground shadow or dust. All heads, both horns, tail and every hoof must fit fully inside each cell.
+
+Reference1 longhorn-rear-v3.png is the existing cattle identity, pixel rendering, warm palette and rear-oblique camera authority. Reference2 longhorn-front-v3.png supplies front-oblique views. Match their chestnut-red brown longhorn, cream swept horns, dark hooves, dark contour, warm pixel clusters and high three-quarter overhead game camera. Same animal identity and body scale in all cells; do not shift to photorealism, painted illustration or steep overhead. Crisp square pixels, no smoothing.
+
+COLUMN DIRECTIONS remain fixed across all rows:
+Column1 NORTHEAST: head points screen upper-right, rear-oblique body.
+Column2 NORTHWEST: head points screen upper-left, rear-oblique body.
+Column3 SOUTHEAST: head points screen lower-right, front-oblique body and face.
+Column4 SOUTHWEST: head points screen lower-left, front-oblique body and face.
+
+ROW STATES:
+Row1 quiet standing: relaxed neutral head, planted hooves, calm tail.
+Row2 alert head-up: raised head and ears, attentive but still, clearly different alert silhouette; hooves planted.
+Row3 low grazing: head lowered to hoof-height ground level, neck bending, full horns and muzzle visible. No actual grass or ground patch, just the complete animal grazing in empty space.
+Row4 relaxed standing weight shift: slightly lower head, relaxed neck and shifted weight onto three legs with one resting hoof, subtle tail change; clearly a calm resting stance rather than walking or sitting.
+
+These are 16 independent STATE VARIANTS, NOT an animation walk cycle. Prioritize useful whole sprites, consistent identity, correct column headings, and different readable state silhouettes. Never crop horn tips or feet. Keep magenta completely flat and absent from animal interior. Four columns four rows only.

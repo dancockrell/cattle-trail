@@ -781,5 +781,79 @@
     "clip_prefix": "v5_",
     "prompt_file": "kits/source/rider-southwest-lasso-sequence-v5-prompt.txt",
     "ref": 0
+  },
+  {
+    "id": "grass-rich-v2",
+    "family": "grass",
+    "rows": 4,
+    "columns": 4,
+    "prompt_file": "kits/source/grass-rich-v2-prompt.txt",
+    "ref": 2
+  },
+  {
+    "id": "longhorn-state-upper-v5",
+    "source_file": "longhorn-state-kit-v5.png",
+    "family": "longhorn",
+    "rows": 4,
+    "columns": 4,
+    "selected_rows": [
+      0,
+      1
+    ],
+    "column_directions": [
+      "northeast",
+      "northwest",
+      "southeast",
+      "southwest"
+    ],
+    "actions": [
+      "quiet",
+      "alert",
+      "graze",
+      "relaxed"
+    ],
+    "clip_prefix": "state_v5_",
+    "prompt_file": "kits/source/longhorn-state-kit-v5-prompt.txt",
+    "ref": 0
+  },
+  {
+    "id": "longhorn-state-lower-v5",
+    "source_file": "longhorn-state-kit-v5.png",
+    "family": "longhorn",
+    "rows": 4,
+    "columns": 4,
+    "selected_rows": [
+      2,
+      3
+    ],
+    "column_directions": [
+      "southeast",
+      "southwest",
+      "southeast",
+      "southwest"
+    ],
+    "actions": [
+      "quiet",
+      "alert",
+      "graze",
+      "relaxed"
+    ],
+    "clip_prefix": "state_v5_",
+    "prompt_file": "kits/source/longhorn-state-kit-v5-prompt.txt",
+    "ref": 0
+  },
+  {
+    "id": "rider-ne-walk-sequence-v8",
+    "family": "rider",
+    "rows": 2,
+    "columns": 4,
+    "direction": "northeast",
+    "actions": [
+      "walk",
+      "walk"
+    ],
+    "clip_prefix": "v8_",
+    "prompt_file": "kits/source/rider-ne-walk-sequence-v8-prompt.txt",
+    "ref": 0
   }
 ]
