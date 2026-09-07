@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "status": "design_only_not_runtime_data",
+  "balance_status": "all_numbers_provisional",
+  "named_characters": [
+    {
+      "id": "eleanor",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Eleanor",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Frontier healer with practical experience of spirits.",
+        "personality": [
+          "steady",
+          "wry",
+          "compassionate",
+          "self-confident"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. Preserve existing Eleanor sprite identity pending reviewed art changes.",
+        "outfit_brief": "Existing room clothing retained; more provocative PG-13 frontier wardrobe is a future art exploration. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "art_status": "existing_sprite_continuity",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Meet at the Clear Fork wagon while gathering the herd.",
+        "conditions": [
+          "Complete the room herd task.",
+          "Offer a place in the outfit.",
+          "Eleanor accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "acquainted",
+        "trust": 10,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually acknowledged agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "healer",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "eleanor_perk",
+          "label": "Steady Company",
+          "description": "Draft benefit to rest_madness_recovery; numerical effect is untested.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 3,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "People treating a distressed spirit as a tool.",
+        "support_preference": "A trusted conversation and shared rest."
+      },
+      "recovery_offer": {
+        "id": "eleanor_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Age 24 follows the latest adult-age clarification.",
+        "Current room presence and a setting line do not implement recruitment.",
+        "Do not replace her approved visual identity without comparison."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "lanterns_at_the_ford",
+        "title": "Lanterns at the Ford",
+        "controlled_actor_id": "eleanor",
+        "objective": "Carry a spirit lantern to settle a frightened crossing spirit and guide stranded cattle.",
+        "companion_skill": "Practical healing and calming spirit contact.",
+        "protagonist_support": "The protagonist holds the herd while Eleanor tends the crossing.",
+        "affectionate_payoff": "A relieved laugh and optional brief embrace at the wagon.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "ada_mercer",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Ada Mercer",
+      "age": 22,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Draft steam mechanic who repairs agricultural walkers and dislikes occult shortcuts.",
+        "personality": [
+          "inventive",
+          "bold",
+          "dry-humored",
+          "self-confident"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Fitted riding trousers, cropped work jacket, open-collar blouse, tool belt and boots; PG-13. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A stranded steam cattle-handler needs repair.",
+        "conditions": [
+          "Help recover a missing regulator.",
+          "Agree on a field mechanic role.",
+          "Ada accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually acknowledged agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "steam mechanic",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "ada_mercer_perk",
+          "label": "Sure-Handed Tuning",
+          "description": "Draft benefit to machine_repair_efficiency; numerical effect is untested.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A machine speaking with a voice it should not possess.",
+        "support_preference": "Patient company while she repairs something familiar."
+      },
+      "recovery_offer": {
+        "id": "ada_mercer_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "No robot, mecha or repair system is implemented."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "two_seats_one_regulator",
+        "title": "Two Seats, One Regulator",
+        "controlled_actor_id": "ada_mercer",
+        "objective": "Route steam pressure through a stalled two-seat cart, then take a short ride together.",
+        "companion_skill": "Steam repair through a compact readable pressure-routing challenge.",
+        "protagonist_support": "The protagonist braces the cart controls while Ada repairs it.",
+        "affectionate_payoff": "Delighted teasing and an optional kiss at the stop.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "rosa_vale",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Rosa Vale",
+      "age": 20,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Draft trail scout who hears local spirits and distrusts grand explanations.",
+        "personality": [
+          "observant",
+          "playful",
+          "skeptical",
+          "self-confident"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Short riding jacket, fitted blouse, practical short riding skirt over riding layers and boots; PG-13. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A spirit warns of a ford whose location changes between witnesses.",
+        "conditions": [
+          "Investigate the conflicting ford accounts.",
+          "Respect her decision about a spirit encounter.",
+          "Rosa accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually acknowledged agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "spirit-listener and scout",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "rosa_vale_perk",
+          "label": "Between the Footprints",
+          "description": "Draft benefit to trail_hazard_notice; numerical effect is untested.",
+          "activation": "field",
+          "effect": {
+            "stat": "trail_hazard_notice",
+            "operation": "add",
+            "value": 1,
+            "unit": "early warning tier"
+          },
+          "stacking_group": "trail_hazard_notice",
+          "stacking_cap": 2,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Contradictory voices claiming to be the same loved one.",
+        "support_preference": "An embrace or quiet time with a trusted loved one."
+      },
+      "recovery_offer": {
+        "id": "rosa_vale_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Spirits are real; their testimony can still be mistaken or deceptive."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "moons_wrong_reflection",
+        "title": "The Moon's Wrong Reflection",
+        "controlled_actor_id": "rosa_vale",
+        "objective": "Follow spirit reflections to locate a safe creek crossing.",
+        "companion_skill": "Directly playable spirit perception and trail finding.",
+        "protagonist_support": "The protagonist follows Rosa's signals through the crossing.",
+        "affectionate_payoff": "A playful secluded moment and an optional kiss.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    }
+  ],
+  "procedural_template": {
+    "id": "procedural_adult_companion_v1",
+    "status": "design_only",
+    "resolved_record_schema": "companion.schema.json",
+    "age": {
+      "minimum": 18,
+      "default_minimum": 18,
+      "default_maximum": 24,
+      "older_adults_allowed": true
+    },
+    "gender": "woman",
+    "romance_eligible": true,
+    "stable_seed_required": true,
+    "save_resolved_record": true,
+    "id_pattern": "generated_<persistent_identity_key>",
+    "pools": {
+      "background": [
+        "trail scout",
+        "steam mechanic",
+        "frontier healer",
+        "spirit medium",
+        "teamster"
+      ],
+      "temperament": [
+        "forthright",
+        "wry",
+        "gentle",
+        "adventurous",
+        "reserved"
+      ],
+      "appearance": [
+        "ordinary but gorgeous clearly adult woman; slim and small-chested; healthy, active, charismatic and self-confident"
+      ],
+      "outfit": [
+        "fitted riding trousers and short jacket",
+        "frontier blouse and corset-inspired outerwear",
+        "practical short skirt with riding layers"
+      ]
+    },
+    "generation_rules": [
+      "Validate resolved age as at least 18 before any art or dialogue generation.",
+      "Use the default 18–24 age range for most generated companions; any older exception remains explicitly adult.",
+      "Resolve background, equipment, perk and encounter from a compatible authored package.",
+      "Use curated adult characterization and PG-13 wardrobe; no child-coded presentation.",
+      "Keep recruitment, relationship, party role, perks and madness separate.",
+      "Assign a madness record to every generated character, including non-companions.",
+      "Persist final identity and seed; never reroll a saved person on load.",
+      "Validate the fully resolved record with companion.schema.json.",
+      "Prioritize mutual attraction and a short unique adventure played as the companion; avoid begging, repeated refusals and endless dialogue.",
+      "Resolve a compatible playable skill, protagonist support role and brief affectionate payoff for each companion adventure.",
+      "Treat rebellious PG-13 clothing as personal expression rather than the character's entire identity."
+    ],
+    "unresolved": [
+      "Exact background weights",
+      "Roster and deployment limits",
+      "Duplicate perk stacking beyond per-group caps"
+    ]
+  }
+}

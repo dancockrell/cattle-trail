@@ -1,0 +1,508 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cattle-trail:companion:1",
+  "title": "Cattle Trail proposed adult companion record",
+  "description": "Design-only content contract; not consumed by current runtime. All numerical gameplay values are provisional.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]+$"
+    },
+    "content_status": {
+      "type": "string",
+      "enum": [
+        "design_only"
+      ]
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "named",
+        "procedural"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 18
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "woman"
+      ]
+    },
+    "romance_eligible": {
+      "const": true
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "background": {
+          "type": "string",
+          "minLength": 1
+        },
+        "personality": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "appearance_brief": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outfit_brief": {
+          "type": "string",
+          "minLength": 1
+        },
+        "art_status": {
+          "type": "string",
+          "enum": [
+            "existing_sprite_continuity",
+            "unapproved_draft"
+          ]
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "background",
+        "personality",
+        "appearance_brief",
+        "outfit_brief",
+        "art_status",
+        "seed"
+      ]
+    },
+    "recruitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "initial_state": {
+          "type": "string",
+          "enum": [
+            "unavailable",
+            "available",
+            "invited",
+            "recruited",
+            "departed"
+          ]
+        },
+        "encounter_hook": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "acceptance_requires_character_choice": {
+          "const": true
+        }
+      },
+      "required": [
+        "initial_state",
+        "encounter_hook",
+        "conditions",
+        "acceptance_requires_character_choice"
+      ]
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "initial_stage": {
+          "type": "string",
+          "enum": [
+            "unfamiliar",
+            "acquainted",
+            "trusted",
+            "courting",
+            "partnered"
+          ]
+        },
+        "trust": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "affection": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "agreement": {
+          "type": "string",
+          "enum": [
+            "none",
+            "mutually_agreed_multi_partner"
+          ]
+        },
+        "voluntary": {
+          "const": true
+        },
+        "presentation": {
+          "type": "string",
+          "enum": [
+            "PG13_fade_to_black"
+          ]
+        },
+        "boundaries": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "initial_stage",
+        "trust",
+        "affection",
+        "agreement",
+        "voluntary",
+        "presentation",
+        "boundaries"
+      ]
+    },
+    "party_role": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "specialty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initial_assignment": {
+          "type": "string",
+          "enum": [
+            "none",
+            "camp",
+            "field"
+          ]
+        },
+        "availability": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "specialty",
+        "initial_assignment",
+        "availability"
+      ]
+    },
+    "perks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "activation": {
+            "type": "string",
+            "enum": [
+              "field",
+              "camp",
+              "recruited_passive"
+            ]
+          },
+          "effect": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "stat": {
+                "type": "string",
+                "minLength": 1
+              },
+              "operation": {
+                "type": "string",
+                "enum": [
+                  "add",
+                  "multiply"
+                ]
+              },
+              "value": {
+                "type": "number"
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "stat",
+              "operation",
+              "value",
+              "unit"
+            ]
+          },
+          "stacking_group": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stacking_cap": {
+            "type": "number",
+            "minimum": 0
+          },
+          "tuning_status": {
+            "type": "string",
+            "enum": [
+              "provisional"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "description",
+          "activation",
+          "effect",
+          "stacking_group",
+          "stacking_cap",
+          "tuning_status"
+        ]
+      }
+    },
+    "madness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "initial_value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "range": {
+          "const": [
+            0,
+            100
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "provisional"
+          ]
+        },
+        "personal_stressor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "support_preference": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "initial_value",
+        "range",
+        "status",
+        "personal_stressor",
+        "support_preference"
+      ]
+    },
+    "recovery_offer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requires_trusted_relationship": {
+          "type": "boolean"
+        },
+        "requires_mutual_acceptance": {
+          "const": true
+        },
+        "amount": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "game_minutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "daily_uses": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tuning_status": {
+          "type": "string",
+          "enum": [
+            "provisional"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "requires_trusted_relationship",
+        "requires_mutual_acceptance",
+        "amount",
+        "game_minutes",
+        "daily_uses",
+        "tuning_status"
+      ]
+    },
+    "continuity_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "playable_companion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "const": "design_only"
+        },
+        "eligible_for_authored_adventures": {
+          "const": true
+        },
+        "control_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "return_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "romance_required_for_control": {
+          "const": false
+        }
+      },
+      "required": [
+        "status",
+        "eligible_for_authored_adventures",
+        "control_policy",
+        "return_policy",
+        "romance_required_for_control"
+      ]
+    },
+    "romance_adventure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "controlled_actor_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "companion_skill": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protagonist_support": {
+          "type": "string",
+          "minLength": 1
+        },
+        "affectionate_payoff": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reward_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "failure_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duration_target_minutes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tuning_status": {
+          "const": "provisional"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "controlled_actor_id",
+        "objective",
+        "companion_skill",
+        "protagonist_support",
+        "affectionate_payoff",
+        "reward_policy",
+        "failure_policy",
+        "duration_target_minutes",
+        "tuning_status"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "content_status",
+    "origin",
+    "name",
+    "age",
+    "gender",
+    "romance_eligible",
+    "identity",
+    "recruitment",
+    "relationship",
+    "party_role",
+    "perks",
+    "madness",
+    "recovery_offer",
+    "continuity_notes",
+    "playable_companion",
+    "romance_adventure"
+  ]
+}

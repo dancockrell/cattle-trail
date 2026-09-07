@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "authority": "../GAME-DESIGN.md",
+  "implementation_status": "Design only except separately verified room date/dialogue continuity.",
+  "decisions": [
+    {
+      "id": "genre",
+      "status": "accepted_user",
+      "decision": "Harem-lit alternate 1870s Weird West with steam robotics/mechas, ordinary accepted spirits and ambiguous occult gods battling on Earth.",
+      "consequence": "Supersedes a purely historical cattle-drive identity."
+    },
+    {
+      "id": "adult_cast",
+      "status": "accepted_user",
+      "decision": "All romance women are adults 18 or older, mostly 18–24; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
+      "consequence": "Explicit age in all authored/generated romance records; no child-coded design. Earlier proposed 21+ minimum is superseded."
+    },
+    {
+      "id": "companions",
+      "status": "accepted_user",
+      "decision": "Eligible women are recruitable harem companions, including named and procedural characters with individual perks.",
+      "consequence": "Model stable identity, recruitment and perks independently of relationship stage."
+    },
+    {
+      "id": "madness",
+      "status": "accepted_user",
+      "decision": "Everyone has madness; intimacy with loved ones reduces it.",
+      "consequence": "Shared madness contract covers player, companions, rustlers and other NPCs."
+    },
+    {
+      "id": "relationship_presentation",
+      "status": "integration_contract",
+      "decision": "Voluntary adult relationships; PG-13 affection and fade-to-black intimacy; shared rest and support count as intimacy.",
+      "consequence": "No mandatory sexual transaction for recruitment or recovery."
+    },
+    {
+      "id": "start_date",
+      "status": "provisional_integration",
+      "decision": "Clear Fork begins May 12, 1872.",
+      "consequence": "Replace the prior 1868 HUD date; this is an alternate-history starting-date choice."
+    },
+    {
+      "id": "eleanor",
+      "status": "provisional_integration",
+      "decision": "Eleanor is age 24 and a frontier healer familiar with spirits.",
+      "consequence": "Preserve existing room sprite; do not claim new outfit approval."
+    },
+    {
+      "id": "scope",
+      "status": "accepted_user",
+      "decision": "Prove the current single room before broadening scope; repair lasso and animation sequence quality.",
+      "consequence": "Future relationship, madness and supernatural systems remain design only until the room visual bar is met."
+    },
+    {
+      "id": "tuning",
+      "status": "provisional",
+      "decision": "Madness 0–100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
+      "consequence": "Untested values require a bounded implementation and playtest."
+    },
+    {
+      "id": "unresolved",
+      "status": "unresolved",
+      "decision": "Roster limits, death/departure persistence policy, world scale, machine economy, mecha control and procedural population weights.",
+      "consequence": "Do not silently implement assumptions as accepted design."
+    },
+    {
+      "id": "ordinary_charismatic_cast",
+      "status": "accepted_user",
+      "decision": "Ordinary but gorgeous adult women who are slim, small-chested, healthy, active, charming and self-confident; self-chosen rebellious PG-13 clothing is secondary to personality.",
+      "consequence": "Supersedes a cast organized around revealing fantasy outfits alone."
+    },
+    {
+      "id": "gameplay_romance",
+      "status": "accepted_user",
+      "decision": "Most romance develops through gameplay, playing as companions and short unique RPG adventures, with mutual attraction and short lively dialogue.",
+      "consequence": "Avoid endless conversation trees, begging and constant refusal/persuasion loops; each companion gets a distinct playable adventure beat."
+    },
+    {
+      "id": "control_contract",
+      "status": "provisional",
+      "decision": "Switch control for a bounded authored adventure while preserving actor identity and state, then return safely with rewards applied once.",
+      "consequence": "No current actor-switch implementation; preserve the current animation-repair milestone."
+    }
+  ]
+}
