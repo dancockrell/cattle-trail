@@ -535,7 +535,8 @@ func run_stride_compare() -> void:
 	for actor in actors.get_children(): actor.visible = false
 	var trial: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/stride-trial.json"))
 	var index := 0
-	for key in ["v5","v6_row","v6_curated"]:
+	var comparison_keys := ["v5","v6_curated","v7_row"] if "--stride-v7" in OS.get_cmdline_user_args() else ["v5","v6_row","v6_curated"]
+	for key in comparison_keys:
 		var subject := Actor.new()
 		subject.configure("rider",trial.variants[key])
 		subject.position = Vector2(110+index*175,275)
@@ -543,6 +544,7 @@ func run_stride_compare() -> void:
 		stride_subjects.append(subject)
 		index += 1
 	objective.text = "STRIDE COMPARISON / left V5 / middle V6 row order / right V6 curated order"
+	if "--stride-v7" in OS.get_cmdline_user_args(): objective.text = "STRIDE COMPARISON / left V5 / middle V6 curated / right V7 low-step edit"
 	journal.text = "Same 18-pixel diagnostic stride and .96-second cycle. Compare foot support and loop continuity."
 	await get_tree().create_timer(5.76).timeout
 	print("STRIDE COMPARISON: three source sequences rendered over fixed ground; physical acceptance remains separate")

@@ -21,3 +21,5 @@ The measured V5 fore-hoof excursion suggests a diagnostic 18-pixel stride, far b
 5. Meet the user's visual bar in the whole playable room before broader implementation.
 
 GAME-DESIGN.md records the newly accepted adult Weird West companion-romance identity. Those design contracts do not count as implemented romance, madness or companion switching.
+
+The V7 whole-sprite edit again repeats foreleg phases and remains excluded. The subsequent nine-part cutout rig was explicitly rejected by the user on 2026-09-08. Its mathematical contact test is not visual acceptance. Stop that approach; retain RIG-TRIAL.md and experimental files as rejected evidence only. Neither experiment changed the room selection.

@@ -1,0 +1,189 @@
+{
+  "status": "rejected_by_user_do_not_integrate",
+  "source": "kits/source/rider-ne-rig-v1.png",
+  "sha256": "326d3a5c423ae5f35c1aa4febcc67aca0181657b24bb75f8c64820c3b3786628",
+  "processing": "Cell crop excludes white grid border; binary magenta key; alpha trim only. Runtime uses nearest textured parts.",
+  "parts": {
+    "body": {
+      "texture": "res://assets/rig-trial/body.png",
+      "source_rect": [
+        4,
+        4,
+        414,
+        414
+      ],
+      "trim": [
+        44,
+        33,
+        369,
+        375
+      ],
+      "dimensions": [
+        325,
+        342
+      ]
+    },
+    "near_fore_upper": {
+      "texture": "res://assets/rig-trial/near_fore_upper.png",
+      "source_rect": [
+        422,
+        4,
+        832,
+        414
+      ],
+      "trim": [
+        162,
+        87,
+        244,
+        324
+      ],
+      "dimensions": [
+        82,
+        237
+      ]
+    },
+    "near_fore_lower": {
+      "texture": "res://assets/rig-trial/near_fore_lower.png",
+      "source_rect": [
+        840,
+        4,
+        1250,
+        414
+      ],
+      "trim": [
+        159,
+        121,
+        217,
+        311
+      ],
+      "dimensions": [
+        58,
+        190
+      ]
+    },
+    "near_hind_upper": {
+      "texture": "res://assets/rig-trial/near_hind_upper.png",
+      "source_rect": [
+        4,
+        422,
+        414,
+        832
+      ],
+      "trim": [
+        158,
+        86,
+        246,
+        311
+      ],
+      "dimensions": [
+        88,
+        225
+      ]
+    },
+    "near_hind_lower": {
+      "texture": "res://assets/rig-trial/near_hind_lower.png",
+      "source_rect": [
+        422,
+        422,
+        832,
+        832
+      ],
+      "trim": [
+        168,
+        100,
+        234,
+        296
+      ],
+      "dimensions": [
+        66,
+        196
+      ]
+    },
+    "far_fore_upper": {
+      "texture": "res://assets/rig-trial/far_fore_upper.png",
+      "source_rect": [
+        840,
+        422,
+        1250,
+        832
+      ],
+      "trim": [
+        164,
+        86,
+        247,
+        314
+      ],
+      "dimensions": [
+        83,
+        228
+      ]
+    },
+    "far_fore_lower": {
+      "texture": "res://assets/rig-trial/far_fore_lower.png",
+      "source_rect": [
+        4,
+        840,
+        414,
+        1250
+      ],
+      "trim": [
+        172,
+        100,
+        232,
+        295
+      ],
+      "dimensions": [
+        60,
+        195
+      ]
+    },
+    "far_hind_upper": {
+      "texture": "res://assets/rig-trial/far_hind_upper.png",
+      "source_rect": [
+        422,
+        840,
+        832,
+        1250
+      ],
+      "trim": [
+        139,
+        83,
+        237,
+        320
+      ],
+      "dimensions": [
+        98,
+        237
+      ]
+    },
+    "far_hind_lower": {
+      "texture": "res://assets/rig-trial/far_hind_lower.png",
+      "source_rect": [
+        840,
+        840,
+        1250,
+        1250
+      ],
+      "trim": [
+        173,
+        98,
+        229,
+        293
+      ],
+      "dimensions": [
+        56,
+        195
+      ]
+    }
+  },
+  "cycle_seconds": 0.96,
+  "stride_pixels": 18,
+  "stance_fraction": 0.75,
+  "landing_phases": {
+    "near_hind": 0,
+    "near_fore": 0.25,
+    "far_hind": 0.5,
+    "far_fore": 0.75
+  },
+  "rejection": "2026-09-08: not working, probably a bad idea. Cutout anatomy and presentation rejected."
+}

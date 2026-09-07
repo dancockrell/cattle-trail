@@ -4,8 +4,8 @@ import json,hashlib,numpy as np
 from PIL import Image
 from sprite_grid import extract_cells
 root=Path(__file__).resolve().parents[1]
-atlas=Image.new('RGBA',(768,192)); frames=[]
-for version in ['v5','v6']:
+atlas=Image.new('RGBA',(768,288)); frames=[]
+for version in ['v5','v6','v7']:
     source=root/f'kits/source/rider-ne-walk-sequence-{version}.png'
     cells,metadata=extract_cells(Image.open(source),4,2)
     factor=62/float(np.median([im.height for im in cells[:4]]))
@@ -17,7 +17,7 @@ for version in ['v5','v6']:
         frames.append({'atlas_rect':[x,y,96,96],'source':str(source.relative_to(root)).replace('\\','/'),'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'crop':record['source_trim_rect'],'scale':factor})
 atlas.save(root/'assets/stride-trial.png')
 variants={}
-for name,indices in {'v5':[0,1,2,3,4,5,6,7],'v6_row':[8,9,10,11,12,13,14,15],'v6_curated':[8,9,10,11,12,15,14,13]}.items():
+for name,indices in {'v5':[0,1,2,3,4,5,6,7],'v6_row':[8,9,10,11,12,13,14,15],'v6_curated':[8,9,10,11,12,15,14,13],'v7_row':list(range(16,24))}.items():
     variants[name]={'texture':'res://assets/stride-trial.png','anchor':[47,93],'default_facing':'northeast','frames':frames,'clips':{'idle':{'frames':[indices[0]],'fps':1,'loop':True},'idle_northeast':{'frames':[indices[0]],'fps':1,'loop':True},'walk_east':{'frames':indices,'fps':8.3333333333,'loop':True},'walk_northeast':{'frames':indices,'fps':8.3333333333,'loop':True}},'locomotion':{'nominal_speed':72},'status':'comparison_only_not_selected_gameplay'}
 (root/'assets/stride-trial.json').write_text(json.dumps({'status':'diagnostic_only','trial_speed':18.75,'cycle_seconds':0.96,'variants':variants},indent=2)+'\n')
-print('Built three diagnostic variants from 16 source cells; runtime selection unchanged')
+print('Built four diagnostic variants from 24 source cells; runtime selection unchanged')
