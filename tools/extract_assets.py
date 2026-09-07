@@ -53,9 +53,11 @@ cshifts=[(0,0),(435,-6),(879,-6),(1321,-13)]
 atlas('longhorn',0,[(263+dx,92+dy,435+dx,245+dy) for dx,dy in cshifts],[58,50],.30,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[0,1,2,3],'fps':5,'loop':True}},[[(x+dx,y+dy) for x,y in cow] for dx,dy in cshifts])
 # Distinct colors from the same first grouping.
 white=[(267,291),(277,270),(299,252),(326,247),(355,234),(370,227),(385,235),(385,255),(369,270),(365,298),(347,317),(326,327),(296,337),(272,330)]
-atlas('cream',0,[(263,221,393,341)],[58,50],.35,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[0],'fps':1,'loop':True}},[white])
+wshifts=[(0,0),(441,0),(886,0),(1327,0)]
+atlas('cream',0,[(263+dx,221+dy,393+dx,341+dy) for dx,dy in wshifts],[58,50],.35,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[0,1,2,3],'fps':5,'loop':True}},[[(x+dx,y+dy) for x,y in white] for dx,dy in wshifts])
 spotted=[(185,266),(195,226),(222,201),(255,193),(265,176),(282,172),(290,185),(309,182),(317,194),(307,215),(291,223),(281,248),(262,271),(238,287),(212,292),(193,286)]
-atlas('spotted',0,[(178,167,323,299)],[58,50],.34,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[0],'fps':1,'loop':True}},[spotted])
+sshifts=[(0,0),(438,0),(879,0),(1323,-5)]
+atlas('spotted',0,[(178+dx,167+dy,323+dx,299+dy) for dx,dy in sshifts],[58,50],.34,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[0,1,2,3],'fps':5,'loop':True}},[[(x+dx,y+dy) for x,y in spotted] for dx,dy in sshifts])
 atlas('eleanor',1,[(21,329,59,389),(66,329,103,389),(109,329,146,389)],[36,48],.72,{'idle':{'frames':[0,1,0,2],'fps':2,'loop':True},'talk':{'frames':[1,2],'fps':3,'loop':True}})
 atlas('rustler',1,[(23,447,59,507),(67,447,105,507),(151,447,195,507),(464,447,513,507)],[40,48],.72,{'idle':{'frames':[0],'fps':1,'loop':True},'walk':{'frames':[1,2],'fps':5,'loop':True},'shoot':{'frames':[3],'fps':1,'loop':True}})
 atlas('wagon',1,[(20,917,147,996)],[112,72],.85,{'idle':{'frames':[0],'fps':1,'loop':True}})

@@ -1,0 +1,25 @@
+; Cattle Trail single-room proof. Original source art is in source/.
+config_version=5
+
+[application]
+config/name="Cattle Trail — Clear Fork"
+run/main_scene="res://scenes/room.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=1000
+window/size/window_width_override=1280
+window/size/window_height_override=1000
+window/size/min_width=360
+window/size/min_height=640
+window/stretch/mode="disabled"
+
+[rendering]
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.075, 0.063, 0.045, 1)
