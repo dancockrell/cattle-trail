@@ -10309,6 +10309,1062 @@
             61
           ],
           "id": "cream_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            342,
+            304
+          ],
+          "trim": [
+            110,
+            73,
+            282,
+            251
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_064"
+        },
+        {
+          "source_rect": [
+            342,
+            0,
+            636,
+            304
+          ],
+          "trim": [
+            62,
+            77,
+            231,
+            248
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_065"
+        },
+        {
+          "source_rect": [
+            636,
+            0,
+            932,
+            304
+          ],
+          "trim": [
+            65,
+            77,
+            235,
+            251
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_066"
+        },
+        {
+          "source_rect": [
+            932,
+            0,
+            1254,
+            304
+          ],
+          "trim": [
+            63,
+            75,
+            234,
+            251
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_067"
+        },
+        {
+          "source_rect": [
+            0,
+            304,
+            330,
+            602
+          ],
+          "trim": [
+            94,
+            54,
+            283,
+            228
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_068"
+        },
+        {
+          "source_rect": [
+            330,
+            304,
+            634,
+            602
+          ],
+          "trim": [
+            48,
+            57,
+            252,
+            232
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_069"
+        },
+        {
+          "source_rect": [
+            634,
+            304,
+            920,
+            602
+          ],
+          "trim": [
+            54,
+            56,
+            229,
+            229
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_070"
+        },
+        {
+          "source_rect": [
+            920,
+            304,
+            1254,
+            602
+          ],
+          "trim": [
+            58,
+            56,
+            249,
+            233
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northeast",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_071"
+        },
+        {
+          "source_rect": [
+            0,
+            602,
+            327,
+            903
+          ],
+          "trim": [
+            96,
+            67,
+            268,
+            248
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_072"
+        },
+        {
+          "source_rect": [
+            327,
+            602,
+            624,
+            903
+          ],
+          "trim": [
+            60,
+            69,
+            232,
+            243
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_073"
+        },
+        {
+          "source_rect": [
+            624,
+            602,
+            924,
+            903
+          ],
+          "trim": [
+            65,
+            70,
+            235,
+            243
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_074"
+        },
+        {
+          "source_rect": [
+            924,
+            602,
+            1254,
+            903
+          ],
+          "trim": [
+            65,
+            67,
+            231,
+            250
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_075"
+        },
+        {
+          "source_rect": [
+            0,
+            903,
+            322,
+            1254
+          ],
+          "trim": [
+            87,
+            54,
+            268,
+            231
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_076"
+        },
+        {
+          "source_rect": [
+            322,
+            903,
+            624,
+            1254
+          ],
+          "trim": [
+            56,
+            54,
+            243,
+            232
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_077"
+        },
+        {
+          "source_rect": [
+            624,
+            903,
+            924,
+            1254
+          ],
+          "trim": [
+            59,
+            54,
+            250,
+            232
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_078"
+        },
+        {
+          "source_rect": [
+            924,
+            903,
+            1254,
+            1254
+          ],
+          "trim": [
+            51,
+            52,
+            227,
+            229
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cream-rear-v3.png",
+          "source_sha256": "e148fc32526a24d788c25cd33a0d8102d41ddec19f300fb92068a38ff70132be",
+          "direction": "northwest",
+          "scale": 0.21714285714285714,
+          "job": "cream-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            333,
+            310
+          ],
+          "trim": [
+            87,
+            75,
+            276,
+            258
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_080"
+        },
+        {
+          "source_rect": [
+            333,
+            0,
+            631,
+            310
+          ],
+          "trim": [
+            58,
+            73,
+            247,
+            257
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_081"
+        },
+        {
+          "source_rect": [
+            631,
+            0,
+            936,
+            310
+          ],
+          "trim": [
+            52,
+            76,
+            254,
+            259
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_082"
+        },
+        {
+          "source_rect": [
+            936,
+            0,
+            1254,
+            310
+          ],
+          "trim": [
+            53,
+            79,
+            243,
+            263
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_083"
+        },
+        {
+          "source_rect": [
+            0,
+            310,
+            338,
+            612
+          ],
+          "trim": [
+            78,
+            48,
+            284,
+            238
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_084"
+        },
+        {
+          "source_rect": [
+            338,
+            310,
+            635,
+            612
+          ],
+          "trim": [
+            54,
+            49,
+            250,
+            233
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_085"
+        },
+        {
+          "source_rect": [
+            635,
+            310,
+            938,
+            612
+          ],
+          "trim": [
+            48,
+            51,
+            253,
+            242
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_086"
+        },
+        {
+          "source_rect": [
+            938,
+            310,
+            1254,
+            612
+          ],
+          "trim": [
+            51,
+            57,
+            249,
+            244
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southeast",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_087"
+        },
+        {
+          "source_rect": [
+            0,
+            612,
+            319,
+            915
+          ],
+          "trim": [
+            66,
+            61,
+            260,
+            250
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_088"
+        },
+        {
+          "source_rect": [
+            319,
+            612,
+            628,
+            915
+          ],
+          "trim": [
+            59,
+            59,
+            258,
+            249
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_089"
+        },
+        {
+          "source_rect": [
+            628,
+            612,
+            940,
+            915
+          ],
+          "trim": [
+            52,
+            62,
+            259,
+            252
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_090"
+        },
+        {
+          "source_rect": [
+            940,
+            612,
+            1254,
+            915
+          ],
+          "trim": [
+            54,
+            64,
+            249,
+            252
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_091"
+        },
+        {
+          "source_rect": [
+            0,
+            915,
+            313,
+            1254
+          ],
+          "trim": [
+            61,
+            52,
+            264,
+            251
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_092"
+        },
+        {
+          "source_rect": [
+            313,
+            915,
+            616,
+            1254
+          ],
+          "trim": [
+            50,
+            52,
+            247,
+            252
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_093"
+        },
+        {
+          "source_rect": [
+            616,
+            915,
+            928,
+            1254
+          ],
+          "trim": [
+            58,
+            52,
+            256,
+            249
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_094"
+        },
+        {
+          "source_rect": [
+            928,
+            915,
+            1254,
+            1254
+          ],
+          "trim": [
+            56,
+            55,
+            258,
+            249
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cream-front-v3.png",
+          "source_sha256": "604d632b1846a18bcb2b95fbe87bbeb3e70e2d91d4e80f79a3a1f9074816426a",
+          "direction": "southwest",
+          "scale": 0.20708446866485014,
+          "job": "cream-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_095"
         }
       ],
       "clips": {
@@ -10380,21 +11436,105 @@
           "fps": 7,
           "loop": true
         },
+        "idle_northeast": {
+          "frames": [
+            64,
+            65,
+            66,
+            67
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            68,
+            69,
+            70,
+            71
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_northwest": {
+          "frames": [
+            72,
+            73,
+            74,
+            75
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_northwest": {
+          "frames": [
+            76,
+            77,
+            78,
+            79
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southeast": {
+          "frames": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_southeast": {
+          "frames": [
+            84,
+            85,
+            86,
+            87
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southwest": {
+          "frames": [
+            88,
+            89,
+            90,
+            91
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_southwest": {
+          "frames": [
+            92,
+            93,
+            94,
+            95
+          ],
+          "fps": 7,
+          "loop": true
+        },
         "idle": {
           "frames": [
-            0
+            64,
+            65,
+            66,
+            67
           ],
           "fps": 3,
           "loop": true
         }
       },
       "status": "selected_for_room_review",
-      "count": 64,
+      "count": 96,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage."
       ],
+      "default_facing": "northeast",
       "locomotion": {
         "nominal_speed": 36,
         "facing_bias": 1.2,
@@ -17984,6 +19124,6 @@
     "sampling": "nearest",
     "provenance": "New empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v2-prompt.txt"
   },
-  "integrated_unique_actor_frames": 225,
+  "integrated_unique_actor_frames": 257,
   "integrated_unique_scenery_frames": 30
 }
