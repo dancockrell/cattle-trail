@@ -444,13 +444,13 @@ func run_pose_review() -> void:
 	reference.configure("rider",source_art.sprites.rider)
 	reference.position = Vector2(240,245)
 	actors.add_child(reference)
-	for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN]:
+	for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2(1,-1),Vector2(-1,-1)]:
 		for action in ["walk","lasso","shoot"]:
 			objective.text = "POSE REVIEW / " + action + " / " + player.direction_name(direction)
 			journal.text = "Left: original approved rider. Right: selected rider. Fixed world anchors; movement paused."
 			player.action(action,direction)
 			await get_tree().create_timer(0.85).timeout
-	print("POSE REVIEW PASS: 12 actual engine action/facing transitions rendered")
+	print("POSE REVIEW PASS: 18 actual engine action/facing transitions rendered against original art")
 	get_tree().quit()
 
 func demo_ride(destination: Vector2, seconds: float = 8.0) -> bool:
