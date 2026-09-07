@@ -6719,6 +6719,1062 @@
             61
           ],
           "id": "longhorn_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            422,
+            248
+          ],
+          "trim": [
+            154,
+            42,
+            354,
+            227
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_064"
+        },
+        {
+          "source_rect": [
+            422,
+            0,
+            780,
+            248
+          ],
+          "trim": [
+            68,
+            42,
+            278,
+            227
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_065"
+        },
+        {
+          "source_rect": [
+            780,
+            0,
+            1132,
+            248
+          ],
+          "trim": [
+            82,
+            44,
+            278,
+            227
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_066"
+        },
+        {
+          "source_rect": [
+            1132,
+            0,
+            1536,
+            248
+          ],
+          "trim": [
+            74,
+            42,
+            273,
+            227
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_067"
+        },
+        {
+          "source_rect": [
+            0,
+            248,
+            410,
+            494
+          ],
+          "trim": [
+            122,
+            22,
+            339,
+            208
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_068"
+        },
+        {
+          "source_rect": [
+            410,
+            248,
+            761,
+            494
+          ],
+          "trim": [
+            73,
+            22,
+            280,
+            203
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_069"
+        },
+        {
+          "source_rect": [
+            761,
+            248,
+            1112,
+            494
+          ],
+          "trim": [
+            72,
+            22,
+            280,
+            205
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_070"
+        },
+        {
+          "source_rect": [
+            1112,
+            248,
+            1536,
+            494
+          ],
+          "trim": [
+            72,
+            22,
+            277,
+            204
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northeast",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_071"
+        },
+        {
+          "source_rect": [
+            0,
+            494,
+            400,
+            741
+          ],
+          "trim": [
+            129,
+            42,
+            323,
+            226
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_072"
+        },
+        {
+          "source_rect": [
+            400,
+            494,
+            756,
+            741
+          ],
+          "trim": [
+            79,
+            40,
+            284,
+            226
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_073"
+        },
+        {
+          "source_rect": [
+            756,
+            494,
+            1104,
+            741
+          ],
+          "trim": [
+            72,
+            41,
+            269,
+            226
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_074"
+        },
+        {
+          "source_rect": [
+            1104,
+            494,
+            1536,
+            741
+          ],
+          "trim": [
+            80,
+            42,
+            273,
+            226
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_075"
+        },
+        {
+          "source_rect": [
+            0,
+            741,
+            412,
+            1024
+          ],
+          "trim": [
+            130,
+            22,
+            345,
+            207
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_076"
+        },
+        {
+          "source_rect": [
+            412,
+            741,
+            759,
+            1024
+          ],
+          "trim": [
+            67,
+            22,
+            276,
+            204
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_077"
+        },
+        {
+          "source_rect": [
+            759,
+            741,
+            1113,
+            1024
+          ],
+          "trim": [
+            72,
+            22,
+            283,
+            206
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_078"
+        },
+        {
+          "source_rect": [
+            1113,
+            741,
+            1536,
+            1024
+          ],
+          "trim": [
+            72,
+            22,
+            287,
+            209
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/longhorn-rear-v3.png",
+          "source_sha256": "1585eda1d838ef539c991940db6686fc8f6b9950bfde1a49ac446a65fd9e534e",
+          "direction": "northwest",
+          "scale": 0.20540540540540542,
+          "job": "longhorn-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            396,
+            266
+          ],
+          "trim": [
+            109,
+            58,
+            333,
+            233
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_080"
+        },
+        {
+          "source_rect": [
+            396,
+            0,
+            731,
+            266
+          ],
+          "trim": [
+            63,
+            58,
+            271,
+            233
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_081"
+        },
+        {
+          "source_rect": [
+            731,
+            0,
+            1060,
+            266
+          ],
+          "trim": [
+            65,
+            58,
+            276,
+            233
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_082"
+        },
+        {
+          "source_rect": [
+            1060,
+            0,
+            1448,
+            266
+          ],
+          "trim": [
+            53,
+            58,
+            273,
+            233
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_083"
+        },
+        {
+          "source_rect": [
+            0,
+            266,
+            392,
+            525
+          ],
+          "trim": [
+            109,
+            35,
+            333,
+            215
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_084"
+        },
+        {
+          "source_rect": [
+            392,
+            266,
+            732,
+            525
+          ],
+          "trim": [
+            60,
+            37,
+            276,
+            215
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_085"
+        },
+        {
+          "source_rect": [
+            732,
+            266,
+            1068,
+            525
+          ],
+          "trim": [
+            65,
+            38,
+            277,
+            215
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_086"
+        },
+        {
+          "source_rect": [
+            1068,
+            266,
+            1448,
+            525
+          ],
+          "trim": [
+            59,
+            37,
+            266,
+            215
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southeast",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_087"
+        },
+        {
+          "source_rect": [
+            0,
+            525,
+            384,
+            778
+          ],
+          "trim": [
+            105,
+            45,
+            324,
+            220
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_088"
+        },
+        {
+          "source_rect": [
+            384,
+            525,
+            722,
+            778
+          ],
+          "trim": [
+            61,
+            45,
+            273,
+            220
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_089"
+        },
+        {
+          "source_rect": [
+            722,
+            525,
+            1064,
+            778
+          ],
+          "trim": [
+            67,
+            45,
+            283,
+            221
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_090"
+        },
+        {
+          "source_rect": [
+            1064,
+            525,
+            1448,
+            778
+          ],
+          "trim": [
+            60,
+            45,
+            275,
+            221
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_091"
+        },
+        {
+          "source_rect": [
+            0,
+            778,
+            380,
+            1086
+          ],
+          "trim": [
+            101,
+            34,
+            319,
+            218
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_092"
+        },
+        {
+          "source_rect": [
+            380,
+            778,
+            721,
+            1086
+          ],
+          "trim": [
+            62,
+            37,
+            279,
+            218
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_093"
+        },
+        {
+          "source_rect": [
+            721,
+            778,
+            1060,
+            1086
+          ],
+          "trim": [
+            63,
+            37,
+            280,
+            217
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_094"
+        },
+        {
+          "source_rect": [
+            1060,
+            778,
+            1448,
+            1086
+          ],
+          "trim": [
+            60,
+            33,
+            270,
+            216
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/longhorn-front-v3.png",
+          "source_sha256": "a164b89f0becf4781fc9cb207c0b0ce0dee70a97565ece56c20995bb83b14c7b",
+          "direction": "southwest",
+          "scale": 0.21714285714285714,
+          "job": "longhorn-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_095"
         }
       ],
       "clips": {
@@ -6882,6 +7938,86 @@
           "fps": 5,
           "loop": false
         },
+        "idle_northeast": {
+          "frames": [
+            64,
+            65,
+            66,
+            67
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            68,
+            69,
+            70,
+            71
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_northwest": {
+          "frames": [
+            72,
+            73,
+            74,
+            75
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_northwest": {
+          "frames": [
+            76,
+            77,
+            78,
+            79
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southeast": {
+          "frames": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_southeast": {
+          "frames": [
+            84,
+            85,
+            86,
+            87
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southwest": {
+          "frames": [
+            88,
+            89,
+            90,
+            91
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk_southwest": {
+          "frames": [
+            92,
+            93,
+            94,
+            95
+          ],
+          "fps": 7,
+          "loop": true
+        },
         "idle_east": {
           "frames": [
             0
@@ -6912,7 +8048,7 @@
         }
       },
       "status": "extracted_candidate",
-      "count": 64,
+      "count": 96,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -20761,5 +21897,5 @@
       "reason": "Wrong facing; replaced by v2. Preserved, excluded from count."
     }
   ],
-  "total_extracted": 560
+  "total_extracted": 592
 }

@@ -301,5 +301,119 @@
     "facing": "Every cell faces SCREEN LOWER-LEFT (southwest), walking diagonally TOWARD the viewer. High three-quarter FRONT-RIGHT oblique view, horse nose lower-left of tail, cowboy's face and chest partially visible, saddle and horse back top visible. Four hooves readable. The pistol and thrown lasso aim LOWER-LEFT along the horse heading, never behind him or to upper-right. The neutral idle row has FOUR hooves PLANTED, with no dust. Match original rider adult proportions, not chibi.",
     "detail": "Every cell faces SCREEN LOWER-LEFT (southwest), walking diagonally TOWARD the viewer. High three-quarter FRONT-RIGHT oblique view, horse nose lower-left of tail, cowboy's face and chest partially visible, saddle and horse back top visible. Four hooves readable. The pistol and thrown lasso aim LOWER-LEFT along the horse heading, never behind him or to upper-right. The neutral idle row has FOUR hooves PLANTED, with no dust. Match original rider adult proportions, not chibi.",
     "prompt": "CATTLE TRAIL production sprite kit. Use ONLY the mounted cowboy and his brown horse from supplied reference; omit every cow. Match that EXACT pixel-art identity: adult cowboy brown brimmed hat, red neckerchief, blue shirt, leather saddle, rich chestnut horse with black mane/tail. Most important: MATCH THE REFERENCE'S HIGH THREE-QUARTER OBLIQUE camera elevation, visible top planes and saddle/back, chunky strong dark contour clusters, not a profile side-view sprite. Four columns by four rows, EXACTLY SIXTEEN separated mounted rider sprites. One rider on one horse per cell. Equal 320x320 conceptual cells and ample empty gutters on completely uniform pure magenta #ff00ff background. No checkerboard, no labels, no divider lines, no scenery. HARD pixel edges, no antialiasing, no smooth painting. Consistent 70-pixel-tall conceptual sprite detail across cells, enlarged with nearest pixel look. Preserve horse body proportions, saddle position and body anchor; don't stretch limbs or change lighting. Upper-left light. NO DUST in ANY CELL. NO SMOKE except brief gun effect. All feet must be readable and uncut. ROW 1: four subtle neutral IDLE poses, ALL FOUR HOOVES PLANTED, weight-bearing, relaxed reins, only small ear/tail/hand movement; no raised leg, no walking, no suspended dust. ROW 2: four sequential WALK phases, alternating correct leg pairs with small body rise and opposing motion, same rider stance. ROW 3: four LASSO phases wind-up, overhead loop, extended forward casting loop, recover; horse remains planted under rider. ROW 4: four SHOOT phases aim, single muzzle flash, recoil, recover; horse remains planted; aim pistol along the horse heading. Each sprite occupies its own complete isolated cell. Do not make a composition or groups. NO different costumes or horses.\nEvery cell faces SCREEN LOWER-LEFT (southwest), walking diagonally TOWARD the viewer. High three-quarter FRONT-RIGHT oblique view, horse nose lower-left of tail, cowboy's face and chest partially visible, saddle and horse back top visible. Four hooves readable. The pistol and thrown lasso aim LOWER-LEFT along the horse heading, never behind him or to upper-right. The neutral idle row has FOUR hooves PLANTED, with no dust. Match original rider adult proportions, not chibi."
+  },
+  {
+    "id": "longhorn-rear-v3",
+    "family": "longhorn",
+    "ref": 0,
+    "row_directions": [
+      "northeast",
+      "northeast",
+      "northwest",
+      "northwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the reddish chestnut LONGHORN in the upper part of the reference groups: rich reddish brown coat, dark brown neck/chest, long pale horns with dark tips. NO white coat patches. Row1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the reddish chestnut LONGHORN in the upper part of the reference groups: rich reddish brown coat, dark brown neck/chest, long pale horns with dark tips. NO white coat patches.\nRow1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail."
+  },
+  {
+    "id": "longhorn-front-v3",
+    "family": "longhorn",
+    "ref": 0,
+    "row_directions": [
+      "southeast",
+      "southeast",
+      "southwest",
+      "southwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the reddish chestnut LONGHORN in the upper part of the reference groups: rich reddish brown coat, dark brown neck/chest, long pale horns with dark tips. NO white coat patches. Row1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the reddish chestnut LONGHORN in the upper part of the reference groups: rich reddish brown coat, dark brown neck/chest, long pale horns with dark tips. NO white coat patches.\nRow1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet."
+  },
+  {
+    "id": "cream-rear-v3",
+    "family": "cream",
+    "ref": 0,
+    "row_directions": [
+      "northeast",
+      "northeast",
+      "northwest",
+      "northwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the PALE CREAM animal in the reference: warm ivory body, cream head, darker muzzle/hooves, small pale horns, dark eyes. NO brown patches and no reddish longhorn substitution. Row1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the PALE CREAM animal in the reference: warm ivory body, cream head, darker muzzle/hooves, small pale horns, dark eyes. NO brown patches and no reddish longhorn substitution.\nRow1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail."
+  },
+  {
+    "id": "cream-front-v3",
+    "family": "cream",
+    "ref": 0,
+    "row_directions": [
+      "southeast",
+      "southeast",
+      "southwest",
+      "southwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the PALE CREAM animal in the reference: warm ivory body, cream head, darker muzzle/hooves, small pale horns, dark eyes. NO brown patches and no reddish longhorn substitution. Row1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the PALE CREAM animal in the reference: warm ivory body, cream head, darker muzzle/hooves, small pale horns, dark eyes. NO brown patches and no reddish longhorn substitution.\nRow1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet."
+  },
+  {
+    "id": "spotted-rear-v3",
+    "family": "spotted",
+    "ref": 0,
+    "row_directions": [
+      "northeast",
+      "northeast",
+      "northwest",
+      "northwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses. Row1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses.\nRow1+2: screen UPPER-RIGHT, moving AWAY from viewer, show rear-left quarter and head at upper-right of tail. Row3+4: screen UPPER-LEFT, moving AWAY, show rear-right quarter and head at upper-left of tail."
+  },
+  {
+    "id": "spotted-front-v3",
+    "family": "spotted",
+    "ref": 0,
+    "row_directions": [
+      "southeast",
+      "southeast",
+      "southwest",
+      "southwest"
+    ],
+    "actions": [
+      "idle",
+      "walk",
+      "idle",
+      "walk"
+    ],
+    "detail": "ONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses. Row1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet.",
+    "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses.\nRow1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet."
   }
 ]
