@@ -3,6 +3,7 @@ extends Control
 const Actor = preload("res://scripts/actor.gd")
 const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
+const WAGON_FOOTPRINT := Rect2(39,73,100,42)
 var manifest: Dictionary
 var world: Node2D
 var actors: Node2D
@@ -15,7 +16,7 @@ var cows: Array[Node2D] = []
 var stats: Label
 var journal: Label
 var title: Label
-var buttons: HBoxContainer
+var buttons: GridContainer
 var objective: Label
 var paper: Panel
 var message := "Eleanor is waiting by the wagon. Ride over and talk."
@@ -100,6 +101,7 @@ func _ready() -> void:
 	resized.connect(layout_ui)
 	layout_ui()
 	qa_mode = "--qa" in OS.get_cmdline_user_args()
+	for button in buttons.get_children(): button.disabled = qa_mode
 	refresh()
 	if "--smoke" in OS.get_cmdline_user_args():
 		export_smoke.call_deferred()
@@ -162,8 +164,10 @@ func build_ui() -> void:
 	journal.add_theme_color_override("font_color", Color("402917"))
 	journal.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	paper.add_child(journal)
-	buttons = HBoxContainer.new()
-	buttons.add_theme_constant_override("separation", 6)
+	buttons = GridContainer.new()
+	buttons.columns = 4
+	buttons.add_theme_constant_override("h_separation", 6)
+	buttons.add_theme_constant_override("v_separation", 6)
 	add_child(buttons)
 	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Reset [R]", reset_room]]:
 		var button := Button.new()
@@ -204,7 +208,8 @@ func layout_ui() -> void:
 	journal.add_theme_font_size_override("font_size", 14 if size.x < 600 else 16)
 	objective.add_theme_font_size_override("font_size", 16 if size.x < 600 else 18)
 	buttons.position = Vector2(left, paper.position.y + 121)
-	buttons.size = Vector2(width, 46)
+	buttons.columns = 2 if size.x < 600 else 4
+	buttons.size = Vector2(width, 98 if size.x < 600 else 46)
 	for button in buttons.get_children():
 		button.add_theme_font_size_override("font_size", 13 if size.x < 600 else 17)
 		var index: int = button.get_index()
@@ -245,11 +250,10 @@ func _physics_process(delta: float) -> void:
 	direction = direction.normalized()
 	if won: direction = Vector2.ZERO
 	if direction != Vector2.ZERO: facing = direction
+	var previous_position: Vector2 = player.position
 	player.position = limit_position(player.position + direction * 96 * delta)
-	# Wagon is solid; prevent movement through its visible body.
-	if Rect2(39, 73, 100, 42).has_point(player.position):
-		player.position -= direction * 96 * delta
-	player.pose(direction != Vector2.ZERO, direction)
+	var actual_motion: Vector2 = player.position - previous_position
+	player.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
 		var velocity := Vector2.ZERO
 		var away: Vector2 = cow.position - player.position
@@ -267,8 +271,10 @@ func _physics_process(delta: float) -> void:
 			var separation: Vector2 = cow.position - other.position
 			if separation.length() < 24 and separation.length() > 0.1:
 				velocity += separation.normalized() * (24 - separation.length()) * 2
+		var cow_before: Vector2 = cow.position
 		cow.position = limit_position(cow.position + velocity * delta)
-		cow.pose(velocity.length() > 3, velocity)
+		var cow_motion: Vector2 = cow.position - cow_before
+		cow.pose(cow_motion.length() / delta > 3, cow_motion, cow_motion.length() / delta)
 		if CORRAL.has_point(cow.position) and not rustler_active:
 			cow.secured = true
 			message = "A steer settles in the east gathering. %d of 6 safe." % secured_count()
@@ -282,7 +288,7 @@ func _physics_process(delta: float) -> void:
 	if shot_time <= 0: shot.clear_points()
 	if escaped:
 		rustler.position.x += 105 * delta
-		rustler.pose(true, Vector2.RIGHT)
+		rustler.pose(true, Vector2.RIGHT, 105.0)
 		if rustler.position.x > 670:
 			rustler.visible = false
 			escaped = false
@@ -297,6 +303,13 @@ func _physics_process(delta: float) -> void:
 
 func limit_position(at: Vector2) -> Vector2:
 	var result := at.clamp(Vector2(24, 71), Vector2(616, 303))
+	# All moving actors use the same wagon footprint, including lassoed cattle.
+	if WAGON_FOOTPRINT.has_point(result):
+		var exits := [Vector2(38.9,result.y),Vector2(139.1,result.y),Vector2(result.x,72.9),Vector2(result.x,115.1)]
+		var closest: Vector2 = exits[0]
+		for point in exits:
+			if result.distance_squared_to(point) < result.distance_squared_to(closest): closest = point
+		result = closest
 	for entry in solid_scenery:
 		var center := Vector2(entry.position[0], entry.position[1])
 		var delta := result - center
@@ -397,7 +410,17 @@ func run_qa() -> void:
 		for direction in [Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2.RIGHT]:
 			player.pose(true, direction)
 			assert(str(player.art.animation) == "walk_" + player.direction_name(direction))
+		player.art.set_frame_and_progress(2, 0.4)
+		player.pose(true, Vector2.UP, 72)
+		assert(player.art.frame == 2 and absf(player.art.frame_progress - 0.4) < 0.01, "Turning must retain gait phase")
+		player.pose(true, Vector2(1,1.05), 72)
+		assert(player.facing == "south")
+		player.pose(true, Vector2(1.05,1), 72)
+		assert(player.facing == "south", "Small diagonal variations must not chatter between facings")
+		player.pose(true, Vector2.RIGHT, 36)
+		assert(is_equal_approx(player.art.speed_scale, 0.5))
 		player.action("lasso", Vector2.LEFT)
+		assert(is_equal_approx(player.art.speed_scale, 1.0), "Action timing must not inherit walk speed")
 		assert(player.art.animation == "lasso_west")
 		player.pose(true, Vector2.RIGHT)
 		assert(player.art.animation == "lasso_west", "Movement must not erase the lasso action")
@@ -406,6 +429,8 @@ func run_qa() -> void:
 		for entry in solid_scenery:
 			var center := Vector2(entry.position[0],entry.position[1])
 			assert(limit_position(center).distance_to(center) >= float(entry.collision_radius))
+		for point in [Vector2(39.5,94),Vector2(138.5,94),Vector2(90,73.5),Vector2(90,114.5)]:
+			assert(not WAGON_FOOTPRINT.has_point(limit_position(point)), "Shared wagon collision must resolve all four approaches")
 	target = Vector2.INF
 	player.position = eleanor.position + Vector2(35, 0)
 	interact()
@@ -427,8 +452,13 @@ func run_qa() -> void:
 	target = Vector2.INF
 	rope_time = 0
 	# Bring every steer in using actual lasso following; never teleport cattle to win.
-	for cow in cows:
-		if cow.secured: continue
+	var gathering_deadline := elapsed + 60.0
+	while secured_count() < 6 and elapsed < gathering_deadline:
+		var cow: Node2D
+		for candidate in cows:
+			if not candidate.secured:
+				cow = candidate
+				break
 		player.position = cow.position - Vector2(30, 0)
 		lasso()
 		assert(is_instance_valid(rope_target))
@@ -449,6 +479,11 @@ func run_qa() -> void:
 	get_viewport().get_texture().get_image().save_png("res://room-complete.png")
 	get_window().size = Vector2i(390,844)
 	await get_tree().create_timer(0.3).timeout
+	for width in [360,390]:
+		get_window().size = Vector2i(width,844)
+		await get_tree().create_timer(0.15).timeout
+		for button in buttons.get_children():
+			assert(button.get_global_rect().end.x <= size.x and button.get_global_rect().end.y <= size.y, "Phone controls must fit in the window")
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("res://room-phone.png")
 	print("QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture")

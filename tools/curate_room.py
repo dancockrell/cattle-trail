@@ -28,6 +28,7 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}
     spec['clips']['idle']=copy.deepcopy(spec['clips']['idle_east'])
     spec['status']='selected_for_room_review'
+    spec['locomotion']={'nominal_speed':72 if name=='rider' else 36,'facing_bias':1.2,'phase_policy':'Preserve walk-cycle phase across facing changes','speed_scale_limits':[0.35,1.8],'idle_when_blocked':True}
     spec['selection_note']='Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate.'
     out['sprites'][name]=spec
 out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])

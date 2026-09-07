@@ -2226,6 +2226,16 @@
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
       ],
+      "locomotion": {
+        "nominal_speed": 72,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "longhorn": {
@@ -4372,6 +4382,16 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage."
       ],
+      "locomotion": {
+        "nominal_speed": 36,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "cream": {
@@ -6518,6 +6538,16 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage."
       ],
+      "locomotion": {
+        "nominal_speed": 36,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "spotted": {
@@ -8664,6 +8694,16 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage."
       ],
+      "locomotion": {
+        "nominal_speed": 36,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "eleanor": {
@@ -10820,6 +10860,16 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "Medical bag hand and attachment position vary; curate before production animation."
       ],
+      "locomotion": {
+        "nominal_speed": 36,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "rustler": {
@@ -12965,6 +13015,16 @@
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
       ],
+      "locomotion": {
+        "nominal_speed": 36,
+        "facing_bias": 1.2,
+        "phase_policy": "Preserve walk-cycle phase across facing changes",
+        "speed_scale_limits": [
+          0.35,
+          1.8
+        ],
+        "idle_when_blocked": true
+      },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
     "wagon": {

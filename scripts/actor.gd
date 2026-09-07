@@ -8,9 +8,13 @@ var base_speed := 36.0
 var facing := "east"
 var directional := false
 var action_time := 0.0
+var nominal_speed := 36.0
+var facing_bias := 1.2
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
+	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
+	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
 	art = AnimatedSprite2D.new()
 	art.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	art.centered = false
@@ -34,13 +38,26 @@ func configure(id: String, spec: Dictionary) -> void:
 	add_child(art)
 	art.play("idle")
 
-func pose(moving: bool, direction: Vector2 = Vector2.ZERO) -> void:
+func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) -> void:
 	if action_time > 0: return
 	if directional:
 		if direction.length_squared() > 0.01:
-			facing = direction_name(direction)
+			# Retain the current axis near diagonals to avoid one-frame facing chatter.
+			var horizontal := facing in ["east", "west"]
+			if horizontal and absf(direction.y) <= absf(direction.x) * facing_bias:
+				facing = "east" if direction.x >= 0 else "west"
+			elif not horizontal and absf(direction.x) <= absf(direction.y) * facing_bias:
+				facing = "south" if direction.y >= 0 else "north"
+			else:
+				facing = direction_name(direction)
 		var name := ("walk_" if moving else "idle_") + facing
-		if art.animation != name: art.play(name)
+		art.speed_scale = clampf(speed / nominal_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
+		if art.animation != name:
+			var keep_phase := moving and str(art.animation).begins_with("walk_")
+			var old_frame := art.frame
+			var old_progress := art.frame_progress
+			art.play(name)
+			if keep_phase: art.set_frame_and_progress(old_frame, old_progress)
 		return
 	if absf(direction.x) > 0.1:
 		# Reflect the complete anchored sprite, not its texture within the atlas cell.
@@ -62,6 +79,7 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 	var clip := name + "_" + direction_name(direction) if directional else name
 	if not art.sprite_frames.has_animation(clip): return
 	facing = direction_name(direction)
+	art.speed_scale = 1.0
 	art.play(clip)
 	art.set_frame_and_progress(0,0)
 	action_time = float(art.sprite_frames.get_frame_count(clip)) / art.sprite_frames.get_animation_speed(clip)
