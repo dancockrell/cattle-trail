@@ -1,9 +1,688 @@
 {
   "schema_version": 1,
-  "status": "northeast_sequence_under_engine_review",
-  "scope": "Northeast walk remains under review; clean-hand cast sequence is being extended to northwest.",
-  "lasso_northwest": {"source_clip":"v5_lasso_northwest","order":[0,1,2,3,4,5,6,7],"durations":[0.10,0.14,0.20,0.08,0.12,0.14,0.14,0.12],"release_ordinal":4,"hand_sockets":[[42,51],[55,36],[57,32],[30,37],[30,35],[30,38],[41,50],[42,51]],"source_hand_pixels":[[205,226],[630,155],[977,132],[1241,157],[164,579],[521,594],[943,651],[1307,656]],"rope_pixels_baked_into_source":false},
-  "walk": {"source_clip": "v5_walk_northeast", "order": [0,1,2,3,4,5,6,7], "durations": [0.12,0.12,0.12,0.12,0.12,0.12,0.12,0.12], "phase_order_verified": false},
-  "lasso": {"source_clip": "v5_lasso_northeast", "order": [0,1,2,3,4,5,6,7], "durations": [0.10,0.14,0.20,0.08,0.12,0.14,0.14,0.12], "release_ordinal": 4, "hand_sockets": [[55,51],[54,38],[60,35],[68,41],[68,39],[68,42],[54,51],[55,52]], "stages": ["ready","raise","wind","accelerate","release","follow_through","take_up","lead"], "rope_pixels_baked_into_source": false},
-  "acceptance": "Inspect repeated native engine gait and single-rope cast/catch/lead before declaring corrected. Source row order is a proposal, not proof."
+  "status": "eight_direction_casts_under_engine_review",
+  "scope": "Eight directional clean-hand casts; northeast walk remains under review.",
+  "lasso_northwest": {
+    "source_clip": "v5_lasso_northwest",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        42,
+        51
+      ],
+      [
+        55,
+        36
+      ],
+      [
+        57,
+        32
+      ],
+      [
+        30,
+        37
+      ],
+      [
+        30,
+        35
+      ],
+      [
+        30,
+        38
+      ],
+      [
+        41,
+        50
+      ],
+      [
+        42,
+        51
+      ]
+    ],
+    "source_hand_pixels": [
+      [
+        205,
+        226
+      ],
+      [
+        630,
+        155
+      ],
+      [
+        977,
+        132
+      ],
+      [
+        1241,
+        157
+      ],
+      [
+        164,
+        579
+      ],
+      [
+        521,
+        594
+      ],
+      [
+        943,
+        651
+      ],
+      [
+        1307,
+        656
+      ]
+    ],
+    "rope_pixels_baked_into_source": false
+  },
+  "walk": {
+    "source_clip": "v5_walk_northeast",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.12
+    ],
+    "phase_order_verified": false
+  },
+  "lasso": {
+    "source_clip": "v5_lasso_northeast",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        55,
+        51
+      ],
+      [
+        54,
+        38
+      ],
+      [
+        60,
+        35
+      ],
+      [
+        68,
+        41
+      ],
+      [
+        68,
+        39
+      ],
+      [
+        68,
+        42
+      ],
+      [
+        54,
+        51
+      ],
+      [
+        55,
+        52
+      ]
+    ],
+    "stages": [
+      "ready",
+      "raise",
+      "wind",
+      "accelerate",
+      "release",
+      "follow_through",
+      "take_up",
+      "lead"
+    ],
+    "rope_pixels_baked_into_source": false
+  },
+  "acceptance": "Inspect repeated native engine gait and single-rope cast/catch/lead before declaring corrected. Source row order is a proposal, not proof.",
+  "lasso_east": {
+    "source_clip": "v5_lasso_east",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        41,
+        62
+      ],
+      [
+        42,
+        41
+      ],
+      [
+        41,
+        31
+      ],
+      [
+        63,
+        46
+      ],
+      [
+        65,
+        43
+      ],
+      [
+        64,
+        48
+      ],
+      [
+        49,
+        53
+      ],
+      [
+        40,
+        61
+      ]
+    ],
+    "rope_pixels_baked_into_source": false,
+    "selection_note": "Hold source6 at recovery; source7 dangles the hand by the hip."
+  },
+  "lasso_west": {
+    "source_clip": "v5_lasso_west",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        46,
+        53
+      ],
+      [
+        43,
+        37
+      ],
+      [
+        45,
+        30
+      ],
+      [
+        28,
+        43
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        26,
+        48
+      ],
+      [
+        46,
+        54
+      ],
+      [
+        45,
+        54
+      ]
+    ],
+    "rope_pixels_baked_into_source": false,
+    "selection_note": "Source6/7 are low-hand holds, not distinct take-up phases."
+  },
+  "lasso_north": {
+    "source_clip": "v5_lasso_north",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        56,
+        55
+      ],
+      [
+        56,
+        38
+      ],
+      [
+        56,
+        31
+      ],
+      [
+        56,
+        30
+      ],
+      [
+        56,
+        29
+      ],
+      [
+        56,
+        33
+      ],
+      [
+        55,
+        47
+      ],
+      [
+        56,
+        55
+      ]
+    ],
+    "source_hand_pixels": [
+      [
+        251,
+        228
+      ],
+      [
+        619,
+        136
+      ],
+      [
+        978,
+        100
+      ],
+      [
+        1342,
+        93
+      ],
+      [
+        254,
+        548
+      ],
+      [
+        619,
+        568
+      ],
+      [
+        974,
+        639
+      ],
+      [
+        1345,
+        686
+      ]
+    ],
+    "socket_method": "Inspected source hand centers transformed through recorded crop, trim and nearest scale.",
+    "basis": "Southwest opens its hand at ordinal 3; other sheets release at ordinal 4. Native motion review required."
+  },
+  "lasso_south": {
+    "source_clip": "v5_lasso_south",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        41,
+        52
+      ],
+      [
+        40,
+        37
+      ],
+      [
+        41,
+        30
+      ],
+      [
+        41,
+        51
+      ],
+      [
+        40,
+        52
+      ],
+      [
+        40,
+        55
+      ],
+      [
+        41,
+        52
+      ],
+      [
+        42,
+        51
+      ]
+    ],
+    "source_hand_pixels": [
+      [
+        204,
+        223
+      ],
+      [
+        550,
+        144
+      ],
+      [
+        917,
+        104
+      ],
+      [
+        1264,
+        222
+      ],
+      [
+        201,
+        667
+      ],
+      [
+        548,
+        688
+      ],
+      [
+        921,
+        667
+      ],
+      [
+        1268,
+        665
+      ]
+    ],
+    "socket_method": "Inspected source hand centers transformed through recorded crop, trim and nearest scale.",
+    "basis": "Southwest opens its hand at ordinal 3; other sheets release at ordinal 4. Native motion review required."
+  },
+  "lasso_southeast": {
+    "source_clip": "v5_lasso_southeast",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 4,
+    "hand_sockets": [
+      [
+        44,
+        53
+      ],
+      [
+        39,
+        36
+      ],
+      [
+        38,
+        34
+      ],
+      [
+        55,
+        49
+      ],
+      [
+        58,
+        49
+      ],
+      [
+        57,
+        51
+      ],
+      [
+        44,
+        55
+      ],
+      [
+        46,
+        56
+      ]
+    ],
+    "source_hand_pixels": [
+      [
+        161,
+        246
+      ],
+      [
+        482,
+        145
+      ],
+      [
+        814,
+        130
+      ],
+      [
+        1239,
+        219
+      ],
+      [
+        251,
+        723
+      ],
+      [
+        585,
+        735
+      ],
+      [
+        846,
+        760
+      ],
+      [
+        1187,
+        762
+      ]
+    ],
+    "socket_method": "Inspected source hand centers transformed through recorded crop, trim and nearest scale.",
+    "basis": "Southwest opens its hand at ordinal 3; other sheets release at ordinal 4. Native motion review required."
+  },
+  "lasso_southwest": {
+    "source_clip": "v5_lasso_southwest",
+    "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "durations": [
+      0.1,
+      0.14,
+      0.2,
+      0.08,
+      0.12,
+      0.14,
+      0.14,
+      0.12
+    ],
+    "release_ordinal": 3,
+    "hand_sockets": [
+      [
+        41,
+        52
+      ],
+      [
+        39,
+        37
+      ],
+      [
+        42,
+        30
+      ],
+      [
+        28,
+        46
+      ],
+      [
+        26,
+        51
+      ],
+      [
+        33,
+        57
+      ],
+      [
+        41,
+        52
+      ],
+      [
+        42,
+        52
+      ]
+    ],
+    "source_hand_pixels": [
+      [
+        187,
+        211
+      ],
+      [
+        535,
+        137
+      ],
+      [
+        923,
+        102
+      ],
+      [
+        1213,
+        182
+      ],
+      [
+        110,
+        652
+      ],
+      [
+        505,
+        681
+      ],
+      [
+        920,
+        658
+      ],
+      [
+        1282,
+        656
+      ]
+    ],
+    "socket_method": "Inspected source hand centers transformed through recorded crop, trim and nearest scale.",
+    "basis": "Southwest opens its hand at ordinal 3; other sheets release at ordinal 4. Native motion review required."
+  }
 }

@@ -1,0 +1,17 @@
+Use case: identity-preserve. Production Cattle Trail clean-hand mounted sprite action sequence.
+Image1 reference: successful NE sequence. Use its consistent horse and empty-hand gestures, NOT its diagonal orientation.
+Image2 reference: required NORTH orientation: straight rear view, horse and cowboy heading AWAY toward TOP of image. Match this centered back-facing camera, identity, pixel style and colors. Do not copy moving legs, dust, ropes or weapons.
+ONE sheet exactly4columns by2rows,8 isolated whole mounted sprites, equal cells, wide pure #FF00FF magenta gutters and margins, no captions or labels.
+All8 poses have SAME standing horse body, same scale, saddle, rump and leg positions. ALL FOUR HOOVES planted, no walking, no turning, no body variation. NORTH STRAIGHT AWAY in every pose, centered black tail below chestnut rump, back of cowboy blue shirt visible, brown hat, red neck scarf, tan pants, brown boots. Camera fixed high three-quarter, both horse flanks balanced, not northeast or northwest diagonal. Chestnut horse black mane/tail and brown saddle as reference.
+Only the right arm changes, left hand quietly holds reins. Empty-handed lasso pantomime; game draws rope.
+Eight ordered stages, top row left-to-right then lower row:
+1 READY right hand low beside torso.
+2 RAISE right elbow bent, hand just beside right side of head.
+3 WIND right fist above right side of hat.
+4 ACCELERATE right forearm reaches FORWARD AWAY UP toward NORTH, closer to vertical centerline over horse neck, not sideways.
+5 RELEASE open right hand extended FORWARD AWAY UP toward NORTH above hat, fingers open; clear visible raised hand silhouette.
+6 FOLLOWTHROUGH arm slightly lower while still pointing forward/up.
+7 TAKEUP bend right elbow drawing hand back toward front of chest; rear view partly occludes hand.
+8 LOW FRONT LEAD right hand low forward toward saddle/horse neck, calm planted hold.
+Allow natural arm occlusion for direct rear view, but retain identifiable raise/wind/open-release silhouettes. No side-facing face, no change of heading.
+Absolutely no rope pixels, loops, cords, coils, loose yellow strokes, weapon, dust, muzzle flash or motion streaks. Full sprites inside generous cell margins. Hard-edged clustered pixel art and crisp outlines matching reference, limited warm colors, no anti-aliasing or soft effects.

@@ -1,0 +1,19 @@
+Use case: identity-preserve game sprite sequence.
+Create ONE production pixel-art animation sheet, exactly 4 columns by 2 rows, exactly eight fully isolated mounted-cowboy sprites, read left-to-right top row then bottom row. Pure flat #FF00FF magenta background, enormous empty gutters and safe outer margins, no grid, labels, lettering, shadows or scenery.
+
+Reference image 1 (rider-west.png): authoritative WEST direction, camera, cowboy/horse identity, palette and pixel style. The horse faces directly toward SCREEN LEFT, its side broad and visible like this reference. Do not turn toward upper-left, lower-left, or camera. Same brown horse, black mane/tail, leather saddle, blue-shirt cowboy, red neckerchief, brown hat and tan trousers.
+Reference image 2 (rider-ne-lasso-sequence-v5.png): action-stage sequence and stable body technique ONLY. DO NOT copy its northeast direction.
+
+The subject remains facing WEST SCREEN LEFT in ALL eight cells. Horse is stopped, ALL FOUR HOOVES PLANTED, same feet, tail, torso, saddle, horse head, scale and camera in every cell. Clone that stable planted base across all cells. Only the cowboy's throwing right arm and hand articulate; left hand stays low at reins. Coherent continuous throw, not unrelated poses. Render clean empty throwing hands because the game supplies the rope. NO LASSO, NO ROPE PIXELS, NO LOOP, NO GUN, NO DUST anywhere.
+
+Exact stages:
+Cell0 ready: right hand low near saddle, relaxed.
+Cell1 raise: elbow bent, throwing fist rising beside hat.
+Cell2 wind: right elbow raised, closed empty fist above head, preparing to cast LEFT.
+Cell3 accelerate: right arm sweeps forward toward SCREEN LEFT over the horse neck, closed hand ahead of face.
+Cell4 release: arm extends LEFT, clearly OPEN EMPTY HAND pointing SCREEN LEFT past horse ears; fingers relaxed opening.
+Cell5 follow-through: arm still extended LEFT, slightly lower with open hand.
+Cell6 take-up: elbow bends, hand descends toward waist.
+Cell7 lead: right hand low at waist/saddle, same stable idle horse, empty hand suitable for rope attachment.
+
+Keep every horse fully visible and identical, legs completely still. Preserve hard square pixel edges, strong dark outline and restrained warm palette of reference1. No painterly smoothing, no modern illustration, no anatomy morphing, no duplicate raised-loop ending. This is one non-looping action with 8 ordered phases, not eight variants.

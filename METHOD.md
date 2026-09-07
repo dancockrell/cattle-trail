@@ -117,3 +117,9 @@ The helper was checked against Cattle Trail's four-by-four rider sheet (sixteen 
 Compare stationary and moving poses for the same direction side by side. This caught north cattle walks that actually faced northeast, south walks whose camera was too steep, and east/west rider idles that turned away from their walking angle. A correctly sized cell with a valid animation name can still depict the wrong direction. Preserve those candidates with their source record, create narrowly targeted replacements, and select the corrected clips explicitly rather than silently relabeling them.
 
 Use per-clip ground/body anchors rather than centering each frame independently. Independent centering can erase intentional recoil or introduce foot sliding. Keep idle poses planted and free of travel dust; preserve gait phase when changing direction; apply gameplay effects on a declared animation frame. Rich kits become reusable when they carry these contracts together with their actual pixels.
+
+## Planted actions and per-direction release evidence
+
+The eight-direction cast repair separates actor pixels from the single runtime rope. Record hand sockets in each atlas cell and a neck socket on each target; animate wind, release, flight, attachment and recovery from those points. A planted horse must stop world translation throughout its action, then resume queued travel. Do not copy event ordinals blindly: the southwest sheet visibly opens its hand at ordinal 3, while the seven other admitted cast sequences use ordinal 4. Native review computes each release time from its own frame durations and verifies visible flight before attachment, then low-hand recovery. See cast-eight-directions.mp4 and assets/sequence-curation.json.
+
+This method does not certify locomotion: the current walk candidates still have support-phase and sliding defects. Separate candidate count, event correctness, native visual inspection and final room acceptance.

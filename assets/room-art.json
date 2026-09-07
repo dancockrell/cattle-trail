@@ -5457,17 +5457,1646 @@
             93
           ],
           "id": "rider_163"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            406,
+            498
+          ],
+          "trim": [
+            91,
+            125,
+            365,
+            429
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            1920,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_164"
+        },
+        {
+          "source_rect": [
+            406,
+            0,
+            762,
+            498
+          ],
+          "trim": [
+            42,
+            126,
+            317,
+            429
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            1920,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_165"
+        },
+        {
+          "source_rect": [
+            762,
+            0,
+            1120,
+            498
+          ],
+          "trim": [
+            40,
+            115,
+            315,
+            429
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            1920,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_166"
+        },
+        {
+          "source_rect": [
+            1120,
+            0,
+            1567,
+            498
+          ],
+          "trim": [
+            45,
+            126,
+            321,
+            429
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            1920,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_167"
+        },
+        {
+          "source_rect": [
+            0,
+            498,
+            406,
+            1004
+          ],
+          "trim": [
+            87,
+            69,
+            362,
+            375
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_168"
+        },
+        {
+          "source_rect": [
+            406,
+            498,
+            763,
+            1004
+          ],
+          "trim": [
+            45,
+            70,
+            319,
+            374
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_169"
+        },
+        {
+          "source_rect": [
+            763,
+            498,
+            1120,
+            1004
+          ],
+          "trim": [
+            39,
+            70,
+            313,
+            374
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_170"
+        },
+        {
+          "source_rect": [
+            1120,
+            498,
+            1567,
+            1004
+          ],
+          "trim": [
+            46,
+            70,
+            321,
+            375
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-east-lasso-sequence-v5.png",
+          "source_sha256": "a9b0087ea659941d4f0e8be4725ee40079161db073676d8c8ce7bb8e480427d7",
+          "direction": "east",
+          "scale": 0.2042833607907743,
+          "job": "rider-east-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_171"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            406,
+            476
+          ],
+          "trim": [
+            83,
+            142,
+            359,
+            408
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_172"
+        },
+        {
+          "source_rect": [
+            406,
+            0,
+            784,
+            476
+          ],
+          "trim": [
+            49,
+            142,
+            325,
+            408
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_173"
+        },
+        {
+          "source_rect": [
+            784,
+            0,
+            1154,
+            476
+          ],
+          "trim": [
+            54,
+            130,
+            330,
+            408
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_174"
+        },
+        {
+          "source_rect": [
+            1154,
+            0,
+            1536,
+            476
+          ],
+          "trim": [
+            42,
+            142,
+            319,
+            408
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            2016,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_175"
+        },
+        {
+          "source_rect": [
+            0,
+            476,
+            406,
+            1024
+          ],
+          "trim": [
+            83,
+            70,
+            359,
+            338
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_176"
+        },
+        {
+          "source_rect": [
+            406,
+            476,
+            784,
+            1024
+          ],
+          "trim": [
+            49,
+            70,
+            324,
+            338
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_177"
+        },
+        {
+          "source_rect": [
+            784,
+            476,
+            1154,
+            1024
+          ],
+          "trim": [
+            54,
+            70,
+            330,
+            338
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_178"
+        },
+        {
+          "source_rect": [
+            1154,
+            476,
+            1536,
+            1024
+          ],
+          "trim": [
+            42,
+            70,
+            319,
+            338
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-west-lasso-sequence-v5.png",
+          "source_sha256": "dbb9a7a1dc3cb7cd9f7fd44576f5d40f0a7eb6368a4a6f094b79f0f8ae1f1eb3",
+          "direction": "west",
+          "scale": 0.23308270676691728,
+          "job": "rider-west-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_179"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            390,
+            482
+          ],
+          "trim": [
+            139,
+            107,
+            278,
+            435
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_180"
+        },
+        {
+          "source_rect": [
+            390,
+            0,
+            754,
+            482
+          ],
+          "trim": [
+            114,
+            107,
+            252,
+            435
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_181"
+        },
+        {
+          "source_rect": [
+            754,
+            0,
+            1121,
+            482
+          ],
+          "trim": [
+            112,
+            89,
+            250,
+            435
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_182"
+        },
+        {
+          "source_rect": [
+            1121,
+            0,
+            1567,
+            482
+          ],
+          "trim": [
+            105,
+            70,
+            243,
+            435
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            2112,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_183"
+        },
+        {
+          "source_rect": [
+            0,
+            482,
+            390,
+            1004
+          ],
+          "trim": [
+            139,
+            49,
+            277,
+            411
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_184"
+        },
+        {
+          "source_rect": [
+            390,
+            482,
+            753,
+            1004
+          ],
+          "trim": [
+            113,
+            71,
+            252,
+            411
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_185"
+        },
+        {
+          "source_rect": [
+            753,
+            482,
+            1122,
+            1004
+          ],
+          "trim": [
+            112,
+            83,
+            250,
+            411
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_186"
+        },
+        {
+          "source_rect": [
+            1122,
+            482,
+            1567,
+            1004
+          ],
+          "trim": [
+            107,
+            83,
+            244,
+            411
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-north-lasso-sequence-v5.png",
+          "source_sha256": "6a6e1e7e61aefd0084b60e6c6e5219868a40d2d7b9f194ad5ff528170828ce8e",
+          "direction": "north",
+          "scale": 0.18397626112759644,
+          "job": "rider-north-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_187"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            420,
+            507
+          ],
+          "trim": [
+            165,
+            109,
+            322,
+            452
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_188"
+        },
+        {
+          "source_rect": [
+            420,
+            0,
+            777,
+            507
+          ],
+          "trim": [
+            99,
+            112,
+            254,
+            455
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_189"
+        },
+        {
+          "source_rect": [
+            777,
+            0,
+            1129,
+            507
+          ],
+          "trim": [
+            104,
+            89,
+            259,
+            455
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_190"
+        },
+        {
+          "source_rect": [
+            1129,
+            0,
+            1567,
+            507
+          ],
+          "trim": [
+            94,
+            125,
+            248,
+            457
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            2208,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_191"
+        },
+        {
+          "source_rect": [
+            0,
+            507,
+            419,
+            1004
+          ],
+          "trim": [
+            166,
+            51,
+            323,
+            390
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_192"
+        },
+        {
+          "source_rect": [
+            419,
+            507,
+            776,
+            1004
+          ],
+          "trim": [
+            97,
+            55,
+            253,
+            391
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_193"
+        },
+        {
+          "source_rect": [
+            776,
+            507,
+            1129,
+            1004
+          ],
+          "trim": [
+            104,
+            51,
+            260,
+            391
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_194"
+        },
+        {
+          "source_rect": [
+            1129,
+            507,
+            1567,
+            1004
+          ],
+          "trim": [
+            94,
+            52,
+            249,
+            391
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-south-lasso-sequence-v5.png",
+          "source_sha256": "995e78a95c830f842382fa46f6447ee113bb34ee6a83daf4bc10c7f59f5a625f",
+          "direction": "south",
+          "scale": 0.18075801749271136,
+          "job": "rider-south-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_195"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            359,
+            547
+          ],
+          "trim": [
+            52,
+            116,
+            320,
+            475
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_196"
+        },
+        {
+          "source_rect": [
+            359,
+            0,
+            700,
+            547
+          ],
+          "trim": [
+            40,
+            117,
+            308,
+            475
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_197"
+        },
+        {
+          "source_rect": [
+            700,
+            0,
+            1034,
+            547
+          ],
+          "trim": [
+            36,
+            114,
+            302,
+            475
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_198"
+        },
+        {
+          "source_rect": [
+            1034,
+            0,
+            1402,
+            547
+          ],
+          "trim": [
+            32,
+            117,
+            299,
+            475
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            2304,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_199"
+        },
+        {
+          "source_rect": [
+            0,
+            547,
+            361,
+            1122
+          ],
+          "trim": [
+            54,
+            73,
+            324,
+            434
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_200"
+        },
+        {
+          "source_rect": [
+            361,
+            547,
+            701,
+            1122
+          ],
+          "trim": [
+            38,
+            74,
+            306,
+            434
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_201"
+        },
+        {
+          "source_rect": [
+            701,
+            547,
+            1034,
+            1122
+          ],
+          "trim": [
+            35,
+            74,
+            301,
+            434
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_202"
+        },
+        {
+          "source_rect": [
+            1034,
+            547,
+            1402,
+            1122
+          ],
+          "trim": [
+            34,
+            73,
+            299,
+            434
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-southeast-lasso-sequence-v5.png",
+          "source_sha256": "9b0433b7a27bb7e6a5a89326df99e20aabf9deab68bb3ba31fbf371e6590d611",
+          "direction": "southeast",
+          "scale": 0.17294281729428174,
+          "job": "rider-southeast-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_203"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            400,
+            486
+          ],
+          "trim": [
+            97,
+            106,
+            349,
+            421
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            384,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_204"
+        },
+        {
+          "source_rect": [
+            400,
+            0,
+            766,
+            486
+          ],
+          "trim": [
+            53,
+            106,
+            306,
+            421
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            480,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_205"
+        },
+        {
+          "source_rect": [
+            766,
+            0,
+            1134,
+            486
+          ],
+          "trim": [
+            62,
+            88,
+            314,
+            421
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            576,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_206"
+        },
+        {
+          "source_rect": [
+            1134,
+            0,
+            1566,
+            486
+          ],
+          "trim": [
+            56,
+            106,
+            310,
+            421
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            672,
+            2400,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_207"
+        },
+        {
+          "source_rect": [
+            0,
+            486,
+            402,
+            1004
+          ],
+          "trim": [
+            88,
+            65,
+            351,
+            380
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_208"
+        },
+        {
+          "source_rect": [
+            402,
+            486,
+            768,
+            1004
+          ],
+          "trim": [
+            54,
+            65,
+            307,
+            381
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            96,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_209"
+        },
+        {
+          "source_rect": [
+            768,
+            486,
+            1134,
+            1004
+          ],
+          "trim": [
+            61,
+            65,
+            313,
+            381
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_210"
+        },
+        {
+          "source_rect": [
+            1134,
+            486,
+            1566,
+            1004
+          ],
+          "trim": [
+            54,
+            65,
+            307,
+            381
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-southwest-lasso-sequence-v5.png",
+          "source_sha256": "a16178d6b4b44b51e9c3a59558657adb03ace1c1a639645957187f70fe767751",
+          "direction": "southwest",
+          "scale": 0.19682539682539682,
+          "job": "rider-southwest-lasso-sequence-v5",
+          "action": "lasso",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            288,
+            2496,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_211"
         }
       ],
       "clips": {
         "idle_east": {
           "frames": [
-            132,
-            133,
-            134,
-            135
+            170
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_east": {
@@ -5482,12 +7111,9 @@
         },
         "idle_west": {
           "frames": [
-            136,
-            137,
-            138,
-            139
+            179
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_west": {
@@ -5502,9 +7128,9 @@
         },
         "idle_north": {
           "frames": [
-            130
+            187
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_north": {
@@ -5519,9 +7145,9 @@
         },
         "idle_south": {
           "frames": [
-            131
+            195
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_south": {
@@ -5584,12 +7210,9 @@
         },
         "idle_southeast": {
           "frames": [
-            96,
-            97,
-            98,
-            99
+            203
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_southeast": {
@@ -5604,12 +7227,9 @@
         },
         "idle_southwest": {
           "frames": [
-            112,
-            113,
-            114,
-            115
+            211
           ],
-          "fps": 3,
+          "fps": 1,
           "loop": true
         },
         "walk_southwest": {
@@ -5624,13 +7244,27 @@
         },
         "lasso_east": {
           "frames": [
-            8,
-            9,
-            10,
-            11
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            170
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_east": {
           "frames": [
@@ -5644,13 +7278,27 @@
         },
         "lasso_west": {
           "frames": [
-            24,
-            25,
-            26,
-            27
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_west": {
           "frames": [
@@ -5664,13 +7312,27 @@
         },
         "lasso_north": {
           "frames": [
-            40,
-            41,
-            42,
-            43
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_north": {
           "frames": [
@@ -5684,13 +7346,27 @@
         },
         "lasso_south": {
           "frames": [
-            56,
-            57,
-            58,
-            59
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_south": {
           "frames": [
@@ -5772,13 +7448,27 @@
         },
         "lasso_southeast": {
           "frames": [
-            104,
-            105,
-            105,
-            107
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_southeast": {
           "frames": [
@@ -5792,13 +7482,27 @@
         },
         "lasso_southwest": {
           "frames": [
-            120,
-            121,
-            122,
-            123
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211
           ],
           "fps": 8,
-          "loop": false
+          "loop": false,
+          "durations": [
+            0.1,
+            0.14,
+            0.2,
+            0.08,
+            0.12,
+            0.14,
+            0.14,
+            0.12
+          ]
         },
         "shoot_southwest": {
           "frames": [
@@ -5819,7 +7523,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 164,
+      "count": 212,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -5834,7 +7538,7 @@
           93
         ],
         "lasso_east": [
-          46,
+          42,
           93
         ],
         "shoot_east": [
@@ -5850,8 +7554,8 @@
           92
         ],
         "lasso_west": [
-          46,
-          92
+          51,
+          93
         ],
         "shoot_west": [
           48,
@@ -5866,7 +7570,7 @@
           93
         ],
         "lasso_north": [
-          51,
+          48,
           93
         ],
         "shoot_north": [
@@ -5882,7 +7586,7 @@
           93
         ],
         "lasso_south": [
-          46,
+          45,
           93
         ],
         "shoot_south": [
@@ -5922,7 +7626,7 @@
           93
         ],
         "idle_southeast": [
-          41,
+          42,
           93
         ],
         "walk_southeast": [
@@ -5938,7 +7642,7 @@
           93
         ],
         "idle_southwest": [
-          50,
+          48,
           93
         ],
         "walk_southwest": [
@@ -5954,19 +7658,19 @@
           93
         ],
         "idle_east": [
-          41,
+          42,
           93
         ],
         "idle_west": [
-          50,
+          51,
           93
         ],
         "idle_north": [
-          47,
+          48,
           93
         ],
         "idle_south": [
-          47,
+          45,
           93
         ],
         "v4_idle_east": [
@@ -5989,6 +7693,30 @@
           48,
           93
         ],
+        "v5_lasso_east": [
+          42,
+          93
+        ],
+        "v5_lasso_west": [
+          51,
+          93
+        ],
+        "v5_lasso_north": [
+          48,
+          93
+        ],
+        "v5_lasso_south": [
+          45,
+          93
+        ],
+        "v5_lasso_southeast": [
+          42,
+          93
+        ],
+        "v5_lasso_southwest": [
+          48,
+          93
+        ],
         "idle": [
           47,
           93
@@ -5998,8 +7726,8 @@
       "action_events": {
         "lasso_east": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "frame": 4,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_east": {
@@ -6010,8 +7738,8 @@
         },
         "lasso_west": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "frame": 4,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_west": {
@@ -6022,8 +7750,8 @@
         },
         "lasso_north": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "frame": 4,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_north": {
@@ -6034,8 +7762,8 @@
         },
         "lasso_south": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "frame": 4,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_south": {
@@ -6059,7 +7787,7 @@
         "lasso_northwest": {
           "name": "rope_release",
           "frame": 4,
-          "basis": "Clean upper-left open-hand release; engine owns the single rope",
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_northwest": {
@@ -6070,8 +7798,8 @@
         },
         "lasso_southeast": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Release during held overhead loop; wrong-side source extension excluded",
+          "frame": 4,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_southeast": {
@@ -6082,8 +7810,8 @@
         },
         "lasso_southwest": {
           "name": "rope_release",
-          "frame": 2,
-          "basis": "Visible muzzle flash for shoot; extended loop pose for lasso",
+          "frame": 3,
+          "basis": "Clean directional open-hand release; engine owns the single rope",
           "once_per_action": true
         },
         "shoot_southwest": {
@@ -6261,11 +7989,449 @@
             40,
             51
           ]
+        },
+        "164": {
+          "rope_hand": [
+            41,
+            62
+          ]
+        },
+        "165": {
+          "rope_hand": [
+            42,
+            41
+          ]
+        },
+        "166": {
+          "rope_hand": [
+            41,
+            31
+          ]
+        },
+        "167": {
+          "rope_hand": [
+            63,
+            46
+          ]
+        },
+        "168": {
+          "rope_hand": [
+            65,
+            43
+          ]
+        },
+        "169": {
+          "rope_hand": [
+            64,
+            48
+          ]
+        },
+        "170": {
+          "rope_hand": [
+            49,
+            53
+          ]
+        },
+        "171": {
+          "rope_hand": [
+            40,
+            61
+          ]
+        },
+        "0": {
+          "rope_hand": [
+            54,
+            51
+          ]
+        },
+        "1": {
+          "rope_hand": [
+            54,
+            51
+          ]
+        },
+        "2": {
+          "rope_hand": [
+            54,
+            51
+          ]
+        },
+        "3": {
+          "rope_hand": [
+            54,
+            51
+          ]
+        },
+        "172": {
+          "rope_hand": [
+            46,
+            53
+          ]
+        },
+        "173": {
+          "rope_hand": [
+            43,
+            37
+          ]
+        },
+        "174": {
+          "rope_hand": [
+            45,
+            30
+          ]
+        },
+        "175": {
+          "rope_hand": [
+            28,
+            43
+          ]
+        },
+        "176": {
+          "rope_hand": [
+            27,
+            44
+          ]
+        },
+        "177": {
+          "rope_hand": [
+            26,
+            48
+          ]
+        },
+        "178": {
+          "rope_hand": [
+            46,
+            54
+          ]
+        },
+        "179": {
+          "rope_hand": [
+            45,
+            54
+          ]
+        },
+        "16": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "17": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "18": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "19": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "180": {
+          "rope_hand": [
+            56,
+            55
+          ]
+        },
+        "181": {
+          "rope_hand": [
+            56,
+            38
+          ]
+        },
+        "182": {
+          "rope_hand": [
+            56,
+            31
+          ]
+        },
+        "183": {
+          "rope_hand": [
+            56,
+            30
+          ]
+        },
+        "184": {
+          "rope_hand": [
+            56,
+            29
+          ]
+        },
+        "185": {
+          "rope_hand": [
+            56,
+            33
+          ]
+        },
+        "186": {
+          "rope_hand": [
+            55,
+            47
+          ]
+        },
+        "187": {
+          "rope_hand": [
+            56,
+            55
+          ]
+        },
+        "32": {
+          "rope_hand": [
+            54,
+            53
+          ]
+        },
+        "33": {
+          "rope_hand": [
+            54,
+            53
+          ]
+        },
+        "34": {
+          "rope_hand": [
+            54,
+            53
+          ]
+        },
+        "35": {
+          "rope_hand": [
+            54,
+            53
+          ]
+        },
+        "188": {
+          "rope_hand": [
+            41,
+            52
+          ]
+        },
+        "189": {
+          "rope_hand": [
+            40,
+            37
+          ]
+        },
+        "190": {
+          "rope_hand": [
+            41,
+            30
+          ]
+        },
+        "191": {
+          "rope_hand": [
+            41,
+            51
+          ]
+        },
+        "192": {
+          "rope_hand": [
+            40,
+            52
+          ]
+        },
+        "193": {
+          "rope_hand": [
+            40,
+            55
+          ]
+        },
+        "194": {
+          "rope_hand": [
+            41,
+            52
+          ]
+        },
+        "195": {
+          "rope_hand": [
+            42,
+            51
+          ]
+        },
+        "48": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "49": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "50": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "51": {
+          "rope_hand": [
+            40,
+            51
+          ]
+        },
+        "196": {
+          "rope_hand": [
+            44,
+            53
+          ]
+        },
+        "197": {
+          "rope_hand": [
+            39,
+            36
+          ]
+        },
+        "198": {
+          "rope_hand": [
+            38,
+            34
+          ]
+        },
+        "199": {
+          "rope_hand": [
+            55,
+            49
+          ]
+        },
+        "200": {
+          "rope_hand": [
+            58,
+            49
+          ]
+        },
+        "201": {
+          "rope_hand": [
+            57,
+            51
+          ]
+        },
+        "202": {
+          "rope_hand": [
+            44,
+            55
+          ]
+        },
+        "203": {
+          "rope_hand": [
+            46,
+            56
+          ]
+        },
+        "100": {
+          "rope_hand": [
+            40,
+            52
+          ]
+        },
+        "101": {
+          "rope_hand": [
+            40,
+            52
+          ]
+        },
+        "102": {
+          "rope_hand": [
+            40,
+            52
+          ]
+        },
+        "103": {
+          "rope_hand": [
+            40,
+            52
+          ]
+        },
+        "204": {
+          "rope_hand": [
+            41,
+            52
+          ]
+        },
+        "205": {
+          "rope_hand": [
+            39,
+            37
+          ]
+        },
+        "206": {
+          "rope_hand": [
+            42,
+            30
+          ]
+        },
+        "207": {
+          "rope_hand": [
+            28,
+            46
+          ]
+        },
+        "208": {
+          "rope_hand": [
+            26,
+            51
+          ]
+        },
+        "209": {
+          "rope_hand": [
+            33,
+            57
+          ]
+        },
+        "210": {
+          "rope_hand": [
+            41,
+            52
+          ]
+        },
+        "211": {
+          "rope_hand": [
+            42,
+            52
+          ]
+        },
+        "116": {
+          "rope_hand": [
+            43,
+            52
+          ]
+        },
+        "117": {
+          "rope_hand": [
+            43,
+            52
+          ]
+        },
+        "118": {
+          "rope_hand": [
+            43,
+            52
+          ]
+        },
+        "119": {
+          "rope_hand": [
+            43,
+            52
+          ]
         }
       },
       "procedural_rope_clips": [
         "lasso_northeast",
-        "lasso_northwest"
+        "lasso_northwest",
+        "lasso_east",
+        "lasso_west",
+        "lasso_north",
+        "lasso_south",
+        "lasso_southeast",
+        "lasso_southwest"
       ],
       "default_facing": "northeast",
       "locomotion": {
@@ -24879,6 +27045,6 @@
     "sampling": "nearest",
     "provenance": "Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt"
   },
-  "integrated_unique_actor_frames": 316,
+  "integrated_unique_actor_frames": 322,
   "integrated_unique_scenery_frames": 30
 }

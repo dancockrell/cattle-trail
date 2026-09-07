@@ -1,6 +1,6 @@
 # Rich sprite library — measured delivery
 
-2026-09-08. Current manifest: 720 extracted candidates across13 families (rider156; longhorn108, cream108, spotted108; Eleanor64, rustler64; wagon16; six environment families16each). The room selects315 actor frames including the original wagon, plus30 scenery variants. The northeast sequence proof is under review; other cycles remain unaccepted. See ../ROOM-INTEGRATION.md. The table below preserves the historical496-cell first pass, not current totals.
+2026-09-08. Current manifest: 776 extracted candidates across13 families (rider212; longhorn108, cream108, spotted108; Eleanor64, rustler64; wagon16; six environment families16each). The room selects322 actor frames including the original wagon, plus30 scenery variants. The northeast sequence proof is under review; other cycles remain unaccepted. See ../ROOM-INTEGRATION.md. The table below preserves the historical496-cell first pass, not current totals.
 
 | Family | Unique extracted cells | Candidate coverage |
 |---|---:|---|

@@ -1,0 +1,17 @@
+Use case: identity-preserve. Cattle Trail production pixel-art mounted clean-hand lasso sheet.
+Image1 establishes SOUTHEAST viewing direction and character: horse head lower-right, rump upper-left, both cowboy face/front blue shirt and horse front/near flank visible. Use this camera exactly. Ignore its wrong leftward lasso, ropes, moving legs, weapon and4x4 layout.
+Image2 is only the eight-stage empty-hand action and planted-body consistency reference; do NOT copy its northeast/rear camera.
+Make ONE sheet of exactly8 full mounted sprites in4columns by2rows, row-major sequence, same equalcells, broadsolid #FF00FF magenta gutters, generousoutermargins. No labels/text.
+All8 mounted subjects face SOUTHEAST / DOWNRIGHT, approaching viewer atdiagonal. Preserve cowboy blue shirt red neckerchief brown hat tan trousers brown boots, chestnut mount blackmane/blacktail brown saddle. Keep exactsamehorsebody with FOUR HOOVES PLANTED, same scale and silhouette, identicalheadangle/legs/saddle everycell. No stepping or horsebodyvariation. Onlyrightarm moves; left handquietlyholdsreins.
+Eight sequential empty-hand gestures:
+1 READY righthandlow near torso.
+2 RAISE righthandbesidehead, elbowbent.
+3 WIND rightfistabovehat.
+4 ACCELERATE rightarm moves across toward horse's FORWARD DOWNRIGHT heading.
+5 OPEN RELEASE rightarm fullyextended DOWNRIGHT, open fingers, hand beyond horse neck on screenRIGHT and slightlyLOWERthan shoulder.
+6 FOLLOWTHROUGH rightarm stillreachingDOWNRIGHT, slightlylower.
+7 LOW LEAD rightelbowbends, handlow forwardby saddle/neck.
+8 HOLD calm lowforwardhand, stationaryhorse.
+Throw direction must consistently be DOWNRIGHT; never extend/cast LEFT or UPLEFT. The existing sheet's leftward loop is an error to avoid. We see cowboyface and front/nearflank, notback.
+Absolutely NO ropepixels, loops, coils, loosecords, yellowdanglingstrokes, weapons, dust,projectiles,motionstreaks. Engine suppliesrope. Quietbridlereins allowedonlynormalhorse tack.
+Hard crisp pixel edges, steppedshading andlimitedwarm palette matchingreferences. No antialiasing, smoothing or paintedsofttextures. Fullycontainedhorses andhandswithwideclearbackgroundmargin.

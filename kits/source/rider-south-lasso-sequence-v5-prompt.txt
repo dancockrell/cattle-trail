@@ -1,0 +1,19 @@
+Use case: identity-preserve pixel-art game action sequence.
+Create ONE exact 4-column by 2-row sheet with eight fully isolated mounted cowboy sprites. Pure solid #FF00FF magenta background, wide safe empty gutters, large outer margins, no grid or text.
+
+Reference1 rider-south.png is the authoritative straight SOUTH direction and character style: FRONT view, horse head centered below rider, both sides symmetrical, heading directly toward viewer / SCREEN DOWN. Camera height matches this source, not steep overhead. Same blue shirt, red scarf, brown hat, tan pants, chestnut horse, black mane, saddle. Do not copy its moving legs, weapons, ropes or dust.
+Reference2 rider-ne-lasso-sequence-v5.png is a reference for clean-hand action staging and planted identical horse ONLY. NEVER copy its diagonal direction.
+
+ALL eight frames keep the same SOUTH front view. Copy a single stable horse base into all eight cells: all four hooves planted, no steps, no changes in leg positions, saddle, horse face, mane, body, tail or scale. Right arm (seen on SCREEN LEFT in front view) articulates while left hand stays low holding reins. No anatomy changes or direction rotation. Hard pixel-art edges and restrained dark outlines, no smoothing.
+
+Read left-to-right top row then bottom row. One coherent non-looping mounted cast:
+0 ready: right hand low at saddle.
+1 raise: right elbow bends, closed throwing hand beside hat on screen-left.
+2 wind: right closed fist above hat on screen-left.
+3 accelerate: throwing arm comes FORWARD TOWARD VIEWER / SCREEN DOWN, foreshortened above and in front of horse neck. Not a sideways throw.
+4 release: clearly OPEN EMPTY right hand extending TOWARD VIEWER / SCREEN DOWN, palm visible in foreshortening, hand just left of center over horse neck. No left/right sideways pointing.
+5 follow-through: arm continues forward and slightly down, open hand relaxes.
+6 take-up: hand lowers toward saddle, elbow bends.
+7 low front lead: relaxed right hand low at saddle, matching ready stable base.
+
+CRITICAL: Hands entirely empty. The game renders the lasso. NO ROPE, NO LOOP, NO LINE, NO GUN, NO DUST or effects in ANY cell. Stable complete mounted character in every cell. This is eight temporal stages of one action, not eight design variants. Preserve the readable frontal SOUTH silhouette in every frame.

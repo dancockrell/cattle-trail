@@ -1,0 +1,19 @@
+Use case: identity-preserve pixel-art game animation.
+Create ONE exactly4columns by2rows sprite sheet, eight isolated full mounted-cowboy sprites in temporal order. Solid pure #FF00FF magenta background, broad clean empty gutters and margins, no labels/grid/text.
+
+Reference1 rider-southwest-v3.png is the exact SOUTHWEST camera and cowboy/horse identity authority. Horse faces DOWN-LEFT, toward viewer at an angle. Preserve that front-left oblique view: visible horse chest/face, head lower-left of rump, not left-side profile and not rear northwest view. Same chestnut horse black mane/tail, tan saddle, blue shirt cowboy red neckerchief brown hat tan trousers.
+Reference2 rider-ne-lasso-sequence-v5.png provides ONLY clean-hand action-stage logic and body locking; do not copy its northeast direction.
+
+Copy one consistent planted horse base into ALL8cells. All4hooves planted and unchanged, identical horse anatomy/saddle/head/mane/tail/perspective/scale in everycell. Rider torso remains facing DOWNLEFT. Only throwing rightarm animates; left hand remains low at reins. Hard crisp pixel clusters with dark outlines match reference1, no smoothing.
+
+Exact eight stages in row order:
+0 ready: throwing hand low at saddle.
+1 raise: elbow bends and empty fist rises beside hat.
+2 wind: right empty fist raised above head, preparing DOWNLEFT throw.
+3 accelerate: right arm swings forward over horse neck toward SCREEN DOWNLEFT, fist ahead of chest, foreshortened in heading direction.
+4 release: arm extends DOWNLEFT, clearly OPEN EMPTY hand aimed ahead of horse's left-front nose, palm/fingers opening toward lower-left. Absolutely no cast to right or up-left.
+5 followthrough: extended arm lowers a little further DOWNLEFT, hand relaxes open.
+6 lowlead: elbow bends, hand returns to low saddle-height lead position.
+7 hold: same low lead pose, stable complete mounted character.
+
+NO ROPE PIXELS, NO LASSO LOOP, NO FLOATING LINES, NO GUNS, NO DUST, NO EFFECTS. The engine draws the rope; throwing hands must stay empty. Bridles and reins attached to horse are allowed as identity detail. No extraarms or changes in horse leg positions. This is one continuous nonlooping action, not8visual variants. Every frame remains the same SOUTHWEST front-oblique camera and same planted base.

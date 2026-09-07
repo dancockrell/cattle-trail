@@ -1,0 +1,16 @@
+Use case: identity-preserve. Production Cattle Trail pixel-art action sheet.
+Image1 reference: successful northeast clean-hand lasso sequence. Transfer its 8 gestural stages and consistency, NOT its northeast viewing direction.
+Image2 reference: required EAST camera, side-oriented horse facing screen RIGHT. Match its character, palette, proportions, saddle and this side view. Do not copy its moving legs, ropes, dust or grid.
+Generate exactly8 mounted sprites on exactly4columns by2rows, row-major action sequence. Perfect solid #FF00FF magenta background, broad empty gutters and exterior margins, no text/labels.
+All8 identical chestnut horse bodies with black mane/tail, brown saddle and all four hooves planted in same standing pose. Horse head and rider nose point screen RIGHT, tail LEFT. This is EAST side-oriented high three-quarter camera as image2, never northeast/rear view. Same scale and same body position relative to each equal cell, same horse anatomy and planted leg pose across all8. Only cowboy right-arm gesture changes. Blue shirt, red neckerchief, brown hat, tan trousers and boots, same cowboy identity as references. Left hand calmly holds reins.
+Eight stages, left-to-right top row then lower row:
+1 ready: right hand lowered beside body;
+2 raise: right elbow bent hand beside head;
+3 wind: right hand above hat;
+4 accelerate: right arm starts extending screen RIGHT toward horse head;
+5 release: open right hand reaches fully RIGHT beyond horse head, palm/fingers visible;
+6 follow-through: right arm remains extended RIGHT slightly lower;
+7 take-up: right elbow retracts hand toward chest;
+8 low lead: right hand returns down beside saddle.
+Empty-hand pantomime only. Absolutely no rope pixels, no loop, cord, coiled rope, floating yellow strokes, weapon, projectile, muzzle flash, dust or motion streaks. The engine draws the rope. No body turn, no stepping or galloping, no horse change across cells.
+Hard pixel edges, crisp outline, limited warm palette and clustered stepped shading matching supplied Cattle Trail artwork, no antialias or soft edges, no style drift. Each raised/extended hand and every hoof fully contained with wide magenta margin. Exactly one full mounted cowboy per cell.

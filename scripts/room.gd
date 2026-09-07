@@ -109,7 +109,7 @@ func _ready() -> void:
 	build_ui()
 	resized.connect(layout_ui)
 	layout_ui()
-	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args()
+	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args() or "--sequence-review" in OS.get_cmdline_user_args() or "--stride-compare" in OS.get_cmdline_user_args()
 	for button in buttons.get_children(): button.disabled = qa_mode
 	refresh()
 	if "--smoke" in OS.get_cmdline_user_args():
@@ -570,21 +570,27 @@ func run_sequence_review() -> void:
 	await get_tree().create_timer(1.92).timeout
 	player.pose(false,Vector2(1,-1))
 	await get_tree().create_timer(0.6).timeout
-	for repetition in range(3):
+	var review_directions := ["northwest","northwest","northwest"] if "--northwest-review" in OS.get_cmdline_user_args() else ["northeast","northeast","northeast"]
+	if "--cast-review-all" in OS.get_cmdline_user_args(): review_directions = ["northeast","northwest","east","west","north","south","southeast","southwest"]
+	var cast_offsets := {"northeast":Vector2(80,-60),"northwest":Vector2(-80,-60),"east":Vector2(80,0),"west":Vector2(-80,0),"north":Vector2(0,-80),"south":Vector2(0,65),"southeast":Vector2(70,60),"southwest":Vector2(-70,60)}
+	for review_direction in review_directions:
 		rope_time = 0
 		rope_target = null
-		var review_direction := "northwest" if "--northwest-review" in OS.get_cmdline_user_args() else "northeast"
-		steer.position = player.position + Vector2(-80 if review_direction=="northwest" else 80,-60)
-		objective.text = "SEQUENCE REVIEW / wind → cast → flight → catch → low-hand lead"
+		steer.position = player.position + cast_offsets[review_direction]
+		objective.text = "CAST REVIEW / " + review_direction + " / wind → cast → flight → catch → lead"
 		lasso()
-		await get_tree().create_timer(0.6).timeout
+		var cast_recipe: Dictionary = manifest.sprites.rider.clips["lasso_"+review_direction]
+		var release_ordinal: int = manifest.sprites.rider.action_events["lasso_"+review_direction].frame
+		var release_time := 0.0
+		for ordinal in range(release_ordinal): release_time += float(cast_recipe.durations[ordinal])
+		await get_tree().create_timer(release_time+ROPE_FLIGHT_SECONDS*0.4).timeout
 		assert(rope_target == null and rope_flight_time > 0, "Catch must wait for visible loop flight")
 		assert(rope.get_point_count()>8, "The single rope must have a visible loop and hand tether")
 		await get_tree().create_timer(0.25).timeout
 		assert(rope_target == steer, "The loop must reach the neck before attachment")
 		await get_tree().create_timer(1.5).timeout
 		assert(player.art.animation == "idle_"+review_direction, "Completed cast must settle to low-hand lead")
-	print("SEQUENCE REVIEW PASS: 5 walk cycles; 3 timed single-rope casts, neck catches and low-hand recoveries")
+	print("SEQUENCE REVIEW PASS: 5 walk cycles; ",review_directions.size()," timed single-rope casts, neck catches and low-hand recoveries")
 	get_tree().quit()
 
 func run_herd_review() -> void:
