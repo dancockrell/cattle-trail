@@ -13669,6 +13669,1062 @@
             61
           ],
           "id": "spotted_063"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            444,
+            240
+          ],
+          "trim": [
+            166,
+            48,
+            340,
+            220
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_064"
+        },
+        {
+          "source_rect": [
+            444,
+            0,
+            852,
+            240
+          ],
+          "trim": [
+            105,
+            47,
+            290,
+            218
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_065"
+        },
+        {
+          "source_rect": [
+            852,
+            0,
+            1260,
+            240
+          ],
+          "trim": [
+            120,
+            47,
+            306,
+            218
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_066"
+        },
+        {
+          "source_rect": [
+            1260,
+            0,
+            1716,
+            240
+          ],
+          "trim": [
+            102,
+            47,
+            288,
+            218
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_067"
+        },
+        {
+          "source_rect": [
+            0,
+            240,
+            444,
+            454
+          ],
+          "trim": [
+            151,
+            22,
+            343,
+            184
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_068"
+        },
+        {
+          "source_rect": [
+            444,
+            240,
+            856,
+            454
+          ],
+          "trim": [
+            103,
+            22,
+            299,
+            184
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_069"
+        },
+        {
+          "source_rect": [
+            856,
+            240,
+            1262,
+            454
+          ],
+          "trim": [
+            113,
+            21,
+            308,
+            187
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_070"
+        },
+        {
+          "source_rect": [
+            1262,
+            240,
+            1716,
+            454
+          ],
+          "trim": [
+            99,
+            22,
+            296,
+            183
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northeast",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            512,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_071"
+        },
+        {
+          "source_rect": [
+            0,
+            454,
+            424,
+            678
+          ],
+          "trim": [
+            137,
+            29,
+            320,
+            202
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_072"
+        },
+        {
+          "source_rect": [
+            424,
+            454,
+            831,
+            678
+          ],
+          "trim": [
+            105,
+            30,
+            290,
+            204
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_073"
+        },
+        {
+          "source_rect": [
+            831,
+            454,
+            1244,
+            678
+          ],
+          "trim": [
+            118,
+            30,
+            309,
+            202
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_074"
+        },
+        {
+          "source_rect": [
+            1244,
+            454,
+            1716,
+            678
+          ],
+          "trim": [
+            106,
+            30,
+            288,
+            202
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_075"
+        },
+        {
+          "source_rect": [
+            0,
+            678,
+            440,
+            917
+          ],
+          "trim": [
+            137,
+            22,
+            332,
+            186
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_076"
+        },
+        {
+          "source_rect": [
+            440,
+            678,
+            844,
+            917
+          ],
+          "trim": [
+            108,
+            22,
+            301,
+            196
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_077"
+        },
+        {
+          "source_rect": [
+            844,
+            678,
+            1247,
+            917
+          ],
+          "trim": [
+            105,
+            22,
+            300,
+            194
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_078"
+        },
+        {
+          "source_rect": [
+            1247,
+            678,
+            1716,
+            917
+          ],
+          "trim": [
+            104,
+            22,
+            297,
+            192
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/spotted-rear-v3.png",
+          "source_sha256": "8d8c11ea9ac998eb9d09882159ac5d22ca1f73a66166162e059fb108e8cb5b74",
+          "direction": "northwest",
+          "scale": 0.2222222222222222,
+          "job": "spotted-rear-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            576,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            330,
+            310
+          ],
+          "trim": [
+            54,
+            76,
+            275,
+            256
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_080"
+        },
+        {
+          "source_rect": [
+            330,
+            0,
+            630,
+            310
+          ],
+          "trim": [
+            55,
+            75,
+            257,
+            256
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_081"
+        },
+        {
+          "source_rect": [
+            630,
+            0,
+            944,
+            310
+          ],
+          "trim": [
+            44,
+            75,
+            268,
+            257
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_082"
+        },
+        {
+          "source_rect": [
+            944,
+            0,
+            1254,
+            310
+          ],
+          "trim": [
+            46,
+            75,
+            258,
+            256
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_083"
+        },
+        {
+          "source_rect": [
+            0,
+            310,
+            316,
+            620
+          ],
+          "trim": [
+            47,
+            54,
+            273,
+            240
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_084"
+        },
+        {
+          "source_rect": [
+            316,
+            310,
+            634,
+            620
+          ],
+          "trim": [
+            43,
+            60,
+            267,
+            243
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_085"
+        },
+        {
+          "source_rect": [
+            634,
+            310,
+            944,
+            620
+          ],
+          "trim": [
+            54,
+            60,
+            266,
+            240
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_086"
+        },
+        {
+          "source_rect": [
+            944,
+            310,
+            1254,
+            620
+          ],
+          "trim": [
+            46,
+            61,
+            259,
+            247
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southeast",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            640,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_087"
+        },
+        {
+          "source_rect": [
+            0,
+            620,
+            320,
+            925
+          ],
+          "trim": [
+            63,
+            66,
+            273,
+            242
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_088"
+        },
+        {
+          "source_rect": [
+            320,
+            620,
+            626,
+            925
+          ],
+          "trim": [
+            47,
+            65,
+            264,
+            248
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_089"
+        },
+        {
+          "source_rect": [
+            626,
+            620,
+            934,
+            925
+          ],
+          "trim": [
+            43,
+            76,
+            267,
+            252
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_090"
+        },
+        {
+          "source_rect": [
+            934,
+            620,
+            1254,
+            925
+          ],
+          "trim": [
+            42,
+            73,
+            252,
+            253
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_091"
+        },
+        {
+          "source_rect": [
+            0,
+            925,
+            319,
+            1254
+          ],
+          "trim": [
+            52,
+            53,
+            275,
+            233
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            288,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_092"
+        },
+        {
+          "source_rect": [
+            319,
+            925,
+            629,
+            1254
+          ],
+          "trim": [
+            45,
+            58,
+            274,
+            242
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            360,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_093"
+        },
+        {
+          "source_rect": [
+            629,
+            925,
+            930,
+            1254
+          ],
+          "trim": [
+            37,
+            65,
+            261,
+            246
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            432,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_094"
+        },
+        {
+          "source_rect": [
+            930,
+            925,
+            1254,
+            1254
+          ],
+          "trim": [
+            41,
+            59,
+            268,
+            244
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/spotted-front-v3.png",
+          "source_sha256": "0899d2324d4e2943ab77b453c047c9609b6b97e408f1c3c22805c277cbb03c1e",
+          "direction": "southwest",
+          "scale": 0.20994475138121546,
+          "job": "spotted-front-v3",
+          "action": "walk",
+          "atlas_rect": [
+            504,
+            704,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_095"
         }
       ],
       "clips": {
@@ -13740,21 +14796,105 @@
           "fps": 7,
           "loop": true
         },
+        "idle_northeast": {
+          "frames": [
+            64,
+            65,
+            66,
+            67
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            68,
+            69,
+            70,
+            71
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_northwest": {
+          "frames": [
+            72,
+            73,
+            74,
+            75
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_northwest": {
+          "frames": [
+            76,
+            77,
+            78,
+            79
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southeast": {
+          "frames": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_southeast": {
+          "frames": [
+            84,
+            85,
+            86,
+            87
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "idle_southwest": {
+          "frames": [
+            88,
+            89,
+            90,
+            91
+          ],
+          "fps": 3,
+          "loop": true
+        },
+        "walk_southwest": {
+          "frames": [
+            92,
+            93,
+            94,
+            95
+          ],
+          "fps": 7,
+          "loop": true
+        },
         "idle": {
           "frames": [
-            0
+            64,
+            65,
+            66,
+            67
           ],
           "fps": 3,
           "loop": true
         }
       },
       "status": "selected_for_room_review",
-      "count": 64,
+      "count": 96,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "North sheets turn toward the camera in some graze/rest poses. Direction labels record requested generation, not verified action coverage."
       ],
+      "default_facing": "northeast",
       "locomotion": {
         "nominal_speed": 36,
         "facing_bias": 1.2,
@@ -19124,6 +20264,6 @@
     "sampling": "nearest",
     "provenance": "New empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v2-prompt.txt"
   },
-  "integrated_unique_actor_frames": 257,
+  "integrated_unique_actor_frames": 289,
   "integrated_unique_scenery_frames": 30
 }

@@ -44,9 +44,9 @@
       "source_hashes_verified": true
     },
     "spotted": {
-      "extracted": 64,
-      "unique_rgba_cells": 64,
-      "clips": 20,
+      "extracted": 96,
+      "unique_rgba_cells": 96,
+      "clips": 28,
       "cell": [
         72,
         64
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 624
+  "total_extracted": 656
 }

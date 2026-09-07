@@ -38,7 +38,7 @@ groups={}
 for rejected in sorted(replaced):
     catalog['rejections'].append({'source':rejected+'.png','reason':'Wrong facing; replaced by v2. Preserved, excluded from count.'})
 for job in JOBS:
-    source=KIT/'source'/f"{job['id']}.png"
+    source=KIT/'source'/job.get('source_file',f"{job['id']}.png")
     if not source.exists(): continue
     im=Image.open(source).convert('RGBA')
     a=np.array(im); rgb=a[:,:,:3].astype(np.int16)
@@ -49,6 +49,7 @@ for job in JOBS:
     items=[]
     ycuts=separators((~key).sum(axis=1))
     for row in range(4):
+        if 'selected_rows' in job and row not in job['selected_rows']: continue
         xcuts=separators((~key)[ycuts[row]:ycuts[row+1]].sum(axis=0))
         for col in range(4):
             box=(xcuts[col],ycuts[row],xcuts[col+1],ycuts[row+1])
@@ -74,8 +75,9 @@ for job in JOBS:
     factor=min(factor,min((cell[0]-8)/p['image'].width for p in items),min((cell[1]-6)/p['image'].height for p in items))
     for p in items:
         p['image']=p['image'].resize((max(1,round(p['image'].width*factor)),max(1,round(p['image'].height*factor))),Image.Resampling.NEAREST)
-        p.update({'source':f"kits/source/{job['id']}.png",'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'direction':job.get('direction','none'),'scale':factor,'job':job['id']})
+        p.update({'source':f"kits/source/{source.name}",'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'direction':job.get('direction','none'),'scale':factor,'job':job['id']})
         if 'row_directions' in job: p['direction']=job['row_directions'][p['row']]
+        if 'column_directions' in job: p['direction']=job['column_directions'][p['col']]
         if family in ACTIONS: p['action']=job.get('actions',ACTIONS[family])[p['row']]
     groups.setdefault(family,[]).extend(items)
 
