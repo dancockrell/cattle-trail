@@ -1,20 +1,19 @@
-# Draft urgent handoff — send after completion
+# Urgent handoff — posted 2026-09-07
 
-Status: draft only. Do not send before the requested Cattle Trail work is finished. Replace the completion summary with verified delivered/admitted/integrated counts and remaining limitations before sending.
+Delivered successfully to DR Companion (01a06aae-9007-7491-aa5e-e3c6222d4118) and Pirate Island Work (01a06ab0-f752-73f1-865e-72e98827992e) using the app's task messaging tool. Delivery does not mean either project has completed adoption.
 
-URGENT — apply the approved-art-first room method and rich-kit priorities to this project.
+URGENT — user-directed production priority from Cattle Trail. The user explicitly asked me to post this here when the kit-production pass was finished.
 
-Method: C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/METHOD.md
-Rich-kit plan: C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/kits/PLAN.md
+Adopt the reusable approved-art-first, rich-kit method for this game's own visual identity. The user's priority is: complete sprite kits for every existing item, with roughly 16 times richer useful coverage; grass, trees and every other scenery family each get their own rich kit. Prioritize coherent directions, actions, functional states, variation and composable environment coverage. Do not treat duplicate cells, mirrors, recolor padding or extra atlas exports as new useful coverage.
 
-Preserve this project's identity, design authority, mechanics, and established rules. Reuse the production method rather than importing Western characters or cattle mechanics.
+Read C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/METHOD.md and C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/kits/DELIVERY.md. The exact Cattle Trail metadata is C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/kits/manifest.json; the visual inventory is C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/kits/overview.png; actual Godot playback is C:/Users/Admin/Documents/Codex/2026-09-07/referenced-chatgpt-conversation-this-is-an-2/outputs/cattle-trail/kits/kit-tour.mp4. The complete source project is in that directory.
 
-Prioritize actual approved sprites and textures, immutable source provenance, deterministic extraction, exact anchors and animation metadata, crisp fixed-view rendering, and one complete playable room. Expand each existing item into a coherent rich kit with useful directions/actions/states, roughly sixteen times useful baseline coverage where appropriate. Add connected terrain and scenery kits, not disconnected decorative volume. Count only distinct usable coverage; record planned, extracted, admitted, and integrated totals separately.
+Verified delivery from this pass: 496 unique transparent extracted candidates across 13 kits (400 actor/prop cells, 16.67 times the original 24-frame baseline, plus 96 environment variants). Preserved sources, deterministic crop/key/nearest extraction, exact cells/ground anchors/source hashes and animation definitions are included. Godot 4.3 and the exported Windows build loaded and rendered every kit. The original-art playable room also passed interaction checks.
 
-Compare actual engine stills and motion to the project's approved art. Freeze broader feature/room scope until that visual bar is accepted. Retain explicit missing-art limitations.
+Important limits: these are extracted and previewed candidates, not a claim that 496 frames are production-approved. Cattle facing exceptions, bag attachment continuity, gait cleanup and environment connectors remain documented. The gameplay room still uses the original 24-frame baseline; expanded-kit integration and final visual acceptance remain open. Transfer the method and priority, not the Western assets or cattle mechanics.
 
-For DR Companion, retain the authoritative room graph and established confirm-then-snap transition contract; do not substitute continuous world movement for graph state. Verify its current design and assets before changing presentation.
+For this project, inspect current approved assets and design authority, establish the real baseline, build rich kits with provenance and exact metadata, inspect native-size stills and actual engine motion where applicable, then prove one room before broadening feature or room scope. Keep planned, extracted, admitted and integrated counts separate.
 
-For Pirate Island Work, retain its current companion-led adventure over hidden RTS factions and persistent elimination rules. Express the simulation through the project's established player-facing consequences; do not replace its game identity with Cattle Trail's loop.
+DR-specific addition: preserve the authoritative MUD graph, confirmed transitions, fixed-isometric presentation and current static/rigged-first decision.
 
-Completion evidence: [insert verified delivery summary, paths, and unresolved visual limitations before sending].
+Pirate-specific addition: preserve current design authority, companion/faction simulation and persistent consequences; adapt to its approved art without discarding existing work.
