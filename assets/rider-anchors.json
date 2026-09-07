@@ -1340,6 +1340,64 @@
         }
       }
     },
+    "v5_lasso_northwest": {
+      "anchor": [
+        48,
+        93
+      ],
+      "frames": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "observed": {
+        "156": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 118
+        },
+        "157": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 154
+        },
+        "158": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 151
+        },
+        "159": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 153
+        },
+        "160": {
+          "shirt_x": 47.5,
+          "hoof_y": 93,
+          "blue_pixels": 160
+        },
+        "161": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 156
+        },
+        "162": {
+          "shirt_x": 48.0,
+          "hoof_y": 93,
+          "blue_pixels": 123
+        },
+        "163": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 123
+        }
+      }
+    },
     "idle": {
       "anchor": [
         47,

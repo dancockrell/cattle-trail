@@ -47,6 +47,7 @@ var pending_aim := Vector2.RIGHT
 var scenery: Node2D
 var solid_scenery: Array = []
 var sequence_walking := false
+var stride_subjects: Array[Node2D] = []
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -126,6 +127,10 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_sequence_review.call_deferred()
+	if "--stride-compare" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_stride_compare.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -260,6 +265,12 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--stride-compare" in OS.get_cmdline_user_args():
+		for subject in stride_subjects:
+			var motion := Vector2(1,-1).normalized()*18.75*delta
+			subject.position += motion
+			subject.pose(true,motion,72)
+		return
 	if "--sequence-review" in OS.get_cmdline_user_args():
 		if sequence_walking:
 			var review_speed := 18.75 if "--stride-trial" in OS.get_cmdline_user_args() else 72.0
@@ -390,6 +401,13 @@ func lasso() -> void:
 		message = "Out of rope range. Ride closer to a stray or the rustler."
 	refresh()
 
+func wait_for_lasso_resolution() -> void:
+	var remaining := 2.0
+	while (is_instance_valid(pending_lasso) or rope_flight_time>0) and remaining>0:
+		await get_tree().physics_frame
+		remaining -= get_physics_process_delta_time()
+	assert(remaining>0, "Lasso wind-up and flight must resolve within two seconds")
+
 func shoot() -> void:
 	if won or shot_cooldown > 0 or player.action_time > 0: return
 	if ammo == 0:
@@ -407,7 +425,7 @@ func on_player_action_event(event_name: String) -> void:
 	if event_name == "rope_release" and is_instance_valid(pending_lasso):
 		var caught := pending_lasso
 		pending_lasso = null
-		if str(player.art.animation) == "lasso_northeast":
+		if player.uses_procedural_rope():
 			rope_flight_target = caught
 			rope_flight_time = ROPE_FLIGHT_SECONDS
 		else: catch_rope(caught)
@@ -458,7 +476,7 @@ func update_rope(delta: float) -> void:
 		var neck: Vector2 = rope_target.socket_world("rope_neck",Vector2(0,-22))
 		append_rope_curve(points,hand,neck+Vector2(5,0),clampf((90-hand.distance_to(neck))*0.12,1,8))
 		append_rope_loop(points,neck,Vector2(5,3))
-	elif is_instance_valid(pending_lasso) and str(player.art.animation)=="lasso_northeast" and player.art.frame>0:
+	elif is_instance_valid(pending_lasso) and player.uses_procedural_rope() and player.art.frame>0:
 		var center := hand+Vector2(-11,-4)
 		points.append(hand.round())
 		append_rope_loop(points,center,Vector2(11,4))
@@ -513,6 +531,23 @@ func run_pose_review() -> void:
 	print("POSE REVIEW PASS: 24 actual engine action/facing transitions rendered against original art")
 	get_tree().quit()
 
+func run_stride_compare() -> void:
+	for actor in actors.get_children(): actor.visible = false
+	var trial: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/stride-trial.json"))
+	var index := 0
+	for key in ["v5","v6_row","v6_curated"]:
+		var subject := Actor.new()
+		subject.configure("rider",trial.variants[key])
+		subject.position = Vector2(110+index*175,275)
+		actors.add_child(subject)
+		stride_subjects.append(subject)
+		index += 1
+	objective.text = "STRIDE COMPARISON / left V5 / middle V6 row order / right V6 curated order"
+	journal.text = "Same 18-pixel diagnostic stride and .96-second cycle. Compare foot support and loop continuity."
+	await get_tree().create_timer(5.76).timeout
+	print("STRIDE COMPARISON: three source sequences rendered over fixed ground; physical acceptance remains separate")
+	get_tree().quit()
+
 func run_sequence_review() -> void:
 	# Focused animation evidence; this mode is distinct from full gameplay QA.
 	for actor in actors.get_children(): actor.visible = actor == player
@@ -538,6 +573,8 @@ func run_sequence_review() -> void:
 	for repetition in range(3):
 		rope_time = 0
 		rope_target = null
+		var review_direction := "northwest" if "--northwest-review" in OS.get_cmdline_user_args() else "northeast"
+		steer.position = player.position + Vector2(-80 if review_direction=="northwest" else 80,-60)
 		objective.text = "SEQUENCE REVIEW / wind → cast → flight → catch → low-hand lead"
 		lasso()
 		await get_tree().create_timer(0.6).timeout
@@ -546,7 +583,7 @@ func run_sequence_review() -> void:
 		await get_tree().create_timer(0.25).timeout
 		assert(rope_target == steer, "The loop must reach the neck before attachment")
 		await get_tree().create_timer(1.5).timeout
-		assert(player.art.animation == "idle_northeast", "Completed cast must settle to low-hand lead")
+		assert(player.art.animation == "idle_"+review_direction, "Completed cast must settle to low-hand lead")
 	print("SEQUENCE REVIEW PASS: 5 walk cycles; 3 timed single-rope casts, neck catches and low-hand recoveries")
 	get_tree().quit()
 
@@ -606,7 +643,7 @@ func run_demo() -> void:
 			await get_tree().physics_frame
 		target = Vector2.INF
 		lasso()
-		await get_tree().create_timer(0.55).timeout
+		await wait_for_lasso_resolution()
 		if rope_target in cows:
 			var destination := Vector2(585,clampf(rope_target.position.y,145,225))
 			await demo_ride(destination,7.0)
@@ -651,7 +688,7 @@ func run_qa() -> void:
 		target = planted_position + Vector2(70,0)
 		await get_tree().create_timer(0.2).timeout
 		assert(player.position.distance_to(planted_position)<0.1, "Planted cast must stop actual travel, not just hold its frame")
-		await get_tree().create_timer(0.4).timeout
+		await get_tree().create_timer(player.action_time+0.15).timeout
 		assert(player.action_time == 0)
 		assert(player.position.distance_to(planted_position)>1, "Queued ride must resume after cast recovery")
 		for entry in solid_scenery:
@@ -677,7 +714,7 @@ func run_qa() -> void:
 	player.position = cows[0].position - Vector2(45, 0)
 	lasso()
 	if player.directional: assert(pending_lasso == cows[0], "Lasso must wind up before attachment")
-	await get_tree().create_timer(0.3).timeout
+	await wait_for_lasso_resolution()
 	assert(rope_target == cows[0])
 	var old: Vector2 = cows[0].position
 	target = Vector2(500, 190)
@@ -695,7 +732,7 @@ func run_qa() -> void:
 				break
 		player.position = cow.position - Vector2(30, 0)
 		lasso()
-		await get_tree().create_timer(0.3).timeout
+		await wait_for_lasso_resolution()
 		assert(is_instance_valid(rope_target))
 		var selected: Node2D = rope_target
 		target = Vector2(586, clampf(selected.position.y, 145, 225))

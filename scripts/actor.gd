@@ -18,6 +18,7 @@ var event_fired := false
 var clip_anchors: Dictionary = {}
 var clip_indices: Dictionary = {}
 var frame_sockets: Dictionary = {}
+var procedural_rope_clips: Array = []
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
@@ -25,6 +26,7 @@ func configure(id: String, spec: Dictionary) -> void:
 	clip_events = spec.get("action_events", {})
 	clip_anchors = spec.get("clip_anchors", {})
 	frame_sockets = spec.get("frame_sockets", {})
+	procedural_rope_clips = spec.get("procedural_rope_clips", [])
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
 	art = AnimatedSprite2D.new()
@@ -67,6 +69,9 @@ func socket_world(socket_name: String, fallback: Vector2) -> Vector2:
 		var point: Array = sockets[socket_name]
 		return art.to_global(Vector2(point[0],point[1]))
 	return to_global(fallback)
+
+func uses_procedural_rope() -> bool:
+	return str(art.animation) in procedural_rope_clips
 
 func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) -> void:
 	if action_time > 0: return

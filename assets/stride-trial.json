@@ -1,0 +1,997 @@
+{
+  "status": "diagnostic_only",
+  "trial_speed": 18.75,
+  "cycle_seconds": 0.96,
+  "variants": {
+    "v5": {
+      "texture": "res://assets/stride-trial.png",
+      "anchor": [
+        47,
+        93
+      ],
+      "default_facing": "northeast",
+      "frames": [
+        {
+          "atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            64,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            119,
+            656,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            780,
+            119,
+            1029,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            288,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1140,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            384,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            58,
+            577,
+            302,
+            892
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            480,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            577,
+            656,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            576,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            774,
+            577,
+            1019,
+            888
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            672,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1133,
+            577,
+            1380,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            0,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            56,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            96,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            409,
+            119,
+            657,
+            432
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            192,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            776,
+            119,
+            1029,
+            430
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            288,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            384,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            57,
+            577,
+            301,
+            893
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            480,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            406,
+            577,
+            656,
+            884
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            576,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            770,
+            577,
+            1019,
+            887
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            672,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            577,
+            1380,
+            888
+          ],
+          "scale": 0.19745222929936307
+        }
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_northeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "walk_east": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        }
+      },
+      "locomotion": {
+        "nominal_speed": 72
+      },
+      "status": "comparison_only_not_selected_gameplay"
+    },
+    "v6_row": {
+      "texture": "res://assets/stride-trial.png",
+      "anchor": [
+        47,
+        93
+      ],
+      "default_facing": "northeast",
+      "frames": [
+        {
+          "atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            64,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            119,
+            656,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            780,
+            119,
+            1029,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            288,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1140,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            384,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            58,
+            577,
+            302,
+            892
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            480,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            577,
+            656,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            576,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            774,
+            577,
+            1019,
+            888
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            672,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1133,
+            577,
+            1380,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            0,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            56,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            96,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            409,
+            119,
+            657,
+            432
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            192,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            776,
+            119,
+            1029,
+            430
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            288,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            384,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            57,
+            577,
+            301,
+            893
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            480,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            406,
+            577,
+            656,
+            884
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            576,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            770,
+            577,
+            1019,
+            887
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            672,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            577,
+            1380,
+            888
+          ],
+          "scale": 0.19745222929936307
+        }
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            8
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_northeast": {
+          "frames": [
+            8
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "walk_east": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        }
+      },
+      "locomotion": {
+        "nominal_speed": 72
+      },
+      "status": "comparison_only_not_selected_gameplay"
+    },
+    "v6_curated": {
+      "texture": "res://assets/stride-trial.png",
+      "anchor": [
+        47,
+        93
+      ],
+      "default_facing": "northeast",
+      "frames": [
+        {
+          "atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            64,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            119,
+            656,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            780,
+            119,
+            1029,
+            435
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            288,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1140,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            384,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            58,
+            577,
+            302,
+            892
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            480,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            412,
+            577,
+            656,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            576,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            774,
+            577,
+            1019,
+            888
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            672,
+            0,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v5.png",
+          "sha256": "fb49318697643bcce4c5d344c15ac5c06c86831410eff0167fb06df93d8cf9e9",
+          "crop": [
+            1133,
+            577,
+            1380,
+            894
+          ],
+          "scale": 0.1962025316455696
+        },
+        {
+          "atlas_rect": [
+            0,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            56,
+            118,
+            303,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            96,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            409,
+            119,
+            657,
+            432
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            192,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            776,
+            119,
+            1029,
+            430
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            288,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            119,
+            1381,
+            434
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            384,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            57,
+            577,
+            301,
+            893
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            480,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            406,
+            577,
+            656,
+            884
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            576,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            770,
+            577,
+            1019,
+            887
+          ],
+          "scale": 0.19745222929936307
+        },
+        {
+          "atlas_rect": [
+            672,
+            96,
+            96,
+            96
+          ],
+          "source": "kits/source/rider-ne-walk-sequence-v6.png",
+          "sha256": "6c04176314315f67ccdf49b656814a2acce59f37fe24185dd09df0607250e53b",
+          "crop": [
+            1131,
+            577,
+            1380,
+            888
+          ],
+          "scale": 0.19745222929936307
+        }
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            8
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_northeast": {
+          "frames": [
+            8
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "walk_east": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            15,
+            14,
+            13
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        },
+        "walk_northeast": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            15,
+            14,
+            13
+          ],
+          "fps": 8.3333333333,
+          "loop": true
+        }
+      },
+      "locomotion": {
+        "nominal_speed": 72
+      },
+      "status": "comparison_only_not_selected_gameplay"
+    }
+  }
+}

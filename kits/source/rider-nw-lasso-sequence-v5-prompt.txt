@@ -1,0 +1,16 @@
+Use case: identity-preserve. Production pixel-art mounted action sprite sheet for Cattle Trail.
+Input image 1 is the successful eight-stage northeast clean-hand sequence: use its rendering style, character identity, chestnut horse, exact eight stages and stable planted body. Input image 2 establishes the NORTHWEST viewing direction, with horse head pointing UPPER LEFT, rump LOWER RIGHT and cowboy BACK toward camera. Use image 2 only for this viewing direction and identity, not its grid, moving legs or painted ropes.
+Create ONE new sheet, exactly FOUR COLUMNS by TWO ROWS, exactly EIGHT isolated mounted sprites in row-major action order. Broad empty gutters, equal cell sizes, consistent ground line within each row. Background perfectly solid #FF00FF magenta, no gradient, no checkerboard, no text, no labels.
+ALL EIGHT horse bodies point NORTHWEST / UPPER LEFT. We see the cowboy's back and horse's rear three-quarter view. Horse face must NEVER point right or toward camera. Preserve the same chestnut horse with black mane and tail, brown saddle, brown-hatted cowboy with blue shirt, red neck scarf, tan trousers and brown boots.
+Stable same horse pose, same planted four feet, same body silhouette and scale, same saddle, no leg movement, no walking, no body turn. Only cowboy RIGHT arm/hand changes across the eight poses. Reins remain quiet in the left hand.
+Stages left-to-right row 1 then row 2:
+1 ready, right hand low beside torso;
+2 right elbow bent, hand raised beside head;
+3 wind, right fist above hat;
+4 acceleration, right arm extends diagonally UPPER LEFT toward horse's forward direction;
+5 release, open right hand reaches UPPER LEFT beyond horse's head;
+6 follow-through, right arm still forward UPPER LEFT but slightly lower;
+7 take-up, right elbow draws back toward chest;
+8 low lead, right hand lowered beside saddle.
+Show these as pantomime hand gestures: absolutely NO rope, NO lasso loop, NO cord, NO coiled rope, NO loose curved yellow strokes, NO projectile or weapon, NO dust or motion streaks. The game draws the rope separately. The upper-left release direction is essential, never fling to upper-right.
+Hard-edged authentic pixel clusters, flat limited warm palette with crisp outline and stepped shading, no anti-aliasing or soft resampling. Preserve the reference art density and proportions. All eight poses fully contained, generous magenta margin for the raised and extended hands.

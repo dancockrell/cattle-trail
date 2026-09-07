@@ -57,6 +57,16 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         spec['clip_anchors']['idle_northeast']=spec['clip_anchors']['lasso_northeast']
         spec['action_events']['lasso_northeast']={'name':'rope_release','frame':sequence['lasso']['release_ordinal'],'basis':'Clean open-hand release; engine owns the single rope','once_per_action':True}
         spec['procedural_rope_clips']=['lasso_northeast']
+        if 'v5_lasso_northwest' in source:
+            recipe=sequence['lasso_northwest']; frames=source[recipe['source_clip']]['frames']
+            spec['clips']['lasso_northwest']={'frames':[frames[i] for i in recipe['order']],'fps':8,'loop':False,'durations':recipe['durations']}
+            spec['clip_anchors']['lasso_northwest']=alignment['clips'][recipe['source_clip']]['anchor']
+            for frame,point in zip(frames,recipe['hand_sockets']): spec['frame_sockets'][str(frame)]={'rope_hand':point}
+            for frame in source['walk_northwest']['frames']: spec['frame_sockets'][str(frame)]={'rope_hand':[40,51]}
+            spec['clips']['idle_northwest']={'frames':[frames[-1]],'fps':1,'loop':True}
+            spec['clip_anchors']['idle_northwest']=spec['clip_anchors']['lasso_northwest']
+            spec['action_events']['lasso_northwest']={'name':'rope_release','frame':recipe['release_ordinal'],'basis':'Clean upper-left open-hand release; engine owns the single rope','once_per_action':True}
+            spec['procedural_rope_clips'].append('lasso_northwest')
     if name in ['longhorn','cream','spotted']:
         necks={'east':[53,40],'west':[18,40],'north':[36,31],'south':[36,43],'northeast':[47,36],'northwest':[24,36],'southeast':[48,42],'southwest':[23,42]}
         spec['frame_sockets']={str(i):{'rope_neck':necks[frame['direction']]} for i,frame in enumerate(spec['frames']) if frame['direction'] in necks}
