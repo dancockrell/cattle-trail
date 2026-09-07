@@ -14,6 +14,10 @@ The default playable Clear Fork room now uses selected rich-kit actors and scene
 
 ## Verification
 
+Latest pass: action events are explicit in the selected sprite manifest. Shooting applies damage and the trace on the firing pose; lasso attachment waits for the extended-loop pose. Events fire once per action. The HUD shows remaining rope time. Movement cadence tracks actual travel, facing changes retain gait phase, and small diagonal changes use hysteresis. Wagon collision applies to cattle as well as the rider. Compact controls use two rows and are bounds-checked at 360/390-pixel widths.
+
+`continuous-play.mp4` is a 31-second actual Godot recording that starts at the normal spawn, rides to Eleanor, clears the rustler, and gathers all six cattle. The controller is scripted, but it uses normal travel and public actions throughout with no actor teleports. The run passed its completion assertion. This provides stronger gameplay evidence than the isolated setup-based test, which is retained separately. Final anatomical/anchor consistency remains an art review task.
+
 Godot 4.3 rendered the complete updated room. The integration test passed real target movement, four-direction selection, lasso action retention, action expiry, scenery contact resolution, dialogue, shooting, rustler clearance, cattle following, all-six settlement, cash completion and narrow layout. It caught a boundary collision defect, which was fixed and retested.
 
 `room-desktop.png`, `room-complete.png` and `room-phone.png` are current engine screenshots. `room-playback.mp4` is a 16-second recording of the automated engine integration test: it deliberately moves the player to setup positions between scenarios, then uses actual herding/lasso following. It is not a claim of uninterrupted manual play.

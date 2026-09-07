@@ -2,6 +2,8 @@
 
 Godot 4.3 stable, Windows, OpenGL compatibility renderer on NVIDIA RTX 4070.
 
+Latest action pass: frame-event firing/rope attachment passed the objective test, including assertions that effects wait for their poses. The continuous scripted play run (`--demo`) completed all-six settlement from the normal spawn without any actor teleportation; 31-second native engine evidence is saved as continuous-play.mp4. This is scripted gameplay, not manual input. Gait phase/speed, facing hysteresis, shared wagon collision and 360/390-pixel button bounds also passed focused assertions.
+
 Latest continuation: the default rich-kit room also passed the full rendered objective test, four-facing selection, action retention/expiry and tree/rock contact checks. Current captures and room-playback.mp4 show this updated room. See ROOM-INTEGRATION.md for the 131-frame/30-variant selection and remaining art limits.
 
 - Original room: actual rendered integration checks passed for mounted movement, Eleanor conversation, ammo/shoot interaction, rustler clearance, lasso following, six cattle settling, completion/cash, reset and narrow layout. The test places the player at setup positions; cattle follow the actual lasso movement loop into the goal.
