@@ -24,6 +24,8 @@ No replacement character drawings are used. Actor sprites, scenery, and the wood
 
 ## Reusable method
 
+The expanded library contains 496 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. See `kits/DELIVERY.md` for measured coverage, `kits/manifest.json` for exact metadata, and `kits/overview.png` for the visual inventory. The gameplay room continues to use the original 24-frame baseline while the new kits undergo visual curation.
+
 See `METHOD.md` for the agent-authored conversion method for other games: approved visual reference → preserved sources → reproducible sprite extraction → exact metadata → one playable Godot room → actual visual and interaction verification → acceptance before expansion.
 
 ## Validation and present limits

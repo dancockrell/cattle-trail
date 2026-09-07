@@ -8,16 +8,16 @@
   },
   "counting_rule": "Count distinct useful action/direction/state frames or environment modules. Do not count duplicated cells, recolor padding, mirrors, or repeated atlas exports as new coverage.",
   "targets": {
-    "actor_frames": 384,
+    "actor_frames": 400,
     "environment_modules_minimum": 96,
-    "total_minimum": 480,
-    "actor_expansion_over_baseline": 16
+    "total_minimum": 496,
+    "actor_expansion_over_baseline": 16.666666666666668
   },
   "directions": [
-    "northeast",
-    "southeast",
-    "southwest",
-    "northwest"
+    "east",
+    "west",
+    "north",
+    "south"
   ],
   "families": [
     {
@@ -28,17 +28,17 @@
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
+          "walk": {
+            "frames_per_direction": 4
           },
-          "ride": {
-            "frames_per_direction": 6
+          "trot": {
+            "frames_per_direction": 4
           },
           "lasso": {
             "frames_per_direction": 4
@@ -46,7 +46,8 @@
           "shoot": {
             "frames_per_direction": 4
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -54,7 +55,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/rider"
     },
     {
       "id": "longhorn",
@@ -64,15 +66,12 @@
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
-          },
           "walk": {
             "frames_per_direction": 4
           },
@@ -80,12 +79,13 @@
             "frames_per_direction": 4
           },
           "graze": {
-            "frames_per_direction": 3
+            "frames_per_direction": 4
           },
-          "startle": {
-            "frames_per_direction": 3
+          "rest": {
+            "frames_per_direction": 4
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -93,7 +93,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/longhorn"
     },
     {
       "id": "cream",
@@ -103,15 +104,12 @@
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
-          },
           "walk": {
             "frames_per_direction": 4
           },
@@ -119,12 +117,13 @@
             "frames_per_direction": 4
           },
           "graze": {
-            "frames_per_direction": 3
+            "frames_per_direction": 4
           },
-          "startle": {
-            "frames_per_direction": 3
+          "rest": {
+            "frames_per_direction": 4
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -132,7 +131,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/cream"
     },
     {
       "id": "spotted",
@@ -142,15 +142,12 @@
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
-          },
           "walk": {
             "frames_per_direction": 4
           },
@@ -158,12 +155,13 @@
             "frames_per_direction": 4
           },
           "graze": {
-            "frames_per_direction": 3
+            "frames_per_direction": 4
           },
-          "startle": {
-            "frames_per_direction": 3
+          "rest": {
+            "frames_per_direction": 4
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -171,35 +169,37 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/spotted"
     },
     {
       "id": "eleanor",
       "type": "actor",
-      "target_unique_usable_frames_or_modules": 48,
+      "target_unique_usable_frames_or_modules": 64,
       "status": "planned",
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
-          },
           "walk": {
             "frames_per_direction": 4
           },
           "talk": {
-            "frames_per_direction": 3
+            "frames_per_direction": 4
           },
-          "gesture": {
-            "frames_per_direction": 3
+          "medical": {
+            "frames_per_direction": 4
+          },
+          "camp": {
+            "frames_per_direction": 4
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -207,7 +207,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/eleanor"
     },
     {
       "id": "rustler",
@@ -217,28 +218,26 @@
       "admitted_count": null,
       "coverage": {
         "directions": [
-          "northeast",
-          "southeast",
-          "southwest",
-          "northwest"
+          "east",
+          "west",
+          "north",
+          "south"
         ],
         "clips": {
-          "idle": {
-            "frames_per_direction": 2
-          },
           "walk": {
+            "frames_per_direction": 4
+          },
+          "run": {
             "frames_per_direction": 4
           },
           "shoot": {
             "frames_per_direction": 4
           },
-          "flee": {
+          "react": {
             "frames_per_direction": 4
-          },
-          "lasso_reaction": {
-            "frames_per_direction": 2
           }
-        }
+        },
+        "idle": "Reuse first walk frame without counting it again."
       },
       "acceptance": [
         "approved-style continuity",
@@ -246,7 +245,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/rustler"
     },
     {
       "id": "wagon",
@@ -275,7 +275,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/wagon"
     },
     {
       "id": "grass",
@@ -301,7 +302,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/grass"
     },
     {
       "id": "trees",
@@ -324,7 +326,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/trees"
     },
     {
       "id": "rocks",
@@ -347,7 +350,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/rocks"
     },
     {
       "id": "scrub",
@@ -370,7 +374,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/scrub"
     },
     {
       "id": "fence",
@@ -398,7 +403,8 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/fence"
     },
     {
       "id": "camp",
@@ -429,13 +435,15 @@
         "clean transparent extraction or intentional opaque terrain",
         "exact dimensions and ground anchors",
         "in-engine visual review"
-      ]
+      ],
+      "measured_inventory": "manifest.json#families/camp"
     }
   ],
   "admission_policy": {
     "generation_is_not_admission": true,
     "missing_cells": "mark missing and retain unmet target",
     "runtime_authority": "../assets/sprites.json",
-    "future_delivery_inventory": "Maintain a separate measured extraction/admission inventory; do not replace these planned goals with claims inferred from sheet size."
-  }
+    "future_delivery_inventory": "manifest.json records actual extraction; DELIVERY.md records admission and integration boundaries."
+  },
+  "revision_note": "First extraction allocates four 4-frame action rows per requested facing; Eleanor expanded to four facings. Direction labels are requests, not verified coverage. Connectivity remains an admission requirement."
 }

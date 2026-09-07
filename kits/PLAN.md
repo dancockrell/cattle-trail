@@ -2,24 +2,24 @@
 
 Status: planned coverage targets. This document is not an inventory of delivered, extracted, or accepted artwork.
 
-The first rich library expands the seven existing actor families and adds six connected environment kits. The baseline is 24 extracted actor frames. The actor target is 384 useful frames/states, exactly sixteen times that aggregate baseline, plus at least 96 environment modules. Individual families receive coverage according to their gameplay needs; a single-frame wagon does not need the same animation count as a mounted rider.
+The first rich library expands the seven existing actor families and adds six connected environment kits. The baseline is 24 extracted actor frames. The actor target is 400 candidate frames/states, approximately 16.7 times that aggregate baseline, plus at least 96 environment modules. Individual families receive coverage according to their gameplay needs; a single-frame wagon does not need the same animation count as a mounted rider.
 
 “16×” means useful coverage: actions, directions, transitions, functional states, and environment connections. Recoloring, duplicating cells, mirroring existing poses, or exporting the same frame in multiple atlases does not increase the admitted count. Each existing actor must become a coherent kit. More unrelated props cannot compensate for missing ride, walk, lasso, or facing coverage.
 
 ## Targets and clip coverage
 
-Directions below are northeast, southeast, southwest, and northwest. These are planned production directions, not a claim about the original sheets.
+Requested directions are east, west, north, and south within the high three-quarter presentation. Actual frame facing must be inspected; requests are not verified coverage. The first extraction uses four poses per action row and reuses the first walk pose for idle.
 
 | Family | Goal | Coverage allocation |
 |---|---:|---|
-| Mounted rider | 64 | Per direction: idle 2, ride 6, lasso 4, shoot 4 |
-| Longhorn | 64 | Per direction: idle 2, walk 4, run 4, graze 3, startle 3 |
+| Mounted rider | 64 | Per direction: walk 4, trot 4, lasso 4, shoot 4 |
+| Longhorn | 64 | Per direction: walk 4, run 4, graze 4, rest 4 |
 | Cream cattle | 64 | Same complete action coverage as longhorn |
 | Spotted cattle | 64 | Same complete action coverage as longhorn |
-| Eleanor | 48 | Per direction: idle 2, walk 4, talk 3, gesture 3 |
-| Rustler | 64 | Per direction: idle 2, walk 4, shoot 4, flee 4, lasso reaction 2 |
+| Eleanor | 64 | Per direction: walk 4, talk 4, medical 4, camp 4 |
+| Rustler | 64 | Per direction: walk 4, run 4, shoot 4, react 4 |
 | Wagon | 16 | Four directions × rest, loaded, open supply access, repair needed |
-| **Actor total** | **384** | **16× the 24-frame aggregate baseline** |
+| **Actor total** | **400** | **16.7× the 24-frame aggregate baseline** |
 
 The actor sheet must preserve character identity, costume, proportions, lighting, and ground-contact scale across all frames. Lasso and shooting sequences need readable anticipation, action, and recovery within their allocation. The counts are a planning constraint, not permission to invent a smooth cycle from unrelated poses. Timings and action-event frames are finalized after extraction and motion review.
 
@@ -63,3 +63,7 @@ The first practical priority is directional rider/cattle motion and the room's a
 - After the requested work is finished, an urgent method/priorities message to DR Companion and Pirate Island Work.
 
 The reusable method is documented in ../METHOD.md. catalog-plan.json contains these targets in machine-readable form. Neither file asserts that the target counts or visual acceptance have been achieved.
+
+## First extraction status
+
+496 unique cells extracted: 400 actors/props plus 96 scenery variants. See DELIVERY.md for measured results. Connected grass/fence systems, approved gait cycles, and interaction footprints remain unfulfilled admission requirements. Generated decorative variety does not complete these requirements. Tree layers are exact complementary splits; they do not invent hidden trunk pixels and do not count as extra variants.

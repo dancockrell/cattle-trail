@@ -39,6 +39,10 @@ var qa_mode := false
 var qa_done := false
 
 func _ready() -> void:
+	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
+		get_tree().set_meta("kits_opened", true)
+		get_tree().change_scene_to_file.call_deferred("res://scenes/kit_browser.tscn")
+		return
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://assets/sprites.json"))
 	viewport = SubViewport.new()
@@ -196,6 +200,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.keycode == KEY_L: lasso()
 	if event.keycode == KEY_F: shoot()
 	if event.keycode == KEY_R: reset_room()
+	if event.keycode == KEY_K: get_tree().change_scene_to_file("res://scenes/kit_browser.tscn")
 
 func keyboard() -> Vector2:
 	return Vector2(float(Input.is_physical_key_pressed(KEY_D) or Input.is_physical_key_pressed(KEY_RIGHT)) - float(Input.is_physical_key_pressed(KEY_A) or Input.is_physical_key_pressed(KEY_LEFT)), float(Input.is_physical_key_pressed(KEY_S) or Input.is_physical_key_pressed(KEY_DOWN)) - float(Input.is_physical_key_pressed(KEY_W) or Input.is_physical_key_pressed(KEY_UP)))
