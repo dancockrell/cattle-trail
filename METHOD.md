@@ -36,9 +36,9 @@ For every sprite, retain:
 
 In this recipe, source crops use left/top/right/bottom coordinates with the right and bottom excluded. Atlas rectangles use x/y/width/height. Keeping that distinction explicit prevents extraction mistakes.
 
-`assets/sprites.json` is the runtime animation authority. Godot constructs its sprite animations from that manifest rather than maintaining a second handwritten frame list. The extraction recipe produces the manifest; changes belong in the recipe and regenerate together.
+The original comparison room uses `assets/sprites.json`. Expanded extraction uses `kits/manifest.json`; the default playable room uses `assets/room-art.json`, rebuilt by `tools/curate_room.py`. Godot constructs animations from that selected manifest rather than a second handwritten frame list. Measured rider clip anchors come from `assets/rider-anchors.json`, rebuilt by `tools/align_rider.py`. Changes belong in these recipes and regenerate together.
 
-Current examples are:
+Historical examples from the original 24-frame comparison room are:
 
 | Actor | Cell | Ground anchor | Defined motion |
 |---|---|---|---|
@@ -85,9 +85,9 @@ A passing interaction check does not constitute visual acceptance. A good screen
 
 ## 7. Current boundaries and migration deliverables
 
-The reviewed source explicitly lacks true south-facing mounted frames; east and north reuse northeast artwork, and west mirrors it. The three cattle appearances now each use four extracted poses, but lack complete directional coverage. The shooting pose is not a complete action cycle. Ground is assembled from repeated concept-frame crops. These limitations require visual review and potentially additional approved production assets.
+The recovered original comparison art lacks full directional movement and uses repeated concept-frame terrain crops. The current default room selects 131 actor frames and 30 scenery variants from the expanded library, includes cardinal movement/action strips with frame-timed effects, and uses an empty-ground derivative of the approved concept. It has passed continuous scripted play without actor teleports. Current art work is addressing oblique viewing angles, planted idle poses and body-based action anchors. Extraction counts do not imply that these visual requirements are complete. Consult ROOM-INTEGRATION.md and the selected manifest for current implementation evidence.
 
-The current script also draws lasso and shot feedback using `Line2D`. These are procedural effects rather than extracted effects sprites, so they remain a gap against a strict requirement that all visible action art come from approved sheets. No claim of completed visual QA or user acceptance is made here.
+The current script draws connecting rope and brief shot feedback using `Line2D`, synchronized to actual rider action frames. These are effects alongside real actor sprites; they do not substitute for characters or scenery. A project that requires entirely sprite-based effects should record that separate art requirement. No claim of final user visual acceptance is made here.
 
 When migrating another game, deliver the following in order:
 
