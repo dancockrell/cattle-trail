@@ -2226,6 +2226,93 @@
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
       ],
+      "clip_anchors": {
+        "walk_east": [
+          48,
+          93
+        ],
+        "trot_east": [
+          50,
+          93
+        ],
+        "lasso_east": [
+          46,
+          93
+        ],
+        "shoot_east": [
+          45,
+          93
+        ],
+        "walk_west": [
+          50,
+          92
+        ],
+        "trot_west": [
+          48,
+          92
+        ],
+        "lasso_west": [
+          46,
+          92
+        ],
+        "shoot_west": [
+          48,
+          93
+        ],
+        "walk_north": [
+          48,
+          93
+        ],
+        "trot_north": [
+          49,
+          93
+        ],
+        "lasso_north": [
+          51,
+          93
+        ],
+        "shoot_north": [
+          40,
+          93
+        ],
+        "walk_south": [
+          46,
+          93
+        ],
+        "trot_south": [
+          46,
+          93
+        ],
+        "lasso_south": [
+          46,
+          93
+        ],
+        "shoot_south": [
+          52,
+          93
+        ],
+        "idle_east": [
+          48,
+          93
+        ],
+        "idle_west": [
+          50,
+          92
+        ],
+        "idle_north": [
+          48,
+          93
+        ],
+        "idle_south": [
+          46,
+          93
+        ],
+        "idle": [
+          48,
+          93
+        ]
+      },
+      "anchor_policy": "Per-clip median shirt center X and dark hoof contact Y; one shared anchor per strip preserves intra-cycle recoil and gait. Detached pale dust is excluded from ground measurement. Atlas pixels unchanged.",
       "action_events": {
         "lasso_east": {
           "name": "rope_release",

@@ -104,7 +104,7 @@ func _ready() -> void:
 	build_ui()
 	resized.connect(layout_ui)
 	layout_ui()
-	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args()
+	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args()
 	for button in buttons.get_children(): button.disabled = qa_mode
 	refresh()
 	if "--smoke" in OS.get_cmdline_user_args():
@@ -112,6 +112,9 @@ func _ready() -> void:
 	if "--demo" in OS.get_cmdline_user_args():
 		qa_done = true
 		run_demo.call_deferred()
+	if "--pose-review" in OS.get_cmdline_user_args():
+		qa_done = true
+		run_pose_review.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -246,6 +249,7 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--pose-review" in OS.get_cmdline_user_args(): return
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	var direction := Vector2.ZERO if qa_mode else keyboard()
@@ -430,6 +434,18 @@ func refresh() -> void:
 func reset_room() -> void:
 	get_tree().reload_current_scene()
 
+func run_pose_review() -> void:
+	# Stationary animation inspection; separate from gameplay verification.
+	player.position = Vector2(320,245)
+	for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN]:
+		for action in ["walk","lasso","shoot"]:
+			objective.text = "POSE REVIEW / " + action + " / " + player.direction_name(direction)
+			journal.text = "One fixed world anchor; movement paused to inspect the actual sprite transitions."
+			player.action(action,direction)
+			await get_tree().create_timer(0.85).timeout
+	print("POSE REVIEW PASS: 12 actual engine action/facing transitions rendered")
+	get_tree().quit()
+
 func demo_ride(destination: Vector2, seconds: float = 8.0) -> bool:
 	target = destination
 	var deadline := elapsed + seconds
@@ -498,6 +514,7 @@ func run_qa() -> void:
 		player.pose(true, Vector2.RIGHT, 36)
 		assert(is_equal_approx(player.art.speed_scale, 0.5))
 		player.action("lasso", Vector2.LEFT)
+		assert(player.art.position == -Vector2(player.clip_anchors["lasso_west"][0],player.clip_anchors["lasso_west"][1]), "Action must use its measured ground anchor")
 		assert(is_equal_approx(player.art.speed_scale, 1.0), "Action timing must not inherit walk speed")
 		assert(player.art.animation == "lasso_west")
 		player.pose(true, Vector2.RIGHT)

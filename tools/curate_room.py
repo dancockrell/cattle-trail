@@ -19,6 +19,9 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         for action in ['idle','walk']:
             spec['clips'][action+'_'+direction]=copy.deepcopy(source[action+'_'+direction])
     if name=='rider':
+        alignment=json.loads((root/'assets/rider-anchors.json').read_text())
+        spec['clip_anchors']={clip:data['anchor'] for clip,data in alignment['clips'].items()}
+        spec['anchor_policy']=alignment['method']
         spec['action_events']={}
         for direction in directions:
             for action in ['lasso','shoot']:

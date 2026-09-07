@@ -15,10 +15,12 @@ var facing_bias := 1.2
 var clip_events: Dictionary = {}
 var active_clip := ""
 var event_fired := false
+var clip_anchors: Dictionary = {}
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
 	clip_events = spec.get("action_events", {})
+	clip_anchors = spec.get("clip_anchors", {})
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
 	art = AnimatedSprite2D.new()
@@ -42,7 +44,14 @@ func configure(id: String, spec: Dictionary) -> void:
 	art.sprite_frames = frames
 	directional = frames.has_animation("walk_east")
 	add_child(art)
+	art.animation_changed.connect(update_anchor)
 	art.play("idle")
+	update_anchor()
+
+func update_anchor() -> void:
+	if clip_anchors.has(str(art.animation)):
+		var anchor: Array = clip_anchors[str(art.animation)]
+		art.position = -Vector2(anchor[0],anchor[1])
 
 func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0) -> void:
 	if action_time > 0: return
