@@ -104,7 +104,7 @@ func _ready() -> void:
 	build_ui()
 	resized.connect(layout_ui)
 	layout_ui()
-	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args()
+	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--demo" in OS.get_cmdline_user_args() or "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args()
 	for button in buttons.get_children(): button.disabled = qa_mode
 	refresh()
 	if "--smoke" in OS.get_cmdline_user_args():
@@ -115,6 +115,9 @@ func _ready() -> void:
 	if "--pose-review" in OS.get_cmdline_user_args():
 		qa_done = true
 		run_pose_review.call_deferred()
+	if "--herd-review" in OS.get_cmdline_user_args():
+		qa_done = true
+		run_herd_review.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -249,7 +252,7 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
-	if "--pose-review" in OS.get_cmdline_user_args(): return
+	if "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args(): return
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	var direction := Vector2.ZERO if qa_mode else keyboard()
@@ -451,6 +454,27 @@ func run_pose_review() -> void:
 			player.action(action,direction)
 			await get_tree().create_timer(0.85).timeout
 	print("POSE REVIEW PASS: 24 actual engine action/facing transitions rendered against original art")
+	get_tree().quit()
+
+func run_herd_review() -> void:
+	# Compare native silhouettes and motion together at fixed, equal ground contacts.
+	for actor in actors.get_children(): actor.visible = false
+	var source_art: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/sprites.json"))
+	var subjects: Array[Node2D] = []
+	var families := ["rider", "longhorn", "cream", "spotted"]
+	for i in range(families.size()):
+		var reference := Actor.new()
+		reference.configure(families[i],source_art.sprites[families[i]])
+		reference.position = Vector2(175 + i*105,155)
+		actors.add_child(reference)
+		subjects.append(spawn(families[i],Vector2(175 + i*105,265)))
+	for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN,Vector2(1,-1),Vector2(-1,-1),Vector2(1,1),Vector2(-1,1)]:
+		for action in ["idle","walk"]:
+			objective.text = "HERD REVIEW / " + action + " / " + player.direction_name(direction)
+			journal.text = "Top: approved original sprites. Bottom: selected rider and three cattle families."
+			for subject in subjects: subject.action(action,direction)
+			await get_tree().create_timer(0.85).timeout
+	print("HERD REVIEW PASS: 64 native actor idle/walk facing strips rendered against originals")
 	get_tree().quit()
 
 func demo_ride(destination: Vector2, seconds: float = 8.0) -> bool:

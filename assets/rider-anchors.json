@@ -1098,61 +1098,61 @@
         93
       ],
       "frames": [
-        0
+        128
       ],
       "observed": {
-        "0": {
+        "128": {
           "shirt_x": 47.0,
           "hoof_y": 93,
-          "blue_pixels": 106
-        }
-      }
-    },
-    "idle_north": {
-      "anchor": [
-        48,
-        93
-      ],
-      "frames": [
-        32
-      ],
-      "observed": {
-        "32": {
-          "shirt_x": 48.0,
-          "hoof_y": 93,
-          "blue_pixels": 100
-        }
-      }
-    },
-    "idle_south": {
-      "anchor": [
-        45,
-        93
-      ],
-      "frames": [
-        48
-      ],
-      "observed": {
-        "48": {
-          "shirt_x": 45.0,
-          "hoof_y": 93,
-          "blue_pixels": 85
+          "blue_pixels": 107
         }
       }
     },
     "idle_west": {
       "anchor": [
-        50,
-        92
+        47,
+        93
       ],
       "frames": [
-        16
+        129
       ],
       "observed": {
-        "16": {
-          "shirt_x": 49.5,
-          "hoof_y": 92,
-          "blue_pixels": 98
+        "129": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 91
+        }
+      }
+    },
+    "idle_north": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        130
+      ],
+      "observed": {
+        "130": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 110
+        }
+      }
+    },
+    "idle_south": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        131
+      ],
+      "observed": {
+        "131": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 74
         }
       }
     },

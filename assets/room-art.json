@@ -4237,12 +4237,144 @@
             93
           ],
           "id": "rider_127"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            426,
+            302
+          ],
+          "trim": [
+            145,
+            40,
+            335,
+            282
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_128"
+        },
+        {
+          "source_rect": [
+            426,
+            0,
+            794,
+            302
+          ],
+          "trim": [
+            93,
+            42,
+            283,
+            284
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_129"
+        },
+        {
+          "source_rect": [
+            794,
+            0,
+            1110,
+            302
+          ],
+          "trim": [
+            85,
+            41,
+            196,
+            284
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_130"
+        },
+        {
+          "source_rect": [
+            1110,
+            0,
+            1536,
+            302
+          ],
+          "trim": [
+            114,
+            42,
+            221,
+            284
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_131"
         }
       ],
       "clips": {
         "idle_east": {
           "frames": [
-            0
+            128
           ],
           "fps": 3,
           "loop": true
@@ -4259,7 +4391,7 @@
         },
         "idle_west": {
           "frames": [
-            16
+            129
           ],
           "fps": 3,
           "loop": true
@@ -4276,7 +4408,7 @@
         },
         "idle_north": {
           "frames": [
-            32
+            130
           ],
           "fps": 3,
           "loop": true
@@ -4293,7 +4425,7 @@
         },
         "idle_south": {
           "frames": [
-            48
+            131
           ],
           "fps": 3,
           "loop": true
@@ -4560,7 +4692,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 128,
+      "count": 132,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -4698,17 +4830,17 @@
           47,
           93
         ],
+        "idle_west": [
+          47,
+          93
+        ],
         "idle_north": [
-          48,
+          47,
           93
         ],
         "idle_south": [
-          45,
+          47,
           93
-        ],
-        "idle_west": [
-          50,
-          92
         ],
         "idle": [
           48,
@@ -8005,12 +8137,144 @@
             61
           ],
           "id": "longhorn_095"
+        },
+        {
+          "source_rect": [
+            0,
+            302,
+            425,
+            514
+          ],
+          "trim": [
+            135,
+            37,
+            348,
+            173
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_096"
+        },
+        {
+          "source_rect": [
+            425,
+            302,
+            790,
+            514
+          ],
+          "trim": [
+            79,
+            37,
+            289,
+            173
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_097"
+        },
+        {
+          "source_rect": [
+            790,
+            302,
+            1104,
+            514
+          ],
+          "trim": [
+            77,
+            20,
+            206,
+            184
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_098"
+        },
+        {
+          "source_rect": [
+            1104,
+            302,
+            1536,
+            514
+          ],
+          "trim": [
+            109,
+            31,
+            237,
+            180
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_099"
         }
       ],
       "clips": {
         "idle_east": {
           "frames": [
-            0
+            96
           ],
           "fps": 3,
           "loop": true
@@ -8027,7 +8291,7 @@
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
           "fps": 3,
           "loop": true
@@ -8044,7 +8308,7 @@
         },
         "idle_north": {
           "frames": [
-            32
+            98
           ],
           "fps": 3,
           "loop": true
@@ -8061,7 +8325,7 @@
         },
         "idle_south": {
           "frames": [
-            48
+            99
           ],
           "fps": 3,
           "loop": true
@@ -8168,7 +8432,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -11365,12 +11629,144 @@
             61
           ],
           "id": "cream_095"
+        },
+        {
+          "source_rect": [
+            0,
+            514,
+            425,
+            736
+          ],
+          "trim": [
+            138,
+            47,
+            337,
+            183
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_096"
+        },
+        {
+          "source_rect": [
+            425,
+            514,
+            800,
+            736
+          ],
+          "trim": [
+            89,
+            51,
+            286,
+            185
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_097"
+        },
+        {
+          "source_rect": [
+            800,
+            514,
+            1113,
+            736
+          ],
+          "trim": [
+            89,
+            29,
+            175,
+            194
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_098"
+        },
+        {
+          "source_rect": [
+            1113,
+            514,
+            1536,
+            736
+          ],
+          "trim": [
+            118,
+            29,
+            211,
+            192
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_099"
         }
       ],
       "clips": {
         "idle_east": {
           "frames": [
-            0
+            96
           ],
           "fps": 3,
           "loop": true
@@ -11387,7 +11783,7 @@
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
           "fps": 3,
           "loop": true
@@ -11404,7 +11800,7 @@
         },
         "idle_north": {
           "frames": [
-            32
+            98
           ],
           "fps": 3,
           "loop": true
@@ -11421,7 +11817,7 @@
         },
         "idle_south": {
           "frames": [
-            48
+            99
           ],
           "fps": 3,
           "loop": true
@@ -11528,7 +11924,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -14725,12 +15121,144 @@
             61
           ],
           "id": "spotted_095"
+        },
+        {
+          "source_rect": [
+            0,
+            736,
+            426,
+            1024
+          ],
+          "trim": [
+            133,
+            47,
+            348,
+            192
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_096"
+        },
+        {
+          "source_rect": [
+            426,
+            736,
+            792,
+            1024
+          ],
+          "trim": [
+            78,
+            49,
+            289,
+            195
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_097"
+        },
+        {
+          "source_rect": [
+            792,
+            736,
+            1103,
+            1024
+          ],
+          "trim": [
+            78,
+            30,
+            200,
+            203
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_098"
+        },
+        {
+          "source_rect": [
+            1103,
+            736,
+            1536,
+            1024
+          ],
+          "trim": [
+            108,
+            40,
+            241,
+            201
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_099"
         }
       ],
       "clips": {
         "idle_east": {
           "frames": [
-            0
+            96
           ],
           "fps": 3,
           "loop": true
@@ -14747,7 +15275,7 @@
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
           "fps": 3,
           "loop": true
@@ -14764,7 +15292,7 @@
         },
         "idle_north": {
           "frames": [
-            32
+            98
           ],
           "fps": 3,
           "loop": true
@@ -14781,7 +15309,7 @@
         },
         "idle_south": {
           "frames": [
-            48
+            99
           ],
           "fps": 3,
           "loop": true
@@ -14888,7 +15416,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -19422,8 +19950,8 @@
         125
       ],
       "position": [
-        40,
-        93
+        55,
+        103
       ],
       "collision_radius": 9,
       "source_frame_id": "trees_001"
@@ -19485,7 +20013,7 @@
         125
       ],
       "position": [
-        611,
+        586,
         104
       ],
       "collision_radius": 9,
@@ -19493,11 +20021,11 @@
     },
     {
       "family": "trees",
-      "frame": 0,
+      "frame": 14,
       "texture": "res://kits/atlases/trees.png",
       "region": [
-        0,
-        0,
+        256,
+        384,
         128,
         128
       ],
@@ -19507,10 +20035,10 @@
       ],
       "position": [
         363,
-        80
+        94
       ],
       "collision_radius": 9,
-      "source_frame_id": "trees_000"
+      "source_frame_id": "trees_014"
     },
     {
       "family": "rocks",
@@ -20250,9 +20778,9 @@
   ],
   "excluded": "Cattle graze/rest turns; Eleanor medical/camp bag changes; rustler reaction strips; unverified environment connections.",
   "ground": {
-    "texture": "res://assets/ground-v2.png",
-    "source": "source/ground-v2.png",
-    "sha256": "5a2dcf6ad1f502f1b1ea44cf5e64d5a417aa4bb043e7b37a84a279ceed197531",
+    "texture": "res://assets/ground-v3.png",
+    "source": "source/ground-v3.png",
+    "sha256": "6ed9f1093ae07b91c9d27f3404e6874658730f031f77a40ce2bdf3870bdf30c6",
     "source_dimensions": [
       1672,
       941
@@ -20262,8 +20790,8 @@
       360
     ],
     "sampling": "nearest",
-    "provenance": "New empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v2-prompt.txt"
+    "provenance": "Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt"
   },
-  "integrated_unique_actor_frames": 289,
+  "integrated_unique_actor_frames": 305,
   "integrated_unique_scenery_frames": 30
 }

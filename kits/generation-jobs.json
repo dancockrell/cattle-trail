@@ -415,5 +415,101 @@
     ],
     "detail": "ONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses. Row1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet.",
     "prompt": "Production Cattle Trail sprite sheet, directly match the supplied original cattle art. Fixed HIGH THREE-QUARTER TOP-DOWN OBLIQUE VIEW, visible back/top planes like the reference, not side profile and not a straight face/rear. Use the ORIGINAL animal's silhouette, horn shape, adult proportions, chunky dark contours and warm pixel shading. NOT chibi, NOT realistic photography, NOT smooth/vector. Exactly FOUR COLUMNS and FOUR ROWS =16 separate full-body cattle sprites, one cow per cell, equal conceptual cell size, large empty gutters. Completely uniform pure MAGENTA #ff00ff background, no labels, grid lines, checkerboard, ground, shadows, dust, people, horses, props or other animals. Lighting upper-left, consistent color/identity and animal body scale across all sixteen cells. Each sprite should look like a 45px-high finely clustered pixel-art cow enlarged crisply, not painted with tiny noise. Row1: first requested facing, four subtle standing IDLE poses with ALL FOUR HOOVES PLANTED, weight-bearing, no lifted walking leg; only small ear/tail movements. Row2: SAME facing, four successive WALK poses: left-diagonal contact, passing, right-diagonal contact, passing, consistent opposing hind/fore leg pairs and modest stride. Row3: second requested facing, four planted IDLE poses, no walking. Row4: SAME second facing, four WALK poses. Preserve visible head/eyes/horns and legs without fusing or inventing limbs, and never turn mid-row. Generous gutters so not a single horn/tail is cut off.\nONLY the BROWN-AND-WHITE SPOTTED animal from the reference: large warm brown patches on white body, brown head with white markings, pale horns, black hooves. Maintain the same patch pattern across poses.\nRow1+2: screen LOWER-RIGHT, moving TOWARD viewer, show front-left quarter, head at lower-right of tail, back top visible. Row3+4: screen LOWER-LEFT, moving TOWARD viewer, show front-right quarter, head at lower-left of tail, back top visible. Do not draw rear-facing animals on this sheet."
+  },
+  {
+    "id": "rider-neutral-v3",
+    "source_file": "cardinal-neutral-v3.png",
+    "family": "rider",
+    "ref": 0,
+    "selected_rows": [
+      0
+    ],
+    "column_directions": [
+      "east",
+      "west",
+      "north",
+      "south"
+    ],
+    "actions": [
+      "idle",
+      "idle",
+      "idle",
+      "idle"
+    ],
+    "prompt_file": "kits/source/cardinal-neutral-v3-prompt.txt"
+  },
+  {
+    "id": "longhorn-neutral-v3",
+    "source_file": "cardinal-neutral-v3.png",
+    "family": "longhorn",
+    "ref": 0,
+    "selected_rows": [
+      1
+    ],
+    "column_directions": [
+      "east",
+      "west",
+      "north",
+      "south"
+    ],
+    "actions": [
+      "idle",
+      "idle",
+      "idle",
+      "idle"
+    ],
+    "prompt_file": "kits/source/cardinal-neutral-v3-prompt.txt"
+  },
+  {
+    "id": "cream-neutral-v3",
+    "source_file": "cardinal-neutral-v3.png",
+    "family": "cream",
+    "ref": 0,
+    "selected_rows": [
+      2
+    ],
+    "column_directions": [
+      "east",
+      "west",
+      "north",
+      "south"
+    ],
+    "actions": [
+      "idle",
+      "idle",
+      "idle",
+      "idle"
+    ],
+    "prompt_file": "kits/source/cardinal-neutral-v3-prompt.txt"
+  },
+  {
+    "id": "spotted-neutral-v3",
+    "source_file": "cardinal-neutral-v3.png",
+    "family": "spotted",
+    "ref": 0,
+    "selected_rows": [
+      3
+    ],
+    "column_directions": [
+      "east",
+      "west",
+      "north",
+      "south"
+    ],
+    "actions": [
+      "idle",
+      "idle",
+      "idle",
+      "idle"
+    ],
+    "prompt_file": "kits/source/cardinal-neutral-v3-prompt.txt"
+  },
+  {
+    "id": "trees-v2",
+    "family": "trees",
+    "ref": 2,
+    "replace_id": "trees",
+    "replacement_reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count.",
+    "prompt": "Create a Cattle Trail production TREE KIT: exactly16 isolated trees in a spacious4x4grid on pure solid magenta #FF00FF. Use attached approved game concept for EXACT chunky pixel-art density, warm olive palette, darkbrown contours and fixed high-three-quarter orthographic camera with visible canopy tops. Each tree fully separate with huge gutters, entire crown+trunk+rootcontact visible. NO grass patches, soil bases, cast shadows, rocks, labels, gridlines, people or props. VARIANTS row1:4 mature broad Texas live oaks with differently balanced rounded crowns and solid readable twisted trunks; row2:4 smaller mesquite trees with open forked branches; row3:4 young cottonwood saplings and sparse upright trees; row4:4 weathered partly bare or dead trees with readable branching silhouettes. Richness is useful silhouette variety and size stages, not granular surface detail. CRITICAL simplify foliage: big contiguous leaf masses, broad stepped clusters,5-6colorspercanopy, dark contour around crown; absolutely NO thousands of separate tiny leaf speckles or fine noisy filigree. Branches and trunks also limited4shadepixelclusters. Match compact original screenshot trees, do not use highly detailed fantasy asset aesthetic. No smoothing, gradients, softbrushes, photorealism, 3D. Bottomgroundcontact clean and centered, lightingupperleft, proportionsconsistent withinrow. Each tree must remain readable rendered100pixels high."
   }
 ]

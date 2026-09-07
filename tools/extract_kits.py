@@ -36,7 +36,8 @@ def separators(projection):
     return cuts+[length]
 groups={}
 for rejected in sorted(replaced):
-    catalog['rejections'].append({'source':rejected+'.png','reason':'Wrong facing; replaced by v2. Preserved, excluded from count.'})
+    replacement=next(j for j in JOBS if j.get('replace_id')==rejected)
+    catalog['rejections'].append({'source':rejected+'.png','reason':replacement.get('replacement_reason','Wrong facing; replaced by v2. Preserved, excluded from count.')})
 for job in JOBS:
     source=KIT/'source'/job.get('source_file',f"{job['id']}.png")
     if not source.exists(): continue

@@ -4238,6 +4238,138 @@
             93
           ],
           "id": "rider_127"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            426,
+            302
+          ],
+          "trim": [
+            145,
+            40,
+            335,
+            282
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_128"
+        },
+        {
+          "source_rect": [
+            426,
+            0,
+            794,
+            302
+          ],
+          "trim": [
+            93,
+            42,
+            283,
+            284
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            96,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_129"
+        },
+        {
+          "source_rect": [
+            794,
+            0,
+            1110,
+            302
+          ],
+          "trim": [
+            85,
+            41,
+            196,
+            284
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            192,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_130"
+        },
+        {
+          "source_rect": [
+            1110,
+            0,
+            1536,
+            302
+          ],
+          "trim": [
+            114,
+            42,
+            221,
+            284
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.256198347107438,
+          "job": "rider-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            288,
+            1536,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_131"
         }
       ],
       "clips": {
@@ -4563,35 +4695,35 @@
         },
         "idle_east": {
           "frames": [
-            0
+            128
           ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_north": {
-          "frames": [
-            32
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_south": {
-          "frames": [
-            48
-          ],
-          "fps": 1,
+          "fps": 5,
           "loop": true
         },
         "idle_west": {
           "frames": [
-            16
+            129
           ],
-          "fps": 1,
+          "fps": 5,
+          "loop": true
+        },
+        "idle_north": {
+          "frames": [
+            130
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "idle_south": {
+          "frames": [
+            131
+          ],
+          "fps": 5,
           "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 128,
+      "count": 132,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -7775,6 +7907,138 @@
             61
           ],
           "id": "longhorn_095"
+        },
+        {
+          "source_rect": [
+            0,
+            302,
+            425,
+            514
+          ],
+          "trim": [
+            135,
+            37,
+            348,
+            173
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_096"
+        },
+        {
+          "source_rect": [
+            425,
+            302,
+            790,
+            514
+          ],
+          "trim": [
+            79,
+            37,
+            289,
+            173
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_097"
+        },
+        {
+          "source_rect": [
+            790,
+            302,
+            1104,
+            514
+          ],
+          "trim": [
+            77,
+            20,
+            206,
+            184
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_098"
+        },
+        {
+          "source_rect": [
+            1104,
+            302,
+            1536,
+            514
+          ],
+          "trim": [
+            109,
+            31,
+            237,
+            180
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.26666666666666666,
+          "job": "longhorn-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "longhorn_099"
         }
       ],
       "clips": {
@@ -8020,35 +8284,35 @@
         },
         "idle_east": {
           "frames": [
-            0
+            96
           ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_north": {
-          "frames": [
-            32
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_south": {
-          "frames": [
-            48
-          ],
-          "fps": 1,
+          "fps": 5,
           "loop": true
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
-          "fps": 1,
+          "fps": 5,
+          "loop": true
+        },
+        "idle_north": {
+          "frames": [
+            98
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "idle_south": {
+          "frames": [
+            99
+          ],
+          "fps": 5,
           "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -11233,6 +11497,138 @@
             61
           ],
           "id": "cream_095"
+        },
+        {
+          "source_rect": [
+            0,
+            514,
+            425,
+            736
+          ],
+          "trim": [
+            138,
+            47,
+            337,
+            183
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_096"
+        },
+        {
+          "source_rect": [
+            425,
+            514,
+            800,
+            736
+          ],
+          "trim": [
+            89,
+            51,
+            286,
+            185
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_097"
+        },
+        {
+          "source_rect": [
+            800,
+            514,
+            1113,
+            736
+          ],
+          "trim": [
+            89,
+            29,
+            175,
+            194
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_098"
+        },
+        {
+          "source_rect": [
+            1113,
+            514,
+            1536,
+            736
+          ],
+          "trim": [
+            118,
+            29,
+            211,
+            192
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.25418060200668896,
+          "job": "cream-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "cream_099"
         }
       ],
       "clips": {
@@ -11478,35 +11874,35 @@
         },
         "idle_east": {
           "frames": [
-            0
+            96
           ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_north": {
-          "frames": [
-            32
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_south": {
-          "frames": [
-            48
-          ],
-          "fps": 1,
+          "fps": 5,
           "loop": true
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
-          "fps": 1,
+          "fps": 5,
+          "loop": true
+        },
+        "idle_north": {
+          "frames": [
+            98
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "idle_south": {
+          "frames": [
+            99
+          ],
+          "fps": 5,
           "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -14691,6 +15087,138 @@
             61
           ],
           "id": "spotted_095"
+        },
+        {
+          "source_rect": [
+            0,
+            736,
+            426,
+            1024
+          ],
+          "trim": [
+            133,
+            47,
+            348,
+            192
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "east",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            0,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_096"
+        },
+        {
+          "source_rect": [
+            426,
+            736,
+            792,
+            1024
+          ],
+          "trim": [
+            78,
+            49,
+            289,
+            195
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "west",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            72,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_097"
+        },
+        {
+          "source_rect": [
+            792,
+            736,
+            1103,
+            1024
+          ],
+          "trim": [
+            78,
+            30,
+            200,
+            203
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "north",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            144,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_098"
+        },
+        {
+          "source_rect": [
+            1103,
+            736,
+            1536,
+            1024
+          ],
+          "trim": [
+            108,
+            40,
+            241,
+            201
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/cardinal-neutral-v3.png",
+          "source_sha256": "141ba40988b6e0a591b2ea477b6f53bbd9a76e75f80354fa8aa5324b93236ac0",
+          "direction": "south",
+          "scale": 0.247557003257329,
+          "job": "spotted-neutral-v3",
+          "action": "idle",
+          "atlas_rect": [
+            216,
+            768,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "id": "spotted_099"
         }
       ],
       "clips": {
@@ -14936,35 +15464,35 @@
         },
         "idle_east": {
           "frames": [
-            0
+            96
           ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_north": {
-          "frames": [
-            32
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_south": {
-          "frames": [
-            48
-          ],
-          "fps": 1,
+          "fps": 5,
           "loop": true
         },
         "idle_west": {
           "frames": [
-            16
+            97
           ],
-          "fps": 1,
+          "fps": 5,
+          "loop": true
+        },
+        "idle_north": {
+          "frames": [
+            98
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "idle_south": {
+          "frames": [
+            99
+          ],
+          "fps": 5,
           "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 96,
+      "count": 100,
       "world_body_height": 38,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -22840,6 +23368,674 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
       ]
     },
+    "trees": {
+      "texture": "res://kits/atlases/trees.png",
+      "cell": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        125
+      ],
+      "frames": [
+        {
+          "source_rect": [
+            0,
+            0,
+            302,
+            334
+          ],
+          "trim": [
+            27,
+            38,
+            286,
+            291
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_000",
+          "canopy_split_y": 90
+        },
+        {
+          "source_rect": [
+            302,
+            0,
+            626,
+            334
+          ],
+          "trim": [
+            17,
+            44,
+            308,
+            294
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_001",
+          "canopy_split_y": 91
+        },
+        {
+          "source_rect": [
+            626,
+            0,
+            906,
+            334
+          ],
+          "trim": [
+            17,
+            38,
+            265,
+            294
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_002",
+          "canopy_split_y": 90
+        },
+        {
+          "source_rect": [
+            906,
+            0,
+            1254,
+            334
+          ],
+          "trim": [
+            17,
+            57,
+            321,
+            294
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_003",
+          "canopy_split_y": 92
+        },
+        {
+          "source_rect": [
+            0,
+            334,
+            314,
+            626
+          ],
+          "trim": [
+            46,
+            46,
+            275,
+            260
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            0,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_004",
+          "canopy_split_y": 96
+        },
+        {
+          "source_rect": [
+            314,
+            334,
+            634,
+            626
+          ],
+          "trim": [
+            41,
+            53,
+            279,
+            260
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            128,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_005",
+          "canopy_split_y": 97
+        },
+        {
+          "source_rect": [
+            634,
+            334,
+            919,
+            626
+          ],
+          "trim": [
+            42,
+            41,
+            247,
+            259
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            256,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_006",
+          "canopy_split_y": 95
+        },
+        {
+          "source_rect": [
+            919,
+            334,
+            1254,
+            626
+          ],
+          "trim": [
+            39,
+            57,
+            265,
+            259
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            384,
+            128,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_007",
+          "canopy_split_y": 97
+        },
+        {
+          "source_rect": [
+            0,
+            626,
+            320,
+            911
+          ],
+          "trim": [
+            121,
+            49,
+            225,
+            250
+          ],
+          "row": 2,
+          "col": 0,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            0,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_008",
+          "canopy_split_y": 97
+        },
+        {
+          "source_rect": [
+            320,
+            626,
+            626,
+            911
+          ],
+          "trim": [
+            96,
+            42,
+            207,
+            250
+          ],
+          "row": 2,
+          "col": 1,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            128,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_009",
+          "canopy_split_y": 97
+        },
+        {
+          "source_rect": [
+            626,
+            626,
+            912,
+            911
+          ],
+          "trim": [
+            100,
+            33,
+            194,
+            250
+          ],
+          "row": 2,
+          "col": 2,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            256,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_010",
+          "canopy_split_y": 95
+        },
+        {
+          "source_rect": [
+            912,
+            626,
+            1254,
+            911
+          ],
+          "trim": [
+            93,
+            42,
+            200,
+            250
+          ],
+          "row": 2,
+          "col": 3,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            384,
+            256,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_011",
+          "canopy_split_y": 97
+        },
+        {
+          "source_rect": [
+            0,
+            911,
+            333,
+            1254
+          ],
+          "trim": [
+            76,
+            56,
+            262,
+            288
+          ],
+          "row": 3,
+          "col": 0,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            0,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_012",
+          "canopy_split_y": 93
+        },
+        {
+          "source_rect": [
+            333,
+            911,
+            610,
+            1254
+          ],
+          "trim": [
+            72,
+            36,
+            204,
+            288
+          ],
+          "row": 3,
+          "col": 1,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            128,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_013",
+          "canopy_split_y": 91
+        },
+        {
+          "source_rect": [
+            610,
+            911,
+            910,
+            1254
+          ],
+          "trim": [
+            73,
+            61,
+            224,
+            288
+          ],
+          "row": 3,
+          "col": 2,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            256,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_014",
+          "canopy_split_y": 94
+        },
+        {
+          "source_rect": [
+            910,
+            911,
+            1254,
+            1254
+          ],
+          "trim": [
+            78,
+            44,
+            255,
+            288
+          ],
+          "row": 3,
+          "col": 3,
+          "source": "kits/source/trees-v2.png",
+          "source_sha256": "1638fa14755e3c0e1d13a32719343adcad9b8faf29c3a00be7f09c800e8ecdee",
+          "direction": "none",
+          "scale": 0.390625,
+          "job": "trees-v2",
+          "atlas_rect": [
+            384,
+            384,
+            128,
+            128
+          ],
+          "anchor": [
+            64,
+            125
+          ],
+          "id": "trees_015",
+          "canopy_split_y": 92
+        }
+      ],
+      "clips": {
+        "variant_00": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_01": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_02": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_03": {
+          "frames": [
+            3
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_04": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_05": {
+          "frames": [
+            5
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_06": {
+          "frames": [
+            6
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_07": {
+          "frames": [
+            7
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_08": {
+          "frames": [
+            8
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_09": {
+          "frames": [
+            9
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_10": {
+          "frames": [
+            10
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_11": {
+          "frames": [
+            11
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_12": {
+          "frames": [
+            12
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_13": {
+          "frames": [
+            13
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_14": {
+          "frames": [
+            14
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "variant_15": {
+          "frames": [
+            15
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "status": "extracted_candidate",
+      "count": 16,
+      "world_body_height": 100,
+      "review_notes": [
+        "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
+      ],
+      "layers": {
+        "canopy": "res://kits/atlases/trees-canopy.png",
+        "trunk": "res://kits/atlases/trees-trunk.png",
+        "same_regions_and_anchors": true,
+        "method": "complementary horizontal split at65% silhouette height; no hidden trunk pixels invented",
+        "counted_as_new_variants": false
+      }
+    },
     "grass": {
       "texture": "res://kits/atlases/grass.png",
       "cell": [
@@ -23485,674 +24681,6 @@
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
         "Decorative variants; seamless connections/autotile rules have not been authored or verified."
       ]
-    },
-    "trees": {
-      "texture": "res://kits/atlases/trees.png",
-      "cell": [
-        128,
-        128
-      ],
-      "anchor": [
-        64,
-        125
-      ],
-      "frames": [
-        {
-          "source_rect": [
-            0,
-            0,
-            287,
-            300
-          ],
-          "trim": [
-            105,
-            110,
-            236,
-            258
-          ],
-          "row": 0,
-          "col": 0,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            0,
-            0,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_000",
-          "canopy_split_y": 105
-        },
-        {
-          "source_rect": [
-            287,
-            0,
-            636,
-            300
-          ],
-          "trim": [
-            52,
-            59,
-            309,
-            264
-          ],
-          "row": 0,
-          "col": 1,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            128,
-            0,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_001",
-          "canopy_split_y": 98
-        },
-        {
-          "source_rect": [
-            636,
-            0,
-            932,
-            300
-          ],
-          "trim": [
-            42,
-            80,
-            251,
-            268
-          ],
-          "row": 0,
-          "col": 2,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            256,
-            0,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_002",
-          "canopy_split_y": 100
-        },
-        {
-          "source_rect": [
-            932,
-            0,
-            1254,
-            300
-          ],
-          "trim": [
-            46,
-            73,
-            218,
-            268
-          ],
-          "row": 0,
-          "col": 3,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            384,
-            0,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_003",
-          "canopy_split_y": 99
-        },
-        {
-          "source_rect": [
-            0,
-            300,
-            268,
-            584
-          ],
-          "trim": [
-            132,
-            110,
-            201,
-            223
-          ],
-          "row": 1,
-          "col": 0,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            0,
-            128,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_004",
-          "canopy_split_y": 110
-        },
-        {
-          "source_rect": [
-            268,
-            300,
-            568,
-            584
-          ],
-          "trim": [
-            67,
-            50,
-            259,
-            239
-          ],
-          "row": 1,
-          "col": 1,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            128,
-            128,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_005",
-          "canopy_split_y": 100
-        },
-        {
-          "source_rect": [
-            568,
-            300,
-            962,
-            584
-          ],
-          "trim": [
-            44,
-            34,
-            362,
-            242
-          ],
-          "row": 1,
-          "col": 2,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            256,
-            128,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_006",
-          "canopy_split_y": 98
-        },
-        {
-          "source_rect": [
-            962,
-            300,
-            1254,
-            584
-          ],
-          "trim": [
-            33,
-            65,
-            204,
-            236
-          ],
-          "row": 1,
-          "col": 3,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            384,
-            128,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_007",
-          "canopy_split_y": 102
-        },
-        {
-          "source_rect": [
-            0,
-            584,
-            272,
-            906
-          ],
-          "trim": [
-            146,
-            131,
-            213,
-            265
-          ],
-          "row": 2,
-          "col": 0,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            0,
-            256,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_008",
-          "canopy_split_y": 107
-        },
-        {
-          "source_rect": [
-            272,
-            584,
-            603,
-            906
-          ],
-          "trim": [
-            59,
-            43,
-            260,
-            276
-          ],
-          "row": 2,
-          "col": 1,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            128,
-            256,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_009",
-          "canopy_split_y": 94
-        },
-        {
-          "source_rect": [
-            603,
-            584,
-            930,
-            906
-          ],
-          "trim": [
-            72,
-            51,
-            243,
-            291
-          ],
-          "row": 2,
-          "col": 2,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            256,
-            256,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_010",
-          "canopy_split_y": 93
-        },
-        {
-          "source_rect": [
-            930,
-            584,
-            1254,
-            906
-          ],
-          "trim": [
-            86,
-            94,
-            187,
-            288
-          ],
-          "row": 2,
-          "col": 3,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            384,
-            256,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_011",
-          "canopy_split_y": 99
-        },
-        {
-          "source_rect": [
-            0,
-            906,
-            286,
-            1254
-          ],
-          "trim": [
-            139,
-            114,
-            214,
-            250
-          ],
-          "row": 3,
-          "col": 0,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            0,
-            384,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_012",
-          "canopy_split_y": 107
-        },
-        {
-          "source_rect": [
-            286,
-            906,
-            586,
-            1254
-          ],
-          "trim": [
-            72,
-            33,
-            239,
-            262
-          ],
-          "row": 3,
-          "col": 1,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            128,
-            384,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_013",
-          "canopy_split_y": 95
-        },
-        {
-          "source_rect": [
-            586,
-            906,
-            921,
-            1254
-          ],
-          "trim": [
-            62,
-            90,
-            270,
-            262
-          ],
-          "row": 3,
-          "col": 2,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            256,
-            384,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_014",
-          "canopy_split_y": 102
-        },
-        {
-          "source_rect": [
-            921,
-            906,
-            1254,
-            1254
-          ],
-          "trim": [
-            66,
-            92,
-            174,
-            259
-          ],
-          "row": 3,
-          "col": 3,
-          "source": "kits/source/trees.png",
-          "source_sha256": "d0253dfad09dedccb938fb8812b48f36bf282a3473c7378786d79d6d92e74a20",
-          "direction": "none",
-          "scale": 0.37735849056603776,
-          "job": "trees",
-          "atlas_rect": [
-            384,
-            384,
-            128,
-            128
-          ],
-          "anchor": [
-            64,
-            125
-          ],
-          "id": "trees_015",
-          "canopy_split_y": 103
-        }
-      ],
-      "clips": {
-        "variant_00": {
-          "frames": [
-            0
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_01": {
-          "frames": [
-            1
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_02": {
-          "frames": [
-            2
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_03": {
-          "frames": [
-            3
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_04": {
-          "frames": [
-            4
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_05": {
-          "frames": [
-            5
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_06": {
-          "frames": [
-            6
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_07": {
-          "frames": [
-            7
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_08": {
-          "frames": [
-            8
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_09": {
-          "frames": [
-            9
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_10": {
-          "frames": [
-            10
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_11": {
-          "frames": [
-            11
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_12": {
-          "frames": [
-            12
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_13": {
-          "frames": [
-            13
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_14": {
-          "frames": [
-            14
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "variant_15": {
-          "frames": [
-            15
-          ],
-          "fps": 1,
-          "loop": true
-        }
-      },
-      "status": "extracted_candidate",
-      "count": 16,
-      "world_body_height": 100,
-      "review_notes": [
-        "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
-      ],
-      "layers": {
-        "canopy": "res://kits/atlases/trees-canopy.png",
-        "trunk": "res://kits/atlases/trees-trunk.png",
-        "same_regions_and_anchors": true,
-        "method": "complementary horizontal split at65% silhouette height; no hidden trunk pixels invented",
-        "counted_as_new_variants": false
-      }
     }
   },
   "rejections": [
@@ -24167,7 +24695,11 @@
     {
       "source": "rustler-west.png",
       "reason": "Wrong facing; replaced by v2. Preserved, excluded from count."
+    },
+    {
+      "source": "trees.png",
+      "reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count."
     }
   ],
-  "total_extracted": 656
+  "total_extracted": 672
 }

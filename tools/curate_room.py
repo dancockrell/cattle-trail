@@ -6,11 +6,11 @@ root=Path(__file__).resolve().parents[1]
 kit=json.loads((root/'kits/manifest.json').read_text())
 original=json.loads((root/'assets/sprites.json').read_text())
 out={'schema_version':1,'status':'integrated_room_review','source_catalog':'kits/manifest.json','sprites':{},'scenery':[],'excluded':'Cattle graze/rest turns; Eleanor medical/camp bag changes; rustler reaction strips; unverified environment connections.'}
-ground_path=root/'source/ground-v2.png'
+ground_path=root/'source/ground-v3.png'
 if ground_path.exists():
     ground=Image.open(ground_path).convert('RGB')
-    ground.resize((640,360),Image.Resampling.NEAREST).save(root/'assets/ground-v2.png')
-    out['ground']={'texture':'res://assets/ground-v2.png','source':'source/ground-v2.png','sha256':hashlib.sha256(ground_path.read_bytes()).hexdigest(),'source_dimensions':list(ground.size),'output_dimensions':[640,360],'sampling':'nearest','provenance':'New empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v2-prompt.txt'}
+    ground.resize((640,360),Image.Resampling.NEAREST).save(root/'assets/ground-v3.png')
+    out['ground']={'texture':'res://assets/ground-v3.png','source':'source/ground-v3.png','sha256':hashlib.sha256(ground_path.read_bytes()).hexdigest(),'source_dimensions':list(ground.size),'output_dimensions':[640,360],'sampling':'nearest','provenance':'Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt'}
 for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
     spec=copy.deepcopy(kit['families'][name]); spec['clips']={}
     source=kit['families'][name]['clips']
@@ -51,7 +51,7 @@ out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])
 def add(family,index,x,y,solid=0):
     spec=kit['families'][family]
     out['scenery'].append({'family':family,'frame':index,'texture':spec['texture'],'region':spec['frames'][index]['atlas_rect'],'anchor':spec['anchor'],'position':[x,y],'collision_radius':solid,'source_frame_id':spec['frames'][index]['id']})
-for item in [(1,40,93),(6,280,108),(5,436,100),(2,611,104),(0,363,80)]:add('trees',*item,solid=9)
+for item in [(1,55,103),(6,280,108),(5,436,100),(2,586,104),(14,363,94)]:add('trees',*item,solid=9)
 for item in [(0,32,276),(3,603,288),(9,437,302),(14,163,303),(1,360,103)]:add('rocks',*item,solid=6)
 for item in [(0,50,323),(2,205,93),(4,464,303),(8,578,317),(12,322,315)]:add('scrub',*item)
 for item in [(0,64,139),(4,51,119),(9,108,148),(7,125,139),(12,49,163)]:add('camp',*item)

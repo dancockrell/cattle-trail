@@ -11,8 +11,8 @@
   ],
   "families": {
     "rider": {
-      "extracted": 128,
-      "unique_rgba_cells": 128,
+      "extracted": 132,
+      "unique_rgba_cells": 132,
       "clips": 36,
       "cell": [
         96,
@@ -22,8 +22,8 @@
       "source_hashes_verified": true
     },
     "longhorn": {
-      "extracted": 96,
-      "unique_rgba_cells": 96,
+      "extracted": 100,
+      "unique_rgba_cells": 100,
       "clips": 28,
       "cell": [
         72,
@@ -33,8 +33,8 @@
       "source_hashes_verified": true
     },
     "cream": {
-      "extracted": 96,
-      "unique_rgba_cells": 96,
+      "extracted": 100,
+      "unique_rgba_cells": 100,
       "clips": 28,
       "cell": [
         72,
@@ -44,8 +44,8 @@
       "source_hashes_verified": true
     },
     "spotted": {
-      "extracted": 96,
-      "unique_rgba_cells": 96,
+      "extracted": 100,
+      "unique_rgba_cells": 100,
       "clips": 28,
       "cell": [
         72,
@@ -131,17 +131,6 @@
       "binary_alpha": true,
       "source_hashes_verified": true
     },
-    "grass": {
-      "extracted": 16,
-      "unique_rgba_cells": 16,
-      "clips": 16,
-      "cell": [
-        64,
-        48
-      ],
-      "binary_alpha": true,
-      "source_hashes_verified": true
-    },
     "trees": {
       "extracted": 16,
       "unique_rgba_cells": 16,
@@ -153,8 +142,19 @@
       "binary_alpha": true,
       "source_hashes_verified": true,
       "layer_reconstruction_exact": true
+    },
+    "grass": {
+      "extracted": 16,
+      "unique_rgba_cells": 16,
+      "clips": 16,
+      "cell": [
+        64,
+        48
+      ],
+      "binary_alpha": true,
+      "source_hashes_verified": true
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 656
+  "total_extracted": 672
 }
