@@ -1,0 +1,18 @@
+Create ONE production pixel-art WALK SEQUENCE for the same Cattle Trail rustler. EXACTLY4columns×2rows, eight wholebody sprites on solid pure #FF00FF magenta background, broad empty gutters and outer margins. No labels, grid, shadows, dust, effects or scenery.
+
+Reference1 rustler-east.png gives exact identity and pixel style; reference2 rustler-north-v2.png gives rear outfit; reference3 rustler-state-v2.png gives consistent darkcoat/creamshirt/holster. Same black-brown broad brim hat with brown band, long black hair, worn darkbrown coat, creamshirt, brown trousers, darkboots, leatherbelt and HOLSTERED revolver. No weapon in hand, no bag, no costume or prop changes. Hard squarepixelclusters, dark contours, warm muted palette, no smoothing.
+
+DIRECTION LOCK: NORTHEAST walking toward SCREEN UPPER-RIGHT in everycell. Three-quarter REAR view, back of coat and hair visible, right-facing sliver of face and right hat side visible. Feet point upper-right. NOT straight north, NOT eastsideprofile, NOT southeast. Fixed highthree-quarter topdown camera, samebody proportions and scale. Camera does not rotate.
+
+This is ONE anatomically coherent eightphase walking cycle in temporal order, read top row lefttoright then bottomrow. Keep the same anatomical left/right legs identifiable throughout. Each leg performs exactly ONE stance and ONE swing per full eightframecycle; no repeated extra steps. Stable hip/torso volume, subtle up/down weight, natural opposite arm swing, consistent coat length/panels with restrained trailing movement. Whole hat and bothbootstips fullyvisible ineachcell.
+
+0 LEFT CONTACT: anatomical leftleg extends forward upper-right, heel touches down; rightleg trails lower-left, toe onground. Opposite rightarm forward.
+1 LEFT DOWN: weight settles ontoleftfoot, leftknee slightlybends; rightheel lifts behind.
+2 LEFT PASSING: leftfoot planted beneath/passingbehindhip, rightleg swings through with knee bent and rightfoot clearly offground; arms pass neutral.
+3 LEFT UP: leftleg extends back/lower-left onto toe; rightleg advances upper-right preparingheelcontact.
+4 RIGHT CONTACT: oppositepose to0, rightheel touches forward upper-right, leftleg trails lower-left toeon ground; opposite leftarm forward.
+5 RIGHT DOWN: weight settles ontorightfoot, rightknee slightlybends; leftheel lifts behind.
+6 RIGHT PASSING: rightfoot planted beneath/passingbehindhip, leftleg swings through bentknee and liftedfoot; arms pass neutral.
+7 RIGHT UP: rightleg extendsback onto toe; leftleg advances preparing exactlythecontact in0.
+
+Maintain an actual continuous support/recovery sequence and seamless7→0loop, not eight random walkingpictures. Footstance movesbackward relativetobody along lower-left; swingfoot movesforward upper-right whilelifted. No legswaps, no doubleknees, no missing limbs, no wholebodydirectionchanges. Onlyeightcells.

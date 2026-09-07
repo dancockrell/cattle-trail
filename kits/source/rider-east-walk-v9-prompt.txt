@@ -1,0 +1,14 @@
+Cattle Trail production pixel-art EIGHT-FRAME mounted WALK cycle. Reference image establishes the exact cowboy identity, chestnut horse with black mane/tail, brown saddle and EAST side-oriented high three-quarter camera. Use only identity/style/camera, NOT the reference's repeated gait poses, dust, ropes or weapons.
+ONE sheet FOUR COLUMNS by TWO ROWS, exactly EIGHT chronological frames left-to-right top row then bottom row. Whole horse with mounted cowboy in every cell. Every horse faces screen RIGHT EAST, no change of camera, no mirroring, no detached body parts. Generous pure #FF00FF magenta gutters and margins. No text, shadows, terrain, dust or effects.
+Cowboy brown hat, blue shirt, red scarf, tan pants, boots, quiet hands holding reins. Lock rider pose, horse torso, head, saddle and proportions across frames; minimal vertical bob, changing only legs for a calm short-stride walk. Horse barrel horizontal and stable, not running/rearing. Natural FOUR LEGS only, far legs shaded darker and offset in depth. Hooves stay close to ground during recovery, never high knee prance.
+Precisely DIFFERENT near FORELEG progression across all8 frames:
+1 near fore hoof forward PLANT, ahead of shoulder, low.
+2 weight-bearing fore hoof a little less forward, on ground.
+3 near fore hoof under shoulder, mid-stance, on ground.
+4 near fore hoof behind shoulder, late stance, on ground.
+5 near fore hoof furthest back, toe leaving ground, start recovery.
+6 near fore bends slightly to recover LOW beneath body, hoof just off ground.
+7 near fore swings forward low, approaching shoulder.
+8 near fore reaches forward low ready to plant, smoothly returns to frame1.
+Near HIND leg follows the same eight-phase progression OFFSET TWO FRAMES (quarter cycle), not moving in lockstep with near fore. Far fore is opposite phase to near fore; far hind opposite phase to near hind. Four-beat walking rhythm, mostly two or three supporting hooves. Do not substitute repeated forward-plant poses or a gallop. Modest stride distance, no giant extension.
+Hard authentic pixel clusters, crisp outlines and stepped shading matching reference, limited warm palette, no smooth gradients/antialias. Equal cell sizes, same torso position relative to every cell and stable ground baseline per row, each whole mounted sprite fully contained with broad clear magenta margin.

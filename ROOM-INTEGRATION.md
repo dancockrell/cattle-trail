@@ -1,6 +1,6 @@
 # Clear Fork room integration — 2026-09-08
 
-The default room uses 322 distinct actor frames, including the recovered original wagon, and 30 scenery variants in 40 placements. The source library contains 912 extracted candidate cells across 13 families. These are separate counts; extraction is not animation acceptance. Press K for the candidate browser. Original comparison art remains available with --original.
+The default room uses 322 distinct actor frames, including the recovered original wagon, and 30 scenery variants in 40 placements. The source library contains 936 extracted candidate cells across 13 families. These are separate counts; extraction is not animation acceptance. Press K for the candidate browser. Original comparison art remains available with --original.
 
 assets/room-art.json is the selected runtime authority. tools/curate_room.py builds it from kits/manifest.json, original wagon metadata, measured rider anchors and assets/sequence-curation.json. Exact source hashes, crop rectangles, frame regions, clip orders, timings and sockets remain traceable.
 

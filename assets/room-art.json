@@ -7905,6 +7905,278 @@
             93
           ],
           "id": "rider_235"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            358,
+            540
+          ],
+          "trim": [
+            58,
+            192,
+            338,
+            477
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            384,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_236"
+        },
+        {
+          "source_rect": [
+            358,
+            0,
+            680,
+            540
+          ],
+          "trim": [
+            22,
+            192,
+            302,
+            477
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            480,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_237"
+        },
+        {
+          "source_rect": [
+            680,
+            0,
+            1005,
+            540
+          ],
+          "trim": [
+            22,
+            193,
+            306,
+            477
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            576,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_238"
+        },
+        {
+          "source_rect": [
+            1005,
+            0,
+            1402,
+            540
+          ],
+          "trim": [
+            20,
+            192,
+            301,
+            477
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            672,
+            2784,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_239"
+        },
+        {
+          "source_rect": [
+            0,
+            540,
+            358,
+            1122
+          ],
+          "trim": [
+            57,
+            63,
+            338,
+            349
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            0,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_240"
+        },
+        {
+          "source_rect": [
+            358,
+            540,
+            679,
+            1122
+          ],
+          "trim": [
+            19,
+            63,
+            301,
+            349
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            96,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_241"
+        },
+        {
+          "source_rect": [
+            679,
+            540,
+            1000,
+            1122
+          ],
+          "trim": [
+            21,
+            63,
+            302,
+            349
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            192,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_242"
+        },
+        {
+          "source_rect": [
+            1000,
+            540,
+            1402,
+            1122
+          ],
+          "trim": [
+            21,
+            63,
+            305,
+            349
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rider-east-walk-v9.png",
+          "source_sha256": "a3a88605c0ffd8a9a815f5109f982bcada5c7d9c56379b9b2b057df66e0937f3",
+          "direction": "east",
+          "scale": 0.21754385964912282,
+          "job": "rider-east-walk-v9",
+          "action": "walk",
+          "clip_prefix": "v9_",
+          "atlas_rect": [
+            288,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_243"
         }
       ],
       "clips": {
@@ -8339,7 +8611,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 236,
+      "count": 244,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -26422,6 +26694,278 @@
             61
           ],
           "id": "eleanor_095"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            474,
+            433
+          ],
+          "trim": [
+            181,
+            63,
+            327,
+            353
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            0,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_096"
+        },
+        {
+          "source_rect": [
+            474,
+            0,
+            898,
+            433
+          ],
+          "trim": [
+            154,
+            69,
+            281,
+            352
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            64,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_097"
+        },
+        {
+          "source_rect": [
+            898,
+            0,
+            1332,
+            433
+          ],
+          "trim": [
+            144,
+            74,
+            293,
+            356
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            128,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_098"
+        },
+        {
+          "source_rect": [
+            1332,
+            0,
+            1774,
+            433
+          ],
+          "trim": [
+            143,
+            75,
+            280,
+            356
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            192,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_099"
+        },
+        {
+          "source_rect": [
+            0,
+            433,
+            468,
+            887
+          ],
+          "trim": [
+            181,
+            78,
+            328,
+            363
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            256,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_100"
+        },
+        {
+          "source_rect": [
+            468,
+            433,
+            892,
+            887
+          ],
+          "trim": [
+            143,
+            82,
+            284,
+            367
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            320,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_101"
+        },
+        {
+          "source_rect": [
+            892,
+            433,
+            1314,
+            887
+          ],
+          "trim": [
+            141,
+            84,
+            276,
+            367
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            384,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_102"
+        },
+        {
+          "source_rect": [
+            1314,
+            433,
+            1774,
+            887
+          ],
+          "trim": [
+            147,
+            84,
+            274,
+            366
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/eleanor-ne-walk-v4.png",
+          "source_sha256": "420a85562840f0fc41b1f75872f9a464cb763efb95d8449b562681d2ea54f582",
+          "direction": "northeast",
+          "scale": 0.1415929203539823,
+          "job": "eleanor-ne-walk-v4",
+          "action": "walk",
+          "clip_prefix": "v4_",
+          "atlas_rect": [
+            448,
+            768,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_103"
         }
       ],
       "clips": {
@@ -26512,7 +27056,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 96,
+      "count": 104,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
@@ -29196,6 +29740,278 @@
             61
           ],
           "id": "rustler_079"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            409,
+            486
+          ],
+          "trim": [
+            145,
+            86,
+            323,
+            408
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            0,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_080"
+        },
+        {
+          "source_rect": [
+            409,
+            0,
+            755,
+            486
+          ],
+          "trim": [
+            87,
+            85,
+            255,
+            405
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            64,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_081"
+        },
+        {
+          "source_rect": [
+            755,
+            0,
+            1104,
+            486
+          ],
+          "trim": [
+            92,
+            86,
+            255,
+            405
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            128,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_082"
+        },
+        {
+          "source_rect": [
+            1104,
+            0,
+            1536,
+            486
+          ],
+          "trim": [
+            94,
+            85,
+            268,
+            408
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            192,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_083"
+        },
+        {
+          "source_rect": [
+            0,
+            486,
+            406,
+            1024
+          ],
+          "trim": [
+            146,
+            85,
+            316,
+            402
+          ],
+          "row": 1,
+          "col": 0,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            256,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_084"
+        },
+        {
+          "source_rect": [
+            406,
+            486,
+            752,
+            1024
+          ],
+          "trim": [
+            90,
+            80,
+            253,
+            392
+          ],
+          "row": 1,
+          "col": 1,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            320,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_085"
+        },
+        {
+          "source_rect": [
+            752,
+            486,
+            1106,
+            1024
+          ],
+          "trim": [
+            95,
+            83,
+            263,
+            405
+          ],
+          "row": 1,
+          "col": 2,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            384,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_086"
+        },
+        {
+          "source_rect": [
+            1106,
+            486,
+            1536,
+            1024
+          ],
+          "trim": [
+            92,
+            84,
+            269,
+            407
+          ],
+          "row": 1,
+          "col": 3,
+          "source": "kits/source/rustler-ne-walk-v3.png",
+          "source_sha256": "402e4877bc87bea09b1c5ff3a93d9452c7fb3bf0267bb0273b97d56ce87c00ee",
+          "direction": "northeast",
+          "scale": 0.12461059190031153,
+          "job": "rustler-ne-walk-v3",
+          "action": "walk",
+          "clip_prefix": "v3_",
+          "atlas_rect": [
+            448,
+            640,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "rustler_087"
         }
       ],
       "clips": {
@@ -29276,7 +30092,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 80,
+      "count": 88,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."

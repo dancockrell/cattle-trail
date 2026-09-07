@@ -138,6 +138,10 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_stride_compare.call_deferred()
+	if "--movement-batch" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_movement_batch.call_deferred()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -272,6 +276,12 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--movement-batch" in OS.get_cmdline_user_args():
+		for subject in stride_subjects:
+			var heading: Vector2 = subject.get_meta("review_direction")
+			subject.position += heading*24.0*delta
+			subject.pose(true,heading,36)
+		return
 	if "--stride-compare" in OS.get_cmdline_user_args():
 		for subject in stride_subjects:
 			var motion := Vector2(1,-1).normalized()*18.75*delta
@@ -557,6 +567,7 @@ func run_stride_compare() -> void:
 	var trial: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/stride-trial.json"))
 	var index := 0
 	var comparison_keys := ["v5","v6_curated","v7_row"] if "--stride-v7" in OS.get_cmdline_user_args() else ["v5","v6_row","v6_curated"]
+	if "--stride-v8" in OS.get_cmdline_user_args(): comparison_keys = ["v5","v6_curated","v8_row"]
 	for key in comparison_keys:
 		var subject := Actor.new()
 		subject.configure("rider",trial.variants[key])
@@ -566,9 +577,32 @@ func run_stride_compare() -> void:
 		index += 1
 	objective.text = "STRIDE COMPARISON / left V5 / middle V6 row order / right V6 curated order"
 	if "--stride-v7" in OS.get_cmdline_user_args(): objective.text = "STRIDE COMPARISON / left V5 / middle V6 curated / right V7 low-step edit"
+	if "--stride-v8" in OS.get_cmdline_user_args(): objective.text = "STRIDE COMPARISON / left V5 / middle V6 curated / right V8 whole-sprite sequence"
 	journal.text = "Same 18-pixel diagnostic stride and .96-second cycle. Compare foot support and loop continuity."
 	await get_tree().create_timer(5.76).timeout
 	print("STRIDE COMPARISON: three source sequences rendered over fixed ground; physical acceptance remains separate")
+	get_tree().quit()
+
+func run_movement_batch() -> void:
+	for actor in actors.get_children(): actor.visible = false
+	var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://kits/manifest.json"))
+	var entries := [["rider","v9_walk_east","east",Vector2.RIGHT],["eleanor","v4_walk_northeast","northeast",Vector2(1,-1).normalized()],["rustler","v3_walk_northeast","northeast",Vector2(1,-1).normalized()]]
+	for index in range(entries.size()):
+		var entry: Array = entries[index]
+		var spec: Dictionary = catalog.families[entry[0]].duplicate(true)
+		spec.clips["walk_"+entry[2]] = spec.clips[entry[1]].duplicate(true)
+		spec.clips.idle = {"frames":[spec.clips[entry[1]].frames[0]],"fps":1,"loop":true}
+		spec.locomotion = {"nominal_speed":36}
+		var subject := Actor.new()
+		subject.configure(entry[0],spec)
+		subject.position = Vector2(100+index*170,270)
+		subject.set_meta("review_direction",entry[3])
+		actors.add_child(subject)
+		stride_subjects.append(subject)
+	objective.text = "MOVEMENT BATCH / rider east / Eleanor northeast / rustler northeast"
+	journal.text = "Whole-sprite movement candidates at native room scale."
+	await get_tree().create_timer(5.0).timeout
+	print("MOVEMENT BATCH: three new character sequences rendered at native room scale")
 	get_tree().quit()
 
 func run_sequence_review() -> void:

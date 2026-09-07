@@ -14,3 +14,5 @@ Godot 4.3 stable, Windows, OpenGL compatibility renderer on NVIDIA RTX 4070.
 Current room screenshots are actual engine output. Older room-playback, pose-review and herd-review movies are historical comparison records. Source tests and exports do not imply user visual approval. See VISUAL-AUDIT.md for the concrete remaining animation work. Git history is local; no push or remote publication is claimed.
 
 Latest parallel batch: 16 longhorn state sprites, 16 grass/plant clusters and 8 rider walk candidates extracted; all 816 kit cells pass source/alpha/bounds checks. Full gameplay QA passed with the new grass selection and revised neck attachment. The subsequent Windows export and kit browser verification cover all 912 cells.
+
+Movement production follow-up: 24 additional whole sprites extracted, bringing the current candidate count to 936. movement-batch-review.mp4 renders the east rider and rear-oblique human movement strips at native room scale. stride-v8-comparison.mp4 compares the existing and newer northeast rider sequences. These review modes preserve the current room selection. Windows export/launch and kit browser loading passed for 936 cells.

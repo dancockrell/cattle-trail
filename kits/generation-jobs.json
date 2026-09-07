@@ -986,5 +986,47 @@
     "rows": 4,
     "columns": 4,
     "prompt_file": "kits/source/rustler-state-v2-prompt.txt"
+  },
+  {
+    "id": "rider-east-walk-v9",
+    "family": "rider",
+    "rows": 2,
+    "columns": 4,
+    "direction": "east",
+    "actions": [
+      "walk",
+      "walk"
+    ],
+    "clip_prefix": "v9_",
+    "prompt_file": "kits/source/rider-east-walk-v9-prompt.txt",
+    "ref": 0
+  },
+  {
+    "id": "eleanor-ne-walk-v4",
+    "family": "eleanor",
+    "rows": 2,
+    "columns": 4,
+    "direction": "northeast",
+    "actions": [
+      "walk",
+      "walk"
+    ],
+    "clip_prefix": "v4_",
+    "prompt_file": "kits/source/eleanor-ne-walk-v4-prompt.txt",
+    "ref": 1
+  },
+  {
+    "id": "rustler-ne-walk-v3",
+    "family": "rustler",
+    "rows": 2,
+    "columns": 4,
+    "direction": "northeast",
+    "actions": [
+      "walk",
+      "walk"
+    ],
+    "clip_prefix": "v3_",
+    "prompt_file": "kits/source/rustler-ne-walk-v3-prompt.txt",
+    "ref": 1
   }
 ]
