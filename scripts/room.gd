@@ -177,8 +177,10 @@ func build_ui() -> void:
 		button.add_theme_stylebox_override("normal", panel_style())
 		button.add_theme_stylebox_override("hover", panel_style())
 		button.add_theme_stylebox_override("pressed", panel_style())
+		button.add_theme_stylebox_override("disabled", panel_style())
 		button.add_theme_font_size_override("font_size", 17)
 		button.add_theme_color_override("font_color", Color("382413"))
+		button.add_theme_color_override("font_disabled_color", Color("382413"))
 		button.add_theme_color_override("font_hover_color", Color("94451d"))
 		button.add_theme_color_override("font_pressed_color", Color("94451d"))
 		button.focus_mode = Control.FOCUS_NONE
