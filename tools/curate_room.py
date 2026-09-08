@@ -148,6 +148,11 @@ for item in [(0,50,323),(2,205,93),(4,464,303),(8,578,317),(12,322,315)]:add('sc
 for item in [(0,64,139),(4,51,119),(9,108,148),(7,125,139),(12,49,163)]:add('camp',*item)
 for i,(x,y) in enumerate([(76,285),(123,304),(216,305),(255,318),(346,292),(398,313),(522,297),(565,277),(598,121),(410,96),(315,109),(169,97),(234,72),(462,91),(542,95),(37,205),(611,223),(90,185),(446,267),(194,278)]):
     add('grass',[0,1,3,4,5,8,9,10,12,13][i%10],x,y)
+# Deterministic native-pixel groundcover selection from the rich Texas sheet.
+from build_texas_scenery import build as build_texas_scenery
+texas = build_texas_scenery()
+out['scenery'].extend(texas['placements'])
+out['texas_scenery_catalog'] = 'assets/texas-scenery.json'
 out['integrated_unique_actor_frames']=sum(len({i for c in s['clips'].values() for i in c['frames']}) for s in out['sprites'].values())
 out['integrated_unique_scenery_frames']=len({(s['family'],s['frame']) for s in out['scenery']})
 (root/'assets/room-art.json').write_text(json.dumps(out,indent=2)+'\n')

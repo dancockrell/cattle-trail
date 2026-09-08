@@ -215,9 +215,11 @@ func place_scenery() -> void:
 		prop.centered = false
 		prop.offset = -Vector2(entry.anchor[0], entry.anchor[1])
 		prop.position = Vector2(entry.position[0], entry.position[1])
+		var density := clampf(float(entry.get("pixels_per_world_unit", 1.0)), 1.0, 8.0)
+		prop.scale = Vector2.ONE / density
 		prop.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		# Ground-cover stays under hooves; tall props share the actors' ground Y sort.
-		if entry.family == "grass":
+		if entry.family == "grass" or bool(entry.get("ground_cover", false)):
 			world.add_child(prop)
 			world.move_child(prop, actors.get_index())
 		else:

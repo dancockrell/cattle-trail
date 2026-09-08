@@ -31654,6 +31654,650 @@
       ],
       "collision_radius": 0,
       "source_frame_id": "grass_013"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 0,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        22,
+        169
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 1,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        18,
+        245
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 2,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        39,
+        312
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_04"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 3,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        75,
+        333
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_07"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 4,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        114,
+        330
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 5,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        152,
+        340
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 6,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        194,
+        327
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_04"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 7,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        234,
+        338
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 8,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        277,
+        330
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 9,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        307,
+        345
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_03"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 10,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        349,
+        333
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_07"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 0,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        384,
+        342
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 1,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        425,
+        334
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 2,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        470,
+        344
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_04"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 3,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        511,
+        333
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "dry_grass_07"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 4,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        553,
+        341
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 5,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        598,
+        332
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 6,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        618,
+        270
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "mixed_grass_04"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 7,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        620,
+        234
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 8,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        619,
+        198
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_02"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 9,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        619,
+        156
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_03"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 10,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        608,
+        94
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "flowers_07"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 11,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        561,
+        84
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "shrubs_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 12,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        485,
+        82
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "shrubs_03"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 13,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        331,
+        81
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "shrubs_06"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 14,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        236,
+        84
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "rocks_01"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 15,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        171,
+        81
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "rocks_03"
+    },
+    {
+      "family": "texas_groundcover",
+      "frame": 11,
+      "texture": "res://assets/texas-scenery.png",
+      "region": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "position": [
+        25,
+        121
+      ],
+      "pixels_per_world_unit": 4,
+      "ground_cover": true,
+      "collision_radius": 0,
+      "source_frame_id": "shrubs_01"
     }
   ],
   "excluded": "Cattle graze/rest turns; Eleanor medical/camp bag changes; rustler reaction strips; unverified environment connections.",
@@ -31672,6 +32316,7 @@
     "sampling": "nearest",
     "provenance": "Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt"
   },
+  "texas_scenery_catalog": "assets/texas-scenery.json",
   "integrated_unique_actor_frames": 330,
-  "integrated_unique_scenery_frames": 30
+  "integrated_unique_scenery_frames": 46
 }
