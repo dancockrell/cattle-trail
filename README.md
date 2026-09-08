@@ -60,3 +60,9 @@ The default room has eight-way selected rider/cattle movement. The northeast rid
 The Windows export includes runtime assets and scripts, excluding raw video, source sheets, documents, and extraction tools. Keep this source project to edit or rebuild the game.
 
 Source follow-up: trail time now advances during play at one game minute per real second, and shared-rest availability shows its remaining trail minutes. Saves preserve this time. The Windows executable still predates these source changes.
+
+## Lantern crossing in the current source
+
+After completing Eleanor's three-cattle calming activity, return to the wagon as the trail boss and choose Companion [Tab]. Eleanor takes a real brass lantern prop to the pale crossing spirit. Talk beside it to settle it, then Talk again to begin guiding. Talk beside each of three stranded cattle and lead it east past the spirit; reaching the arrival area with that steer earns progress. Return to the wagon and Talk after all three cross. Completion grants 10 trust once and does not choose romance.
+
+Companion pauses the encounter and returns control at the wagon; choosing it there resumes the checkpoint. Loading preserves physical positions and guided cattle IDs; Talk beside the current steer to reacquire following. The source uses the existing dry trail crossing, not a newly painted water ford. Eleanor's lantern hangs from her belt during existing walking clips while full carrying cycles are repaired. This source integration passed isolated controller checks, not a new rendered gameplay run; the Windows binary remains older.
