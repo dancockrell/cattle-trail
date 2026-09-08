@@ -41,6 +41,11 @@ static func validate(data: Dictionary) -> bool:
 	if data.has("generated_companions"):
 		var roster := GeneratedRoster.new()
 		if not roster.load_dict(data.generated_companions): return false
+	if data.has("ada_cart_position") and not valid_point(data.ada_cart_position): return false
+	if data.has("ada_cart_heading"):
+		if not valid_point(data.ada_cart_heading): return false
+		var heading := Vector2(data.ada_cart_heading[0],data.ada_cart_heading[1])
+		if absf(heading.length()-1.0)>.001: return false
 	if data.has("ada_cart_adventure"):
 		if not data.ada_cart_adventure is Dictionary or not valid_point(data.get("ada_cart_position")): return false
 		var cart := CartAdventure.new()

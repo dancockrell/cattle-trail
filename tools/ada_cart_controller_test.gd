@@ -51,6 +51,7 @@ func _initialize():
 	assert(owner.room.buttons.get_child(4).text.contains("Open"))
 	controller.interact()
 	assert(owner.cart_adventure.stage=="drive" and controller.movement_speed()==32)
+	assert(controller.drive_velocity(Vector2.RIGHT,.1).length()>0)
 	controller.vehicle.position=controller.STOPS[1]
 	controller.tick(0)
 	assert(owner.cart_adventure.checkpoints.is_empty())
@@ -59,6 +60,7 @@ func _initialize():
 	assert(owner.cart_adventure.checkpoints==[0])
 	controller.vehicle.position=Vector2(350,300)
 	controller.pause_or_resume()
+	assert(controller.motion.speed==0, "Pause must stop inertial movement")
 	assert(owner.last_position==Vector2(350,300),"Parking the empty vehicle must not overwrite the saved driving point")
 	controller.interact()
 	assert(controller.vehicle.position==Vector2(350,300))

@@ -384,9 +384,14 @@ func _physics_process(delta: float) -> void:
 	if direction != Vector2.ZERO and controlled==player: facing = direction
 	var previous_position: Vector2 = controlled.position
 	var movement_speed := 28.0 if controlled==eleanor else ride_speed
-	if companion != null and companion.cart != null and companion.cart.is_active(): movement_speed = companion.cart.movement_speed()
-	controlled.position = limit_position(controlled.position + direction * movement_speed * delta)
+	var cart_active: bool = companion != null and companion.cart != null and companion.cart.is_active()
+	var controlled_velocity := direction * movement_speed
+	if cart_active: controlled_velocity = companion.cart.drive_velocity(direction,delta)
+	controlled.position = limit_position(controlled.position + controlled_velocity * delta,15.0 if cart_active else 0.0)
 	var actual_motion: Vector2 = controlled.position - previous_position
+	if cart_active:
+		companion.cart.motion.collision(actual_motion / delta)
+		direction = companion.cart.motion.heading
 	controlled.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
 		var velocity := Vector2.ZERO
@@ -440,27 +445,32 @@ func _physics_process(delta: float) -> void:
 		qa_done = true
 		run_qa()
 
-func limit_position(at: Vector2) -> Vector2:
-	var result := at.clamp(Vector2(24, 71), Vector2(616, 303))
+func limit_position(at: Vector2, extra_clearance := 0.0) -> Vector2:
+	var extra := clampf(extra_clearance,0,24) if is_finite(extra_clearance) else 0.0
+	var low := Vector2(24,71)+Vector2.ONE*extra
+	var high := Vector2(616,303)-Vector2.ONE*extra
+	var result := at.clamp(low, high)
 	# All moving actors use the same wagon footprint, including lassoed cattle.
-	if WAGON_FOOTPRINT.has_point(result):
-		var exits := [Vector2(38.9,result.y),Vector2(139.1,result.y),Vector2(result.x,72.9),Vector2(result.x,115.1)]
-		var closest: Vector2 = exits[0]
+	var wagon := WAGON_FOOTPRINT.grow(extra)
+	if wagon.has_point(result):
+		var exits := [Vector2(wagon.position.x-.1,result.y),Vector2(wagon.end.x+.1,result.y),Vector2(result.x,wagon.position.y-.1),Vector2(result.x,wagon.end.y+.1)]
+		var closest := Vector2.INF
 		for point in exits:
+			if point != point.clamp(low,high): continue
 			if result.distance_squared_to(point) < result.distance_squared_to(closest): closest = point
 		result = closest
 	for entry in solid_scenery:
 		var center := Vector2(entry.position[0], entry.position[1])
 		var delta := result - center
-		var radius := float(entry.collision_radius) + 7.0
+		var radius := float(entry.collision_radius) + 7.0 + extra
 		if delta.length() < radius:
 			var push := delta.normalized() if delta.length() > 0 else center.direction_to(WORLD / 2)
 			var candidate := center + push * radius
-			if candidate.x < 24 or candidate.x > 616 or candidate.y < 71 or candidate.y > 303:
+			if candidate.x < low.x or candidate.x > high.x or candidate.y < low.y or candidate.y > high.y:
 				candidate = center + center.direction_to(Vector2(320,187)) * radius
 			result = candidate
-	if companion != null and companion.mechanic != null: result = companion.mechanic.limit_motion(result)
-	return result.clamp(Vector2(24, 71), Vector2(616, 303))
+	if companion != null and companion.mechanic != null: result = companion.mechanic.limit_motion(result,extra)
+	return result.clamp(low, high)
 
 func secured_count() -> int:
 	var count := 0
@@ -887,7 +897,7 @@ func run_sequence_review() -> void:
 		rope_time = 0
 		rope_target = null
 		steer.position = player.position + cast_offsets[review_direction]
-		objective.text = "CAST REVIEW / " + review_direction + " / wind → cast → flight → catch → lead"
+		objective.text = "CAST REVIEW / " + review_direction + " / wind â†’ cast â†’ flight â†’ catch â†’ lead"
 		lasso()
 		var cast_recipe: Dictionary = manifest.sprites.rider.clips["lasso_"+review_direction]
 		var release_ordinal: int = manifest.sprites.rider.action_events["lasso_"+review_direction].frame

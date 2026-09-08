@@ -161,8 +161,9 @@ func decorate_ui() -> void:
 func sync_after_load() -> void:
 	_sync_view()
 
-func limit_motion(point: Vector2) -> Vector2:
+func limit_motion(point: Vector2, extra_clearance := 0.0) -> Vector2:
 	if not _unlocked() or not is_instance_valid(machine): return point
 	var away := point-machine.position
-	if away.length()>=30: return point
-	return machine.position+(away.normalized() if away.length()>0 else Vector2.DOWN)*30
+	var radius := 30.0+extra_clearance
+	if away.length()>=radius: return point
+	return machine.position+(away.normalized() if away.length()>0 else Vector2.DOWN)*radius

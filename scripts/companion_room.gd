@@ -209,6 +209,8 @@ func save_game(test_path := "") -> bool:
 	data["ada_cart_adventure"] = cart_adventure.to_dict()
 	var cart_position: Vector2 = cart.position_for_save() if cart != null else CartRoom.PARK
 	data["ada_cart_position"] = [cart_position.x,cart_position.y]
+	var cart_heading: Vector2 = cart.motion.heading if cart != null else Vector2.RIGHT
+	data["ada_cart_heading"] = [cart_heading.x,cart_heading.y]
 	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
@@ -231,6 +233,8 @@ func load_game(test_path := "") -> bool:
 	cart_adventure = restored_cart
 	var cart_point: Array = data.get("ada_cart_position",[220,280])
 	cart.saved_position = Vector2(cart_point[0],cart_point[1])
+	var cart_heading: Array = data.get("ada_cart_heading",[1,0])
+	cart.motion.heading = Vector2(cart_heading[0],cart_heading[1]).normalized()
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
 	room.eleanor.position = room.limit_position(Vector2(data.eleanor[0],data.eleanor[1]))

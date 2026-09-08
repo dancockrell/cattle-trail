@@ -1,6 +1,8 @@
 extends RefCounted
 ## A short playable outing: route three valves, drive the trail, return together.
 const Actor = preload("res://scripts/actor.gd")
+const Motion = preload("res://scripts/cart_motion.gd")
+var motion = Motion.new()
 const PARK := Vector2(220,280)
 const STOPS := [Vector2(330,300), Vector2(445,300), Vector2(405,235)]
 var owner
@@ -16,8 +18,14 @@ func _init(companion): owner = companion
 func is_active() -> bool: return state.status == "active"
 func unlocked() -> bool: return owner.ada_state.recruitment == "recruited"
 func movement_speed() -> float: return 32.0 if state.stage in ["drive", "return_to_camp"] else 0.0
+func drive_velocity(input: Vector2, delta: float) -> Vector2:
+	if not is_active() or movement_speed()==0:
+		motion.stop()
+		return Vector2.ZERO
+	return motion.step(input,delta)
 func position_for_save() -> Vector2: return vehicle.position if is_active() and is_instance_valid(vehicle) else saved_position
 func sync_after_load():
+	motion.stop()
 	sync_view()
 	if is_active() and is_instance_valid(vehicle): vehicle.position = saved_position
 func _near() -> bool: return room.player.position.distance_to(PARK) <= 50
@@ -75,6 +83,7 @@ func interact() -> bool:
 		if not is_instance_valid(vehicle): return true
 		var result: Dictionary = state.resume(true,false) if state.status == "paused" else state.begin(true,false)
 		if not result.ok: return true
+		motion.stop()
 		vehicle.position = saved_position
 		room.target = Vector2.INF
 		_say("board","You get the second seat. Try to look impressed before we start moving.")
@@ -97,6 +106,7 @@ func interact() -> bool:
 		var result: Dictionary = state.finish_at_camp(vehicle.position.distance_to(PARK)<=32)
 		if result.ok:
 			owner.ada_state.trust = mini(100,owner.ada_state.trust+15)
+			motion.stop()
 			saved_position = PARK
 			room.player.position = PARK+Vector2(0,20)
 			room.target = Vector2.INF
@@ -114,6 +124,7 @@ func toggle_valve(index: int) -> bool:
 
 func pause_or_resume() -> bool:
 	if is_active():
+		motion.stop()
 		saved_position = position_for_save()
 		state.pause()
 		room.player.position = PARK+Vector2(0,20)

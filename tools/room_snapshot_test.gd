@@ -11,6 +11,12 @@ func _initialize() -> void:
 	for index in range(6): cattle.append({"position":[300+index*30,180],"secured":false})
 	var data := {"version":1,"player":[199,231],"eleanor":[148,127],"cattle":cattle,"cash":342,"ammo":6,"minutes":720,"hits":0,"won":false,"talked":false,"rustler_active":true,"spoken_beats":{},"companion":State.new().to_dict()}
 	assert(Snapshot.validate(data))
+	var orphaned_cart := data.duplicate(true)
+	orphaned_cart.ada_cart_position = "bad position"
+	assert(not Snapshot.validate(orphaned_cart))
+	orphaned_cart = data.duplicate(true)
+	orphaned_cart.ada_cart_heading = [0,0]
+	assert(not Snapshot.validate(orphaned_cart))
 	data["generated_companions"] = Roster.new().to_dict()
 	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(data))))
 	var bad_roster := data.duplicate(true)
@@ -92,7 +98,11 @@ func _initialize() -> void:
 	ada.repair.test_machine()
 	ada.invite(true)
 	data.ada_companion = ada.to_dict()
+	data.ada_cart_heading = [0,-1]
 	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(data))),"Active cart restores with real prerequisite states")
+	var bad_heading := data.duplicate(true)
+	bad_heading.ada_cart_heading = [0,0]
+	assert(not Snapshot.validate(bad_heading))
 	var bad_cart := data.duplicate(true)
 	bad_cart.ada_cart_position = [INF,280]
 	assert(not Snapshot.validate(bad_cart))
