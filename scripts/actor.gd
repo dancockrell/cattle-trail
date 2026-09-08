@@ -21,12 +21,15 @@ var event_fired := false
 var clip_anchors: Dictionary = {}
 var clip_indices: Dictionary = {}
 var frame_sockets: Dictionary = {}
+var frame_anchors: Dictionary = {}
 var procedural_rope_clips: Array = []
 var turn = TurnTransition.new()
 var turn_definitions: Dictionary = {}
 var turn_target_clip := ""
 var turn_target_speed := 1.0
 var turn_phase_rate := 0.0
+var pixels_per_world_unit := 1.0
+var default_anchor := Vector2.ZERO
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
@@ -34,15 +37,21 @@ func configure(id: String, spec: Dictionary) -> void:
 	clip_events = spec.get("action_events", {})
 	clip_anchors = spec.get("clip_anchors", {})
 	frame_sockets = spec.get("frame_sockets", {})
+	frame_anchors = spec.get("frame_anchors", {})
 	procedural_rope_clips = spec.get("procedural_rope_clips", [])
 	turn_definitions = spec.get("turn_transitions",{})
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
 	clip_nominal_speeds = spec.get("locomotion", {}).get("clip_nominal_speeds", {})
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
+	# Atlas coordinates stay in source pixels; gameplay coordinates stay in trail units.
+	var density: Variant = spec.get("pixels_per_world_unit", 1)
+	pixels_per_world_unit = float(density) if (density is int or density is float) and is_finite(float(density)) and float(density)>=1.0 and float(density)<=8.0 and float(density)==floorf(float(density)) else 1.0
+	default_anchor = Vector2(spec.anchor[0], spec.anchor[1])
 	art = AnimatedSprite2D.new()
 	art.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	art.centered = false
-	art.position = -Vector2(spec.anchor[0], spec.anchor[1])
+	art.scale = Vector2.ONE / pixels_per_world_unit
+	art.position = -default_anchor / pixels_per_world_unit
 	var frames := SpriteFrames.new()
 	frames.remove_animation("default")
 	var texture := load(spec.texture) as Texture2D
@@ -61,16 +70,26 @@ func configure(id: String, spec: Dictionary) -> void:
 			var duration_weight := float(clip.get("durations", [])[ordinal]) * float(clip.fps) if clip.has("durations") else 1.0
 			frames.add_frame(clip_name, region, duration_weight)
 	art.sprite_frames = frames
-	directional = frames.has_animation("walk_east")
+	directional = bool(spec.get("directional", frames.has_animation("walk_east")))
 	add_child(art)
 	art.animation_changed.connect(update_anchor)
+	art.frame_changed.connect(update_anchor)
 	art.play("idle")
 	update_anchor()
 
 func update_anchor() -> void:
+	var point := default_anchor
 	if clip_anchors.has(str(art.animation)):
 		var anchor: Array = clip_anchors[str(art.animation)]
-		art.position = -Vector2(anchor[0],anchor[1])
+		point = Vector2(anchor[0],anchor[1])
+	var indices: Array = clip_indices.get(str(art.animation),[])
+	if art.frame>=0 and art.frame<indices.size():
+		var key := str(int(indices[art.frame]))
+		if frame_anchors.has(key):
+			var anchor: Array = frame_anchors[key]
+			point = Vector2(anchor[0],anchor[1])
+	# Returning from a special clip restores the default, including after a reflection.
+	art.position = -point * art.scale
 
 func socket_world(socket_name: String, fallback: Vector2) -> Vector2:
 	var source_index: int = int(clip_indices[str(art.animation)][art.frame])
@@ -96,6 +115,8 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 			if desired == facing or absf(old_direction.angle_to(direction)) > boundary: facing = desired
 		var name := (gait+"_" if moving else "idle_") + facing
 		if not art.sprite_frames.has_animation(name): name = ("walk_" if moving else "idle_")+facing
+		if not art.sprite_frames.has_animation(name): name = "idle_"+facing
+		if not art.sprite_frames.has_animation(name): name = "idle"
 		var clip_speed := float(clip_nominal_speeds.get(name,nominal_speed))
 		var playback_speed := clampf(speed / clip_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
 		if previous_facing!=facing or (turn.active and turn.moving!=moving):
@@ -126,7 +147,7 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 		return
 	if absf(direction.x) > 0.1:
 		# Reflect the complete anchored sprite, not its texture within the atlas cell.
-		art.scale.x = -1.0 if direction.x < 0.0 else 1.0
+		art.scale.x = (-1.0 if direction.x < 0.0 else 1.0) / pixels_per_world_unit
 		var anchor := absf(art.position.x)
 		art.position.x = anchor if direction.x < 0.0 else -anchor
 	var clip := "ride" if kind == "rider" else "walk"
@@ -144,7 +165,7 @@ func clip_durations(clip: StringName) -> Array:
 func direction_name(direction: Vector2) -> String:
 	if absf(direction.x) > absf(direction.y) * 0.4142 and absf(direction.y) > absf(direction.x) * 0.4142:
 		var diagonal := ("north" if direction.y < 0 else "south") + ("east" if direction.x >= 0 else "west")
-		if art.sprite_frames.has_animation("walk_" + diagonal): return diagonal
+		if art.sprite_frames.has_animation("walk_" + diagonal) or art.sprite_frames.has_animation("idle_" + diagonal): return diagonal
 	if absf(direction.x) >= absf(direction.y):
 		return "east" if direction.x >= 0 else "west"
 	return "south" if direction.y >= 0 else "north"

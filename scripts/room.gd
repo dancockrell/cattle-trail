@@ -287,6 +287,7 @@ func layout_ui() -> void:
 	var zoom := floorf(ratio) if ratio >= 1.0 else ratio
 	view.size = WORLD * zoom
 	view.position = Vector2(floorf((size.x - view.size.x) / 2), 83)
+	update_render_density(zoom)
 	var left := maxf(12, view.position.x)
 	var width := size.x - left * 2
 	title.position = Vector2(left, 10)
@@ -309,6 +310,14 @@ func layout_ui() -> void:
 		var index: int = button.get_index()
 		button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [R]"][index]
 		button.custom_minimum_size.x = 0 if size.x < 600 else 80
+
+func update_render_density(display_zoom: float) -> void:
+	if not is_instance_valid(viewport): return
+	# Render at display density instead of crushing detailed actors through 640x360.
+	# Canvas scaling leaves positions, collisions, rope sockets and input in trail units.
+	var density := clampi(int(floorf(display_zoom)),1,4) if is_finite(display_zoom) else 1
+	viewport.size = Vector2i(WORLD) * density
+	viewport.canvas_transform = Transform2D.IDENTITY.scaled(Vector2.ONE * density)
 
 func world_input(event: InputEvent) -> void:
 	if qa_mode: return
