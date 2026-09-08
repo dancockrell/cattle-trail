@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "sheet": 4,
+  "grid": [
+    8,
+    4
+  ],
+  "figure_count": 32,
+  "source": "sheet4-source.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "source_sha256": "0872a8f6bb23fa67eb8b7f3cb3e031e4274ec29b6c67c2810ec9c9f25a1036cd",
+  "prompt": "sheet4-prompt.txt",
+  "tool": "builtin image_gen",
+  "reference": "kits/wardrobe/eleanor-high-angle-v1/source.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "atlas": "sheet4-atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "source_rect": [
+        61,
+        10,
+        103,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        29
+      ],
+      "native_size": [
+        103,
+        215
+      ],
+      "native_rgba_sha256": "20756af2ded4915ea606b1e30f56b954f80862e3e4b3ed970a7abe8e06fb661c",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "source_rect": [
+        283,
+        10,
+        102,
+        215
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        29
+      ],
+      "native_size": [
+        102,
+        215
+      ],
+      "native_rgba_sha256": "7289f67ebfb59552048a37a3256ed545c3b3dd9b2ec545af0ae8e813158aa528",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "source_rect": [
+        505,
+        10,
+        102,
+        215
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        29
+      ],
+      "native_size": [
+        102,
+        215
+      ],
+      "native_rgba_sha256": "81e0f254d41b854d75cae7088aa8417555668e428e5db5a5550faa57572b6fbf",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "source_rect": [
+        721,
+        10,
+        107,
+        215
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        29
+      ],
+      "native_size": [
+        107,
+        215
+      ],
+      "native_rgba_sha256": "96ae7b00a36fb0c60dc9fae23a05a6ab6345d45c9713d9f197fa6a782bce610c",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "source_rect": [
+        948,
+        10,
+        99,
+        211
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        33
+      ],
+      "native_size": [
+        99,
+        211
+      ],
+      "native_rgba_sha256": "dd9e891f5a1a417b911f9b5337e3b2013fdfb931db99073eae53dcab7f3128b5",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "source_rect": [
+        1169,
+        10,
+        101,
+        214
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        78,
+        30
+      ],
+      "native_size": [
+        101,
+        214
+      ],
+      "native_rgba_sha256": "f88b9e9b67709ae32d36a889498b4f7fd167bdb7d9a64139385c315dceb00914",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 6,
+      "row": 0,
+      "column": 6,
+      "source_rect": [
+        1391,
+        10,
+        102,
+        214
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        30
+      ],
+      "native_size": [
+        102,
+        214
+      ],
+      "native_rgba_sha256": "cb1c0021d4e41c707020bd2c71dae3acbbc25e8359f0be0d3a79c28a6a2f2540",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 7,
+      "row": 0,
+      "column": 7,
+      "source_rect": [
+        1612,
+        10,
+        103,
+        215
+      ],
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        29
+      ],
+      "native_size": [
+        103,
+        215
+      ],
+      "native_rgba_sha256": "6d12f47738bd00ee98388a1df1a8e38256763d25f14929a784161aba3cb8fb7a",
+      "requested_loop": "idle_breathing",
+      "observation": "Subtlebody differences and one larger stancechange; no seamlessbreathingcertification",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 8,
+      "row": 1,
+      "column": 0,
+      "source_rect": [
+        42,
+        232,
+        125,
+        210
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        66,
+        34
+      ],
+      "native_size": [
+        125,
+        210
+      ],
+      "native_rgba_sha256": "1855d0860088026076ae9850cd7906f96f120b1e1ab3c8c073c1dfef0b5a88b4",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 9,
+      "row": 1,
+      "column": 1,
+      "source_rect": [
+        266,
+        234,
+        125,
+        213
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        66,
+        31
+      ],
+      "native_size": [
+        125,
+        213
+      ],
+      "native_rgba_sha256": "e71b3d165aaba0bd8e30df04c8dd99eff1d9da09ac4cb3f73b4bd3751e8e3957",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 10,
+      "row": 1,
+      "column": 2,
+      "source_rect": [
+        477,
+        234,
+        135,
+        214
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        61,
+        30
+      ],
+      "native_size": [
+        135,
+        214
+      ],
+      "native_rgba_sha256": "1a9c05a57f26a5bad8b6d8911055019c312e770fcddadac37467d8beeff948cd",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 11,
+      "row": 1,
+      "column": 3,
+      "source_rect": [
+        710,
+        234,
+        124,
+        211
+      ],
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        66,
+        33
+      ],
+      "native_size": [
+        124,
+        211
+      ],
+      "native_rgba_sha256": "f564c8a9c1ecfae0f3aeabb9dbc7d14d695a67cb390831e9f9ff059fb90e2a80",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 12,
+      "row": 1,
+      "column": 4,
+      "source_rect": [
+        926,
+        238,
+        128,
+        211
+      ],
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        64,
+        33
+      ],
+      "native_size": [
+        128,
+        211
+      ],
+      "native_rgba_sha256": "a294d7e6f9abe6cd78a92e66252746a99538b4dac4e7eef9650beaa3ed5b50fe",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 13,
+      "row": 1,
+      "column": 5,
+      "source_rect": [
+        1152,
+        232,
+        125,
+        216
+      ],
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        66,
+        28
+      ],
+      "native_size": [
+        125,
+        216
+      ],
+      "native_rgba_sha256": "64047082539d5ed703d8113f1e168287cd28772c4e9d3a5311c787e8767f9d12",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 14,
+      "row": 1,
+      "column": 6,
+      "source_rect": [
+        1376,
+        232,
+        127,
+        215
+      ],
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        65,
+        29
+      ],
+      "native_size": [
+        127,
+        215
+      ],
+      "native_rgba_sha256": "35eb6f9afc5f5a5cf8f6037c0809ec724d54d54012a906e20424d77fd084c5bf",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 15,
+      "row": 1,
+      "column": 7,
+      "source_rect": [
+        1595,
+        234,
+        123,
+        208
+      ],
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        36
+      ],
+      "native_size": [
+        123,
+        208
+      ],
+      "native_rgba_sha256": "bce762e338e4a61d9b386f78f3663ca343eb11499c4d4c79e7f3db76079aa008",
+      "requested_loop": "lantern_carry_southeast",
+      "observation": "Lantern consistent screenleft, repeatedforwardleg silhouette",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 16,
+      "row": 2,
+      "column": 0,
+      "source_rect": [
+        55,
+        448,
+        107,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        29
+      ],
+      "native_size": [
+        107,
+        215
+      ],
+      "native_rgba_sha256": "12812e677b3030d7b84ea52ed6d33949000c0d01af400611a8d05bfad8ac891f",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 17,
+      "row": 2,
+      "column": 1,
+      "source_rect": [
+        255,
+        482,
+        143,
+        177
+      ],
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        57,
+        67
+      ],
+      "native_size": [
+        143,
+        177
+      ],
+      "native_rgba_sha256": "31d10f0094f6544ecc1fc02a824b840ffc2737b5b99a057be3e5a78e72101d1a",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 18,
+      "row": 2,
+      "column": 2,
+      "source_rect": [
+        474,
+        481,
+        142,
+        178
+      ],
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        57,
+        66
+      ],
+      "native_size": [
+        142,
+        178
+      ],
+      "native_rgba_sha256": "60a62c8ef7286cd3ae259d92cd203cf8771c6c91891937ddbccdc9d5984e8aac",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 19,
+      "row": 2,
+      "column": 3,
+      "source_rect": [
+        696,
+        479,
+        139,
+        180
+      ],
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        59,
+        64
+      ],
+      "native_size": [
+        139,
+        180
+      ],
+      "native_rgba_sha256": "51f46eb90e8677b93f9105e1bf38a4e25f5960721597da3b85015dbb65e7da22",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 20,
+      "row": 2,
+      "column": 4,
+      "source_rect": [
+        918,
+        484,
+        138,
+        176
+      ],
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        59,
+        68
+      ],
+      "native_size": [
+        138,
+        176
+      ],
+      "native_rgba_sha256": "e201f351b875f0f8b1ac2d2ae4179d27a24e337d4f7cf26a3a7e50caa37ebde9",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 21,
+      "row": 2,
+      "column": 5,
+      "source_rect": [
+        1142,
+        481,
+        139,
+        178
+      ],
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        59,
+        66
+      ],
+      "native_size": [
+        139,
+        178
+      ],
+      "native_rgba_sha256": "58181f0d839499402b0d2f40f3852ec897810d7747b3359e9b11b9c5f53bf191",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 22,
+      "row": 2,
+      "column": 6,
+      "source_rect": [
+        1369,
+        478,
+        147,
+        174
+      ],
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        55,
+        70
+      ],
+      "native_size": [
+        147,
+        174
+      ],
+      "native_rgba_sha256": "7ea23266a0cb3fed2e8726e429b506fe0a9272d50a03c0d01997d0722eb51db5",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 23,
+      "row": 2,
+      "column": 7,
+      "source_rect": [
+        1604,
+        448,
+        110,
+        215
+      ],
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        73,
+        29
+      ],
+      "native_size": [
+        110,
+        215
+      ],
+      "native_rgba_sha256": "b613579156304ea975f05b37bc70887657eedb09d85b96345cff2f13aaaa84e2",
+      "requested_loop": "field_care",
+      "observation": "Visiblekneeling/cloth/forearmcareprogression, retainedwholefigures",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 24,
+      "row": 3,
+      "column": 0,
+      "source_rect": [
+        59,
+        668,
+        104,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        29
+      ],
+      "native_size": [
+        104,
+        215
+      ],
+      "native_rgba_sha256": "6927b1cef85a3444e3ddaf6f600baf22536b3381fda5392e266eef893a87b3ab",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 25,
+      "row": 3,
+      "column": 1,
+      "source_rect": [
+        280,
+        668,
+        122,
+        215
+      ],
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        29
+      ],
+      "native_size": [
+        122,
+        215
+      ],
+      "native_rgba_sha256": "747561391a57ce0dd9894fb7209c7560043e01c34fef90f7fb6cba639547e1d4",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 26,
+      "row": 3,
+      "column": 2,
+      "source_rect": [
+        499,
+        670,
+        136,
+        213
+      ],
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        60,
+        31
+      ],
+      "native_size": [
+        136,
+        213
+      ],
+      "native_rgba_sha256": "5f795b38d1fd424f3ea4629a07f03d7f2626bbf579479936840c8e0ec3c5a687",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 27,
+      "row": 3,
+      "column": 3,
+      "source_rect": [
+        723,
+        667,
+        136,
+        216
+      ],
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        60,
+        28
+      ],
+      "native_size": [
+        136,
+        216
+      ],
+      "native_rgba_sha256": "d7f9c62c572e33ccd06d2f9648c3b2da98258890e83c429c14d29fd47c6ee47d",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 28,
+      "row": 3,
+      "column": 4,
+      "source_rect": [
+        950,
+        667,
+        98,
+        216
+      ],
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        28
+      ],
+      "native_size": [
+        98,
+        216
+      ],
+      "native_rgba_sha256": "bd1eb9110348515d2978e621632f43e2b4246f31b9c601df1e4f1de95e48a8c7",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 29,
+      "row": 3,
+      "column": 5,
+      "source_rect": [
+        1172,
+        668,
+        97,
+        215
+      ],
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        80,
+        29
+      ],
+      "native_size": [
+        97,
+        215
+      ],
+      "native_rgba_sha256": "61c71fba9f1b58cf31d9d58a0d141da544e8d2562939349e572a4c9e83d887ed",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 30,
+      "row": 3,
+      "column": 6,
+      "source_rect": [
+        1391,
+        668,
+        101,
+        215
+      ],
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        78,
+        29
+      ],
+      "native_size": [
+        101,
+        215
+      ],
+      "native_rgba_sha256": "2671db33758acc61b0f8b072b59b9afce03c5cb65ed2b9ff3032401bad10924a",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 31,
+      "row": 3,
+      "column": 7,
+      "source_rect": [
+        1611,
+        668,
+        104,
+        215
+      ],
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        29
+      ],
+      "native_size": [
+        104,
+        215
+      ],
+      "native_rgba_sha256": "d3ea2c6e39ec2f471d59f2c923a528f0810e7a55cd6f4a12a28de30ce952b584",
+      "requested_loop": "talk_gesture",
+      "observation": "Visible neutral/wave/openhand/point/laugh/nod/rest sequence",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    }
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "exact_unique_crops": 32,
+  "limitations": [
+    "32separatelyillustratedwholefigures; exactuniquehash doesnotprove anatomicallydistinctphase.",
+    "Requested8phasecycles needorder/contact/loopcuration beforeadmission.",
+    "No duplicatedpadding created byextraction; rawgeneratednear-repeatposes preservedhonestly."
+  ],
+  "processing": "Magenta huekey and whole-connected-figure crop; nativepixels preserved noresampling;256cellpadding only."
+}

@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "sheet": 2,
+  "grid": [
+    8,
+    4
+  ],
+  "figure_count": 32,
+  "source": "sheet2-source.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "source_sha256": "e625fd0a49d4ece76affcc4e47e293fb16c4e614449124a94f536d06a5c048dd",
+  "prompt": "sheet2-prompt.txt",
+  "tool": "builtin image_gen",
+  "reference": "kits/wardrobe/eleanor-high-angle-v1/source.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "atlas": "sheet2-atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "source_rect": [
+        63,
+        13,
+        121,
+        208
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        68,
+        36
+      ],
+      "native_size": [
+        121,
+        208
+      ],
+      "native_rgba_sha256": "e11f4022bb0c23aabecb361b87a73871e65e87085cfea6d441c28b548da566a3",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "source_rect": [
+        281,
+        12,
+        123,
+        208
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        36
+      ],
+      "native_size": [
+        123,
+        208
+      ],
+      "native_rgba_sha256": "e41e85e0cfa4e671d1d386816c5e93ad8c7e75eaeb14b4dc2161fc9e4d047b49",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "source_rect": [
+        499,
+        12,
+        119,
+        209
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        35
+      ],
+      "native_size": [
+        119,
+        209
+      ],
+      "native_rgba_sha256": "853d6baa4e3161797c6d119279b49a9096d826b6cce111c8ea2ee59f73a3e291",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "source_rect": [
+        715,
+        9,
+        119,
+        211
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        33
+      ],
+      "native_size": [
+        119,
+        211
+      ],
+      "native_rgba_sha256": "ef7ddfb2c1779617e7002228ab4823b81632f4a6c73b7e21e26c881ff1b36abd",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "source_rect": [
+        940,
+        10,
+        124,
+        210
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        66,
+        34
+      ],
+      "native_size": [
+        124,
+        210
+      ],
+      "native_rgba_sha256": "fb96d66581ac0e4f9fdd401ac6addee84cddcd92d647af81956bd9128508e781",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "source_rect": [
+        1164,
+        13,
+        127,
+        208
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        65,
+        36
+      ],
+      "native_size": [
+        127,
+        208
+      ],
+      "native_rgba_sha256": "60829c73531d0b6195216c3a4c9f1ca4392f0450d1d01aa49213d185a18ffdd4",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 6,
+      "row": 0,
+      "column": 6,
+      "source_rect": [
+        1389,
+        12,
+        116,
+        208
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        70,
+        36
+      ],
+      "native_size": [
+        116,
+        208
+      ],
+      "native_rgba_sha256": "28b39df935ee3a874f3d2b7336877ea8f5f0f7a3f1a1683733a0e37f63eabbbb",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 7,
+      "row": 0,
+      "column": 7,
+      "source_rect": [
+        1599,
+        9,
+        116,
+        212
+      ],
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        70,
+        32
+      ],
+      "native_size": [
+        116,
+        212
+      ],
+      "native_rgba_sha256": "0c44ce0ff461f31881fdf26a758edb621d6be77707c262f3f7b1e0ff84ddb2cc",
+      "requested_loop": "walk_northwest",
+      "observation": "Repeated broad strides, oppositelegsupport notcertified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 8,
+      "row": 1,
+      "column": 0,
+      "source_rect": [
+        64,
+        230,
+        100,
+        212
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        78,
+        32
+      ],
+      "native_size": [
+        100,
+        212
+      ],
+      "native_rgba_sha256": "9a36a5cfdb3db8d5c2b3163c7845e29e3116dcc12f02b20f5dc65f2506845b30",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 9,
+      "row": 1,
+      "column": 1,
+      "source_rect": [
+        284,
+        230,
+        101,
+        212
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        78,
+        32
+      ],
+      "native_size": [
+        101,
+        212
+      ],
+      "native_rgba_sha256": "2fef91ad403a43ded4613bffa15499723a1f5942603a283838f61789d62e9533",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 10,
+      "row": 1,
+      "column": 2,
+      "source_rect": [
+        501,
+        230,
+        102,
+        212
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        32
+      ],
+      "native_size": [
+        102,
+        212
+      ],
+      "native_rgba_sha256": "581ae500af2f2b75d65bddeed8bf18d9537219cfcef184660df3d7b034cfae3a",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 11,
+      "row": 1,
+      "column": 3,
+      "source_rect": [
+        719,
+        230,
+        107,
+        211
+      ],
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        33
+      ],
+      "native_size": [
+        107,
+        211
+      ],
+      "native_rgba_sha256": "14350b148ddb6486f5ba96016c98a2160413c6a49325e34ca1511b9db7cc6a22",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 12,
+      "row": 1,
+      "column": 4,
+      "source_rect": [
+        945,
+        230,
+        102,
+        212
+      ],
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        32
+      ],
+      "native_size": [
+        102,
+        212
+      ],
+      "native_rgba_sha256": "1122bded6c395e9b93c6f9e696314573ebc79a7e23779cee75bc37f4ad4667d2",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 13,
+      "row": 1,
+      "column": 5,
+      "source_rect": [
+        1167,
+        229,
+        104,
+        213
+      ],
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        31
+      ],
+      "native_size": [
+        104,
+        213
+      ],
+      "native_rgba_sha256": "1e839293320d1ab07123319c5e3d4bf2182643ce29ba030a0833652b80c10674",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 14,
+      "row": 1,
+      "column": 6,
+      "source_rect": [
+        1385,
+        230,
+        103,
+        212
+      ],
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        32
+      ],
+      "native_size": [
+        103,
+        212
+      ],
+      "native_rgba_sha256": "3f342f410e83f2a766aa485a4d31ffbcd4d3307b5df9b769e10d7b2c4b0bcdd4",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 15,
+      "row": 1,
+      "column": 7,
+      "source_rect": [
+        1605,
+        230,
+        106,
+        212
+      ],
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        32
+      ],
+      "native_size": [
+        106,
+        212
+      ],
+      "native_rgba_sha256": "ac7988ed7dc7123ca4766ce425651aa56e5a975339e3d52c847e7a493d91c36a",
+      "requested_loop": "walk_north",
+      "observation": "Front/backfootchanges visible, passing/contact orderunverified",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 16,
+      "row": 2,
+      "column": 0,
+      "source_rect": [
+        56,
+        452,
+        113,
+        210
+      ],
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        72,
+        34
+      ],
+      "native_size": [
+        113,
+        210
+      ],
+      "native_rgba_sha256": "36d11f072d7e39e94cc4383b46813ac80f122420738dc5de8e5a67fac4abf728",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 17,
+      "row": 2,
+      "column": 1,
+      "source_rect": [
+        274,
+        452,
+        118,
+        209
+      ],
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        35
+      ],
+      "native_size": [
+        118,
+        209
+      ],
+      "native_rgba_sha256": "81f4ff2cfb37ff4d5d6a386d0ba3999a11915351215ff4d2e8d104c3b4dbe679",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 18,
+      "row": 2,
+      "column": 2,
+      "source_rect": [
+        491,
+        452,
+        119,
+        210
+      ],
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        34
+      ],
+      "native_size": [
+        119,
+        210
+      ],
+      "native_rgba_sha256": "de9f5cac93a7bd4bc23cbb54fe0a625b712b4a642300c60816dca65f7c584c06",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 19,
+      "row": 2,
+      "column": 3,
+      "source_rect": [
+        706,
+        450,
+        122,
+        212
+      ],
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        32
+      ],
+      "native_size": [
+        122,
+        212
+      ],
+      "native_rgba_sha256": "cf6e089d063af55b80eb2bcbb2ba8204ea3744ee0a1dec98bb97d1da21cfa3d4",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 20,
+      "row": 2,
+      "column": 4,
+      "source_rect": [
+        938,
+        452,
+        119,
+        210
+      ],
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        34
+      ],
+      "native_size": [
+        119,
+        210
+      ],
+      "native_rgba_sha256": "e76dd4696047857c44b18a49aacbb5c199dfad698249257e990f2ea9177ac321",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 21,
+      "row": 2,
+      "column": 5,
+      "source_rect": [
+        1161,
+        451,
+        115,
+        210
+      ],
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        71,
+        34
+      ],
+      "native_size": [
+        115,
+        210
+      ],
+      "native_rgba_sha256": "7a897452bb657945ccab636cbb8540f204c386f1ff160fd3554070332d3c29d7",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 22,
+      "row": 2,
+      "column": 6,
+      "source_rect": [
+        1378,
+        451,
+        113,
+        211
+      ],
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        72,
+        33
+      ],
+      "native_size": [
+        113,
+        211
+      ],
+      "native_rgba_sha256": "cedb758088fe5c424495408540c54541d86478e6d58320490f0921a2cfb8ab4d",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 23,
+      "row": 2,
+      "column": 7,
+      "source_rect": [
+        1597,
+        450,
+        115,
+        211
+      ],
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        71,
+        33
+      ],
+      "native_size": [
+        115,
+        211
+      ],
+      "native_rgba_sha256": "95e3230bfd1fffde82de7b3aa9595897bfec44a74d884ce56961e7df8012bc2a",
+      "requested_loop": "walk_northeast",
+      "observation": "Similarlead repeats acrossrow",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 24,
+      "row": 3,
+      "column": 0,
+      "source_rect": [
+        42,
+        671,
+        134,
+        200
+      ],
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        61,
+        44
+      ],
+      "native_size": [
+        134,
+        200
+      ],
+      "native_rgba_sha256": "feeaba05526afb0e9e6d71223af8e0a0b39843b4c8d3775ed980cf9844e4162c",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 25,
+      "row": 3,
+      "column": 1,
+      "source_rect": [
+        256,
+        671,
+        143,
+        199
+      ],
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        57,
+        45
+      ],
+      "native_size": [
+        143,
+        199
+      ],
+      "native_rgba_sha256": "510fddd434fc1c1672ea8c10c88f06b8d28bb4b3a7bb388498bc628650eb7977",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 26,
+      "row": 3,
+      "column": 2,
+      "source_rect": [
+        487,
+        671,
+        130,
+        201
+      ],
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        63,
+        43
+      ],
+      "native_size": [
+        130,
+        201
+      ],
+      "native_rgba_sha256": "34bd4649877579fbb69ddb78a758f63be21436964b25b69e85707323e1d12ba9",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 27,
+      "row": 3,
+      "column": 3,
+      "source_rect": [
+        701,
+        672,
+        141,
+        199
+      ],
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        58,
+        45
+      ],
+      "native_size": [
+        141,
+        199
+      ],
+      "native_rgba_sha256": "aa8848525c2ddcf10e314972372a52403a0487dadbecc5893600df8194eaf7e7",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 28,
+      "row": 3,
+      "column": 4,
+      "source_rect": [
+        928,
+        671,
+        135,
+        200
+      ],
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        61,
+        44
+      ],
+      "native_size": [
+        135,
+        200
+      ],
+      "native_rgba_sha256": "e094cb8610d06ef4c7a3d9df2da5f4bf278182a9b6c365a71d468df1f4820ef6",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 29,
+      "row": 3,
+      "column": 5,
+      "source_rect": [
+        1142,
+        671,
+        143,
+        199
+      ],
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        57,
+        45
+      ],
+      "native_size": [
+        143,
+        199
+      ],
+      "native_rgba_sha256": "9a3a639f420679e8c4857d0ce2411ed78ab966de5b82771fdf274510240fbcde",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 30,
+      "row": 3,
+      "column": 6,
+      "source_rect": [
+        1373,
+        672,
+        129,
+        201
+      ],
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        64,
+        43
+      ],
+      "native_size": [
+        129,
+        201
+      ],
+      "native_rgba_sha256": "b785a729704967b8f3f900f72f9c5d1f85d86034fd4500276d1178b513c6c488",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 31,
+      "row": 3,
+      "column": 7,
+      "source_rect": [
+        1586,
+        671,
+        142,
+        200
+      ],
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        57,
+        44
+      ],
+      "native_size": [
+        142,
+        200
+      ],
+      "native_rgba_sha256": "7ba360450d7d43f60d5cbfeccc14f4d3746e1f022448cb99fb3b786e83f21fdd",
+      "requested_loop": "walk_west",
+      "observation": "Repeatednearlead widecontact; no completeorderedwalkclaim",
+      "status": "unverified_phase_candidate",
+      "duration_seconds_provisional": 0.16
+    }
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "exact_unique_crops": 32,
+  "limitations": [
+    "32separatelyillustratedwholefigures; exactuniquehash doesnotprove anatomicallydistinctphase.",
+    "Requested8phasecycles needorder/contact/loopcuration beforeadmission.",
+    "No duplicatedpadding created byextraction; rawgeneratednear-repeatposes preservedhonestly."
+  ],
+  "processing": "Magenta huekey and whole-connected-figure crop; nativepixels preserved noresampling;256cellpadding only."
+}

@@ -1,0 +1,1440 @@
+{
+  "version": 1,
+  "id": "eleanor_big_sheet_v1",
+  "character": "eleanor",
+  "age": 24,
+  "grid": [
+    8,
+    6
+  ],
+  "figure_count": 48,
+  "source": "source.png",
+  "source_size": [
+    1448,
+    1086
+  ],
+  "source_sha256": "2c0632f64ffc7c8d26dea316e9fe4b038b6bddd206f644ef4df9447a4ebf4997",
+  "reference": "kits/wardrobe/eleanor-high-angle-v1/source.png",
+  "reference_sha256": "292b12bbaf9df0db64f05e21bf942a2a767c5949c9339f4671dd3127fab4f8bf",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "source_rect": [
+        52,
+        12,
+        107,
+        177
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        67
+      ],
+      "native_size": [
+        107,
+        177
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "source_rect": [
+        227,
+        12,
+        105,
+        175
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        69
+      ],
+      "native_size": [
+        105,
+        175
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "source_rect": [
+        411,
+        11,
+        91,
+        178
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        83,
+        66
+      ],
+      "native_size": [
+        91,
+        178
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "source_rect": [
+        576,
+        11,
+        115,
+        177
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        71,
+        67
+      ],
+      "native_size": [
+        115,
+        177
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "source_rect": [
+        764,
+        11,
+        99,
+        175
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        69
+      ],
+      "native_size": [
+        99,
+        175
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "source_rect": [
+        939,
+        11,
+        98,
+        178
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        66
+      ],
+      "native_size": [
+        98,
+        178
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 6,
+      "row": 0,
+      "column": 6,
+      "source_rect": [
+        1108,
+        11,
+        113,
+        178
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        72,
+        66
+      ],
+      "native_size": [
+        113,
+        178
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 7,
+      "row": 0,
+      "column": 7,
+      "source_rect": [
+        1291,
+        8,
+        98,
+        179
+      ],
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        65
+      ],
+      "native_size": [
+        98,
+        179
+      ],
+      "requested_row": "southeast_walk_requested",
+      "observation": "SE advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 8,
+      "row": 1,
+      "column": 0,
+      "source_rect": [
+        55,
+        193,
+        95,
+        170
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        81,
+        74
+      ],
+      "native_size": [
+        95,
+        170
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 9,
+      "row": 1,
+      "column": 1,
+      "source_rect": [
+        235,
+        191,
+        92,
+        170
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        82,
+        74
+      ],
+      "native_size": [
+        92,
+        170
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 10,
+      "row": 1,
+      "column": 2,
+      "source_rect": [
+        410,
+        193,
+        95,
+        168
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        81,
+        76
+      ],
+      "native_size": [
+        95,
+        168
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 11,
+      "row": 1,
+      "column": 3,
+      "source_rect": [
+        589,
+        193,
+        90,
+        169
+      ],
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        83,
+        75
+      ],
+      "native_size": [
+        90,
+        169
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 12,
+      "row": 1,
+      "column": 4,
+      "source_rect": [
+        764,
+        193,
+        85,
+        168
+      ],
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        86,
+        76
+      ],
+      "native_size": [
+        85,
+        168
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 13,
+      "row": 1,
+      "column": 5,
+      "source_rect": [
+        942,
+        192,
+        84,
+        169
+      ],
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        86,
+        75
+      ],
+      "native_size": [
+        84,
+        169
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 14,
+      "row": 1,
+      "column": 6,
+      "source_rect": [
+        1116,
+        193,
+        90,
+        168
+      ],
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        83,
+        76
+      ],
+      "native_size": [
+        90,
+        168
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 15,
+      "row": 1,
+      "column": 7,
+      "source_rect": [
+        1294,
+        191,
+        95,
+        172
+      ],
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "offset": [
+        81,
+        72
+      ],
+      "native_size": [
+        95,
+        172
+      ],
+      "requested_row": "northeast_walk_requested",
+      "observation": "NE rear advancing pose; gaitphase unverified",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 16,
+      "row": 2,
+      "column": 0,
+      "source_rect": [
+        49,
+        372,
+        105,
+        170
+      ],
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        74
+      ],
+      "native_size": [
+        105,
+        170
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 17,
+      "row": 2,
+      "column": 1,
+      "source_rect": [
+        218,
+        372,
+        119,
+        163
+      ],
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        69,
+        81
+      ],
+      "native_size": [
+        119,
+        163
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 18,
+      "row": 2,
+      "column": 2,
+      "source_rect": [
+        398,
+        372,
+        115,
+        170
+      ],
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        71,
+        74
+      ],
+      "native_size": [
+        115,
+        170
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 19,
+      "row": 2,
+      "column": 3,
+      "source_rect": [
+        576,
+        372,
+        115,
+        167
+      ],
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        71,
+        77
+      ],
+      "native_size": [
+        115,
+        167
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 20,
+      "row": 2,
+      "column": 4,
+      "source_rect": [
+        758,
+        372,
+        110,
+        171
+      ],
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        73,
+        73
+      ],
+      "native_size": [
+        110,
+        171
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 21,
+      "row": 2,
+      "column": 5,
+      "source_rect": [
+        929,
+        372,
+        113,
+        168
+      ],
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        72,
+        76
+      ],
+      "native_size": [
+        113,
+        168
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 22,
+      "row": 2,
+      "column": 6,
+      "source_rect": [
+        1114,
+        372,
+        111,
+        173
+      ],
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        73,
+        71
+      ],
+      "native_size": [
+        111,
+        173
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 23,
+      "row": 2,
+      "column": 7,
+      "source_rect": [
+        1296,
+        371,
+        100,
+        172
+      ],
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "offset": [
+        78,
+        72
+      ],
+      "native_size": [
+        100,
+        172
+      ],
+      "requested_row": "east_walk_requested",
+      "observation": "Right/east advancing pose; repeatednearlead apparent",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 24,
+      "row": 3,
+      "column": 0,
+      "source_rect": [
+        49,
+        552,
+        97,
+        173
+      ],
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        80,
+        71
+      ],
+      "native_size": [
+        97,
+        173
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "south_southeast",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 25,
+      "row": 3,
+      "column": 1,
+      "source_rect": [
+        232,
+        552,
+        88,
+        173
+      ],
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        84,
+        71
+      ],
+      "native_size": [
+        88,
+        173
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "southwest_oblique",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 26,
+      "row": 3,
+      "column": 2,
+      "source_rect": [
+        409,
+        552,
+        93,
+        166
+      ],
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        82,
+        78
+      ],
+      "native_size": [
+        93,
+        166
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "northwest",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 27,
+      "row": 3,
+      "column": 3,
+      "source_rect": [
+        581,
+        551,
+        91,
+        169
+      ],
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        83,
+        75
+      ],
+      "native_size": [
+        91,
+        169
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "northwest",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 28,
+      "row": 3,
+      "column": 4,
+      "source_rect": [
+        764,
+        552,
+        91,
+        165
+      ],
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        83,
+        79
+      ],
+      "native_size": [
+        91,
+        165
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "north",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 29,
+      "row": 3,
+      "column": 5,
+      "source_rect": [
+        946,
+        549,
+        89,
+        168
+      ],
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        84,
+        76
+      ],
+      "native_size": [
+        89,
+        168
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "northeast",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 30,
+      "row": 3,
+      "column": 6,
+      "source_rect": [
+        1127,
+        549,
+        63,
+        170
+      ],
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        97,
+        74
+      ],
+      "native_size": [
+        63,
+        170
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "east_southeast",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 31,
+      "row": 3,
+      "column": 7,
+      "source_rect": [
+        1302,
+        551,
+        93,
+        173
+      ],
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "offset": [
+        82,
+        71
+      ],
+      "native_size": [
+        93,
+        173
+      ],
+      "requested_row": "standing_turn_requested",
+      "observation": "southeast",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 32,
+      "row": 4,
+      "column": 0,
+      "source_rect": [
+        43,
+        727,
+        102,
+        173
+      ],
+      "atlas_rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        77,
+        71
+      ],
+      "native_size": [
+        102,
+        173
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 33,
+      "row": 4,
+      "column": 1,
+      "source_rect": [
+        217,
+        738,
+        123,
+        156
+      ],
+      "atlas_rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        88
+      ],
+      "native_size": [
+        123,
+        156
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 34,
+      "row": 4,
+      "column": 2,
+      "source_rect": [
+        409,
+        729,
+        85,
+        169
+      ],
+      "atlas_rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        86,
+        75
+      ],
+      "native_size": [
+        85,
+        169
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 35,
+      "row": 4,
+      "column": 3,
+      "source_rect": [
+        580,
+        729,
+        123,
+        171
+      ],
+      "atlas_rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        67,
+        73
+      ],
+      "native_size": [
+        123,
+        171
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 36,
+      "row": 4,
+      "column": 4,
+      "source_rect": [
+        770,
+        728,
+        92,
+        172
+      ],
+      "atlas_rect": [
+        1024,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        82,
+        72
+      ],
+      "native_size": [
+        92,
+        172
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 37,
+      "row": 4,
+      "column": 5,
+      "source_rect": [
+        947,
+        729,
+        105,
+        169
+      ],
+      "atlas_rect": [
+        1280,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        76,
+        75
+      ],
+      "native_size": [
+        105,
+        169
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 38,
+      "row": 4,
+      "column": 6,
+      "source_rect": [
+        1124,
+        731,
+        107,
+        169
+      ],
+      "atlas_rect": [
+        1536,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        75
+      ],
+      "native_size": [
+        107,
+        169
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 39,
+      "row": 4,
+      "column": 7,
+      "source_rect": [
+        1307,
+        729,
+        92,
+        172
+      ],
+      "atlas_rect": [
+        1792,
+        1024,
+        256,
+        256
+      ],
+      "offset": [
+        82,
+        72
+      ],
+      "native_size": [
+        92,
+        172
+      ],
+      "requested_row": "care_lantern_actions",
+      "observation": "Wholebody care/mug/lantern pose; handwritten actionassignment required",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 40,
+      "row": 5,
+      "column": 0,
+      "source_rect": [
+        47,
+        903,
+        96,
+        175
+      ],
+      "atlas_rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        80,
+        69
+      ],
+      "native_size": [
+        96,
+        175
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 41,
+      "row": 5,
+      "column": 1,
+      "source_rect": [
+        220,
+        904,
+        107,
+        174
+      ],
+      "atlas_rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        75,
+        70
+      ],
+      "native_size": [
+        107,
+        174
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 42,
+      "row": 5,
+      "column": 2,
+      "source_rect": [
+        402,
+        905,
+        134,
+        174
+      ],
+      "atlas_rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        61,
+        70
+      ],
+      "native_size": [
+        134,
+        174
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 43,
+      "row": 5,
+      "column": 3,
+      "source_rect": [
+        584,
+        905,
+        98,
+        176
+      ],
+      "atlas_rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        79,
+        68
+      ],
+      "native_size": [
+        98,
+        176
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 44,
+      "row": 5,
+      "column": 4,
+      "source_rect": [
+        770,
+        907,
+        77,
+        174
+      ],
+      "atlas_rect": [
+        1024,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        90,
+        70
+      ],
+      "native_size": [
+        77,
+        174
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 45,
+      "row": 5,
+      "column": 5,
+      "source_rect": [
+        946,
+        907,
+        79,
+        175
+      ],
+      "atlas_rect": [
+        1280,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        89,
+        69
+      ],
+      "native_size": [
+        79,
+        175
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 46,
+      "row": 5,
+      "column": 6,
+      "source_rect": [
+        1101,
+        905,
+        128,
+        176
+      ],
+      "atlas_rect": [
+        1536,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        64,
+        68
+      ],
+      "native_size": [
+        128,
+        176
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    },
+    {
+      "index": 47,
+      "row": 5,
+      "column": 7,
+      "source_rect": [
+        1314,
+        905,
+        76,
+        176
+      ],
+      "atlas_rect": [
+        1792,
+        1280,
+        256,
+        256
+      ],
+      "offset": [
+        90,
+        68
+      ],
+      "native_size": [
+        76,
+        176
+      ],
+      "requested_row": "talk_emotes",
+      "observation": "Wholebody talk/gesture expression",
+      "status": "candidate",
+      "duration_seconds_provisional": 0.16
+    }
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "native_scaling": "None. Each crop retains generated source pixels exactly, no resized40pxsprites.",
+  "observations": [
+    "48 actual complete figures produced in8x6layout.",
+    "SE/NE/E motion rows include repeatedlead and unsupportedphase sequences; not certified walks.",
+    "Turnrow repeatsNW and misses a clearW endpoint.",
+    "Care row includes a crouch and mug/lantern gestures; lastpose has no lantern, not requestedlanternrest.",
+    "Talking row offers distinctwave/point/hip/laugh/concern/welcome/nod candidates."
+  ],
+  "limitations": [
+    "Generator returned1448x1086 rather than requestedlargerresolution; nativefigures are roughly150to180pxhigh.",
+    "Outfit identity generallyconsistent; pose/handedness andsteporder requirecuration.",
+    "Rowintent neverconfersanimationapproval."
+  ],
+  "processing": "Magenta sourcebackground huekey;8connectedcomponent segmentation; completefigure nativecrops; wholefigurepadding in256cells. No drawing or limbassembly."
+}

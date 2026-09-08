@@ -1,0 +1,38 @@
+{
+  "character": "eleanor",
+  "age": 24,
+  "sheet_count": 4,
+  "whole_figure_count": 144,
+  "sheets": [
+    {
+      "sheet": 1,
+      "source": "source.png",
+      "metadata": "metadata.json",
+      "atlas": "atlas.png",
+      "figure_count": 48
+    },
+    {
+      "sheet": 2,
+      "source": "sheet2-source.png",
+      "metadata": "sheet2-metadata.json",
+      "atlas": "sheet2-atlas.png",
+      "figure_count": 32
+    },
+    {
+      "sheet": 3,
+      "source": "sheet3-source.png",
+      "metadata": "sheet3-metadata.json",
+      "atlas": "sheet3-atlas.png",
+      "figure_count": 32
+    },
+    {
+      "sheet": 4,
+      "source": "sheet4-source.png",
+      "metadata": "sheet4-metadata.json",
+      "atlas": "sheet4-atlas.png",
+      "figure_count": 32
+    }
+  ],
+  "status": "production_candidates_not_verified_complete_loops",
+  "external_paid_generation": false
+}
