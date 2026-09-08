@@ -1,14 +1,16 @@
 extends RefCounted
-## Ines's three-landmark trail uses scenery already present in Clear Fork.
+## Ines's three-landmark trail overlays authored spirit clues on Clear Fork.
 const Actor = preload("res://scripts/actor.gd")
+const SpiritClueView = preload("res://scripts/spirit_clue_view.gd")
 const POSITION := Vector2(405,105)
 const CLUES := {
 	"bell_tracks": {"position":Vector2(445,285),"label":"southern trail grass","hint":"A bell rings over hoofprints that double back."},
 	"cold_ashes": {"position":Vector2(340,90),"label":"northern trail stones","hint":"Smoke curls over stones cold enough to frost."},
-	"wrong_shadow": {"position":Vector2(580,285),"label":"southeast scrub","hint":"The scrub's shadow leans toward the sun."}
+	"wrong_shadow": {"position":Vector2(580,285),"label":"southeast scrub","hint":"A crow's shadow waits in the scrub. No bird overhead."}
 }
 var owner
 var ines: Node2D
+var clue_view: Node2D
 var remarks: Dictionary = {}
 var room:
 	get: return owner.room
@@ -60,6 +62,7 @@ func _changed(line: String) -> void:
 func _sync_view() -> void:
 	if not unlocked():
 		if is_instance_valid(ines): ines.visible = false
+		if is_instance_valid(clue_view): clue_view.sync_visible(false)
 		return
 	if not is_instance_valid(ines):
 		if not FileAccess.file_exists("res://assets/ines-art.json"): return
@@ -70,6 +73,14 @@ func _sync_view() -> void:
 		ines.position = POSITION
 		room.actors.add_child(ines)
 	ines.visible = true
+	if not is_instance_valid(clue_view) and FileAccess.file_exists("res://assets/spirit-clues.json"):
+		var clues: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://assets/spirit-clues.json"))
+		if clues is Dictionary:
+			clue_view = SpiritClueView.new()
+			clue_view.configure(clues,CLUES)
+			room.world.add_child(clue_view)
+			room.world.move_child(clue_view,room.actors.get_index())
+	if is_instance_valid(clue_view): clue_view.sync_visible(state.met)
 
 func sync_after_load() -> void:
 	_sync_view()

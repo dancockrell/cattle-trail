@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "static_clue_room_review",
+  "texture": "res://assets/spirit-clues.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "pixels_per_world_unit": 8,
+  "clues": {
+    "bell_tracks": {
+      "region": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "source_frame": 2,
+      "rgba_sha256": "43e1c7e1fc2019ae76a9af8904346e488a470a8ee404f0ee4f71431e846dc8d6"
+    },
+    "cold_ashes": {
+      "region": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "source_frame": 8,
+      "rgba_sha256": "971be899070bbf14384dd32058b7dd83a5d8371171ef3af317d8c87a9b69545a"
+    },
+    "wrong_shadow": {
+      "region": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "source_frame": 16,
+      "rgba_sha256": "fd512e652e59ac1435e04669a37155fa7db627f1ed57b6b1e384b949dda00404"
+    }
+  },
+  "source_atlas": "kits/big-sheets/spirit-effects-v1/atlas.png",
+  "source_sha256": "3315162d55c9095f68000c5bf533b487d7010b799288bd03cd726225110eab1a",
+  "texture_sha256": "a034e944e4725112979ac236677de4dcca3514dbcb1e62ba251278e5a2d2c6ed",
+  "review": "Three complete recognizable static silhouettes inspected. Exact extracted source pixels; no scaling, painting or animation-loop admission."
+}

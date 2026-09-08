@@ -10,4 +10,4 @@ Each source was generated with the built-in image tool using the retained charac
 
 Regenerate the workshop with `python tools/build_big_sheet_workshop.py`. Metadata and extraction scripts remain the source of truth; HTML previews do not redefine frame order, timing, pivots or asset admission.
 
-The spirit-effects folder includes four eight-frame previews, fixed cell registration and exact source hashes. Its hard-alpha extraction removes generated grid lines without resampling. Loop seams and shape drift remain documented; the new effects are production candidates and have not been placed in the room.
+The spirit-effects folder includes four eight-frame previews, fixed cell registration and exact source hashes. Its hard-alpha extraction removes generated grid lines without resampling. Loop seams and shape drift remain documented; the animated sequences remain production candidates. Three inspected static frames are selected separately for Ines’s room clues; this does not admit the unfinished loops.
