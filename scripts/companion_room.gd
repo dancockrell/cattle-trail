@@ -1,6 +1,7 @@
 extends RefCounted
 
 const State = preload("res://scripts/companion_state.gd")
+const Storage = preload("res://scripts/save_storage.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 var room: Control
 var state = State.new()
@@ -119,15 +120,12 @@ func save_game(test_path := "") -> bool:
 	var cattle := []
 	for cow in room.cows: cattle.append({"position":[cow.position.x,cow.position.y],"secured":cow.secured})
 	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
-	var file := FileAccess.open(SAVE_PATH if test_path.is_empty() else test_path,FileAccess.WRITE)
-	if file == null: return false
-	file.store_string(JSON.stringify(data))
-	return true
+	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
 	var path: String = SAVE_PATH if test_path.is_empty() else test_path
-	if (room.qa_mode and test_path.is_empty()) or not FileAccess.file_exists(path): return false
-	var data = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if room.qa_mode and test_path.is_empty(): return false
+	var data: Dictionary = Storage.read(path)
 	if not data is Dictionary or data.get("version",0)!=1 or not data.get("cattle",[]) is Array or data.cattle.size()!=6: return false
 	for key in ["player","eleanor"]:
 		if not valid_point(data.get(key)): return false
@@ -152,6 +150,10 @@ func load_game(test_path := "") -> bool:
 	room.talked = bool(data.get("talked",false))
 	room.rustler_active = bool(data.get("rustler_active",true))
 	room.rustler.visible = room.rustler_active
+	room.escaped = false
+	room.rustler.position = Vector2(550,164)
+	room.rustler.action_time = 0
+	room.rustler.pose(false)
 	room.hits = int(data.get("hits",0))
 	room.spoken_beats = data.get("spoken_beats",{})
 	room.target = Vector2.INF
@@ -160,6 +162,11 @@ func load_game(test_path := "") -> bool:
 	room.rope_target = null
 	room.pending_lasso = null
 	room.pending_shot = false
+	room.shot_time = 0
+	room.shot_cooldown = 0
+	room.shot.clear_points()
+	room.rope.clear_points()
+	room.rope_far_wrap.clear_points()
 	room.player.action_time = 0
 	room.eleanor.action_time = 0
 	room.player.pose(false)

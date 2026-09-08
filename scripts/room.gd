@@ -649,6 +649,7 @@ func run_companion_qa() -> void:
 	assert(companion.load_game("user://companion-qa-save.json"))
 	assert(companion.is_eleanor() and companion.state.steadied_cattle.size()==3 and eleanor.position.distance_to(saved_position)<0.01)
 	DirAccess.remove_absolute("user://companion-qa-save.json")
+	if FileAccess.file_exists("user://companion-qa-save.json.bak"): DirAccess.remove_absolute("user://companion-qa-save.json.bak")
 	await companion_walk_to(Vector2(156,139))
 	interact()
 	assert(companion.state.adventure_status=="completed")
@@ -684,7 +685,9 @@ func companion_walk_to(destination: Vector2) -> void:
 	target = Vector2.INF
 
 func reset_room() -> void:
-	if not qa_mode and FileAccess.file_exists(CompanionRoom.SAVE_PATH): DirAccess.remove_absolute(CompanionRoom.SAVE_PATH)
+	if not qa_mode:
+		for path in [CompanionRoom.SAVE_PATH,CompanionRoom.SAVE_PATH+".bak"]:
+			if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
 	get_tree().reload_current_scene()
 
 func run_pose_review() -> void:

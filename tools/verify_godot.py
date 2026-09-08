@@ -9,6 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'storage': (['--headless', '--script', 'tools/save_storage_test.gd'], r'SAVE STORAGE PASS: roundtrip, replacement, backup fallback, corrupt-primary repair, failed-write preservation, cleanup'),
     'phase': (['--headless', '--script', 'tools/animation_phase_test.gd'], r'ANIMATION PHASE PASS: unequal holds, directional remapping, cycle boundaries and roundtrip'),
     'state': (['--headless', '--script', 'tools/companion_state_test.gd'], r'COMPANION STATE: \d+ checks, 0 failures'),
     'room': (['--', '--qa'], r'QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture'),
@@ -58,7 +59,7 @@ def self_test(godot):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, room, companion, or motion; defaults to state')
+    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, phase, storage, room, companion, or motion; defaults to state')
     parser.add_argument('--godot', type=Path, default=DEFAULT_GODOT)
     parser.add_argument('--timeout', type=float, default=180)
     parser.add_argument('--self-test', action='store_true')
