@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "status": "static_facing_review",
+  "runtime_admitted": false,
+  "usage": "candidate_art",
+  "texture": "res://kits/wardrobe/eleanor-turn-v4/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": true,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 4,
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 5,
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 6,
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 7,
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ]
+    }
+  ],
+  "clips": {
+    "idle_south": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_southeast": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_east": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_northeast": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_north": {
+      "frames": [
+        4
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_northwest": {
+      "frames": [
+        5
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_west": {
+      "frames": [
+        6
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_southwest": {
+      "frames": [
+        7
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "limits": [
+    "Eight held facings, not a walk cycle or approved interpolated turn.",
+    "Braid placement and accessory side vary; no tween or continuity approval.",
+    "Border-connected checker removal protects white blouse; enclosed checker remnants may remain.",
+    "Common nearest scale and bottom registration are static review alignment, not proven foot lock.",
+    "Camera elevation is shallower than the intended high three-quarter room camera."
+  ],
+  "texture_sha256": "bd280ba0f3775640c36f9135611f8fe69d81c0509a1dfe508f3f1579d0d38bbf"
+}

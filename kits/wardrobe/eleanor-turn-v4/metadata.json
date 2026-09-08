@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "id": "eleanor_turn_v4",
+  "character_id": "eleanor",
+  "age": 24,
+  "source": "source.png",
+  "source_size": [
+    1226,
+    1283
+  ],
+  "source_sha256": "4db91ceb6bac68ffa2241f94fdaa69390e40913d08c379018b07a082f4267794",
+  "earlier_source": "source-earlier.png",
+  "earlier_source_sha256": "5dbf28d000524decc83eb65de4a2c3540259f29cc26e6668e9456f59fa0400b7",
+  "atlas": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "uniform_scale": 0.2689075630252101,
+  "frames": [
+    {
+      "index": 0,
+      "facing": "south",
+      "source_rect": [
+        48,
+        20,
+        217,
+        584
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        99,
+        87
+      ],
+      "native_sha256": "6a3b1630738cb19a4dfc92d86bb79a05ce41fd6ffe8bc27c18df008b8ba0bd94"
+    },
+    {
+      "index": 1,
+      "facing": "southeast",
+      "source_rect": [
+        341,
+        20,
+        206,
+        583
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        101,
+        87
+      ],
+      "native_sha256": "58812b2d5ccc681a8f8143d6f99db342cf466d17ecb28b1ed1770ca28d2ffb16"
+    },
+    {
+      "index": 2,
+      "facing": "east",
+      "source_rect": [
+        672,
+        21,
+        149,
+        578
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        108,
+        89
+      ],
+      "native_sha256": "05beee9f03f1274afb8e59df134f0b4e5781ece95e4ec196f28127493c120e06"
+    },
+    {
+      "index": 3,
+      "facing": "northeast",
+      "source_rect": [
+        961,
+        20,
+        197,
+        582
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        87
+      ],
+      "native_sha256": "88461ca04374999c06d904117977da5c72e397be7560b4806adb61df25bc1668"
+    },
+    {
+      "index": 4,
+      "facing": "north",
+      "source_rect": [
+        37,
+        644,
+        221,
+        587
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        99,
+        86
+      ],
+      "native_sha256": "deb0fb1a29afb2804d7385243da4243eb9b59c32b1814e52901336dcaaf03f14"
+    },
+    {
+      "index": 5,
+      "facing": "northwest",
+      "source_rect": [
+        339,
+        645,
+        215,
+        582
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        99,
+        87
+      ],
+      "native_sha256": "8432543232a0c8e05ddae1550b0b752751a52e54961d23f3414c92d12ce85be8"
+    },
+    {
+      "index": 6,
+      "facing": "west",
+      "source_rect": [
+        663,
+        645,
+        165,
+        589
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        106,
+        86
+      ],
+      "native_sha256": "6350ea35b7c1aea9d16e27856ec6816b3d56d765b3bb3b199d35402069b145c0"
+    },
+    {
+      "index": 7,
+      "facing": "southwest",
+      "source_rect": [
+        963,
+        643,
+        200,
+        595
+      ],
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        101,
+        84
+      ],
+      "native_sha256": "8ee64ca2fb4f02a1e6990e6907e4781fae280e6dcc79454385ec537577b22ddf"
+    }
+  ],
+  "runtime_admitted": false,
+  "status": "eight_facing_static_review",
+  "animation_clips": {},
+  "limitations": [
+    "Eight held facings, not a walk cycle or approved interpolated turn.",
+    "Braid placement and accessory side vary; no tween or continuity approval.",
+    "Border-connected checker removal protects white blouse; enclosed checker remnants may remain.",
+    "Common nearest scale and bottom registration are static review alignment, not proven foot lock.",
+    "Camera elevation is shallower than the intended high three-quarter room camera."
+  ],
+  "processing": "Border-connected neutral checker key; intact native cutouts; one nearest-neighbor scale; no repainting, mirroring, or limb reconstruction.",
+  "rotation_review": {
+    "file": "rotation-review.png",
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "duration_ms_per_frame": 220,
+    "purpose": "Inspect facing continuity; this preview is not an admitted gameplay animation."
+  }
+}
