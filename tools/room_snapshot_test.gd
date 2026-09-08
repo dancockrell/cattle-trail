@@ -5,12 +5,20 @@ const Lantern = preload("res://scripts/lantern_adventure.gd")
 const Ada = preload("res://scripts/ada_companion.gd")
 const Roster = preload("res://scripts/generated_companion_roster.gd")
 const Cart = preload("res://scripts/ada_cart_adventure.gd")
+const Care = preload("res://scripts/camp_care_room.gd")
 
 func _initialize() -> void:
 	var cattle := []
 	for index in range(6): cattle.append({"position":[300+index*30,180],"secured":false})
 	var data := {"version":1,"player":[199,231],"eleanor":[148,127],"cattle":cattle,"cash":342,"ammo":6,"minutes":720,"hits":0,"won":false,"talked":false,"rustler_active":true,"spoken_beats":{},"companion":State.new().to_dict()}
 	assert(Snapshot.validate(data))
+	var care_save := data.duplicate(true)
+	care_save.camp_recovery = {"version":1,"next_available":{"player":2160,"ada_mercer":2160}}
+	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(care_save))),"Shared care ledger survives outer JSON validation")
+	care_save.camp_recovery.next_available.player = NAN
+	assert(not Snapshot.validate(care_save),"Nonfinite care deadline fails before live loading")
+	care_save.camp_recovery = []
+	assert(not Snapshot.validate(care_save),"Wrong care type cannot reach a typed loader")
 	var orphaned_cart := data.duplicate(true)
 	orphaned_cart.ada_cart_position = "bad position"
 	assert(not Snapshot.validate(orphaned_cart))
@@ -69,6 +77,16 @@ func _initialize() -> void:
 	companion.finish_adventure()
 	data.companion = companion.to_dict()
 	assert(Snapshot.validate(data),"Persist an active lantern checkpoint alongside recruited companion")
+	var rested_save := data.duplicate(true)
+	assert(companion.shared_rest(720,true).ok)
+	rested_save.companion = companion.to_dict()
+	assert(Snapshot.validate(rested_save),"Old save with Eleanor rest remains readable")
+	var restored = Care.restored_recovery(rested_save)
+	assert(restored.next_available.player==2160 and restored.next_available.eleanor==2160)
+	rested_save.camp_recovery = {"version":1,"next_available":{}}
+	assert(not Snapshot.validate(rested_save),"Explicit ledger cannot erase a prior partner cooldown")
+	rested_save.camp_recovery = restored.to_dict()
+	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(rested_save))))
 	var wrong_owner := data.duplicate(true)
 	wrong_owner.companion = State.new().to_dict()
 	assert(not Snapshot.validate(wrong_owner),"An unrecruited companion cannot own an adventure checkpoint")

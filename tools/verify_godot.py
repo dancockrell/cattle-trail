@@ -9,6 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'camp-care': (['--headless', '--script', 'tools/camp_care_controller_test.gd'], r'CAMP CARE CONTROLLER PASS: Ada rest, shared partner cooldown, Eleanor bonus, staged failure, migration, pending outing, UI reset'),
     'camp-recovery': (['--headless', '--script', 'tools/camp_recovery_test.gd'], r'CAMP RECOVERY PASS: \d+ checks; mutual care, per-actor cooldown, input isolation and atomic JSON'),
     'cart-clearance': (['--headless', '--script', 'tools/cart_clearance_test.gd'], r'CART CLEARANCE PASS: default footprints preserved, wagon exit, wider scenery clearance, reachable route; no rendering'),
     'cart-motion': (['--headless', '--script', 'tools/cart_motion_test.gd'], r'CART MOTION PASS: \d+ checks'),

@@ -1,4 +1,5 @@
 extends RefCounted
+const CampCare = preload("res://scripts/camp_care_room.gd")
 const CompanionState = preload("res://scripts/companion_state.gd")
 const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
@@ -27,6 +28,7 @@ static func validate(data: Dictionary) -> bool:
 	if not data.get("companion") is Dictionary: return false
 	var candidate := CompanionState.new()
 	if not candidate.load_dict(data.companion): return false
+	if CampCare.restored_recovery(data) == null: return false
 	if candidate.recruitment=="recruited" and not data.won: return false
 	if data.has("lantern_adventure"):
 		if not data.lantern_adventure is Dictionary: return false
@@ -62,3 +64,4 @@ static func number(value) -> bool:
 static func valid_point(value) -> bool:
 	if not value is Array or value.size()!=2: return false
 	return number(value[0]) and number(value[1])
+
