@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "status": "candidate_repeated_contact_not_admitted",
+  "family": "rustler",
+  "actual_facing": "east",
+  "source": "kits/source/rustler-east-opposite-v6.png",
+  "source_sha256": "df808ed0d8d0c4b2daa45f6d220f155bf6b80a96bcf0c9bf7902229871720704",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "source_trim_ltrb": [
+    395,
+    228,
+    913,
+    1050
+  ],
+  "texture": "atlas.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas_rect_xywh": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "scale": 0.04866180048661801,
+  "scaled_size": [
+    25,
+    40
+  ],
+  "offset": [
+    19,
+    21
+  ],
+  "alpha": "binary, magenta key R-G>50 and B-G>50, transparent RGB zero",
+  "resampling": "nearest",
+  "whole_body": true,
+  "detached_parts": false,
+  "opposite_contact_verified": false,
+  "endpoint_reference": {
+    "source": "kits/source/rustler-east-v5.png",
+    "source_cell": 0,
+    "reference_crop_ltrb": [
+      0,
+      0,
+      627,
+      627
+    ],
+    "sprite": "../rustler-east-v5/frame-00.png"
+  },
+  "endpoint_atlas": {
+    "texture": "endpoint-atlas.png",
+    "size": [
+      128,
+      64
+    ],
+    "frames": [
+      {
+        "role": "reference",
+        "rect": [
+          0,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "role": "candidate",
+        "rect": [
+          64,
+          0,
+          64,
+          64
+        ]
+      }
+    ]
+  },
+  "inspection": "Same identity, gray lower trouser panels and east heading preserved, but visible leg overlap/leading foot and arm positions remain substantially the same as reference. The requested opposite contact was not achieved. No animation is defined."
+}

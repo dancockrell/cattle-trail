@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "status": "single_inbetween_candidate",
+  "direction": "east",
+  "source": "kits/source/eleanor-east-inbetween-v8.png",
+  "source_sha256": "e4829bfb1d5b76c1489bf81f25904913ff7677e957e2f4e76130dd95318382c7",
+  "source_size": [
+    1085,
+    1450
+  ],
+  "prompt": "kits/source/eleanor-east-inbetween-v8-prompt.txt",
+  "source_trim_xyxy": [
+    345,
+    297,
+    758,
+    1193
+  ],
+  "scale": 0.044642857142857144,
+  "resample": "nearest",
+  "body_height": 40,
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "cell_offset": [
+    23,
+    21
+  ],
+  "resized_body_size": [
+    18,
+    40
+  ],
+  "atlas": "atlas.png",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "phase_intent": "low weight transfer between contact A and passing A",
+  "visible_boot_identity": "Warm near boot planted towardright; darker far boot trailsleft with heel raised.",
+  "comparison_order": [
+    "contact_A",
+    "new_inbetween",
+    "passing_A"
+  ],
+  "endpoint_sources": [
+    {
+      "file": "kits/workcycles/eleanor-east-v7/00-whole-frame.png",
+      "sha256": "45a579b437987f6aff3246247fc4ce8f6b19b8c1ca0ee3fbf459ef45aaa5caf8"
+    },
+    {
+      "file": "kits/workcycles/eleanor-east-v7/01-whole-frame.png",
+      "sha256": "9759138b4ba32e048cd2e92a3c446a97e8fa872e3ffcad1cdd6190e2f7e9ec72"
+    }
+  ],
+  "limitations": [
+    "Newpose resembles passing A more closely than a geometricmidpoint.",
+    "Head/torso and clothes remain recognizable, but exact shape identity is not pixelidentical after generation.",
+    "No game playback or shared manifest admission."
+  ],
+  "transformation": "Binarymagenta key and wholefigure nearest resize only; no separatedbodyparts."
+}

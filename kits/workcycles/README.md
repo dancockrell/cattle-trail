@@ -25,3 +25,9 @@ Older rider-east-v13 is superseded because its opposite grounded contact was mis
 - rustler-east-v5: four whole-body east cutouts, 64×64 cells and [32,61] anchors. Repeated lead contact and trouser-shading variation remain; preserve as candidate evidence, not a corrected runtime cycle.
 
 Only static sheets were reviewed in this pass. Short rider bridge timings are provisional. Source/backend checks do not imply final animation acceptance.
+
+## Single-pose endpoint follow-up
+
+- rider-east-v17: contact A → one low inbetween → passing A, conditioned on the actual v15 source endpoints. Four whole horse legs remain; the foreleg approaches vertical support. Slight head-length drift remains. One candidate, not a complete gait.
+- eleanor-east-v8: contact A → one low inbetween → passing A, with the same bag-free outfit and warm near/darker far boot identity. The new pose is closer to passing than an exact halfway drawing. One candidate, not a replacement walk strip.
+- rustler-east-v6: attempted opposite contact conditioned on the v5 contact. Identity and gray trouser panels remain, but the leading-foot overlap repeats. Preserve the source and endpoint comparison as unadmitted evidence.
