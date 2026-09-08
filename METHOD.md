@@ -10,7 +10,7 @@ This is production authority, not a claim that every existing runtime or binary 
 
 # The Cattle Trail method: approved art to a playable room
 
-This method builds a game around a proven visual target, recovered production art, and one complete interaction loop. First make a small room look and feel like the approved reference in the actual engine. Expand the game only after that room earns visual acceptance.
+This method builds a game around a proven visual target, recovered production art, and complete interaction loops. The initial one-room scope has been superseded by the user's authorization to build out gameplay, relationships and backend systems while improving character sheets. Continue that production in parallel, using Clear Fork as the reference room. Asset admission and final visual acceptance remain explicit; broader development is not a claim that the room or its animation has passed those gates.
 
 The reusable part is the production discipline: preserve the approved sources, extract usable assets reproducibly, describe their animation contract explicitly, render them crisply in a fixed-view world, and prove play through that world. Other games keep their own setting, characters, mechanics, and identity. Converting a game to this method does not mean turning it into a Western or adopting cattle herding.
 
@@ -18,7 +18,7 @@ The reusable part is the production discipline: preserve the approved sources, e
 
 Choose a small, explicit set of approved references: a style image, actor sheets, environment reference, and a short concept clip where available. Treat these as the visual authority. Write down the camera angle, scale of characters against scenery, palette, pixel density, edge treatment, environment density, animation cadence, and interface character.
 
-For Cattle Trail, the target is modest pixel art, a fixed high three-quarter top-down view, warm Texas trail colors, readable mounted characters and cattle, textured scenery, and a Western interface. “More detailed” is not automatically better. Soft filtering, different proportions, or newly invented art can break continuity even when attractive in isolation.
+For Cattle Trail, the current target is detailed hard-pixel character art, a fixed high three-quarter top-down view, warm Texas trail colors, readable mounted characters and cattle, textured scenery, and a Western interface. Preserve native whole-figure sources and build new masters around 160 pixels of figure height in 256-pixel cells, with each actual pivot recorded. The rejected 40-pixel master target is historical, not the new production standard. Four source pixels per logical world unit retain a 40-world-unit character footprint while preserving the detailed source texture. Follow [the character visual contract](design/CHARACTER-VISUAL-CONTRACT.md) for scale and period wardrobe authority. Soft filtering, inconsistent proportions or camera drift remain defects regardless of detail.
 
 The approved 15-second clip establishes appearance and motion intent. Generated video is not evidence of working controls, consistent animation frames, collision, or playable rules. Those must be demonstrated in Godot.
 
@@ -63,9 +63,9 @@ An anchor represents the actor's position on the ground. Consistent anchors let 
 
 ## 4. Build the fixed-view world in Godot 4
 
-Use a 2D world with perspective already drawn into the art. Cattle Trail renders a 640 × 360 world inside a Godot `SubViewport`, with actors sorted by their ground Y coordinate. The high three-quarter appearance comes from the art and staging. It does not require an orbiting 3D camera or animated camera movement.
+Use a 2D world with perspective already drawn into the art. Cattle Trail retains a 640 × 360 logical world, with actors sorted by their ground Y coordinate. Its Godot `SubViewport` renders at display density: the integer display scale, clamped from one to four, multiplies both viewport dimensions and the canvas transform. This preserves logical positions, collisions, sockets and pointer coordinates while allowing detailed textures to reach the display. The high three-quarter appearance comes from the art and staging; no orbiting camera is needed.
 
-Keep the world resolution stable, use nearest-neighbor texture filtering, and enlarge by whole-number scale factors when space permits. Build responsive interface controls around that viewport so resizing does not change actor proportions or world coordinates. Convert pointer positions back into world coordinates for click/tap movement.
+Keep logical world dimensions stable and use nearest-neighbor filtering. Actor metadata can declare `pixels_per_world_unit: 4`; a 160-pixel figure then occupies 40 world units. Source-space pivots and sockets use that same transform. A 2× desktop display shows approximately 80 pixels of figure height; a 4× display can preserve the full 160. Responsive controls remain outside the viewport, and pointer positions convert back to logical world coordinates. Render-density support does not automatically admit candidate art.
 
 The present layout uses fractional nearest-neighbor reduction on screens too narrow for the native world. That fits the whole room but can drop source pixels unevenly. It is a documented compromise requiring visual inspection; nearest-neighbor alone does not guarantee equal-sized pixels at every display size.
 
@@ -91,7 +91,7 @@ DOS simulation, Oregon Trail, and tycoon games can inform later depth: resources
 | Playable proof | Controls, interactions, feedback, objective, and reset work in the running engine. |
 | Visual acceptance | Engine screenshots and movement capture compared against the approved clip; user accepts the room's visual bar. |
 
-A passing interaction check does not constitute visual acceptance. A good screenshot does not prove animation quality. Capture actual engine output at desktop and narrow layouts, including movement, overlap, lasso/shoot feedback, and completion. Compare composition, scale, palette, pixel treatment, animation, and UI readability against the reference. Fix visible drift before adding rooms or systems.
+A passing interaction check does not constitute visual acceptance. A good screenshot does not prove animation quality. Final visual review requires actual engine output at desktop and narrow layouts, including movement, overlap, lasso/shoot feedback, and completion. Compare composition, scale, palette, pixel treatment, animation, and UI readability against the reference. During the currently authorized sheet-production pass, inspect sheets directly and use focused backend checks without repeated in-game captures; gameplay expansion may continue while visual gaps remain explicitly recorded.
 
 ## 7. Current boundaries and migration deliverables
 
@@ -106,7 +106,7 @@ When migrating another game, deliver the following in order:
 3. A reproducible extraction recipe, transparent atlases, and source-of-truth metadata.
 4. The fixed-view Godot room with real assets and a complete interaction loop.
 5. Engine captures, interaction verification results, and an honest missing-art list.
-6. A recorded visual decision, followed by a broader production plan only after acceptance.
+6. A recorded visual decision and an explicit broader production plan; current Cattle Trail gameplay expansion is already authorized, while individual asset and room acceptance remain separate.
 
 Commit small coherent stages: source recovery, extraction and metadata, scene integration, interaction loop, and verified corrections. Each stage should be reviewable and recoverable. The room becomes the reference implementation for future rooms and conversions only when its appearance and behavior have been accepted.
 
@@ -116,7 +116,7 @@ The expanded art brief adds complete kits for the existing seven actor families 
 
 Richness means useful directions, actions, and functional states. Duplicate cells, mirrors, repeated exports, and recolor padding do not count as new coverage. Each actor needs a coherent kit; unrelated props do not fill missing animation. Environment kits need matching edges, anchors, layers, and state pairs so they can compose into the same playable room.
 
-See kits/PLAN.md for the bounded coverage allocation and admission order, and kits/catalog-plan.json for machine-readable goals. Maintain a separate measured delivery inventory. Generate, extract, inspect, animate in-engine, then admit and integrate. The same visual acceptance gate still applies: a large asset count does not authorize broader room or feature scope.
+See kits/PLAN.md for the historical bounded coverage allocation and admission order, and kits/catalog-plan.json for machine-readable goals. Maintain a separate measured delivery inventory. Generate, extract and inspect sheets, then perform the needed motion review before admission and integration. A large asset count does not establish visual acceptance; current broader gameplay scope comes from the user's later authorization, not that count.
 
 ## 9. Reusable extraction and direction checks
 
