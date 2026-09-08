@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "status": "candidate_not_admitted",
+  "family": "rustler",
+  "direction": "east",
+  "source": "kits/source/rustler-east-v5.png",
+  "source_sha256": "6d03e3d9f950b4a8e70ac07e33424748f3c731fc09c1c78fa32a746830f55b72",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "source_grid": [
+    2,
+    2
+  ],
+  "texture": "atlas.png",
+  "atlas_size": [
+    256,
+    64
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "anchor_meaning": "Ground baseline, cell-local pixels, y down",
+  "processing": {
+    "key_rule": "R-G > 50 and B-G > 50",
+    "alpha": "binary 0/255, zero RGB under transparency",
+    "scale": 0.09828009828009827,
+    "scale_policy": "One common scale to maximum whole-body height 40px; nearest neighbor only",
+    "body_parts": "Whole source sprites only; no detached limbs or painted reconstruction"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "source_cell_ltrb": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_ltrb_in_source_cell": [
+        229,
+        125,
+        486,
+        532
+      ],
+      "source_row": 0,
+      "source_col": 0,
+      "atlas_rect_xywh": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        25,
+        40
+      ],
+      "cell_offset": [
+        19,
+        21
+      ],
+      "whole_frame_sha256": "10d730384fc1108b162868eb05a5ffaadb5bf6a1da1062db238382e8b78bd640"
+    },
+    {
+      "index": 1,
+      "source_cell_ltrb": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_ltrb_in_source_cell": [
+        149,
+        129,
+        384,
+        532
+      ],
+      "source_row": 0,
+      "source_col": 1,
+      "atlas_rect_xywh": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        23,
+        40
+      ],
+      "cell_offset": [
+        20,
+        21
+      ],
+      "whole_frame_sha256": "3509a595260da210096e8e341cd89cb60ea30d1f039a9a565b0dd3a27457f11a"
+    },
+    {
+      "index": 2,
+      "source_cell_ltrb": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_ltrb_in_source_cell": [
+        227,
+        66,
+        482,
+        469
+      ],
+      "source_row": 1,
+      "source_col": 0,
+      "atlas_rect_xywh": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        25,
+        40
+      ],
+      "cell_offset": [
+        19,
+        21
+      ],
+      "whole_frame_sha256": "1ce9716c8f28e4fbf227bf831e1dfa31a51892035c716561a65acc607982ef1a"
+    },
+    {
+      "index": 3,
+      "source_cell_ltrb": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_ltrb_in_source_cell": [
+        151,
+        65,
+        382,
+        469
+      ],
+      "source_row": 1,
+      "source_col": 1,
+      "atlas_rect_xywh": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        23,
+        40
+      ],
+      "cell_offset": [
+        20,
+        21
+      ],
+      "whole_frame_sha256": "a9b37f2f9cdcc54076c5bb2a9de5073f020bd612fb5c1bdf9618f1a05f3e6f08"
+    }
+  ],
+  "clip": {
+    "name": "walk_east_candidate",
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "durations_seconds": [
+      0.14,
+      0.14,
+      0.14,
+      0.14
+    ],
+    "loop_proposed": true,
+    "phase_order_verified": false,
+    "runtime_admitted": false
+  },
+  "inspection": {
+    "whole_bodies": true,
+    "consistent_east_heading": true,
+    "limitations": [
+      "Frames0/2 repeat similar lead-leg contact silhouettes rather than demonstrating opposite contact.",
+      "Lower trouser colors shift gray in contact-like poses and brown in narrow poses.",
+      "Frame1/3 do not clearly establish opposite passing-leg identity. Coherent walking correction remains unproven."
+    ]
+  }
+}

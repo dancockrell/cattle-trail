@@ -142,3 +142,11 @@ Assign one owner to each recurring character. The owner retains identity referen
 Keep companion simulation independent of presentation. In this build, companion_state.gd owns recruitment, distinct relationship progression, one-time adventure events, madness, recovery and versioned save migration. companion_room.gd supplies proximity, control transfer, actual activities, speech and room persistence. The player completes a short task as Eleanor before the separate optional romance choice. Headless state checks are paired with a native recording of actual walking and interactions.
 
 Attached effects also need occlusion review. The lasso lead and far neck arc now draw behind actor bodies; only the near neck arc crosses the cattle sprite. Test every target-facing direction, not just every throwing direction: those are different coverage requirements.
+
+## Authored turns and recoverable state
+
+Define a turn as a short whole-pose bridge between two real facing clips. Record grounded and passing variants, measured anchor and hand sockets, and a finite hold. The scheduler preserves elapsed gait phase, allows a new direction to replace the pending bridge, and cancels immediately for an action. Missing bridges use the existing destination clip. Northern rider connections currently cover NW↔N and N↔NE only; do not infer full turn coverage.
+
+Store side comments as event content while preserving stable saved beat IDs. Trigger them from completed gameplay actions, with priorities and one-time history controlling repetition. Presentation content must not advance relationship state by itself.
+
+Save recovery must validate the whole snapshot before mutating live state. A parseable but invalid primary file should fall back to a valid backup. Run validators on a copy so validation cannot rewrite the returned save. Clear pending turns, actions and effects when restoration succeeds. These backend contracts can be checked without launching a room during a sheet-production pass.

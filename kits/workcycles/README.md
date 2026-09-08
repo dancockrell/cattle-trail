@@ -16,3 +16,12 @@ This is production authority, not a claim that every existing runtime or binary 
 Both are sheet-production candidates. They were inspected as adjacent drawings; no game was run for this pass. Timing is provisional and the working atlases do not replace the runtime catalog. Each directory records original sources, hashes, crop rectangles and whole-sprite scaling. Character parts were not independently cut, rigged or repainted during assembly.
 
 Older rider-east-v13 is superseded because its opposite grounded contact was missing. Rider-east-v14 is rejected because its new contact contained an extra foreleg. Keep those as production evidence, never as a variation pool. The Windows export excludes this entire working directory.
+
+## Additional sheet production
+
+- rider-northern-turn-v1: four grounded/passing poses at NNW/NNE. The endpoint sheet compares new angles against existing NW/N/NE sprites. Main catalog frames 248–251 are selected for NW↔N and N↔NE. Runtime uses its catalog atlas and [47,93] anchors; this working atlas remains a separate extraction reference.
+- eleanor-turn-v1: four whole poses approaching a rear view, 64×64 cells and [32,61] anchors. Requested angles and observed views are recorded separately. Working candidate only.
+- rider-east-v16: eight-cell adjacency sheet interleaves four new attempts with v15 endpoints. These do not yet establish all four requested inbetweens. Keep v15 as the preferred working cycle. Individual frame files and original extraction identifiers are packaged.
+- rustler-east-v5: four whole-body east cutouts, 64×64 cells and [32,61] anchors. Repeated lead contact and trouser-shading variation remain; preserve as candidate evidence, not a corrected runtime cycle.
+
+Only static sheets were reviewed in this pass. Short rider bridge timings are provisional. Source/backend checks do not imply final animation acceptance.
