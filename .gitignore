@@ -4,3 +4,6 @@ build/
 *.tmp
 /*.png.import
 source/*.import
+
+# Generated Godot image import sidecars
+*.png.import

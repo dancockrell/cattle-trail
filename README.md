@@ -101,3 +101,8 @@ Eleanor, Ada and Ines now have detailed southeast master candidates with visibly
 Eleanor's older opposite-contact and passing sources have been recovered as an ordered pose reference. Their original pixel clusters remain coarse, so `eleanor-detailed-recovered-walk-v1` is marked `pose_reference_only`. Both recovered Ada and Eleanor sequences have lossless animated PNG previews (`walk-review.png`), built directly from the source cells with provisional 160ms holds. They can be inspected without running the game.
 
 Actions now use one elapsed-time clock for both visible frames and release events. A slow frame that crosses the release still fires once, with the authored release pose selected before hand or weapon sockets are read. Cancellation drops the old event, and an action started by a callback is not overwritten by the previous completion. Focused headless checks cover these cases, variable pose holds, return to idle and source compilation. No new rendered-game test or Windows export was performed.
+
+## Current Windows package (2026-09-08)
+
+The Windows executable now includes the detailed stationary Ada and Ines masters, Texas ground cover, Ines clue encounter and camp care, and three actual spectral clue sprites. Godot 4.3 import and release export passed; the package was not gameplay-tested in this pass. Production sheets and wardrobe source kits stay in the source collection and are excluded from the executable. Complete walk cycles remain unfinished; the four-sheet character sets are available in the offline sheet workshop for sequence review.
+
