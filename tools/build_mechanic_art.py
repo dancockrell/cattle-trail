@@ -97,11 +97,18 @@ def package(
 
 
 def main() -> None:
-    ada, ada_atlas = package(
-        "ada-mercer-idle-v1", ["east.png", "northeast.png", "northwest.png", "south.png"],
-        ["idle_east", "idle_northeast", "idle_northwest", "idle_south"], "ada-mercer.png", "east",
-    )
-    ada["age"] = 22
+    # Ada remains stationary in the mechanic encounter. Select the detailed
+    # elevated master without inventing directional walking from static poses.
+    source = ROOT / "kits/wardrobe/ada-high-angle-v1/atlas.png"
+    master = json.loads((source.parent / "actor-spec.json").read_text(encoding="utf-8"))
+    ada_atlas = Image.open(source).convert("RGBA")
+    assert ada_atlas.size == (256,256) and ada_atlas.getbbox()
+    assert set(ada_atlas.getchannel("A").get_flattened_data()) <= {0,255}
+    ada = {key:master[key] for key in ["cell","anchor","pixels_per_world_unit","directional","default_facing","frames","frame_anchors","clips"]}
+    ada.update(age=22, character_id="ada_mercer", texture="res://assets/mechanic/ada-mercer.png",
+        source_texture=source.relative_to(ROOT).as_posix(), source_sha256=sha256(source),
+        status="detailed_stationary_encounter_review", runtime_admitted=True,
+        review="Whole elevated adult master inspected for complete silhouette, opaque period-inspired clothing and hard binary alpha. Stationary encounter selection only; no walk or turn approval.")
     machine, machine_atlas = package(
         "steam-cattle-handler-v1", ["idle.png", "stalled.png", "repaired.png"],
         ["idle_southwest", "stalled", "repaired"], "steam-handler.png", "southwest",
@@ -122,7 +129,7 @@ def main() -> None:
         spec["texture_sha256"] = sha256(ROOT / spec["texture"].removeprefix("res://"))
     destination = ROOT / "assets" / "mechanic-art.json"
     destination.write_text(json.dumps(document, indent=2) + "\n", encoding="utf-8")
-    print("MECHANIC ART PASS: Ada 4 static directions; steam handler 3 southwest states; exact pixels, hashes, alpha, bounds and anchors verified")
+    print("MECHANIC ART PASS: detailed stationary Ada; steam handler 3 southwest states; exact pixels, hashes, alpha, bounds and anchors verified")
 
 
 if __name__ == "__main__":

@@ -3,448 +3,61 @@
   "status": "mechanic_controller_static_art_package",
   "sprites": {
     "ada_mercer": {
-      "texture": "res://assets/mechanic/ada-mercer.png",
       "cell": [
-        64,
-        64
+        256,
+        256
       ],
       "anchor": [
-        32,
-        61
+        128,
+        244
       ],
-      "default_facing": "east",
+      "pixels_per_world_unit": 4,
+      "directional": false,
+      "default_facing": "southeast",
       "frames": [
         {
           "index": 0,
-          "direction": "east",
-          "source_row": 0,
-          "source_col": 0,
-          "source_cell_ltrb": [
-            0,
-            0,
-            627,
-            627
-          ],
-          "trim_ltrb_in_cell": [
-            260,
-            74,
-            438,
-            562
-          ],
-          "anchor": [
-            32,
-            61
-          ],
-          "scaled_size": [
-            15,
-            40
-          ],
-          "cell_offset": [
-            24,
-            21
-          ],
-          "rgba_sha256": "7047777926daad8e5e65aa7a920489892bc4eea9cab295b3d89911ac159cece2",
-          "id": "ada-mercer-idle-v1_000",
           "atlas_rect": [
             0,
             0,
-            64,
-            64
+            256,
+            256
           ],
-          "source": "kits/source/ada-mercer-idle-v1.png",
-          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
-          "candidate_atlas_rect": [
-            0,
-            0,
-            64,
-            64
-          ],
-          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/east.png",
-          "candidate_image_sha256": "64021aabc149e586ff78f8cfb15efb34537169bc24498b65bcda33dafddbfa4b",
-          "source_frame_metadata": {
-            "index": 0,
-            "direction": "east",
-            "source_row": 0,
-            "source_col": 0,
-            "source_cell_ltrb": [
-              0,
-              0,
-              627,
-              627
-            ],
-            "trim_ltrb_in_cell": [
-              260,
-              74,
-              438,
-              562
-            ],
-            "atlas_rect_xywh": [
-              0,
-              0,
-              64,
-              64
-            ],
-            "anchor": [
-              32,
-              61
-            ],
-            "scaled_size": [
-              15,
-              40
-            ],
-            "cell_offset": [
-              24,
-              21
-            ],
-            "rgba_sha256": "7047777926daad8e5e65aa7a920489892bc4eea9cab295b3d89911ac159cece2"
-          },
-          "alpha_bounds_xyxy": [
-            24,
-            21,
-            39,
-            61
-          ]
-        },
-        {
-          "index": 1,
-          "direction": "northeast",
-          "source_row": 0,
-          "source_col": 1,
-          "source_cell_ltrb": [
-            627,
-            0,
-            1254,
-            627
-          ],
-          "trim_ltrb_in_cell": [
-            173,
-            71,
-            337,
-            556
-          ],
-          "anchor": [
-            32,
-            61
-          ],
-          "scaled_size": [
-            13,
-            40
-          ],
-          "cell_offset": [
-            25,
-            21
-          ],
-          "rgba_sha256": "7d21745c7408362732289e60633dbe9dafe00921ee3b38a1ede66fdd696f6532",
-          "id": "ada-mercer-idle-v1_001",
-          "atlas_rect": [
-            64,
-            0,
-            64,
-            64
-          ],
-          "source": "kits/source/ada-mercer-idle-v1.png",
-          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
-          "candidate_atlas_rect": [
-            64,
-            0,
-            64,
-            64
-          ],
-          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/northeast.png",
-          "candidate_image_sha256": "dda4a7189b20e2dc2414125ce9be557e55090263c68f422f9c78c6f50865e58f",
-          "source_frame_metadata": {
-            "index": 1,
-            "direction": "northeast",
-            "source_row": 0,
-            "source_col": 1,
-            "source_cell_ltrb": [
-              627,
-              0,
-              1254,
-              627
-            ],
-            "trim_ltrb_in_cell": [
-              173,
-              71,
-              337,
-              556
-            ],
-            "atlas_rect_xywh": [
-              64,
-              0,
-              64,
-              64
-            ],
-            "anchor": [
-              32,
-              61
-            ],
-            "scaled_size": [
-              13,
-              40
-            ],
-            "cell_offset": [
-              25,
-              21
-            ],
-            "rgba_sha256": "7d21745c7408362732289e60633dbe9dafe00921ee3b38a1ede66fdd696f6532"
-          },
-          "alpha_bounds_xyxy": [
-            25,
-            21,
-            38,
-            61
-          ]
-        },
-        {
-          "index": 2,
-          "direction": "northwest",
-          "source_row": 1,
-          "source_col": 0,
-          "source_cell_ltrb": [
-            0,
-            627,
-            627,
-            1254
-          ],
-          "trim_ltrb_in_cell": [
-            273,
-            57,
-            433,
-            539
-          ],
-          "anchor": [
-            32,
-            61
-          ],
-          "scaled_size": [
-            13,
-            40
-          ],
-          "cell_offset": [
-            25,
-            21
-          ],
-          "rgba_sha256": "b8d2daf2a133110b6a2afb4d4772b210ef97a070211c19eb3b604ff520baaa64",
-          "id": "ada-mercer-idle-v1_002",
-          "atlas_rect": [
-            128,
-            0,
-            64,
-            64
-          ],
-          "source": "kits/source/ada-mercer-idle-v1.png",
-          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
-          "candidate_atlas_rect": [
-            128,
-            0,
-            64,
-            64
-          ],
-          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/northwest.png",
-          "candidate_image_sha256": "7ed2d3cc2694bfcd05b25963129002f7e80b6c6084ae154dcaa73634d8f49556",
-          "source_frame_metadata": {
-            "index": 2,
-            "direction": "northwest",
-            "source_row": 1,
-            "source_col": 0,
-            "source_cell_ltrb": [
-              0,
-              627,
-              627,
-              1254
-            ],
-            "trim_ltrb_in_cell": [
-              273,
-              57,
-              433,
-              539
-            ],
-            "atlas_rect_xywh": [
-              128,
-              0,
-              64,
-              64
-            ],
-            "anchor": [
-              32,
-              61
-            ],
-            "scaled_size": [
-              13,
-              40
-            ],
-            "cell_offset": [
-              25,
-              21
-            ],
-            "rgba_sha256": "b8d2daf2a133110b6a2afb4d4772b210ef97a070211c19eb3b604ff520baaa64"
-          },
-          "alpha_bounds_xyxy": [
-            25,
-            21,
-            38,
-            61
-          ]
-        },
-        {
-          "index": 3,
-          "direction": "south",
-          "source_row": 1,
-          "source_col": 1,
-          "source_cell_ltrb": [
-            627,
-            627,
-            1254,
-            1254
-          ],
-          "trim_ltrb_in_cell": [
-            170,
-            57,
-            354,
-            542
-          ],
-          "anchor": [
-            32,
-            61
-          ],
-          "scaled_size": [
-            15,
-            40
-          ],
-          "cell_offset": [
-            24,
-            21
-          ],
-          "rgba_sha256": "0aefba0a76b74d500fed040acd58f39103ee2b7e546425842ca582f7ada6e8d2",
-          "id": "ada-mercer-idle-v1_003",
-          "atlas_rect": [
-            192,
-            0,
-            64,
-            64
-          ],
-          "source": "kits/source/ada-mercer-idle-v1.png",
-          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
-          "candidate_atlas_rect": [
-            192,
-            0,
-            64,
-            64
-          ],
-          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/south.png",
-          "candidate_image_sha256": "92e9714017f6435c62a7a8427dc0db5f1ccf37deff65059040100078fa9c3dd2",
-          "source_frame_metadata": {
-            "index": 3,
-            "direction": "south",
-            "source_row": 1,
-            "source_col": 1,
-            "source_cell_ltrb": [
-              627,
-              627,
-              1254,
-              1254
-            ],
-            "trim_ltrb_in_cell": [
-              170,
-              57,
-              354,
-              542
-            ],
-            "atlas_rect_xywh": [
-              192,
-              0,
-              64,
-              64
-            ],
-            "anchor": [
-              32,
-              61
-            ],
-            "scaled_size": [
-              15,
-              40
-            ],
-            "cell_offset": [
-              24,
-              21
-            ],
-            "rgba_sha256": "0aefba0a76b74d500fed040acd58f39103ee2b7e546425842ca582f7ada6e8d2"
-          },
-          "alpha_bounds_xyxy": [
-            24,
-            21,
-            39,
-            61
-          ]
+          "observation": "detailed_high_angle_master_candidate",
+          "rgba_sha256": "521c7b31d3fa3351174389dadcad7d5845aa764dbb0175b94cd87d32becc019c"
         }
       ],
+      "frame_anchors": {
+        "0": [
+          128,
+          244
+        ]
+      },
       "clips": {
-        "idle_east": {
+        "pose_00": {
           "frames": [
             0
           ],
           "fps": 1,
-          "loop": true
-        },
-        "idle_northeast": {
-          "frames": [
-            1
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_northwest": {
-          "frames": [
-            2
-          ],
-          "fps": 1,
-          "loop": true
-        },
-        "idle_south": {
-          "frames": [
-            3
-          ],
-          "fps": 1,
-          "loop": true
+          "loop": false
         },
         "idle": {
           "frames": [
             0
           ],
           "fps": 1,
-          "loop": true
+          "loop": false
         }
       },
-      "status": "packaged_whole_static_source_frames",
-      "source_metadata": "kits/workcycles/ada-mercer-idle-v1/metadata.json",
-      "source_metadata_sha256": "ca9a2e8b4522a612abf50ff6b0e9ec41ef83905b330006c01e2c464d80dc714f",
-      "source_processing": {
-        "shared_scale": 0.08196721311475409,
-        "max_whole_character_height": 40,
-        "resampling": "nearest",
-        "alpha": "binary0/255, zeroRGBA magenta pixels",
-        "whole_source_sprites_only": true
-      },
-      "source_inspection": {
-        "whole_figures": true,
-        "direction_mapping": "E front-oblique, NE rear-oblique, NW rear-oblique, S frontal.",
-        "identity": "Same braid/goggles/jacket/trousers silhouette across four directions.",
-        "limitations": [
-          "Northwest source shows two hanging tools, while other angles show one; toolbelt consistency needs review before final admission.",
-          "East is a front-oblique presentation rather than a strict lateral profile.",
-          "New identity candidate only; no existing Ada runtime sprite was replaced."
-        ],
-        "not_a_walk_cycle": true
-      },
-      "packaging": {
-        "rescaled": false,
-        "recolored": false,
-        "redrawn": false,
-        "pixel_equality_verified": true
-      },
       "age": 22,
-      "texture_sha256": "8d47775284475fb84f0aae21df81583ab57d7d26ea94f6e858d4e56a99c1bad3"
+      "character_id": "ada_mercer",
+      "texture": "res://assets/mechanic/ada-mercer.png",
+      "source_texture": "kits/wardrobe/ada-high-angle-v1/atlas.png",
+      "source_sha256": "1715451717a3ec6e918dec59b278d698c637b698d5bc623647392d3cf579b11a",
+      "status": "detailed_stationary_encounter_review",
+      "runtime_admitted": true,
+      "review": "Whole elevated adult master inspected for complete silhouette, opaque period-inspired clothing and hard binary alpha. Stationary encounter selection only; no walk or turn approval.",
+      "texture_sha256": "1715451717a3ec6e918dec59b278d698c637b698d5bc623647392d3cf579b11a"
     },
     "steam_handler": {
       "texture": "res://assets/mechanic/steam-handler.png",
