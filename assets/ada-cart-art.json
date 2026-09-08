@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "status": "source_room_integration_sheet_reviewed",
+  "sprites": {
+    "ada_cart": {
+      "texture": "res://assets/ada-cart.png",
+      "anchor": [
+        48,
+        90
+      ],
+      "default_facing": "southeast",
+      "frames": [
+        {
+          "atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "source_index": 0,
+          "observed_facing": "southeast",
+          "rgba_sha256": "1d1689e6cb9d581f9d3814aa7d654f2919e3359a59a086bf70b92fce6c2db401"
+        },
+        {
+          "atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "source_index": 2,
+          "observed_facing": "south",
+          "rgba_sha256": "5276eda69a8de8f2d9f35e748eeda6688c02a4eb81fcd946a7175a8e7f142a1c"
+        },
+        {
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "source_index": 3,
+          "observed_facing": "southwest",
+          "rgba_sha256": "7e1badd972693d969268991403f7e2fe2a245ad9e2d49e1b0d27b353d04930ae"
+        },
+        {
+          "atlas_rect": [
+            288,
+            0,
+            96,
+            96
+          ],
+          "source_index": 4,
+          "observed_facing": "parked_southeast",
+          "rgba_sha256": "789dd649aa0e14ca2476029be12d31c6a1e146c7657e329694e2a1bf41ec36d4"
+        },
+        {
+          "atlas_rect": [
+            384,
+            0,
+            96,
+            96
+          ],
+          "source_index": 5,
+          "observed_facing": "north",
+          "rgba_sha256": "698186c8350ecf2cc88d62958a7b4de5a8651453b91bc08dcc5c54c8174323ad"
+        }
+      ],
+      "clips": {
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "parked": {
+          "frames": [
+            3
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_east": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_east": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_south": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_south": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_southwest": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_southwest": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_west": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_west": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_north": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_north": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_northeast": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_northeast": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle_northwest": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "walk_northwest": {
+          "frames": [
+            4
+          ],
+          "fps": 1,
+          "loop": false
+        }
+      },
+      "locomotion": {
+        "nominal_speed": 32
+      },
+      "heading_policy": "E uses SE, W uses SW, northern diagonals use N; exact observed views retained per frame.",
+      "animation_status": "Static occupied directional views; wheel cycles and authored turns remain absent."
+    }
+  },
+  "provenance": {
+    "source": "kits/workcycles/ada-steam-cart-v1/atlas-v2.png",
+    "sha256": "0c714be6947c01e69b6ba9443dae821ca6311da6ebf36f7705cf888463229b64",
+    "selected_indices": [
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "rejected_indices": [
+      1
+    ],
+    "processing": "Exact whole-cell copies, no rescale or repaint",
+    "validation": "Source hashes, alpha and exact pixels checked; no rendered game run"
+  }
+}

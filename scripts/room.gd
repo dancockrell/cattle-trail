@@ -383,7 +383,9 @@ func _physics_process(delta: float) -> void:
 	if controlled.action_time > 0: direction = Vector2.ZERO
 	if direction != Vector2.ZERO and controlled==player: facing = direction
 	var previous_position: Vector2 = controlled.position
-	controlled.position = limit_position(controlled.position + direction * (28.0 if controlled==eleanor else ride_speed) * delta)
+	var movement_speed := 28.0 if controlled==eleanor else ride_speed
+	if companion != null and companion.cart != null and companion.cart.is_active(): movement_speed = companion.cart.movement_speed()
+	controlled.position = limit_position(controlled.position + direction * movement_speed * delta)
 	var actual_motion: Vector2 = controlled.position - previous_position
 	controlled.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
@@ -417,6 +419,7 @@ func _physics_process(delta: float) -> void:
 	if companion != null and companion.lantern != null: companion.lantern.tick(delta)
 	if companion != null: companion.sync_lantern_equipment()
 	if companion != null and companion.mechanic != null: companion.mechanic.tick(delta)
+	if companion != null and companion.cart != null: companion.cart.tick(delta)
 	update_rope(delta)
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()
@@ -479,6 +482,7 @@ func interact() -> void:
 	refresh()
 
 func lasso() -> void:
+	if companion != null and companion.cart != null and companion.cart.toggle_valve(0): return
 	if companion != null and companion.mechanic.toggle_feed(): return
 	if won and companion != null:
 		companion.flirt()
@@ -517,6 +521,7 @@ func wait_for_lasso_resolution() -> void:
 	assert(remaining>0, "Lasso wind-up and flight must resolve within two seconds")
 
 func shoot() -> void:
+	if companion != null and companion.cart != null and companion.cart.toggle_valve(1): return
 	if companion != null and companion.mechanic.toggle_vent(): return
 	if companion != null and companion.is_eleanor(): return
 	if won or shot_cooldown > 0 or player.action_time > 0: return

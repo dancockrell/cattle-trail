@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "id": "ada_steam_cart",
+  "cell": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "atlas": "atlas-v2.png",
+  "frames": [
+    {
+      "id": "occupied_southeast",
+      "frame": 0,
+      "actual_facing": "southeast",
+      "source_rect": [
+        156,
+        124,
+        408,
+        429
+      ],
+      "rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "size": [
+        61,
+        64
+      ],
+      "offset": [
+        18,
+        26
+      ],
+      "status": "candidate",
+      "observation": "Two complete seated adults, whole cart."
+    },
+    {
+      "id": "occupied_north",
+      "frame": 1,
+      "actual_facing": "north",
+      "source_rect": [
+        751,
+        150,
+        310,
+        404
+      ],
+      "rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "size": [
+        46,
+        60
+      ],
+      "offset": [
+        25,
+        30
+      ],
+      "status": "rejected_mechanical_continuity",
+      "observation": "Crew faces away but boiler remains on camera side; inconsistent with front boiler in other views. Do not admit as north runtime direction."
+    },
+    {
+      "id": "occupied_south",
+      "frame": 2,
+      "actual_facing": "south",
+      "source_rect": [
+        183,
+        671,
+        323,
+        407
+      ],
+      "rect": [
+        192,
+        0,
+        96,
+        96
+      ],
+      "size": [
+        48,
+        61
+      ],
+      "offset": [
+        24,
+        29
+      ],
+      "status": "candidate",
+      "observation": "Two complete seated adults, whole cart."
+    },
+    {
+      "id": "occupied_southwest",
+      "frame": 3,
+      "actual_facing": "southwest",
+      "source_rect": [
+        668,
+        678,
+        428,
+        426
+      ],
+      "rect": [
+        288,
+        0,
+        96,
+        96
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "offset": [
+        16,
+        26
+      ],
+      "status": "candidate",
+      "observation": "Two complete seated adults, whole cart."
+    },
+    {
+      "id": "empty_southeast",
+      "frame": 4,
+      "actual_facing": "southeast",
+      "rect": [
+        384,
+        0,
+        96,
+        96
+      ],
+      "source_rect": [
+        206,
+        237,
+        831,
+        731
+      ],
+      "size": [
+        61,
+        54
+      ],
+      "offset": [
+        18,
+        36
+      ],
+      "status": "candidate",
+      "observation": "Two empty seats, no crew; chassis width matches occupied southeast. Cushion construction differs slightly."
+    },
+    {
+      "id": "occupied_north_corrected",
+      "frame": 5,
+      "actual_facing": "north",
+      "status": "candidate",
+      "rect": [
+        480,
+        0,
+        96,
+        96
+      ],
+      "source": "north-expanded-source.png",
+      "size": [
+        49,
+        60
+      ],
+      "offset": [
+        24,
+        30
+      ],
+      "source_rect": [
+        148,
+        199,
+        787,
+        969
+      ],
+      "observation": "Whole goggles, hat and axle tips restored with generous margins. Rear tailgate, axle and platform replace incorrect visible boiler. Both crew backs retained. Thin chimney is visible between crew."
+    }
+  ],
+  "source_sha256": {
+    "source.png": "854588fe161bb383eb2a0b50130f2fd91920b14a224d90e8d6eeb04c312a578e",
+    "empty-source.png": "ccb613a1c4ac0e7d1105b2b7b43d7a884d36352c46d1f8a2313ca29a18913501",
+    "north-expanded-source.png": "d53b5adb412dcf3e451452bb72e7a8032392f25d14fb855155c523564d7941be"
+  },
+  "prompts": [
+    "prompt.txt",
+    "empty-prompt.txt",
+    "north-expanded-prompt.txt"
+  ],
+  "tool": "builtin image_gen",
+  "reference_paths": [
+    "kits/source/ada-mercer-idle-v1.png",
+    "kits/source/rider-v1.png"
+  ],
+  "crew": [
+    {
+      "id": "ada_mercer",
+      "age": 22,
+      "role": "driver"
+    },
+    {
+      "id": "trail_boss",
+      "adult": true,
+      "age_note": "Explicit adult in prompt; exact age not specified",
+      "role": "passenger"
+    }
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "processing": "Whole-vehicle crop, source-magenta hue key including wheel gaps, binaryalpha, uniform occupied sheet scale to max64high, nearestresampling, footbaseline90. Empty matched to SE chassis width. No body or vehicle part reconstruction.",
+  "limitations": [
+    "Original north frame1 remains rejected; corrected north frame5 is the candidate replacement.",
+    "Static heading images only, no wheel cycle or turn animation.",
+    "East/west requested views are actual southeast/southwest.",
+    "Thin chimney remains between adults; large rear boiler continuity error removed."
+  ]
+}

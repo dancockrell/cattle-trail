@@ -11,6 +11,8 @@ const AdaState = preload("res://scripts/ada_companion.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
+const CartAdventure = preload("res://scripts/ada_cart_adventure.gd")
+const CartRoom = preload("res://scripts/ada_cart_room.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
@@ -18,6 +20,8 @@ var state = State.new()
 var lantern_adventure = LanternAdventure.new()
 var ada_state = AdaState.new()
 var generated_roster = GeneratedRoster.new()
+var cart_adventure = CartAdventure.new()
+var cart
 var lantern
 var mechanic
 var lantern_equipment: Sprite2D
@@ -50,6 +54,7 @@ func _init(owner_room: Control) -> void:
 				banter[event.id] = event
 	lantern = LanternRoom.new(self)
 	mechanic = MechanicRoom.new(self)
+	cart = CartRoom.new(self)
 	lantern_equipment = LanternEquipment.new()
 	lantern_equipment.configure(room.eleanor,load("res://assets/lantern/carried_lantern.png"),Vector2(16,8))
 	room.eleanor.add_child(lantern_equipment)
@@ -64,6 +69,7 @@ func is_eleanor() -> bool:
 	return state.controlled_actor == "eleanor" or lantern_adventure.controlled_actor == "eleanor"
 
 func active_actor() -> Node2D:
+	if cart != null and cart.is_active() and is_instance_valid(cart.vehicle): return cart.vehicle
 	return room.eleanor if is_eleanor() else room.player
 
 func tell(line: String) -> void:
@@ -71,6 +77,7 @@ func tell(line: String) -> void:
 	room.refresh()
 
 func switch_character() -> void:
+	if cart != null and cart.pause_or_resume(): return
 	if state.adventure_status=="completed" and lantern.switch_character(): return
 	if state.recruitment != "recruited":
 		tell("After gathering the herd, return to Eleanor and invite her along.")
@@ -94,6 +101,7 @@ func switch_character() -> void:
 	tell("Playing Eleanor, 24 / Walk to a restless steer and Talk to steady it." if is_eleanor() else "Playing the trail boss / Eleanor's progress is kept.")
 
 func interact() -> bool:
+	if cart != null and cart.interact(): return true
 	if mechanic.interact(): return true
 	if lantern.interact(): return true
 	if is_eleanor():
@@ -135,6 +143,7 @@ func interact() -> bool:
 	return false
 
 func rest_together() -> void:
+	if cart != null and cart.toggle_valve(2): return
 	if lantern_adventure.status=="active":
 		tell("Pause the lantern adventure and return to the wagon before resting.")
 		return
@@ -154,6 +163,7 @@ func rest_together() -> void:
 			tell("Finish Eleanor's three-steer adventure first. Shared rest is available once each day.")
 
 func flirt() -> void:
+	if cart != null and cart.flirt(): return
 	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
 		tell("As the trail boss, meet Eleanor at the wagon for a quiet moment.")
 		return
@@ -167,9 +177,12 @@ func flirt() -> void:
 		tell("Eleanor smiles: We already have a sunset to look forward to." if state.events.romance_chosen else "First share Eleanor's cattle-calming adventure. A little history makes a better invitation.")
 
 func decorate_ui() -> void:
+	for index in [0,1,2,4]: room.buttons.get_child(index).disabled = false
 	room.stats.tooltip_text = Clock.label(minutes)
 	room.buttons.get_child(0).text = "Talk" if room.size.x<600 else "Talk [E]"
 	room.buttons.get_child(2).text = "Shoot" if room.size.x<600 else "Shoot [F]"
+	room.buttons.get_child(3).text = "Companion [Tab]"
+	room.buttons.get_child(4).text = "Rest [G]"
 	if not room.won: return
 	room.buttons.get_child(1).text = "Flirt" if room.size.x<600 else "Flirt [H]"
 	if state.recruitment != "recruited":
@@ -182,6 +195,7 @@ func decorate_ui() -> void:
 	room.stats.text = "$%d  HERD 6/6  MADNESS %d  ELEANOR %d" % [room.cash,int(state.madness.get("player",0)),int(state.madness.get("eleanor",0))]
 	if lantern != null: lantern.decorate_ui()
 	if mechanic != null: mechanic.decorate_ui()
+	if cart != null: cart.decorate_ui()
 
 func save_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
@@ -192,6 +206,9 @@ func save_game(test_path := "") -> bool:
 	data["lantern_adventure"] = lantern_adventure.to_dict()
 	data["ada_companion"] = ada_state.to_dict()
 	data["generated_companions"] = generated_roster.to_dict()
+	data["ada_cart_adventure"] = cart_adventure.to_dict()
+	var cart_position: Vector2 = cart.position_for_save() if cart != null else CartRoom.PARK
+	data["ada_cart_position"] = [cart_position.x,cart_position.y]
 	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
@@ -199,6 +216,8 @@ func load_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
 	var data: Dictionary = Storage.read(path,Snapshot.validate)
 	if data.is_empty(): return false
+	var restored_cart = CartAdventure.new()
+	if not restored_cart.load_dict(data.get("ada_cart_adventure",restored_cart.to_dict())): return false
 	var restored_roster = GeneratedRoster.new()
 	if not restored_roster.load_dict(data.get("generated_companions", restored_roster.to_dict())): return false
 	var restored_ada = AdaState.new()
@@ -209,6 +228,9 @@ func load_game(test_path := "") -> bool:
 	lantern_adventure = restored_lantern
 	ada_state = restored_ada
 	generated_roster = restored_roster
+	cart_adventure = restored_cart
+	var cart_point: Array = data.get("ada_cart_position",[220,280])
+	cart.saved_position = Vector2(cart_point[0],cart_point[1])
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
 	room.eleanor.position = room.limit_position(Vector2(data.eleanor[0],data.eleanor[1]))
@@ -251,6 +273,7 @@ func load_game(test_path := "") -> bool:
 	room.eleanor.pose(false)
 	lantern.sync_after_load()
 	mechanic.sync_after_load()
+	cart.sync_after_load()
 	sync_lantern_equipment()
 	tell("Outfit restored. Your companions and completed actions are remembered.")
 	return true

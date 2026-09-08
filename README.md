@@ -74,3 +74,10 @@ The source now includes three detailed master references and 96 extracted adult 
 Ada and her actual steam walker sprites are now connected after the lantern crossing: Talk to Ada, retrieve the wagon regulator, vent pressure, install it, then close the valves at stable pressure and test. Successful repair exposes a separate Invite action. This source change passed isolated controller checks; the Windows executable remains older.
 
 Generated-companion source support now includes full resolved identity persistence, separate recruitment/relationship/assignment, and one-time activity rewards. Authored perks respect assignment and stacking caps. Eleanor’s existing rest bonus remains 3; future admitted rancher recruits add 2 seconds each to cattle leading, capped at 4 extra seconds. Candidate art stays in the offline workshop.
+
+
+## Ada's cart outing in the source
+
+After repairing the walker and inviting Ada, board the cart on the lower trail withTalk[E]. Inspect, then useL/F/G to toggle valvesA/B/C. OpenA/C and closeB; Etests the routing. Drive through the three brasslanterns in order, return to the cartstop, and Talk to finish. Tabpauses; Board resumes the saveddrivingpoint. A separate optionalKiss[H] appears beside the cart aftercompletion.
+
+This source feature uses five selectedrealcart sprites, including an emptyparkedview. It was checked without rendering thegame; the packagedWindows executable still predates these sourcechanges.

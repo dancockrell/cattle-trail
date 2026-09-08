@@ -1,0 +1,32 @@
+{
+  "id": "occupied_north_correction",
+  "status": "candidate_clipped_source_edges",
+  "runtime_admitted": false,
+  "actual_facing": "north",
+  "cell": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "size": [
+    48,
+    60
+  ],
+  "offset": [
+    24,
+    30
+  ],
+  "source": "north-correction-source.png",
+  "source_sha256": "1bc340ad73460eca81f5c8a0f9a048c70abe3b7652c9ea95646385c359bba353",
+  "prompt": "north-correction-prompt.txt",
+  "observation": "Rear round boiler removed; wooden tailgate, axle and platform visible. Thin chimney rises between adults; source crops goggles/hat top and axle tips at image edges.",
+  "limitations": [
+    "Cannot certify full uncropped wholevehicle from this source.",
+    "Chimney appears between bodies rather than aboveheads.",
+    "Held outside main five-frame atlas pending margin correction or explicit root selection."
+  ],
+  "transformation": "Magenta hue key, wholeframe trim, nearest rescale to match oldnorthheight, padding. No rebuilding clipped parts."
+}

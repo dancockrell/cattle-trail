@@ -9,6 +9,8 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'ada-cart-controller': (['--headless', '--script', 'tools/ada_cart_controller_test.gd'], r'ADA CART CONTROLLER PASS: boarding, valves, physical checkpoints, pause position, one reward, separate kiss; no rendering'),
+    'ada-cart': (['--headless', '--script', 'tools/ada_cart_adventure_test.gd'], r'ADA CART ADVENTURE PASS: \d+ checks'),
     'field-perks': (['--headless', '--script', 'tools/field_perk_controller_test.gd'], r'FIELD PERK CONTROLLER PASS: actual catch duration, recruitment, stacking cap, persisted roster; no rendering'),
     'generated-roster': (['--headless', '--script', 'tools/generated_companion_roster_test.gd'], r'GENERATED ROSTER PASS: \d+ checks; stable identities, atomic persistence, separate consent, reward ledger and preview gate'),
     'perks': (['--headless', '--script', 'tools/companion_perks_test.gd'], r'COMPANION PERKS PASS: assignment, recruitment, unique owners, caps, authored values, preview exclusion, existing rest'),
