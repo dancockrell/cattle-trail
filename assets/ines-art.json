@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "sprites": {
+    "ines_vale": {
+      "cell": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "pixels_per_world_unit": 4,
+      "directional": false,
+      "default_facing": "southeast",
+      "frames": [
+        {
+          "index": 0,
+          "atlas_rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "observation": "front-right/southeast",
+          "rgba_sha256": "452b6af3d3eea9cf818b40050d2c5f3b5b00ab81bda578559bb7a4fd0e5f3704"
+        }
+      ],
+      "frame_anchors": {
+        "0": [
+          128,
+          244
+        ]
+      },
+      "clips": {
+        "pose_00": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": false
+        }
+      },
+      "character_id": "ines_vale",
+      "age": 23,
+      "texture": "res://assets/ines.png",
+      "status": "stationary_room_encounter_review",
+      "runtime_admitted": true,
+      "source_texture": "kits/wardrobe/ines-high-angle-v1/atlas.png",
+      "source_sha256": "6d414a3d933b0dfaa09058bae5f6f76b3348dd46c182753c424d412acdc0588d",
+      "review": "Elevated whole adult figure, opaque period-inspired clothing, complete boots and binary alpha inspected. Selected for stationary encounter only; no walk or turn animation is claimed."
+    }
+  }
+}
