@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "status": "west_contact_handedness_repair_candidate",
+  "character": "eleanor",
+  "direction": "west",
+  "carry_hand": "anatomical_right_far",
+  "near_hand": "anatomical_left_empty",
+  "source": "kits/source/eleanor-lantern-west-hand-v2.png",
+  "source_sha256": "2105ec49c9b0939de070cc35e7d6aa14fbb925219bd3360d41bb6ac401594fd2",
+  "source_size": [
+    1085,
+    1450
+  ],
+  "prompt": "kits/source/eleanor-lantern-west-hand-v2-prompt.txt",
+  "trim_xyxy": [
+    316,
+    246,
+    841,
+    1224
+  ],
+  "scale": 0.0408997955010225,
+  "resized_size": [
+    21,
+    40
+  ],
+  "cell_offset": [
+    22,
+    21
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "old_frame": {
+    "file": "kits/workcycles/eleanor-lantern-west-v1/00-whole-frame.png",
+    "sha256": "200204f61df9bf2416a39f1b324cb0e42bd1d2d5e252e8c13db030cfebc8ea47"
+  },
+  "observation": "Lantern is now on screenleft carried by fararm; screenright nearhand is visibly empty. Westfacingcontactfeet preserved.",
+  "transformation": "Binarymagenta key,wholefiguretrim,nearest40pxrescale,padding only; no mirror.",
+  "limitations": [
+    "Singlecontactpose only; no completewestcycle claim.",
+    "Generated replacement preservesidentity but is not an exactpixelfor-pixel upperbodycopy."
+  ]
+}
