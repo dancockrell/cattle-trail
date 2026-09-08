@@ -11,8 +11,14 @@ Launch `build/CattleTrail.exe` on Windows, or import `project.godot` in Godot 4.
 - **L / Lasso:** catch a nearby steer for eighteen seconds, then lead it east. At close range, the same action can disarm the rustler.
 - **F / Shoot:** fire at the rustler within 190 world pixels. Two hits drive him away. Six rounds available; the lasso remains usable when ammunition runs out.
 - **R / Reset:** restart the room.
+- **Tab / Companion:** after recruiting Eleanor, switch into her cattle-calming adventure; switch back to pause it without losing progress.
+- **G / Rest:** share recovery time at the wagon after her adventure. Her Steady Company perk adds 3 player recovery; rest cannot be repeatedly farmed.
+- **H / Flirt:** a separate optional courting beat with Eleanor after the adventure. Recruitment and recovery do not require romance.
+- **F5 / F9:** save or restore the outfit. Companion milestones also save automatically; opening the game restores that save. Reset starts a fresh room and clears it.
 
 Speak with Eleanor, clear the rustler, and gather all six cattle in the east clearing. Approach cattle from behind to push them, or lasso a stray and lead it. Cattle settle in the east gathering area after the rustler has gone. Clear Fork completes only when all three conditions are satisfied.
+
+Then ride back to Eleanor and Talk to invite her into the outfit. Choose Companion to play her: walk close to three different cattle and Talk to steady them, then return to the wagon and Talk. Trust, optional courting and shared rest are separate steps. Eleanor is 24. Her current activity uses the real room sprites and does not yet implement the larger spirit-lantern encounter described in the design.
 
 ## Art authority
 
@@ -24,7 +30,7 @@ No geometric actor stand-ins are used. The original wagon and wood/paper interfa
 
 ## Reusable method
 
-The expanded library currently contains 936 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 326 selected actor frames and 30 scenery variants in 40 placements, including eight-way rider/cattle poses, corrected cardinal facing strips and the first northeast sequence repair. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
+The expanded library currently contains 944 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 326 selected actor frames and 30 scenery variants in 40 placements, including eight-way rider/cattle poses, corrected cardinal facing strips and the first northeast sequence repair. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
 
 See `METHOD.md` for the agent-authored conversion method for other games: approved visual reference → preserved sources → reproducible sprite extraction → exact metadata → one playable Godot room → actual visual and interaction verification → acceptance before expansion.
 
@@ -32,7 +38,7 @@ See `METHOD.md` for the agent-authored conversion method for other games: approv
 
 `VALIDATION.md` separates tested behavior, inspected renders, and remaining art limitations. The room has fixed high three-quarter 2D presentation, nearest filtering, binary alpha, pixel snapping, integer world enlargement, and responsive interface placement. Narrow phone windows reduce the complete world with nearest filtering; that preserves hard edges but cannot preserve equal integer pixel sizes.
 
-The default room has eight-way selected rider/cattle movement. The northeast rider uses a compact four-pose walk selected from V8, with playback matched to the slower travel pace. All eight directions now use clean-hand lasso sequences with timed rope flight, neck attachment and recovery. Southwest releases at ordinal 3; the other directions release at ordinal 4. These are engine-reviewed replacements; final visual acceptance remains separate. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. The user's sequence critique remains an open visual gate. Valid direction labels and more frames do not prove a closed gait. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding; do not expand into the larger journey, economy, towns or relationship simulation before the room meets the visual bar.
+The default room has eight-way selected rider/cattle movement. The northeast rider uses a compact four-pose walk selected from V8, with playback matched to the slower travel pace. All eight directions now use clean-hand lasso sequences with timed rope flight, neck attachment and recovery. Southwest releases at ordinal 3; the other directions release at ordinal 4. These are engine-reviewed replacements; final visual acceptance remains separate. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. The user's sequence critique remains an open visual gate. Valid direction labels and more frames do not prove a closed gait. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding. The latest user instruction authorizes expanding gameplay following GAME-DESIGN.md while walk and turn repairs continue in parallel.
 
 ## Reproduce checks
 

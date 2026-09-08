@@ -1,7 +1,7 @@
 {
   "version": 1,
   "authority": "../GAME-DESIGN.md",
-  "implementation_status": "Design only except separately verified room date/dialogue continuity.",
+  "implementation_status": "First Eleanor recruitment, playable three-cattle activity, optional courting, shared rest perk and three-human madness state implemented; broader systems remain proposals.",
   "decisions": [
     {
       "id": "genre",
@@ -12,7 +12,7 @@
     {
       "id": "adult_cast",
       "status": "accepted_user",
-      "decision": "All romance women are adults 18 or older, mostly 18–24; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
+      "decision": "All romance women are adults 18 or older, mostly 18\u201324; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
       "consequence": "Explicit age in all authored/generated romance records; no child-coded design. Earlier proposed 21+ minimum is superseded."
     },
     {
@@ -54,7 +54,7 @@
     {
       "id": "tuning",
       "status": "provisional",
-      "decision": "Madness 0–100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
+      "decision": "Madness 0\u2013100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
       "consequence": "Untested values require a bounded implementation and playtest."
     },
     {
@@ -80,6 +80,12 @@
       "status": "provisional",
       "decision": "Switch control for a bounded authored adventure while preserving actor identity and state, then return safely with rewards applied once.",
       "consequence": "No current actor-switch implementation; preserve the current animation-repair milestone."
+    },
+    {
+      "id": "parallel_gameplay_expansion",
+      "status": "accepted_user",
+      "decision": "Build out the game following the design while walk and turn work continues, including generated tweens and parallel agents.",
+      "consequence": "Supersedes the earlier implementation freeze pending full room visual approval; visual acceptance remains unproven."
     }
   ]
 }

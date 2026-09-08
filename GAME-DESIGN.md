@@ -1,6 +1,8 @@
 # Cattle Trail — living game design
 
-Status: accepted creative direction with provisional system proposals. The companion, romance, madness, procedural cast and supernatural systems below are **DESIGN ONLY; not implemented**. The existing playable milestone remains the Clear Fork cattle room. This document is the source of truth for game identity and supersedes any description of Cattle Trail as a purely historical cattle-drive simulation. Asset extraction and animation contracts remain in METHOD.md and the runtime manifests.
+Status: accepted creative direction with provisional balance. The user now authorizes building the wider game and making it fun while walk and turn repairs continue in parallel, including generated whole-pose tweens. This supersedes the earlier rule that all companion implementation must wait for final room-art approval. Keep the visual bar intact; that bar is not certified by this scope change.
+
+Implemented first companion proof: after the Clear Fork herd task, Eleanor accepts an invitation into the outfit. The player can control her to steady three distinct cattle and return to the wagon. The adventure grants trust once, a separate optional flirt starts courting, and shared rest reduces madness with her +3 Steady Company perk. Recruitment does not imply romance. Player, Eleanor and rustler have separate madness values. Save/load preserves resolved companion events and the room. The larger procedural cast, supernatural encounters, travel, economy, robots and mechas remain design proposals. This document remains the source of truth for game identity. Asset extraction and animation contracts remain in METHOD.md and the runtime manifests.
 
 ## Player promise
 
@@ -23,11 +25,11 @@ The starting room is provisionally Clear Fork, Texas, May 12, 1872. The year and
 
 Travel and tend the herd → encounter a person, machine or uncanny event → choose how to help, negotiate or fight → manage strain and resources → return to camp → deepen relationships and recover → choose companions and perks for the next outing.
 
-Keep the current room's movement, herding, lasso and shoot interactions legible before adding this loop. Romance and occult material should enter through a small encounter and a compact camp interaction after animation quality is repaired, not through an expanded map first.
+Keep movement, herding, lasso and shoot interactions legible as this loop grows. Build compact playable encounters and camp interactions alongside animation improvements, then extend travel with the same character and state continuity.
 
 ## Separate state contracts
 
-These are proposed runtime boundaries. No file here is loaded by the current game.
+These boundaries guide runtime implementation. scripts/companion_state.gd implements the initial Eleanor subset; the broader cast and systems remain proposals.
 
 | State | Owns | Must not imply |
 |---|---|---|
@@ -87,7 +89,7 @@ Trigger comments from meaningful actions and shared circumstances: a difficult c
 
 Proposed bubble treatment: crisp, warm illustrated panels with legible text, a clear tail identifying the speaker, restrained entrance motion, and personality expressed through wording and occasional small reaction symbols. Keep bubbles clear of faces, action targets and the HUD; reposition at screen edges and preserve readability at narrow widths. Start with one short sentence, usually one or two lines. Allow a short reply, then quiet. Queue or omit low-priority chatter during urgent action rather than stacking bubbles over the herd. Important objectives must remain available in the journal after a bubble disappears. Exact styling, duration and frequency require native-room review.
 
-Use relationship history to select relevant comments and remember recently used lines. Player actions should supply the context; dialogue should add character and emotional meaning. Do not turn normal movement into a sequence of modal conversation stops. Full companion simulation and expanded relationship-driven banter remain after the current room's visual repair gate.
+Use relationship history to select relevant comments and remember recently used lines. Player actions should supply the context; dialogue should add character and emotional meaning. Do not turn normal movement into a sequence of modal conversation stops. Broader companion simulation and relationship-driven banter remain planned work, now authorized alongside visual repair.
 
 Retain the responsive current room and its input model. A later compact companion panel should show name, explicit adult age, role, current perk, recruitment/relationship status and madness when known. Keep controls reachable at narrow widths. Do not cover herd movement with unsolicited relationship popups.
 
@@ -103,11 +105,11 @@ The user rejected current lasso quality and animation sequencing. Variety cannot
 
 ## Milestones and bounded next work
 
-1. **Current: repair the existing room.** Resolve lasso and gait sequence defects in the actual engine; retain movement, herding, Eleanor, rustler, HUD and narrow layout. Compare against the approved concept. Rich kits remain candidates where motion fails.
-2. **After that bar is met: one companion proof.** Implement Eleanor recruitment, one short adventure played as Eleanor with a brief mutual romantic beat, one readable perk, and madness/recovery for the player and room NPCs. Demonstrate save/load without duplicated events. Keep one room and a minimal camp interaction.
+1. **Ongoing: repair and enrich animation.** Resolve lasso, walk and turn sequence defects in the actual engine, including generated whole-pose intermediates. Compare against the approved concept. Rich kits remain candidates where motion fails.
+2. **Current playable companion proof.** Eleanor recruitment, cattle-calming adventure, optional mutual flirt, camp perk and madness/recovery now have a first implementation. Improve activity variety and presentation through playtesting; prove save/load and avoid duplicated events. The full Lanterns at the Ford spirit-lantern encounter remains later work, not a claim about this cattle-calming proof.
 3. **Later: one generated adult companion and one uncanny/steam encounter.** Prove stable generated identity and perk compatibility. Demonstrate the setting with a bounded encounter before extending travel or adding mecha control.
 
-No milestone here certifies implementation or art completion. The current task may establish date and dialogue continuity while fixing animation; it must not quietly add the future systems.
+No milestone here certifies art completion. The latest user instruction authorizes further systems following this design; label each concrete implementation accurately and retain editable proposals for unfinished features.
 
 ## Editing and validation
 

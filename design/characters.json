@@ -92,7 +92,7 @@
       },
       "continuity_notes": [
         "Age 24 follows the latest adult-age clarification.",
-        "Current room presence and a setting line do not implement recruitment.",
+        "Runtime now implements recruitment, a smaller three-cattle calming activity, optional courting and shared rest. The full Lanterns at the Ford encounter below remains a draft.",
         "Do not replace her approved visual identity without comparison."
       ],
       "playable_companion": {
@@ -382,7 +382,7 @@
     },
     "generation_rules": [
       "Validate resolved age as at least 18 before any art or dialogue generation.",
-      "Use the default 18–24 age range for most generated companions; any older exception remains explicitly adult.",
+      "Use the default 18\u201324 age range for most generated companions; any older exception remains explicitly adult.",
       "Resolve background, equipment, perk and encounter from a compatible authored package.",
       "Use curated adult characterization and PG-13 wardrobe; no child-coded presentation.",
       "Keep recruitment, relationship, party role, perks and madness separate.",

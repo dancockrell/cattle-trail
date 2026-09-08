@@ -2,6 +2,7 @@ extends Control
 
 const Actor = preload("res://scripts/actor.gd")
 const SpeechBubble = preload("res://scripts/speech_bubble.gd")
+const CompanionRoom = preload("res://scripts/companion_room.gd")
 const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
@@ -56,6 +57,7 @@ var stride_subjects: Array[Node2D] = []
 var speech: Control
 var spoken_beats := {}
 var motion_review_heading := Vector2.RIGHT
+var companion: RefCounted
 
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
@@ -159,6 +161,17 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_motion_review.call_deferred()
+	if "--neck-review" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_neck_review.call_deferred()
+	companion = CompanionRoom.new(self)
+	if "--companion-qa" in OS.get_cmdline_user_args():
+		qa_mode = true
+		qa_done = true
+		run_companion_qa.call_deferred()
+	elif not qa_mode and not "--smoke" in OS.get_cmdline_user_args():
+		companion.load_game()
 
 func spawn(id: String, at: Vector2) -> Node2D:
 	var actor := Actor.new()
@@ -230,7 +243,7 @@ func build_ui() -> void:
 	buttons.add_theme_constant_override("h_separation", 6)
 	buttons.add_theme_constant_override("v_separation", 6)
 	add_child(buttons)
-	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Reset [R]", reset_room]]:
+	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Companion [Tab]", switch_companion], ["Rest [G]", rest_companion], ["Reset [R]", reset_room]]:
 		var button := Button.new()
 		button.text = entry[0]
 		button.custom_minimum_size = Vector2(80, 46)
@@ -250,7 +263,7 @@ func build_ui() -> void:
 
 func layout_ui() -> void:
 	if not is_instance_valid(view): return
-	var available := Vector2(size.x, size.y - 270)
+	var available := Vector2(size.x, maxf(80,size.y - (326 if size.x<600 else 270)))
 	var ratio := minf(available.x / WORLD.x, available.y / WORLD.y)
 	# Whole-number enlargement; fractional reduction only when a phone cannot fit 640 pixels.
 	var zoom := floorf(ratio) if ratio >= 1.0 else ratio
@@ -271,12 +284,12 @@ func layout_ui() -> void:
 	journal.add_theme_font_size_override("font_size", 14 if size.x < 600 else 16)
 	objective.add_theme_font_size_override("font_size", 16 if size.x < 600 else 18)
 	buttons.position = Vector2(left, paper.position.y + paper.size.y + 9)
-	buttons.columns = 2 if size.x < 600 else 4
-	buttons.size = Vector2(width, 98 if size.x < 600 else 46)
+	buttons.columns = 2 if size.x < 600 else 6
+	buttons.size = Vector2(width, 150 if size.x < 600 else 46)
 	for button in buttons.get_children():
 		button.add_theme_font_size_override("font_size", 13 if size.x < 600 else 17)
 		var index: int = button.get_index()
-		button.text = ["Talk", "Lasso", "Shoot", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Reset [R]"][index]
+		button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [R]"][index]
 		button.custom_minimum_size.x = 0 if size.x < 600 else 80
 
 func world_input(event: InputEvent) -> void:
@@ -293,6 +306,11 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.keycode == KEY_L: lasso()
 	if event.keycode == KEY_F: shoot()
 	if event.keycode == KEY_R: reset_room()
+	if event.keycode == KEY_TAB: switch_companion()
+	if event.keycode == KEY_G: rest_companion()
+	if event.keycode == KEY_H and companion != null: companion.flirt()
+	if event.keycode == KEY_F5 and companion != null: companion.save_game()
+	if event.keycode == KEY_F9 and companion != null: companion.load_game()
 	if event.keycode == KEY_K: get_tree().change_scene_to_file("res://scenes/kit_browser.tscn")
 
 func keyboard() -> Vector2:
@@ -300,6 +318,9 @@ func keyboard() -> Vector2:
 
 func _physics_process(delta: float) -> void:
 	if not is_instance_valid(player): return
+	if "--neck-review" in OS.get_cmdline_user_args():
+		update_rope(delta)
+		return
 	if "--motion-review" in OS.get_cmdline_user_args():
 		for subject in stride_subjects:
 			var speed := ride_speed if subject==player else 24.0
@@ -329,23 +350,23 @@ func _physics_process(delta: float) -> void:
 	if "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args(): return
 	elapsed += delta
 	shot_cooldown = maxf(0, shot_cooldown - delta)
+	var controlled: Node2D = companion.active_actor() if companion != null else player
 	var direction := Vector2.ZERO if qa_mode else keyboard()
 	if direction.length() > 0:
 		target = Vector2.INF
 	elif target != Vector2.INF:
-		direction = target - player.position
+		direction = target - controlled.position
 		if direction.length() < 4:
 			direction = Vector2.ZERO
 			target = Vector2.INF
 	direction = direction.normalized()
-	if won: direction = Vector2.ZERO
 	# These casts/shots use a planted mount. Resume the queued ride after recovery.
-	if player.action_time > 0: direction = Vector2.ZERO
-	if direction != Vector2.ZERO: facing = direction
-	var previous_position: Vector2 = player.position
-	player.position = limit_position(player.position + direction * ride_speed * delta)
-	var actual_motion: Vector2 = player.position - previous_position
-	player.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
+	if controlled.action_time > 0: direction = Vector2.ZERO
+	if direction != Vector2.ZERO and controlled==player: facing = direction
+	var previous_position: Vector2 = controlled.position
+	controlled.position = limit_position(controlled.position + direction * (28.0 if controlled==eleanor else ride_speed) * delta)
+	var actual_motion: Vector2 = controlled.position - previous_position
+	controlled.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
 		var velocity := Vector2.ZERO
 		var away: Vector2 = cow.position - player.position
@@ -421,6 +442,7 @@ func secured_count() -> int:
 	return count
 
 func interact() -> void:
+	if companion != null and companion.interact(): return
 	if player.position.distance_to(eleanor.position) < 65:
 		if not talked and player.action_time<=0 and rope_time<=0:
 			player.action("greeting",eleanor.position-player.position)
@@ -433,6 +455,13 @@ func interact() -> void:
 	refresh()
 
 func lasso() -> void:
+	if won and companion != null:
+		companion.flirt()
+		return
+	if companion != null and companion.is_eleanor():
+		message = "Eleanor steadies cattle with Talk. Switch back to the trail boss to use the lasso."
+		refresh()
+		return
 	if won or player.action_time > 0: return
 	if rustler_active and player.position.distance_to(rustler.position) < 110:
 		pending_lasso = rustler
@@ -463,6 +492,7 @@ func wait_for_lasso_resolution() -> void:
 	assert(remaining>0, "Lasso wind-up and flight must resolve within two seconds")
 
 func shoot() -> void:
+	if companion != null and companion.is_eleanor(): return
 	if won or shot_cooldown > 0 or player.action_time > 0: return
 	if ammo == 0:
 		message = "Empty. You can still lasso the rustler at close range."
@@ -537,9 +567,10 @@ func update_rope(delta: float) -> void:
 		var cross_section: Vector2 = cross_sections.get(direction,Vector2(3,2))
 		cross_section *= lerpf(1.5,1.0,clampf(rope_catch_age/0.15,0,1))
 		if hand.distance_squared_to(neck-cross_section)<hand.distance_squared_to(neck+cross_section): cross_section = -cross_section
-		append_rope_curve(points,hand,neck+cross_section,clampf((90-hand.distance_to(neck))*0.12,1,8))
-		# Near half lies across the chest; far half is occluded by the actual cattle sprite.
+		# The lead approaches behind the body; only the near neck half crosses the sprite.
+		# Drawing the whole lead in front produces a false rope stripe across the back.
 		var far_points := PackedVector2Array()
+		append_rope_curve(far_points,hand,neck+cross_section,clampf((90-hand.distance_to(neck))*0.12,1,8))
 		for i in range(9):
 			var angle := float(i)/8.0*PI
 			points.append((neck+cross_section*cos(angle)+Vector2(0,1.5*sin(angle))).round())
@@ -564,6 +595,10 @@ func append_rope_loop(points: PackedVector2Array, center: Vector2, radius: Vecto
 		points.append((center+Vector2(cos(angle)*radius.x,sin(angle)*radius.y)).round())
 
 func clear_rustler(text: String) -> void:
+	if not rustler_active: return
+	if companion != null:
+		companion.state.add_madness("player",8)
+		companion.state.add_madness("rustler",20)
 	say_once("rustler_retreat",rustler,"RUSTLER","All right! Keep your cattle!",1)
 	rustler.action("yield_southwest",Vector2(-1,1))
 	rustler_active = false
@@ -579,8 +614,77 @@ func refresh() -> void:
 	if not won and rope_time > 0 and rope_target in cows:
 		objective.text = "STEER ROPED  /  %.1fs remaining  /  Ride toward the east gathering" % rope_time
 	journal.text = message
+	if companion != null: companion.decorate_ui()
+
+func switch_companion() -> void:
+	if companion != null: companion.switch_character()
+
+func rest_companion() -> void:
+	if companion != null: companion.rest_together()
+
+func run_companion_qa() -> void:
+	# Start at the verified room's completion boundary; exercise public companion actions.
+	won = true
+	talked = true
+	rustler_active = false
+	rustler.visible = false
+	for index in range(6):
+		cows[index].secured = true
+		cows[index].position = Vector2(490+(index%3)*35,145+(index/3)*55)
+	player.position = Vector2(181,152)
+	interact()
+	assert(companion.state.recruitment=="recruited")
+	assert(companion.state.relationship_stage=="acquainted")
+	switch_companion()
+	assert(companion.is_eleanor())
+	for index in range(3):
+		await companion_walk_to(cows[index].position+Vector2(-14,12))
+		interact()
+		await get_tree().create_timer(0.9).timeout
+	assert(companion.state.steadied_cattle.size()==3)
+	assert(companion.save_game("user://companion-qa-save.json"))
+	var saved_position: Vector2 = eleanor.position
+	companion.state.cancel_adventure()
+	eleanor.position = Vector2(150,140)
+	assert(companion.load_game("user://companion-qa-save.json"))
+	assert(companion.is_eleanor() and companion.state.steadied_cattle.size()==3 and eleanor.position.distance_to(saved_position)<0.01)
+	DirAccess.remove_absolute("user://companion-qa-save.json")
+	await companion_walk_to(Vector2(156,139))
+	interact()
+	assert(companion.state.adventure_status=="completed")
+	assert(companion.state.relationship_stage=="trusted")
+	companion.flirt()
+	assert(companion.state.relationship_stage=="courting")
+	companion.state.add_madness("player",30)
+	var before: float = companion.state.madness.player
+	rest_companion()
+	assert(companion.state.madness.player==before-13)
+	var after: float = companion.state.madness.player
+	rest_companion()
+	assert(companion.state.madness.player==after,"Rest cannot be farmed repeatedly")
+	switch_companion()
+	assert(not companion.is_eleanor())
+	await get_tree().create_timer(4.5).timeout
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("res://companion-room.png")
+	get_window().size = Vector2i(390,844)
+	await get_tree().create_timer(0.3).timeout
+	for button in buttons.get_children(): assert(button.get_global_rect().end.y<=size.y and button.get_global_rect().end.x<=size.x)
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("res://companion-phone.png")
+	print("COMPANION ROOM PASS: recruitment, actor switching, three cattle, camp completion, capped recovery, phone controls")
+	get_tree().quit()
+
+func companion_walk_to(destination: Vector2) -> void:
+	target = destination
+	var deadline := elapsed+25.0
+	while eleanor.position.distance_to(destination)>4 and elapsed<deadline:
+		await get_tree().physics_frame
+	assert(eleanor.position.distance_to(destination)<=4,"Eleanor must reach the activity through actual walking")
+	target = Vector2.INF
 
 func reset_room() -> void:
+	if not qa_mode and FileAccess.file_exists(CompanionRoom.SAVE_PATH): DirAccess.remove_absolute(CompanionRoom.SAVE_PATH)
 	get_tree().reload_current_scene()
 
 func run_pose_review() -> void:
@@ -643,6 +747,28 @@ func run_movement_batch() -> void:
 	journal.text = "Whole-sprite movement candidates at native room scale."
 	await get_tree().create_timer(5.0).timeout
 	print("MOVEMENT BATCH: three new character sequences rendered at native room scale")
+	get_tree().quit()
+
+func run_neck_review() -> void:
+	for actor in actors.get_children(): actor.visible = false
+	player.visible = true
+	player.position = Vector2(250,200)
+	player.pose(false,Vector2.RIGHT)
+	rustler_active = false
+	var headings := {"east":Vector2.RIGHT,"southeast":Vector2(1,1),"south":Vector2.DOWN,"southwest":Vector2(-1,1),"west":Vector2.LEFT,"northwest":Vector2(-1,-1),"north":Vector2.UP,"northeast":Vector2(1,-1)}
+	for steer in [cows[0],cows[1],cows[2]]:
+		steer.visible = true
+		steer.position = Vector2(340,200)
+		rope_target = steer
+		rope_time = 60
+		rope_catch_age = 1
+		for direction in headings:
+			steer.pose(true,headings[direction],24)
+			objective.text = "NECK WRAP / "+steer.kind+" / "+direction
+			journal.text = "Actual front/back rope layers across each moving whole-sprite neck."
+			await get_tree().create_timer(0.75).timeout
+		steer.visible = false
+	print("NECK REVIEW: three cattle appearances, eight moving facings each")
 	get_tree().quit()
 
 func run_motion_review() -> void:
