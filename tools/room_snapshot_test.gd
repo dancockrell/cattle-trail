@@ -3,12 +3,19 @@ const Snapshot = preload("res://scripts/room_snapshot.gd")
 const State = preload("res://scripts/companion_state.gd")
 const Lantern = preload("res://scripts/lantern_adventure.gd")
 const Ada = preload("res://scripts/ada_companion.gd")
+const Roster = preload("res://scripts/generated_companion_roster.gd")
 
 func _initialize() -> void:
 	var cattle := []
 	for index in range(6): cattle.append({"position":[300+index*30,180],"secured":false})
 	var data := {"version":1,"player":[199,231],"eleanor":[148,127],"cattle":cattle,"cash":342,"ammo":6,"minutes":720,"hits":0,"won":false,"talked":false,"rustler_active":true,"spoken_beats":{},"companion":State.new().to_dict()}
 	assert(Snapshot.validate(data))
+	data["generated_companions"] = Roster.new().to_dict()
+	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(data))))
+	var bad_roster := data.duplicate(true)
+	bad_roster.generated_companions.records = [null]
+	assert(not Snapshot.validate(bad_roster))
+	data.erase("generated_companions")
 	data["ada_companion"] = Ada.new().to_dict()
 	assert(Snapshot.validate(data))
 	var bad_ada := data.duplicate(true)

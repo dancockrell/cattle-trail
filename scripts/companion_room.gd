@@ -9,12 +9,15 @@ const LanternRoom = preload("res://scripts/lantern_room.gd")
 const LanternEquipment = preload("res://scripts/lantern_equipment.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
+const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
+const Perks = preload("res://scripts/companion_perks.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
 var state = State.new()
 var lantern_adventure = LanternAdventure.new()
 var ada_state = AdaState.new()
+var generated_roster = GeneratedRoster.new()
 var lantern
 var mechanic
 var lantern_equipment: Sprite2D
@@ -23,6 +26,9 @@ func sync_lantern_equipment() -> void:
 	if lantern_equipment != null: lantern_equipment.sync_state(lantern_adventure)
 var minutes := 720.0
 var banter: Dictionary = {}
+
+func field_perk(stat: String, baseline := 0.0) -> float:
+	return Perks.value(generated_roster.perk_state_records(), "field", stat, baseline)
 
 func advance_time(delta: float) -> void:
 	minutes = Clock.advance(minutes,delta)
@@ -185,6 +191,7 @@ func save_game(test_path := "") -> bool:
 	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
 	data["lantern_adventure"] = lantern_adventure.to_dict()
 	data["ada_companion"] = ada_state.to_dict()
+	data["generated_companions"] = generated_roster.to_dict()
 	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
@@ -192,6 +199,8 @@ func load_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
 	var data: Dictionary = Storage.read(path,Snapshot.validate)
 	if data.is_empty(): return false
+	var restored_roster = GeneratedRoster.new()
+	if not restored_roster.load_dict(data.get("generated_companions", restored_roster.to_dict())): return false
 	var restored_ada = AdaState.new()
 	if not restored_ada.load_dict(data.get("ada_companion",restored_ada.to_dict())): return false
 	var restored_lantern = LanternAdventure.new()
@@ -199,6 +208,7 @@ func load_game(test_path := "") -> bool:
 	if not state.load_dict(data.get("companion",{})): return false
 	lantern_adventure = restored_lantern
 	ada_state = restored_ada
+	generated_roster = restored_roster
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
 	room.eleanor.position = room.limit_position(Vector2(data.eleanor[0],data.eleanor[1]))

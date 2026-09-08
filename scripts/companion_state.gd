@@ -9,7 +9,7 @@ const REQUIRED_CATTLE := 3
 const REST_MINUTES := 30.0
 const REST_COOLDOWN_MINUTES := 1440.0
 const REST_RECOVERY := 10.0
-const CAMP_PERK_RECOVERY := 3.0
+const Perks = preload("res://scripts/companion_perks.gd")
 
 var recruitment := "available"
 var relationship_stage := "acquainted"
@@ -110,11 +110,12 @@ func shared_rest(now_minutes: float, mutual_acceptance: bool) -> Dictionary:
 		return {"ok": false, "reason": "rest_cooldown", "available_at_minute": next_rest_minute}
 	var player_before: float = madness.player
 	var eleanor_before: float = madness.eleanor
-	add_madness("player", -(REST_RECOVERY + CAMP_PERK_RECOVERY))
+	var perk_bonus := Perks.value([{"id":"eleanor", "perk_id":"eleanor_perk", "recruitment":recruitment, "party_assignment":party_assignment}], "camp", "rest_madness_recovery")
+	add_madness("player", -(REST_RECOVERY + perk_bonus))
 	add_madness("eleanor", -REST_RECOVERY)
 	next_rest_minute = now_minutes + REST_COOLDOWN_MINUTES
 	rest_count += 1
-	return {"ok": true, "reason": "shared_rest", "minutes_spent": REST_MINUTES, "player_recovered": player_before - madness.player, "eleanor_recovered": eleanor_before - madness.eleanor, "perk_bonus": CAMP_PERK_RECOVERY, "available_at_minute": next_rest_minute}
+	return {"ok": true, "reason": "shared_rest", "minutes_spent": REST_MINUTES, "player_recovered": player_before - madness.player, "eleanor_recovered": eleanor_before - madness.eleanor, "perk_bonus": perk_bonus, "available_at_minute": next_rest_minute}
 
 func add_madness(actor_id: String, delta: float) -> bool:
 	if not madness.has(actor_id) or not is_finite(delta):

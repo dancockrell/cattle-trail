@@ -2,6 +2,7 @@ extends RefCounted
 const CompanionState = preload("res://scripts/companion_state.gd")
 const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
+const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 
 static func validate(data: Dictionary) -> bool:
 	if data.get("version",0)!=1 or not data.get("cattle") is Array or data.cattle.size()!=6: return false
@@ -36,6 +37,9 @@ static func validate(data: Dictionary) -> bool:
 		if not data.ada_companion is Dictionary: return false
 		var ada := AdaState.new()
 		if not ada.load_dict(data.ada_companion): return false
+	if data.has("generated_companions"):
+		var roster := GeneratedRoster.new()
+		if not roster.load_dict(data.generated_companions): return false
 	return true
 
 static func number(value) -> bool:

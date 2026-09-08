@@ -565,7 +565,7 @@ func catch_rope(caught: Node2D) -> void:
 		clear_rustler("Your loop catches his gun arm. The rustler flees.")
 	elif caught in cows and not caught.secured:
 		rope_target = caught
-		rope_time = LEAD_SECONDS
+		rope_time = LEAD_SECONDS + (companion.field_perk("lasso_follow_seconds") if companion != null else 0.0)
 		message = "Roped! Keep a steady pace toward the east gathering."
 		say_once("first_catch",player,"TRAIL BOSS","That's one opinionated steer.")
 	refresh()

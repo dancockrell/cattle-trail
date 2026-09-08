@@ -154,3 +154,5 @@ Save recovery must validate the whole snapshot before mutating live state. A par
 ## Master characters and batch identities
 
 The character-family production method now lives in `design/character-family-method.md`. Build detailed recurring masters, derive complete adult identity variants, and retain exact atlas/anchor/provenance records. Author gait and turn sequences separately; a batch of different women is never a walk cycle. The production factory creates repeatable names and relationships from real visual IDs and keeps rejected art out of previews.
+
+Resolved generated characters must be saved as full records, not reconstructed from a current catalog seed at load time. Keep a per-character activity ledger to prevent duplicate rewards after retry or restore. Resolve perks from authored IDs, active assignments and shared caps; never load arbitrary perk power from character data. Preview sprite candidates stay outside ordinary game saves.
