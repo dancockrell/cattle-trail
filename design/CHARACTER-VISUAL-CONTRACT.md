@@ -26,6 +26,8 @@ For the next wardrobe variants, Eleanor can wear a short split riding skirt over
 
 ## Master before variants before motion
 
+The user's latest production unit is four full sprite sheets per character, with unique newly drawn artwork and complete action-specific sequences. Do not substitute single-pose generations, copied padding, recolored duplicates or miscellaneous pose banks for this requirement. Organize each motion row as an explicit cycle with its required contact, support, passing and opposite phases; record the intended direction and action before generation. A generated row that repeats the leading leg remains incomplete even when every cell differs pixel-for-pixel. The first large-sheet batch under `kits/big-sheets/` supplies four new source sheets for each of Eleanor, Ada and Ines; its observed sequence limitations remain separate from this target.
+
 Build a few detailed masters, then derive wardrobe and identity variants from their retained references. A wardrobe sheet contains alternative static states, never consecutive walk frames. Each extracted state records source hash, crop, cell, pivot, adult identity, outfit ID and admission status.
 
 For movement, preserve the accepted master detail across near contact, near passing, opposite contact and opposite passing. Equipment, limb depth, planted foot and body volume must agree before extending the cycle. Retain failed attempts outside runtime selection. The coarse Ada east walk v6 is rejected as a production basis following the user's screenshot feedback; its source remains for provenance.

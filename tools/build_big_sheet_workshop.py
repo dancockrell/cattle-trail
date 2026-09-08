@@ -5,9 +5,10 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'kits/big-sheets'
 records=[]
-for path in sorted(BASE.rglob('metadata.json')):
+for path in sorted(BASE.rglob('*metadata.json')):
+    if 'selected-loops' in path.parts: continue
     m=json.loads(path.read_text(encoding='utf-8'))
-    atlas=path.parent/'atlas.png'
+    atlas=path.parent/m.get('atlas',m.get('texture','atlas.png'))
     if not atlas.exists(): continue
     frames=m.get('frames',m.get('items',[]))
     frames=[dict(f,atlas_rect=f.get('atlas_rect',f.get('atlas_rect_xywh'))) for f in frames]
@@ -18,8 +19,9 @@ for path in sorted(BASE.rglob('metadata.json')):
         f=frames[start]
         label=f.get('requested_row',f.get('requested_group',f.get('category',f'Row {start//8+1}')))
         rows.append({'label':str(label),'frames':[f['atlas_rect'] for f in frames[start:start+8]]})
-    records.append({'name':relative.replace('-',' ').replace('/',' / '),'atlas':relative+'/atlas.png',
-        'source':relative+'/source.png','prompt':relative+'/prompt.txt','metadata':relative+'/metadata.json',
+    suffix='' if path.name=='metadata.json' else ' / '+path.stem.replace('-metadata','')
+    records.append({'name':relative.replace('-',' ').replace('/',' / ')+suffix,'atlas':atlas.relative_to(BASE).as_posix(),
+        'source':relative+'/'+m.get('source','source.png'),'prompt':relative+'/'+m.get('prompt','prompt.txt'),'metadata':path.relative_to(BASE).as_posix(),
         'rows':rows,'count':len(frames),'dimensions':Image.open(atlas).size})
 template='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Cattle Trail — Full Sheet Workshop</title><style>
