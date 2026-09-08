@@ -349,6 +349,7 @@ func _physics_process(delta: float) -> void:
 		return
 	if "--pose-review" in OS.get_cmdline_user_args() or "--herd-review" in OS.get_cmdline_user_args(): return
 	elapsed += delta
+	if companion != null: companion.advance_time(delta)
 	shot_cooldown = maxf(0, shot_cooldown - delta)
 	var controlled: Node2D = companion.active_actor() if companion != null else player
 	var direction := Vector2.ZERO if qa_mode else keyboard()
@@ -609,7 +610,7 @@ func clear_rustler(text: String) -> void:
 
 func refresh() -> void:
 	if not is_instance_valid(stats): return
-	stats.text = "$%d    CATTLE %d/6    AMMO %d    MAY 12, 1872" % [cash,secured_count(),ammo]
+	stats.text = "$%d    CATTLE %d/6    AMMO %d    %s" % [cash,secured_count(),ammo,companion.clock_label() if companion != null else "Day 1 12:00"]
 	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
 	if not won and rope_time > 0 and rope_target in cows:
 		objective.text = "STEER ROPED  /  %.1fs remaining  /  Ride toward the east gathering" % rope_time

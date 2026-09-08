@@ -114,3 +114,7 @@ No milestone here certifies art completion. The latest user instruction authoriz
 ## Editing and validation
 
 design/companion.schema.json defines the proposed adult companion record. design/characters.json contains three named drafts and one procedural template; it is not a save file. design/decisions.json separates accepted user direction, integration choices, provisional mechanics and unresolved questions. Change this document and those records together when the foundation changes. Validation of their structure does not validate balancing, romance content, generated art or runtime behavior.
+
+### Trail time in the current room
+
+The source now advances saved trail time at a provisional one game minute per real second of active simulation. Day 1 starts at noon on May 12, 1872. Shared rest spends its declared 30 minutes and becomes available after its existing daily cooldown; ordinary play can now expire that cooldown. The HUD shows trail day/time and completed-adventure rest availability. No offline elapsed time is applied. This implements the clock and recovery availability, not world travel, a day/night art set or scheduled NPC behavior.

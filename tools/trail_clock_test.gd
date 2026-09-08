@@ -1,0 +1,26 @@
+extends SceneTree
+const Clock = preload("res://scripts/trail_clock.gd")
+const State = preload("res://scripts/companion_state.gd")
+
+func _initialize() -> void:
+	assert(Clock.label(720)=="Day 1 12:00")
+	assert(Clock.label(1439.99)=="Day 1 23:59")
+	assert(Clock.label(1440)=="Day 2 00:00")
+	assert(Clock.advance(720,60)==780)
+	assert(Clock.advance(720,60,true)==720)
+	assert(Clock.advance(720,NAN)==720)
+	assert(Clock.advance(720,-1)==720)
+	var state := State.new()
+	state.recruit(true,true)
+	state.begin_adventure(false)
+	for id in ["0","1","2"]: state.steady_cattle(id)
+	state.finish_adventure()
+	assert(state.shared_rest(720,true).ok)
+	var now := 750.0
+	assert(not state.shared_rest(now,true).ok)
+	assert(Clock.remaining_minutes(now,state.next_rest_minute)==1410)
+	now = Clock.advance(now,1410)
+	assert(Clock.remaining_minutes(now,state.next_rest_minute)==0)
+	assert(state.shared_rest(now,true).ok,"Playing must eventually make daily rest available again")
+	print("TRAIL CLOCK PASS: elapsed play, pause, day boundary, invalid delta, daily recovery unlock")
+	quit()

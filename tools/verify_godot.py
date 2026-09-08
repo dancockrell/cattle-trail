@@ -9,6 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'clock': (['--headless', '--script', 'tools/trail_clock_test.gd'], r'TRAIL CLOCK PASS: elapsed play, pause, day boundary, invalid delta, daily recovery unlock'),
     'turn': (['--headless', '--script', 'tools/turn_transition_test.gd'], r'TURN TRANSITION PASS: authored modes, missing bridge, phase, finite hold, retarget, action cancel, completion'),
     'compile': (['--headless', '--script', 'tools/compile_sources.gd'], r'SOURCE COMPILATION PASS: \d+ runtime scripts loaded and can_instantiate\(\) verified; no scenes instantiated'),
     'storage': (['--headless', '--script', 'tools/save_storage_test.gd'], r'SAVE STORAGE PASS: roundtrip, replacement, backup fallback, corrupt-primary repair, failed-write preservation, schema fallback, validator isolation, cleanup'),
@@ -62,7 +63,7 @@ def self_test(godot):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, phase, turn, storage, snapshot, compile, room, companion, or motion; defaults to state')
+    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, phase, turn, clock, storage, snapshot, compile, room, companion, or motion; defaults to state')
     parser.add_argument('--godot', type=Path, default=DEFAULT_GODOT)
     parser.add_argument('--timeout', type=float, default=180)
     parser.add_argument('--self-test', action='store_true')

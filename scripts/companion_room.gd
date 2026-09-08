@@ -3,12 +3,19 @@ extends RefCounted
 const State = preload("res://scripts/companion_state.gd")
 const Storage = preload("res://scripts/save_storage.gd")
 const Snapshot = preload("res://scripts/room_snapshot.gd")
+const Clock = preload("res://scripts/trail_clock.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
 var state = State.new()
 var minutes := 720.0
 var banter: Dictionary = {}
+
+func advance_time(delta: float) -> void:
+	minutes = Clock.advance(minutes,delta)
+
+func clock_label() -> String:
+	return Clock.label(minutes)
 
 func _init(owner_room: Control) -> void:
 	room = owner_room
@@ -106,12 +113,15 @@ func rest_together() -> void:
 		return
 	var result: Dictionary = state.shared_rest(minutes,true)
 	if result.get("ok",false):
-		minutes += 30
+		minutes += float(result.minutes_spent)
 		say_event("shared_rest","shared_rest")
 		tell("Tea and quiet company. Madness eased; Eleanor's Steady Company adds 3 recovery. Her story continues with your outfit.")
 		save_game()
 	else:
-		tell("Finish Eleanor's three-steer adventure first. Shared rest is available once each day.")
+		if result.get("reason")=="rest_cooldown":
+			tell("We've only just rested. Shared rest returns in %d trail minutes." % Clock.remaining_minutes(minutes,state.next_rest_minute))
+		else:
+			tell("Finish Eleanor's three-steer adventure first. Shared rest is available once each day.")
 
 func flirt() -> void:
 	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
@@ -127,6 +137,7 @@ func flirt() -> void:
 		tell("Eleanor smiles: We already have a sunset to look forward to." if state.events.romance_chosen else "First share Eleanor's cattle-calming adventure. A little history makes a better invitation.")
 
 func decorate_ui() -> void:
+	room.stats.tooltip_text = Clock.label(minutes)
 	if not room.won: return
 	room.buttons.get_child(1).text = "Flirt" if room.size.x<600 else "Flirt [H]"
 	if state.recruitment != "recruited":
@@ -134,7 +145,8 @@ func decorate_ui() -> void:
 	elif state.adventure_status != "completed":
 		room.objective.text = "ELEANOR / %d of 3 steadied / %s" % [state.steadied_cattle.size(),"Playing Eleanor" if is_eleanor() else "Companion [Tab] to play"]
 	else:
-		room.objective.text = "STEADY COMPANY / Adventure complete / Shared rest at the wagon"
+		var remaining := Clock.remaining_minutes(minutes,state.next_rest_minute)
+		room.objective.text = "STEADY COMPANY / %s / %s" % [Clock.label(minutes),"Rest at wagon" if remaining==0 else "Rest in %dm" % remaining]
 	room.stats.text = "$%d  HERD 6/6  MADNESS %d  ELEANOR %d" % [room.cash,int(state.madness.get("player",0)),int(state.madness.get("eleanor",0))]
 
 func save_game(test_path := "") -> bool:

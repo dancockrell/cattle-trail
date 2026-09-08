@@ -58,3 +58,5 @@ The default room has eight-way selected rider/cattle movement. The northeast rid
 4. `godot --headless --path . --export-release Windows build/CattleTrail.exe`
 
 The Windows export includes runtime assets and scripts, excluding raw video, source sheets, documents, and extraction tools. Keep this source project to edit or rebuild the game.
+
+Source follow-up: trail time now advances during play at one game minute per real second, and shared-rest availability shows its remaining trail minutes. Saves preserve this time. The Windows executable still predates these source changes.
