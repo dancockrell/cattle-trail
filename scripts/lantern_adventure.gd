@@ -3,7 +3,8 @@ extends RefCounted
 ## Persist this state and the caller's milestone ledger together: the stable event
 ## key must also be deduplicated by the caller when restoring an older save.
 
-const SAVE_VERSION := 1
+const SAVE_VERSION := 2
+const SPIRIT_STRESS := 6.0
 const ADVENTURE_ID := "lanterns_at_the_ford"
 const CHARACTER_ID := "eleanor"
 const MILESTONE_ID := "lanterns_at_the_ford_completed"
@@ -16,6 +17,15 @@ var controlled_actor := "player"
 var stranded_cattle: Array[String] = []
 var guided_cattle: Array[String] = []
 var milestone_completed := false
+var spirit_exposure_applied := false
+
+func expose_to_spirit() -> Dictionary:
+	if status!="active" or stage!="carry_lantern": return _result(false,"not_approaching_spirit")
+	if spirit_exposure_applied: return _result(false,"already_exposed")
+	spirit_exposure_applied = true
+	var result := _result(true,"spirit_exposure")
+	result["madness_delta"] = SPIRIT_STRESS
+	return result
 
 func begin(recruited: bool, action_in_flight: bool, cattle_ids: Array) -> Dictionary:
 	if status != "not_started": return _result(false, "already_started")
@@ -98,11 +108,17 @@ func to_dict() -> Dictionary:
 	return {"version": SAVE_VERSION, "adventure_id": ADVENTURE_ID, "character_id": CHARACTER_ID,
 		"checkpoint": stage, "status": status, "controlled_actor": controlled_actor,
 		"stranded_cattle": stranded_cattle.duplicate(), "guided_cattle": guided_cattle.duplicate(),
-		"milestone_completed": milestone_completed}
+		"milestone_completed": milestone_completed,"spirit_exposure_applied":spirit_exposure_applied}
 
 func load_dict(data: Dictionary) -> bool:
 	# Detached candidate, complete validation, then assignment: invalid input is atomic.
 	var candidate := data.duplicate(true)
+	if not (candidate.get("version") is int or candidate.get("version") is float): return false
+	if candidate.get("version")==1:
+		if candidate.has("spirit_exposure_applied"): return false
+		# Old active checkpoints never gain a surprise retroactive stress charge.
+		candidate["spirit_exposure_applied"] = candidate.get("checkpoint","not_started")!="not_started"
+		candidate["version"] = SAVE_VERSION
 	if not _valid_save(candidate): return false
 	stage = candidate.checkpoint
 	status = candidate.status
@@ -110,6 +126,7 @@ func load_dict(data: Dictionary) -> bool:
 	stranded_cattle.assign(candidate.stranded_cattle)
 	guided_cattle.assign(candidate.guided_cattle)
 	milestone_completed = candidate.milestone_completed
+	spirit_exposure_applied = candidate.spirit_exposure_applied
 	return true
 
 func _valid_save(d: Dictionary) -> bool:
@@ -124,11 +141,12 @@ func _valid_save(d: Dictionary) -> bool:
 	if d.adventure_id != ADVENTURE_ID or d.character_id != CHARACTER_ID: return false
 	if d.checkpoint not in STAGES or d.status not in ["not_started", "active", "paused", "failed", "completed"]: return false
 	if not d.milestone_completed is bool: return false
+	if not d.spirit_exposure_applied is bool: return false
 	if not _valid_ids(d.stranded_cattle, REQUIRED_CATTLE) or not _valid_ids(d.guided_cattle, REQUIRED_CATTLE): return false
 	for cattle_id in d.guided_cattle:
 		if not d.stranded_cattle.has(cattle_id): return false
 	if d.checkpoint == "not_started":
-		return d.status == "not_started" and d.controlled_actor == "player" and d.stranded_cattle.is_empty() and d.guided_cattle.is_empty() and not d.milestone_completed
+		return d.status == "not_started" and d.controlled_actor == "player" and d.stranded_cattle.is_empty() and d.guided_cattle.is_empty() and not d.milestone_completed and not d.spirit_exposure_applied
 	if d.stranded_cattle.size() != REQUIRED_CATTLE: return false
 	if d.checkpoint == "completed":
 		return d.status == "completed" and d.controlled_actor == "player" and d.guided_cattle.size() == REQUIRED_CATTLE and d.milestone_completed

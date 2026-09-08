@@ -12,7 +12,21 @@ func check(condition: bool, message: String) -> void:
 func _initialize() -> void:
 	var a := Adventure.new()
 	var fresh := a.to_dict()
-	check(a.load_dict(JSON.parse_string(JSON.stringify(fresh))), "Initial version1 JSON roundtrip")
+	check(a.load_dict(JSON.parse_string(JSON.stringify(fresh))), "Initial current-version JSON roundtrip")
+	var exposure := Adventure.new()
+	exposure.begin(true,false,["a","b","c"])
+	check(exposure.expose_to_spirit().madness_delta==6.0,"One spirit approach has an explicit stress amount")
+	var exposure_saved := exposure.to_dict()
+	check(not exposure.expose_to_spirit().ok,"Repeated approach cannot stack stress")
+	check(exposure.load_dict(JSON.parse_string(JSON.stringify(exposure_saved))) and not exposure.expose_to_spirit().ok,"Saving preserves exposure deduplication")
+	var legacy := exposure_saved.duplicate(true)
+	legacy.version = 1
+	legacy.erase("spirit_exposure_applied")
+	check(exposure.load_dict(legacy) and not exposure.expose_to_spirit().ok,"Legacy active checkpoints do not gain retroactive stress")
+	legacy = fresh.duplicate(true)
+	legacy.version = 1
+	legacy.erase("spirit_exposure_applied")
+	check(exposure.load_dict(legacy) and not exposure.spirit_exposure_applied,"Legacy fresh checkpoints retain first exposure")
 	check(not a.begin(false, false, ["cow_a", "cow_b", "cow_c"]).ok, "Recruitment required")
 	check(not a.begin(true, true, ["cow_a", "cow_b", "cow_c"]).ok, "Action-in-flight blocks entry")
 	for ids in [["a", "a", "b"], ["a", "b"], ["a", "b", "c", "d"], ["a", "b", " "], ["a", "b", 3]]:
@@ -48,7 +62,7 @@ func _initialize() -> void:
 	for fault in ["version", "fraction", "boolean_version", "extra", "missing", "foreign_actor", "foreign_adventure", "control", "stage", "status", "flag", "duplicate", "unknown", "count", "type", "control_id"]:
 		var bad: Dictionary = before.duplicate(true)
 		match fault:
-			"version": bad.version = 2
+			"version": bad.version = 3
 			"fraction": bad.version = 1.5
 			"boolean_version": bad.version = true
 			"extra": bad.extra = 1

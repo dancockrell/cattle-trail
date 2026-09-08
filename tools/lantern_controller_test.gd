@@ -46,6 +46,9 @@ func _initialize() -> void:
 	owner.room.eleanor.position = Vector2(400,220)
 	controller.interact()
 	controller.interact()
+	assert(owner.state.madness.eleanor==16.0,"Spirit approach applies one saved stress event")
+	controller.tick(0.1)
+	assert(owner.state.madness.eleanor==16.0,"Settling cannot apply the approach event again")
 	assert(owner.lantern_adventure.stage=="guide_cattle")
 	for index in range(3):
 		var cow: Node2D = owner.room.cows[index]

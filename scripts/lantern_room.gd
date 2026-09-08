@@ -50,6 +50,12 @@ func _changed(message: String) -> void:
 	owner.tell(message)
 	owner.save_game()
 
+func _apply_spirit_stress() -> void:
+	var result: Dictionary = adventure.expose_to_spirit()
+	if result.get("ok",false):
+		owner.state.add_madness("eleanor",result.madness_delta)
+		owner.save_game()
+
 func switch_character() -> bool:
 	if owner.state.adventure_status != "completed": return false
 	if adventure.status == "completed": return false
@@ -95,6 +101,7 @@ func interact() -> bool:
 	match adventure.stage:
 		"carry_lantern":
 			if room.eleanor.position.distance_to(CROSSING) <= 45:
+				_apply_spirit_stress()
 				adventure.settle_spirit()
 				_say("spirit_settled","spirit")
 				_changed("The spirit listens. Talk again to begin guiding the three stranded cattle.")
@@ -137,6 +144,7 @@ func owns_cow(cow: Node2D) -> bool:
 func tick(delta: float) -> void:
 	_sync_view()
 	if adventure.status == "active" and adventure.stage == "carry_lantern" and room.eleanor.position.distance_to(CROSSING) < 80:
+		_apply_spirit_stress()
 		_say("spirit_agitated","approach")
 	if adventure.status != "active" or adventure.stage != "guide_cattle" or following < 0 or delta <= 0: return
 	var cow: Node2D = room.cows[following]
