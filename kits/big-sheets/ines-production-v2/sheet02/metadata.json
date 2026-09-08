@@ -675,6 +675,16 @@
         6,
         7
       ],
+      "source_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -682,6 +692,16 @@
     },
     "turn_counterclockwise": {
       "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "source_frame_indices": [
         8,
         9,
         10,
@@ -707,6 +727,16 @@
         22,
         23
       ],
+      "source_frame_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -723,6 +753,16 @@
         30,
         31
       ],
+      "source_frame_indices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -730,5 +770,6 @@
     }
   },
   "runtime_admitted": false,
-  "review_notes": "Standing rotations contain useful back views; some adjacent poses near-duplicate and pivots incomplete. Review and select real facings before assigning clips."
+  "review_notes": "Standing rotations contain useful back views; some adjacent poses near-duplicate and pivots incomplete. Review and select real facings before assigning clips.",
+  "extraction_notes": "Global whole-figure connected-component bounds, ordered by row center then x; neighboring major figures masked out. No native scaling or painting. Detached effects outside figure bounds remain in transparent-source.png for separate extraction. Some gray edge residues remain review material."
 }

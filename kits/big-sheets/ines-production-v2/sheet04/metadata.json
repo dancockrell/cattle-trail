@@ -26,9 +26,9 @@
       "index": 0,
       "source_crop_xywh": [
         54,
-        9,
+        10,
         120,
-        210
+        209
       ],
       "atlas_rect_xywh": [
         0,
@@ -40,7 +40,7 @@
         160,
         304
       ],
-      "native_sha256": "ba3c06220f7526e58afb2de6b203fe088eddee17e2ed1a564cbc69fc625c5c25"
+      "native_sha256": "2f785aacf546bc81790bf7c26b85f9cff3a270bdaea376b93d1d750552432df2"
     },
     {
       "index": 1,
@@ -65,9 +65,9 @@
     {
       "index": 2,
       "source_crop_xywh": [
-        501,
+        502,
         6,
-        127,
+        124,
         213
       ],
       "atlas_rect_xywh": [
@@ -80,14 +80,14 @@
         160,
         304
       ],
-      "native_sha256": "0c954463f74200e60f8c499f9fa79d1f144f5bcf9c0fe6d00fff120d6fe52e90"
+      "native_sha256": "aabb88d011094608ab68002ddc78be58923771eb3bff0d5ee426cbaec35ecdfe"
     },
     {
       "index": 3,
       "source_crop_xywh": [
-        700,
+        708,
         20,
-        131,
+        123,
         199
       ],
       "atlas_rect_xywh": [
@@ -100,7 +100,7 @@
         160,
         304
       ],
-      "native_sha256": "8fd980af0a2734403cec52fbc07f0cd5d0f55a62a003c9e209cc8f753901eae7"
+      "native_sha256": "ac43ebddb0c02f5cee6dc0d184adbeaee203c2a516c737604f2d0cd65b1fbf04"
     },
     {
       "index": 4,
@@ -345,9 +345,9 @@
     {
       "index": 16,
       "source_crop_xywh": [
-        42,
+        57,
         451,
-        134,
+        119,
         211
       ],
       "atlas_rect_xywh": [
@@ -360,7 +360,7 @@
         160,
         304
       ],
-      "native_sha256": "c96961601739c85eb8dc09f06fd8d2393c75aab9d1242ca0d26e252e71b1072f"
+      "native_sha256": "1a4cf190669c2c862482f658a3338a2371ac396a07ce9a6218a5814b5b1820ce"
     },
     {
       "index": 17,
@@ -468,7 +468,7 @@
         1388,
         453,
         124,
-        212
+        211
       ],
       "atlas_rect_xywh": [
         1920,
@@ -480,15 +480,15 @@
         160,
         304
       ],
-      "native_sha256": "3c97a769fc56c6e50a9bef773117b05779a54b6998e77b73639f72361546fb11"
+      "native_sha256": "762f4ac65080662d43234f94b5da74e5bdc2fccc85b46618245d32eb3fb0b084"
     },
     {
       "index": 23,
       "source_crop_xywh": [
         1613,
-        446,
+        451,
         112,
-        219
+        214
       ],
       "atlas_rect_xywh": [
         2240,
@@ -500,7 +500,7 @@
         160,
         304
       ],
-      "native_sha256": "4768ffc065261916ccd6b3e15552ffb845a524b01910c13fc8e8dada0375a6b8"
+      "native_sha256": "4c4121aee241eccbe061e622f394284f85eadf3ae5b74842b45851e99df83c25"
     },
     {
       "index": 24,
@@ -526,9 +526,9 @@
       "index": 25,
       "source_crop_xywh": [
         277,
-        673,
+        675,
         127,
-        207
+        205
       ],
       "atlas_rect_xywh": [
         320,
@@ -540,7 +540,7 @@
         160,
         304
       ],
-      "native_sha256": "d7810d9d3005f22f342e44645da9a4a1d090a56b014514349a6d224a9a8ab0ea"
+      "native_sha256": "f678d4117213cdcbab9d81a9325f8d4b9ed93e9fe7e5dd55959eff98c027881a"
     },
     {
       "index": 26,
@@ -588,7 +588,7 @@
         931,
         674,
         147,
-        212
+        205
       ],
       "atlas_rect_xywh": [
         1280,
@@ -600,7 +600,7 @@
         160,
         304
       ],
-      "native_sha256": "bafb369f828b7bf2f59a8c5fecabda373dd9799a1270002e64e4c8966f52bffb"
+      "native_sha256": "5769c9e261a2f28b081f97841f11d0e6c0c4a0b70b83b2070ee799ff7f5b0ee2"
     },
     {
       "index": 29,
@@ -626,9 +626,9 @@
       "index": 30,
       "source_crop_xywh": [
         1392,
-        665,
+        659,
         118,
-        217
+        223
       ],
       "atlas_rect_xywh": [
         1920,
@@ -640,7 +640,7 @@
         160,
         304
       ],
-      "native_sha256": "959991215f1a9937a60fad1463cd9e1666b1bfddd5754b9c4b822d044dfe4026"
+      "native_sha256": "9f2752e1fb0db1b8fbe8d1f7cc05265e6b482e292aa8558a652835d005f51cfc"
     },
     {
       "index": 31,
@@ -671,6 +671,12 @@
         2,
         3
       ],
+      "source_frame_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -678,6 +684,12 @@
     },
     "laugh": {
       "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "source_frame_indices": [
         4,
         5,
         6,
@@ -695,6 +707,12 @@
         10,
         11
       ],
+      "source_frame_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -702,6 +720,12 @@
     },
     "invite": {
       "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "source_frame_indices": [
         12,
         13,
         14,
@@ -719,6 +743,12 @@
         18,
         19
       ],
+      "source_frame_indices": [
+        16,
+        17,
+        18,
+        19
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -726,6 +756,12 @@
     },
     "drink": {
       "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "source_frame_indices": [
         20,
         21,
         22,
@@ -743,6 +779,12 @@
         26,
         27
       ],
+      "source_frame_indices": [
+        24,
+        25,
+        26,
+        27
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -755,6 +797,12 @@
         30,
         31
       ],
+      "source_frame_indices": [
+        28,
+        29,
+        30,
+        31
+      ],
       "frame_duration_ms": 125,
       "loop": false,
       "status": "review_only",
@@ -762,5 +810,6 @@
     }
   },
   "runtime_admitted": false,
-  "review_notes": "Eight four-pose actions, no generated return padding requested. Clothing drift persists: reference-like teal bodice and cream sleeves instead of strictly single-color blouse. Review before runtime."
+  "review_notes": "Eight four-pose actions, no generated return padding requested. Clothing drift persists: reference-like teal bodice and cream sleeves instead of strictly single-color blouse. Review before runtime.",
+  "extraction_notes": "Global whole-figure connected-component bounds, ordered by row center then x; neighboring major figures masked out. No native scaling or painting. Detached effects outside figure bounds remain in transparent-source.png for separate extraction. Some gray edge residues remain review material."
 }
