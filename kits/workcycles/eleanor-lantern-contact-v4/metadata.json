@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "status": "whole_sprite_opposite_contact_candidate",
+  "character": "eleanor",
+  "direction": "east",
+  "carry_hand": "right",
+  "source": "kits/source/eleanor-lantern-contact-v4.png",
+  "source_sha256": "0f9b42e028949754df6e4d99145b59bf873ff5ecd891ae0c54353e18b2af20ca",
+  "source_size": [
+    1085,
+    1450
+  ],
+  "prompt": "kits/source/eleanor-lantern-contact-v4-prompt.txt",
+  "trim_xyxy": [
+    300,
+    307,
+    839,
+    1207
+  ],
+  "scale": 0.044444444444444446,
+  "resized_size": [
+    24,
+    40
+  ],
+  "cell_offset": [
+    20,
+    21
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "visible_pose": "Separated contact feet; warmnearboot trails left, darkerfarboot leads right; attachedlantern in rightnearhand.",
+  "comparison_sources": [
+    {
+      "file": "kits/workcycles/eleanor-lantern-walk-v2/00-whole-frame.png",
+      "sha256": "758c5bac440e2e9dfb75d5182ee41033c4150c8a1381de567407af4baaa13790"
+    },
+    {
+      "file": "kits/workcycles/eleanor-east-v7/02-whole-frame.png",
+      "sha256": "7079dacd0461d88749ebefbaeea2e54d0f9252324d5b7c6a2738d92fc1f28526"
+    }
+  ],
+  "limitations": [
+    "Skirt obscures knee/hip articulation; boot identity and separated contact silhouette are visible.",
+    "Forward toe angles upward slightly as heel contact; not a passing pose.",
+    "Singlecandidatepose, no fullcycle approval or runtimechange."
+  ],
+  "transformation": "Wholefigure binarymagenta key,trim,nearest40pxrescale,padding; no limb edits."
+}

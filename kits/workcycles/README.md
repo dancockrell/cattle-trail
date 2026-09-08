@@ -42,3 +42,11 @@ These two working kits support the authored adventure under construction. Neithe
 Lantern animation follow-up: eleanor-lantern-walk-v2 provides four whole east carry poses but repeats contact-like frames and lacks opposite passing, so it remains a working candidate. crossing-spirit-settle-v2 provides two new lower-head poses with exact original endpoints. The selected-preview atlas uses source frames 0→1→3, omitting the second new pose because it lowers beyond the final endpoint and would force an upward correction. Its short nonloop timings are provisional; neither working animation is a runtime replacement yet.
 
 The new eleanor-lantern-opposite-v3 supplies a narrow opposite passing silhouette with warm near-boot crossover; it remains a working whole-character pose. spirit-lantern-prop-v1 supplies four standalone 14-pixel brass lantern states in 32�32 cells, grip [16,8]. The warm-flame whole prop is copied unchanged into assets/lantern/carried_lantern.png and carried on Eleanor's belt during the playable source encounter, preserving existing character pixels while carry cycles are repaired.
+
+## Contact repair and new mechanic cast
+
+Eleanor lantern east v5 assembles unchanged whole cells: v2 contactA, v2 passingA, v4 opposite contact, v3 opposite passing, plus v1idle. The opposite contact now has the warm near boot behind and dark far boot ahead; the opposite passing has the warm boot crossing beneath her hips. All five64×64 cells use [32,61] anchors. The source equipment renderer now selects this complete-body bank while facing east and transfers elapsed gait phase when entering; other directions keep the belt prop. Timing remains provisional and this is not native motion acceptance.
+
+Ada Mercer idle v1 introduces the explicitly adult22-year-old mechanic's identity in E/NE/NW/S poses. Auburn braid, hair goggles, cropped work jacket, cream blouse, olive trousers and tool belt. The east view is front-oblique and NW tool count needs continuity work. Candidate character kit only.
+
+Steam cattle-handler v1 supplies idle, stalled, repaired and one passing pose of a brass/iron agricultural walker. Its bumper actually faces southwest, recorded honestly despite the northeast request. Four96×96 cells, [48,93] anchors,48-pixel idle height. Candidate encounter kit, not a complete walk or room placement.

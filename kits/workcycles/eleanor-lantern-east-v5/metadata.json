@@ -1,0 +1,132 @@
+{
+  "texture": "res://assets/lantern/eleanor_carry_east.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "frames": [
+    {
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "input_cell": "kits/workcycles/eleanor-lantern-walk-v2/00-whole-frame.png",
+      "input_cell_sha256": "758c5bac440e2e9dfb75d5182ee41033c4150c8a1381de567407af4baaa13790",
+      "source_metadata": "kits/workcycles/eleanor-lantern-walk-v2/metadata.json",
+      "phase": "contact A",
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "input_cell": "kits/workcycles/eleanor-lantern-walk-v2/01-whole-frame.png",
+      "input_cell_sha256": "5802cae5304bd2f0c81bbcb62e8a92a49c4123ded37d60d81cf7921b982552b0",
+      "source_metadata": "kits/workcycles/eleanor-lantern-walk-v2/metadata.json",
+      "phase": "passing A",
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "input_cell": "kits/workcycles/eleanor-lantern-contact-v4/whole-frame.png",
+      "input_cell_sha256": "087b9ef56e0886188f05355d810ce82e156e8d91cbc0c8bb000a6d59c76494bc",
+      "source_metadata": "kits/workcycles/eleanor-lantern-contact-v4/metadata.json",
+      "phase": "contact B",
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "input_cell": "kits/workcycles/eleanor-lantern-opposite-v3/whole-frame.png",
+      "input_cell_sha256": "f4c60013b1744dbef8684a46edb9566917a539979d04751440304210a40d252d",
+      "source_metadata": "kits/workcycles/eleanor-lantern-opposite-v3/metadata.json",
+      "phase": "passing B",
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "atlas_rect": [
+        256,
+        0,
+        64,
+        64
+      ],
+      "input_cell": "kits/workcycles/eleanor-lantern-v1/00-whole-frame.png",
+      "input_cell_sha256": "412a28b839e8cfa7b0272dfd220a88821fbf9706778fa3ed413675a84584849e",
+      "source_metadata": "kits/workcycles/eleanor-lantern-v1/metadata.json",
+      "phase": "idle",
+      "anchor": [
+        32,
+        61
+      ]
+    }
+  ],
+  "default_facing": "east",
+  "clips": {
+    "idle": {
+      "frames": [
+        4
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "idle_east": {
+      "frames": [
+        4
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "walk_east": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 6.25,
+      "loop": true,
+      "durations": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ]
+    }
+  },
+  "locomotion": {
+    "nominal_speed": 18.75
+  },
+  "status": "source_integrated_provisional_timing_no_motion_acceptance",
+  "processing": "Exact whole RGBA cells, no pose repainting or body-part compositing.",
+  "texture_sha256": "44c4321cd05a82a2dd82b928b40de51e0eab76a6a61d47a94758290a21e989a4"
+}

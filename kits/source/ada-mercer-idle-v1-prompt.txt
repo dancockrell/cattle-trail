@@ -1,0 +1,12 @@
+Create a production pixel-art character identity sheet for ADA MERCER, explicitly a22-YEAR-OLD ADULT WOMAN steam mechanic in 1870s WeirdWest Texas. Exactly4wholebody static idle sprites in2columns×2rows on flat pure#FF00FF magenta with broadclean gutters and margins. No labels, grid, scenery, shadows or text.
+
+Attached Eleanor sheet is STYLE/CAMERA reference only: match warm restrained frontier palette, highthreequarter topdown gamecamera, darkcontours and hard squarepixelclusters. Ada is a NEW distinct adult identity, not Eleanor in changed clothes. Clearly adult facialstructure and adultbodyproportions; slimhealthy active build, modestsmallchest, confident plantedstance, naturalhips, no childlike/chibi exaggeration.
+
+Ada's consistent identity in ALL4: auburnhair tiedinONEshortbraid, a pairofsmall brassworkgoggles resting ONTOPofhair (not overeyes), warmfairskin, calmselfconfidentexpression. Waist-length cropped brownworkjacket worn open over a modestcreamopen-collarblouse tucked into fitteddarkolive ridingtrousers, practicalleathertoolbelt with smallwrenchandpouches, scuffedbrownboots. PG13fullyclothed, no exposedmidriff/cleavage, noarmor/miniskirt/newprops. Jacketlength, braid, goggles, toolbeltpositions and outfitcolors remain identical when turned. Emptyhands relaxedat sides, alltoolsstaybeltonhip. Wholehatlesshead/goggles/hands/bootstipsinside eachcell.
+
+Exact cell directions:
+Top-left0 EAST: body/feet faceSCREENRIGHT, side/frontthreequarterview.
+Top-right1 NORTHEAST: rearoblique, backofjacket visible, head/feet pointUPRIGHT.
+Bottom-left2 NORTHWEST: rearoblique, backofjacket visible, head/feet pointUPLEFT.
+Bottom-right3 SOUTH: straighttowardviewer/SCREENDOWN, frontalbody, bothbootsvisible.
+These are four stable directional IDLE poses, not a walkcycle. Same adultwoman anatomy/size and fixedcameraheight ineachcell. Crispusablepixels, no smoothing, no painterlyrender, no fog/effects. Exactlyfourcompletewholecharacters.

@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "status": "whole_pose_candidate_not_runtime_admitted",
+  "source": "kits/source/steam-cattle-handler-v1.png",
+  "source_sha256": "0c52ad302e96f9a92bdaf670480f6ee1d49cc81fef5f110679518b6c344717d4",
+  "prompt": "kits/source/steam-cattle-handler-v1-prompt.txt",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "cell": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    93
+  ],
+  "body_height_idle": 48,
+  "scale": 0.11594202898550725,
+  "texture": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "state": "idle",
+      "actual_direction": "southwest",
+      "atlas_rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "cell_offset": [
+        27,
+        45
+      ],
+      "scaled_size": [
+        42,
+        48
+      ],
+      "source_cell": {
+        "index": 0,
+        "row": 0,
+        "column": 0,
+        "file": "cell_00_00.png",
+        "source_rect": [
+          0,
+          0,
+          634,
+          612
+        ],
+        "trim_rect_in_cell": [
+          166,
+          119,
+          529,
+          533
+        ],
+        "source_trim_rect": [
+          166,
+          119,
+          529,
+          533
+        ],
+        "size": [
+          363,
+          414
+        ],
+        "rgba_sha256": "a70598ab86ebbd95e1f1c1104ae2630498ff3be0b390aa2b7b0e9bf7deed0c04",
+        "components_before_filter": 1,
+        "components_kept": 1,
+        "removed_small_component_pixels": 0
+      },
+      "alpha_bounds_xyxy": [
+        27,
+        45,
+        69,
+        93
+      ],
+      "rgba_sha256": "6639c3cae69a172ba601910ab006de72f31aa75aed893cf102a8ef900701be56"
+    },
+    {
+      "index": 1,
+      "state": "stalled",
+      "actual_direction": "southwest",
+      "atlas_rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "cell_offset": [
+        28,
+        45
+      ],
+      "scaled_size": [
+        39,
+        48
+      ],
+      "source_cell": {
+        "index": 1,
+        "row": 0,
+        "column": 1,
+        "file": "cell_00_01.png",
+        "source_rect": [
+          634,
+          0,
+          1254,
+          612
+        ],
+        "trim_rect_in_cell": [
+          106,
+          115,
+          443,
+          533
+        ],
+        "source_trim_rect": [
+          740,
+          115,
+          1077,
+          533
+        ],
+        "size": [
+          337,
+          418
+        ],
+        "rgba_sha256": "9ca6fe855c05277fdfbea3aa6631d3d0bb3ad76b75a2004eb3ea85b4b7bfa5ae",
+        "components_before_filter": 1,
+        "components_kept": 1,
+        "removed_small_component_pixels": 0
+      },
+      "alpha_bounds_xyxy": [
+        28,
+        45,
+        67,
+        93
+      ],
+      "rgba_sha256": "ef6e984bfd2927e92eb353099fc57034b31ebd72254066c0595ce46544bcb33b"
+    },
+    {
+      "index": 2,
+      "state": "repaired",
+      "actual_direction": "southwest",
+      "atlas_rect": [
+        192,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "cell_offset": [
+        28,
+        45
+      ],
+      "scaled_size": [
+        40,
+        48
+      ],
+      "source_cell": {
+        "index": 2,
+        "row": 1,
+        "column": 0,
+        "file": "cell_01_00.png",
+        "source_rect": [
+          0,
+          612,
+          624,
+          1254
+        ],
+        "trim_rect_in_cell": [
+          166,
+          82,
+          514,
+          496
+        ],
+        "source_trim_rect": [
+          166,
+          694,
+          514,
+          1108
+        ],
+        "size": [
+          348,
+          414
+        ],
+        "rgba_sha256": "748c22e657145605f7adda2917fe5ee25a1f92d02c2e40bc6759b9b992dd917c",
+        "components_before_filter": 1,
+        "components_kept": 1,
+        "removed_small_component_pixels": 0
+      },
+      "alpha_bounds_xyxy": [
+        28,
+        45,
+        68,
+        93
+      ],
+      "rgba_sha256": "e75964758da4a138467979220fd7dc3065f0fecfaa68d52a29698cb10a09c10b"
+    },
+    {
+      "index": 3,
+      "state": "walking_passing",
+      "actual_direction": "southwest",
+      "atlas_rect": [
+        288,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "cell_offset": [
+        26,
+        45
+      ],
+      "scaled_size": [
+        43,
+        48
+      ],
+      "source_cell": {
+        "index": 3,
+        "row": 1,
+        "column": 1,
+        "file": "cell_01_01.png",
+        "source_rect": [
+          624,
+          612,
+          1254,
+          1254
+        ],
+        "trim_rect_in_cell": [
+          110,
+          81,
+          478,
+          496
+        ],
+        "source_trim_rect": [
+          734,
+          693,
+          1102,
+          1108
+        ],
+        "size": [
+          368,
+          415
+        ],
+        "rgba_sha256": "94e4527a1a5c2b289aa759356d71881691319ba91e209f504ed821a2c93ffec7",
+        "components_before_filter": 1,
+        "components_kept": 1,
+        "removed_small_component_pixels": 0
+      },
+      "alpha_bounds_xyxy": [
+        26,
+        45,
+        69,
+        93
+      ],
+      "rgba_sha256": "4349ffed283782ed60a7f3aee76fe655f70d802e59e923fa8ec88b5ae9337d0c"
+    }
+  ],
+  "clips": {
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true,
+      "presentation": "static whole state hold"
+    },
+    "stalled": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": true,
+      "presentation": "static whole state hold"
+    },
+    "repaired": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": true,
+      "presentation": "static whole state hold"
+    },
+    "walking_passing": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": true,
+      "presentation": "static whole state hold"
+    }
+  },
+  "processing": {
+    "whole_sprite_only": true,
+    "key": "binary magenta cleanup",
+    "resampling": "nearest",
+    "grid": {
+      "schema_version": 1,
+      "status": "extracted_candidates_pending_visual_review",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "columns": 2,
+      "rows": 2,
+      "rect_convention": "left/top/right/bottom; right and bottom exclusive",
+      "processing": {
+        "magenta_difference": 25,
+        "source_alpha_threshold": 128,
+        "min_component_pixels": 1,
+        "connectivity": 4,
+        "rescaled": false,
+        "all_retained_components_preserved": true
+      },
+      "ycuts": [
+        0,
+        612,
+        1254
+      ],
+      "xcuts_by_row": [
+        [
+          0,
+          634,
+          1254
+        ],
+        [
+          0,
+          624,
+          1254
+        ]
+      ],
+      "review_warnings": [],
+      "cells": [
+        {
+          "index": 0,
+          "row": 0,
+          "column": 0,
+          "file": "cell_00_00.png",
+          "source_rect": [
+            0,
+            0,
+            634,
+            612
+          ],
+          "trim_rect_in_cell": [
+            166,
+            119,
+            529,
+            533
+          ],
+          "source_trim_rect": [
+            166,
+            119,
+            529,
+            533
+          ],
+          "size": [
+            363,
+            414
+          ],
+          "rgba_sha256": "a70598ab86ebbd95e1f1c1104ae2630498ff3be0b390aa2b7b0e9bf7deed0c04",
+          "components_before_filter": 1,
+          "components_kept": 1,
+          "removed_small_component_pixels": 0
+        },
+        {
+          "index": 1,
+          "row": 0,
+          "column": 1,
+          "file": "cell_00_01.png",
+          "source_rect": [
+            634,
+            0,
+            1254,
+            612
+          ],
+          "trim_rect_in_cell": [
+            106,
+            115,
+            443,
+            533
+          ],
+          "source_trim_rect": [
+            740,
+            115,
+            1077,
+            533
+          ],
+          "size": [
+            337,
+            418
+          ],
+          "rgba_sha256": "9ca6fe855c05277fdfbea3aa6631d3d0bb3ad76b75a2004eb3ea85b4b7bfa5ae",
+          "components_before_filter": 1,
+          "components_kept": 1,
+          "removed_small_component_pixels": 0
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 0,
+          "file": "cell_01_00.png",
+          "source_rect": [
+            0,
+            612,
+            624,
+            1254
+          ],
+          "trim_rect_in_cell": [
+            166,
+            82,
+            514,
+            496
+          ],
+          "source_trim_rect": [
+            166,
+            694,
+            514,
+            1108
+          ],
+          "size": [
+            348,
+            414
+          ],
+          "rgba_sha256": "748c22e657145605f7adda2917fe5ee25a1f92d02c2e40bc6759b9b992dd917c",
+          "components_before_filter": 1,
+          "components_kept": 1,
+          "removed_small_component_pixels": 0
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 1,
+          "file": "cell_01_01.png",
+          "source_rect": [
+            624,
+            612,
+            1254,
+            1254
+          ],
+          "trim_rect_in_cell": [
+            110,
+            81,
+            478,
+            496
+          ],
+          "source_trim_rect": [
+            734,
+            693,
+            1102,
+            1108
+          ],
+          "size": [
+            368,
+            415
+          ],
+          "rgba_sha256": "94e4527a1a5c2b289aa759356d71881691319ba91e209f504ed821a2c93ffec7",
+          "components_before_filter": 1,
+          "components_kept": 1,
+          "removed_small_component_pixels": 0
+        }
+      ]
+    }
+  },
+  "inspection": {
+    "identity": "Consistent compact brass-banded iron boiler, four jointed legs, front wood bumper and bell.",
+    "direction": "Requested NE, generated front bumper faces SW; retain actual SW labeling.",
+    "states": "Idle planted; stalled has valve-attached ivory steam; repaired amber pilot; passing raises front-left visible foot.",
+    "limitations": [
+      "Four whole state candidates, not a full walking cycle.",
+      "Repaired and passing top valve/pilot differ; no seamless animation claim.",
+      "No NE-facing admission."
+    ]
+  }
+}
