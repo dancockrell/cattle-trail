@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "status": "ordered_whole_sprite_candidate_not_runtime_admitted",
+  "character": "eleanor",
+  "direction": "east",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "review_sheet": "review-sheet.png",
+  "frame_order": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase_intent": "contact_near",
+      "visible_boot_identity": "Lighter forward/right boot; darker trailing/left boot. Near-leg forward contact intended.",
+      "source": "kits/source/eleanor-east-walk-v6.png",
+      "source_sha256": "8725ed44e9337f4b07068ee2c46803ecce04e2f87e89eec17486d31915e24a45",
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_crop_xyxy": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        196,
+        152,
+        439,
+        590
+      ],
+      "source_crop_file": "00-source-crop.png",
+      "trim_file": "00-trim-rgba.png",
+      "whole_frame_file": "00-whole-frame.png",
+      "resample": "nearest",
+      "scale": 0.091324200913242,
+      "resized_body_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "review_duration_ms": 160
+    },
+    {
+      "index": 1,
+      "phase_intent": "passing_near_support",
+      "visible_boot_identity": "Forward/beneath-body warm-brown boot supports; darker boot trails left. Far-foot passing intended but partly hidden.",
+      "source": "kits/source/eleanor-east-walk-v6.png",
+      "source_sha256": "8725ed44e9337f4b07068ee2c46803ecce04e2f87e89eec17486d31915e24a45",
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_crop_xyxy": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        174,
+        149,
+        369,
+        594
+      ],
+      "source_crop_file": "01-source-crop.png",
+      "trim_file": "01-trim-rgba.png",
+      "whole_frame_file": "01-whole-frame.png",
+      "resample": "nearest",
+      "scale": 0.0898876404494382,
+      "resized_body_size": [
+        18,
+        40
+      ],
+      "cell_offset": [
+        23,
+        21
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "review_duration_ms": 160
+    },
+    {
+      "index": 2,
+      "phase_intent": "contact_far",
+      "visible_boot_identity": "Darker forward/right boot; lighter trailing/left boot. Opposite boot identity is visible; hip reversal remains obscured.",
+      "source": "kits/source/eleanor-east-opposite-contact-v7.png",
+      "source_sha256": "39c2143a3fc6521af62d41eab65b306138917c19892947d3d3308ac57525091f",
+      "source_size": [
+        1085,
+        1450
+      ],
+      "source_crop_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        351,
+        303,
+        846,
+        1181
+      ],
+      "source_crop_file": "02-source-crop.png",
+      "trim_file": "02-trim-rgba.png",
+      "whole_frame_file": "02-whole-frame.png",
+      "resample": "nearest",
+      "scale": 0.04555808656036447,
+      "resized_body_size": [
+        23,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "review_duration_ms": 160
+    },
+    {
+      "index": 3,
+      "phase_intent": "passing_far_support",
+      "visible_boot_identity": "Dark boot planted beneath body; brighter boot crosses in front slightly above it. Distinct foreground overlap visible.",
+      "source": "kits/source/eleanor-east-opposite-passing-v7.png",
+      "source_sha256": "d4ab694fa40815c8b7a17438c07ee4df8791cbd9964e3efcb503fd0d6189b4f3",
+      "source_size": [
+        1085,
+        1450
+      ],
+      "source_crop_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        402,
+        283,
+        715,
+        1153
+      ],
+      "source_crop_file": "03-source-crop.png",
+      "trim_file": "03-trim-rgba.png",
+      "whole_frame_file": "03-whole-frame.png",
+      "resample": "nearest",
+      "scale": 0.04597701149425287,
+      "resized_body_size": [
+        14,
+        40
+      ],
+      "cell_offset": [
+        25,
+        21
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "review_duration_ms": 160
+    }
+  ],
+  "transformation": "Only source cropping, binary magenta key, whole-sprite nearest resampling to40pixel bodyheight, and padded atlas placement. No limbs repainted or transformed independently.",
+  "alpha_rule": "(red-green>25) AND (blue-green>25) ->RGBAzero; all retained pixels alpha255.",
+  "limitations": [
+    "Boot colors and foreground overlap distinguish the requested opposite passing pose.",
+    "The skirt still obscures hips/knees; phase names are intended gait roles, not an anatomical validation claim.",
+    "New single poses were generated at larger source resolution; wholebody nearest normalization is explicitly recorded.",
+    "No engine playback performed.160ms is review timing only."
+  ],
+  "new_passing_original": "C:/Users/Admin/.codex/generated_images/01a07cc4-26b3-73b0-9988-179fdb3df96e/exec-41985c8b-f87a-4e3b-9064-33492a884e9f.png",
+  "review_clip": {
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "durations_seconds": [
+      0.16,
+      0.16,
+      0.16,
+      0.16
+    ],
+    "loop": true,
+    "timing_status": "provisional_sheet_order_only"
+  }
+}

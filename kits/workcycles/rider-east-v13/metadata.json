@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "status": "working_strip_missing_grounded_opposite_contact",
+  "corrected_cycle": false,
+  "direction": "east",
+  "atlas": "atlas.png",
+  "cell": [
+    96,
+    96
+  ],
+  "body_height_target_pixels": 62,
+  "frame_order": [
+    "v11 contact A",
+    "v11 passing A",
+    "v13 passing B",
+    "v11 passing B"
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "file": "cell_00_00.png",
+      "source_rect": [
+        0,
+        0,
+        454,
+        887
+      ],
+      "trim_rect_in_cell": [
+        67,
+        237,
+        430,
+        591
+      ],
+      "source_trim_rect": [
+        67,
+        237,
+        430,
+        591
+      ],
+      "size": [
+        363,
+        354
+      ],
+      "rgba_sha256": "626de4b72b619c6f500e1ebd41064be5323d926dc3639921c506affcc827349b",
+      "components_before_filter": 1,
+      "components_kept": 1,
+      "removed_small_component_pixels": 0,
+      "source": "kits/source/rider-east-low-walk-v11.png",
+      "source_sha256": "4bb1613f0a09163f4d6d88bba4d5bb0ba70ed84edeb2d851e10a7bb4328be64e",
+      "scale": 0.1751412429378531,
+      "resampling": "nearest",
+      "native_size": [
+        64,
+        62
+      ],
+      "label": "v11 contact A",
+      "atlas_rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "image_offset_in_cell": [
+        16,
+        31
+      ]
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "file": "cell_00_01.png",
+      "source_rect": [
+        454,
+        0,
+        876,
+        887
+      ],
+      "trim_rect_in_cell": [
+        26,
+        237,
+        388,
+        591
+      ],
+      "source_trim_rect": [
+        480,
+        237,
+        842,
+        591
+      ],
+      "size": [
+        362,
+        354
+      ],
+      "rgba_sha256": "949b8f38a653dce21d6fbdc4eefd651abf335bf9745532211d46a57db6520199",
+      "components_before_filter": 1,
+      "components_kept": 1,
+      "removed_small_component_pixels": 0,
+      "source": "kits/source/rider-east-low-walk-v11.png",
+      "source_sha256": "4bb1613f0a09163f4d6d88bba4d5bb0ba70ed84edeb2d851e10a7bb4328be64e",
+      "scale": 0.1751412429378531,
+      "resampling": "nearest",
+      "native_size": [
+        63,
+        62
+      ],
+      "label": "v11 passing A",
+      "atlas_rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "image_offset_in_cell": [
+        16,
+        31
+      ]
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 0,
+      "file": "cell_00_00.png",
+      "source_rect": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "trim_rect_in_cell": [
+        96,
+        137,
+        1129,
+        1098
+      ],
+      "source_trim_rect": [
+        96,
+        137,
+        1129,
+        1098
+      ],
+      "size": [
+        1033,
+        961
+      ],
+      "rgba_sha256": "a827cf721c33cd4e1f35ea74fc7a03d517f14b587cd3a85596a2dc5e5b3f2937",
+      "components_before_filter": 9,
+      "components_kept": 1,
+      "removed_small_component_pixels": 10,
+      "source": "kits/source/rider-east-opposite-contact-v13.png",
+      "source_sha256": "dba5a645dd932bef74f7f514de60413d806cdb93b3f5f622063e273ae8a79b77",
+      "scale": 0.06451612903225806,
+      "resampling": "nearest",
+      "native_size": [
+        67,
+        62
+      ],
+      "label": "v13 passing B",
+      "atlas_rect": [
+        192,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "image_offset_in_cell": [
+        14,
+        31
+      ]
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "file": "cell_00_03.png",
+      "source_rect": [
+        1298,
+        0,
+        1774,
+        887
+      ],
+      "trim_rect_in_cell": [
+        26,
+        237,
+        389,
+        591
+      ],
+      "source_trim_rect": [
+        1324,
+        237,
+        1687,
+        591
+      ],
+      "size": [
+        363,
+        354
+      ],
+      "rgba_sha256": "4e3d943862107307350d73cd5acb4600c2c686e362b1f750836d6886e2c16943",
+      "components_before_filter": 1,
+      "components_kept": 1,
+      "removed_small_component_pixels": 0,
+      "source": "kits/source/rider-east-low-walk-v11.png",
+      "source_sha256": "4bb1613f0a09163f4d6d88bba4d5bb0ba70ed84edeb2d851e10a7bb4328be64e",
+      "scale": 0.1751412429378531,
+      "resampling": "nearest",
+      "native_size": [
+        64,
+        62
+      ],
+      "label": "v11 passing B",
+      "atlas_rect": [
+        288,
+        0,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "image_offset_in_cell": [
+        16,
+        31
+      ]
+    }
+  ],
+  "processing": "Adaptive crop; binary magenta key; preserve components >=5pixels; nearest reduction based on62px full mounted-body height; bottom-center placement. No drawing, compositing bodyparts or generative interpolation.",
+  "missing_phase": "v13reverses leg depth but leaves bright nearforehoof lifted; it is an opposite passing pose, not the requested grounded rearward contact. Strip therefore lacks grounded Contact B.",
+  "source_prompt_files": [
+    "kits/source/rider-east-low-walk-v11-prompt.txt",
+    "kits/source/rider-east-opposite-contact-v13-prompt.txt"
+  ],
+  "atlas_sha256": "37854832b3e75b18545a0c465c42a33730647c7afd14680ea2198e9bcd09fc32",
+  "review_notes": [
+    "v13now has brighter rearward foregroundforeleg and darker forward backgroundforeleg. Its rearwardhoof isoffground.",
+    "Currentorder preservesrequestedsourceassembly forinspection only, not a validated animation or runtime admission."
+  ]
+}

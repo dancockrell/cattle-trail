@@ -1,0 +1,8 @@
+Targeted edit of this ONE whole pixel-art mounted rider image. Preserve the cowboy, hat, face, blue shirt, red scarf, arms, reins, saddle, horse head, neck, chest, barrel, tail and BOTH HIND LEGS exactly. Preserve magenta background and pixel style. Edit ONLY the two front legs BELOW the chest.
+
+Specific screen geometry correction:
+1 REMOVE the thick BRIGHT ORANGE DIAGONAL LEG currently running from the visible chest DOWN-RIGHT to the rightmost front hoof.
+2 In its place, draw that bright foreground leg slanting DOWN-LEFT from the chest, with its black hoof ending UNDER THE SADDLE/BELLY, behind the chest. This bright leg must be the frontmost layer, overlapping the darker leg where they cross.
+3 Draw a SLENDER DARK BROWN leg BEHIND the chest slanting DOWN-RIGHT to the forward/rightmost hoof position. The forward diagonal leg must be DARK, slender, partly hidden at its top behind the bright leg and chest. Keep a clear dark outline separating it.
+The two front legs should visibly cross with the bright leg going DOWN-LEFT IN FRONT of the dark leg going DOWN-RIGHT BEHIND. Do not simply recolor the existing bright forward leg; change the attachment overlap and knee shape so depth is unmistakable. Bright rearward hoof below belly, dark forward hoof farthest RIGHT. Both black hooves on the same ground plane.
+Keep the already improved hind legs unchanged: bright hind leg points forward/right under barrel; dark hind leg reaches back/left. Exactly four horse legs, no extra limbs. No crouching or torso movement. No dust, rope, weapon, text, labels, shadows or extra objects. Deliver one complete coherent horse with mounted cowboy, not a sheet or cutout rig.
