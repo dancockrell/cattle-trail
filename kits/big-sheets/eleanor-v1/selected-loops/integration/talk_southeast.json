@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "runtime_admitted": false,
+  "usage": "selected_performance_review",
+  "texture": "res://kits/big-sheets/eleanor-v1/selected-loops/talk_southeast/atlas.png",
+  "texture_sha256": "e7a2aa7046311d659e11698227c1255abf11054e1ff2d5b29e5ed7a1a945a0d0",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 4,
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 5,
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 6,
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 7,
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ]
+    }
+  ],
+  "clips": {
+    "talk_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        0.32,
+        0.18,
+        0.22,
+        0.24,
+        0.2,
+        0.3,
+        0.22,
+        0.32
+      ],
+      "fps": 1,
+      "loop": true,
+      "admitted": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "durations": [
+        1.0
+      ],
+      "fps": 1,
+      "loop": false,
+      "admitted": false
+    }
+  },
+  "source_metadata": "kits/big-sheets/eleanor-v1/selected-loops/talk_southeast/metadata.json",
+  "source_metadata_sha256": "ba7bda03d70e672c837255c239d51a69528f202f1f02a88b85d59e117c6d595b",
+  "note": "Exact selected source frames and authored timing; review scale is provisional. No art admission or gameplay change."
+}

@@ -1,0 +1,11 @@
+{
+  "runtime_admitted": false,
+  "specs": [
+    "kits/big-sheets/ada-v1/selected-loops/integration/ada.json",
+    "kits/big-sheets/eleanor-v1/selected-loops/integration/field_care_southeast.json",
+    "kits/big-sheets/eleanor-v1/selected-loops/integration/idle_southeast.json",
+    "kits/big-sheets/eleanor-v1/selected-loops/integration/talk_southeast.json",
+    "kits/big-sheets/ines-v1/selected-loops/integration/idle_breathe.json",
+    "kits/big-sheets/ines-v1/selected-loops/integration/spirit_listen.json"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "character_id": "ines_vale",
+  "age": 23,
+  "runtime_admitted": false,
+  "usage": "selected_performance_review",
+  "texture": "res://kits/big-sheets/ines-v1/selected-loops/idle_breathe-atlas.png",
+  "texture_sha256": "4ead4130a18b20f3bff2b1dad044ea9197d44735e3fcb0fdf3a245ccb763aea9",
+  "cell": [
+    320,
+    320
+  ],
+  "anchor": [
+    160,
+    296
+  ],
+  "pixels_per_world_unit": 6,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        320,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        640,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        960,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 4,
+      "atlas_rect": [
+        1280,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 5,
+      "atlas_rect": [
+        1600,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 6,
+      "atlas_rect": [
+        1920,
+        0,
+        320,
+        320
+      ]
+    },
+    {
+      "index": 7,
+      "atlas_rect": [
+        2240,
+        0,
+        320,
+        320
+      ]
+    }
+  ],
+  "clips": {
+    "idle_breathe": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        0.26,
+        0.18,
+        0.18,
+        0.22,
+        0.26,
+        0.18,
+        0.18,
+        0.22
+      ],
+      "fps": 1,
+      "loop": true,
+      "admitted": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "durations": [
+        1.0
+      ],
+      "fps": 1,
+      "loop": false,
+      "admitted": false
+    }
+  },
+  "source_metadata": "kits/big-sheets/ines-v1/selected-loops/metadata.json",
+  "source_metadata_sha256": "9d4e16981068ab351f1fa31ac58990407cdea55131f92ea5ac0b6ab4a3deab93",
+  "note": "Exact selected source frames and authored timing; review scale is provisional. No art admission or gameplay change."
+}

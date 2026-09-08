@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "runtime_admitted": false,
+  "usage": "selected_performance_review",
+  "texture": "res://kits/big-sheets/eleanor-v1/selected-loops/idle_southeast/atlas.png",
+  "texture_sha256": "558343de3a5cd3e6c743070f31df0ab11b1ad13a7a746f2f0166d8dfd004648f",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ]
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ]
+    }
+  ],
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations": [
+        0.4,
+        0.3,
+        0.3,
+        0.4
+      ],
+      "fps": 1,
+      "loop": true,
+      "admitted": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "durations": [
+        1.0
+      ],
+      "fps": 1,
+      "loop": false,
+      "admitted": false
+    }
+  },
+  "source_metadata": "kits/big-sheets/eleanor-v1/selected-loops/idle_southeast/metadata.json",
+  "source_metadata_sha256": "729c23274c6545d913435ef82fe9948a370722d1f4b186d4fe79dca90240a475",
+  "note": "Exact selected source frames and authored timing; review scale is provisional. No art admission or gameplay change."
+}
