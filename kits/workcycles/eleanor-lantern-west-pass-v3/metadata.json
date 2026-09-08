@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "status": "west_lantern_lowpassing_candidate",
+  "character": "eleanor",
+  "direction": "west",
+  "carry_hand": "anatomical_right_far",
+  "near_hand": "anatomical_left_empty",
+  "source": "kits/source/eleanor-lantern-west-pass-v3.png",
+  "source_sha256": "88de65c080c6e89d448c4ca856001b8f835509030902496aed69874e035e64f6",
+  "source_size": [
+    1085,
+    1450
+  ],
+  "prompt": "kits/source/eleanor-lantern-west-pass-v3-prompt.txt",
+  "trim_xyxy": [
+    320,
+    244,
+    735,
+    1238
+  ],
+  "scale": 0.04024144869215292,
+  "resized_size": [
+    17,
+    40
+  ],
+  "cell_offset": [
+    24,
+    21
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "comparison_source": {
+    "file": "kits/workcycles/eleanor-lantern-west-hand-v2/whole-frame.png",
+    "sha256": "44d57686447678d0109033a1cce01e2c67be2b290e091a7c649449d98b48c450"
+  },
+  "observation": "Warmnearboot supportsunderhips; darkfarboot bendsclosebehind, narrower than contact. Correctfarhandlantern remains screenleft, nearhandempty.",
+  "limitations": [
+    "Farboot remains slightlybehind rather than centeredat exactpassingmidpoint.",
+    "Singlelowpassingcandidate, no fullcycleclaim."
+  ],
+  "transformation": "Binarymagenta key,wholefiguretrim,nearest40pxrescale,padding only; no mirror."
+}
