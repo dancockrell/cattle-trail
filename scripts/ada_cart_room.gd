@@ -102,6 +102,10 @@ func interact() -> bool:
 		else:
 			owner.ada_state.madness = minf(100,owner.ada_state.madness+float(result.get("strain_delta",0)))
 			_changed("A sharp hiss, nothing broken. Open the two outside feeds; shut the middle bypass.")
+	elif state.stage == "drive":
+		motion.stop()
+		room.target = Vector2.INF
+		owner.tell("Cart braked. Steer toward the next lantern when you're ready.")
 	elif state.stage == "return_to_camp":
 		var result: Dictionary = state.finish_at_camp(vehicle.position.distance_to(PARK)<=32)
 		if result.ok:
@@ -164,8 +168,7 @@ func decorate_ui():
 		room.buttons.get_child(3).text = "Pause [Tab]"
 		for index in [1,2,4]: room.buttons.get_child(index).disabled = state.stage!="route_pressure"
 		if state.stage=="drive":
-			room.buttons.get_child(0).text = "Drive to lantern"
-			room.buttons.get_child(0).disabled = true
+			room.buttons.get_child(0).text = "Brake [E]"
 		if state.stage=="route_pressure":
 			for pair in [[1,0,"A [L]"],[2,1,"B [F]"],[4,2,"C [G]"]]:
 				room.buttons.get_child(pair[0]).text = pair[2]+(": Open" if state.valves[pair[1]] else ": Closed")

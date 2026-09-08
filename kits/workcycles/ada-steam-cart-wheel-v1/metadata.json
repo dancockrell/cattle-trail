@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "id": "ada_steam_cart_wheel_v1",
+  "status": "candidate_nonwheel_drift",
+  "direction": "southeast",
+  "source": "source.png",
+  "source_sha256": "36b6e086c7df467715c5442e2f46215f964dda6257276f12452733e7c5b867c5",
+  "reference": "kits/workcycles/ada-steam-cart-v1/southeast-trim.png",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "cell": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    90
+  ],
+  "body_height": 64,
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "id": "phase_0",
+      "rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "source_rect": [
+        93,
+        69,
+        681,
+        720
+      ]
+    },
+    {
+      "id": "phase_1",
+      "rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "source_rect": [
+        946,
+        69,
+        681,
+        720
+      ]
+    }
+  ],
+  "upper_body_changed_pixels": 1108,
+  "upper_body_visible_union_pixels": 1131,
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "observation": "Both wholecart poses have consistent overall footprint and visible spokes. Right pose adds small steam puffs, but crew clothing, Ada hands and body pixel clusters differ. Spokes change subtly rather than proving a clean directional quarterturn.",
+  "limitations": [
+    "Two-frame source experiment; not a verified wheel loop.",
+    "Generated phase0 itself changes source style/detail slightly.",
+    "Upperbody pixel comparison detects nonwheel drift.",
+    "Binary key removes source-background contamination; steam edges are provisional."
+  ],
+  "processing": "Wholevehicle crop, magenta hue key, common nearest scale to64height, padding; no wheel rotation code, no detached components."
+}

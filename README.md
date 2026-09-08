@@ -81,3 +81,5 @@ Generated-companion source support now includes full resolved identity persisten
 After repairing the walker and inviting Ada, board the cart on the lower trail withTalk[E]. Inspect, then useL/F/G to toggle valvesA/B/C. OpenA/C and closeB; Etests the routing. Drive through the three brasslanterns in order, return to the cartstop, and Talk to finish. Tabpauses; Board resumes the saveddrivingpoint. A separate optionalKiss[H] appears beside the cart aftercompletion.
 
 This source feature uses five selectedrealcart sprites, including an emptyparkedview. It was checked without rendering thegame; the packagedWindows executable still predates these sourcechanges.
+
+The cart now accelerates, brakes and steers through turns. Use Brake[E] during the lantern route to stop and clear a tap destination. Its wider collision footprint leaves room around scenery; saves retain heading and restart with the cart stationary.

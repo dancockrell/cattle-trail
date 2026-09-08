@@ -52,6 +52,8 @@ func _initialize():
 	controller.interact()
 	assert(owner.cart_adventure.stage=="drive" and controller.movement_speed()==32)
 	assert(controller.drive_velocity(Vector2.RIGHT,.1).length()>0)
+	controller.interact()
+	assert(controller.motion.speed==0 and owner.cart_adventure.stage=="drive","Brake stops without completing the route")
 	controller.vehicle.position=controller.STOPS[1]
 	controller.tick(0)
 	assert(owner.cart_adventure.checkpoints.is_empty())

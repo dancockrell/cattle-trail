@@ -1,0 +1,87 @@
+{
+  "id": "ada-east-low-pass-v7",
+  "character": "ada_mercer",
+  "age": 22,
+  "texture": "whole-frame.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "phase": "low_pass_near_support",
+  "facing": "east_side_profile",
+  "status": "low_pass_candidate_not_admitted",
+  "source": "kits/workcycles/ada-east-low-pass-v7/source.png",
+  "source_sha256": "593c6734a66557a2f5df1698af32ed1ee27d9f107906f3d421358f506f740860",
+  "edit_target": "kits/workcycles/ada-master-east-walk-v4/01-whole-frame.png",
+  "edit_target_sha256": "024cb20ffcd65de6b6d6d17095fdf4af296aa848d5255cb76fab025f22cb54d8",
+  "prompt": "prompt.txt",
+  "source_alpha_bounds_xyxy": [
+    528,
+    303,
+    775,
+    965
+  ],
+  "alpha_bounds_xyxy": [
+    25,
+    21,
+    40,
+    61
+  ],
+  "rgba_sha256": "7811f6a2ddf2892e95d2ca4aea88dd6646d9cded89966a6972d78b06c3794e04",
+  "attachment_points_provisional": {
+    "hip": [
+      33,
+      47
+    ],
+    "near_ankle": [
+      32,
+      59
+    ],
+    "near_foot": [
+      35,
+      61
+    ],
+    "far_foot": [
+      30,
+      59
+    ],
+    "near_hand": [
+      33,
+      46
+    ]
+  },
+  "timing": {
+    "duration_seconds": 0.16,
+    "status": "provisional"
+  },
+  "comparison_order": [
+    "v4_near_support",
+    "v7_low_pass"
+  ],
+  "review": [
+    "Support ankle now nearly vertically under hip; foot separation narrowed. Far boot remains low behind near shin.",
+    "Head and torso remain side-facing. Actual exposed far-boot extent at40pxheight is small and overlaps support leg.",
+    "Generator changed toolbelt silhouette into larger rear pouch; hanging wrench no longer clearly identifiable. Candidate not automatically installed.",
+    "Single image edit and sheet inspection only; no game tests."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta key",
+      "wholefigure crop",
+      "nearest40pxheight",
+      "64cell anchor32,61"
+    ]
+  }
+}
