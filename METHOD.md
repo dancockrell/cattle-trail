@@ -150,3 +150,7 @@ Define a turn as a short whole-pose bridge between two real facing clips. Record
 Store side comments as event content while preserving stable saved beat IDs. Trigger them from completed gameplay actions, with priorities and one-time history controlling repetition. Presentation content must not advance relationship state by itself.
 
 Save recovery must validate the whole snapshot before mutating live state. A parseable but invalid primary file should fall back to a valid backup. Run validators on a copy so validation cannot rewrite the returned save. Clear pending turns, actions and effects when restoration succeeds. These backend contracts can be checked without launching a room during a sheet-production pass.
+
+## Master characters and batch identities
+
+The character-family production method now lives in `design/character-family-method.md`. Build detailed recurring masters, derive complete adult identity variants, and retain exact atlas/anchor/provenance records. Author gait and turn sequences separately; a batch of different women is never a walk cycle. The production factory creates repeatable names and relationships from real visual IDs and keeps rejected art out of previews.

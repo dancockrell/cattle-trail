@@ -9,6 +9,9 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'character-roster': (['--headless', '--script', 'tools/export_character_roster.gd'], r'CHARACTER ROSTER PASS: \d+ distinct visual identities bound to deterministic adult character records'),
+    'characters': (['--headless', '--script', 'tools/character_factory_test.gd'], r'CHARACTER FACTORY PASS: stable identities, unique art, adult ages, candidate gate, isolated data'),
+    'mechanic-controller': (['--headless', '--script', 'tools/mechanic_controller_test.gd'], r'MECHANIC CONTROLLER PASS: unlock, retrieval, valve controls, repair, explicit invite, restore; no rendering'),
     'steam': (['--headless', '--script', 'tools/steam_repair_test.gd'], r'STEAM REPAIR PASS: \d+ checks'),
     'ada': (['--headless', '--script', 'tools/ada_companion_test.gd'], r'ADA COMPANION PASS: repair before invitation, acceptance, one reward, adult identity, atomic save'),
     'banter-delivery': (['--headless', '--script', 'tools/banter_delivery_test.gd'], r'BANTER DELIVERY PASS: deferred history, deduplication, expiry, missing speaker; no rendering'),
