@@ -1,14 +1,26 @@
 class_name SaveStorage
 extends RefCounted
 ## Single-writer JSON storage. A readable .bak survives interrupted replacement.
-## Missing or malformed saves return {}; application schema validation is separate.
+## An optional schema predicate rejects invalid primary data before backup fallback.
+## Validators receive deep copies; accepted data is returned without their mutations.
 
-static func read(path: String) -> Dictionary:
+static func read(path: String, validator: Callable = Callable()) -> Dictionary:
 	var primary := _read_file(path)
-	if primary.valid:
+	if _accepted(primary, validator):
 		return primary.data
 	var backup := _read_file(path + ".bak")
-	return backup.data if backup.valid else {}
+	return backup.data if _accepted(backup, validator) else {}
+
+
+static func _accepted(record: Dictionary, validator: Callable) -> bool:
+	if not record.valid:
+		return false
+	if validator.is_null():
+		return true
+	if not validator.is_valid():
+		return false
+	var verdict: Variant = validator.call(record.data.duplicate(true))
+	return verdict is bool and verdict
 
 
 static func write(path: String, data: Dictionary) -> bool:

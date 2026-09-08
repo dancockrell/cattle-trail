@@ -1,5 +1,6 @@
 extends Node2D
 const AnimationPhase = preload("res://scripts/animation_phase.gd")
+const TurnTransition = preload("res://scripts/turn_transition.gd")
 
 signal action_event(event_name: String)
 
@@ -21,6 +22,11 @@ var clip_anchors: Dictionary = {}
 var clip_indices: Dictionary = {}
 var frame_sockets: Dictionary = {}
 var procedural_rope_clips: Array = []
+var turn = TurnTransition.new()
+var turn_definitions: Dictionary = {}
+var turn_target_clip := ""
+var turn_target_speed := 1.0
+var turn_phase_rate := 0.0
 
 func configure(id: String, spec: Dictionary) -> void:
 	kind = id
@@ -29,6 +35,7 @@ func configure(id: String, spec: Dictionary) -> void:
 	clip_anchors = spec.get("clip_anchors", {})
 	frame_sockets = spec.get("frame_sockets", {})
 	procedural_rope_clips = spec.get("procedural_rope_clips", [])
+	turn_definitions = spec.get("turn_transitions",{})
 	nominal_speed = float(spec.get("locomotion", {}).get("nominal_speed", 72.0 if id == "rider" else 36.0))
 	clip_nominal_speeds = spec.get("locomotion", {}).get("clip_nominal_speeds", {})
 	facing_bias = float(spec.get("locomotion", {}).get("facing_bias", 1.2))
@@ -79,6 +86,7 @@ func uses_procedural_rope() -> bool:
 func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, gait: String = "walk") -> void:
 	if action_time > 0: return
 	if directional:
+		var previous_facing := facing
 		if direction.length_squared() > 0.01:
 			var desired := direction_name(direction)
 			var vectors := {"east":Vector2.RIGHT,"west":Vector2.LEFT,"north":Vector2.UP,"south":Vector2.DOWN,"northeast":Vector2(1,-1).normalized(),"northwest":Vector2(-1,-1).normalized(),"southeast":Vector2(1,1).normalized(),"southwest":Vector2(-1,1).normalized()}
@@ -89,7 +97,25 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 		var name := (gait+"_" if moving else "idle_") + facing
 		if not art.sprite_frames.has_animation(name): name = ("walk_" if moving else "idle_")+facing
 		var clip_speed := float(clip_nominal_speeds.get(name,nominal_speed))
-		art.speed_scale = clampf(speed / clip_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
+		var playback_speed := clampf(speed / clip_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
+		if previous_facing!=facing or (turn.active and turn.moving!=moving):
+			var phase: float = turn.phase if turn.active else AnimationPhase.phase_at(clip_durations(art.animation),art.frame,art.frame_progress)
+			var source_facing: String = turn.source_direction if turn.active and previous_facing==facing else previous_facing
+			var bridge: Dictionary = turn.request(source_facing,facing,moving,phase,turn_definitions)
+			if not bridge.is_empty():
+				if art.sprite_frames.has_animation(bridge.clip):
+					art.play(bridge.clip)
+				else:
+					turn.cancel()
+		if turn.active:
+			turn_target_clip = name
+			turn_target_speed = playback_speed
+			var cycle_seconds := 0.0
+			for duration in clip_durations(name): cycle_seconds += float(duration)/art.sprite_frames.get_animation_speed(name)
+			turn_phase_rate = playback_speed/cycle_seconds if moving and cycle_seconds>0 else 0.0
+			art.speed_scale = 1.0
+			return
+		art.speed_scale = playback_speed
 		if art.animation != name:
 			var keep_phase := moving and str(art.animation).begins_with("walk_")
 			var phase := AnimationPhase.phase_at(clip_durations(art.animation),art.frame,art.frame_progress)
@@ -127,6 +153,7 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 	var clip := name + "_" + direction_name(direction) if directional else name
 	if art.sprite_frames.has_animation(name): clip = name
 	if not art.sprite_frames.has_animation(clip): return
+	turn.cancel()
 	facing = direction_name(direction)
 	art.speed_scale = 1.0
 	active_clip = clip
@@ -138,6 +165,15 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 		action_time += art.sprite_frames.get_frame_duration(clip,index) / art.sprite_frames.get_animation_speed(clip)
 
 func _process(delta: float) -> void:
+	if turn.active:
+		turn.phase = fposmod(turn.phase+delta*turn_phase_rate,1.0)
+		var completion: Dictionary = turn.step(delta)
+		if not completion.is_empty():
+			art.play(turn_target_clip)
+			art.speed_scale = turn_target_speed
+			if completion.moving:
+				var selected := AnimationPhase.frame_at(clip_durations(turn_target_clip),completion.phase)
+				art.set_frame_and_progress(int(selected.x),selected.y)
 	if action_time > 0:
 		if not event_fired and clip_events.has(active_clip):
 			var event: Dictionary = clip_events[active_clip]

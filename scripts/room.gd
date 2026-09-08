@@ -408,7 +408,7 @@ func _physics_process(delta: float) -> void:
 		won = true
 		cash += 60
 		message = "Eleanor: All six accounted for. Clear Fork is behind us. +$60"
-		say_once("room_complete",player,"TRAIL BOSS","Six cattle. One very long afternoon.",2)
+		if companion != null: companion.say_event("all_cattle_safe","room_complete")
 	refresh()
 	if qa_mode and not qa_done and elapsed > 0.3:
 		qa_done = true
@@ -448,7 +448,7 @@ func interact() -> void:
 			player.action("greeting",eleanor.position-player.position)
 		talked = true
 		eleanor.action("talk", Vector2.RIGHT)
-		say_once("eleanor_intro",eleanor,"ELEANOR","Spirits spooked them. Cattle never miss an excuse.",2)
+		if companion != null: companion.say_event("intro","eleanor_intro")
 		message = "Eleanor: Spirits spooked the herd. Push from behind; rope strays. Clear that rustler first."
 	else:
 		message = "Ride near Eleanor by the wagon, then Talk. Click or tap the ground to ride."

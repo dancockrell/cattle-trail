@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "intro",
+      "text": "Spirits spooked them; cattle never miss an excuse.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "recruited",
+      "text": "Save me a place; your outfit could use a steady hand.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "calm_1",
+      "text": "Easy, sweetheart; the dead can wait their turn.",
+      "speaker": "ELEANOR",
+      "priority": 1
+    },
+    {
+      "id": "calm_2",
+      "text": "There, a steady breath beats another argument with a ghost.",
+      "speaker": "ELEANOR",
+      "priority": 1
+    },
+    {
+      "id": "calm_3",
+      "text": "Three settled, and nobody bit me; back to the wagon for tea.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "adventure_complete",
+      "text": "You kept the kettle warm for me; I could get used to that.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "shared_rest",
+      "text": "Sit beside me; for once, the world can look after itself.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "mutual_flirt",
+      "text": "That smile suits you; come closer and let me enjoy it.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    },
+    {
+      "id": "return_from_pause",
+      "text": "Ready again; let's finish settling those nerves.",
+      "speaker": "ELEANOR",
+      "priority": 0
+    },
+    {
+      "id": "all_cattle_safe",
+      "text": "Six safe, and you still look presentable; come see me by the wagon.",
+      "speaker": "ELEANOR",
+      "priority": 2
+    }
+  ]
+}

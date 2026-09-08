@@ -2,13 +2,32 @@ extends RefCounted
 
 const State = preload("res://scripts/companion_state.gd")
 const Storage = preload("res://scripts/save_storage.gd")
+const Snapshot = preload("res://scripts/room_snapshot.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
+const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
 var state = State.new()
 var minutes := 720.0
+var banter: Dictionary = {}
 
 func _init(owner_room: Control) -> void:
 	room = owner_room
+	if FileAccess.file_exists(BANTER_PATH):
+		var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(BANTER_PATH))
+		if content is Dictionary and content.get("events") is Array:
+			for event in content.events:
+				if not event is Dictionary: continue
+				if not event.get("id") is String or not event.get("text") is String: continue
+				if event.id.is_empty() or event.text.is_empty() or event.get("speaker") != "ELEANOR": continue
+				var priority: Variant = event.get("priority")
+				if not (priority is int or priority is float) or priority not in [0,1,2]: continue
+				banter[event.id] = event
+
+func say_event(event_id: String, saved_beat_id: String) -> void:
+	# Existing beat IDs stay authoritative across old saves and content rewrites.
+	if not banter.has(event_id): return
+	var event: Dictionary = banter[event_id]
+	room.say_once(saved_beat_id,room.eleanor,event.speaker,event.text,int(event.priority))
 
 func is_eleanor() -> bool:
 	return state.controlled_actor == "eleanor"
@@ -33,7 +52,10 @@ func switch_character() -> void:
 		if state.adventure_status == "completed":
 			tell("Eleanor's adventure is complete. Meet her at the wagon for shared rest.")
 			return
-		state.begin_adventure(false)
+		var resuming: bool = state.adventure_status == "paused"
+		var result: Dictionary = state.begin_adventure(false)
+		if result.get("ok",false) and resuming:
+			say_event("return_from_pause","eleanor_resume")
 	room.target = Vector2.INF
 	room.player.pose(false)
 	room.eleanor.pose(false)
@@ -45,6 +67,7 @@ func interact() -> bool:
 			var nearest: Node2D
 			var distance := 40.0
 			for index in range(room.cows.size()):
+				if state.steadied_cattle.size() >= State.REQUIRED_CATTLE: break
 				if str(index) in state.steadied_cattle: continue
 				var cow: Node2D = room.cows[index]
 				if room.eleanor.position.distance_to(cow.position) < distance:
@@ -55,12 +78,12 @@ func interact() -> bool:
 				state.steady_cattle(str(index))
 				room.eleanor.action("talk", nearest.position-room.eleanor.position)
 				var count: int = state.steadied_cattle.size()
-				room.say_once("steady_"+str(index),room.eleanor,"ELEANOR",["Easy. The dead can wait their turn.","There. Much better company without the snorting.","Three quiet souls. Now I could use some tea."][mini(count-1,2)],1)
+				say_event("calm_"+str(count),"steady_"+str(index))
 				tell("Eleanor steadied %d of 3 cattle. %s" % [count,"Return to the wagon and Talk." if count>=3 else "Find another restless steer."])
 				save_game()
 			elif state.steadied_cattle.size() >= 3 and room.eleanor.position.distance_to(Vector2(148,127))<55:
 				state.finish_adventure()
-				room.say_once("eleanor_adventure",room.eleanor,"ELEANOR","You kept the kettle warm for me? I could get used to that.",2)
+				say_event("adventure_complete","eleanor_adventure")
 				tell("Shared adventure complete. Eleanor trusts you. Rest together at the wagon; her Steady Company perk adds 3 recovery.")
 				save_game()
 			else:
@@ -71,7 +94,7 @@ func interact() -> bool:
 	if room.won and room.player.position.distance_to(room.eleanor.position)<65:
 		if state.recruitment != "recruited":
 			state.recruit(true,true)
-			room.say_once("eleanor_recruited",room.eleanor,"ELEANOR","A place in your outfit? Yes. Someone has to keep you sensible.",2)
+			say_event("recruited","eleanor_recruited")
 			tell("Eleanor, 24, joins the outfit. Choose Companion [Tab] to play her short cattle-calming adventure.")
 			save_game()
 			return true
@@ -84,7 +107,7 @@ func rest_together() -> void:
 	var result: Dictionary = state.shared_rest(minutes,true)
 	if result.get("ok",false):
 		minutes += 30
-		room.say_once("shared_rest",room.eleanor,"ELEANOR","Sit beside me. For once, the world can look after itself.",2)
+		say_event("shared_rest","shared_rest")
 		tell("Tea and quiet company. Madness eased; Eleanor's Steady Company adds 3 recovery. Her story continues with your outfit.")
 		save_game()
 	else:
@@ -97,7 +120,7 @@ func flirt() -> void:
 	var result: Dictionary = state.choose_romance(true)
 	if result.get("ok",false):
 		room.eleanor.action("talk",room.player.position-room.eleanor.position)
-		room.say_once("mutual_flirt",room.eleanor,"ELEANOR","Stay for the sunset. And yes, that was an invitation.",2)
+		say_event("mutual_flirt","mutual_flirt")
 		tell("You choose to stay beside her. Eleanor's answering smile says enough. Relationship: courting. Shared rest remains available either way.")
 		save_game()
 	else:
@@ -125,18 +148,8 @@ func save_game(test_path := "") -> bool:
 func load_game(test_path := "") -> bool:
 	var path: String = SAVE_PATH if test_path.is_empty() else test_path
 	if room.qa_mode and test_path.is_empty(): return false
-	var data: Dictionary = Storage.read(path)
-	if not data is Dictionary or data.get("version",0)!=1 or not data.get("cattle",[]) is Array or data.cattle.size()!=6: return false
-	for key in ["player","eleanor"]:
-		if not valid_point(data.get(key)): return false
-	for cow in data.cattle:
-		if not cow is Dictionary or not valid_point(cow.get("position")) or not cow.get("secured") is bool: return false
-	for key in ["cash","ammo","minutes","hits"]:
-		if not data.get(key) is float and not data.get(key) is int: return false
-		if not is_finite(float(data[key])) or float(data[key])<0: return false
-	for key in ["won","talked","rustler_active"]:
-		if not data.get(key) is bool: return false
-	if not data.get("spoken_beats") is Dictionary: return false
+	var data: Dictionary = Storage.read(path,Snapshot.validate)
+	if data.is_empty(): return false
 	if not state.load_dict(data.get("companion",{})): return false
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
@@ -153,6 +166,7 @@ func load_game(test_path := "") -> bool:
 	room.escaped = false
 	room.rustler.position = Vector2(550,164)
 	room.rustler.action_time = 0
+	room.rustler.turn.cancel()
 	room.rustler.pose(false)
 	room.hits = int(data.get("hits",0))
 	room.spoken_beats = data.get("spoken_beats",{})
@@ -169,14 +183,9 @@ func load_game(test_path := "") -> bool:
 	room.rope_far_wrap.clear_points()
 	room.player.action_time = 0
 	room.eleanor.action_time = 0
+	room.player.turn.cancel()
+	room.eleanor.turn.cancel()
 	room.player.pose(false)
 	room.eleanor.pose(false)
 	tell("Outfit restored. Your companions and completed actions are remembered.")
-	return true
-
-func valid_point(value) -> bool:
-	if not value is Array or value.size()!=2: return false
-	for coordinate in value:
-		if not coordinate is int and not coordinate is float: return false
-		if not is_finite(float(coordinate)): return false
 	return true
