@@ -3,6 +3,7 @@ extends Control
 const Actor = preload("res://scripts/actor.gd")
 const SpeechBubble = preload("res://scripts/speech_bubble.gd")
 const CompanionRoom = preload("res://scripts/companion_room.gd")
+const BanterQueue = preload("res://scripts/banter_queue.gd")
 const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
@@ -56,6 +57,7 @@ var sequence_walking := false
 var stride_subjects: Array[Node2D] = []
 var speech: Control
 var spoken_beats := {}
+var pending_banter = BanterQueue.new()
 var motion_review_heading := Vector2.RIGHT
 var companion: RefCounted
 
@@ -182,10 +184,26 @@ func spawn(id: String, at: Vector2) -> Node2D:
 
 func _process(delta: float) -> void:
 	if is_instance_valid(speech): speech.tick(delta,view)
+	pending_banter.tick(delta)
+	if not is_instance_valid(speech) or speech.remaining>0: return
+	# Only display a queued event while its original speaker still exists.
+	for attempt in range(2):
+		var next: Dictionary = pending_banter.take()
+		if next.is_empty(): break
+		if spoken_beats.has(next.beat): continue
+		var actor = instance_from_id(int(next.payload.actor_id))
+		if not is_instance_valid(actor) or not actor is Node2D or not actor.visible: continue
+		if speech.say(actor,next.payload.speaker,next.payload.text,next.payload.height,next.priority):
+			spoken_beats[next.beat] = true
+			break
 
 func say_once(beat: String, actor: Node2D, name_text: String, line: String, importance := 0) -> void:
 	if spoken_beats.has(beat): return
-	if speech.say(actor,name_text,line,62 if actor==player else 42,importance): spoken_beats[beat] = true
+	var height := 62 if actor==player else 42
+	if speech.say(actor,name_text,line,height,importance):
+		spoken_beats[beat] = true
+	elif importance>=1:
+		pending_banter.offer(beat,{"actor_id":actor.get_instance_id(),"speaker":name_text,"text":line,"height":height},importance,6.0)
 
 func place_scenery() -> void:
 	for entry in manifest.get("scenery", []):

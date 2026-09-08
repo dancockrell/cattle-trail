@@ -208,6 +208,7 @@ func load_game(test_path := "") -> bool:
 	room.speech.remaining = 0
 	room.speech.visible = false
 	room.speech.speaker = null
+	room.pending_banter.clear()
 	room.target = Vector2.INF
 	room.rope_time = 0
 	room.rope_flight_time = 0

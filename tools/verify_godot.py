@@ -9,6 +9,8 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'banter-delivery': (['--headless', '--script', 'tools/banter_delivery_test.gd'], r'BANTER DELIVERY PASS: deferred history, deduplication, expiry, missing speaker; no rendering'),
+    'banter': (['--headless', '--script', 'tools/banter_queue_test.gd'], r'BANTER QUEUE PASS: \d+ checks'),
     'lantern-controller': (['--headless', '--script', 'tools/lantern_controller_test.gd'], r'LANTERN CONTROLLER PASS: entry, physical following, animation ownership, pause resume, one reward; no rendering'),
     'lantern-view': (['--headless', '--script', 'tools/lantern_presentation_test.gd'], r'LANTERN PRESENTATION PASS: checkpoint views, pause and retry, immutable state, restore parity'),
     'lantern': (['--headless', '--script', 'tools/lantern_adventure_test.gd'], r'LANTERN ADVENTURE PASS: \d+ checks; checkpoint identity, retry, strict atomic saves, one-shot milestone; backend only'),
@@ -66,7 +68,7 @@ def self_test(godot):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, phase, turn, clock, lantern, lantern-view, lantern-controller, storage, snapshot, compile, room, companion, or motion; defaults to state')
+    parser.add_argument('checks', nargs='*', metavar='CHECK', help='state, phase, turn, clock, lantern, lantern-view, lantern-controller, banter, banter-delivery, storage, snapshot, compile, room, companion, or motion; defaults to state')
     parser.add_argument('--godot', type=Path, default=DEFAULT_GODOT)
     parser.add_argument('--timeout', type=float, default=180)
     parser.add_argument('--self-test', action='store_true')
