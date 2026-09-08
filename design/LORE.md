@@ -1,214 +1,247 @@
 # Cattle Trail — lore bible
 
-Status: world voice and place memory for content build-out. Subordinate to `GAME-DESIGN.md` for systems, romance contracts, art authority and implementation scope. Numbers, recruitment stages and perk values live in `design/characters.json`. This file does not approve sprites, rooms or mechanics.
+This file says what the world is. `GAME-DESIGN.md` still owns how the game plays, romance rules, art, and what is built. Numbers live in `design/characters.json`. Banter already in `data/` is spoken law: do not write against those lines.
 
-Use this when writing speech bubbles, journal lines, encounter briefs, camp remarks and generated-companion hooks. If a sentence here fights an accepted decision, the decision wins.
+If this file fights an accepted decision in `GAME-DESIGN.md`, that file wins.
 
-The year is an alternate 1872. Do not lecture the player with a history lesson. People on this trail talk about work, weather, machines that need brass, and neighbors who happen to be dead.
+Write new lines the way people on this outfit talk. Work first. Short. Do not lecture.
 
-## What the world believes
+---
 
-Three facts are ordinary. Arguments start after them.
+## What game this is
 
-1. Cattle still walk. Rail towns quarrel over who gets the next season. An outfit that cannot hold a herd has no household and no future.
-2. Steam works out here when you can feed it. Walkers, carts, regulators, valves. Machines have jobs and they break in public. Occult shortcuts that make a boiler speak are not clever; they are a kind of theft.
-3. The dead stay in the country. A crossing spirit is as real as a washed-out bank. People argue whether a warning is honest, not whether the speaker exists.
+You run a small cattle outfit in an alternate 1872 Texas. You gather adult women who can do the work. You keep a household that can stand a haunted country. Romance can grow out of that work. It is not the only job.
 
-Above those facts, something larger is happening and nobody reliable can name it cleanly. Vast occult powers contend on the ground. Witnesses disagree. Mad minions offer explanations that pay someone. The outfit does not need a church. It needs a count at dusk, a working regulator, and people who will still sit with you after the river has said the wrong name.
+This is a Weird West with steam machines, some living magic, a lot of walking dead, and animals that should not be there. It is not a history lesson about the real Chisholm Trail. It is not the island strategy game. It is not Japan.
 
-Madness in this world is not a sermon and not a diagnosis of real illness. It is strain from standing too close to a disagreement that is older than the county. Intimacy with people you trust puts weight back on the right side of the ledger. That can be talk, an embrace, shared sleep, or a fade the game does not stage. It is not rent.
+The first ground is the Clear Fork of the Brazos. The first morning is Monday, May 12, 1872.
+
+---
+
+## Same world, different end of it
+
+Cattle Trail shares a universe with Pirate Island.
+
+The island is a strange place on the water. People there have their own fight. Do not drop that board, those factions, or those heroines into Texas.
+
+The deep trouble in this universe sits in Japan. That is where the old cosmic thing is actually chewing. Out here you are far from it. Nobody in Clear Fork is naming Cthulhu. If a bad dream or a wrong sky leaks this far, treat it like weather from a country you will not see. Do not build a cult that knows the true name. Do not send the player to wake a god.
+
+Texas has its own problems. That is enough.
+
+---
+
+## What everybody already knows
+
+Three things are ordinary. People argue after them, not about them.
+
+Cattle still have to walk. An outfit that cannot hold a herd has no household and no future.
+
+Steam works if you feed it and keep the order of the valves. Machines have jobs. They break in public. Asking a boiler to talk is not clever. It is theft.
+
+The dead stay in the country. So do other things that hunt. A spirit at a crossing is as real as a washed-out bank. People argue whether this one is honest, not whether it exists.
+
+Native magic belongs to this ground. It was here before the wagon. Living nations are still here. Their work is real. Do not invent a tribe, a ceremony, or a medicine you were not given. If a Native person is in a scene, they are a person with a job, not a mascot and not a spell list.
+
+---
+
+## How bad things work here
+
+The country can go wrong. It does not jump you with no sign.
+
+Early signs you can talk away. A count that comes out different. A ford that runs wet for one rider and not the next. A cow that will not take a bank she took yesterday.
+
+Later signs line up. Weather, herd, talk, and the dead start agreeing with each other.
+
+Late signs are ugly. Dead walk in numbers. Night animals come in wrong. The river lies. A machine speaks. Time feels off. You can still reconstruct what happened. You do not get a clean rewrite of a choice you already made.
+
+If you ignore a bad place, it gets worse by itself. That is the rule. You do not need a doom number on the screen. The herd, the sky, and what people say are enough.
+
+Strain is what the game calls madness. It is standing too close to something older than the county. It is not a sermon and it is not a joke about real illness. Sitting with people you trust puts weight back where it belongs. Talk, an embrace, shared sleep. That is not rent.
+
+---
 
 ## The starting hour
 
-Clear Fork of the Brazos. Monday, May 12, 1872.
+Clear Fork country. Spring grass coming in uneven. Calves on the ground. The river is a liar this month.
 
-Spring grass is coming in uneven. Calves are on the ground. The river is a liar this month: a remembered ford on a dry trail, water that shows up in the wrong place if you listen to the wrong mouth. Fort Griffin is a rumor of hides, soldiers, whiskey and a market that may or may not still want what you are driving. Abilene is already a name men use in the past tense. Other railheads are loud about the future. None of that changes the work in front of the wagon.
+Fort Griffin is offstage: hides, soldiers, whiskey, a market that may or may not want what you are driving. Abilene is a name men already use in the past tense. Other railheads shout about the future. None of that changes the work in front of the wagon.
 
-The player is the trail boss of a small outfit. Do not invent a locked childhood, a branded destiny, or a secret bloodline. He has a horse, a rope, six cattle that will not stay put, a rustler in the grass, and a woman at the wagon who already knows how to talk to a frightened crossing.
+The player is the trail boss of a small outfit. No secret bloodline. No branded destiny. He has a horse, a rope, cattle that will not stay put, a rustler in the grass, and a woman at the wagon who already knows how to talk to a frightened crossing.
 
-Call the camp Clear Fork because that is the water and the timber line people use when they give directions. The room is not the whole county. It is the piece of ground the outfit can still see.
+Call the camp Clear Fork because that is the water people use when they give directions. The room is not the whole county. It is the ground the outfit can still see.
 
-## How an outfit talks
-
-Speech is work-adjacent. One short sentence, then quiet. People name jobs, animals, parts and crossings. They do not announce themes.
-
-Good:
-
-- "He'll walk if you quit facing him."
-- "Lantern's honest. The bank isn't."
-- "Regulator's on the wagon. Don't ask the boiler to explain itself."
-- "Three more and we can sit down."
-
-Bad:
-
-- lectures about the meaning of the West
-- listing every object in the shot
-- calling the player chosen
-- explaining that spirits exist as if anyone present still needed that news
-- bargaining for affection in the same tone used for a stray steer
-
-Each named woman keeps a recognizable chip in the voice. Do not flatten them into perk labels.
+---
 
 ## The country
 
-Treat later maps as labels until a room exists. The names below are working geography, not a promise that scenery has been painted.
+Treat later maps as labels until a room exists. Do not invent a town tour.
 
-### Wagon camp
+**Wagon camp.** The only wall the outfit owns. Eleanor starts here. Talk happens at the tailgate.
 
-The household nail. Eleanor starts here. Talk happens at the tailgate, not in a cutscene parlor. Cattle belong east once the rustler is gone. Rest is taken here because the wagon is the only wall the outfit owns.
+**East gathering.** Where the count is supposed to live. If a steer is not here at dusk, someone rides.
 
-### East gathering
+**The dry crossing.** People still call it a ford. The neighbor waiting there is frightened, not theatrical. Eleanor's lantern has weight. One of the ones who crosses has not needed a bridge in years. That line is already in the game. Keep it.
 
-Where the count is supposed to live. If a steer is not here at dusk, someone will ride. Completion of the first room is a work fact: rustler gone, six head in the gathering, Eleanor spoken to.
+**Cart stop.** Ada's ground. Brass, valves, pressure with a correct order. A cart is a machine you can sit in after it consents to move.
 
-### The dry crossing
+**Clue stretch.** Ines reads signs the living miss. Bell with no cow. Hoofprints both ways. Cold ashes, fresh smoke.
 
-People still call it a ford. The spirit that waits there is frightened, not theatrical. Eleanor's lantern is a tool with weight. Cattle strand because the ground and the witness do not agree. Do not turn this into a sermon about death. It is a crossing with a job.
+**Timber and plains.** Trees arguing with open grass. Weather comes off the plains faster than a man wants.
 
-### Cart stop and walker
+**Distant noise.** Griffin, hide men, other outfits, a county that will want fences. Keep them offstage until a room needs them.
 
-Ada's ground. Brass, valves, pressure that has a correct order. A two-seat cart is a machine you can sit in together after it consents to move. If a machine speaks with a voice it should not have, that is Ada's strain, not a cute ghost joke.
+---
 
-### Clue stretch
+## Cattle
 
-Ines has been seen working signs the living miss. Spectral marks belong to the country, not to a quest log title. She is not Rosa. She is not recruited by existing the way a prop exists.
+Longhorns are the moving bank. They push better from behind. They follow a rope because the rope made a decision. They spook for ordinary reasons and for dead ones. "Spirits spooked them; cattle never miss an excuse."
 
-### Timber line and plains
+A rustler wants the same market. He may also be carrying a mark that will not stay on a hide. He has his own strain. Driving him off is work. The first room does not require a killing for flavor.
 
-Clear Fork country is the argument between trees and open grass. Weather comes off the plains faster than a man wants to admit. Night herd is a real job even when the game has not staged a bedground yet.
+Do not give the player's herd a prophetic brand. If a brand behaves wrongly, that is one encounter, written once.
 
-### Distant noise
+---
 
-Fort Griffin, hide men, soldiers, other outfits, a county that will one day want fences. Keep them offstage until a room needs them. Do not invent a town tour.
+## The dead and the rest of the hunt
 
-## Cattle, brands and theft
+There are a lot of them. This is not a rare haunting.
 
-Longhorns are the outfit's moving bank. They push better from behind. They follow a rope because the rope made a decision. They settle when the threat has left and the ground feels like a count.
+Crossing spirits. Herd dead that want the count to match. Things that wear a cow's shape badly. Night hunters that are not wolves. Men who should have stayed buried and did not. Animals with too many joints or a shadow that faces the wrong way.
 
-A rustler is not a costume. He wants the same market. In this country he may also be carrying a mark that does not stay on the hide, or a whisper that told him which calf would walk. He has his own madness. Driving him off is work. Killing him for flavor is not required by the first room.
+They are work. Eleanor treats distress like a fever. Ines treats tracks like tracks. Ada treats a talking machine like a broken machine first.
 
-Do not give the player's herd a prophetic brand. If a brand behaves wrongly, that is an encounter, recorded once, not a destiny.
+Do not write a monster manual the characters would hang on the wagon. Name the thing by what it does on this ground. Then put a job on it: hold the herd, walk them across, sit with the neighbor, shut the valve, get home.
+
+---
 
 ## Steam
 
-Steam is agricultural and trail-grade first. Walkers handle weight. Carts move people and parts. Regulators, valves A/B/C, pressure that must be routed. Maintenance is visible. Fuel and water are future economy, not yet a second game.
+Steam out here is farm and trail grade. Walkers for weight. Carts for people and parts. Valves in order. Maintenance you can see.
 
-Ada's rule stands: a machine that talks is a problem. The occult can inhabit brass the way it inhabits a ford. That does not make the mechanic a priest.
+Ada's rule: a machine that talks is a problem. The dead can sit in brass the way they sit in a ford. That does not make the mechanic a priest.
 
-Mechas, if they arrive later, must have a job a rancher can point at. They are not a costume change.
+Bigger machines can come later if they have a job a rancher can point at. They are not a costume.
 
-## Spirits
+Michael's mechanical dog lives on the island. Do not move it here. The law is the same: a tool you can repair.
 
-Local, particular, often tired. A crossing spirit wants the bank to stop lying. A herd spirit may only want the count to match. A well spirit may resent being used as a compass.
+---
 
-People use lanterns, names, salt, quiet, and sometimes a joke that is not aimed at the dead. Eleanor treats distress as a medical fact. Rosa treats testimony as evidence that can be wrong. Ines reads signs the way a scout reads bent grass.
+## Native work on this land
 
-Never require the player to decide whether spirits are real. Require them to decide whether this one is telling the truth today.
+This is still Native ground. People were keeping this country before the outfits, and they are still here.
 
-## Gods and the uncanny
+Their traditions are a real part of how magic works in Texas. That is a locked fact.
 
-Keep their legal names off the HUD. Local speech is enough:
+What is not locked: which nation, which person, which rite. Do not fill that gap with a costume or a copied ceremony. When a Native character is written, they get a name, a job, and a voice as specific as Eleanor's. Until then, keep the fact and leave the page open.
 
-- the thing that walks the river at flood
-- the brand that will not stay put
-- the sermon that arrives in a machine
-- the moon that reflects a crossing that is not there
+Outsiders on the trail do not get to treat Native work as a loot spell.
 
-Witness accounts may conflict inside a single afternoon. That is intended. Quest objectives stay readable: gather the steer, seat the regulator, carry the lantern, follow the reflection that matches the bank.
+---
 
-Minions and the overwhelmed do not get to rewrite controls. Strain changes what people say and what they notice. It does not steal the horse.
+## Who is on the place
 
-## The household
+Ages and perks stay in `characters.json`. This is only how they sound and what they will not do.
 
-The outfit is the unit that survives the country. Recruitment is labor and company. Romance is a later, mutual acknowledgment that the company has become dear. A woman can be in the household and remain unpartnered. Several partnerships, if they happen, are spoken aloud like any other working agreement. Nobody is purchased.
+**Trail boss (player).** Adult man. Can keep a small gather if he pays attention. Wants a count, a working camp, and company that does not make the night worse. Not a collector.
 
-Camp is where the ledger gets honest: who is strained, who can ride tomorrow, who wants quiet, who wants a laugh. Speech bubbles at camp should sound like people who already did a job together.
+**Eleanor, 24.** Healer. Already at the wagon. Takes spirits the way she takes a fever. Steady, dry, sure of her own no. Strain rises when someone uses a frightened dead person as a tool. Recovers by talk and sitting down. "Easy, sweetheart; the dead can wait their turn."
 
-## Named people
+**Ada Mercer, 22.** Steam mechanic. Met over a stalled machine. Hands first. Grins she does not explain. Strain rises when brass talks.
 
-Ages and mechanical contracts stay in `characters.json`. This section is only voice and private weather.
+**Rosa Vale, 20.** Draft. Hears local spirits and does not trust a big story about them. Reports what she heard, then doubts the sermon.
 
-### The trail boss (player)
+**Ines Vale, 23.** Scout. Not Rosa. Same country, same trade, separate woman. Fewer words. She points. "Hear that bell? No cow attached."
 
-Adult man running a small gather. Competent enough to keep six head if he pays attention. Not a prophet. Wants a count, a working camp, and company that does not make the night worse. Flirt when the other person is ready. Do not write him as a collector.
+**The rustler.** Same grass, worse plan. If he talks, keep it small.
 
-### Eleanor, 24 — healer
+Do not put Betty, Michael, or the island party on this herd unless a later decision says they rode in.
 
-Already at the wagon. Takes spirits seriously the way she takes a fever seriously. Steady, wry, compassionate, sure of her own body and her own no. Strain rises when someone treats a distressed spirit as a tool. Recovers by talk and shared rest. Romance, if it comes, comes from competence and a scare that ended with both of them still standing.
+---
 
-Voice chip: short care, then a dry edge. She does not narrate her kindness.
+## Household
 
-### Ada Mercer, 22 — steam mechanic
+The outfit is what survives the country. Hiring someone is labor and company. Romance is a later, mutual admission that the company got dear. A woman can be in the household and stay unpartnered. Nobody is bought.
 
-Met over a stalled walker and a missing regulator. Inventive, bold, dry. Likes a machine that obeys physics. Strain rises when brass talks. Recovers by company while her hands are on something familiar. Romance, if it comes, is teasing after a ride that worked.
+Camp is where the ledger gets honest: who is strained, who can ride, who wants quiet.
 
-Voice chip: parts and pressure, then a grin she does not explain.
+---
 
-### Rosa Vale, 20 — spirit-listener, scout
+## How to talk on the page
 
-Draft companion. Hears local spirits and distrusts grand explanations. Playful, observant, skeptical. Strain rises when two voices claim the same loved mouth. Romance, if it comes, is a private joke at a crossing that finally agreed with itself.
+One short sentence, then quiet. Name the job, the animal, the part, the crossing.
 
-Voice chip: she reports what she heard, then doubts the sermon around it.
+Good:
 
-### Ines Vale — spirit-scout master
+- He'll walk if you quit facing him.
+- Lantern's honest. The bank isn't.
+- Regulator's on the wagon.
+- Three more and we can sit down.
+- You noticed me before the ghost.
 
-Adult. Visual and clue-stretch presence. Not a recruited room companion in current design. Do not collapse her into Rosa because they share a surname and a trade. If the surname later means kin, that is an authored beat, not an assumption. Until then they are two working women in the same country.
+Bad:
 
-Voice chip: fewer words than Rosa. She points.
+- a speech about the West
+- explaining that ghosts are real
+- calling the player chosen
+- selling affection in the same voice used for a stray steer
+- naming the Japan thing
 
-### The rustler
+---
 
-A man on the same grass with a worse plan. Has madness of his own. When he runs, he is not obligated to explain which god sent him. If he speaks, keep it small: a threat, a joke, a wrong name for a steer.
+## Rumors you can use
 
-## Working rumors
+None of these are quests until a room owns them.
 
-Use as optional color. None of these are quest flags until an encounter owns them.
-
-- A herd passed north last week with a count that came out different at every water.
-- Somebody at Griffin paid cash for a regulator that had already been installed.
+- A herd passed north with a count that changed at every water.
+- Somebody at Griffin paid cash for a regulator that was already bolted down.
 - The dry crossing ran wet for one rider and not the next.
-- A walker sat down and would not rise until a woman asked it in Spanish.
+- A walker sat down until a woman asked it in Spanish.
 - Two outfits branded the same calf and both brands took.
 - The moon showed a second ford. The cattle refused both.
+- Night birds that were not birds walked the bedground and left no tracks the next man could swear to.
+- A rider from farther west said the sky over the ocean had been wrong for a week. Nobody here needed the rest of that story.
 
-## Encounter posture
+---
 
-Match the accepted loop: travel and tend → person, machine or uncanny event → help, negotiate or fight → strain and resources → camp → relationship and recovery → next outing.
-
-Each authored beat needs one readable objective and one skill that belongs to a person. The supernatural may complicate the objective. It may not hide the objective.
-
-First-room spine, already in the build, in lore language:
+## The day that is already in the game
 
 1. Speak to Eleanor so the camp has a voice.
 2. Move the rustler off the grass.
-3. Put six head in the east gathering.
-4. Invite Eleanor into the outfit because the work already started together.
-5. Let her steady three cattle as herself.
-6. Carry a lantern to a frightened crossing and walk three stranded head past it.
-7. Let Ada make the stalled machine honest, then take the cart through lanterns in order.
-8. Rest is a household act. Flirt is a separate door.
+3. Put the cattle where they belong.
+4. Invite Eleanor because the work already started together.
+5. Let her steady frightened stock as herself.
+6. Carry a lantern to the crossing and walk the stranded ones over.
+7. Let Ada make the stalled machine honest.
+8. Rest is household. Flirt is a separate door.
 
-Later rooms should feel like more of that day, not a new genre.
+Later rooms should feel like more of that day.
 
-## What not to add
+---
 
-- A chosen-one bloodline or a god that hires the player by name
-- A historical lecture about the Chisholm Trail
-- A town that exists only to sell hats
-- Child-coded anyone
-- Romance as payment for a repaired valve
-- A bestiary paragraph that treats spirits as loot
-- A pantheon chart the characters would not themselves hang on the wagon
+## Do not add
 
-## Continuity promises
+- Cthulhu, or any true name for the thing in Japan
+- a chosen-one bloodline
+- a history class
+- a town that exists to sell hats
+- child-coded anyone
+- romance as payment for a repaired valve
+- a fake Native ceremony
+- Eleanor walking onto Pirate Island
+- a chart of gods on the wagon canvas
 
-- May 12, 1872 remains the start of play until a later decision moves it.
-- Clear Fork remains the first ground.
-- Eleanor remains 24 and the first continuity anchor.
-- Ada remains the first machine woman.
-- Rosa remains the drafted listener. Ines remains a separate adult presence.
-- Spirits stay ordinary. Gods stay disputed.
+---
+
+## Promises
+
+- May 12, 1872 stays the start until you move it.
+- Clear Fork stays the first ground.
+- Eleanor stays first at the wagon.
+- Ada stays the first machine woman.
+- Rosa and Ines stay two people.
+- Spirits stay ordinary. The big cosmic fight stays far away.
+- Native magic stays real and unspecified until you specify it.
+- The dead stay common.
 - The household stays voluntary.
-- Art, animation and room admission stay outside this file.
 
 When in doubt, put a job in the sentence and let the country happen around it.
