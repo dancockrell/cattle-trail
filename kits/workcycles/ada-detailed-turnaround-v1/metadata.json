@@ -1,0 +1,222 @@
+{
+  "id": "ada-detailed-turnaround-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "detailed_static_endview_candidates",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "figure_height": 160,
+  "native_texture": "atlas-native.png",
+  "native_cell": [
+    960,
+    960
+  ],
+  "source": "kits/workcycles/ada-detailed-turnaround-v1/source.png",
+  "source_sha256": "cecb983e61eebaf277e647d9494f0bd54d98f5b16ae2ad25ccbcee3d35096427",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/wardrobe/ada-summer-v1/tied_workshirt_shorts-native.png",
+  "identity_reference_sha256": "ce9322ba8069843ef53f25891b59eb15ffbcb4b6fca098bb73cecf71d47c7ddb",
+  "frames": [
+    {
+      "index": 0,
+      "requested_facing": "southeast",
+      "actual_facing": "southeast_front_oblique",
+      "source_region_xyxy": [
+        0,
+        0,
+        555,
+        944
+      ],
+      "source_alpha_bounds_xyxy": [
+        162,
+        18,
+        467,
+        902
+      ],
+      "native_size": [
+        305,
+        884
+      ],
+      "native_image": "southeast-native.png",
+      "native_rgba_sha256": "39079ef4261bc671f3a4f4c5a71005ad217f2591fcd5c6f7da8759af891b8ad9",
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "alpha_bounds_xyxy": [
+        101,
+        80,
+        156,
+        240
+      ],
+      "rgba_sha256": "cb54add43287bb3ec70012968b23d891ac0d8639b2a74bdfa7087235ca83482e",
+      "native_atlas_rect": [
+        0,
+        0,
+        960,
+        960
+      ],
+      "native_anchor": [
+        480,
+        944
+      ],
+      "facing_confidence": "high_for_static_endview"
+    },
+    {
+      "index": 1,
+      "requested_facing": "east",
+      "actual_facing": "east_side_profile",
+      "source_region_xyxy": [
+        555,
+        0,
+        1111,
+        944
+      ],
+      "source_alpha_bounds_xyxy": [
+        155,
+        18,
+        422,
+        895
+      ],
+      "native_size": [
+        267,
+        877
+      ],
+      "native_image": "east-native.png",
+      "native_rgba_sha256": "537e3fe855aa4657d3111759df1312cff7acd90fc26a3d898ddf7d4ef4b9cc76",
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "alpha_bounds_xyxy": [
+        104,
+        80,
+        153,
+        240
+      ],
+      "rgba_sha256": "bf4b1aa1a20a46b8b766c6a768a3853401531087671882d2b45ab817f95e6461",
+      "native_atlas_rect": [
+        960,
+        0,
+        960,
+        960
+      ],
+      "native_anchor": [
+        480,
+        944
+      ],
+      "facing_confidence": "high_for_static_endview"
+    },
+    {
+      "index": 2,
+      "requested_facing": "northeast",
+      "actual_facing": "northeast_back_oblique",
+      "source_region_xyxy": [
+        1111,
+        0,
+        1666,
+        944
+      ],
+      "source_alpha_bounds_xyxy": [
+        129,
+        24,
+        410,
+        891
+      ],
+      "native_size": [
+        281,
+        867
+      ],
+      "native_image": "northeast-native.png",
+      "native_rgba_sha256": "1a2836b2a9387149290557f020f533913ae697f3f362b738de5321f58f8888ba",
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "alpha_bounds_xyxy": [
+        102,
+        80,
+        154,
+        240
+      ],
+      "rgba_sha256": "33a9db57308a87d60249cfc06cf9b1d49fac7f68a59c9da13a55cbed0d5444ec",
+      "native_atlas_rect": [
+        1920,
+        0,
+        960,
+        960
+      ],
+      "native_anchor": [
+        480,
+        944
+      ],
+      "facing_confidence": "high_for_static_endview"
+    }
+  ],
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "idle_east": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "idle_northeast": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "transition": "Staticendviews only; no authoredturntween orwalkcycle.",
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta key",
+      "nativewholefigure crop",
+      "nativeatlas noresample",
+      "160pxnearest derivative in256cells"
+    ]
+  },
+  "review": [
+    "No runtimechanges, renderedgame tests or40pxderivative.",
+    "1870smaterial cues: linen blouse, shortbrownwaistcoat, cottonbreeches, brassfastenings, leatherbeltboots; daringcut is WeirdWeststylization.",
+    "Source and160pxpreview show three distinct front/side/back orientations with head torso hips and boots rotating together.",
+    "Whole faces, feet, braid and toolbelt are visible without clipping. Wrench appears on visible hip in every view; exact anatomical attachment continuity remains unverified.",
+    "Planted endviews accepted as coherent static candidates; no tween or native-motion approval claimed."
+  ]
+}

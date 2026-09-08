@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "character_id": "ada_mercer",
+  "age": 22,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/workcycles/ada-detailed-turnaround-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": true,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "southeast_front_oblique",
+      "rgba_sha256": "cb54add43287bb3ec70012968b23d891ac0d8639b2a74bdfa7087235ca83482e"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "east_side_profile",
+      "rgba_sha256": "bf4b1aa1a20a46b8b766c6a768a3853401531087671882d2b45ab817f95e6461"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "observation": "northeast_back_oblique",
+      "rgba_sha256": "33a9db57308a87d60249cfc06cf9b1d49fac7f68a59c9da13a55cbed0d5444ec"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      240
+    ],
+    "1": [
+      128,
+      240
+    ],
+    "2": [
+      128,
+      240
+    ]
+  },
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_east": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_northeast": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/ada-detailed-turnaround-v1/metadata.json",
+  "source_metadata_sha256": "12b0ae472ed3b6b19f80a4286f03b8fc946944415a456317b4b76dd674d77ec4",
+  "texture_sha256": "5985eda91fbc0a22dd6ec05bc5da0f7862daa6dd440e3abf36d5e125dde7cd62",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

@@ -20,7 +20,7 @@
           "self-confident"
         ],
         "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. Preserve existing Eleanor sprite identity pending reviewed art changes.",
-        "outfit_brief": "Existing room clothing retained; more provocative PG-13 frontier wardrobe is a future art exploration. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "outfit_brief": "Tied or open-neck linen blouse, fitted waistcoat, short split riding skirt with opaque riding layers, petticoat edges, leather boots and compass. Adult athletic confidence and daring PG-13 coverage in 1870s fabrics; preserve her braid and identity. New detailed wardrobe studies remain candidates alongside the older room outfit.",
         "art_status": "existing_sprite_continuity",
         "seed": null
       },
@@ -133,7 +133,7 @@
           "self-confident"
         ],
         "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
-        "outfit_brief": "Fitted riding trousers, cropped work jacket, open-collar blouse, tool belt and boots; PG-13. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "outfit_brief": "Tied linen workshirt, cropped brown waistcoat, brass-button cotton riding breeches or short work skirt, leather toolbelt and boots. Bare arms and midriff, self-chosen daring PG-13 styling with 1870s materials; retain goggles, braid and tools. New detailed wardrobe and facing studies remain candidates.",
         "art_status": "unapproved_draft",
         "seed": null
       },
@@ -245,7 +245,7 @@
           "self-confident"
         ],
         "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
-        "outfit_brief": "Short riding jacket, fitted blouse, practical short riding skirt over riding layers and boots; PG-13. Clothing is self-chosen and a little rebellious; it supports her personality and activity rather than defining her entire identity.",
+        "outfit_brief": "Gathered cotton blouse, fitted short waistcoat, short or split riding skirt over opaque riding layers, leather boots and spirit-listener accessories. Adult athletic confidence, bare shoulders or midriff, daring PG-13 coverage with visible 1870s fabric and closures.",
         "art_status": "unapproved_draft",
         "seed": null
       },
@@ -382,7 +382,7 @@
     },
     "generation_rules": [
       "Validate resolved age as at least 18 before any art or dialogue generation.",
-      "Use the default 18\u201324 age range for most generated companions; any older exception remains explicitly adult.",
+      "Use the default 18–24 age range for most generated companions; any older exception remains explicitly adult.",
       "Resolve background, equipment, perk and encounter from a compatible authored package.",
       "Use curated adult characterization and PG-13 wardrobe; no child-coded presentation.",
       "Keep recruitment, relationship, party role, perks and madness separate.",

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "ines-period-turnaround-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "72cf09300f578dad9c9224c1a04a0b464225acc2f3693d82d067b59b98072857",
+  "reference": "kits/wardrobe/spirit-scout-summer-v1/outfit-01-native.png",
+  "clothing_reference_approved_by_user": true,
+  "approval_scope": "Prior reference coverage only; this new outfit, camera and runtime remain candidates.",
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    249
+  ],
+  "figure_height": 160,
+  "native_cutouts_preserved": true,
+  "frames": [
+    {
+      "index": 0,
+      "requested_facing": "southeast",
+      "observed_facing": "front-right three-quarter",
+      "facing_confidence": "high",
+      "native_image": "southeast-native.png",
+      "image": "southeast.png",
+      "source_rect_xyxy": [
+        0,
+        0,
+        512,
+        1024
+      ],
+      "trim_bounds_xyxy": [
+        95,
+        19,
+        451,
+        982
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_static_endview"
+    },
+    {
+      "index": 1,
+      "requested_facing": "east",
+      "observed_facing": "right profile",
+      "facing_confidence": "high",
+      "native_image": "east-native.png",
+      "image": "east.png",
+      "source_rect_xyxy": [
+        512,
+        0,
+        1024,
+        1024
+      ],
+      "trim_bounds_xyxy": [
+        133,
+        21,
+        358,
+        975
+      ],
+      "atlas_rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_static_endview"
+    },
+    {
+      "index": 2,
+      "requested_facing": "northeast",
+      "observed_facing": "back-right three-quarter",
+      "facing_confidence": "high",
+      "native_image": "northeast-native.png",
+      "image": "northeast.png",
+      "source_rect_xyxy": [
+        1024,
+        0,
+        1536,
+        1024
+      ],
+      "trim_bounds_xyxy": [
+        85,
+        21,
+        386,
+        974
+      ],
+      "atlas_rect_xywh": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_static_endview"
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "camera_limitation": "Distinct SE/E/NE body rotations are clear, but viewing elevation is closer to character turnaround/eye-level than requested game high three-quarter.",
+  "period_style": "Teal woven waistcoat with brass buttons/lacing, ivory gathered off-shoulder sleeves, plum split riding overskirt above opaque brown shorts, leather boots/satchel; stylized weird-west tailoring, not strict historical reconstruction.",
+  "transform": "Magenta key, complete-figure trim preserved natively, nearest-neighbor whole-figure scale to160px, no body repaint or assembly."
+}

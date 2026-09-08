@@ -73,7 +73,7 @@ These adventure sketches are design only. They introduce no additional room, pla
 
 Eleanor is the first continuity anchor: adult age 24, already present in Clear Fork. Her proposed identity is a frontier healer who takes spirits seriously and brings a steadying camp presence. Existing sprite identity remains the production reference until a deliberate new outfit is reviewed. Root integration may update her opening dialogue to establish the Weird West; that alone does not implement recruitment or madness.
 
-Ada Mercer, a steam mechanic, and Rosa Vale, a spirit-listener and trail scout, are representative **drafts** in design/characters.json. Their names, backgrounds, looks and numbers remain editable proposals. They are not generated assets or admitted room characters.
+Ada Mercer now has a source-room steam repair encounter, recruitment, cart outing and camp care. Her richer wardrobe studies remain separate candidates. Rosa Vale remains a draft spirit-listener in design/characters.json. Ines Vale is a separate adult master used in the sprite-family studies, not a currently recruited room character.
 
 Procedural companions draw from curated adult names, backgrounds, silhouettes, outfits, temperament traits, encounter hooks and compatible perk packages. Store a stable seed and the resolved character record so loading a save never rerolls identity. Validate age before generating art or dialogue. Generate coherent individuals rather than independently randomizing every attribute. Prioritize ordinary attractive women with health, activity, charm and self-confidence; avoid a generic revealing-fantasy cast. Match each woman to a short playable relationship adventure, not just a perk and dialogue portrait. A perk package must be usable, and personality, role and visual equipment must agree. Named characters keep stable authored IDs; generated IDs include a persistent identity key.
 
@@ -105,9 +105,9 @@ The user rejected current lasso quality and animation sequencing. Variety cannot
 
 ## Milestones and bounded next work
 
-1. **Ongoing: repair and enrich animation.** Resolve lasso, walk and turn sequence defects in the actual engine, including generated whole-pose intermediates. Compare against the approved concept. Rich kits remain candidates where motion fails.
-2. **Current playable companion proof.** Eleanor recruitment, cattle-calming adventure, optional mutual flirt, camp perk and madness/recovery now have a first implementation. Improve activity variety and presentation through playtesting; prove save/load and avoid duplicated events. The full Lanterns at the Ford spirit-lantern encounter remains later work, not a claim about this cattle-calming proof.
-3. **Later: one generated adult companion and one uncanny/steam encounter.** Prove stable generated identity and perk compatibility. Demonstrate the setting with a bounded encounter before extending travel or adding mecha control.
+1. **Ongoing: detailed whole-character animation.** Preserve the newly requested detail and correct contact/passing opposition and turn views directly on sheets. Keep incomplete pose banks out of runtime animation selection. Resume native room visual comparison once coherent motion is ready; avoid repeated gameplay captures during sprite production.
+2. **Current companion source proofs.** Eleanor recruitment, cattle-calming and lantern activities, Ada steam repair and cart outing, optional romance and shared camp recovery are implemented. They remain source features with focused headless checks; the older packaged executable does not contain all of them. The crossing still uses the dry trail room, not new ford scenery.
+3. **Next broader game proof.** Admit a coherent detailed character kit and a generated companion encounter using persistent identity and compatible perks. Expand travel, uncanny encounters and mecha play following those working foundations.
 
 No milestone here certifies art completion. The latest user instruction authorizes further systems following this design; label each concrete implementation accurately and retain editable proposals for unfinished features.
 
@@ -152,3 +152,11 @@ Cart steering now accelerates toward 32 world pixels/second at48pixels/second sq
 ### Detailed character masters and wardrobe authority
 
 The user rejected the coarse Ada walk sheet on September 8. [Character visual contract](design/CHARACTER-VISUAL-CONTRACT.md) now governs new detailed master and wardrobe production, superseding the earlier 40-pixel master target. Preserve native source detail; explore approximately 160-pixel figures before choosing a matching runtime presentation resolution. Daring adult PG-13 outfits with bare shoulders, midriffs, open backs and short hems are active production work. These static wardrobe candidates are not approved walk cycles or runtime replacements.
+
+### Detailed rendering and camp care in the source
+
+The room now renders at its displayed integer density up to 4x while preserving the same logical trail size and physics. Source-pixel density and optional per-frame pivots allow detailed 160-pixel figures to keep the existing 40-world-unit body scale. Actual candidate packages hold individual whole poses and observed facing views; they do not fabricate completed walk cycles.
+
+After Ada's cart outing, Rest near her spends 30 trail minutes and restores up to 10 madness for each participant. Eleanor retains up to 13 player and 10 companion recovery. Each participant has a 1,440-minute cooldown, so changing partners cannot repeat player recovery. Saved recovery deadlines migrate from older Eleanor rests. Active outings must be paused and unfinished actions resolved first; romance remains a separate choice.
+
+Wardrobe follows the user's period clarification: adult adventure appeal, skirts as well as riding breeches, and daring coverage expressed through 1870s woven fabrics, waistcoats, blouses, leather and brass. See the character visual contract for the accepted coverage reference and remaining art limits.

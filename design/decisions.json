@@ -1,7 +1,7 @@
 {
   "version": 1,
   "authority": "../GAME-DESIGN.md",
-  "implementation_status": "First Eleanor recruitment, playable three-cattle activity, optional courting, shared rest perk and three-human madness state implemented; broader systems remain proposals.",
+  "implementation_status": "Source implements Eleanor recruitment and cattle activity, lantern crossing, Ada steam repair and cart outing, separate romance choices, camp recovery, and saved character state. Detailed character animation and room visual acceptance remain unfinished.",
   "decisions": [
     {
       "id": "genre",
@@ -79,7 +79,7 @@
       "id": "control_contract",
       "status": "provisional",
       "decision": "Switch control for a bounded authored adventure while preserving actor identity and state, then return safely with rewards applied once.",
-      "consequence": "No current actor-switch implementation; preserve the current animation-repair milestone."
+      "consequence": "The source switches control for Eleanor cattle/lantern activities and Ada cart driving, with persisted checkpoints and return control."
     },
     {
       "id": "parallel_gameplay_expansion",
@@ -91,7 +91,7 @@
       "id": "detailed_character_masters_and_daring_wardrobe",
       "status": "accepted_user",
       "decision": "Reject the coarse Ada walk sheet; produce richly detailed adult masters and daring PG-13 wardrobe variants with visible skin and confident self-expression.",
-      "consequence": "design/CHARACTER-VISUAL-CONTRACT.md supersedes the 40-pixel production target. New 160-pixel figure candidates preserve native crops; runtime scale change remains unimplemented."
+      "consequence": "design/CHARACTER-VISUAL-CONTRACT.md supersedes the 40-pixel production target. Native crops and 160-pixel figure candidates are retained. The renderer supports display density and source-pixel metadata; these candidates are not live room replacements."
     },
     {
       "id": "ines_summer_clothing_reference",
@@ -99,6 +99,12 @@
       "decision": "The four Ines summer outfits establish the general adult-cast clothing level: non-nude, daring, intended for a teen audience.",
       "reference": "kits/wardrobe/spirit-scout-summer-v1/source.png",
       "consequence": "Use this coverage and styling in future wardrobe prompts; camera, motion and runtime admission remain separate."
+    },
+    {
+      "id": "period_adventure_wardrobe",
+      "status": "accepted_user",
+      "decision": "Use Lara Croft as a reference for adult athletic adventure appeal, while retaining the 1870s period. Skirts are welcome; the cast need not wear modern shorts and halters.",
+      "consequence": "Daring coverage comes from period fabrics, fitted vests and bodices, tied blouses, short or split riding skirts, leather and brass. Weird West permits inventive tailoring without defaulting to contemporary clothing."
     }
   ]
 }

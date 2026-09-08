@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "character_id": "ines_vale",
+  "age": 23,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/wardrobe/ines-period-turnaround-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    249
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": true,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "front-right three-quarter",
+      "rgba_sha256": "5b4e5d9d4306217210a3427dbb9430f42689c554f233d6832f36fea5e104450d"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "right profile",
+      "rgba_sha256": "67dc4ccf62949651f08c8112db3de209037a28727943b70012e27d05b861b554"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "observation": "back-right three-quarter",
+      "rgba_sha256": "411e5437e049d93a5dcd1213ccfab797dc180e503bfa0f071f42df7d1f115b7d"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      249
+    ],
+    "1": [
+      128,
+      249
+    ],
+    "2": [
+      128,
+      249
+    ]
+  },
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_east": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle_northeast": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/wardrobe/ines-period-turnaround-v1/metadata.json",
+  "source_metadata_sha256": "d9d4cf4824dc6437a661643713d381a8a80afa23a75f7cf30692c3a8306d68f7",
+  "texture_sha256": "1ca832cd6ffa6a0bd42a8c82e0331c3d5d64fff33c7ee07d1ecfd01a5b9689a1",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

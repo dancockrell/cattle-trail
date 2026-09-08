@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "character_id": "ada_mercer",
+  "age": 22,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/workcycles/ada-detailed-recovered-walk-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_leg_contact",
+      "rgba_sha256": "48786e721933fd89dc550fe55e2e984c4b0b327c5c0f7726d2bdb055ad2784c2"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_leg_support_passing",
+      "rgba_sha256": "6c116a9d9345b8fe86a7c6db2bc7e9f44586b02db40d340e9213de472c4bf36c"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "observation": "far_leg_contact_side_profile",
+      "rgba_sha256": "f7e413cfe3dfe2a07df16ba0b2812dabff1e5d1868a592b7f7b90271b8735f1d"
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "observation": "far_leg_support_low_passing",
+      "rgba_sha256": "7fc111ac029cd7ecc6c521115ce39c6d497173f54e42a2bf4eb34f27bd7884fc"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ],
+    "1": [
+      128,
+      244
+    ],
+    "2": [
+      128,
+      244
+    ],
+    "3": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_01": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_02": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_03": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "review_walk_east": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 6.25,
+      "durations": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "loop": true,
+      "admitted": false,
+      "purpose": "manual sheet review only"
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/ada-detailed-recovered-walk-v1/metadata.json",
+  "source_metadata_sha256": "2562fb7b5e27a44cdf3ccb8d29c33dfb4cd4f3ea8c0b993b823a675f190d0446",
+  "texture_sha256": "3de3e06d4b0cb5c6c844cefe08068de069e574aef1eb3ace7990035e02f38e8b",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

@@ -146,5 +146,7 @@
   "animations": {},
   "runtime_admitted": false,
   "transform": "Magenta key; complete-figure trim preserved at native resolution; nearest-neighbor full-figure scale to160px inside192pxcell; no smoothing or repaint",
-  "scale_decision": "160px master output supersedes earlier40px request after user rejected coarse small-character presentation."
+  "scale_decision": "160px master output supersedes earlier40px request after user rejected coarse small-character presentation.",
+  "clothing_reference_approved_by_user": true,
+  "approval_scope": "User explicitly approved clothing coverage/style as general adult-cast reference, not runtime admission, animation or camera."
 }

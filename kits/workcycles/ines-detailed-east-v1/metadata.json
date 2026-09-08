@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "ines-detailed-east-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "reference": "kits/wardrobe/spirit-scout-summer-v1/outfit-01-native.png",
+  "source": "source.png",
+  "source_sha256": "7195963460c09d7983baf9a7299903d9eb2d3e1ac2bee6b0e388bbfd9e1d8cf3",
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    249
+  ],
+  "figure_height": 160,
+  "native_extractions_preserved": true,
+  "frames": [
+    {
+      "id": "ines_detailed_east_01",
+      "age": 23,
+      "source_rect_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        167,
+        27,
+        485,
+        578
+      ],
+      "native_image": "pose-01-native.png",
+      "image": "pose-01.png",
+      "atlas_rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_walk_phase_unverified",
+      "animations": {}
+    },
+    {
+      "id": "ines_detailed_east_02",
+      "age": 23,
+      "source_rect_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        92,
+        27,
+        371,
+        582
+      ],
+      "native_image": "pose-02-native.png",
+      "image": "pose-02.png",
+      "atlas_rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_walk_phase_unverified",
+      "animations": {}
+    },
+    {
+      "id": "ines_detailed_east_03",
+      "age": 23,
+      "source_rect_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        156,
+        28,
+        526,
+        573
+      ],
+      "native_image": "pose-03-native.png",
+      "image": "pose-03.png",
+      "atlas_rect_xywh": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_walk_phase_unverified",
+      "animations": {}
+    },
+    {
+      "id": "ines_detailed_east_04",
+      "age": 23,
+      "source_rect_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        85,
+        33,
+        370,
+        591
+      ],
+      "native_image": "pose-04-native.png",
+      "image": "pose-04.png",
+      "atlas_rect_xywh": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        249
+      ],
+      "status": "candidate_walk_phase_unverified",
+      "animations": {}
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "transform": "Magenta key; complete-figure trim preserved at native resolution; nearest-neighbor full-figure scale to160px inside256pxcell; no smoothing or repaint",
+  "scale_decision": "160px master output supersedes earlier40px request after user rejected coarse small-character presentation.",
+  "clothing_reference_approved_by_user": true,
+  "approval_scope": "Clothing coverage reference only; not animation, period tailoring, camera or runtime.",
+  "phase_review": [
+    {
+      "index": 0,
+      "requested": "near_contact",
+      "observed": "near_contact",
+      "confidence": "medium"
+    },
+    {
+      "index": 1,
+      "requested": "near_support_passing",
+      "observed": "near_support_passing",
+      "confidence": "medium"
+    },
+    {
+      "index": 2,
+      "requested": "far_contact",
+      "observed": "unverified_alternation_contact",
+      "confidence": "low",
+      "notes": "Arm swing changes but visible thigh/boot depth does not reliably establish opposite lead."
+    },
+    {
+      "index": 3,
+      "requested": "far_support_passing",
+      "observed": "passing_similar_to_first",
+      "confidence": "low",
+      "notes": "Support-leg alternation not reliably established."
+    }
+  ],
+  "status": "detailed_candidate_phase_bank_not_verified_loop",
+  "period_tailoring_gap": "Teal high-neck halter can read modern; future tailoring needs explicit woven cloth, ties and period closures. Coverage approval is not historical costume approval."
+}

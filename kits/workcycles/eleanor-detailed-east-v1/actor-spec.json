@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/workcycles/eleanor-detailed-east-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_leading_contact",
+      "rgba_sha256": "c5ecb42e4da15af6086aaef70e97a615127d75b1471c4a15d1dbe86d358b1625"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_support_passing",
+      "rgba_sha256": "d18786b42246f246bcc3cc2868720d27c0e531f9ad4c504e935d2e8d1299cca1"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "observation": "repeated_near_leading_contact",
+      "rgba_sha256": "f67afbd7698d676599d8bfa4067d0c4d5b917b746ad4d8228f91ff6f428ba087"
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_swing_far_support_candidate",
+      "rgba_sha256": "1acf2fa20f145bae2c1d41d132be68197096a0fccab18d8fc0df3aa93f025796"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ],
+    "1": [
+      128,
+      244
+    ],
+    "2": [
+      128,
+      244
+    ],
+    "3": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_01": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_02": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_03": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/eleanor-detailed-east-v1/metadata.json",
+  "source_metadata_sha256": "587f32670b902e9354ecb931762d8f5828d6674850a9f7fc52eb1d0b577018fa",
+  "texture_sha256": "de442d5791f7c36c75dc4c98d5467f987368b3946fb8d9fad2df0035bcc4b717",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

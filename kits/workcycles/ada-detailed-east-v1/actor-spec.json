@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "character_id": "ada_mercer",
+  "age": 22,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/workcycles/ada-detailed-east-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_forward_contact",
+      "rgba_sha256": "7865a6d9c023e149fabf2a4a2163d5edc227da6e4c91df346391c7dc68d91f50"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_support_low_passing_candidate",
+      "rgba_sha256": "7b67cbe5979b92212fae940e55e673733206703b828a9cf2e529c9e36a8bc934"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "observation": "repeated_near_forward_contact",
+      "rgba_sha256": "6c205124f04b0429c98012449e49f7822ef992bd38e17e72f44923aa10c2d05a"
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "observation": "near_support_with_far_foot_trailing_candidate",
+      "rgba_sha256": "616bf0f4767d642248c4fc7029bdb0f07380cc2c435535a2dc12043bb0eb333d"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      240
+    ],
+    "1": [
+      128,
+      240
+    ],
+    "2": [
+      128,
+      240
+    ],
+    "3": [
+      128,
+      240
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_01": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_02": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_03": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/ada-detailed-east-v1/metadata.json",
+  "source_metadata_sha256": "cc3c245228574aa68dafb6c40880f884843c01d7ea7b609e72b0def63bd57a38",
+  "texture_sha256": "aa208a27b9304cf5a52e8befc369902db1148c5568978f57487329837dfbc753",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

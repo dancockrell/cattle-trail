@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "body_height": 160,
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "actual_phase": "near_leading_contact",
+      "status": "candidate",
+      "size": [
+        71,
+        160
+      ],
+      "offset": [
+        93,
+        84
+      ],
+      "source_rect": [
+        96,
+        66,
+        311,
+        703
+      ],
+      "provisional_duration_seconds": 0.16
+    },
+    {
+      "frame": 1,
+      "rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "actual_phase": "near_support_passing",
+      "status": "candidate",
+      "size": [
+        47,
+        160
+      ],
+      "offset": [
+        105,
+        84
+      ],
+      "source_rect": [
+        561,
+        67,
+        208,
+        703
+      ],
+      "provisional_duration_seconds": 0.16
+    },
+    {
+      "frame": 2,
+      "rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "actual_phase": "repeated_near_leading_contact",
+      "status": "rejected_opposite_contact",
+      "size": [
+        76,
+        160
+      ],
+      "offset": [
+        90,
+        84
+      ],
+      "source_rect": [
+        984,
+        68,
+        332,
+        700
+      ],
+      "provisional_duration_seconds": 0.16
+    },
+    {
+      "frame": 3,
+      "rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "actual_phase": "near_swing_far_support_candidate",
+      "status": "candidate",
+      "size": [
+        51,
+        160
+      ],
+      "offset": [
+        103,
+        84
+      ],
+      "source_rect": [
+        1501,
+        68,
+        224,
+        700
+      ],
+      "provisional_duration_seconds": 0.16
+    }
+  ],
+  "status": "incomplete_cycle_repeated_contact",
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "source_sha256": {
+    "source.png": "68cd9ede86241dd704d12de9c924522db9a7fb2d9a6918227afa4538f8aefdff",
+    "opposite-contact-correction.png": "139b11e0ef8d4f5a68f4087f32f7790f3eaa86d26f9384e97bc5e1c5c7e15212"
+  },
+  "prompts": [
+    "prompt.txt",
+    "opposite-contact-prompt.txt"
+  ],
+  "tool": "builtin image_gen",
+  "reference": "kits/wardrobe/rancher-summer-v1/cream_offshoulder_split_skirt-full-resolution.png",
+  "actual_facing": "southeast_oblique_right",
+  "outfit": "Cream opaque offshoulder tied blouse, split indigo skirt over opaque brown shorts, chestnut braid, brass compass, leather western boots.",
+  "observation": "Contact panels0and2 repeat bright nearleg leading screenright. Panel1 narrows to supportingbrightleg with darklegbentbehind. Panel3 bends nearleg across far support. Single targeted oppositecontact correction also retained same brightnearlead and is rejected.",
+  "limitations": [
+    "Missing verified opposite contact; no full loop or east-side camera claim.",
+    "Timing0.16s is provisional perpose only, not an admitted orderedclip.",
+    "Period-inspired blouse skirt leather andbrass; short underlayer/cropped blouse are deliberate fantasywardrobe rather than verified1870s costume. No petticoat edge is visible.",
+    "Correction slightly redesigns face and body rendering."
+  ],
+  "processing": "Wholebody source key, fullresolution transparenttrims, nearest160height,256cellpadding; no detachedrig, compositedlegs or mirror."
+}

@@ -1,0 +1,315 @@
+{
+  "id": "ada-detailed-east-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "outfit": "ada-summer-v1_tied_workshirt_shorts",
+  "status": "detailed_whole_pose_candidates_incomplete_cycle",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "native_texture": "atlas-native.png",
+  "native_cell": [
+    640,
+    640
+  ],
+  "facing": "east_front_oblique",
+  "source": "kits/workcycles/ada-detailed-east-v1/source.png",
+  "source_sha256": "4eb0183d0355def4e5c7871daa4d38bdc0bce741aeeb8bd098db6d9e45bf4832",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/wardrobe/ada-summer-v1/tied_workshirt_shorts-native.png",
+  "identity_reference_sha256": "ce9322ba8069843ef53f25891b59eb15ffbcb4b6fca098bb73cecf71d47c7ddb",
+  "frames": [
+    {
+      "index": 0,
+      "requested_phase": "near_forward_contact",
+      "observed_pose": "near_forward_contact",
+      "source_region_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        202,
+        14,
+        470,
+        580
+      ],
+      "native_size": [
+        268,
+        566
+      ],
+      "native_image": "00-native.png",
+      "native_rgba_sha256": "574457859670c93f4195d5dff0820129620bab86ac589eed1a1d0e89229fb66f",
+      "source_sha256": "4eb0183d0355def4e5c7871daa4d38bdc0bce741aeeb8bd098db6d9e45bf4832",
+      "phase_admitted": false,
+      "duration_seconds_provisional": 0.16,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "figure_height": 160,
+      "offset": [
+        90,
+        80
+      ],
+      "alpha_bounds_xyxy": [
+        90,
+        80,
+        166,
+        240
+      ],
+      "rgba_sha256": "7865a6d9c023e149fabf2a4a2163d5edc227da6e4c91df346391c7dc68d91f50",
+      "native_atlas_rect": [
+        0,
+        0,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ]
+    },
+    {
+      "index": 1,
+      "requested_phase": "near_support_passing",
+      "observed_pose": "near_support_low_passing_candidate",
+      "source_region_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        132,
+        14,
+        329,
+        580
+      ],
+      "native_size": [
+        197,
+        566
+      ],
+      "native_image": "01-native.png",
+      "native_rgba_sha256": "7d3e0d51e2a8e30c838178a4ec347b53db94bb9ff2b824e395f51d0d87c9c757",
+      "source_sha256": "4eb0183d0355def4e5c7871daa4d38bdc0bce741aeeb8bd098db6d9e45bf4832",
+      "phase_admitted": false,
+      "duration_seconds_provisional": 0.16,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "figure_height": 160,
+      "offset": [
+        100,
+        80
+      ],
+      "alpha_bounds_xyxy": [
+        100,
+        80,
+        156,
+        240
+      ],
+      "rgba_sha256": "7b67cbe5979b92212fae940e55e673733206703b828a9cf2e529c9e36a8bc934",
+      "native_atlas_rect": [
+        640,
+        0,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ]
+    },
+    {
+      "index": 2,
+      "requested_phase": "near_back_opposite_contact",
+      "observed_pose": "repeated_near_forward_contact",
+      "source_region_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "source_alpha_bounds_xyxy": [
+        206,
+        17,
+        488,
+        586
+      ],
+      "native_size": [
+        282,
+        569
+      ],
+      "native_image": "02-native.png",
+      "native_rgba_sha256": "cabb4d09d9a725cd8d5ea0a29767a49740fb7d3f2b9cfbd267238daa8620ef71",
+      "source_sha256": "4eb0183d0355def4e5c7871daa4d38bdc0bce741aeeb8bd098db6d9e45bf4832",
+      "phase_admitted": false,
+      "duration_seconds_provisional": 0.16,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "figure_height": 160,
+      "offset": [
+        89,
+        80
+      ],
+      "alpha_bounds_xyxy": [
+        89,
+        80,
+        168,
+        240
+      ],
+      "rgba_sha256": "6c205124f04b0429c98012449e49f7822ef992bd38e17e72f44923aa10c2d05a",
+      "native_atlas_rect": [
+        0,
+        640,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ]
+    },
+    {
+      "index": 3,
+      "requested_phase": "far_support_passing",
+      "observed_pose": "near_support_with_far_foot_trailing_candidate",
+      "source_region_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "source_alpha_bounds_xyxy": [
+        135,
+        17,
+        322,
+        591
+      ],
+      "native_size": [
+        187,
+        574
+      ],
+      "native_image": "03-native.png",
+      "native_rgba_sha256": "10f098708f82cde47a5dd89e450351f92377d1aae1de2b9c4bf698bf0f3c8e6f",
+      "source_sha256": "4eb0183d0355def4e5c7871daa4d38bdc0bce741aeeb8bd098db6d9e45bf4832",
+      "phase_admitted": false,
+      "duration_seconds_provisional": 0.16,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "figure_height": 160,
+      "offset": [
+        102,
+        80
+      ],
+      "alpha_bounds_xyxy": [
+        102,
+        80,
+        154,
+        240
+      ],
+      "rgba_sha256": "616bf0f4767d642248c4fc7029bdb0f07380cc2c435535a2dc12043bb0eb333d",
+      "native_atlas_rect": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ]
+    }
+  ],
+  "clips": {
+    "pose_0_contact": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "pose_1_passing_candidate": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "pose_2_repeated_contact": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "pose_3_passing_candidate": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "walk_clip": null,
+  "requested_timing": {
+    "seconds_per_pose": 0.16,
+    "status": "provisional_only_no_complete_walk_clip"
+  },
+  "review": [
+    "Source generation retained intact. No correction generation was made after parent instructed extraction only.",
+    "Frames0and2 both show near leg leading screenright; frame2 does not supply opposite contact.",
+    "Frames1and3 both appear near-leg-supported with far foot behind; far-support phase not established.",
+    "Face/hair/goggles and outfit stay coherent; wrench remains on near visible hip. Anatomical handedness across missing reverse phase cannot be verified.",
+    "Frames are front-oblique rather than strict side profile. Native and160px images preserve readable faces, hands and outfit detail.",
+    "Linen-like shirt, brass goggles/buckles, leather toolbelt/boots fit WeirdWest materials; very short fitted shorts are a stylized period reinterpretation, not documented historical workwear.",
+    "No rendered game or motion test. No40px derivative."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "successful_generations": 1,
+    "transforms": [
+      "magenta chromakey",
+      "wholefigure nativecrop",
+      "nativeatlas placement noresampling",
+      "160pxheight nearestderivative in256cells"
+    ]
+  }
+}

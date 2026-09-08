@@ -83,3 +83,13 @@ After repairing the walker and inviting Ada, board the cart on the lower trail w
 This source feature uses five selectedrealcart sprites, including an emptyparkedview. It was checked without rendering thegame; the packagedWindows executable still predates these sourcechanges.
 
 The cart now accelerates, brakes and steers through turns. Use Brake[E] during the lantern route to stop and clear a tap destination. Its wider collision footprint leaves room around scenery; saves retain heading and restart with the cart stationary.
+
+## Detailed character sheets and camp care
+
+New detailed source kits preserve native whole figures and 160-pixel derivatives: three four-pose walking studies for Eleanor, Ada and Ines, plus three-facing period costume studies for Ada and Ines. The walking banks remain incomplete; repeated or unclear leg phases are recorded rather than selected as finished loops. Each kit now has an Actor-compatible `actor-spec.json` with source-pixel density, exact rectangles, pivots and static pose clips. `tools/build_detailed_actor_specs.py` rebuilds these specifications from the retained art and validates hashes, dimensions and alpha.
+
+The sprite renderer supports these denser textures without changing character world size. Display density, frame pivots, reflected sockets and input mapping passed isolated headless checks. The new candidate characters have not replaced the room actors.
+
+After finishing Ada's cart outing, Rest beside her restores up to 10 madness each and spends 30 trail minutes. Her short camp remark accompanies the action. Eleanor retains her 13/10 recovery; both interactions share the player's daily cooldown. Saves retain deadlines and migrate older Eleanor rest records. Active outings must be paused before camp rest. These source changes have focused headless verification; no new game capture or Windows rebuild was performed for this pass.
+
+The selected older Ada four-pose sequence has also been recovered directly from its full-resolution sources, preserving the corrected opposite contact at 160-pixel figure height. It retains her brown work jacket and trousers. Pelvis alignment, source landmarks and provisional 0.16-second pose holds are recorded; body proportions and arm counter-swing remain unfinished. Its `review_walk_east` clip is for sheet inspection, not live room selection. No coarse sprite was enlarged to make this recovered kit.

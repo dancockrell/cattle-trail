@@ -1,0 +1,499 @@
+{
+  "id": "ada-detailed-recovered-walk-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "outfit": "original brown jacket cream blouse olive trousers",
+  "status": "raw_recovered_detailed_candidate_not_admitted",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "native_texture": "atlas-native.png",
+  "native_cell": [
+    960,
+    960
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "phase": "near_leg_contact",
+      "source": "kits/workcycles/ada-master-east-walk-v4/source.png",
+      "source_sha256": "f25f0af2c322308296ade6b0ee69e1e9b8eec931ae6555d45ce7706024537e46",
+      "local_raw_copy": "raw-contact-passing.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        206,
+        77,
+        515,
+        534
+      ],
+      "native_size": [
+        309,
+        457
+      ],
+      "native_image": "00-native.png",
+      "native_rgba_sha256": "c9f2909f333782e593536a5a859cfeb74bf750177197acb8a19c3cf1c1aae04f",
+      "landmarks_source_global_manual": {
+        "hip": [
+          366,
+          335
+        ],
+        "near_foot": [
+          461,
+          532
+        ],
+        "far_foot": [
+          254,
+          527
+        ],
+        "near_hand": [
+          278,
+          343
+        ],
+        "far_hand": [
+          439,
+          328
+        ]
+      },
+      "landmarks_status": "manual sheet estimates, not geometry-derived anatomical proof",
+      "duration_seconds": 0.16,
+      "phase_admitted": false,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "figure_height": 160,
+      "offset": [
+        72,
+        84
+      ],
+      "landmarks_cell_manual": {
+        "hip": [
+          128,
+          174
+        ],
+        "near_foot": [
+          161,
+          243
+        ],
+        "far_foot": [
+          89,
+          242
+        ],
+        "near_hand": [
+          97,
+          177
+        ],
+        "far_hand": [
+          153,
+          172
+        ]
+      },
+      "alpha_bounds_xyxy": [
+        72,
+        84,
+        180,
+        244
+      ],
+      "rgba_sha256": "48786e721933fd89dc550fe55e2e984c4b0b327c5c0f7726d2bdb055ad2784c2",
+      "native_atlas_rect": [
+        0,
+        0,
+        960,
+        960
+      ]
+    },
+    {
+      "index": 1,
+      "phase": "near_leg_support_passing",
+      "source": "kits/workcycles/ada-master-east-walk-v4/source.png",
+      "source_sha256": "f25f0af2c322308296ade6b0ee69e1e9b8eec931ae6555d45ce7706024537e46",
+      "local_raw_copy": "raw-contact-passing.png",
+      "source_region_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        169,
+        77,
+        393,
+        533
+      ],
+      "native_size": [
+        224,
+        456
+      ],
+      "native_image": "01-native.png",
+      "native_rgba_sha256": "141d87f11273ec7673e068885d11e32bbf7d02ba6f1be7a32d311c2f18d60801",
+      "landmarks_source_global_manual": {
+        "hip": [
+          939,
+          337
+        ],
+        "near_foot": [
+          979,
+          532
+        ],
+        "far_foot": [
+          831,
+          516
+        ],
+        "near_hand": [
+          900,
+          346
+        ]
+      },
+      "landmarks_status": "manual sheet estimates, not geometry-derived anatomical proof",
+      "duration_seconds": 0.16,
+      "phase_admitted": false,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "figure_height": 160,
+      "offset": [
+        78,
+        84
+      ],
+      "landmarks_cell_manual": {
+        "hip": [
+          128,
+          175
+        ],
+        "near_foot": [
+          143,
+          244
+        ],
+        "far_foot": [
+          90,
+          238
+        ],
+        "near_hand": [
+          115,
+          178
+        ]
+      },
+      "alpha_bounds_xyxy": [
+        78,
+        84,
+        157,
+        244
+      ],
+      "rgba_sha256": "6c116a9d9345b8fe86a7c6db2bc7e9f44586b02db40d340e9213de472c4bf36c",
+      "native_atlas_rect": [
+        960,
+        0,
+        960,
+        960
+      ]
+    },
+    {
+      "index": 2,
+      "phase": "far_leg_contact_side_profile",
+      "source": "kits/workcycles/ada-master-east-contact-v5/source.png",
+      "source_sha256": "465dd02a12b07f52da68e6882359ddf71c8701183fb12e91b7690bea59226fb0",
+      "local_raw_copy": "raw-opposite-contact.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        337,
+        298,
+        853,
+        1214
+      ],
+      "native_size": [
+        516,
+        916
+      ],
+      "native_image": "02-native.png",
+      "native_rgba_sha256": "d2bc9f905efe9bb7f5be32d7cf9dd6b992ecfc1518aaa856039d04458be9f70e",
+      "landmarks_source_global_manual": {
+        "hip": [
+          630,
+          816
+        ],
+        "near_foot": [
+          436,
+          1201
+        ],
+        "far_foot": [
+          773,
+          1203
+        ],
+        "near_hand": [
+          522,
+          864
+        ],
+        "far_hand": [
+          735,
+          796
+        ]
+      },
+      "landmarks_status": "manual sheet estimates, not geometry-derived anatomical proof",
+      "duration_seconds": 0.16,
+      "phase_admitted": false,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "figure_height": 160,
+      "offset": [
+        77,
+        84
+      ],
+      "landmarks_cell_manual": {
+        "hip": [
+          128,
+          174
+        ],
+        "near_foot": [
+          94,
+          242
+        ],
+        "far_foot": [
+          153,
+          242
+        ],
+        "near_hand": [
+          109,
+          183
+        ],
+        "far_hand": [
+          146,
+          171
+        ]
+      },
+      "alpha_bounds_xyxy": [
+        77,
+        84,
+        167,
+        244
+      ],
+      "rgba_sha256": "f7e413cfe3dfe2a07df16ba0b2812dabff1e5d1868a592b7f7b90271b8735f1d",
+      "native_atlas_rect": [
+        0,
+        960,
+        960,
+        960
+      ]
+    },
+    {
+      "index": 3,
+      "phase": "far_leg_support_low_passing",
+      "source": "kits/workcycles/ada-master-east-walk-v4/low-pass-corrected.png",
+      "source_sha256": "5ed5e7246f7c3f91e7c274506f730bc2c31a5912b8ef0811c0af8b333ebbdf60",
+      "local_raw_copy": "raw-low-passing.png",
+      "source_region_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        473,
+        136,
+        726,
+        998
+      ],
+      "native_size": [
+        253,
+        862
+      ],
+      "native_image": "03-native.png",
+      "native_rgba_sha256": "fed23886b158d4f7a37e2139395317db921d0a24b17a0cbe56a577d48599a312",
+      "landmarks_source_global_manual": {
+        "hip": [
+          620,
+          570
+        ],
+        "near_foot": [
+          594,
+          956
+        ],
+        "far_foot": [
+          651,
+          992
+        ],
+        "near_hand": [
+          505,
+          592
+        ],
+        "far_hand": [
+          704,
+          534
+        ]
+      },
+      "landmarks_status": "manual sheet estimates, not geometry-derived anatomical proof",
+      "duration_seconds": 0.16,
+      "phase_admitted": false,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "figure_height": 160,
+      "offset": [
+        101,
+        84
+      ],
+      "landmarks_cell_manual": {
+        "hip": [
+          128,
+          165
+        ],
+        "near_foot": [
+          123,
+          236
+        ],
+        "far_foot": [
+          134,
+          243
+        ],
+        "near_hand": [
+          107,
+          169
+        ],
+        "far_hand": [
+          144,
+          158
+        ]
+      },
+      "alpha_bounds_xyxy": [
+        101,
+        84,
+        148,
+        244
+      ],
+      "rgba_sha256": "7fc111ac029cd7ecc6c521115ce39c6d497173f54e42a2bf4eb34f27bd7884fc",
+      "native_atlas_rect": [
+        960,
+        960,
+        960,
+        960
+      ]
+    }
+  ],
+  "clips": {
+    "walk_east_candidate": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 6.25,
+      "frame_durations": [
+        0.16,
+        0.16,
+        0.16,
+        0.16
+      ],
+      "loop": true,
+      "admitted": false
+    }
+  },
+  "provenance": {
+    "method": "Recover v6 selected sequence from raw generation sources",
+    "imagegen_calls": 0,
+    "inputs_exclude": [
+      "64pxcells",
+      "40pxsprites",
+      "coarsev6atlas"
+    ],
+    "source_metadata": [
+      {
+        "path": "kits/workcycles/ada-master-east-walk-v4/metadata.json",
+        "sha256": "a1270214a20b10d6a7e9e06b241942c2a7f56a6775c578a6aaff79ee7f05a8ae"
+      },
+      {
+        "path": "kits/workcycles/ada-master-east-contact-v5/metadata.json",
+        "sha256": "f815778508ea21e451ecd30dcacb9180029ee31bb5e1c5a461edbc5e80f98d56"
+      }
+    ],
+    "transforms": [
+      "sameexistingmagenta key",
+      "wholefigure nativecrop preserved",
+      "hiphorizontal alignment andgroundbaseline",
+      "nearest downsample native to160pxheight only",
+      "no bodyparts/limbshape edits"
+    ]
+  },
+  "review": [
+    "Original complete jacket/trousers outfit intentionally retained.",
+    "Ground silhouette bottom aligned244; hip center aligned128 using manual source landmarks. No limb normalization.",
+    "Corrected opposite contact and lowpassing are selected from existing rawimages; candidate phase labels are not motion approval.",
+    "No runtime edits or game tests.",
+    "Inspected160pxpreview: faces and equipment readable; frame2 has fuller face/torso and frame3 smaller head/longer lower-body appearance than contact0.",
+    "Near-support passing1 still has a rear lifted foot rather than a tight mid-pass; recovered unchanged from approvedselection, not relabeled motion-perfect.",
+    "Opposite contact2 changes near/far leg overlap but arm counter-swing is not fully opposed. Exact same wholebody candidates retained."
+  ],
+  "registration": {
+    "method": "wholefigure translation: horizontal pelvis projection128 and lower silhouette ground244",
+    "measured_hip_y": [
+      174,
+      175,
+      174,
+      165
+    ],
+    "remaining_hip_y_spread": 10,
+    "frame_anchors": [
+      [
+        128,
+        244
+      ],
+      [
+        128,
+        244
+      ],
+      [
+        128,
+        244
+      ],
+      [
+        128,
+        244
+      ]
+    ],
+    "note": "Equal160pxheight and groundalignment cannot remove differing anatomical proportions; no vertical body-part normalization applied."
+  }
+}

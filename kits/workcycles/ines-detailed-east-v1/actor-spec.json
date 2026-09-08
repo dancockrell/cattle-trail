@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "character_id": "ines_vale",
+  "age": 23,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "texture": "res://kits/workcycles/ines-detailed-east-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    249
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "candidate_walk_phase_unverified",
+      "rgba_sha256": "435ea4716e149b5f08092d362cc3e1f53e00930794c5d0fce9b3b4b119359f03"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "observation": "candidate_walk_phase_unverified",
+      "rgba_sha256": "8bd49bcc611cb09086dba056a939251800f85483734c0e86bd9798e50035c752"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "observation": "candidate_walk_phase_unverified",
+      "rgba_sha256": "9dc73b6d4a18abc797114173a56d0972965fd5134aa6aa0263c4e83437268c1b"
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "observation": "candidate_walk_phase_unverified",
+      "rgba_sha256": "5025f64e44ad2de05cdea82b874ad00679a98e3ba9e89d0c7f44d4b4e6a8f575"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      249
+    ],
+    "1": [
+      128,
+      249
+    ],
+    "2": [
+      128,
+      249
+    ],
+    "3": [
+      128,
+      249
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_01": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_02": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "pose_03": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/ines-detailed-east-v1/metadata.json",
+  "source_metadata_sha256": "44d8ab6bee6eb7c439b258eb5d4df8c619b79187f3f69cc9498490b090bf8d48",
+  "texture_sha256": "80d4c28d0d5644915c129869f7e523747d9c2090f0d00f509f011874ab432c5c",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}
