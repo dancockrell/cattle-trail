@@ -14,9 +14,10 @@ func offer(beat: String, payload: Dictionary, priority: int, ttl: float = DEFAUL
 	if _pending.size() >= CAPACITY:
 		var replace := -1
 		for index in range(_pending.size()):
-			if int(_pending[index].priority) < priority:
+			var pending_priority := int(_pending[index].priority)
+			# Preserve higher priorities and the oldest arrival among equal priorities.
+			if pending_priority < priority and (replace < 0 or pending_priority <= int(_pending[replace].priority)):
 				replace = index
-				break
 		if replace < 0: return false
 		_pending.remove_at(replace)
 	_pending.append({"beat":beat,"payload":payload.duplicate(true),"priority":priority,"remaining":minf(ttl,MAX_TTL)})
