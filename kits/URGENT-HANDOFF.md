@@ -1,3 +1,13 @@
+## Current art production decision — 8 September 2026
+
+All game artwork is 2D only: authored sprites, sprite animation, painted backgrounds, tiles, portraits and flat effects. Use the existing shared art folder at `C:/Users/Admin/Documents/Codex/shared-game-environment-library` for reusable 2D kits, with compatible perspective, pixel density, palette, anchors and animation metadata across Cattle Trail/Cattle Drive, DR Companion and Pirate Island. Preserve each game's characters, setting and gameplay identity.
+
+Do not create, purchase, import, restore, archive for later reuse, or bake sprites from 3D models. Earlier model, rig, mesh, material, body-builder and six-month-resumption plans are retired. New generated artwork uses the user-authorized built-in image generator; no external paid generation APIs. Shared reuse does not make unreviewed art automatically approved.
+
+Inspect true transparency, sequential poses, stable ground pivots, equipment handedness, native-size readability and actual motion before admission. Keep game state, navigation, combat rules, accessibility and persistence authoritative; changing artwork never changes legal actions. Existing engine API names and historical validation records may mention 3D without authorizing 3D artwork.
+
+This is production authority, not a claim that every existing runtime or binary has been converted. Legacy-asset deletion is a separate operation: automatic review rejected deletion commands, so deletion remains unverified here. Do not restore those assets or present them as production options.
+
 # Urgent handoff — posted 2026-09-07
 
 Delivered successfully to DR Companion (01a06aae-9007-7491-aa5e-e3c6222d4118) and Pirate Island Work (01a06ab0-f752-73f1-865e-72e98827992e) using the app's task messaging tool. Delivery does not mean either project has completed adoption.
@@ -14,6 +24,6 @@ Important limits: these are extracted and previewed candidates, not a claim that
 
 For this project, inspect current approved assets and design authority, establish the real baseline, build rich kits with provenance and exact metadata, inspect native-size stills and actual engine motion where applicable, then prove one room before broadening feature or room scope. Keep planned, extracted, admitted and integrated counts separate.
 
-DR-specific addition: preserve the authoritative MUD graph, confirmed transitions, fixed-isometric presentation and current static/rigged-first decision.
+DR-specific addition: preserve the authoritative MUD graph, confirmed transitions and fixed elevated presentation; use coherent 2D sprite animation. The earlier static/rigged-first direction is retired.
 
 Pirate-specific addition: preserve current design authority, companion/faction simulation and persistent consequences; adapt to its approved art without discarding existing work.
