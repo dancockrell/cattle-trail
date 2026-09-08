@@ -7,11 +7,13 @@ const Clock = preload("res://scripts/trail_clock.gd")
 const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const LanternRoom = preload("res://scripts/lantern_room.gd")
 const LanternEquipment = preload("res://scripts/lantern_equipment.gd")
+const AdaState = preload("res://scripts/ada_companion.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
 var state = State.new()
 var lantern_adventure = LanternAdventure.new()
+var ada_state = AdaState.new()
 var lantern
 var lantern_equipment: Sprite2D
 
@@ -175,6 +177,7 @@ func save_game(test_path := "") -> bool:
 	for cow in room.cows: cattle.append({"position":[cow.position.x,cow.position.y],"secured":cow.secured})
 	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
 	data["lantern_adventure"] = lantern_adventure.to_dict()
+	data["ada_companion"] = ada_state.to_dict()
 	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
@@ -182,10 +185,13 @@ func load_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
 	var data: Dictionary = Storage.read(path,Snapshot.validate)
 	if data.is_empty(): return false
+	var restored_ada = AdaState.new()
+	if not restored_ada.load_dict(data.get("ada_companion",restored_ada.to_dict())): return false
 	var restored_lantern = LanternAdventure.new()
 	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
 	lantern_adventure = restored_lantern
+	ada_state = restored_ada
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
 	room.eleanor.position = room.limit_position(Vector2(data.eleanor[0],data.eleanor[1]))

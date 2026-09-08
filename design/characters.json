@@ -205,7 +205,7 @@
       },
       "continuity_notes": [
         "Name, appearance and encounter are provisional.",
-        "No robot, mecha or repair system is implemented."
+        "Pressure-repair and Ada invitation backends exist; the mechanic room controller and Two Seats romance adventure are not yet implemented."
       ],
       "playable_companion": {
         "status": "design_only",

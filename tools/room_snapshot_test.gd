@@ -2,12 +2,19 @@ extends SceneTree
 const Snapshot = preload("res://scripts/room_snapshot.gd")
 const State = preload("res://scripts/companion_state.gd")
 const Lantern = preload("res://scripts/lantern_adventure.gd")
+const Ada = preload("res://scripts/ada_companion.gd")
 
 func _initialize() -> void:
 	var cattle := []
 	for index in range(6): cattle.append({"position":[300+index*30,180],"secured":false})
 	var data := {"version":1,"player":[199,231],"eleanor":[148,127],"cattle":cattle,"cash":342,"ammo":6,"minutes":720,"hits":0,"won":false,"talked":false,"rustler_active":true,"spoken_beats":{},"companion":State.new().to_dict()}
 	assert(Snapshot.validate(data))
+	data["ada_companion"] = Ada.new().to_dict()
+	assert(Snapshot.validate(data))
+	var bad_ada := data.duplicate(true)
+	bad_ada.ada_companion = []
+	assert(not Snapshot.validate(bad_ada))
+	data.erase("ada_companion")
 	data["lantern_adventure"] = Lantern.new().to_dict()
 	assert(Snapshot.validate(data),"New saves include an untouched lantern adventure")
 	var bad_lantern := data.duplicate(true)
