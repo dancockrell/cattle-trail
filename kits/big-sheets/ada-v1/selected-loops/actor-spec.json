@@ -1,0 +1,382 @@
+{
+  "id": "ada-role-loop-candidates-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "runtime_admitted": false,
+  "status": "two_complete_review_loops_with_visible_continuity_limitations",
+  "texture": "res://kits/big-sheets/ada-v1/selected-loops/atlas.png",
+  "texture_sha256": "808c3f7bc7314638411d14957fadfbdc0d1977e8662c9af2536d156c41e969b1",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "default_facing": "southeast",
+  "directional": false,
+  "source_sheet": "../sheet04/source.png",
+  "source_sheet_sha256": "aef7b77f2b6f4702b5e04e53c9f8899420fec80b4b72e6fdf537f074e700064f",
+  "source_metadata_sha256": "ba22cc4e41ef0c250a422c88b6d471d43e8c0fad3867d46a374305ce6f382f3d",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "source_index": 0,
+      "source_file": "../sheet04/00-whole-frame.png",
+      "source_png_sha256": "b97201835dffa2669cddc4357b1b270f18d135fb59cbf3e16dccf58f37d99b2f",
+      "rgba_sha256": "ef08efb52135998dcab685f646be6a1af81da72d8d81214cbddea308f7795d79",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "settled gaze"
+    },
+    {
+      "index": 1,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "source_index": 1,
+      "source_file": "../sheet04/01-whole-frame.png",
+      "source_png_sha256": "3377740b9197bd640577478d618c4df6f1804481c908f25f5866923595f99672",
+      "rgba_sha256": "0febd74036ee3c4b0d5e949824b55c65cc891a94036a169c45ef3a890887cc5c",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "downward glance"
+    },
+    {
+      "index": 2,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "source_index": 2,
+      "source_file": "../sheet04/02-whole-frame.png",
+      "source_png_sha256": "5f8bd97f624d8248ef28829d37653905933db3a856730c7195198df686e02a34",
+      "rgba_sha256": "0da906783008d80acbbebc7ee01519a68592510f243f1b2ef297588fc6d88322",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "eyes closed/head rising"
+    },
+    {
+      "index": 3,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "source_index": 3,
+      "source_file": "../sheet04/03-whole-frame.png",
+      "source_png_sha256": "1a26b338f9e62c1d4ab5f71b7806b5a7fb16f8d345f041a1686dfc12ec03f3f0",
+      "rgba_sha256": "c612a8f1cf4d88a7c6c9865dc2a22c1bff4f664a5ee65ea2a3c050fa2953af6a",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "upward glance"
+    },
+    {
+      "index": 4,
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "source_index": 4,
+      "source_file": "../sheet04/04-whole-frame.png",
+      "source_png_sha256": "4655eddbd6450a373f8cfebc59f7619537297d7dbbd9602e62bfb93a37db6d9b",
+      "rgba_sha256": "00d7697de60e7d2a76511e46035061b876a2403ca39f34617564758b73b6143b",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "return gaze"
+    },
+    {
+      "index": 5,
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "source_index": 5,
+      "source_file": "../sheet04/05-whole-frame.png",
+      "source_png_sha256": "228bfa3aaf691287137549b4d23029460b88468b287a55eb3296261ee503d17a",
+      "rgba_sha256": "f69312b74393d578caa50557c179d53d2878cb3865edb0265f51450049c9a039",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "settled shoulders"
+    },
+    {
+      "index": 6,
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "source_index": 6,
+      "source_file": "../sheet04/06-whole-frame.png",
+      "source_png_sha256": "dcd1d21cbbbdc7b429c782e8ff796c6eb3fc26c340189ba24d059293c7e5fddb",
+      "rgba_sha256": "77214fd1ae8c8aeec94618fa491e97c22a34f4147271b00294110cba8a0b7ee1",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "small downward glance"
+    },
+    {
+      "index": 7,
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "source_index": 7,
+      "source_file": "../sheet04/07-whole-frame.png",
+      "source_png_sha256": "286632c0b214a41be53b62fa1f4494e2b171c8a1cb66964448ef07343d0c4ecd",
+      "rgba_sha256": "c479646d76c10c7d80be45730ca4361a092e9a4c3b0d29fb523e52b7d55e3b78",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "return neutral"
+    },
+    {
+      "index": 8,
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "source_index": 16,
+      "source_file": "../sheet04/16-whole-frame.png",
+      "source_png_sha256": "ebf78ad55dd41ca6736bdcc272495b95b332bbffd706d3f830ccd05b3bdc09ed",
+      "rgba_sha256": "8b0cf32d4235d222fae79393018ae34bfa65535aec5bb59235fee9ac1da8883a",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "neutral"
+    },
+    {
+      "index": 9,
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "source_index": 17,
+      "source_file": "../sheet04/17-whole-frame.png",
+      "source_png_sha256": "96a2f8c6604ea8bf6420578858522e11b22b31bff98a4a325f77ccea614a1b5d",
+      "rgba_sha256": "484f7f1abb13a6face067230244c160ddffe5149f9ca828049347294c6f6cc3e",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "open palm"
+    },
+    {
+      "index": 10,
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "source_index": 18,
+      "source_file": "../sheet04/18-whole-frame.png",
+      "source_png_sha256": "0da9ac1b90b103fa81b984136d6529ed6a6148614b758f416abe4c648b1b31f9",
+      "rgba_sha256": "9605b97e6bd995f07e7ad6e4694279b183f5afda64a58d373581a642ffb05149",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "point"
+    },
+    {
+      "index": 11,
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "source_index": 19,
+      "source_file": "../sheet04/19-whole-frame.png",
+      "source_png_sha256": "a0d5c310477987081a0913d5bdf54b7ac1cf4e441f2ade658497532d162c26a8",
+      "rgba_sha256": "749b3d7d1d33f112f50a8645d4ae7a37de511a49368e7ac63ff184137f72c660",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "chuckle"
+    },
+    {
+      "index": 12,
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "source_index": 20,
+      "source_file": "../sheet04/20-whole-frame.png",
+      "source_png_sha256": "db30ecbdf03600a4ef3b1d7e15934996c3926845a7c021261214205553f806ef",
+      "rgba_sha256": "e07e9a87093b53d5eef4b787ed60d537e8b4099c56de49a70bd4f84ab5c8ffe9",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "both hands open"
+    },
+    {
+      "index": 13,
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "source_index": 21,
+      "source_file": "../sheet04/21-whole-frame.png",
+      "source_png_sha256": "2a53932a8c0f802a61b3f6f97dcbe4b06160e19b559d0e025e5f6bd4ed4a554b",
+      "rgba_sha256": "ca872da672a0e7dd548d92fb0e9393d6d1d42f17e1b3db403ec97767f8dd864c",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "hand to chest"
+    },
+    {
+      "index": 14,
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "source_index": 22,
+      "source_file": "../sheet04/22-whole-frame.png",
+      "source_png_sha256": "0d427b28fc9aa6f350e7a0bd220101424068585080114a99a87491c51ffe0feb",
+      "rgba_sha256": "20eb14b20a3b415dcfec05d9b6121b3521976d6221ce408dc93d9737a1badc00",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "lowering open palm"
+    },
+    {
+      "index": 15,
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "source_index": 23,
+      "source_file": "../sheet04/23-whole-frame.png",
+      "source_png_sha256": "8d24f17cae8a74e5afd7f988931599ac8daca044abddd366ff4f6a361a7ec00c",
+      "rgba_sha256": "2ed221d541ba46c2446800fd1ecb368e8e14b8f7215669237c6648166985bfd2",
+      "anchor": [
+        128,
+        244
+      ],
+      "phase": "settled neutral"
+    }
+  ],
+  "clips": {
+    "idle": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations": [
+        0.28,
+        0.18,
+        0.18,
+        0.24,
+        0.18,
+        0.18,
+        0.18,
+        0.28
+      ],
+      "fps": 8,
+      "loop": true,
+      "review_status": "sheet_review_candidate",
+      "loop_seam": "Readable head-look-and-return gesture, not a physically proven breathing cycle. Frames 7 and 0 both face forward with arms lowered; the seam is close in pose but braid, face and boot contours change. No repeated frame is inserted to hide that change.",
+      "limitations": [
+        "Independent drawings change face, boot silhouette and small body proportions.",
+        "Foot placement varies by a few source pixels despite the common extraction pivot.",
+        "Eight distinct poses do not prove fluid motion."
+      ]
+    },
+    "talk": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "durations": [
+        0.24,
+        0.24,
+        0.22,
+        0.24,
+        0.28,
+        0.24,
+        0.22,
+        0.28
+      ],
+      "fps": 8,
+      "loop": true,
+      "review_status": "sheet_review_candidate",
+      "loop_seam": "A complete stylized conversation gesture returns to neutral. Frames 23 and 16 both have arms down and a similar stance, so the semantic seam closes. The face and left boot contours pop at the seam. Large hand travel between gestures has no intermediate drawings; it is a stepped expressive loop, not smooth motion.",
+      "limitations": [
+        "Hand trajectories jump between gestures.",
+        "Mouth shape and face detail vary.",
+        "The chuckle pose changes torso width slightly."
+      ]
+    }
+  },
+  "excluded_rows": {
+    "repair": "Raised wrench reads as a strike rather than sustained wrench turning; missing coherent contact surface and return trajectory.",
+    "camp": "Mug appears duplicated during sipping and disappears during later gestures; continuity is not suitable for a care loop."
+  },
+  "production_method": "Exact chronological whole-frame selection. No duplicated padding, interpolation, mirroring, redraw or rescaling. Timing is editorial and is not recovered motion capture."
+}

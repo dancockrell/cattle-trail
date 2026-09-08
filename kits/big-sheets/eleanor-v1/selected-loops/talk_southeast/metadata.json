@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "status": "selected_performance_candidate",
+  "runtime_admitted": false,
+  "source_sheet": "../../sheet4-source.png",
+  "source_sheet_sha256": "0872a8f6bb23fa67eb8b7f3cb3e031e4274ec29b6c67c2810ec9c9f25a1036cd",
+  "source_metadata": "../../sheet4-metadata.json",
+  "source_metadata_sha256": "a12a71a79f57b90cc92dfff026b5f4bc95f5a0c083e198c68bce858240903f50",
+  "texture": "atlas.png",
+  "texture_sha256": "e7a2aa7046311d659e11698227c1255abf11054e1ff2d5b29e5ed7a1a945a0d0",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "native_pixel_preservation": true,
+  "resampling": "none",
+  "frame_count": 8,
+  "unique_source_figures": 8,
+  "frames": [
+    {
+      "index": 0,
+      "source_frame": 24,
+      "source_file": "../../sheet4-native/24.png",
+      "source_png_sha256": "30a88635fb690000c69f3a15233396b026d11aa0001d7a2f486cc29a6bcadc4b",
+      "source_rgba_sha256": "6927b1cef85a3444e3ddaf6f600baf22536b3381fda5392e266eef893a87b3ab",
+      "source_rect": [
+        59,
+        668,
+        104,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 320,
+      "phase": "neutral"
+    },
+    {
+      "index": 1,
+      "source_frame": 25,
+      "source_file": "../../sheet4-native/25.png",
+      "source_png_sha256": "da42ca4acbc58a09f0527a776a4183a763276890024d9b43adac8edb38781d9c",
+      "source_rgba_sha256": "747561391a57ce0dd9894fb7209c7560043e01c34fef90f7fb6cba639547e1d4",
+      "source_rect": [
+        280,
+        668,
+        122,
+        215
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 180,
+      "phase": "greeting"
+    },
+    {
+      "index": 2,
+      "source_frame": 26,
+      "source_file": "../../sheet4-native/26.png",
+      "source_png_sha256": "e3240b69b76f1a37bfa606c5655ab6206357aed03cf7231feebb82c646867405",
+      "source_rgba_sha256": "5f795b38d1fd424f3ea4629a07f03d7f2626bbf579479936840c8e0ec3c5a687",
+      "source_rect": [
+        499,
+        670,
+        136,
+        213
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 220,
+      "phase": "open palm"
+    },
+    {
+      "index": 3,
+      "source_frame": 27,
+      "source_file": "../../sheet4-native/27.png",
+      "source_png_sha256": "9ae94b5516973170b55dacbd9201381903e88bc74c1a9960a1c6bb54a60e06ce",
+      "source_rgba_sha256": "d7f9c62c572e33ccd06d2f9648c3b2da98258890e83c429c14d29fd47c6ee47d",
+      "source_rect": [
+        723,
+        667,
+        136,
+        216
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 240,
+      "phase": "point"
+    },
+    {
+      "index": 4,
+      "source_frame": 28,
+      "source_file": "../../sheet4-native/28.png",
+      "source_png_sha256": "bf5c99d1c0b0e8d87df4f8618b474f7faa4a1ec26dcca0739ca6da112aaf98f6",
+      "source_rgba_sha256": "bd1eb9110348515d2978e621632f43e2b4246f31b9c601df1e4f1de95e48a8c7",
+      "source_rect": [
+        950,
+        667,
+        98,
+        216
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 200,
+      "phase": "hand to chest"
+    },
+    {
+      "index": 5,
+      "source_frame": 29,
+      "source_file": "../../sheet4-native/29.png",
+      "source_png_sha256": "743eabe9927b81da88fb8b5f3caed27a6a62b5bd2ae2f05fed48ce95ca3d413c",
+      "source_rgba_sha256": "61c71fba9f1b58cf31d9d58a0d141da544e8d2562939349e572a4c9e83d887ed",
+      "source_rect": [
+        1172,
+        668,
+        97,
+        215
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "laugh"
+    },
+    {
+      "index": 6,
+      "source_frame": 30,
+      "source_file": "../../sheet4-native/30.png",
+      "source_png_sha256": "a86026db134757a65e0183cdecaa72717e927dc1bf9232af9f519fe575541db8",
+      "source_rgba_sha256": "2671db33758acc61b0f8b072b59b9afce03c5cb65ed2b9ff3032401bad10924a",
+      "source_rect": [
+        1391,
+        668,
+        101,
+        215
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 220,
+      "phase": "settle"
+    },
+    {
+      "index": 7,
+      "source_frame": 31,
+      "source_file": "../../sheet4-native/31.png",
+      "source_png_sha256": "a5c9e819072789b851497ef810777f9cd9e374ce5abfc034384a64ae43f9be74",
+      "source_rgba_sha256": "d3ea2c6e39ec2f471d59f2c923a528f0810e7a55cd6f4a12a28de30ce952b584",
+      "source_rect": [
+        1611,
+        668,
+        104,
+        215
+      ],
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 320,
+      "phase": "neutral return"
+    }
+  ],
+  "clips": {
+    "talk_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_seconds": [
+        0.32,
+        0.18,
+        0.22,
+        0.24,
+        0.2,
+        0.3,
+        0.22,
+        0.32
+      ],
+      "loop": true
+    }
+  },
+  "seam_review": "Expressive conversation performance; hand gestures are discrete poses, not smooth interpolated movement. Last and first poses both rest with lowered arms; face and skirt details vary.",
+  "timing_origin": "Authored review timing; source is an illustrated sheet, not a recorded performance.",
+  "checks": [
+    "Decoded APNG RGBA pixels equal assembled source frames.",
+    "Every selected source RGBA hash matches extraction metadata.",
+    "Every selected source figure is distinct; no duplicate padding or repeated endpoint.",
+    "Frame rectangles and timing match atlas and preview."
+  ]
+}

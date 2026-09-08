@@ -1,0 +1,25 @@
+{
+  "character": "eleanor",
+  "source_sheet": 4,
+  "runtime_admitted": false,
+  "selected_performances": [
+    {
+      "name": "talk_southeast",
+      "frames": 8,
+      "duration_ms": 2000,
+      "metadata": "talk_southeast/metadata.json"
+    },
+    {
+      "name": "field_care_southeast",
+      "frames": 8,
+      "duration_ms": 2020,
+      "metadata": "field_care_southeast/metadata.json"
+    },
+    {
+      "name": "idle_southeast",
+      "frames": 4,
+      "duration_ms": 1400,
+      "metadata": "idle_southeast/metadata.json"
+    }
+  ]
+}

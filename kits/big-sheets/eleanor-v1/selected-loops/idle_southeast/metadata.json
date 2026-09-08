@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "status": "selected_performance_candidate",
+  "runtime_admitted": false,
+  "source_sheet": "../../sheet4-source.png",
+  "source_sheet_sha256": "0872a8f6bb23fa67eb8b7f3cb3e031e4274ec29b6c67c2810ec9c9f25a1036cd",
+  "source_metadata": "../../sheet4-metadata.json",
+  "source_metadata_sha256": "a12a71a79f57b90cc92dfff026b5f4bc95f5a0c083e198c68bce858240903f50",
+  "texture": "atlas.png",
+  "texture_sha256": "558343de3a5cd3e6c743070f31df0ab11b1ad13a7a746f2f0166d8dfd004648f",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "native_pixel_preservation": true,
+  "resampling": "none",
+  "frame_count": 4,
+  "unique_source_figures": 4,
+  "frames": [
+    {
+      "index": 0,
+      "source_frame": 0,
+      "source_file": "../../sheet4-native/00.png",
+      "source_png_sha256": "be4b71287a4f10bbbe4448da41dea2556a88988eb0d267cc834f1afbc6c1d868",
+      "source_rgba_sha256": "20756af2ded4915ea606b1e30f56b954f80862e3e4b3ed970a7abe8e06fb661c",
+      "source_rect": [
+        61,
+        10,
+        103,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 400,
+      "phase": "rest A"
+    },
+    {
+      "index": 1,
+      "source_frame": 1,
+      "source_file": "../../sheet4-native/01.png",
+      "source_png_sha256": "3858082964545ef8d1e588661eb86d6133855a93f8da23e6675912f39fe27a27",
+      "source_rgba_sha256": "7289f67ebfb59552048a37a3256ed545c3b3dd9b2ec545af0ae8e813158aa528",
+      "source_rect": [
+        283,
+        10,
+        102,
+        215
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "rest B"
+    },
+    {
+      "index": 2,
+      "source_frame": 2,
+      "source_file": "../../sheet4-native/02.png",
+      "source_png_sha256": "9bc2641ca9de233bc2bb7ab65eec8b85fa962546aa0c8813fef9a0d238291af4",
+      "source_rgba_sha256": "81e0f254d41b854d75cae7088aa8417555668e428e5db5a5550faa57572b6fbf",
+      "source_rect": [
+        505,
+        10,
+        102,
+        215
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "rest C"
+    },
+    {
+      "index": 3,
+      "source_frame": 3,
+      "source_file": "../../sheet4-native/03.png",
+      "source_png_sha256": "0aa49a43bcb01f9efc6c882e66c5285bf4fa4e2e6cb282e0dae1e4304c18b5f3",
+      "source_rgba_sha256": "96ae7b00a36fb0c60dc9fae23a05a6ab6345d45c9713d9f197fa6a782bce610c",
+      "source_rect": [
+        721,
+        10,
+        107,
+        215
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 400,
+      "phase": "rest D"
+    }
+  ],
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_seconds": [
+        0.4,
+        0.3,
+        0.3,
+        0.4
+      ],
+      "loop": true
+    }
+  },
+  "seam_review": "Selected the first four consistent-stance whole figures; excluded the larger stance change in later row cells. Subtle contour drift remains, so this is not certified breathing motion.",
+  "timing_origin": "Authored review timing; source is an illustrated sheet, not a recorded performance.",
+  "checks": [
+    "Decoded APNG RGBA pixels equal assembled source frames.",
+    "Every selected source RGBA hash matches extraction metadata.",
+    "Every selected source figure is distinct; no duplicate padding or repeated endpoint.",
+    "Frame rectangles and timing match atlas and preview."
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "status": "selected_performance_candidate",
+  "runtime_admitted": false,
+  "source_sheet": "../../sheet4-source.png",
+  "source_sheet_sha256": "0872a8f6bb23fa67eb8b7f3cb3e031e4274ec29b6c67c2810ec9c9f25a1036cd",
+  "source_metadata": "../../sheet4-metadata.json",
+  "source_metadata_sha256": "a12a71a79f57b90cc92dfff026b5f4bc95f5a0c083e198c68bce858240903f50",
+  "texture": "atlas.png",
+  "texture_sha256": "43faa0b985053b6509dd34f8e0c9cafe6fc4eba16070dffb3b6ae3341fc9c9fb",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "native_pixel_preservation": true,
+  "resampling": "none",
+  "frame_count": 8,
+  "unique_source_figures": 8,
+  "frames": [
+    {
+      "index": 0,
+      "source_frame": 16,
+      "source_file": "../../sheet4-native/16.png",
+      "source_png_sha256": "265557683422dcfa44a78df26473e6331029e1d4755934b0f6cb0e4857f14418",
+      "source_rgba_sha256": "12812e677b3030d7b84ea52ed6d33949000c0d01af400611a8d05bfad8ac891f",
+      "source_rect": [
+        55,
+        448,
+        107,
+        215
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 240,
+      "phase": "standing preparation"
+    },
+    {
+      "index": 1,
+      "source_frame": 17,
+      "source_file": "../../sheet4-native/17.png",
+      "source_png_sha256": "ad4e2064683d70c5aa79610dd175057cfc6ece6ec6d75bba6dcb92510bc9d491",
+      "source_rgba_sha256": "31d10f0094f6544ecc1fc02a824b840ffc2737b5b99a057be3e5a78e72101d1a",
+      "source_rect": [
+        255,
+        482,
+        143,
+        177
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 180,
+      "phase": "kneel with cloth"
+    },
+    {
+      "index": 2,
+      "source_frame": 18,
+      "source_file": "../../sheet4-native/18.png",
+      "source_png_sha256": "d10b36a12c443ff12063f6894a969b627cbbc952643930eb451ee1c251c7458c",
+      "source_rgba_sha256": "60a62c8ef7286cd3ae259d92cd203cf8771c6c91891937ddbccdc9d5984e8aac",
+      "source_rect": [
+        474,
+        481,
+        142,
+        178
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 260,
+      "phase": "apply cloth"
+    },
+    {
+      "index": 3,
+      "source_frame": 19,
+      "source_file": "../../sheet4-native/19.png",
+      "source_png_sha256": "c9cf69d5bd0624a937e131fcfb2372544a94cdff5d7bf64de90c4ecbe241b4fd",
+      "source_rgba_sha256": "51f46eb90e8677b93f9105e1bf38a4e25f5960721597da3b85015dbb65e7da22",
+      "source_rect": [
+        696,
+        479,
+        139,
+        180
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "wrap forearm"
+    },
+    {
+      "index": 4,
+      "source_frame": 20,
+      "source_file": "../../sheet4-native/20.png",
+      "source_png_sha256": "f416913fee4269a7eb1018b7de11c66c2e8cb4b15fd5164273b6acbe61fd7e8a",
+      "source_rgba_sha256": "e201f351b875f0f8b1ac2d2ae4179d27a24e337d4f7cf26a3a7e50caa37ebde9",
+      "source_rect": [
+        918,
+        484,
+        138,
+        176
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "press dressing"
+    },
+    {
+      "index": 5,
+      "source_frame": 21,
+      "source_file": "../../sheet4-native/21.png",
+      "source_png_sha256": "354a0aa9e3a8df3c0958a1029d13205fa410a380390f13ee24141f3a42e4c127",
+      "source_rgba_sha256": "58181f0d839499402b0d2f40f3852ec897810d7747b3359e9b11b9c5f53bf191",
+      "source_rect": [
+        1142,
+        481,
+        139,
+        178
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 260,
+      "phase": "finish dressing"
+    },
+    {
+      "index": 6,
+      "source_frame": 22,
+      "source_file": "../../sheet4-native/22.png",
+      "source_png_sha256": "98ebaf78361515e4372ba484a46975c8282dfd7c34d3d3f0a507ff58bd7b8b21",
+      "source_rgba_sha256": "7ea23266a0cb3fed2e8726e429b506fe0a9272d50a03c0d01997d0722eb51db5",
+      "source_rect": [
+        1369,
+        478,
+        147,
+        174
+      ],
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 180,
+      "phase": "rise preparation"
+    },
+    {
+      "index": 7,
+      "source_frame": 23,
+      "source_file": "../../sheet4-native/23.png",
+      "source_png_sha256": "75765966a24de85c1baa3afbef00f33effe368f2841726f0c647497a3ced5733",
+      "source_rgba_sha256": "b613579156304ea975f05b37bc70887657eedb09d85b96345cff2f13aaaa84e2",
+      "source_rect": [
+        1604,
+        448,
+        110,
+        215
+      ],
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "duration_ms": 300,
+      "phase": "standing return"
+    }
+  ],
+  "clips": {
+    "field_care_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "durations_seconds": [
+        0.24,
+        0.18,
+        0.26,
+        0.3,
+        0.3,
+        0.26,
+        0.18,
+        0.3
+      ],
+      "loop": true
+    }
+  },
+  "seam_review": "Complete standing-to-kneeling-to-standing role performance. Descent and ascent lack intermediate poses, and cloth is absent at endpoints. Suitably timed candidate; not a certified smooth loop.",
+  "timing_origin": "Authored review timing; source is an illustrated sheet, not a recorded performance.",
+  "checks": [
+    "Decoded APNG RGBA pixels equal assembled source frames.",
+    "Every selected source RGBA hash matches extraction metadata.",
+    "Every selected source figure is distinct; no duplicate padding or repeated endpoint.",
+    "Frame rectangles and timing match atlas and preview."
+  ]
+}
