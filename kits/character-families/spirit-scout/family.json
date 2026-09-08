@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "id": "spirit-scout",
+  "master_name": "Ines Vale",
+  "master_age": 23,
+  "master_image": "kits/character-families/spirit-scout/master-v1.png",
+  "variant_sheet": "kits/character-families/spirit-scout/variants-v1.png",
+  "atlas": "kits/character-families/spirit-scout/atlas.png",
+  "cell_size": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "variants": [
+    {
+      "id": "spirit_scout_01",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        0,
+        320,
+        331
+      ],
+      "source_trim_bounds": [
+        118,
+        29,
+        262,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_01.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_02",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        0,
+        640,
+        331
+      ],
+      "source_trim_bounds": [
+        82,
+        15,
+        209,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_02.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            1
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_03",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        0,
+        950,
+        331
+      ],
+      "source_trim_bounds": [
+        41,
+        31,
+        174,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_03.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            2
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_04",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        0,
+        1254,
+        331
+      ],
+      "source_trim_bounds": [
+        21,
+        32,
+        146,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_04.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            3
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_05",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        331,
+        320,
+        637
+      ],
+      "source_trim_bounds": [
+        138,
+        7,
+        268,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_05.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            4
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_06",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        331,
+        640,
+        637
+      ],
+      "source_trim_bounds": [
+        78,
+        9,
+        209,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_06.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            5
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_07",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        331,
+        950,
+        637
+      ],
+      "source_trim_bounds": [
+        53,
+        7,
+        180,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_07.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            6
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_08",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        331,
+        1254,
+        637
+      ],
+      "source_trim_bounds": [
+        9,
+        7,
+        141,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_08.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            7
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_09",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        637,
+        320,
+        940
+      ],
+      "source_trim_bounds": [
+        147,
+        5,
+        273,
+        303
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_09.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            8
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_10",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        637,
+        640,
+        940
+      ],
+      "source_trim_bounds": [
+        85,
+        5,
+        206,
+        296
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_10.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            9
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_11",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        637,
+        950,
+        940
+      ],
+      "source_trim_bounds": [
+        53,
+        7,
+        182,
+        296
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_11.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            10
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_12",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        637,
+        1254,
+        940
+      ],
+      "source_trim_bounds": [
+        31,
+        3,
+        150,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_12.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            11
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_13",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        940,
+        320,
+        1254
+      ],
+      "source_trim_bounds": [
+        147,
+        0,
+        275,
+        299
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_13.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            12
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_14",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        940,
+        640,
+        1254
+      ],
+      "source_trim_bounds": [
+        91,
+        4,
+        214,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_14.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            13
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_15",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        940,
+        950,
+        1254
+      ],
+      "source_trim_bounds": [
+        61,
+        4,
+        182,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_15.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            14
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    },
+    {
+      "id": "spirit_scout_16",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        940,
+        1254,
+        1254
+      ],
+      "source_trim_bounds": [
+        25,
+        5,
+        155,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_16.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            15
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      }
+    }
+  ],
+  "generation": {
+    "tool": "builtin image_gen",
+    "date": "2026-09-08",
+    "model": "not exposed by tool",
+    "master_prompt": "master.prompt.txt",
+    "variant_prompt": "variants.prompt.txt"
+  },
+  "source_sha256": "acb6d23e3734ec6f48857ea59fe90e5394cdd3b655412eef8607df5d5e1cb430",
+  "master_sha256": "a8ba7f2b07f0e0dd9491823ffd225b6afa850e0f0f7b7fe22d8a932acf8f7328",
+  "transform": "4x4 whole-cell extraction, magenta chroma key, whole-figure trim, nearest neighbor scale to40px height, baseline61; no body repaint or recombination",
+  "admission": "candidate static idle art; no walk or turn cycle; not shipped runtime",
+  "master_limitations": [
+    "Costume reference is a soft illustration with opaque gradient backdrop, not runtime art."
+  ]
+}

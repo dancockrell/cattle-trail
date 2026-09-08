@@ -1,0 +1,3079 @@
+{
+	"characters": [
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_32",
+			"family": "rancher",
+			"id": "generated_0c244fa17f36a5654a2e",
+			"madness": 10,
+			"name": "Vera Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_13",
+			"family": "rancher",
+			"id": "generated_ead0f6d5f70eacbd6afc",
+			"madness": 10,
+			"name": "Alma Santos",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_26",
+			"family": "mechanic",
+			"id": "generated_8795bd03dc35f198a7d8",
+			"madness": 10,
+			"name": "Nell Marsh",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_05",
+			"family": "spirit-scout",
+			"id": "generated_ea047a212b2eca961a4a",
+			"madness": 10,
+			"name": "Clara Mercado",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_11",
+			"family": "spirit-scout",
+			"id": "generated_1762590e29da35c21326",
+			"madness": 10,
+			"name": "Nell Hale",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_23",
+			"family": "mechanic",
+			"id": "generated_16d80a9cfae071938546",
+			"madness": 10,
+			"name": "Tess Mercado",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_28",
+			"family": "spirit-scout",
+			"id": "generated_01a0441b3f0ebbbf034a",
+			"madness": 10,
+			"name": "June Voss",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_04",
+			"family": "spirit-scout",
+			"id": "generated_fb4566c71f0356977b57",
+			"madness": 10,
+			"name": "Iris Santos",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_31",
+			"family": "spirit-scout",
+			"id": "generated_50c067f73eeadbfee365",
+			"madness": 10,
+			"name": "Sofia Quinn",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_02",
+			"family": "rancher",
+			"id": "generated_3e32570df8214e4d7a61",
+			"madness": 10,
+			"name": "Nell Quinn",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_11",
+			"family": "rancher",
+			"id": "generated_18d42f2a2ab1fb5d4f60",
+			"madness": 10,
+			"name": "Clara Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_01",
+			"family": "spirit-scout",
+			"id": "generated_9ad9aecb036aba3f6c2a",
+			"madness": 10,
+			"name": "Iris Cross",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_25",
+			"family": "spirit-scout",
+			"id": "generated_21e4792662c84a2e86c2",
+			"madness": 10,
+			"name": "Clara Hale",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_29",
+			"family": "rancher",
+			"id": "generated_b5ecb191f4e387a28c24",
+			"madness": 10,
+			"name": "Tess Reed",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_21",
+			"family": "rancher",
+			"id": "generated_99b6e14994ccfaecf4ab",
+			"madness": 10,
+			"name": "Mae Reed",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_14",
+			"family": "rancher",
+			"id": "generated_e593aba4bac57cd3ebcc",
+			"madness": 10,
+			"name": "Vera West",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_30",
+			"family": "spirit-scout",
+			"id": "generated_8c8784f736a8a231cabb",
+			"madness": 10,
+			"name": "Sofia Voss",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_12",
+			"family": "rancher",
+			"id": "generated_31766b0b055fbb1c6283",
+			"madness": 10,
+			"name": "Nell West",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_26",
+			"family": "rancher",
+			"id": "generated_96b1ecd45c36581d18fe",
+			"madness": 10,
+			"name": "Alma Bennett",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_27",
+			"family": "mechanic",
+			"id": "generated_ccd789ca3b64c388e76b",
+			"madness": 10,
+			"name": "Iris Hale",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_32",
+			"family": "spirit-scout",
+			"id": "generated_a691b54ae245bf79a25d",
+			"madness": 10,
+			"name": "Mae Pike",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_13",
+			"family": "mechanic",
+			"id": "generated_dcb516613b39a7710153",
+			"madness": 10,
+			"name": "Willa Santos",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_25",
+			"family": "rancher",
+			"id": "generated_34e35145fcd0c70477e5",
+			"madness": 10,
+			"name": "Mae Reed",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_18",
+			"family": "spirit-scout",
+			"id": "generated_099397c053186476b6fe",
+			"madness": 10,
+			"name": "Iris Quinn",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_26",
+			"family": "spirit-scout",
+			"id": "generated_8c84018d9f91593183e1",
+			"madness": 10,
+			"name": "Rose Reed",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_04",
+			"family": "rancher",
+			"id": "generated_b706b07fa4300934a68b",
+			"madness": 10,
+			"name": "Celia Bell",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_24",
+			"family": "rancher",
+			"id": "generated_25bedb4caffc058e3444",
+			"madness": 10,
+			"name": "Mae West",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 20,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_16",
+			"family": "mechanic",
+			"id": "generated_bbdb2776268bd8d4375b",
+			"madness": 10,
+			"name": "Celia Quinn",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_20",
+			"family": "spirit-scout",
+			"id": "generated_7a67aba8077fd3a2a3da",
+			"madness": 10,
+			"name": "Vera West",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_02",
+			"family": "spirit-scout",
+			"id": "generated_f638636545a327ae3e15",
+			"madness": 10,
+			"name": "Willa Hart",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_07",
+			"family": "spirit-scout",
+			"id": "generated_8ce0cb027e0f9c572ef5",
+			"madness": 10,
+			"name": "Nell West",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_08",
+			"family": "spirit-scout",
+			"id": "generated_956683e8de8a19c0a589",
+			"madness": 10,
+			"name": "Della Hart",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_21",
+			"family": "spirit-scout",
+			"id": "generated_043e5a9d9e4b9e5e9158",
+			"madness": 10,
+			"name": "Tess Mercado",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 20,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_01",
+			"family": "mechanic",
+			"id": "generated_295d294d0dee1e09061d",
+			"madness": 10,
+			"name": "Mae Hale",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_19",
+			"family": "mechanic",
+			"id": "generated_e000d491c5cba346049b",
+			"madness": 10,
+			"name": "Tess Voss",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 20,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_11",
+			"family": "mechanic",
+			"id": "generated_4c78779f1f46fabfc8c9",
+			"madness": 10,
+			"name": "Tess Quinn",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_22",
+			"family": "spirit-scout",
+			"id": "generated_6995e0ab2352dd25280e",
+			"madness": 10,
+			"name": "Vera Bell",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_14",
+			"family": "spirit-scout",
+			"id": "generated_40aae301b3561a0b713a",
+			"madness": 10,
+			"name": "Nell Hart",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_27",
+			"family": "spirit-scout",
+			"id": "generated_13969b3c04dc39b08315",
+			"madness": 10,
+			"name": "Lucia West",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_03",
+			"family": "spirit-scout",
+			"id": "generated_5daa3b36ccd4dea7d558",
+			"madness": 10,
+			"name": "Lucia West",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_04",
+			"family": "mechanic",
+			"id": "generated_d59dbac893be269f1bec",
+			"madness": 10,
+			"name": "Iris Mercado",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_22",
+			"family": "rancher",
+			"id": "generated_9ea527789f91e7afeac8",
+			"madness": 10,
+			"name": "Celia Quinn",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_31",
+			"family": "mechanic",
+			"id": "generated_716909e4804b54b6f09c",
+			"madness": 10,
+			"name": "Della Hale",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_10",
+			"family": "spirit-scout",
+			"id": "generated_a86325f3312d7043917e",
+			"madness": 10,
+			"name": "Sofia Pike",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_13",
+			"family": "spirit-scout",
+			"id": "generated_44c1c907c0ea58a10f36",
+			"madness": 10,
+			"name": "Nell Hale",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_14",
+			"family": "mechanic",
+			"id": "generated_ee7beef92ac29ae095ee",
+			"madness": 10,
+			"name": "Sofia Cross",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_09",
+			"family": "mechanic",
+			"id": "generated_4369f4f6f02ef4c0d4dd",
+			"madness": 10,
+			"name": "Sofia Voss",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_10",
+			"family": "mechanic",
+			"id": "generated_ab58b2a39478248ca65e",
+			"madness": 10,
+			"name": "Vera Flores",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_01",
+			"family": "rancher",
+			"id": "generated_ab49e49a3897643d7f4e",
+			"madness": 10,
+			"name": "Tess Voss",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_03",
+			"family": "mechanic",
+			"id": "generated_81e7f62785e5ce2fe470",
+			"madness": 10,
+			"name": "Clara Santos",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_06",
+			"family": "rancher",
+			"id": "generated_89f6efe22f0ec57ad27a",
+			"madness": 10,
+			"name": "Della Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_06",
+			"family": "spirit-scout",
+			"id": "generated_fab9f33e34935cfd3dba",
+			"madness": 10,
+			"name": "Lucia Hart",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_05",
+			"family": "mechanic",
+			"id": "generated_da7e402c160ea5fb2426",
+			"madness": 10,
+			"name": "Clara Bell",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_29",
+			"family": "mechanic",
+			"id": "generated_e39749c17451c7451361",
+			"madness": 10,
+			"name": "Iris Hale",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_03",
+			"family": "rancher",
+			"id": "generated_69c2888fed6177bd6bea",
+			"madness": 10,
+			"name": "Rose Finch",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_09",
+			"family": "spirit-scout",
+			"id": "generated_ed923fc1b06471acfb60",
+			"madness": 10,
+			"name": "Iris Vega",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_25",
+			"family": "mechanic",
+			"id": "generated_2d9aa9cf936a6802a3fa",
+			"madness": 10,
+			"name": "Iris Hale",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_12",
+			"family": "mechanic",
+			"id": "generated_6c1b8779d0cf578996bd",
+			"madness": 10,
+			"name": "Celia Quinn",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_10",
+			"family": "rancher",
+			"id": "generated_814f88fd3ee3c3a6273a",
+			"madness": 10,
+			"name": "Sofia Finch",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					64,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_32",
+			"family": "mechanic",
+			"id": "generated_44e0d6952ee789b68bc4",
+			"madness": 10,
+			"name": "Tess Santos",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_17",
+			"family": "rancher",
+			"id": "generated_43873bfb08d323ad06a7",
+			"madness": 10,
+			"name": "Sofia West",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_31",
+			"family": "rancher",
+			"id": "generated_4bcb82f9ebbe8c58411b",
+			"madness": 10,
+			"name": "Sofia Flores",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_23",
+			"family": "spirit-scout",
+			"id": "generated_75e945fa9a2091e73262",
+			"madness": 10,
+			"name": "Sofia Pike",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_15",
+			"family": "mechanic",
+			"id": "generated_41d201cc159460885089",
+			"madness": 10,
+			"name": "Iris Reed",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_24",
+			"family": "spirit-scout",
+			"id": "generated_bf5133cb1bc1bf4fe611",
+			"madness": 10,
+			"name": "Iris Hart",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_08",
+			"family": "mechanic",
+			"id": "generated_a880b0eda78b5ade0d26",
+			"madness": 10,
+			"name": "Della Bell",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_23",
+			"family": "rancher",
+			"id": "generated_199fefce9987fbbb01de",
+			"madness": 10,
+			"name": "Iris Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_24",
+			"family": "mechanic",
+			"id": "generated_622954b040ff510d865c",
+			"madness": 10,
+			"name": "Lena Voss",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_20",
+			"family": "mechanic",
+			"id": "generated_e6b5c108138b5ca82518",
+			"madness": 10,
+			"name": "Nell Reed",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_02",
+			"family": "mechanic",
+			"id": "generated_4fae2dea44a036586e60",
+			"madness": 10,
+			"name": "Della Marsh",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_05",
+			"family": "rancher",
+			"id": "generated_d47b467900dd1e2c37d0",
+			"madness": 10,
+			"name": "Celia Santos",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_17",
+			"family": "mechanic",
+			"id": "generated_d67f1f3232c613045251",
+			"madness": 10,
+			"name": "Lucia Vega",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_19",
+			"family": "rancher",
+			"id": "generated_50b672d0fedb2f3da30a",
+			"madness": 10,
+			"name": "Alma Flores",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_15",
+			"family": "spirit-scout",
+			"id": "generated_e1c5a7a4224a61c2aa6c",
+			"madness": 10,
+			"name": "Vera Quinn",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_16",
+			"family": "spirit-scout",
+			"id": "generated_d00a68f75c34b2cce8bf",
+			"madness": 10,
+			"name": "Sofia Finch",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_28",
+			"family": "mechanic",
+			"id": "generated_b929fbe43d34655a27f2",
+			"madness": 10,
+			"name": "Della West",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_09",
+			"family": "rancher",
+			"id": "generated_9ab4eeed8f263b11b073",
+			"madness": 10,
+			"name": "Della Cross",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					0,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 26,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_12",
+			"family": "spirit-scout",
+			"id": "generated_7438109e6c0565133c19",
+			"madness": 10,
+			"name": "Tess Bell",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_30",
+			"family": "mechanic",
+			"id": "generated_6513ae8308aa6f0f0db8",
+			"madness": 10,
+			"name": "Rose Cross",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_08",
+			"family": "rancher",
+			"id": "generated_0cd934a40d762515c225",
+			"madness": 10,
+			"name": "Vera Voss",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					192,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_18",
+			"family": "mechanic",
+			"id": "generated_7ab49ee68a3baa66674b",
+			"madness": 10,
+			"name": "Della Cross",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_21",
+			"family": "mechanic",
+			"id": "generated_8512b4f87212699f586f",
+			"madness": 10,
+			"name": "Sofia Voss",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					0,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_29",
+			"family": "spirit-scout",
+			"id": "generated_8f7d8e8c1019748ca561",
+			"madness": 10,
+			"name": "Rose Cross",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					0,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 20,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_06",
+			"family": "mechanic",
+			"id": "generated_c407fb205053d1a7e761",
+			"madness": 10,
+			"name": "Clara West",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 22,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_22",
+			"family": "mechanic",
+			"id": "generated_4f78bebb92127bb077a4",
+			"madness": 10,
+			"name": "Lena Cross",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+				"rect": [
+					64,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_16",
+			"family": "rancher",
+			"id": "generated_0df34918abf851a56ec8",
+			"madness": 10,
+			"name": "June Hale",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					192,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 21,
+			"animation_status": "static_identity_only",
+			"art_id": "mechanic_07",
+			"family": "mechanic",
+			"id": "generated_f95a3fe0e0de4e847458",
+			"madness": 10,
+			"name": "Della Vega",
+			"origin": "generated",
+			"perk_id": "field_repairs",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/mechanic/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_27",
+			"family": "rancher",
+			"id": "generated_c5671fdc34f5b5054d32",
+			"madness": 10,
+			"name": "Alma Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "bright curiosity",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 25,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_19",
+			"family": "spirit-scout",
+			"id": "generated_f66769ccdc0ad124eb15",
+			"madness": 10,
+			"name": "Iris Hale",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					128,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_18",
+			"family": "rancher",
+			"id": "generated_a5016702eaee6de4b43b",
+			"madness": 10,
+			"name": "Nell Quinn",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					64,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "warm directness",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_28",
+			"family": "rancher",
+			"id": "generated_bea219b9f5bb1915a828",
+			"madness": 10,
+			"name": "Lena Hale",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					192,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_07",
+			"family": "rancher",
+			"id": "generated_53a339df46c405ae7b7b",
+			"madness": 10,
+			"name": "Alma Hale",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					128,
+					64,
+					64,
+					64
+				]
+			},
+			"temperament": "playful daring",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_15",
+			"family": "rancher",
+			"id": "generated_d0c6af78de6a83f90815",
+			"madness": 10,
+			"name": "Celia Vega",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					128,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_20",
+			"family": "rancher",
+			"id": "generated_7c991840280638daf6dd",
+			"madness": 10,
+			"name": "Mae Finch",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					192,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "patient mischief",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_17",
+			"family": "spirit-scout",
+			"id": "generated_b9c3aa7b3a252b12a4a6",
+			"madness": 10,
+			"name": "Celia Mercado",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "dry wit",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_30",
+			"family": "rancher",
+			"id": "generated_4a2648a207716b1403a0",
+			"madness": 10,
+			"name": "Vera Finch",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+				"rect": [
+					64,
+					192,
+					64,
+					64
+				]
+			},
+			"temperament": "quiet confidence",
+			"trust": 0
+		}
+	],
+	"seed": "clear-fork-production-v1",
+	"status": "production_preview_not_saved_game",
+	"version": 1
+}

@@ -1,0 +1,411 @@
+{
+  "id": "rancher",
+  "master_image": "kits/character-families/rancher/master-v1.png",
+  "variant_sheet": "kits/character-families/rancher/variants-v1.png",
+  "atlas": "kits/character-families/rancher/atlas.png",
+  "cell_size": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "variants": [
+    {
+      "id": "rancher_01",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        88,
+        33,
+        119,
+        294
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_02",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        393,
+        35,
+        115,
+        292
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_03",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        701,
+        23,
+        118,
+        304
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_04",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1010,
+        29,
+        117,
+        298
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_05",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        89,
+        350,
+        115,
+        290
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_06",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        390,
+        350,
+        116,
+        290
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_07",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        702,
+        352,
+        117,
+        288
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_08",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1007,
+        352,
+        116,
+        288
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_09",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        87,
+        654,
+        117,
+        286
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_10",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        399,
+        644,
+        113,
+        296
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_11",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        699,
+        654,
+        113,
+        286
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_12",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1000,
+        657,
+        113,
+        283
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_13",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        85,
+        945,
+        115,
+        295
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_14",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        393,
+        955,
+        112,
+        285
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_15",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        695,
+        945,
+        113,
+        295
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned"
+    },
+    {
+      "id": "rancher_16",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1007,
+        950,
+        112,
+        290
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned"
+    }
+  ],
+  "animation_clips": {
+    "idle": {
+      "frame_count": 1,
+      "loop": false
+    }
+  },
+  "tool": "builtin image_gen",
+  "reference": "kits/source/eleanor-lantern-v1.png",
+  "source_sha256": "2d44446fd1c143a50528de95ca108a70d82899af6a4173a0db4ba9f049148c35",
+  "processing": "Border-connected magenta hue key R>1.7G B>1.7G B>0.7R, alpha binary; whole-character trim; nearest resize to height40; foot anchor32,61",
+  "review": "Sixteen intact differentiated adult rancher sprites; PG13 wardrobe. Static identity candidates only. Master has opaque painted background and is reference-only. Source is smoother and more frontal than runtime; nearest downsample inspected, no animation or in-game approval."
+}

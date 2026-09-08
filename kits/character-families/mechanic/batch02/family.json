@@ -1,0 +1,720 @@
+{
+  "id": "mechanic-batch02",
+  "family": "mechanic",
+  "version": 1,
+  "master_image": "kits/character-families/mechanic/master.png",
+  "variant_sheet": "kits/character-families/mechanic/batch02/source.png",
+  "atlas": "kits/character-families/mechanic/batch02/atlas.png",
+  "cell_size": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "variants": [
+    {
+      "id": "mechanic_17",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "boiler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        133,
+        64,
+        242,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        109,
+        287
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_17.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_18",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "clockmaker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        417,
+        66,
+        529,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        112,
+        285
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_18.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_19",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "rail_fitter",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        723,
+        66,
+        829,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        106,
+        285
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_19.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_20",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "turbine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1018,
+        62,
+        1124,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        106,
+        289
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_20.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_21",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "armorer",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        130,
+        384,
+        235,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        105,
+        292
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_21.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_22",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "pump",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        418,
+        386,
+        522,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        104,
+        290
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_22.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_23",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "precision",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        716,
+        389,
+        820,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        104,
+        287
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_23.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_24",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "walker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1019,
+        385,
+        1122,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        103,
+        291
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_24.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_25",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "gauge",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        118,
+        707,
+        225,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        107,
+        249
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_25.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_26",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "saddle",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        413,
+        709,
+        513,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        100,
+        247
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_26.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_27",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "repair_scout",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        728,
+        706,
+        820,
+        957
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        92,
+        251
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_27.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_28",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "dynamo",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1017,
+        710,
+        1114,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        97,
+        246
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_28.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_29",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "waterworks",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        121,
+        985,
+        214,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        93,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_29.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_30",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "clockwork_handler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        410,
+        985,
+        508,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        98,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_30.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_31",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "foundry",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        721,
+        985,
+        817,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        96,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_31.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    },
+    {
+      "id": "mechanic_32",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "spirit_machine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1023,
+        989,
+        1115,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        92,
+        253
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_32.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames"
+    }
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "model": "not exposed by tool",
+    "generated_date": "2026-09-08",
+    "source_reference": "kits/source/ada-mercer-idle-v1.png",
+    "source_reference_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
+    "master_sha256": "f00e28b12c14ed69d7c998572501878d9e89d262396d0382ca3a428e3a499ea1",
+    "variants_sha256": "87a1067d23ace22282c6e803768506f9f76a41cb59ec88e8d676b5aa50c98487",
+    "master_prompt": "kits/character-families/mechanic/master-prompt.txt",
+    "variants_prompt": "kits/character-families/mechanic/batch02/prompt.txt",
+    "transforms": [
+      "magenta background and fringe key: R>=80,B>=70,B>0.65R,R>1.8G,B>1.8G; whole connected silhouette bounds",
+      "generated alpha threshold >=128, no RGB repaint",
+      "whole-sprite alpha-bound crop",
+      "nearest resize to 40 pixels tall",
+      "bottom center placement anchor 32,61"
+    ],
+    "correction_prompt": "kits/character-families/mechanic/batch02/fix-prompt.txt",
+    "rejected_source": "kits/character-families/mechanic/batch02/source-clipped-rejected.png"
+  },
+  "admission": {
+    "runtime": false,
+    "status": "candidate_static_family",
+    "notes": [
+      "Generated raw sources retain original alpha and full resolution.",
+      "All 16 are distinct static identities, never animation frames.",
+      "No native motion or in-game testing performed.",
+      "First attempt clipped bottom-row feet and is preserved as rejected; source is the corrected layout generation, magenta keyed transparent derivative."
+    ]
+  }
+}

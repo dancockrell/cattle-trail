@@ -1,0 +1,4130 @@
+{
+  "version": 1,
+  "status": "production_catalog_not_room_population",
+  "families": [
+    {
+      "id": "mechanic-batch02",
+      "record": "kits/character-families/mechanic/batch02/family.json",
+      "master_image": "kits/character-families/mechanic/master.png",
+      "master_sha256": "f00e28b12c14ed69d7c998572501878d9e89d262396d0382ca3a428e3a499ea1",
+      "variant_sheet": "kits/character-families/mechanic/batch02/source.png",
+      "sheet_sha256": "87a1067d23ace22282c6e803768506f9f76a41cb59ec88e8d676b5aa50c98487",
+      "atlas": "kits/character-families/mechanic/batch02/atlas.png",
+      "atlas_sha256": "ae11bbf72ccc574ac5714921f3023328ecd9f211e1670210bf561d6657ed5eba",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    },
+    {
+      "id": "mechanic",
+      "record": "kits/character-families/mechanic/family.json",
+      "master_image": "kits/character-families/mechanic/master.png",
+      "master_sha256": "f00e28b12c14ed69d7c998572501878d9e89d262396d0382ca3a428e3a499ea1",
+      "variant_sheet": "kits/character-families/mechanic/variants.png",
+      "sheet_sha256": "0dffeba0ba9c9a9c358c51c64e65d3c3c45086787b68b7431ef69a901cd113b2",
+      "atlas": "kits/character-families/mechanic/atlas.png",
+      "atlas_sha256": "a06d2cda9a20af964ec974c67938f0c49995191ef0822507c2f631ed5fc9754d",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    },
+    {
+      "id": "rancher-batch02",
+      "record": "kits/character-families/rancher/batch02/family.json",
+      "master_image": "kits/character-families/rancher/master-v1.png",
+      "master_sha256": "6d3268c732fd11fc2454bba29adf86050704b03d5845a7a369e6e581bcf179dc",
+      "variant_sheet": "kits/character-families/rancher/batch02/variants-v1.png",
+      "sheet_sha256": "7e72e9543b70f44fd016526dbeb74bf918bc9e10e58684ac33bf1d2a3ccda2c9",
+      "atlas": "kits/character-families/rancher/batch02/atlas.png",
+      "atlas_sha256": "c2f1c32cc6d44f383c9adf0518f98ec82d20e64641f89f6cb0d9c12945dbdc13",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    },
+    {
+      "id": "rancher",
+      "record": "kits/character-families/rancher/family.json",
+      "master_image": "kits/character-families/rancher/master-v1.png",
+      "master_sha256": "6d3268c732fd11fc2454bba29adf86050704b03d5845a7a369e6e581bcf179dc",
+      "variant_sheet": "kits/character-families/rancher/variants-v1.png",
+      "sheet_sha256": "2d44446fd1c143a50528de95ca108a70d82899af6a4173a0db4ba9f049148c35",
+      "atlas": "kits/character-families/rancher/atlas.png",
+      "atlas_sha256": "915aa2a38324b989439f7f59fe4e9db52184f826081d883e5af237586a78cb40",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    },
+    {
+      "id": "spirit-scout-batch02",
+      "record": "kits/character-families/spirit-scout/batch02/family.json",
+      "master_image": "kits/character-families/spirit-scout/master-v1.png",
+      "master_sha256": "a8ba7f2b07f0e0dd9491823ffd225b6afa850e0f0f7b7fe22d8a932acf8f7328",
+      "variant_sheet": "kits/character-families/spirit-scout/batch02/source.png",
+      "sheet_sha256": "fc74ad1a40661e4b6c31939d378223cfa8de6e1eb2a19e3e0d98a785bfd6ea6e",
+      "atlas": "kits/character-families/spirit-scout/batch02/atlas.png",
+      "atlas_sha256": "cbcf9ff1f8825f2d9b7848b72da2135f9e6d095eaf00b25a6e2611d649607382",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    },
+    {
+      "id": "spirit-scout",
+      "record": "kits/character-families/spirit-scout/family.json",
+      "master_image": "kits/character-families/spirit-scout/master-v1.png",
+      "master_sha256": "a8ba7f2b07f0e0dd9491823ffd225b6afa850e0f0f7b7fe22d8a932acf8f7328",
+      "variant_sheet": "kits/character-families/spirit-scout/variants-v1.png",
+      "sheet_sha256": "acb6d23e3734ec6f48857ea59fe90e5394cdd3b655412eef8607df5d5e1cb430",
+      "atlas": "kits/character-families/spirit-scout/atlas.png",
+      "atlas_sha256": "676a375148f2ab9e8fa092ddf0daf232b4d68e981bdb138d07f28f070a458e48",
+      "cell_size": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "count": 16
+    }
+  ],
+  "variants": [
+    {
+      "id": "mechanic_17",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "boiler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        133,
+        64,
+        242,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        109,
+        287
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_17.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "394c410e64fb5cef385946d254738c5d98e6c3dfd9be68ed7ff1470f537d6a51"
+    },
+    {
+      "id": "mechanic_18",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "clockmaker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        417,
+        66,
+        529,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        112,
+        285
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_18.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "556b4f4bd05e1146cff26acf02688070378bb7bd90dad007d138297105743124"
+    },
+    {
+      "id": "mechanic_19",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "rail_fitter",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        723,
+        66,
+        829,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        106,
+        285
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_19.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "0f290923b7d5eb256710a3ea0afafd94723f25c5226fd00cce02b8cfc433b8e1"
+    },
+    {
+      "id": "mechanic_20",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "turbine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1018,
+        62,
+        1124,
+        351
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        106,
+        289
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_20.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "cbc0bc29761e7faf36e7a716a4cdf8a3e6809c7f1d49df17e0c98f75c37f8977"
+    },
+    {
+      "id": "mechanic_21",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "armorer",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        130,
+        384,
+        235,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        105,
+        292
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_21.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c7593bf32b6ddc5f7e70abf5a483b13f2ede0d1dcb4ec3ffee26123a078724ef"
+    },
+    {
+      "id": "mechanic_22",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "pump",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        418,
+        386,
+        522,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        104,
+        290
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_22.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "393d59d50caf16eaedf3eda2e36d3b0e3310a03cc3859ff2437388127217dc25"
+    },
+    {
+      "id": "mechanic_23",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "precision",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        716,
+        389,
+        820,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        104,
+        287
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_23.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5873f1bf4901b1803d9da7de0221c6f9c58c4bb53c080ae6029b59bc5df31054"
+    },
+    {
+      "id": "mechanic_24",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "walker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1019,
+        385,
+        1122,
+        676
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        103,
+        291
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_24.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5883c0e4491b1b366965936da71a97bb6b37ccdd6d1de756e3c1f37c0ae5b6f2"
+    },
+    {
+      "id": "mechanic_25",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "gauge",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        118,
+        707,
+        225,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        107,
+        249
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_25.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9bf150cde608f677fcec2fd21d13e4004d4a4b26dac962304ab24bd05606cf94"
+    },
+    {
+      "id": "mechanic_26",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "saddle",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        413,
+        709,
+        513,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        100,
+        247
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_26.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "b8fe54474818db4180503f5b3b06f4c105d772f6cd75a5630875111f83a8a759"
+    },
+    {
+      "id": "mechanic_27",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "repair_scout",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        728,
+        706,
+        820,
+        957
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        92,
+        251
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_27.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9acc820483a6d6dabc1221a790cd057afb30fdf8c5d97ce68f339de83201f73b"
+    },
+    {
+      "id": "mechanic_28",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "dynamo",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1017,
+        710,
+        1114,
+        956
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        97,
+        246
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_28.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "a2e76c941128b78e0191ef1ce2cc0e4de3bcf3b5089b6d518913d62980f886ca"
+    },
+    {
+      "id": "mechanic_29",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "waterworks",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        121,
+        985,
+        214,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        93,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_29.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c5f16e2c852a00f6b210b066c110bf403fb9191242bd1fd40a8ba3124e4ccfe8"
+    },
+    {
+      "id": "mechanic_30",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "clockwork_handler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        410,
+        985,
+        508,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        98,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_30.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "bd9c376b1b6ef42e5b5b1ddb4b018596358901b7669402e8aee456e8f766aed2"
+    },
+    {
+      "id": "mechanic_31",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "foundry",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        721,
+        985,
+        817,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        96,
+        257
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_31.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "3d1abfc32046c3191e504c93d310885fe8666c025a7f4f4d53e9c8e4600b6f94"
+    },
+    {
+      "id": "mechanic_32",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "spirit_machine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1023,
+        989,
+        1115,
+        1242
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        92,
+        253
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/batch02/mechanic_32.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "b9ec6704166e69c7d36a8f8e3f1fabdfc5c38a9b45a6a0b5ba032ae6ef3827ca"
+    },
+    {
+      "id": "mechanic_01",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 20,
+      "status": "candidate",
+      "specialty": "boiler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        130,
+        8,
+        245,
+        316
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        115,
+        308
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_01.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c8e88bbced22192530b490113ad9af6a69728b796ef35d650f6a89ca3b727567"
+    },
+    {
+      "id": "mechanic_02",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "clockmaker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        424,
+        12,
+        532,
+        313
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        108,
+        301
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_02.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "40a6fe9073150a2e1d9979e4f97b75cab273a626b49ab4482e29864947ca9676"
+    },
+    {
+      "id": "mechanic_03",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "rail_fitter",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        710,
+        3,
+        822,
+        313
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        112,
+        310
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        39,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_03.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5c0355c06b8d93dd0143943add2d626a818c08d62f8fbc3898b4fc2acde5519b"
+    },
+    {
+      "id": "mechanic_04",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "turbine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1009,
+        12,
+        1120,
+        314
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        111,
+        302
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_04.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "67c557dd9fe057858f0c83f70aa065be0ab415431cc3fced1447bff5bd778476"
+    },
+    {
+      "id": "mechanic_05",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "armorer",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        120,
+        323,
+        239,
+        629
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        119,
+        306
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_05.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "095e8f882273eb07c90fbd398b781543e6bb1ab8fffd9fb15fd8c2b86084fed9"
+    },
+    {
+      "id": "mechanic_06",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 20,
+      "status": "candidate",
+      "specialty": "pump",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        414,
+        318,
+        534,
+        628
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        120,
+        310
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_06.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "91de75cfd7eb04570915c124950064f711d01c27df825d19c6e7917ba36bfd5f"
+    },
+    {
+      "id": "mechanic_07",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "precision",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        699,
+        324,
+        814,
+        629
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        115,
+        305
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_07.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "62bd18ab172d3771c2217fa6aba399079e360e442adcd5194cb9c7852386c32b"
+    },
+    {
+      "id": "mechanic_08",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "walker",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        1000,
+        318,
+        1120,
+        630
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        120,
+        312
+      ],
+      "alpha_bounds_xyxy": [
+        25,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_08.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "99ef3173bb4ab18a6fae3f5f55bd57bd41c77058034891d779a3f75afd295ce2"
+    },
+    {
+      "id": "mechanic_09",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "gauge",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        105,
+        631,
+        238,
+        934
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        133,
+        303
+      ],
+      "alpha_bounds_xyxy": [
+        23,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_09.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c34aa4c95488c1bce491d45173b08b77784436b49282448d33b6bb593f451523"
+    },
+    {
+      "id": "mechanic_10",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "saddle",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        404,
+        635,
+        520,
+        934
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        116,
+        299
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_10.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "7247663c555795d1aa835e999e07c16e66ba3cb36e9b7455ebdd9e8f7df238a5"
+    },
+    {
+      "id": "mechanic_11",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 20,
+      "status": "candidate",
+      "specialty": "repair_scout",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        684,
+        639,
+        810,
+        934
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        126,
+        295
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_11.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "3a8e109cb9a1589a9b433667b4bad099ea939ac8969f28b151f4d51913ccefd0"
+    },
+    {
+      "id": "mechanic_12",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 21,
+      "status": "candidate",
+      "specialty": "dynamo",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        990,
+        636,
+        1119,
+        934
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        129,
+        298
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_12.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "b0dedccdf891e29756a3669b15d9dfdefe9a5ca6e500712dedc3ce9d17990429"
+    },
+    {
+      "id": "mechanic_13",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 22,
+      "status": "candidate",
+      "specialty": "waterworks",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        95,
+        937,
+        223,
+        1244
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        128,
+        307
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_13.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "12f7bb99d1e21fe4473549bba3841fb6b31d21b4e9c1be017c37daf4706a61e3"
+    },
+    {
+      "id": "mechanic_14",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "specialty": "clockwork_handler",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        398,
+        938,
+        522,
+        1244
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        124,
+        306
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        40,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_14.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "59003e933bd1d926796b0109e1ba5bfa6cc0db2a3a909abb2fe5b663533e1fb9"
+    },
+    {
+      "id": "mechanic_15",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "specialty": "foundry",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        669,
+        937,
+        799,
+        1243
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        130,
+        306
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_15.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "32c17bf197d490fad01e1aa64edd00515651b514b518004941553b6bdee47a88"
+    },
+    {
+      "id": "mechanic_16",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 20,
+      "status": "candidate",
+      "specialty": "spirit_machine",
+      "facing": "southeast",
+      "source_region_xyxy": [
+        984,
+        936,
+        1113,
+        1243
+      ],
+      "source_alpha_bounds_in_region_xyxy": [
+        0,
+        0,
+        129,
+        307
+      ],
+      "alpha_bounds_xyxy": [
+        24,
+        21,
+        41,
+        61
+      ],
+      "image": "kits/character-families/mechanic/mechanic_16.png",
+      "clips": {
+        "idle_southeast": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "motion_status": "static_only_no_walk_or_turn_frames",
+      "family": "mechanic",
+      "atlas": "res://kits/character-families/mechanic/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "3ca5fa69512e98ffe35c3f3e73299293c213f1cc0e67da2820ce2af744f7f3f7"
+    },
+    {
+      "id": "rancher_17",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        98,
+        22,
+        132,
+        301
+      ],
+      "scaled_size": [
+        18,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9a4e2ddb9a93bf58c690c38c17f4b4a0bfb10efb778556e128c69b5ef60dc51b"
+    },
+    {
+      "id": "rancher_18",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        410,
+        22,
+        126,
+        301
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "3dbef6137440df94e4f2a181adda3cd85bb6faed721c8ca76365dfbd7ac84f77"
+    },
+    {
+      "id": "rancher_19",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        709,
+        11,
+        122,
+        313
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "06337d25365d54c5eab493f2d43c58060fe60de72038f7528b9e4ecab28f71da"
+    },
+    {
+      "id": "rancher_20",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1011,
+        19,
+        127,
+        303
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "29b975b882a25c64994fa347d005d76c4dee86f555ad8f6116ca5dfe8a0f6cad"
+    },
+    {
+      "id": "rancher_21",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        103,
+        337,
+        124,
+        304
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "085996519aa931be997548a566d215c0af6e810fd747ca9a8835438eafc99502"
+    },
+    {
+      "id": "rancher_22",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        412,
+        339,
+        124,
+        302
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "2d07caa33c9d78354125256b3bea056f5ec6493ae454b91f177f610868938599"
+    },
+    {
+      "id": "rancher_23",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        696,
+        336,
+        134,
+        305
+      ],
+      "scaled_size": [
+        18,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "0b8cc7fa31e5e5326e11e9b048944cfd2450b492057760d6f68f529a56290d2d"
+    },
+    {
+      "id": "rancher_24",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1007,
+        339,
+        130,
+        302
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "4b45045fc22ad19d069392a47349c6a103117b5265383144e0a5359a2dfcd8ec"
+    },
+    {
+      "id": "rancher_25",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        96,
+        651,
+        127,
+        302
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "41efb8a008ae59912134f6852a27c9cb8c8c7831315408eaa55f335910df8aa5"
+    },
+    {
+      "id": "rancher_26",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        406,
+        645,
+        123,
+        307
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "8cf5001aba9ae134344b4f3e5938c09e2315256b7f38d4cde959a953ae92af3a"
+    },
+    {
+      "id": "rancher_27",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        703,
+        656,
+        127,
+        296
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9b84276d96b9e76d0ad0a9e84a88a981b16b808ae07700e03b1edd3f1bf73d4b"
+    },
+    {
+      "id": "rancher_28",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1015,
+        647,
+        128,
+        305
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "a21ebd55fed9debaca51d0883b4e9098307c044cf4e4831a2502bc026ea17adf"
+    },
+    {
+      "id": "rancher_29",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        96,
+        955,
+        128,
+        294
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "958bae9150c9a9bf652706bb9d6d874487e093c31d7408d9296efcc652238715"
+    },
+    {
+      "id": "rancher_30",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        394,
+        958,
+        127,
+        291
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "7bb40f6bb6282ab91c7b44cd06f7395614a5268ddef976ae4d9d4461c6447372"
+    },
+    {
+      "id": "rancher_31",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        708,
+        955,
+        118,
+        294
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "1dc13d460ec87507abddb2bcea5a29b87c2b607ee29f377ccc8230c6c879fece"
+    },
+    {
+      "id": "rancher_32",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1015,
+        965,
+        121,
+        284
+      ],
+      "scaled_size": [
+        17,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "e18ee9dd17c64c30b2d6660b07dc0c4e4c1f678a6b114380eee5d1722cb99537"
+    },
+    {
+      "id": "rancher_01",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        88,
+        33,
+        119,
+        294
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "8a9966147160d6b7dc3e1a2a769b332ae0bc4e8b3aaad3882f5eea0d6cb66ce7"
+    },
+    {
+      "id": "rancher_02",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        393,
+        35,
+        115,
+        292
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "45907a7ebbd9f3a8ba0f76a7834a674d5bcde73326872c3a63f3785f721d30ca"
+    },
+    {
+      "id": "rancher_03",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        701,
+        23,
+        118,
+        304
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "95113098746a1e300c62e9cfd5c20b8606e6032b53fdc213135c9f92d7887da3"
+    },
+    {
+      "id": "rancher_04",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1010,
+        29,
+        117,
+        298
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "a864da163ce5a3a333b7d79decc0cfd267d75cce9a1bb973d131e7ec5fafca28"
+    },
+    {
+      "id": "rancher_05",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        89,
+        350,
+        115,
+        290
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c8b7ee89ca2fa1042b42e8bd8c333dff9d14263dd2c7ebaeeb03b415a0427ce6"
+    },
+    {
+      "id": "rancher_06",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        390,
+        350,
+        116,
+        290
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "1d22a4a25dde1624d0aff00369817741070f06a13be3331bf322d4b7d56460d8"
+    },
+    {
+      "id": "rancher_07",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        702,
+        352,
+        117,
+        288
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5476504a541f2435af0a6bb949e570e71c3a7f2dbb92c8723665989d231473d2"
+    },
+    {
+      "id": "rancher_08",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1007,
+        352,
+        116,
+        288
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "491199f5e90250a4f0bc3b03d3e0ae13c0e7842475ff3b445e0e52f62764fdc1"
+    },
+    {
+      "id": "rancher_09",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        87,
+        654,
+        117,
+        286
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "d6876a569d41eb900a3015b6c1de1200bf732c60e248eef3b07b389d77fb4561"
+    },
+    {
+      "id": "rancher_10",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        399,
+        644,
+        113,
+        296
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "29ed92dba54441d6acd57e1f19412a2bd895e7ad2d05732bbff705b4af668096"
+    },
+    {
+      "id": "rancher_11",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        699,
+        654,
+        113,
+        286
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "7128944f3112c91caab9d6dd9b0627191b77a21eecf2914bc3baa62f1956e168"
+    },
+    {
+      "id": "rancher_12",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1000,
+        657,
+        113,
+        283
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "80f2e4fc51d0031ac886e5c198aec04f104a20b2c2607673949f1b9ae4efa4cd"
+    },
+    {
+      "id": "rancher_13",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        85,
+        945,
+        115,
+        295
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "79a5bd8264a959e8ace569f8f3dabd032e82d55532b21bc861f6c59053590946"
+    },
+    {
+      "id": "rancher_14",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        393,
+        955,
+        112,
+        285
+      ],
+      "scaled_size": [
+        16,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5e916adcf2532773d86d08b07e41ac32704e3be7f1fe3aa4e1d4543326c0fed4"
+    },
+    {
+      "id": "rancher_15",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        695,
+        945,
+        113,
+        295
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "1573e3a378a2fca488c52aa05aaf22f21977ce5187b02f7baae9932f1a3f3481"
+    },
+    {
+      "id": "rancher_16",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "facing": "southeast",
+      "pose": "idle",
+      "source_rect": [
+        1007,
+        950,
+        112,
+        290
+      ],
+      "scaled_size": [
+        15,
+        40
+      ],
+      "romance_status": "unassigned",
+      "family": "rancher",
+      "atlas": "res://kits/character-families/rancher/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "bcfd29d056d2c9b2831c8edcef878d36d89ecbd8aa72bb23f2dad966479e6d8b"
+    },
+    {
+      "id": "spirit_scout_17",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "source_trim_bounds": [
+        154,
+        64,
+        256,
+        286
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_17.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "99a4d21412c20dbc5843083deb470661658d9ed9678c92ca472f074fee73d02b"
+    },
+    {
+      "id": "spirit_scout_18",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        0,
+        640,
+        320
+      ],
+      "source_trim_bounds": [
+        114,
+        64,
+        212,
+        286
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_18.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            1
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "796b88ec61314ad81b95079dcd948b8f22452d93cd145161c5ea400ba17b7eb7"
+    },
+    {
+      "id": "spirit_scout_19",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        0,
+        950,
+        320
+      ],
+      "source_trim_bounds": [
+        88,
+        61,
+        176,
+        286
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_19.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            2
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "2ffa8257ada25f17e21290e76a14ba41d052d39fffc2ef6833df6ccb1f5990db"
+    },
+    {
+      "id": "spirit_scout_20",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        0,
+        1254,
+        320
+      ],
+      "source_trim_bounds": [
+        49,
+        59,
+        148,
+        286
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_20.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            3
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "3e1b5bdd2d6ff2f496b8735f82f6fb2fdd09d47ab98a890fa9114a5bb7bb3de3"
+    },
+    {
+      "id": "spirit_scout_21",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        320,
+        320,
+        610
+      ],
+      "source_trim_bounds": [
+        154,
+        31,
+        249,
+        257
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_21.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            4
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "81dd0f9545db1e41934f902ef381fc568edc61f8b52915fdb20c0638098a4381"
+    },
+    {
+      "id": "spirit_scout_22",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        320,
+        640,
+        610
+      ],
+      "source_trim_bounds": [
+        119,
+        34,
+        210,
+        257
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_22.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            5
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "719fe4bbae017b6209f5f0e952a49aab67de82809cd85e3acc0b0cdb7a591e0b"
+    },
+    {
+      "id": "spirit_scout_23",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        320,
+        950,
+        610
+      ],
+      "source_trim_bounds": [
+        91,
+        33,
+        196,
+        256
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_23.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            6
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "4a06bc16f309d579a6bf1cbb858727922d7d5a9efaa3468b0cefd47c605d65c7"
+    },
+    {
+      "id": "spirit_scout_24",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        320,
+        1254,
+        610
+      ],
+      "source_trim_bounds": [
+        50,
+        35,
+        144,
+        256
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_24.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            7
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "a6fcf33549ea29d33bfbef1b96490193a0aa52b308a1c19edfee0bd7ef8d4124"
+    },
+    {
+      "id": "spirit_scout_25",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        610,
+        320,
+        900
+      ],
+      "source_trim_bounds": [
+        159,
+        33,
+        249,
+        258
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_25.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            8
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9ce93c9c3f067691a1becc25201d5804dc11e7a24272782d3639637f3cb004ca"
+    },
+    {
+      "id": "spirit_scout_26",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        610,
+        640,
+        900
+      ],
+      "source_trim_bounds": [
+        117,
+        37,
+        210,
+        257
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_26.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            9
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "88c7dd6f59fb3adb9e0b82b3a99a268b896e39bb4a3e163b251d923a0c61039b"
+    },
+    {
+      "id": "spirit_scout_27",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        610,
+        950,
+        900
+      ],
+      "source_trim_bounds": [
+        91,
+        37,
+        180,
+        257
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_27.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            10
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "e1f426332d1d5324f51eda5259c2b0abc51a9a03ce034c74b1018ef657fc3f7b"
+    },
+    {
+      "id": "spirit_scout_28",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        610,
+        1254,
+        900
+      ],
+      "source_trim_bounds": [
+        59,
+        36,
+        147,
+        257
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_28.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            11
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "85104256f28cb83d8f68cac00b6b238a0d0449530f779b40b2defa284b154615"
+    },
+    {
+      "id": "spirit_scout_29",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        900,
+        320,
+        1254
+      ],
+      "source_trim_bounds": [
+        155,
+        33,
+        247,
+        259
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_29.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            12
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "97d6e69022964350bf27815dc99b785c3542f60448d299a87eb2f0808d548e31"
+    },
+    {
+      "id": "spirit_scout_30",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        900,
+        640,
+        1254
+      ],
+      "source_trim_bounds": [
+        120,
+        36,
+        223,
+        259
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_30.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            13
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "7cb367f1c56a10375e1185fd588a765e96bf119b1189483c5b73060d74a825fe"
+    },
+    {
+      "id": "spirit_scout_31",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        900,
+        950,
+        1254
+      ],
+      "source_trim_bounds": [
+        82,
+        37,
+        179,
+        259
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_31.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            14
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "b07b5cdde674c276485c2b68617b9013bf74fae3c00502a5bbbd0bf81d850be9"
+    },
+    {
+      "id": "spirit_scout_32",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        900,
+        1254,
+        1254
+      ],
+      "source_trim_bounds": [
+        59,
+        33,
+        153,
+        259
+      ],
+      "frame": "kits/character-families/spirit-scout/batch02/spirit_scout_32.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            15
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "4879d8d6703027fe88c09417ff872525630140e62c40db0c7de2b6963a73343b"
+    },
+    {
+      "id": "spirit_scout_01",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        0,
+        320,
+        331
+      ],
+      "source_trim_bounds": [
+        118,
+        29,
+        262,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_01.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "dcfd024294f11293fa69aded161f56e52ea15462d3cbc3c37038088d0cd0116b"
+    },
+    {
+      "id": "spirit_scout_02",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        0,
+        640,
+        331
+      ],
+      "source_trim_bounds": [
+        82,
+        15,
+        209,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_02.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            1
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "d7065707560ef1ab4a0dc718252f3d348b794a03405b6ea29c369ccad9421c87"
+    },
+    {
+      "id": "spirit_scout_03",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        0,
+        950,
+        331
+      ],
+      "source_trim_bounds": [
+        41,
+        31,
+        174,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_03.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            2
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "4f77df3e8299ff60ba050a2d04aa21e679d94aef46df3e35b9eacefd6eb11556"
+    },
+    {
+      "id": "spirit_scout_04",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        0,
+        1254,
+        331
+      ],
+      "source_trim_bounds": [
+        21,
+        32,
+        146,
+        324
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_04.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            3
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "acdd1852634d8c92c7f0f76fca152cdae5cd5f077ae89d05e4a86169ef26f460"
+    },
+    {
+      "id": "spirit_scout_05",
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        331,
+        320,
+        637
+      ],
+      "source_trim_bounds": [
+        138,
+        7,
+        268,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_05.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            4
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "8f86414c0502cdc66ed7520b19bf1f28e6f14f70a88c1f44942cf017f4836401"
+    },
+    {
+      "id": "spirit_scout_06",
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        331,
+        640,
+        637
+      ],
+      "source_trim_bounds": [
+        78,
+        9,
+        209,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_06.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            5
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "898217eb3d2d9185f953c9ec6e2478fad5b4666913baf6e26548d1fb6899d9d2"
+    },
+    {
+      "id": "spirit_scout_07",
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        331,
+        950,
+        637
+      ],
+      "source_trim_bounds": [
+        53,
+        7,
+        180,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_07.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            6
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "20e56a87688deee97da7db0de0ddf79c5de95fb6fbd3cdde29d5bc2cdd9c67e4"
+    },
+    {
+      "id": "spirit_scout_08",
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        331,
+        1254,
+        637
+      ],
+      "source_trim_bounds": [
+        9,
+        7,
+        141,
+        300
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_08.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            7
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "fce7b7c85a8fa89ef7409ce80f1bd9758bec0f7ecfdb8dea1ac71f9c1b3edd19"
+    },
+    {
+      "id": "spirit_scout_09",
+      "rect": [
+        0,
+        128,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        637,
+        320,
+        940
+      ],
+      "source_trim_bounds": [
+        147,
+        5,
+        273,
+        303
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_09.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            8
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "9aafab80548d10160f6e42482b19dae95bb375816e67c247bbe7ccd8cf0318bf"
+    },
+    {
+      "id": "spirit_scout_10",
+      "rect": [
+        64,
+        128,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        637,
+        640,
+        940
+      ],
+      "source_trim_bounds": [
+        85,
+        5,
+        206,
+        296
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_10.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            9
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c7940c097ff0bd6d7b90197f47c330872e1740dc63e932aa1038c564178a8339"
+    },
+    {
+      "id": "spirit_scout_11",
+      "rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        637,
+        950,
+        940
+      ],
+      "source_trim_bounds": [
+        53,
+        7,
+        182,
+        296
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_11.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            10
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "2193705e04341ae727fbac0491b55f7b7f8b7242fa858e3c96425a0abe609f9a"
+    },
+    {
+      "id": "spirit_scout_12",
+      "rect": [
+        192,
+        128,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        637,
+        1254,
+        940
+      ],
+      "source_trim_bounds": [
+        31,
+        3,
+        150,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_12.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            11
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "5c785348ee7a5ba2b47944157a7e9325823150618aa1c56117210e6c6870f9f5"
+    },
+    {
+      "id": "spirit_scout_13",
+      "rect": [
+        0,
+        192,
+        64,
+        64
+      ],
+      "age": 23,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        0,
+        940,
+        320,
+        1254
+      ],
+      "source_trim_bounds": [
+        147,
+        0,
+        275,
+        299
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_13.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            12
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "c3af7aa2c0a0cfb3ad196095bef22e7c3e9094caccaf40109ef055a70a056f18"
+    },
+    {
+      "id": "spirit_scout_14",
+      "rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "age": 24,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        320,
+        940,
+        640,
+        1254
+      ],
+      "source_trim_bounds": [
+        91,
+        4,
+        214,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_14.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            13
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "25692ae77d1d2578908ed8ab3a6aa1d7f73ec54f7d445cc6e2ba3ef122e338b8"
+    },
+    {
+      "id": "spirit_scout_15",
+      "rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "age": 25,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        640,
+        940,
+        950,
+        1254
+      ],
+      "source_trim_bounds": [
+        61,
+        4,
+        182,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_15.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            14
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "22bcc56851524c1bc5484c0086533b6f3b77549488cf846d6ddf571955f97ea2"
+    },
+    {
+      "id": "spirit_scout_16",
+      "rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "age": 26,
+      "status": "candidate",
+      "pose": "idle",
+      "direction": "southeast",
+      "source_cell": [
+        950,
+        940,
+        1254,
+        1254
+      ],
+      "source_trim_bounds": [
+        25,
+        5,
+        155,
+        297
+      ],
+      "frame": "kits/character-families/spirit-scout/spirit_scout_16.png",
+      "animations": {
+        "idle": {
+          "frames": [
+            15
+          ],
+          "fps": 0,
+          "loop": false
+        }
+      },
+      "family": "spirit-scout",
+      "atlas": "res://kits/character-families/spirit-scout/atlas.png",
+      "anchor": [
+        32,
+        61
+      ],
+      "animation_status": "static_identity_only",
+      "pixel_sha256": "867ece256f2f163be229d099f37b4a03f1832e607ad2417d4929e2e0f27766fb"
+    }
+  ],
+  "counts": {
+    "families": 3,
+    "master_images": 3,
+    "batches": 6,
+    "static_variants": 96,
+    "approved": 0,
+    "animation_clips": 0
+  }
+}
