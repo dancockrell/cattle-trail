@@ -1,0 +1,267 @@
+{
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 24,
+      "timestamp_seconds": 2.0,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "8450e4789b7257544554dcff29517c21d7616a16f2a46ecfd0ef4e8840476320"
+    },
+    {
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 25,
+      "timestamp_seconds": 2.083333,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "6fb9a133f7da84c7504e9afe5c55fc34d1b6f9ab7789e6ebba165a025486524a"
+    },
+    {
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 26,
+      "timestamp_seconds": 2.166667,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "65389a3f170159fb51b2f8133c88676b5a791f28e30309aa288ea7f89ff98446"
+    },
+    {
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 27,
+      "timestamp_seconds": 2.25,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "0afcf0f5f9be31d1e1b077175dae57fde1824360cd9ca7367ff7236732dd962e"
+    },
+    {
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 28,
+      "timestamp_seconds": 2.333333,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "1646c25af59f54ead4b5d19b26ab1d6bae667763bba6d9d63d16c976e451137c"
+    },
+    {
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 29,
+      "timestamp_seconds": 2.416667,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "b701ba13194cecfa0724a4e9dcd57df0ca9d69fa68d0cf84991480c255cbcc8c"
+    },
+    {
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 30,
+      "timestamp_seconds": 2.5,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "7c0350e09d2e33286a21436ed9c1e0c8579e222674caf6f7fb6cf6ae632d929e"
+    },
+    {
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 31,
+      "timestamp_seconds": 2.583333,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "f93ec6cccc78d219436045697502152ffe0cbd84013cd164c752efc60a144268"
+    },
+    {
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 32,
+      "timestamp_seconds": 2.666667,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "f92d6b01481eebf9a0024cf8b296a2c854198f225940004df87a6767764cd14f"
+    },
+    {
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 33,
+      "timestamp_seconds": 2.75,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "9d975408565681fad261c8874aa923983f51cedf645dfd32e9d6c4d8f0b04768"
+    },
+    {
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 34,
+      "timestamp_seconds": 2.833333,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "6c04be9a7237bcce115e226b130255efafd66b90a7a2c34097740861a7ef15a1"
+    },
+    {
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "source_frame": 35,
+      "timestamp_seconds": 2.916667,
+      "duration_seconds": 0.08333333333333333,
+      "source_cell_sha256": "d4d290cfe63ed72b338784d2d1f046f06ea8c1db5fe7f765c801b3686accff32"
+    }
+  ],
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "review_walk_southeast": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "fps": 12,
+      "loop": true,
+      "admitted": false
+    }
+  },
+  "status": "review_candidate_not_runtime_admitted",
+  "source_frame_indices": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "source_video_sha256": "e026731eea63e23f2066d822b43b37a76a28884fdc8b3127e0ef9f935da6178d",
+  "registration": "Exact existing extracted cells; no changes",
+  "review": [
+    "Chronological one-second selection2.000..2.917; not arbitrary pose reordering.",
+    "Visible alternating leg silhouettes and passing positions; exact anatomical phase names remain unassigned.",
+    "Frame36 approximately returns toward24pose but pixel-identical closure not claimed.",
+    "No source-edge-contact frames in selected interval."
+  ],
+  "closure": {
+    "comparison_order": [
+      24,
+      35,
+      36
+    ],
+    "first_equals_closure_rgba": false,
+    "next_source_frame": 36
+  }
+}

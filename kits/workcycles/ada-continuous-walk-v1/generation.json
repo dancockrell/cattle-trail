@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "character": "Ada Mercer",
+  "age": 22,
+  "source": "kits/wardrobe/ada-high-angle-v1/source.png",
+  "source_creation": "cptcSqp0eP",
+  "video_creation": "w42wf327EI",
+  "model": "bytedance-seedance-pro-2.0",
+  "duration_seconds": 5,
+  "resolution": "720p",
+  "credits": 1400,
+  "status": "completed",
+  "runtime_admitted": false,
+  "prompt": "Animate ONLY the supplied full-body pixel-art character, Ada Mercer, an adult 22-year-old Weird West mechanic. Preserve this exact character identity, costume, proportions, equipment, hard-edged pixel-art rendering, elevated high three-quarter southeast-facing view and solid uniform magenta background. Produce a continuous natural WALK IN PLACE for the full five seconds, approximately three complete steady walk cycles. The character remains centered at the same scale and facing throughout. Alternate the two legs correctly: near-leg forward contact, near-leg planted support while far leg passes, far-leg forward contact, far-leg planted support while near leg passes. Real readable alternating foot plants and knee bends with modest opposing arm swing and slight natural vertical body movement. Boots, braid, tool belt and clothing remain coherent and attached. Whole head and both boots stay fully inside frame with margins. This is a sprite-animation source, not a cinematic scene. Locked camera; no pan, zoom, rotation, viewpoint changes, scenery, floor, shadow, dust, text or new objects. No costume changes, smeared edges, motion blur or dissolve transitions. Keep the figure in the original elevated three-quarter orientation rather than turning into a side profile.",
+  "video_sha256": "e026731eea63e23f2066d822b43b37a76a28884fdc8b3127e0ef9f935da6178d",
+  "source_sha256": "a680616bf203237c3cde8275873f26d8b0c1c215e62d9aae3e71ddd3e1a37729",
+  "video_file": "source.mp4"
+}
