@@ -9,6 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'phase': (['--headless', '--script', 'tools/animation_phase_test.gd'], r'ANIMATION PHASE PASS: unequal holds, directional remapping, cycle boundaries and roundtrip'),
     'state': (['--headless', '--script', 'tools/companion_state_test.gd'], r'COMPANION STATE: \d+ checks, 0 failures'),
     'room': (['--', '--qa'], r'QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture'),
     'companion': (['--', '--companion-qa'], r'COMPANION ROOM PASS: recruitment, actor switching, three cattle, camp completion, capped recovery, phone controls'),

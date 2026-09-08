@@ -1,4 +1,5 @@
 extends Node2D
+const AnimationPhase = preload("res://scripts/animation_phase.gd")
 
 signal action_event(event_name: String)
 
@@ -91,13 +92,11 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 		art.speed_scale = clampf(speed / clip_speed, 0.35, 1.8) if moving and speed >= 0 else 1.0
 		if art.animation != name:
 			var keep_phase := moving and str(art.animation).begins_with("walk_")
-			var old_frame := art.frame
-			var old_progress := art.frame_progress
-			var phase := (old_frame + old_progress) / art.sprite_frames.get_frame_count(art.animation)
+			var phase := AnimationPhase.phase_at(clip_durations(art.animation),art.frame,art.frame_progress)
 			art.play(name)
 			if keep_phase:
-				var new_phase := phase * art.sprite_frames.get_frame_count(name)
-				art.set_frame_and_progress(int(new_phase), fmod(new_phase,1.0))
+				var destination := AnimationPhase.frame_at(clip_durations(name),phase)
+				art.set_frame_and_progress(int(destination.x),destination.y)
 		return
 	if absf(direction.x) > 0.1:
 		# Reflect the complete anchored sprite, not its texture within the atlas cell.
@@ -109,6 +108,12 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 		clip = "idle"
 	if art.animation != clip:
 		art.play(clip)
+
+func clip_durations(clip: StringName) -> Array:
+	var durations := []
+	for index in range(art.sprite_frames.get_frame_count(clip)):
+		durations.append(art.sprite_frames.get_frame_duration(clip,index))
+	return durations
 
 func direction_name(direction: Vector2) -> String:
 	if absf(direction.x) > absf(direction.y) * 0.4142 and absf(direction.y) > absf(direction.x) * 0.4142:
