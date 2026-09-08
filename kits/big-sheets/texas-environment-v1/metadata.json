@@ -1,0 +1,2327 @@
+{
+  "schema_version": 1,
+  "source": "source.png",
+  "source_sha256": "1b51c231a40c1b563c17f1414a1a67521fc83a42b77e3b9cca0cbda1da15b424",
+  "source_size": [
+    1246,
+    1262
+  ],
+  "reference": "source/concept-start.jpg",
+  "generation": "built-in imagegen",
+  "requested_items": 64,
+  "extracted_items": 64,
+  "transparency": "neutral checkerboard keyed globally for vegetation/deadwood, border-connected only for rocks; binary alpha",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "source_scale": 1,
+  "runtime_admitted": false,
+  "items": [
+    {
+      "id": "dry_grass_01",
+      "index": 0,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        0,
+        0,
+        156,
+        155
+      ],
+      "source_figure_xyxy": [
+        35,
+        86,
+        101,
+        141
+      ],
+      "native_file": "native/dry_grass-01.png",
+      "native_size": [
+        66,
+        55
+      ],
+      "native_sha256": "390e1d88408d4241e88c9b5a75652b5b06b879311812076160f551bb6775cd73",
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_02",
+      "index": 1,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        156,
+        0,
+        312,
+        155
+      ],
+      "source_figure_xyxy": [
+        171,
+        73,
+        263,
+        145
+      ],
+      "native_file": "native/dry_grass-02.png",
+      "native_size": [
+        92,
+        72
+      ],
+      "native_sha256": "d1f915f73a837e9e0d01f25d44d68d7893d58ccea158a94f4ddb8b11d183cb86",
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_03",
+      "index": 2,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        312,
+        0,
+        467,
+        155
+      ],
+      "source_figure_xyxy": [
+        328,
+        43,
+        418,
+        142
+      ],
+      "native_file": "native/dry_grass-03.png",
+      "native_size": [
+        90,
+        99
+      ],
+      "native_sha256": "1304052bcda978e2f0844ee94412559a23173d046a8ce1fe6edaff2405ba9206",
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_04",
+      "index": 3,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        467,
+        0,
+        623,
+        155
+      ],
+      "source_figure_xyxy": [
+        478,
+        32,
+        623,
+        142
+      ],
+      "native_file": "native/dry_grass-04.png",
+      "native_size": [
+        145,
+        110
+      ],
+      "native_sha256": "989694a2b4e19cd4f1d2a925998a0eda6e97f1caaf032475725a292525937cb3",
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_05",
+      "index": 4,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        623,
+        0,
+        779,
+        155
+      ],
+      "source_figure_xyxy": [
+        623,
+        31,
+        779,
+        145
+      ],
+      "native_file": "native/dry_grass-05.png",
+      "native_size": [
+        156,
+        114
+      ],
+      "native_sha256": "29984630311c16c65c7cc59228dd417be11617afcca6d53640721df522c1cf20",
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_06",
+      "index": 5,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        779,
+        0,
+        934,
+        155
+      ],
+      "source_figure_xyxy": [
+        779,
+        37,
+        915,
+        145
+      ],
+      "native_file": "native/dry_grass-06.png",
+      "native_size": [
+        136,
+        108
+      ],
+      "native_sha256": "50eefda1a1d8b4277aeb0c05b91d35147d910d814122305b5453eb7d3e8439ff",
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_07",
+      "index": 6,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        934,
+        0,
+        1090,
+        155
+      ],
+      "source_figure_xyxy": [
+        951,
+        67,
+        1090,
+        143
+      ],
+      "native_file": "native/dry_grass-07.png",
+      "native_size": [
+        139,
+        76
+      ],
+      "native_sha256": "1badbceaf6b55b490359900d51ca7af63ac039eb3de30f20bcabee27f3dd9bc8",
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "dry_grass_08",
+      "index": 7,
+      "category": "dry_grass",
+      "source_cell_xyxy": [
+        1090,
+        0,
+        1246,
+        155
+      ],
+      "source_figure_xyxy": [
+        1090,
+        11,
+        1233,
+        148
+      ],
+      "native_file": "native/dry_grass-08.png",
+      "native_size": [
+        143,
+        137
+      ],
+      "native_sha256": "2defce976b7451e40ff813a5030c7f0e46f4887bcca0f0d2fd2ba39aa0ac86e5",
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_01",
+      "index": 8,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        0,
+        155,
+        156,
+        307
+      ],
+      "source_figure_xyxy": [
+        23,
+        221,
+        156,
+        288
+      ],
+      "native_file": "native/mixed_grass-01.png",
+      "native_size": [
+        133,
+        67
+      ],
+      "native_sha256": "219a1f068926db55bb488175e25e64d4506c5c1d57692b407319f7d7c7ff2367",
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_02",
+      "index": 9,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        156,
+        155,
+        312,
+        307
+      ],
+      "source_figure_xyxy": [
+        156,
+        190,
+        312,
+        286
+      ],
+      "native_file": "native/mixed_grass-02.png",
+      "native_size": [
+        156,
+        96
+      ],
+      "native_sha256": "5921f8985166d715d4261357bd11749f64b1c16b145f0bf73eb30f7b7455091e",
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_03",
+      "index": 10,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        312,
+        155,
+        467,
+        307
+      ],
+      "source_figure_xyxy": [
+        312,
+        181,
+        434,
+        291
+      ],
+      "native_file": "native/mixed_grass-03.png",
+      "native_size": [
+        122,
+        110
+      ],
+      "native_sha256": "69fcf9d0094128023a7f43c0c3fb3c6a4cd8dc8394997530b95a32e720e4e5bf",
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_04",
+      "index": 11,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        467,
+        155,
+        623,
+        307
+      ],
+      "source_figure_xyxy": [
+        475,
+        169,
+        623,
+        290
+      ],
+      "native_file": "native/mixed_grass-04.png",
+      "native_size": [
+        148,
+        121
+      ],
+      "native_sha256": "4fc0b5f21635192326541b5b8a5fc10dff655b3caf7dd7a8c555d2c67db6685a",
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_05",
+      "index": 12,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        623,
+        155,
+        779,
+        307
+      ],
+      "source_figure_xyxy": [
+        623,
+        186,
+        756,
+        288
+      ],
+      "native_file": "native/mixed_grass-05.png",
+      "native_size": [
+        133,
+        102
+      ],
+      "native_sha256": "35be8793462dcf4da0a39c40c280959ba6f57959e9f3a94ca845df309b8434ce",
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_06",
+      "index": 13,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        779,
+        155,
+        934,
+        307
+      ],
+      "source_figure_xyxy": [
+        791,
+        168,
+        908,
+        291
+      ],
+      "native_file": "native/mixed_grass-06.png",
+      "native_size": [
+        117,
+        123
+      ],
+      "native_sha256": "926ebfff706eec760db95f97d7f901c07417412d37860ae92326c274f71e5a53",
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_07",
+      "index": 14,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        934,
+        155,
+        1090,
+        307
+      ],
+      "source_figure_xyxy": [
+        944,
+        187,
+        1071,
+        291
+      ],
+      "native_file": "native/mixed_grass-07.png",
+      "native_size": [
+        127,
+        104
+      ],
+      "native_sha256": "3f5152c2a6113ff25ad7861af67584629c66a2bd70384ab18a10539ede018833",
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "mixed_grass_08",
+      "index": 15,
+      "category": "mixed_grass",
+      "source_cell_xyxy": [
+        1090,
+        155,
+        1246,
+        307
+      ],
+      "source_figure_xyxy": [
+        1094,
+        169,
+        1231,
+        292
+      ],
+      "native_file": "native/mixed_grass-08.png",
+      "native_size": [
+        137,
+        123
+      ],
+      "native_sha256": "d1367b15fbf61309ee231e49fa46c62e485024d2c99e1b5de8ed51ff4e4f3dcd",
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_01",
+      "index": 16,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        0,
+        307,
+        156,
+        467
+      ],
+      "source_figure_xyxy": [
+        21,
+        376,
+        156,
+        448
+      ],
+      "native_file": "native/flowers-01.png",
+      "native_size": [
+        135,
+        72
+      ],
+      "native_sha256": "8786a7705ea745ea5ba17a65e0409e57ff5170957aacb0d27a8cde488b01d231",
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_02",
+      "index": 17,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        156,
+        307,
+        312,
+        467
+      ],
+      "source_figure_xyxy": [
+        156,
+        346,
+        312,
+        448
+      ],
+      "native_file": "native/flowers-02.png",
+      "native_size": [
+        156,
+        102
+      ],
+      "native_sha256": "00375b5db6b6494b85b907c14c54a38ba73a6c290193a0e62b7c7ed5a4f01f93",
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_03",
+      "index": 18,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        312,
+        307,
+        467,
+        467
+      ],
+      "source_figure_xyxy": [
+        312,
+        357,
+        467,
+        450
+      ],
+      "native_file": "native/flowers-03.png",
+      "native_size": [
+        155,
+        93
+      ],
+      "native_sha256": "044a94d8815d8b83f14e0174fa9fb36a4e0b25739baaec26093e2065573a6a85",
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_04",
+      "index": 19,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        467,
+        307,
+        623,
+        467
+      ],
+      "source_figure_xyxy": [
+        467,
+        322,
+        623,
+        448
+      ],
+      "native_file": "native/flowers-04.png",
+      "native_size": [
+        156,
+        126
+      ],
+      "native_sha256": "598d5b9c1aa6a2c2eab4a66a5888c83dbf839e5e91eb9c82f06252175baab307",
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_05",
+      "index": 20,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        623,
+        307,
+        779,
+        467
+      ],
+      "source_figure_xyxy": [
+        623,
+        327,
+        779,
+        450
+      ],
+      "native_file": "native/flowers-05.png",
+      "native_size": [
+        156,
+        123
+      ],
+      "native_sha256": "968bef812a49c11e375897680f379d5f5940b974afdace13a06d1b87a916754f",
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_06",
+      "index": 21,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        779,
+        307,
+        934,
+        467
+      ],
+      "source_figure_xyxy": [
+        779,
+        332,
+        934,
+        450
+      ],
+      "native_file": "native/flowers-06.png",
+      "native_size": [
+        155,
+        118
+      ],
+      "native_sha256": "a3b5af27927f62930ea51a4f679d8e9e33a1cb22dd5e33473b740064727bca0b",
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_07",
+      "index": 22,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        934,
+        307,
+        1090,
+        467
+      ],
+      "source_figure_xyxy": [
+        934,
+        344,
+        1090,
+        450
+      ],
+      "native_file": "native/flowers-07.png",
+      "native_size": [
+        156,
+        106
+      ],
+      "native_sha256": "4755cb122e15e9e6fa4db7ab51c6bd3ce1ab774d09ddc18d05d51eef50d4ae00",
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "flowers_08",
+      "index": 23,
+      "category": "flowers",
+      "source_cell_xyxy": [
+        1090,
+        307,
+        1246,
+        467
+      ],
+      "source_figure_xyxy": [
+        1090,
+        321,
+        1230,
+        447
+      ],
+      "native_file": "native/flowers-08.png",
+      "native_size": [
+        140,
+        126
+      ],
+      "native_sha256": "0682f7f4c8fd7a3d65ecb3632181dec3942ac38750fe698b0bfbfbc32b432398",
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_01",
+      "index": 24,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        0,
+        467,
+        156,
+        616
+      ],
+      "source_figure_xyxy": [
+        17,
+        502,
+        156,
+        602
+      ],
+      "native_file": "native/shrubs-01.png",
+      "native_size": [
+        139,
+        100
+      ],
+      "native_sha256": "045a805e68b1df8a9dfb7bfa6049cb05d6fc449dcbde9c1acd8eaa681fcb409b",
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_02",
+      "index": 25,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        156,
+        467,
+        312,
+        616
+      ],
+      "source_figure_xyxy": [
+        156,
+        487,
+        312,
+        605
+      ],
+      "native_file": "native/shrubs-02.png",
+      "native_size": [
+        156,
+        118
+      ],
+      "native_sha256": "4cc7b364ffe8373ac53d4c0fa234690d053167eaf1bee8362bb33940ae5a4ad4",
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_03",
+      "index": 26,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        312,
+        467,
+        467,
+        616
+      ],
+      "source_figure_xyxy": [
+        312,
+        502,
+        467,
+        608
+      ],
+      "native_file": "native/shrubs-03.png",
+      "native_size": [
+        155,
+        106
+      ],
+      "native_sha256": "6bf70c0a4f84406c97ce62663fa831a9864c58b12301c7150f5630f413cd89a8",
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_04",
+      "index": 27,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        467,
+        467,
+        623,
+        616
+      ],
+      "source_figure_xyxy": [
+        467,
+        476,
+        623,
+        603
+      ],
+      "native_file": "native/shrubs-04.png",
+      "native_size": [
+        156,
+        127
+      ],
+      "native_sha256": "9e2a6bfbc0fbe8d989a45e0385de71e0f04b10f68bd80935f4e119972b1736e4",
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_05",
+      "index": 28,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        623,
+        467,
+        779,
+        616
+      ],
+      "source_figure_xyxy": [
+        623,
+        487,
+        779,
+        605
+      ],
+      "native_file": "native/shrubs-05.png",
+      "native_size": [
+        156,
+        118
+      ],
+      "native_sha256": "c0a5ab06c15fc9db7c3040fc6b9b4c9c92723567b0d79d9f192b8e3775dde03b",
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_06",
+      "index": 29,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        779,
+        467,
+        934,
+        616
+      ],
+      "source_figure_xyxy": [
+        779,
+        500,
+        934,
+        608
+      ],
+      "native_file": "native/shrubs-06.png",
+      "native_size": [
+        155,
+        108
+      ],
+      "native_sha256": "d8f3156f359d9219e03d4033af7914124cf99a6ce62cbd3b94be2c3ba7bfedc7",
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_07",
+      "index": 30,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        934,
+        467,
+        1090,
+        616
+      ],
+      "source_figure_xyxy": [
+        934,
+        488,
+        1090,
+        608
+      ],
+      "native_file": "native/shrubs-07.png",
+      "native_size": [
+        156,
+        120
+      ],
+      "native_sha256": "9c5beafb0fd597973f32ce59f96d58bbd87fcb14042d52b38d72da109ea13f3d",
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "shrubs_08",
+      "index": 31,
+      "category": "shrubs",
+      "source_cell_xyxy": [
+        1090,
+        467,
+        1246,
+        616
+      ],
+      "source_figure_xyxy": [
+        1090,
+        472,
+        1238,
+        616
+      ],
+      "native_file": "native/shrubs-08.png",
+      "native_size": [
+        148,
+        144
+      ],
+      "native_sha256": "126601bda7a8b6c17507cd204d6cd6ba3321702f2735700c60360a988f829741",
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_01",
+      "index": 32,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        0,
+        616,
+        156,
+        791
+      ],
+      "source_figure_xyxy": [
+        26,
+        685,
+        114,
+        771
+      ],
+      "native_file": "native/cactus_yucca-01.png",
+      "native_size": [
+        88,
+        86
+      ],
+      "native_sha256": "291f7f45c530a6018d603d94207ecea9caed30a9749ce429c0a88825504cd40e",
+      "atlas_rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_02",
+      "index": 33,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        156,
+        616,
+        312,
+        791
+      ],
+      "source_figure_xyxy": [
+        162,
+        646,
+        282,
+        769
+      ],
+      "native_file": "native/cactus_yucca-02.png",
+      "native_size": [
+        120,
+        123
+      ],
+      "native_sha256": "fbb7208aeda3f37b29274972898fe1a1f398f8eeb7fcb7a9302da06a644ffbc0",
+      "atlas_rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_03",
+      "index": 34,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        312,
+        616,
+        467,
+        791
+      ],
+      "source_figure_xyxy": [
+        318,
+        678,
+        467,
+        770
+      ],
+      "native_file": "native/cactus_yucca-03.png",
+      "native_size": [
+        149,
+        92
+      ],
+      "native_sha256": "92e6029ffd9828a63027475722fadf4a002ab3bf8454024958927e329b8d8cd3",
+      "atlas_rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_04",
+      "index": 35,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        467,
+        616,
+        623,
+        791
+      ],
+      "source_figure_xyxy": [
+        467,
+        618,
+        623,
+        782
+      ],
+      "native_file": "native/cactus_yucca-04.png",
+      "native_size": [
+        156,
+        164
+      ],
+      "native_sha256": "248352f30a1b5db055faed1a22de0b79cacf909afe6cdefdbbc3d8dfda13e456",
+      "atlas_rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_05",
+      "index": 36,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        623,
+        616,
+        779,
+        791
+      ],
+      "source_figure_xyxy": [
+        623,
+        657,
+        760,
+        772
+      ],
+      "native_file": "native/cactus_yucca-05.png",
+      "native_size": [
+        137,
+        115
+      ],
+      "native_sha256": "a31fedb6646214a28f10d7ec6a1c06bf6e5548cfa64d04b1245f6a623e580e26",
+      "atlas_rect": [
+        1024,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_06",
+      "index": 37,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        779,
+        616,
+        934,
+        791
+      ],
+      "source_figure_xyxy": [
+        793,
+        683,
+        934,
+        774
+      ],
+      "native_file": "native/cactus_yucca-06.png",
+      "native_size": [
+        141,
+        91
+      ],
+      "native_sha256": "8ce7322a5e60e238e9e5b12a04cfd25cd36abe85d774da177da673424a79f2af",
+      "atlas_rect": [
+        1280,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_07",
+      "index": 38,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        934,
+        616,
+        1090,
+        791
+      ],
+      "source_figure_xyxy": [
+        934,
+        653,
+        1090,
+        778
+      ],
+      "native_file": "native/cactus_yucca-07.png",
+      "native_size": [
+        156,
+        125
+      ],
+      "native_sha256": "2cdd878a45884b1b7eac80c68b3df45beeb1b9d0122c27352382a76d479fdb01",
+      "atlas_rect": [
+        1536,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "cactus_yucca_08",
+      "index": 39,
+      "category": "cactus_yucca",
+      "source_cell_xyxy": [
+        1090,
+        616,
+        1246,
+        791
+      ],
+      "source_figure_xyxy": [
+        1090,
+        616,
+        1234,
+        784
+      ],
+      "native_file": "native/cactus_yucca-08.png",
+      "native_size": [
+        144,
+        168
+      ],
+      "native_sha256": "791768113ff930893f66199c07ae285be7d00aa6765fcc96dffba131fb50c675",
+      "atlas_rect": [
+        1792,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_01",
+      "index": 40,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        0,
+        791,
+        156,
+        922
+      ],
+      "source_figure_xyxy": [
+        23,
+        830,
+        111,
+        895
+      ],
+      "native_file": "native/rocks-01.png",
+      "native_size": [
+        88,
+        65
+      ],
+      "native_sha256": "b412f17138c13c083805b6fe4a220ffe0688abd690a08698a849ce933410599b",
+      "atlas_rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_02",
+      "index": 41,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        156,
+        791,
+        312,
+        922
+      ],
+      "source_figure_xyxy": [
+        158,
+        809,
+        283,
+        903
+      ],
+      "native_file": "native/rocks-02.png",
+      "native_size": [
+        125,
+        94
+      ],
+      "native_sha256": "d7c4cb77db9a19a73d0166fc58a976e5d5dd4ece91aae85f9bc7908f786560dd",
+      "atlas_rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_03",
+      "index": 42,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        312,
+        791,
+        467,
+        922
+      ],
+      "source_figure_xyxy": [
+        314,
+        829,
+        467,
+        897
+      ],
+      "native_file": "native/rocks-03.png",
+      "native_size": [
+        153,
+        68
+      ],
+      "native_sha256": "8580ad0471aca9e2719e2e2842122afcb8dd9873224557a393f608ac77d1be22",
+      "atlas_rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_04",
+      "index": 43,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        467,
+        791,
+        623,
+        922
+      ],
+      "source_figure_xyxy": [
+        467,
+        811,
+        623,
+        908
+      ],
+      "native_file": "native/rocks-04.png",
+      "native_size": [
+        156,
+        97
+      ],
+      "native_sha256": "8641d23cf38d25775fc3f234a0c48940198dfba91a6006a674f41de3ad3a8e94",
+      "atlas_rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_05",
+      "index": 44,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        623,
+        791,
+        779,
+        922
+      ],
+      "source_figure_xyxy": [
+        623,
+        803,
+        779,
+        911
+      ],
+      "native_file": "native/rocks-05.png",
+      "native_size": [
+        156,
+        108
+      ],
+      "native_sha256": "b1a25bff3b631b9d5b90968090546452ce3a1d6729400c4e51b1d419292d190a",
+      "atlas_rect": [
+        1024,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_06",
+      "index": 45,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        779,
+        791,
+        934,
+        922
+      ],
+      "source_figure_xyxy": [
+        779,
+        826,
+        934,
+        903
+      ],
+      "native_file": "native/rocks-06.png",
+      "native_size": [
+        155,
+        77
+      ],
+      "native_sha256": "4e3265c7fb4f2c21e1a3e0dc1880409ef70eb398e622a740e16992d04b2e4552",
+      "atlas_rect": [
+        1280,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_07",
+      "index": 46,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        934,
+        791,
+        1090,
+        922
+      ],
+      "source_figure_xyxy": [
+        934,
+        802,
+        1090,
+        908
+      ],
+      "native_file": "native/rocks-07.png",
+      "native_size": [
+        156,
+        106
+      ],
+      "native_sha256": "7cb928b173cfa39e53acffbb8c166048cf00a73b094b8da69c6042083a73a2c9",
+      "atlas_rect": [
+        1536,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "rocks_08",
+      "index": 47,
+      "category": "rocks",
+      "source_cell_xyxy": [
+        1090,
+        791,
+        1246,
+        922
+      ],
+      "source_figure_xyxy": [
+        1090,
+        809,
+        1237,
+        911
+      ],
+      "native_file": "native/rocks-08.png",
+      "native_size": [
+        147,
+        102
+      ],
+      "native_sha256": "90372619b29ad5e246923d7c44f6d3882e414864f87edf14644dcb22c8fd2e82",
+      "atlas_rect": [
+        1792,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_01",
+      "index": 48,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        0,
+        922,
+        156,
+        1065
+      ],
+      "source_figure_xyxy": [
+        11,
+        965,
+        156,
+        1041
+      ],
+      "native_file": "native/deadwood-01.png",
+      "native_size": [
+        145,
+        76
+      ],
+      "native_sha256": "25fe41c2cd3f87cf7f40a66f31f0e7db2f5e6969f73f4c697d286274b0f4f3ef",
+      "atlas_rect": [
+        0,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_02",
+      "index": 49,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        156,
+        922,
+        312,
+        1065
+      ],
+      "source_figure_xyxy": [
+        156,
+        952,
+        312,
+        1041
+      ],
+      "native_file": "native/deadwood-02.png",
+      "native_size": [
+        156,
+        89
+      ],
+      "native_sha256": "d28834cd4b18afb2e42db4d0dc7b67ccca61ce438e723a4a910ceda054cc65c5",
+      "atlas_rect": [
+        256,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_03",
+      "index": 50,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        312,
+        922,
+        467,
+        1065
+      ],
+      "source_figure_xyxy": [
+        312,
+        960,
+        467,
+        1044
+      ],
+      "native_file": "native/deadwood-03.png",
+      "native_size": [
+        155,
+        84
+      ],
+      "native_sha256": "ba72769d55bc85b94bfac5bda63d33f1742ebb3fea839fe72369144dfa8602d6",
+      "atlas_rect": [
+        512,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_04",
+      "index": 51,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        467,
+        922,
+        623,
+        1065
+      ],
+      "source_figure_xyxy": [
+        467,
+        953,
+        623,
+        1050
+      ],
+      "native_file": "native/deadwood-04.png",
+      "native_size": [
+        156,
+        97
+      ],
+      "native_sha256": "d00df84fb2ed4cfb31f3eceac987a166d28d12f6300682a7e24d6faeb6f248be",
+      "atlas_rect": [
+        768,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_05",
+      "index": 52,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        623,
+        922,
+        779,
+        1065
+      ],
+      "source_figure_xyxy": [
+        623,
+        935,
+        779,
+        1057
+      ],
+      "native_file": "native/deadwood-05.png",
+      "native_size": [
+        156,
+        122
+      ],
+      "native_sha256": "9cfea75f460f1d407e64863060825a4c71857f60ee61ce76094e4486131510aa",
+      "atlas_rect": [
+        1024,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_06",
+      "index": 53,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        779,
+        922,
+        934,
+        1065
+      ],
+      "source_figure_xyxy": [
+        779,
+        955,
+        934,
+        1050
+      ],
+      "native_file": "native/deadwood-06.png",
+      "native_size": [
+        155,
+        95
+      ],
+      "native_sha256": "ac74557fc82b7f6e263da66ca37802f07a0b8cae8bd9ebf1bea77fc03ff9e037",
+      "atlas_rect": [
+        1280,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_07",
+      "index": 54,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        934,
+        922,
+        1090,
+        1065
+      ],
+      "source_figure_xyxy": [
+        934,
+        934,
+        1090,
+        1062
+      ],
+      "native_file": "native/deadwood-07.png",
+      "native_size": [
+        156,
+        128
+      ],
+      "native_sha256": "20e9a20254f8595d2780b550e9e7991b49d8db5b863f44331938ff54afd7a555",
+      "atlas_rect": [
+        1536,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "deadwood_08",
+      "index": 55,
+      "category": "deadwood",
+      "source_cell_xyxy": [
+        1090,
+        922,
+        1246,
+        1065
+      ],
+      "source_figure_xyxy": [
+        1090,
+        941,
+        1238,
+        1057
+      ],
+      "native_file": "native/deadwood-08.png",
+      "native_size": [
+        148,
+        116
+      ],
+      "native_sha256": "c3afa366743d64f2d2c5b5aac81cb3e77ebcb301f4bd7a1927ab86aa1af221b1",
+      "atlas_rect": [
+        1792,
+        1536,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_01",
+      "index": 56,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        0,
+        1065,
+        156,
+        1262
+      ],
+      "source_figure_xyxy": [
+        17,
+        1103,
+        156,
+        1218
+      ],
+      "native_file": "native/saplings-01.png",
+      "native_size": [
+        139,
+        115
+      ],
+      "native_sha256": "4ea5435be5c45a369a558b51e3ceafe35bd50b5408c9d3459e835919befd5b2c",
+      "atlas_rect": [
+        0,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_02",
+      "index": 57,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        156,
+        1065,
+        312,
+        1262
+      ],
+      "source_figure_xyxy": [
+        156,
+        1086,
+        312,
+        1222
+      ],
+      "native_file": "native/saplings-02.png",
+      "native_size": [
+        156,
+        136
+      ],
+      "native_sha256": "e859cf100f479c12e3919fe7c80c03cba024eda69556b6a78d782c3c0a0d81b1",
+      "atlas_rect": [
+        256,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_03",
+      "index": 58,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        312,
+        1065,
+        467,
+        1262
+      ],
+      "source_figure_xyxy": [
+        312,
+        1086,
+        467,
+        1219
+      ],
+      "native_file": "native/saplings-03.png",
+      "native_size": [
+        155,
+        133
+      ],
+      "native_sha256": "8854f908ab41dec591b885dae4c52d2df538ba329a1b5ce28c447fa81f163663",
+      "atlas_rect": [
+        512,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_04",
+      "index": 59,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        467,
+        1065,
+        623,
+        1262
+      ],
+      "source_figure_xyxy": [
+        467,
+        1078,
+        623,
+        1227
+      ],
+      "native_file": "native/saplings-04.png",
+      "native_size": [
+        156,
+        149
+      ],
+      "native_sha256": "7b6cdba30cfd6c6d1068fb53f903a2355f6a5dca52f4654f57405b7633cb9f99",
+      "atlas_rect": [
+        768,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_05",
+      "index": 60,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        623,
+        1065,
+        779,
+        1262
+      ],
+      "source_figure_xyxy": [
+        623,
+        1078,
+        779,
+        1237
+      ],
+      "native_file": "native/saplings-05.png",
+      "native_size": [
+        156,
+        159
+      ],
+      "native_sha256": "2caab1674d79b694196e07c21efda972eb247d29621575d90e718db565da944e",
+      "atlas_rect": [
+        1024,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_06",
+      "index": 61,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        779,
+        1065,
+        934,
+        1262
+      ],
+      "source_figure_xyxy": [
+        779,
+        1068,
+        934,
+        1230
+      ],
+      "native_file": "native/saplings-06.png",
+      "native_size": [
+        155,
+        162
+      ],
+      "native_sha256": "f7277855abafa9ef2acb8a5b4423ef5476b845b98b010f2bfcff3adf617c73be",
+      "atlas_rect": [
+        1280,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_07",
+      "index": 62,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        934,
+        1065,
+        1090,
+        1262
+      ],
+      "source_figure_xyxy": [
+        934,
+        1078,
+        1090,
+        1237
+      ],
+      "native_file": "native/saplings-07.png",
+      "native_size": [
+        156,
+        159
+      ],
+      "native_sha256": "4dade76800d769bb266454cd9ff9669a8dbc494062e45c99c97077872af14a5e",
+      "atlas_rect": [
+        1536,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    },
+    {
+      "id": "saplings_08",
+      "index": 63,
+      "category": "saplings",
+      "source_cell_xyxy": [
+        1090,
+        1065,
+        1246,
+        1262
+      ],
+      "source_figure_xyxy": [
+        1090,
+        1066,
+        1239,
+        1243
+      ],
+      "native_file": "native/saplings-08.png",
+      "native_size": [
+        149,
+        177
+      ],
+      "native_sha256": "ceb1e576ef450b34f6a05420df268328dd1c7a9245057e4bd581bba64ffbeadd",
+      "atlas_rect": [
+        1792,
+        1792,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "scale": 1,
+      "status": "candidate",
+      "runtime_admitted": false
+    }
+  ]
+}
