@@ -50,3 +50,5 @@ Eleanor lantern east v5 assembles unchanged whole cells: v2 contactA, v2 passing
 Ada Mercer idle v1 introduces the explicitly adult22-year-old mechanic's identity in E/NE/NW/S poses. Auburn braid, hair goggles, cropped work jacket, cream blouse, olive trousers and tool belt. The east view is front-oblique and NW tool count needs continuity work. Candidate character kit only.
 
 Steam cattle-handler v1 supplies idle, stalled, repaired and one passing pose of a brass/iron agricultural walker. Its bumper actually faces southwest, recorded honestly despite the northeast request. Four96×96 cells, [48,93] anchors,48-pixel idle height. Candidate encounter kit, not a complete walk or room placement.
+
+Directional follow-up: eleanor-lantern-west-v1 has four whole west-facing figures, but the lantern appears in the near/left hand and stride overlaps repeat. Keep it outside runtime carry selection. Ada-mercer-walk-east-v2 establishes a stricter east view and consistent single wrench; its wide/narrow/wide/narrow sequence does not yet prove opposite anatomical lead legs. Both kits preserve exact source, crop, anchor and review evidence as candidates.

@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "status": "walk_candidate_not_admitted",
+  "character_id": "ada_mercer",
+  "name": "Ada Mercer",
+  "age": 22,
+  "identity_authority": "design/characters.json#named_characters/ada_mercer",
+  "appearance": "Adult steam mechanic; auburn braid and brass goggles on hair; brown waist-length work jacket, cream open collar blouse, fitted olive riding trousers, toolbelt and boots.",
+  "source": "kits/source/ada-mercer-walk-east-v2.png",
+  "source_sha256": "355570686b9e3c4c02cd299383f3397ac50e26a48e029336282473466fc17243",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "style_reference": "kits/source/ada-mercer-idle-v1.png",
+  "texture": "atlas.png",
+  "atlas_size": [
+    256,
+    64
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "source_row": 0,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        252,
+        88,
+        502,
+        541
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "rgba_sha256": "6e745ea686ff3f8a13c004303380498b21e4057f346444fa5f4aeb16b75bd95e",
+      "requested_phase": "contact_a_candidate",
+      "direction": "east"
+    },
+    {
+      "index": 1,
+      "source_row": 0,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        208,
+        88,
+        339,
+        545
+      ],
+      "atlas_rect_xywh": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        11,
+        40
+      ],
+      "cell_offset": [
+        26,
+        21
+      ],
+      "rgba_sha256": "60dff68d2cdc1760f55ff3166d1809d813f640f8ed17c7bee9c709731f1e2c84",
+      "requested_phase": "passing_a_candidate",
+      "direction": "east"
+    },
+    {
+      "index": 2,
+      "source_row": 1,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        267,
+        80,
+        513,
+        536
+      ],
+      "atlas_rect_xywh": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "rgba_sha256": "1e98e4a88ae1a0cd60923d99d81ca30b70898830c0520d73ba3cc437e93c84ac",
+      "requested_phase": "contact_b_candidate",
+      "direction": "east"
+    },
+    {
+      "index": 3,
+      "source_row": 1,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        209,
+        80,
+        339,
+        536
+      ],
+      "atlas_rect_xywh": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "scaled_size": [
+        11,
+        40
+      ],
+      "cell_offset": [
+        26,
+        21
+      ],
+      "rgba_sha256": "9e0ad66728de9ac78dd48d79f03a64f94eba244adbb2d63a541ab46e1c9ed704",
+      "requested_phase": "passing_b_candidate",
+      "direction": "east"
+    }
+  ],
+  "clips": {
+    "walk_east_candidate": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "durations_seconds": [
+        0.14,
+        0.14,
+        0.14,
+        0.14
+      ],
+      "loop_proposed": true,
+      "phase_order_verified": false
+    }
+  },
+  "processing": {
+    "shared_scale": 0.087527352297593,
+    "max_whole_character_height": 40,
+    "resampling": "nearest",
+    "alpha": "binary0/255, zeroRGBA magenta pixels",
+    "whole_source_sprites_only": true
+  },
+  "inspection": {
+    "whole_figures": true,
+    "direction_mapping": "All four east lateral views.",
+    "identity": "Auburn braid, goggles, brown jacket, cream blouse, olive trousers, single hanging wrench and boots retained.",
+    "observed_phases": [
+      "Wide contact-like stride",
+      "Low passing/narrow stance",
+      "Wide contact-like stride similar to0",
+      "Low passing/narrow stance similar to1"
+    ],
+    "limitations": [
+      "Frames0/2 repeat similar arm swing and leg overlap; opposite anatomical lead leg is not clearly established.",
+      "Frames1/3 likewise show similar support/passing geometry.",
+      "Belt pouch position and jacket contours shift slightly.",
+      "Source row order is a proposal, not a verified complete gait."
+    ],
+    "runtime_admitted": false
+  },
+  "actual_facing": "east"
+}

@@ -1,0 +1,8 @@
+Create exactly FOUR wholebody EAST WALK poses of ADA MERCER, the22-year-old adult steam mechanic in attached identity sheet. Two columns×two rows. Solid#FF00FF magenta background with generousemptygutters, no lettering/grid/shadow/scenery.
+Preserve SAME adultidentity: auburnshortbraid, brassgoggles restingonhair, croppedbrownworkjacket, creamopencollarblouse, fittedolive ridingtrousers, brownboots, leather toolbelt. Keep one hangingwrench on SAME anatomicalhip, no extra tool duplication, nohat/newprops. Adultslimhealthy proportions, modestPG13fullyclothed. Match hardpixelart warmTexas style, darkcontours, no smoothing.
+Allfour face strictly EAST SCREENRIGHT: lateral walking view with slight hightopdowncamera, not southeast/frontview, no camera rotation. Samehead/torso scale, coat/jacket construction and clothingcolors. Wholehead/goggles/braid/hands/bootstips visible.
+Temporal order top-left0 CONTACT A: NEAR leg forwardright heelcontact, FAR legbackleft toedown; oppositearm swing.
+Top-right1 PASS A: NEARleg supportsbody, FARfoot liftslowandpassesnearankle; armscloserneutral.
+Bottom-left2 CONTACT B: oppositelegs from0, FARlegforwardright heelcontact, NEARlegbackleft toedown. Clearly different overlapatthighs/knees than0. Do not repeat sameleadfoot. Arm swing reverses.
+Bottom-right3 PASS B: FARleg supportsbody, NEARfoot liftslowandpassesfarankle; armscloserneutral, naturallyconnectsto0.
+Shortgroundedsteps, kneeslow, nohighmarch orairbornesprint. Same anatomicalnear/farleg tracedacrosssequence, no trousercolorchanges. Four distinct phases of ONE alternatingwalk, notfourposes withsamestep. Wholefigures only, no detachedlimbs.

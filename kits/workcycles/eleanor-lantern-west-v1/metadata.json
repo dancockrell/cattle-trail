@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "status": "west_lantern_candidates_require_hand_and_phase_correction",
+  "character": "eleanor",
+  "source": "kits/source/eleanor-lantern-west-v1.png",
+  "source_sha256": "228f033895751e66e8799bf08cacc998e5194bcdc3dd1f612f49b5a17785ce91",
+  "prompt": "kits/source/eleanor-lantern-west-v1-prompt.txt",
+  "source_size": [
+    2172,
+    724
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "requested_phase": "contact_A",
+      "observed_pose": "leftleading extendedstep",
+      "direction": "west",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "near_left_apparent",
+      "source_crop_xyxy": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        164,
+        123,
+        430,
+        613
+      ],
+      "scale": 0.08163265306122448,
+      "resized_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 1,
+      "requested_phase": "passing_A",
+      "observed_pose": "slightly narrower leftleadingstep, rearheelraised",
+      "direction": "west",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "near_left_apparent",
+      "source_crop_xyxy": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        166,
+        123,
+        401,
+        608
+      ],
+      "scale": 0.08247422680412371,
+      "resized_size": [
+        19,
+        40
+      ],
+      "cell_offset": [
+        23,
+        21
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 2,
+      "requested_phase": "opposite_contact",
+      "observed_pose": "leftleading extendedstep repeats0",
+      "direction": "west",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "near_left_apparent",
+      "source_crop_xyxy": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        131,
+        123,
+        407,
+        613
+      ],
+      "scale": 0.08163265306122448,
+      "resized_size": [
+        23,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 3,
+      "requested_phase": "passing_B",
+      "observed_pose": "leftleading extendedstep, notclearpassing",
+      "direction": "west",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "near_left_apparent",
+      "source_crop_xyxy": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        110,
+        129,
+        370,
+        612
+      ],
+      "scale": 0.08281573498964803,
+      "resized_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    }
+  ],
+  "transformation": "Wholefigure crop,binarymagenta key,nearestrescale,padding only. No horizontalmirror was applied.",
+  "limitations": [
+    "Lantern is in visible nearhand, apparently anatomicalleft for westview, contrary to requestedrighthand.",
+    "Oppositeleadingleg and passingstates not clearly differentiated;0/2 repeat.",
+    "Preserved actualoutput as candidates; no coherentwestwalk admission claimed.",
+    "No globalfiles,runtime,game orcommit changes."
+  ]
+}
