@@ -9,6 +9,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GODOT = Path('C:/Users/Admin/dev/tools/godot/bin/Godot_v4.3-stable_win64_console.exe')
 CHECKS = {
+    'turn-actor': (['--headless', '--script', 'tools/turn_actor_test.gd'], r'TURN ACTOR PASS: full bridge poses, authored timing, preserved gait, retarget, action interruption and finite clocks; no rendering'),
     'action-sequence': (['--headless', '--script', 'tools/action_sequence_test.gd'], r'ACTION SEQUENCE PASS: weighted poses, hitch-safe release, exact sockets, cancellation, reentrant replacement and idle; no rendering'),
     'camp-care': (['--headless', '--script', 'tools/camp_care_controller_test.gd'], r'CAMP CARE CONTROLLER PASS: Ada rest, shared partner cooldown, Eleanor bonus, staged failure, migration, pending outing, UI reset'),
     'sprite-density': (['--headless', '--script', 'tools/sprite_density_test.gd'], r'SPRITE DENSITY PASS: detailed and legacy scales, pivots, reflection, sockets, display density and input; no rendering'),

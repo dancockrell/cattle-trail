@@ -18,6 +18,12 @@ Keep the women recognizable through hair, palette, signature tools and accessori
 
 The user's Lara Croft comparison establishes athletic adult adventure appeal and confidence, not modern clothing or a copied character design. Keep the 1870s visible through woven linen and cotton, fitted vests and bodices, brass buttons, ties, leather belts, worn boots and riding skirts. Short skirts, split hems and petticoat edges are welcome alongside short riding breeches. Express the daring coverage through shortened hems, tied blouses, rolled sleeves, open necklines and adventurous tailoring. Earlier halter/shorts studies establish coverage, not historical authenticity; avoid generic contemporary gym tops, stretch fabrics, modern zippers or denim cutoffs.
 
+## Period identity with Weird West freedom
+
+The September 8 period reminder reinforces an 1870s foundation without requiring museum reconstruction. Fantastical tailoring and steampunk equipment belong to this world's own makers. Keep visible construction legible: woven cloth, seams, lacing, buttons, buckles, layered leather and repaired hems. Use these materials to achieve the already accepted adult adventure coverage. Mechanical accessories should connect to a character's work or supernatural practice.
+
+For the next wardrobe variants, Eleanor can wear a short split riding skirt over opaque riding drawers with a tied linen blouse; Ada can wear a fitted waistcoat, rolled blouse sleeves and a shortened leather tool apron over riding breeches; Ines can wear an asymmetric wrapped trail skirt with an opaque tied blouse and a patterned shoulder shawl. These are production examples, not newly approved outfits. Preserve each woman's identity, adult proportions and readable silhouette through movement. Skirt openings and walking poses must retain opaque coverage across every frame.
+
 ## Master before variants before motion
 
 Build a few detailed masters, then derive wardrobe and identity variants from their retained references. A wardrobe sheet contains alternative static states, never consecutive walk frames. Each extracted state records source hash, crop, cell, pivot, adult identity, outfit ID and admission status.

@@ -132,6 +132,8 @@ func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, 
 			if not bridge.is_empty():
 				if art.sprite_frames.has_animation(bridge.clip):
 					art.play(bridge.clip)
+					art.pause()
+					art.set_frame_and_progress(0,0)
 				else:
 					turn.cancel()
 		if turn.active:
@@ -197,6 +199,7 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 	action_time = action_sequence.total
 
 func _process(delta: float) -> void:
+	if not is_finite(delta) or delta<0: return
 	if turn.active:
 		turn.phase = fposmod(turn.phase+delta*turn_phase_rate,1.0)
 		var completion: Dictionary = turn.step(delta)
@@ -206,6 +209,11 @@ func _process(delta: float) -> void:
 			if completion.moving:
 				var selected := AnimationPhase.frame_at(clip_durations(turn_target_clip),completion.phase)
 				art.set_frame_and_progress(int(selected.x),selected.y)
+		elif turn.active:
+			# The authored bridge duration owns all its poses, independent of clip FPS.
+			var progress: float = (turn.duration-turn.remaining)/turn.duration
+			var selected := AnimationPhase.frame_at(clip_durations(turn.clip),progress)
+			art.set_frame_and_progress(int(selected.x),selected.y)
 	if action_time > 0:
 		var generation := action_generation
 		var step: Dictionary = action_sequence.advance(delta)
