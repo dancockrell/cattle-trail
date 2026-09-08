@@ -131,7 +131,8 @@ func decorate_ui() -> void:
 		elif state.met and state.clues.size()==3: label = "Compare clues"
 		room.buttons.get_child(0).text = label if room.size.x < 600 else label+" [E]"
 		room.objective.text = "INES / "+("Scouting" if state.party_assignment == "field" else "Camp company") if state.recruitment == "recruited" else "INES / %d of 3 clues / Talk beside the northern trail" % state.clues.size()
-		room.stats.text += "  INES %d" % int(state.madness)
+		if not room.stats.text.contains("  INES "):
+			room.stats.text += "  INES %d" % int(state.madness)
 		return
 	if not state.met: return
 	var clue := nearby_clue(notice_radius())

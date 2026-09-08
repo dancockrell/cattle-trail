@@ -23,6 +23,9 @@ func _pending() -> bool:
 func near_ada() -> bool:
 	return owner.cart_adventure.status=="completed" and owner.ada_state.recruitment=="recruited" and not owner.is_eleanor() and is_instance_valid(owner.mechanic.ada) and owner.room.player.position.distance_to(owner.mechanic.ada.position)<=45
 
+func near_ines() -> bool:
+	return owner.cart_adventure.status=="completed" and owner.ines_state.recruitment=="recruited" and owner.ines_state.party_assignment=="camp" and not owner.is_eleanor() and is_instance_valid(owner.ines.ines) and owner.room.player.position.distance_to(owner.ines.ines.position)<=45
+
 func rest() -> bool:
 	if _pending():
 		owner.tell("Pause the companion outing and return to camp before sharing rest.")
@@ -30,20 +33,24 @@ func rest() -> bool:
 	if owner.room.player.action_time>0 or owner.room.rope_time>0 or owner.room.rope_flight_time>0:
 		owner.tell("Finish the current action before resting.")
 		return false
-	var ada: bool = near_ada()
-	if not ada and owner.active_actor().position.distance_to(Vector2(148,127))>55:
-		owner.tell("Meet Ada beside the cart or Eleanor at the wagon for shared rest.")
+	var ines: bool = near_ines()
+	var ada: bool = not ines and near_ada()
+	if not ines and not ada and owner.active_actor().position.distance_to(Vector2(148,127))>55:
+		owner.tell("Meet Ines on the northern trail after assigning her to camp, Ada beside the cart, or Eleanor at the wagon for shared rest.")
 		return false
-	var partner := "ada_mercer" if ada else "eleanor"
+	var partner := "ines_vale" if ines else ("ada_mercer" if ada else "eleanor")
 	var staged = Recovery.new()
 	if not staged.load_dict(owner.camp_recovery.to_dict()): return false
 	var meters := {"player":owner.state.madness.player}
-	meters[partner] = owner.ada_state.madness if ada else owner.state.madness.eleanor
+	meters[partner] = owner.ines_state.madness if ines else (owner.ada_state.madness if ada else owner.state.madness.eleanor)
 	var result: Dictionary = staged.request(["player",partner],meters,owner.minutes,true)
 	if not result.ok:
 		owner.tell("Shared rest returns in %d trail minutes." % ceili(maxf(0.0,float(result.get("next_available_minutes",owner.minutes))-owner.minutes)))
 		return false
-	if ada:
+	if ines:
+		owner.state.madness.player = result.after.player
+		owner.ines_state.madness = result.after.ines_vale
+	elif ada:
 		owner.state.madness.player = result.after.player
 		owner.ada_state.madness = result.after.ada_mercer
 	else:
@@ -53,10 +60,12 @@ func rest() -> bool:
 			return false
 	owner.camp_recovery = staged
 	owner.minutes += float(result.minutes_spent)
-	if ada:
+	if ines:
+		owner.room.say_once("ines_camp_rest",owner.ines.ines,"INES","Even the spirits can wait. Sit with me a little.",2)
+	elif ada:
 		owner.room.say_once("ada_camp_rest",owner.mechanic.ada,"ADA","The kettle is behaving. Let's enjoy that while it lasts.",2)
 	else: owner.say_event("shared_rest","shared_rest")
-	owner.tell("Thirty quiet minutes with Ada. Both recover up to 10 madness; affection is your choice." if ada else "Tea with Eleanor: up to 13 madness recovered for you and 10 for her.")
+	owner.tell("Thirty quiet minutes with Ines. Both recover up to 10 madness; affection is your choice." if ines else "Thirty quiet minutes with Ada. Both recover up to 10 madness; affection is your choice." if ada else "Tea with Eleanor: up to 13 madness recovered for you and 10 for her.")
 	owner.save_game()
 	return true
 
@@ -65,11 +74,14 @@ func decorate_ui() -> void:
 	var button = owner.room.buttons.get_child(4)
 	# Caller resets base labels before other encounter decorators; do not overwrite active valve controls.
 	button.tooltip_text = "Shared rest: 30 trail minutes. Each participant may rest once per 1440 minutes; changing partners does not reset your cooldown."
-	var ada: bool = near_ada()
-	var partner := "ada_mercer" if ada else "eleanor"
+	var ines: bool = near_ines()
+	var ada: bool = not ines and near_ada()
+	var partner := "ines_vale" if ines else ("ada_mercer" if ada else "eleanor")
 	var remaining := ceili(maxf(0.0,maxf(float(owner.camp_recovery.next_available.get("player",0)),float(owner.camp_recovery.next_available.get(partner,0)))-owner.minutes))
 	if ada:
 		owner.room.stats.text = "$%d  HERD 6/6  MADNESS %d  ADA %d" % [owner.room.cash,int(owner.state.madness.player),int(owner.ada_state.madness)]
-	button.text = ("Rest with Ada [G]" if ada else "Rest [G]") if remaining==0 else "Rest in %dm" % remaining
-	button.tooltip_text += " Ada: up to 10 recovery each; no kiss required." if ada else " Eleanor: up to 13 for you, 10 for her, after Steady Company."
+	if ines:
+		owner.room.stats.text = "$%d  HERD 6/6  MADNESS %d  INES %d" % [owner.room.cash,int(owner.state.madness.player),int(owner.ines_state.madness)]
+	button.text = ("Rest with Ines [G]" if ines else ("Rest with Ada [G]" if ada else "Rest [G]")) if remaining==0 else "Rest in %dm" % remaining
+	button.tooltip_text += " Ines: up to 10 recovery each while assigned to camp; romance is optional." if ines else " Ada: up to 10 recovery each; no kiss required." if ada else " Eleanor: up to 13 for you, 10 for her, after Steady Company."
 

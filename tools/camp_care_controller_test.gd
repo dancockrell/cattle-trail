@@ -26,6 +26,8 @@ class Owner extends RefCounted:
 	var cart_adventure = {"status":"completed"}
 	var lantern_adventure = {"status":"completed"}
 	var ada_state = {"recruitment":"recruited","madness":40.0}
+	var ines_state = {"recruitment":"recruited","party_assignment":"camp","madness":40.0,"romance_acknowledged":false}
+	var ines = {"ines":Node2D.new()}
 	var mechanic = {"ada":Node2D.new()}
 	var saves := 0
 	func is_eleanor(): return false
@@ -42,6 +44,7 @@ func _initialize():
 	owner.state.events.adventure_completed=true
 	owner.state.madness.player=50.0
 	owner.state.madness.eleanor=40.0
+	owner.ines.ines.position=Vector2(405,105)
 	owner.mechanic.ada.position=Vector2(220,280)
 	owner.room.player.position=owner.mechanic.ada.position
 	assert(care.rest())
@@ -84,7 +87,36 @@ func _initialize():
 	owner.room.player.position=Vector2(148,127)
 	care.decorate_ui()
 	assert(not "Ada" in owner.room.buttons.get_child(4).text)
+	owner.room.player.position=owner.ines.ines.position
+	owner.ines_state.party_assignment="field"
+	before=owner.camp_recovery.to_dict()
+	assert(not care.rest() and owner.camp_recovery.to_dict()==before,"Field Ines cannot provide camp rest")
+	owner.ines_state.party_assignment="camp"
+	owner.ines_state.recruitment="available"
+	assert(not care.rest(),"Ines must join before shared rest")
+	owner.ines_state.recruitment="recruited"
+	owner.room.rope_flight_time=0.1
+	assert(not care.rest(),"Unfinished lasso prevents Ines rest")
+	owner.room.rope_flight_time=0
+	owner.state.madness.player=50
+	var saves_before: int=owner.saves
+	assert(care.rest(),"Camp-assigned Ines offers rest without romance")
+	assert(owner.minutes==6030 and owner.state.madness.player==40 and owner.ines_state.madness==30)
+	assert(owner.camp_recovery.next_available.ines_vale==7440 and owner.saves==saves_before+1)
+	assert(not owner.ines_state.romance_acknowledged)
+	assert(not care.rest())
+	owner.room.player.position=owner.mechanic.ada.position
+	assert(not care.rest(),"Changing from Ines to Ada cannot bypass shared cooldown")
+	owner.room.player.position=owner.ines.ines.position
+	owner.minutes=7440
+	care.decorate_ui()
+	assert(owner.room.buttons.get_child(4).text=="Rest with Ines [G]")
+	assert("INES 30" in owner.room.stats.text)
+	assert("romance is optional" in owner.room.buttons.get_child(4).tooltip_text)
+	owner.room.player.position=owner.ines.ines.position+Vector2(46,0)
+	assert(not care.rest(),"Ines rest requires proximity to her actual actor")
 	owner.room.dispose()
+	owner.ines.ines.free()
 	owner.mechanic.ada.free()
 	print("CAMP CARE CONTROLLER PASS: Ada rest, shared partner cooldown, Eleanor bonus, staged failure, migration, pending outing, UI reset")
 	quit()
