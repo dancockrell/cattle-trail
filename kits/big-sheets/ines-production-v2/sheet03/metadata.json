@@ -1,0 +1,734 @@
+{
+  "character": "ines_vale",
+  "age": 23,
+  "sheet": 3,
+  "source": "source.png",
+  "texture": "atlas.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "source_mode": "RGB",
+  "source_sha256": "0ec3ca7cd63e450de46b95bd1be7393e728f28d081e9ccd6b317d1128b01904c",
+  "requested_alpha": true,
+  "actual_source_alpha": false,
+  "transparency_method": "Generated RGB checkerboard; neutral components >=12 pixels keyed, retaining source RGB. No repaint or scale.",
+  "cell": [
+    320,
+    320
+  ],
+  "anchor": [
+    160,
+    304
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "source_crop_xywh": [
+        68,
+        5,
+        119,
+        214
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "34c374ce25e0e7003c94b1fbb17ea547271a0d23e518ec51636c8698b01bf2da"
+    },
+    {
+      "index": 1,
+      "source_crop_xywh": [
+        285,
+        12,
+        138,
+        207
+      ],
+      "atlas_rect_xywh": [
+        320,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "0a92b334edf13eaced5b2966d4a05ff457ebcbb21c6df23800bed3931df504c1"
+    },
+    {
+      "index": 2,
+      "source_crop_xywh": [
+        482,
+        8,
+        132,
+        211
+      ],
+      "atlas_rect_xywh": [
+        640,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "c29ef695d017c0107947a0236fe1d34a35e2090459907b5ab02fccb46a51366e"
+    },
+    {
+      "index": 3,
+      "source_crop_xywh": [
+        717,
+        14,
+        147,
+        205
+      ],
+      "atlas_rect_xywh": [
+        960,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "40c929399defc085fe62bd5dd647767f7f7fe1f517d15f3c5c1ea0910b218bc1"
+    },
+    {
+      "index": 4,
+      "source_crop_xywh": [
+        917,
+        14,
+        148,
+        205
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "441a38e056c2aa56fc90f00b3630a66f2f84dd1a97e9cbc86ea5fc1e2e8ac985"
+    },
+    {
+      "index": 5,
+      "source_crop_xywh": [
+        1144,
+        9,
+        127,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "a779ca5b5ce805d9472c89d5db0fd808ae0eb689ef6a7cfc15d739f5d7d135e8"
+    },
+    {
+      "index": 6,
+      "source_crop_xywh": [
+        1359,
+        9,
+        135,
+        210
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "bec81de176b8caf99f4d5a85fdfd98aae1470936e076ac02b7ddae95d3d58242"
+    },
+    {
+      "index": 7,
+      "source_crop_xywh": [
+        1571,
+        7,
+        117,
+        212
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "babb16b0c784401782ae8ae66b879d6ef9ab7a411a4beacf1a28d051b2f6413c"
+    },
+    {
+      "index": 8,
+      "source_crop_xywh": [
+        67,
+        226,
+        120,
+        213
+      ],
+      "atlas_rect_xywh": [
+        0,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "eff2bc138691064fcca1e2338b4849c4754cd07c565f73881e19094c5cef92bf"
+    },
+    {
+      "index": 9,
+      "source_crop_xywh": [
+        283,
+        243,
+        128,
+        195
+      ],
+      "atlas_rect_xywh": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "74c1e1949c05ebb5f96220c99173957787fad15be6572918ee9b4b94a5369ca0"
+    },
+    {
+      "index": 10,
+      "source_crop_xywh": [
+        486,
+        274,
+        142,
+        164
+      ],
+      "atlas_rect_xywh": [
+        640,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "b70b15cd92a21c33abfed21addcbd087cc247bfc5f9d8e31d7bb5be33b8af766"
+    },
+    {
+      "index": 11,
+      "source_crop_xywh": [
+        712,
+        275,
+        132,
+        160
+      ],
+      "atlas_rect_xywh": [
+        960,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "cfd6b02da59c614a851832617a42bf73b705ea41aebb476ded0e12d0627ff099"
+    },
+    {
+      "index": 12,
+      "source_crop_xywh": [
+        923,
+        282,
+        137,
+        160
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "d7c7a6639948d4e6cf3c6bcfe913431182024e83ef9ddf097483f31ebeca9d1f"
+    },
+    {
+      "index": 13,
+      "source_crop_xywh": [
+        1150,
+        263,
+        125,
+        168
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "74ec0b9eef2f8b28afc9b9bc2b5c41829777a1074c530b5b1ec8af9e09dc5664"
+    },
+    {
+      "index": 14,
+      "source_crop_xywh": [
+        1358,
+        249,
+        127,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "ec08c8ffddd5ddcb9b0e857e519e2cc3c061f998216301c15bb540870b0c22cf"
+    },
+    {
+      "index": 15,
+      "source_crop_xywh": [
+        1569,
+        225,
+        121,
+        214
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "15cf91337e26c6d1e1336f6139e25efb90259dc74d871dd8a1909200720ec3c3"
+    },
+    {
+      "index": 16,
+      "source_crop_xywh": [
+        69,
+        446,
+        120,
+        212
+      ],
+      "atlas_rect_xywh": [
+        0,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "ba21755fc11ccb7fe4fadcadb680410f594e437798c4604f9ae132d5de26d22c"
+    },
+    {
+      "index": 17,
+      "source_crop_xywh": [
+        287,
+        447,
+        143,
+        211
+      ],
+      "atlas_rect_xywh": [
+        320,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "67f2d8e102135015029733f147f78f8f893923b238e5253cfbfe3c834edc6aed"
+    },
+    {
+      "index": 18,
+      "source_crop_xywh": [
+        493,
+        447,
+        121,
+        211
+      ],
+      "atlas_rect_xywh": [
+        640,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "c16fce12a86ebdfd2dde4b9ac963ca2aa54d243ec7df77e6158349608d9fd3e7"
+    },
+    {
+      "index": 19,
+      "source_crop_xywh": [
+        701,
+        447,
+        165,
+        218
+      ],
+      "atlas_rect_xywh": [
+        960,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "01fb2939f038661451d34e52ba652979fda3aa2da2af3f69b39da984292ca8d9"
+    },
+    {
+      "index": 20,
+      "source_crop_xywh": [
+        931,
+        446,
+        160,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "2778509fd9f7ef03a5c4c223d4ab5c8eca8820ae97a63edea59b04d89acd97fc"
+    },
+    {
+      "index": 21,
+      "source_crop_xywh": [
+        1149,
+        449,
+        118,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "39dda7c010edc8c8128544299b57f1c737d0b39b62fa3ec376e38d8b4c68f826"
+    },
+    {
+      "index": 22,
+      "source_crop_xywh": [
+        1358,
+        447,
+        121,
+        211
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "ebc526d1aebc7b27ec74ab091f725d267270cdd48381f2206ecdc622d7c08039"
+    },
+    {
+      "index": 23,
+      "source_crop_xywh": [
+        1575,
+        446,
+        119,
+        212
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "b4496662d0d8356fbda3fd3874df89f33d93c2fb12e37b2155658c2ec0ff4368"
+    },
+    {
+      "index": 24,
+      "source_crop_xywh": [
+        67,
+        668,
+        122,
+        212
+      ],
+      "atlas_rect_xywh": [
+        0,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "141efd8e33e24f391e21487c9f6ecd5ec42b868453bd8df591a9330aa3471f13"
+    },
+    {
+      "index": 25,
+      "source_crop_xywh": [
+        279,
+        669,
+        155,
+        211
+      ],
+      "atlas_rect_xywh": [
+        320,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "cddb1a679961ce29d0f17d6650c8b5f61ba532983ded2d32c63e9edb29adc7bd"
+    },
+    {
+      "index": 26,
+      "source_crop_xywh": [
+        485,
+        669,
+        166,
+        211
+      ],
+      "atlas_rect_xywh": [
+        640,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "07cb95aa3fbeade812b76a6f18db085f1ceef27100b8ba5c0a418926e6c72df3"
+    },
+    {
+      "index": 27,
+      "source_crop_xywh": [
+        717,
+        665,
+        159,
+        215
+      ],
+      "atlas_rect_xywh": [
+        960,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "e617f9e7c4e3b0c693c779f6433baf2d26b9e47cfa96136351a4876eb97e999e"
+    },
+    {
+      "index": 28,
+      "source_crop_xywh": [
+        912,
+        671,
+        189,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "dc8ab866c2171dc1e1c50dfa2ced37e1f898b305e1d4dcdc5451d5449efc52d2"
+    },
+    {
+      "index": 29,
+      "source_crop_xywh": [
+        1104,
+        666,
+        206,
+        214
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "43b39b5f11113dc5d385644f84a2718160060c164c0fa96b5dec3dd25bb7c9b0"
+    },
+    {
+      "index": 30,
+      "source_crop_xywh": [
+        1310,
+        671,
+        172,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "d184d713beaa825f26a91223b483ddc2e03a488d23d3c2bd4dd61b4be345f13c"
+    },
+    {
+      "index": 31,
+      "source_crop_xywh": [
+        1573,
+        670,
+        120,
+        210
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "4faa04f1ccff61a0a4076dd17d0c666f0668dff3ae78c24bfc7fe89f5bd2c7fe"
+    }
+  ],
+  "clips": {
+    "spirit_listen": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "examine_clue": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "ring_bell": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "guide_fireflies": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    }
+  },
+  "runtime_admitted": false,
+  "review_notes": "Spirit actions visibly vary; listening/return poses similar. Bell shape and firefly count vary. Review timing and continuity."
+}

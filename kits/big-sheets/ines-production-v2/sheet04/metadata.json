@@ -1,0 +1,766 @@
+{
+  "character": "ines_vale",
+  "age": 23,
+  "sheet": 4,
+  "source": "source.png",
+  "texture": "atlas.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "source_mode": "RGB",
+  "source_sha256": "31a33d860312f288d23e376a0852f23c1c4fce22aa1fc18d3b719516c30ca7cd",
+  "requested_alpha": true,
+  "actual_source_alpha": false,
+  "transparency_method": "Generated RGB checkerboard; neutral components >=12 pixels keyed, retaining source RGB. No repaint or scale.",
+  "cell": [
+    320,
+    320
+  ],
+  "anchor": [
+    160,
+    304
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "source_crop_xywh": [
+        54,
+        9,
+        120,
+        210
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "ba3c06220f7526e58afb2de6b203fe088eddee17e2ed1a564cbc69fc625c5c25"
+    },
+    {
+      "index": 1,
+      "source_crop_xywh": [
+        279,
+        15,
+        141,
+        204
+      ],
+      "atlas_rect_xywh": [
+        320,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "1fe81eebf9a96863c8b7718215678ac1e88520b21c6e5ad0636ae3994b27115b"
+    },
+    {
+      "index": 2,
+      "source_crop_xywh": [
+        501,
+        6,
+        127,
+        213
+      ],
+      "atlas_rect_xywh": [
+        640,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "0c954463f74200e60f8c499f9fa79d1f144f5bcf9c0fe6d00fff120d6fe52e90"
+    },
+    {
+      "index": 3,
+      "source_crop_xywh": [
+        700,
+        20,
+        131,
+        199
+      ],
+      "atlas_rect_xywh": [
+        960,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "8fd980af0a2734403cec52fbc07f0cd5d0f55a62a003c9e209cc8f753901eae7"
+    },
+    {
+      "index": 4,
+      "source_crop_xywh": [
+        935,
+        15,
+        121,
+        204
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "56eaa10240213c83fe2bde7f5645c68f1eb832c4486ee1fb1a5da458348601f5"
+    },
+    {
+      "index": 5,
+      "source_crop_xywh": [
+        1159,
+        14,
+        115,
+        205
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "79646671cb20ddbd5e1626be18c44e5c2fa660e6f8df9149d0a42d4aad0751a1"
+    },
+    {
+      "index": 6,
+      "source_crop_xywh": [
+        1373,
+        18,
+        121,
+        201
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "56c9362bd683b1c9bfff1174fee82197fd466c26b301daea4581420199995bab"
+    },
+    {
+      "index": 7,
+      "source_crop_xywh": [
+        1602,
+        37,
+        135,
+        182
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "5e353a175a32a8c534b884d37fd2d5d3a1d5633fa3b7dc63692c510e62c587f9"
+    },
+    {
+      "index": 8,
+      "source_crop_xywh": [
+        61,
+        232,
+        110,
+        208
+      ],
+      "atlas_rect_xywh": [
+        0,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "18bff070a5bfc00cbe000e4f6c7bfb16a8aa7cb29bc0de51aba968c9f904de6e"
+    },
+    {
+      "index": 9,
+      "source_crop_xywh": [
+        280,
+        243,
+        120,
+        198
+      ],
+      "atlas_rect_xywh": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "5a74531517b0941eace96dc1f9ce13c56a75705e81194cd352e708926c472785"
+    },
+    {
+      "index": 10,
+      "source_crop_xywh": [
+        480,
+        233,
+        188,
+        205
+      ],
+      "atlas_rect_xywh": [
+        640,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "eb040ed36916ddf699dff33740c308a67fc374bd20e6b74edca32f9d894620f8"
+    },
+    {
+      "index": 11,
+      "source_crop_xywh": [
+        700,
+        232,
+        170,
+        209
+      ],
+      "atlas_rect_xywh": [
+        960,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "deeb9a2758d091227e037bc0c511bed45e12a48abbde033ef7079ce28cef015d"
+    },
+    {
+      "index": 12,
+      "source_crop_xywh": [
+        941,
+        234,
+        117,
+        206
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "4db48ef156bbc8062c5c58fcd2c4afea384c64e5c59a0f88d32c4a1ee71d67c1"
+    },
+    {
+      "index": 13,
+      "source_crop_xywh": [
+        1156,
+        237,
+        119,
+        206
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "87693dca12f8ca22e0b75653ba5a986a7326709e95350e1caaf097efb2bdfabb"
+    },
+    {
+      "index": 14,
+      "source_crop_xywh": [
+        1374,
+        238,
+        179,
+        204
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "5c9efa4c55939ae626a3ddadf179c948b65f164d4006be0de9914c3b833a9b37"
+    },
+    {
+      "index": 15,
+      "source_crop_xywh": [
+        1605,
+        236,
+        127,
+        205
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "4b6d658bf2be999ef219e6a241212789025468db9e86a0cac8005fbb7f8c7f8f"
+    },
+    {
+      "index": 16,
+      "source_crop_xywh": [
+        42,
+        451,
+        134,
+        211
+      ],
+      "atlas_rect_xywh": [
+        0,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "c96961601739c85eb8dc09f06fd8d2393c75aab9d1242ca0d26e252e71b1072f"
+    },
+    {
+      "index": 17,
+      "source_crop_xywh": [
+        268,
+        478,
+        135,
+        182
+      ],
+      "atlas_rect_xywh": [
+        320,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "51184a1ac6741d68bde5024a28f5e01660724ed06d6a6386ebf2705f678ac669"
+    },
+    {
+      "index": 18,
+      "source_crop_xywh": [
+        486,
+        494,
+        127,
+        165
+      ],
+      "atlas_rect_xywh": [
+        640,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "145aa378a88c5b587061160d945570c98bab61f1dd8366d2ace2ceccf6d71b85"
+    },
+    {
+      "index": 19,
+      "source_crop_xywh": [
+        693,
+        503,
+        174,
+        159
+      ],
+      "atlas_rect_xywh": [
+        960,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "e27874c1c540de50b92f3b7ffae9a65da3d1468838e5cca0eeeefdecb33c300a"
+    },
+    {
+      "index": 20,
+      "source_crop_xywh": [
+        935,
+        451,
+        124,
+        214
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "313b8bf6870464d40f82512587a75be8327123289288787f75bbd99daf0faf68"
+    },
+    {
+      "index": 21,
+      "source_crop_xywh": [
+        1158,
+        452,
+        126,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "8d41694c294f08c131dfaa5ba9193daa6d770ef19dad1989278f8a3add201afc"
+    },
+    {
+      "index": 22,
+      "source_crop_xywh": [
+        1388,
+        453,
+        124,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "3c97a769fc56c6e50a9bef773117b05779a54b6998e77b73639f72361546fb11"
+    },
+    {
+      "index": 23,
+      "source_crop_xywh": [
+        1613,
+        446,
+        112,
+        219
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "4768ffc065261916ccd6b3e15552ffb845a524b01910c13fc8e8dada0375a6b8"
+    },
+    {
+      "index": 24,
+      "source_crop_xywh": [
+        40,
+        672,
+        150,
+        206
+      ],
+      "atlas_rect_xywh": [
+        0,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "e072d804b6defff1d6b108598d1f8b49683780face9a299202b61345bb6cae19"
+    },
+    {
+      "index": 25,
+      "source_crop_xywh": [
+        277,
+        673,
+        127,
+        207
+      ],
+      "atlas_rect_xywh": [
+        320,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "d7810d9d3005f22f342e44645da9a4a1d090a56b014514349a6d224a9a8ab0ea"
+    },
+    {
+      "index": 26,
+      "source_crop_xywh": [
+        481,
+        675,
+        138,
+        205
+      ],
+      "atlas_rect_xywh": [
+        640,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "1917007af920bada2f458b85b7b5bc4ed508b02591749b1dda90ceff5156c72a"
+    },
+    {
+      "index": 27,
+      "source_crop_xywh": [
+        693,
+        677,
+        164,
+        202
+      ],
+      "atlas_rect_xywh": [
+        960,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "062cf3d2169e0f28889bbb85a4c06e519ba12dffc60cb5eef0c22ead142543a1"
+    },
+    {
+      "index": 28,
+      "source_crop_xywh": [
+        931,
+        674,
+        147,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "bafb369f828b7bf2f59a8c5fecabda373dd9799a1270002e64e4c8966f52bffb"
+    },
+    {
+      "index": 29,
+      "source_crop_xywh": [
+        1160,
+        677,
+        128,
+        204
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "eea201121c8f6e726a814dba7122034c44d4f148f10d80bc10beb954a35cf5d8"
+    },
+    {
+      "index": 30,
+      "source_crop_xywh": [
+        1392,
+        665,
+        118,
+        217
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "959991215f1a9937a60fad1463cd9e1666b1bfddd5754b9c4b822d044dfe4026"
+    },
+    {
+      "index": 31,
+      "source_crop_xywh": [
+        1610,
+        669,
+        122,
+        211
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "bd5755485766cf8fbca29152238d3e5901f9ad8de685c225cc8fbb6c357e209a"
+    }
+  ],
+  "clips": {
+    "greet": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "laugh": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "explain_trail": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "invite": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "sit_down": {
+      "frames": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "drink": {
+      "frames": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "reassure": {
+      "frames": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "stretch": {
+      "frames": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    }
+  },
+  "runtime_admitted": false,
+  "review_notes": "Eight four-pose actions, no generated return padding requested. Clothing drift persists: reference-like teal bodice and cream sleeves instead of strictly single-color blouse. Review before runtime."
+}

@@ -1,0 +1,35 @@
+{
+  "character": "ada_mercer",
+  "age": 22,
+  "sheets": [
+    {
+      "metadata": "sheet01-metadata.json",
+      "source": "sheet01-source.png",
+      "atlas": "sheet01-atlas.png",
+      "frame_count": 32
+    },
+    {
+      "metadata": "sheet02-metadata.json",
+      "source": "sheet02-source.png",
+      "atlas": "sheet02-atlas.png",
+      "frame_count": 32
+    },
+    {
+      "metadata": "sheet03-metadata.json",
+      "source": "sheet03-source.png",
+      "atlas": "sheet03-atlas.png",
+      "frame_count": 32
+    },
+    {
+      "metadata": "sheet04-metadata.json",
+      "source": "sheet04-source.png",
+      "atlas": "sheet04-atlas.png",
+      "frame_count": 32
+    }
+  ],
+  "source_cells": 128,
+  "runtime_admitted": false,
+  "generation": "four built-in imagegen calls; no regeneration",
+  "wardrobe": "ivory tucked sleeveless blouse, one pair full-length brown trousers, boots, simple belt",
+  "review_boundary": "128 source cells are not 128 approved poses or finished loops. Variable action lengths; no duplicate padding added."
+}

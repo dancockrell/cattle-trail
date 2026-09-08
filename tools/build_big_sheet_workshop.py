@@ -15,13 +15,20 @@ for path in sorted(BASE.rglob('*metadata.json')):
     if not frames or any(f['atlas_rect'] is None for f in frames): continue
     relative=path.parent.relative_to(BASE).as_posix()
     rows=[]
-    for start in range(0,len(frames),8):
+    explicit=m.get('actions',m.get('clips',[]))
+    if isinstance(explicit,dict): explicit=[dict(value,name=name) for name,value in explicit.items() if isinstance(value,dict)]
+    if isinstance(explicit,list):
+        for clip in explicit:
+            ids=clip.get('frames',clip.get('source_frame_indices',[]))
+            if ids and all(isinstance(i,int) and 0<=i<len(frames) for i in ids):
+                rows.append({'label':clip.get('name','Action'),'frames':[frames[i]['atlas_rect'] for i in ids]})
+    for start in ([] if rows else range(0,len(frames),8)):
         f=frames[start]
         label=f.get('requested_row',f.get('requested_group',f.get('category',f'Row {start//8+1}')))
         rows.append({'label':str(label),'frames':[f['atlas_rect'] for f in frames[start:start+8]]})
     suffix='' if path.name=='metadata.json' else ' / '+path.stem.replace('-metadata','')
     records.append({'name':relative.replace('-',' ').replace('/',' / ')+suffix,'atlas':atlas.relative_to(BASE).as_posix(),
-        'source':relative+'/'+m.get('source','source.png'),'prompt':relative+'/'+m.get('prompt','prompt.txt'),'metadata':path.relative_to(BASE).as_posix(),
+        'source':relative+'/'+m.get('source',m.get('source_file','source.png')),'prompt':relative+'/'+m.get('prompt',m.get('prompt_file','prompt.txt')),'metadata':path.relative_to(BASE).as_posix(),
         'rows':rows,'count':len(frames),'dimensions':Image.open(atlas).size})
 loops=[]
 for path in sorted(BASE.rglob('*')):

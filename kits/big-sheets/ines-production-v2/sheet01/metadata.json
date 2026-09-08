@@ -1,0 +1,734 @@
+{
+  "character": "ines_vale",
+  "age": 23,
+  "sheet": 1,
+  "source": "source.png",
+  "texture": "atlas.png",
+  "source_size": [
+    1774,
+    887
+  ],
+  "source_mode": "RGB",
+  "source_sha256": "ba2b64c0215cee91d6c3c13abc2b87d0f4dfe0c7735cb325f399be4dd4478443",
+  "requested_alpha": true,
+  "actual_source_alpha": false,
+  "transparency_method": "Generated RGB checkerboard; neutral components >=12 pixels keyed, retaining source RGB. No repaint or scale.",
+  "cell": [
+    320,
+    320
+  ],
+  "anchor": [
+    160,
+    304
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "source_crop_xywh": [
+        54,
+        10,
+        127,
+        210
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "1291da4394bb4571853cdd12b2d8e35b40af7dc4bd224929150b488b74e0a9bf"
+    },
+    {
+      "index": 1,
+      "source_crop_xywh": [
+        281,
+        10,
+        122,
+        209
+      ],
+      "atlas_rect_xywh": [
+        320,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "dd44f93418919980864b14f8be24ac4e2d73282c842e94adf74f268a683b245e"
+    },
+    {
+      "index": 2,
+      "source_crop_xywh": [
+        501,
+        12,
+        126,
+        210
+      ],
+      "atlas_rect_xywh": [
+        640,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "c2c921f0c6016f7f928bd8bb4d8f0f91412f7105afc1892f0a1de18fbb42c6b1"
+    },
+    {
+      "index": 3,
+      "source_crop_xywh": [
+        714,
+        12,
+        134,
+        209
+      ],
+      "atlas_rect_xywh": [
+        960,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "c45818d45e256836ae1df8ad46eb44062206076c3e6e2d81a28a45b3faacfe81"
+    },
+    {
+      "index": 4,
+      "source_crop_xywh": [
+        942,
+        12,
+        126,
+        208
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "824849ad849ff44d525fa16aaed3cfb3bcf696bd88f9d8633bcff09a15c62217"
+    },
+    {
+      "index": 5,
+      "source_crop_xywh": [
+        1170,
+        11,
+        114,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "d2c07c7402ccf62fd10774a04465f2956963f647caf65fd863d628992a679cf0"
+    },
+    {
+      "index": 6,
+      "source_crop_xywh": [
+        1388,
+        12,
+        128,
+        207
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "8c9bd5650404c0df3d11fc9997311d714f0adc29d06074055a55f050d614455f"
+    },
+    {
+      "index": 7,
+      "source_crop_xywh": [
+        1603,
+        12,
+        132,
+        206
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        0,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "efd72015fe3328a11b7a1b0512b1d4c8349f9218e25cce4558024a8d8a9a6dbd"
+    },
+    {
+      "index": 8,
+      "source_crop_xywh": [
+        45,
+        232,
+        149,
+        209
+      ],
+      "atlas_rect_xywh": [
+        0,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "8cc6123103b3ee2fffea1f9fdfa2a050b482a43f769c2010655cd83928667776"
+    },
+    {
+      "index": 9,
+      "source_crop_xywh": [
+        264,
+        232,
+        161,
+        206
+      ],
+      "atlas_rect_xywh": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "a1c1c463311e0f28bfac07b5f0971c68d79dc4a808a6d309e66de81799a4b3d5"
+    },
+    {
+      "index": 10,
+      "source_crop_xywh": [
+        489,
+        232,
+        153,
+        209
+      ],
+      "atlas_rect_xywh": [
+        640,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "6f824c1640f989893b37e10f5489e3682b2a397c72f9fb45ad4d4f3516580916"
+    },
+    {
+      "index": 11,
+      "source_crop_xywh": [
+        708,
+        234,
+        160,
+        203
+      ],
+      "atlas_rect_xywh": [
+        960,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "90f5fa3fdade241517002d0f589a64c36ad0c0bf8ea6e9665f1356dee5bb9d99"
+    },
+    {
+      "index": 12,
+      "source_crop_xywh": [
+        929,
+        232,
+        167,
+        209
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "8160aa16fb7fb708587628e36df9ee1683ed48fd4141075ff2293b42a890bddb"
+    },
+    {
+      "index": 13,
+      "source_crop_xywh": [
+        1154,
+        232,
+        151,
+        207
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "3e0a408d0adc6925be12bd248907fb3b994509e25710911d1683cf9ea1b65ef6"
+    },
+    {
+      "index": 14,
+      "source_crop_xywh": [
+        1373,
+        232,
+        166,
+        208
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "4acb8692c0b76f0a7c8d388214bedc0c0153c25875ff45e50e676d148c781a97"
+    },
+    {
+      "index": 15,
+      "source_crop_xywh": [
+        1595,
+        232,
+        153,
+        207
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        320,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "a4f9e8bfb791108be90de5b7e83bfc075b325a583ec781e61bd528c8341f2ade"
+    },
+    {
+      "index": 16,
+      "source_crop_xywh": [
+        54,
+        449,
+        119,
+        209
+      ],
+      "atlas_rect_xywh": [
+        0,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "18f09bf2e59c8a58fd1e3e01e0c9bc707cad4e3009af9eaa282a2c76787ab5e6"
+    },
+    {
+      "index": 17,
+      "source_crop_xywh": [
+        279,
+        450,
+        127,
+        212
+      ],
+      "atlas_rect_xywh": [
+        320,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "194b13f0976947e4d9da0acd2f19c52411144d69dfe28d475b1ec26083aca2e8"
+    },
+    {
+      "index": 18,
+      "source_crop_xywh": [
+        501,
+        450,
+        126,
+        211
+      ],
+      "atlas_rect_xywh": [
+        640,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "33edebfe9e1ff89a7c2976dc3d5de481a7bb2461c35ba32ebf8643bf7cfeae09"
+    },
+    {
+      "index": 19,
+      "source_crop_xywh": [
+        722,
+        450,
+        123,
+        212
+      ],
+      "atlas_rect_xywh": [
+        960,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "323a8ef915524ff37cee15af353297bdbc1574c043f2dcfb05ebac6190b4fc46"
+    },
+    {
+      "index": 20,
+      "source_crop_xywh": [
+        943,
+        450,
+        133,
+        213
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "25d0d1fd3fa712b115d161fdd3010a102b272f8b388b3f9bf0b388774ac75ed8"
+    },
+    {
+      "index": 21,
+      "source_crop_xywh": [
+        1177,
+        449,
+        116,
+        215
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "b0eb583fa68033d5fbb666a2088339570b2da7a08b711315183aa67b9b016617"
+    },
+    {
+      "index": 22,
+      "source_crop_xywh": [
+        1395,
+        449,
+        118,
+        215
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "dea9d1216b57b3bfabd3a5b9aed70533f99c4bd281c8bf27914b277988feafa3"
+    },
+    {
+      "index": 23,
+      "source_crop_xywh": [
+        1608,
+        450,
+        130,
+        213
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        640,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "555240ea4e5c73cd5059378035ac3e77e9db969bc3eea003b2222f7247ce3e2f"
+    },
+    {
+      "index": 24,
+      "source_crop_xywh": [
+        74,
+        669,
+        102,
+        207
+      ],
+      "atlas_rect_xywh": [
+        0,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "87e5e26b4de26c306c8a7121ee5bc570d04d053751d020adb9be74a75a998887"
+    },
+    {
+      "index": 25,
+      "source_crop_xywh": [
+        300,
+        669,
+        99,
+        207
+      ],
+      "atlas_rect_xywh": [
+        320,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "6e9fb584161698af9802c5ce859abdf8ba8228356533bd72e40de1e9a61ab89a"
+    },
+    {
+      "index": 26,
+      "source_crop_xywh": [
+        522,
+        669,
+        105,
+        206
+      ],
+      "atlas_rect_xywh": [
+        640,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "3207e2890fa8b8cb59364fd3b7852e7c2c6c46f6a9d0ef31bbb1f0573013213d"
+    },
+    {
+      "index": 27,
+      "source_crop_xywh": [
+        745,
+        669,
+        95,
+        206
+      ],
+      "atlas_rect_xywh": [
+        960,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "82d1c5d7f7402e2b4da460aa5c1633f909493ed9f6febcc4350823f86aa96f8f"
+    },
+    {
+      "index": 28,
+      "source_crop_xywh": [
+        968,
+        670,
+        99,
+        206
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "fb90c4a0a58be7ac5b463f60a0f43448a3af38a0dbcd4f72a50a1bebf769417d"
+    },
+    {
+      "index": 29,
+      "source_crop_xywh": [
+        1187,
+        670,
+        92,
+        206
+      ],
+      "atlas_rect_xywh": [
+        1600,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "9b942cdf50d8479f2eb8ed4f6828ab7f15e31eaf86b1c69f236e86f8c5fa054e"
+    },
+    {
+      "index": 30,
+      "source_crop_xywh": [
+        1407,
+        669,
+        102,
+        210
+      ],
+      "atlas_rect_xywh": [
+        1920,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "f98fdce36598930186bd39064cc7efb3f6ea9e5b88de36fb37254c59be6340ea"
+    },
+    {
+      "index": 31,
+      "source_crop_xywh": [
+        1631,
+        670,
+        90,
+        204
+      ],
+      "atlas_rect_xywh": [
+        2240,
+        960,
+        320,
+        320
+      ],
+      "anchor": [
+        160,
+        304
+      ],
+      "native_sha256": "32615f8bd9e16fd8c24437c5ffb74eb77091421205e96052c9006c78bfd8e916"
+    }
+  ],
+  "clips": {
+    "walk_SE": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "walk_E": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "walk_NE_intended": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    },
+    "walk_N": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "frame_duration_ms": 125,
+      "loop": false,
+      "status": "review_only",
+      "recovery_note": "Reuse suitable existing return frames through metadata; never generate padding."
+    }
+  },
+  "runtime_admitted": false,
+  "review_notes": "Walking source repeats leading leg in several rows; NE row faces toward viewer rather than away. Not a complete directional gait."
+}

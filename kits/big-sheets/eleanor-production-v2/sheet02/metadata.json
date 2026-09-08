@@ -1,0 +1,946 @@
+{
+  "version": 1,
+  "source": "source.png",
+  "source_sha256": "6f76e57573322f3ee8b0584905a0ea8b344f10cb46fdc1fae0eb65d850a24f1b",
+  "atlas": "atlas.png",
+  "cell": [
+    320,
+    320
+  ],
+  "anchor": [
+    160,
+    308
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        67,
+        8,
+        101,
+        230
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        110,
+        78
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "354b25f202eb4bc8a54ced097debe37e1352fd363e6aa28c89a4b3f30a4ccafb"
+    },
+    {
+      "index": 1,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        289,
+        8,
+        95,
+        230
+      ],
+      "atlas_rect": [
+        320,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        113,
+        78
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "f9fde50618f9f5b3f93c38575bce4b63b733a66689d08b72dfb7b3c66cd549bb"
+    },
+    {
+      "index": 2,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        514,
+        8,
+        80,
+        229
+      ],
+      "atlas_rect": [
+        640,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        120,
+        79
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "d1115b9b87d4b83ee0f7bf5aa3193f68451999f8ebff644c355cfcde6da2706d"
+    },
+    {
+      "index": 3,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        731,
+        8,
+        90,
+        229
+      ],
+      "atlas_rect": [
+        960,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        115,
+        79
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "27800089058693d02a80c6c3277443b84882d3b1dcfce9e348dc409f70dc0b2c"
+    },
+    {
+      "index": 4,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        947,
+        7,
+        96,
+        230
+      ],
+      "atlas_rect": [
+        1280,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        78
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "c2ec945cc15b2b7d811e763a1670546df237bbc13a79be05a1ca9486cbca2b08"
+    },
+    {
+      "index": 5,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        1169,
+        8,
+        92,
+        229
+      ],
+      "atlas_rect": [
+        1600,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        114,
+        79
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "46b7fea8c35036aee289bad7f9d4862d020bf19b7633f6f20bdead09270b2e62"
+    },
+    {
+      "index": 6,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        1399,
+        8,
+        80,
+        229
+      ],
+      "atlas_rect": [
+        1920,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        120,
+        79
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "7f465de97f7659fa8c7a1314ed8d5589c38e02e1d7ac73cdd76ebaccc8719210"
+    },
+    {
+      "index": 7,
+      "requested_row": "turn_clockwise",
+      "source_rect": [
+        1612,
+        8,
+        96,
+        230
+      ],
+      "atlas_rect": [
+        2240,
+        0,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        78
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "d68f3aea334d932d6f1f9657023ec34dd53933ac67db48b4ab93abc1c9a55265"
+    },
+    {
+      "index": 8,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        67,
+        243,
+        105,
+        221
+      ],
+      "atlas_rect": [
+        0,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        108,
+        87
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "2b3c3b25ab6752f12c247e0afb8fc77ffd46106b1c8965204b51f6981b682c30"
+    },
+    {
+      "index": 9,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        278,
+        242,
+        106,
+        222
+      ],
+      "atlas_rect": [
+        320,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        107,
+        86
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "169ad7055770bd4478a1f22bb9e7d2fb25968917bedc3355bccc2709bb359e6c"
+    },
+    {
+      "index": 10,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        489,
+        243,
+        116,
+        221
+      ],
+      "atlas_rect": [
+        640,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        102,
+        87
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "a94ec626b386933170d9721685ab464e94af4237718db07f581e3b9aa3494f30"
+    },
+    {
+      "index": 11,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        714,
+        242,
+        110,
+        221
+      ],
+      "atlas_rect": [
+        960,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        105,
+        87
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "531e59576ce2c60ab5501d7b7472a0a3f5f5041deea1a60803eccbafced7491b"
+    },
+    {
+      "index": 12,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        941,
+        243,
+        107,
+        221
+      ],
+      "atlas_rect": [
+        1280,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        107,
+        87
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "ff44bcf36186daedcbe81e8e2005d535b2a3e53242b55ccdd005fc773ca38fca"
+    },
+    {
+      "index": 13,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        1166,
+        243,
+        111,
+        220
+      ],
+      "atlas_rect": [
+        1600,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        105,
+        88
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "7fd574ab26e7269c2530fa1acca8e3926f2b0f4477055d161ae523bccf776d7a"
+    },
+    {
+      "index": 14,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        1387,
+        243,
+        115,
+        221
+      ],
+      "atlas_rect": [
+        1920,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        103,
+        87
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "3fe18ecdd711485494e6a36c4e4f53fc120915f641e9bc9069c920f9569ac6cf"
+    },
+    {
+      "index": 15,
+      "requested_row": "turn_counterclockwise",
+      "source_rect": [
+        1607,
+        242,
+        106,
+        222
+      ],
+      "atlas_rect": [
+        2240,
+        320,
+        320,
+        320
+      ],
+      "offset": [
+        107,
+        86
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "a53f4d63732947b4527aad94d0f67ce146db7ed0f91e0ce1a4704e550711855f"
+    },
+    {
+      "index": 16,
+      "requested_row": "pivot",
+      "source_rect": [
+        67,
+        468,
+        97,
+        217
+      ],
+      "atlas_rect": [
+        0,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        91
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "766749e0ddfd938b4ee93a52e9c7a7d8fc86f9d257c15a0cff2a6a4941acc57d"
+    },
+    {
+      "index": 17,
+      "requested_row": "pivot",
+      "source_rect": [
+        283,
+        469,
+        103,
+        224
+      ],
+      "atlas_rect": [
+        320,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        109,
+        84
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "e2fcea7037d88f21637c26a38b01f96d6f93743afe230f99db54c422f3c40965"
+    },
+    {
+      "index": 18,
+      "requested_row": "pivot",
+      "source_rect": [
+        509,
+        469,
+        92,
+        220
+      ],
+      "atlas_rect": [
+        640,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        114,
+        88
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "c643c6a911f06caaaaaed0132320c6cb9b35a86370fd80f54edbcb7e593cca14"
+    },
+    {
+      "index": 19,
+      "requested_row": "pivot",
+      "source_rect": [
+        717,
+        468,
+        105,
+        216
+      ],
+      "atlas_rect": [
+        960,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        108,
+        92
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "a33ecbe4b09053e980b4158b80d221b33e2b1a47d5b8b7fcfbfa39faf5d226d4"
+    },
+    {
+      "index": 20,
+      "requested_row": "pivot",
+      "source_rect": [
+        947,
+        468,
+        101,
+        224
+      ],
+      "atlas_rect": [
+        1280,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        110,
+        84
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "93f775e0c24f71496a35f53b75042969528aba2bc0867b64b8d82f2fe36ec6e5"
+    },
+    {
+      "index": 21,
+      "requested_row": "pivot",
+      "source_rect": [
+        1169,
+        468,
+        93,
+        223
+      ],
+      "atlas_rect": [
+        1600,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        114,
+        85
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "899125e727df6f39988086637a3edb5633e72c3c24aa2fb33ffa21f3277d0bca"
+    },
+    {
+      "index": 22,
+      "requested_row": "pivot",
+      "source_rect": [
+        1386,
+        468,
+        103,
+        222
+      ],
+      "atlas_rect": [
+        1920,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        109,
+        86
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "2bfab0376f119073a416974ecda987e622687652baa80e6ed99fdd68099cce0f"
+    },
+    {
+      "index": 23,
+      "requested_row": "pivot",
+      "source_rect": [
+        1611,
+        469,
+        97,
+        216
+      ],
+      "atlas_rect": [
+        2240,
+        640,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        92
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "6453cb059ca03075c9a6a82832bf3582edb83e109929a4f293548fd8303a738d"
+    },
+    {
+      "index": 24,
+      "requested_row": "crouch",
+      "source_rect": [
+        67,
+        688,
+        96,
+        198
+      ],
+      "atlas_rect": [
+        0,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        110
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "fc4d70d1948b31b5ca12008442b3598ce61eced1c3a50aeeaaa233b11bdb0476"
+    },
+    {
+      "index": 25,
+      "requested_row": "crouch",
+      "source_rect": [
+        284,
+        700,
+        95,
+        179
+      ],
+      "atlas_rect": [
+        320,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        113,
+        129
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "76fda9f0334a400f0104f3d3e87f48bc0ff985bfd5f334ed3f101b177579dfa4"
+    },
+    {
+      "index": 26,
+      "requested_row": "crouch",
+      "source_rect": [
+        505,
+        717,
+        97,
+        160
+      ],
+      "atlas_rect": [
+        640,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        148
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "f3a76f18dcd62aae33315beaf70da46349bd0ba6680e6926a0a2533121201f47"
+    },
+    {
+      "index": 27,
+      "requested_row": "crouch",
+      "source_rect": [
+        716,
+        727,
+        113,
+        147
+      ],
+      "atlas_rect": [
+        960,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        104,
+        161
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "0f3c79a3d1521865a16e721a6fb9731eb8c83e98ac3114c14005ec75f34d3c22"
+    },
+    {
+      "index": 28,
+      "requested_row": "crouch",
+      "source_rect": [
+        942,
+        752,
+        110,
+        123
+      ],
+      "atlas_rect": [
+        1280,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        105,
+        185
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "07fbbf3a0ee51e6dbcb6c1353afa106fa67dc920120f0dbf2175d23bfc3ec7e6"
+    },
+    {
+      "index": 29,
+      "requested_row": "crouch",
+      "source_rect": [
+        1168,
+        725,
+        100,
+        152
+      ],
+      "atlas_rect": [
+        1600,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        110,
+        156
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "9aa6f66cb462b4894b7511ef896858c554d254273cbc5aeb76edabbaafb9987d"
+    },
+    {
+      "index": 30,
+      "requested_row": "crouch",
+      "source_rect": [
+        1392,
+        693,
+        88,
+        186
+      ],
+      "atlas_rect": [
+        1920,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        116,
+        122
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "b6e2ad58b83a0938e3c23eaee8e2e59f72abd169cc4854675120db13b89f64ca"
+    },
+    {
+      "index": 31,
+      "requested_row": "crouch",
+      "source_rect": [
+        1611,
+        688,
+        97,
+        198
+      ],
+      "atlas_rect": [
+        2240,
+        960,
+        320,
+        320
+      ],
+      "offset": [
+        112,
+        110
+      ],
+      "anchor": [
+        160,
+        308
+      ],
+      "touches_grid_boundary": false,
+      "extraction": "whole connected figure outside artificial grid boundaries",
+      "native_sha256": "dc475ef59a383fb9635f8b8561dc70c2c30270e27b48b1ebd2ff3c42f0cf5e0f"
+    }
+  ],
+  "actions": [
+    {
+      "name": "turn_clockwise",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "runtime_admitted": false
+    },
+    {
+      "name": "turn_counterclockwise",
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "runtime_admitted": false
+    },
+    {
+      "name": "pivot",
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "runtime_admitted": false
+    },
+    {
+      "name": "crouch",
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "runtime_admitted": false
+    }
+  ],
+  "runtime_admitted": false,
+  "alpha": "Source RGB painted checker; border-connected neutral key, binary alpha.",
+  "processing": "Native whole connected figures, no rescale or drawing; bottom alignment for review only.",
+  "limitations": [
+    "Detached effects and motion marks omitted; no seamless loop inferred from cell count.",
+    "Enclosed checker pixels may remain.",
+    "Walk repeats leading leg; shoot pose 21 has an unwanted second revolver."
+  ]
+}
