@@ -1,6 +1,7 @@
 extends Node2D
 const AnimationPhase = preload("res://scripts/animation_phase.gd")
 const TurnTransition = preload("res://scripts/turn_transition.gd")
+const ActionSequence = preload("res://scripts/action_sequence.gd")
 
 signal action_event(event_name: String)
 
@@ -18,6 +19,8 @@ var facing_bias := 1.2
 var clip_events: Dictionary = {}
 var active_clip := ""
 var event_fired := false
+var action_sequence = ActionSequence.new()
+var action_generation := 0
 var clip_anchors: Dictionary = {}
 var clip_indices: Dictionary = {}
 var frame_sockets: Dictionary = {}
@@ -104,6 +107,9 @@ func uses_procedural_rope() -> bool:
 
 func pose(moving: bool, direction: Vector2 = Vector2.ZERO, speed: float = -1.0, gait: String = "walk") -> void:
 	if action_time > 0: return
+	if action_sequence.active:
+		action_sequence.cancel()
+		action_generation += 1
 	if directional:
 		var previous_facing := facing
 		if direction.length_squared() > 0.01:
@@ -174,16 +180,21 @@ func action(name: String, direction := Vector2.RIGHT) -> void:
 	var clip := name + "_" + direction_name(direction) if directional else name
 	if art.sprite_frames.has_animation(name): clip = name
 	if not art.sprite_frames.has_animation(clip): return
+	var holds := []
+	for weight in clip_durations(clip): holds.append(float(weight)/art.sprite_frames.get_animation_speed(clip))
+	var release_frame := int(clip_events.get(clip,{}).get("frame",-1))
+	if not action_sequence.start(holds,release_frame): return
+	action_generation += 1
 	turn.cancel()
 	facing = direction_name(direction)
 	art.speed_scale = 1.0
 	active_clip = clip
 	event_fired = false
 	art.play(clip)
+	# Avoid a second independent AnimatedSprite clock drifting away from release timing.
+	art.pause()
 	art.set_frame_and_progress(0,0)
-	action_time = 0.0
-	for index in range(art.sprite_frames.get_frame_count(clip)):
-		action_time += art.sprite_frames.get_frame_duration(clip,index) / art.sprite_frames.get_animation_speed(clip)
+	action_time = action_sequence.total
 
 func _process(delta: float) -> void:
 	if turn.active:
@@ -196,10 +207,15 @@ func _process(delta: float) -> void:
 				var selected := AnimationPhase.frame_at(clip_durations(turn_target_clip),completion.phase)
 				art.set_frame_and_progress(int(selected.x),selected.y)
 	if action_time > 0:
-		if not event_fired and clip_events.has(active_clip):
-			var event: Dictionary = clip_events[active_clip]
-			if art.frame >= int(event.frame):
-				event_fired = true
-				action_event.emit(str(event.name))
-		action_time = maxf(0, action_time - delta)
+		var generation := action_generation
+		var step: Dictionary = action_sequence.advance(delta)
+		if step.is_empty(): return
+		if int(step.event_frame)>=0:
+			# Sample the authored release pose before listeners read its hand/weapon socket.
+			art.set_frame_and_progress(int(step.event_frame),0)
+			event_fired = true
+			action_event.emit(str(clip_events[active_clip].name))
+			if generation!=action_generation or action_time<=0: return
+		art.set_frame_and_progress(int(step.frame),float(step.progress))
+		action_time = float(step.remaining)
 		if action_time == 0: pose(false)
