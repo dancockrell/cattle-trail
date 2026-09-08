@@ -1,0 +1,84 @@
+{
+  "id": "ada-high-angle-east-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "detailed_high_angle_master_candidate",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "native_image": "ada-native.png",
+  "native_size": [
+    645,
+    1825
+  ],
+  "native_rgba_sha256": "20f560dc9c358d51c3805e3fac2c717252cd71dee76156ee24ff40929c242936",
+  "source": "kits/wardrobe/ada-high-angle-east-v1/source.png",
+  "source_sha256": "ebca7f170ca824a885ff69a2507114f76416d2c614d762871ddf0f10abb2e3a0",
+  "prompt": "prompt.txt",
+  "references": [
+    {
+      "path": "kits/wardrobe/ada-high-angle-v1/ada-native.png",
+      "sha256": "8c95f1dfaaaef713905721d597f8a11519b2a43b78392bf7511892d7750d9810",
+      "role": "single wholebody edit target, identity and camera authority"
+    }
+  ],
+  "source_alpha_bounds_xyxy": [
+    71,
+    32,
+    716,
+    1857
+  ],
+  "alpha_bounds_xyxy": [
+    95,
+    84,
+    152,
+    244
+  ],
+  "offset": [
+    95,
+    84
+  ],
+  "atlas_rect": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "facing": "east_southeast_oblique_candidate",
+  "camera": "fixed elevated highthreequarter downward view",
+  "camera_confidence": "elevated crown/shoulder/bootplanes retained; exact east bearing not established",
+  "clips": {
+    "idle_oblique_candidate": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "review": [
+    "Head is closer to right profile with one visible eye, but torso and boottoes remain oblique down-right; partial rotation rather than strict east endpoint.",
+    "Retains Ada master identity and period-material wardrobe.",
+    "Both feet and complete silhouette intact; exposedskin PG13 with opaque garmentcoverage.",
+    "Static master only, no animation or rendered-game approval.",
+    "Broad crown and boot upperplanes maintain elevatedcamera. Complete boots visible; no authoredturn or runtime admission."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta chromakey",
+      "wholefigure nativecrop retained",
+      "nearest160pxheight derivative",
+      "wholefigure offset in256cell anchor128244"
+    ]
+  },
+  "requested_facing": "east"
+}

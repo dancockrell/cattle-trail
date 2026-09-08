@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "character_id": "ines_vale",
+  "age": 23,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "usage": "pose_reference_only",
+  "texture": "res://kits/workcycles/ines-high-angle-passing-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "front-right/southeast",
+      "rgba_sha256": "aed8290573d90f558ea04b06197fe341870e72fcd0fdc809f4aab0ad615fa534",
+      "observed_pose": "Near knee bends and near boot advances southeast; far leg recedes beneath skirt. Feet remain separated fore/aft rather than a narrow ankle-level mid-pass.",
+      "foot_notes": "Far boot is visually behind hip and appears elevated; grounded far support and near lifted heel are not unequivocal. Do not label as verified planted-far mid-passing.",
+      "status": "candidate_single_advancing_pose_not_verified_mid_passing"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/workcycles/ines-high-angle-passing-v1/metadata.json",
+  "source_metadata_sha256": "c8580201191a5e39643a7dc48215482f90d395ec74d38e05f90db8c39a776454",
+  "texture_sha256": "c92316851c08d8824d475a9714d1488064a4b47a34d47a5ac21cfe4d3162dc56",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work.",
+    "Near knee bends and near boot advances southeast; far leg recedes beneath skirt. Feet remain separated fore/aft rather than a narrow ankle-level mid-pass.",
+    "Far boot is visually behind hip and appears elevated; grounded far support and near lifted heel are not unequivocal. Do not label as verified planted-far mid-passing.",
+    "Clearly above head; crown, upper shoulders and boot top planes visible; stronger vertical foreshortening than prior turnaround. Exact degrees not measurable from generated sprite."
+  ],
+  "observed_facing": "front-right/southeast"
+}

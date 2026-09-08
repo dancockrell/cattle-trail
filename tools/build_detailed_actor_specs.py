@@ -17,7 +17,17 @@ PACKAGES = [
     ('kits/wardrobe/ada-high-angle-v1', 'ada_mercer', False),
     ('kits/wardrobe/eleanor-high-angle-v1', 'eleanor', False),
     ('kits/wardrobe/ines-high-angle-views-v1', 'ines_vale', False),
+    ('kits/wardrobe/ada-high-angle-east-v1', 'ada_mercer', False),
+    ('kits/wardrobe/eleanor-high-angle-northeast-v1', 'eleanor', False),
+    ('kits/workcycles/ines-high-angle-passing-v1', 'ines_vale', False),
 ]
+
+# Engine-facing held-pose defaults follow observed bearings, never the filename's request.
+OBSERVED_DEFAULTS = {
+    'ada-high-angle-east-v1': 'southeast',  # Partial east rotation, still oblique down-right.
+    'eleanor-high-angle-northeast-v1': 'northeast',
+    'ines-high-angle-passing-v1': 'southeast',
+}
 
 
 def build():
@@ -58,8 +68,15 @@ def build():
             bounds = image.getbbox()
             assert bounds and bounds[3] - bounds[1] == 160
             observation = record.get('actual_facing', record.get('observed_facing', record.get('observed_pose', record.get('actual_phase', record.get('phase', record.get('status', 'unverified'))))))
+            if folder.name in OBSERVED_DEFAULTS:
+                observation = record.get('actual_facing', record.get('observed_facing', record.get('facing', observation)))
             frames.append({'index': ordinal, 'atlas_rect': rect, 'observation': observation,
                            'rgba_sha256': hashlib.sha256(image.tobytes()).hexdigest()})
+            if folder.name in OBSERVED_DEFAULTS:
+                # Keep pose and projection caveats separate from facing for downstream curation.
+                for key in ['observed_pose', 'foot_notes', 'actual_camera', 'camera_confidence', 'status']:
+                    if key in record:
+                        frames[-1][key] = record[key]
             anchors[str(ordinal)] = anchor
             name = 'idle_' + record['requested_facing'] if endviews else 'pose_%02d' % ordinal
             clips[name] = {'frames': [ordinal], 'fps': 1, 'loop': False}
@@ -85,7 +102,8 @@ def build():
             'usage': 'pose_reference_only' if folder.name == 'eleanor-detailed-recovered-walk-v1' else 'candidate_art',
             'texture': 'res://' + texture_path.relative_to(ROOT).as_posix(),
             'cell': [256, 256], 'anchor': metadata['anchor'], 'pixels_per_world_unit': 4,
-            'directional': endviews, 'default_facing': 'southeast' if len(frames)==1 else 'east',
+            'directional': endviews,
+            'default_facing': OBSERVED_DEFAULTS.get(folder.name, 'southeast' if len(frames)==1 else 'east'),
             'frames': frames, 'frame_anchors': anchors, 'clips': clips,
             'turn_transitions': {}, 'source_metadata': metadata_path.relative_to(ROOT).as_posix(),
             'source_metadata_sha256': hashlib.sha256(metadata_path.read_bytes()).hexdigest(),
@@ -97,6 +115,16 @@ def build():
                 'Only documented facings exist; camera and costume continuity still need work.',
             ],
         }
+        if folder.name in OBSERVED_DEFAULTS:
+            spec['usage'] = 'pose_reference_only'
+            spec['limits'].extend(metadata.get('limitations', []))
+            spec['limits'].extend(metadata.get('review', []))
+            for key in ['observed_pose', 'foot_notes', 'actual_camera', 'observed_elevation', 'camera_confidence']:
+                if key in metadata:
+                    spec['limits'].append(metadata[key])
+            spec['observed_facing'] = metadata.get('actual_facing', metadata.get('observed_facing', metadata.get('facing')))
+            assert len(frames) == 1 and set(clips) == {'pose_00', 'idle'}
+            assert all(not clip['loop'] for clip in clips.values())
         assert not any(name.startswith('walk') for name in clips)
         (folder / 'actor-spec.json').write_text(json.dumps(spec, indent=2) + '\n', encoding='utf-8')
         total += len(frames)

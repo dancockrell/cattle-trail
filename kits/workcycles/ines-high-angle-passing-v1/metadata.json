@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "ines-high-angle-passing-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "2b33b9eec65496ab7b2b65322163de1f958fb301cfe0ac0fe706fcc9b623fe2f",
+  "source_size": [
+    1024,
+    1536
+  ],
+  "native_image": "ines-native.png",
+  "trim_bounds_xyxy": [
+    141,
+    48,
+    879,
+    1465
+  ],
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "atlas_rect_xywh": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "requested_facing": "southeast",
+  "observed_facing": "front-right/southeast",
+  "requested_elevation_degrees": 40,
+  "observed_elevation": "Clearly above head; crown, upper shoulders and boot top planes visible; stronger vertical foreshortening than prior turnaround. Exact degrees not measurable from generated sprite.",
+  "status": "candidate_single_advancing_pose_not_verified_mid_passing",
+  "runtime_admitted": false,
+  "animations": {},
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/wardrobe/ines-high-angle-v1/ines-native.png",
+  "camera_reference": "source/reference_0.png",
+  "transform": "Magenta key; preserve native whole-figure trim; nearest-neighbor whole-figure resize160px; no repaint/rig/assembly",
+  "approval_scope": "No room/camera approval claimed. Prior clothing coverage reference approved, this new period costume remains candidate.",
+  "requested_pose": "Far boot planted under hip; near leg passing low with lifted heel.",
+  "observed_pose": "Near knee bends and near boot advances southeast; far leg recedes beneath skirt. Feet remain separated fore/aft rather than a narrow ankle-level mid-pass.",
+  "foot_notes": "Far boot is visually behind hip and appears elevated; grounded far support and near lifted heel are not unequivocal. Do not label as verified planted-far mid-passing.",
+  "duration_ms_provisional": 160
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "usage": "pose_reference_only",
+  "texture": "res://kits/wardrobe/eleanor-high-angle-northeast-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "northeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "northeast_rear_right",
+      "rgba_sha256": "bfe5d109ebd508f9b00ee0d77fb5d751c132757819627d5de953637761ee1729",
+      "actual_camera": "Rear-right/northeast: broad crown, back of shoulders and braid visible; camera elevated, torso less foreshortened than SE master. Full boot silhouette visible; exactdegrees notmeasured.",
+      "status": "high_angle_master_candidate"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/wardrobe/eleanor-high-angle-northeast-v1/metadata.json",
+  "source_metadata_sha256": "8168a1e8282b1a2b024a5bbb17eee6c3311920e74007d1454902bc641c63d4e5",
+  "texture_sha256": "a8e7e645460c22a1c2e5649c556499b6ebefabfc0e16a20639100bb653768f76",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work.",
+    "Static master only; no turn/walk clip.",
+    "Feet at different depths; rear boot heel reads raised, so fully grounded neutral stance remains uncertain.",
+    "Costume remains period-inspired fantasy rather than reconstructed1870sdress.",
+    "Rear-right/northeast: broad crown, back of shoulders and braid visible; camera elevated, torso less foreshortened than SE master. Full boot silhouette visible; exactdegrees notmeasured."
+  ],
+  "observed_facing": "northeast_rear_right"
+}

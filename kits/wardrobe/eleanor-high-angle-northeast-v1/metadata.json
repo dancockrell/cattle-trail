@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "id": "eleanor_high_angle_northeast",
+  "age": 24,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "body_height": 160,
+  "rect": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "source": "source.png",
+  "source_sha256": "cfd10536e4e03c0bac6d5fe869f3be177ddf2fbeff932e2a3bb93285e2343986",
+  "source_rect": [
+    51,
+    7,
+    765,
+    1798
+  ],
+  "size": [
+    68,
+    160
+  ],
+  "offset": [
+    94,
+    84
+  ],
+  "prompt": "prompt.txt",
+  "references": [
+    {
+      "role": "identity_and_camera",
+      "path": "kits/wardrobe/eleanor-high-angle-v1/eleanor-native.png",
+      "sha256": "817af71b44af299384e36d92ba0820199147ec7f2d6101a8da8cdfd93d1bcc3f"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "high_angle_master_candidate",
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "actual_facing": "northeast_rear_right",
+  "actual_camera": "Rear-right/northeast: broad crown, back of shoulders and braid visible; camera elevated, torso less foreshortened than SE master. Full boot silhouette visible; exactdegrees notmeasured.",
+  "identity": "Adult24 Eleanor chestnutbraid/creamwovenblouse/indigosplitridingskirtoveropaquebrownunderlayer/leatherboots/brasscompass.",
+  "limitations": [
+    "Static master only; no turn/walk clip.",
+    "Feet at different depths; rear boot heel reads raised, so fully grounded neutral stance remains uncertain.",
+    "Costume remains period-inspired fantasy rather than reconstructed1870sdress."
+  ],
+  "processing": "Wholefigure sourcebackground huekey, fullnative transparentcrop, nearest160height padded256cell; no painting rigging or bodypart manipulation."
+}
