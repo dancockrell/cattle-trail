@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "character_id": "eleanor",
+  "age": 24,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "usage": "candidate_art",
+  "texture": "res://kits/wardrobe/eleanor-high-angle-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "high_angle_master_candidate",
+      "rgba_sha256": "990a9cf8ebbc660f213f6d27f901844a6986c2287efe43e9f6024892a9ef893d"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/wardrobe/eleanor-high-angle-v1/metadata.json",
+  "source_metadata_sha256": "d3e915401aec207382b2c8de121903b56bd45d745477cb99d7906a456c81ff8e",
+  "texture_sha256": "06e31160449709b282574705c9a2c9c0d8179d5abd1fe18cec2b5b890094381f",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

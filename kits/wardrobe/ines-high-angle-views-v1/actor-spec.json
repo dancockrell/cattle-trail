@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "character_id": "ada_mercer",
-  "age": 22,
+  "character_id": "ines_vale",
+  "age": 23,
   "status": "candidate_sheet_package",
   "runtime_admitted": false,
   "usage": "candidate_art",
-  "texture": "res://kits/workcycles/ada-detailed-turnaround-v1/atlas.png",
+  "texture": "res://kits/wardrobe/ines-high-angle-views-v1/atlas.png",
   "cell": [
     256,
     256
   ],
   "anchor": [
     128,
-    240
+    244
   ],
   "pixels_per_world_unit": 4,
-  "directional": true,
+  "directional": false,
   "default_facing": "east",
   "frames": [
     {
@@ -26,8 +26,8 @@
         256,
         256
       ],
-      "observation": "southeast_front_oblique",
-      "rgba_sha256": "cb54add43287bb3ec70012968b23d891ac0d8639b2a74bdfa7087235ca83482e"
+      "observation": "right-facing front-oblique; not strict east profile",
+      "rgba_sha256": "9b97df06ea950e1230cfeeec24ab92070e0d3526a2dbd402683d509acd3417f1"
     },
     {
       "index": 1,
@@ -37,69 +37,47 @@
         256,
         256
       ],
-      "observation": "east_side_profile",
-      "rgba_sha256": "bf4b1aa1a20a46b8b766c6a768a3853401531087671882d2b45ab817f95e6461"
-    },
-    {
-      "index": 2,
-      "atlas_rect": [
-        512,
-        0,
-        256,
-        256
-      ],
-      "observation": "northeast_back_oblique",
-      "rgba_sha256": "33a9db57308a87d60249cfc06cf9b1d49fac7f68a59c9da13a55cbed0d5444ec"
+      "observation": "back-right three-quarter/northeast",
+      "rgba_sha256": "1d21b46493cd96c3354fc7203a38e9da9d4ae5e58e9c028fa3ad8fa4c8ff1d4b"
     }
   ],
   "frame_anchors": {
     "0": [
       128,
-      240
+      244
     ],
     "1": [
       128,
-      240
-    ],
-    "2": [
-      128,
-      240
+      244
     ]
   },
   "clips": {
-    "idle_southeast": {
+    "pose_00": {
       "frames": [
         0
       ],
       "fps": 1,
       "loop": false
     },
-    "idle_east": {
+    "pose_01": {
       "frames": [
         1
-      ],
-      "fps": 1,
-      "loop": false
-    },
-    "idle_northeast": {
-      "frames": [
-        2
       ],
       "fps": 1,
       "loop": false
     },
     "idle": {
       "frames": [
-        1
+        0
       ],
       "fps": 1,
       "loop": false
     }
   },
   "turn_transitions": {},
-  "source_metadata": "kits/workcycles/ada-detailed-turnaround-v1/metadata.json",
-  "source_metadata_sha256": "12b0ae472ed3b6b19f80a4286f03b8fc946944415a456317b4b76dd674d77ec4",
-  "texture_sha256": "5985eda91fbc0a22dd6ec05bc5da0f7862daa6dd440e3abf36d5e125dde7cd62",
+  "source_metadata": "kits/wardrobe/ines-high-angle-views-v1/metadata.json",
+  "source_metadata_sha256": "bf25179751e8b79210a2646c3a34b6f01a5dd524f558fcdc0b20bb350864912f",
+  "texture_sha256": "94cec9c3de74e60011cda85befddb5f7b9129b87e68ad2cc6db09fa28df5be0a",
   "limits": [
     "Not selected by the room or live character factory.",
     "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",

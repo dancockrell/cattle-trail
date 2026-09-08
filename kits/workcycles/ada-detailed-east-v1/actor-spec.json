@@ -4,6 +4,7 @@
   "age": 22,
   "status": "candidate_sheet_package",
   "runtime_admitted": false,
+  "usage": "candidate_art",
   "texture": "res://kits/workcycles/ada-detailed-east-v1/atlas.png",
   "cell": [
     256,

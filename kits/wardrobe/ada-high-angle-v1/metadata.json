@@ -1,0 +1,87 @@
+{
+  "id": "ada-high-angle-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "detailed_high_angle_master_candidate",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "native_image": "ada-native.png",
+  "native_size": [
+    550,
+    1305
+  ],
+  "native_rgba_sha256": "9fbf8ed6cce144f46eab695c1a7dc063778ef48fce6924e632363aa5289b9863",
+  "source": "kits/wardrobe/ada-high-angle-v1/source.png",
+  "source_sha256": "a680616bf203237c3cde8275873f26d8b0c1c215e62d9aae3e71ddd3e1a37729",
+  "prompt": "prompt.txt",
+  "references": [
+    {
+      "path": "kits/workcycles/ada-detailed-turnaround-v1/southeast-native.png",
+      "sha256": "afdd5fddb81e1953176668928401c2eb31b815a81da0bca4bb1026a310d72db2",
+      "role": "identity and wardrobe"
+    },
+    {
+      "path": "kits/wardrobe/ines-high-angle-v1/source.png",
+      "sha256": "c4402d82ace77c22667be8de46f1d4a875cf7447e89f7fcf1bc6d77565ba9249",
+      "role": "elevated camera only"
+    }
+  ],
+  "source_alpha_bounds_xyxy": [
+    243,
+    122,
+    793,
+    1427
+  ],
+  "alpha_bounds_xyxy": [
+    91,
+    84,
+    158,
+    244
+  ],
+  "offset": [
+    91,
+    84
+  ],
+  "atlas_rect": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "facing": "southeast",
+  "camera": "fixed elevated highthreequarter downward view",
+  "camera_confidence": "high relative to supplied camera reference; no calibrated angle claimed",
+  "clips": {
+    "idle_southeast": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "review": [
+    "Crown and goggle tops substantially visible; tops of shoulders and boot insteps visible with head/torso foreshortening.",
+    "Camera follows Ines reference while retaining Ada auburn braid/goggles/linen waistcoat shorts/brassbuttons/toolbeltwrench.",
+    "Both feet and complete silhouette intact; exposedskin PG13 with opaque garmentcoverage.",
+    "Static master only, no animation or rendered-game approval."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta chromakey",
+      "wholefigure nativecrop retained",
+      "nearest160pxheight derivative",
+      "wholefigure offset in256cell anchor128244"
+    ]
+  }
+}

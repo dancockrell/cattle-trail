@@ -1,0 +1,87 @@
+{
+  "id": "ada-detailed-low-pass-v2",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "whole_lowpass_proportion_candidate_not_admitted",
+  "texture": "whole-frame.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "source": "kits/workcycles/ada-detailed-low-pass-v2/source.png",
+  "source_sha256": "21feed6290851ca662b9f41ddfea979f71d8ca5248e7f803946ec488916e306d",
+  "source_alpha_bounds_xyxy": [
+    123,
+    110,
+    626,
+    1960
+  ],
+  "native_size": [
+    503,
+    1850
+  ],
+  "native_image": "whole-native.png",
+  "native_rgba_sha256": "3b32ec11aef9a302f3c739d02b50aef0f124b52994141f9743ca17e66c131000",
+  "atlas_rect": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "offset": [
+    100,
+    84
+  ],
+  "alpha_bounds_xyxy": [
+    100,
+    84,
+    144,
+    244
+  ],
+  "rgba_sha256": "114abcf461279560570e49ceb9e50279b24e0059e561a7fdfc8bf75188a83cf8",
+  "hip_source_x_manual": 440,
+  "inputs": [
+    {
+      "path": "kits/workcycles/ada-detailed-recovered-walk-v1/03-native.png",
+      "sha256": "9e5751c553d7b8a953a4efef58fd1d2eaec9a70bfa62a71e7c3682d3773b3870",
+      "role": "wholepose edit target"
+    },
+    {
+      "path": "kits/workcycles/ada-detailed-recovered-walk-v1/01-native.png",
+      "sha256": "116f6001459eb4700ea6667c1d08ee30152e810c1b55561e7dda591405f47d00",
+      "role": "identity and proportion reference"
+    }
+  ],
+  "prompt": "prompt.txt",
+  "phase": "far_leg_support_low_passing",
+  "duration_seconds": 0.16,
+  "timing": "provisional",
+  "facing": "east_side_profile",
+  "comparison_order": [
+    "recovered_near_support_reference",
+    "recovered_far_support_edit_target",
+    "new_proportion_candidate"
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta key",
+      "nativewholefigure crop",
+      "160pxnearestresize",
+      "wholefigure translation hip128 ground244"
+    ]
+  },
+  "review": [
+    "Whole near leg still passes in front of grounded far leg, near boot leftward and above supporting sole.",
+    "Identity and jacket/trousers/wrench remain recognizable; exact original boot outlines were redrawn by generator.",
+    "No game tests,40pxinput,runtime replacement or bodypart compositing.",
+    "Three-way160pxcomparison shows only slight proportion change. Head still reads smaller and lower body longer than near-support reference; objective not fully met, no replacement recommended automatically."
+  ],
+  "proportion_result": "limited_change_not_resolved"
+}

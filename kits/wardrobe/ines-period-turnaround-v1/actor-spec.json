@@ -4,6 +4,7 @@
   "age": 23,
   "status": "candidate_sheet_package",
   "runtime_admitted": false,
+  "usage": "candidate_art",
   "texture": "res://kits/wardrobe/ines-period-turnaround-v1/atlas.png",
   "cell": [
     256,

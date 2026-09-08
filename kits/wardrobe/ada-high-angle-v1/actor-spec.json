@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "character_id": "ada_mercer",
+  "age": 22,
+  "status": "candidate_sheet_package",
+  "runtime_admitted": false,
+  "usage": "candidate_art",
+  "texture": "res://kits/wardrobe/ada-high-angle-v1/atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "directional": false,
+  "default_facing": "southeast",
+  "frames": [
+    {
+      "index": 0,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "observation": "detailed_high_angle_master_candidate",
+      "rgba_sha256": "521c7b31d3fa3351174389dadcad7d5845aa764dbb0175b94cd87d32becc019c"
+    }
+  ],
+  "frame_anchors": {
+    "0": [
+      128,
+      244
+    ]
+  },
+  "clips": {
+    "pose_00": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    },
+    "idle": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false
+    }
+  },
+  "turn_transitions": {},
+  "source_metadata": "kits/wardrobe/ada-high-angle-v1/metadata.json",
+  "source_metadata_sha256": "a5af353d575812c8026783714631a55bd21144775812ef7904ba986a040e8421",
+  "texture_sha256": "1715451717a3ec6e918dec59b278d698c637b698d5bc623647392d3cf579b11a",
+  "limits": [
+    "Not selected by the room or live character factory.",
+    "No accepted walk cycle or turn tween. Any review sequence remains unadmitted.",
+    "Default idle holds one source pose; it does not certify an idle animation.",
+    "Only documented facings exist; camera and costume continuity still need work."
+  ]
+}

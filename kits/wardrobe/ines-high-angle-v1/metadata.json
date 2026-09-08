@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "ines-high-angle-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "c4402d82ace77c22667be8de46f1d4a875cf7447e89f7fcf1bc6d77565ba9249",
+  "source_size": [
+    1024,
+    1536
+  ],
+  "native_image": "ines-native.png",
+  "trim_bounds_xyxy": [
+    205,
+    127,
+    787,
+    1429
+  ],
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "atlas_rect_xywh": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "requested_facing": "southeast",
+  "observed_facing": "front-right/southeast",
+  "requested_elevation_degrees": 40,
+  "observed_elevation": "Clearly above head; crown, upper shoulders and boot top planes visible; stronger vertical foreshortening than prior turnaround. Exact degrees not measurable from generated sprite.",
+  "status": "candidate_static_camera_reference",
+  "runtime_admitted": false,
+  "animations": {},
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/wardrobe/ines-period-turnaround-v1/southeast-native.png",
+  "camera_reference": "source/reference_0.png",
+  "transform": "Magenta key; preserve native whole-figure trim; nearest-neighbor whole-figure resize160px; no repaint/rig/assembly",
+  "approval_scope": "No room/camera approval claimed. Prior clothing coverage reference approved, this new period costume remains candidate."
+}

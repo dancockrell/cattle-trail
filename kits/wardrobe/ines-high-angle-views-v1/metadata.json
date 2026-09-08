@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "ines-high-angle-views-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "53093f221f9f0cfe969041ffcdeaf93c45a63331d63db128591190d3f7deea2e",
+  "reference": "kits/wardrobe/ines-high-angle-v1/ines-native.png",
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "figure_height": 160,
+  "native_cutouts_preserved": true,
+  "frames": [
+    {
+      "index": 0,
+      "requested_facing": "east",
+      "observed_facing": "right-facing front-oblique; not strict east profile",
+      "facing_confidence": "low for exact east",
+      "native_image": "east_candidate-native.png",
+      "image": "east_candidate.png",
+      "source_rect_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "trim_bounds_xyxy": [
+        270,
+        9,
+        677,
+        980
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "status": "candidate_static_endview"
+    },
+    {
+      "index": 1,
+      "requested_facing": "northeast",
+      "observed_facing": "back-right three-quarter/northeast",
+      "facing_confidence": "high for northeast",
+      "native_image": "northeast-native.png",
+      "image": "northeast.png",
+      "source_rect_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "trim_bounds_xyxy": [
+        122,
+        32,
+        519,
+        951
+      ],
+      "atlas_rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "status": "candidate_static_endview"
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "elevation_review": "Both show crown, shoulder tops and foreshortened legs/boot top planes, retaining a raised camera comparable to the SE reference. Exact camera calibration unverified.",
+  "direction_gap": "Requested east remains too front-oblique; northeast is clearly distinct rear-right. No automatic turn intermediate admission.",
+  "transform": "Magenta key, whole-figure native trim, nearest-neighbor whole-figure160px scaling; no repaint or detached rig."
+}

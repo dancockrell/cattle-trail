@@ -1,0 +1,26 @@
+{
+  "format": "animated_png",
+  "source": "actor-spec.json",
+  "texture": "walk-review.png",
+  "frames": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "frame_rgba_sha256": [
+    "48786e721933fd89dc550fe55e2e984c4b0b327c5c0f7726d2bdb055ad2784c2",
+    "6c116a9d9345b8fe86a7c6db2bc7e9f44586b02db40d340e9213de472c4bf36c",
+    "f7e413cfe3dfe2a07df16ba0b2812dabff1e5d1868a592b7f7b90271b8735f1d",
+    "7fc111ac029cd7ecc6c521115ce39c6d497173f54e42a2bf4eb34f27bd7884fc"
+  ],
+  "duration_ms": [
+    160,
+    160,
+    160,
+    160
+  ],
+  "runtime_admitted": false,
+  "usage": "candidate_art",
+  "note": "Lossless whole-cell playback for sheet work; not movement or art approval."
+}

@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pelvis_reference": [
+    128,
+    174
+  ],
+  "body_height": 160,
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "phase_intent": "contact_near",
+      "visible_evidence": "Lighter forward/right boot; darker trailing/left boot. Near-leg forward contact intended.",
+      "source": "kits/source/eleanor-east-walk-v6.png",
+      "source_sha256": "8725ed44e9337f4b07068ee2c46803ecce04e2f87e89eec17486d31915e24a45",
+      "source_crop_xyxy": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        196,
+        152,
+        439,
+        590
+      ],
+      "full_resolution_crop": "00-full-resolution.png",
+      "source_body_height": 438,
+      "scale": 0.365296803652968,
+      "size": [
+        89,
+        160
+      ],
+      "offset": [
+        86,
+        83
+      ],
+      "manual_pelvis_in_crop": [
+        310,
+        400
+      ],
+      "pelvis_in_cell": [
+        128,
+        174
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "duration_seconds": 0.16,
+      "status": "recovered_candidate"
+    },
+    {
+      "index": 1,
+      "phase_intent": "passing_near_support",
+      "visible_evidence": "Forward/beneath-body warm-brown boot supports; darker boot trails left. Far-foot passing intended but partly hidden.",
+      "source": "kits/source/eleanor-east-walk-v6.png",
+      "source_sha256": "8725ed44e9337f4b07068ee2c46803ecce04e2f87e89eec17486d31915e24a45",
+      "source_crop_xyxy": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        174,
+        149,
+        369,
+        594
+      ],
+      "full_resolution_crop": "01-full-resolution.png",
+      "source_body_height": 445,
+      "scale": 0.3595505617977528,
+      "size": [
+        70,
+        160
+      ],
+      "offset": [
+        86,
+        84
+      ],
+      "manual_pelvis_in_crop": [
+        290,
+        400
+      ],
+      "pelvis_in_cell": [
+        128,
+        174
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "duration_seconds": 0.16,
+      "status": "recovered_candidate"
+    },
+    {
+      "index": 2,
+      "phase_intent": "contact_far",
+      "visible_evidence": "Darker forward/right boot; lighter trailing/left boot. Opposite boot identity is visible; hip reversal remains obscured.",
+      "source": "kits/source/eleanor-east-opposite-contact-v7.png",
+      "source_sha256": "39c2143a3fc6521af62d41eab65b306138917c19892947d3d3308ac57525091f",
+      "source_crop_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        351,
+        303,
+        846,
+        1181
+      ],
+      "full_resolution_crop": "02-full-resolution.png",
+      "source_body_height": 878,
+      "scale": 0.18223234624145787,
+      "size": [
+        90,
+        160
+      ],
+      "offset": [
+        84,
+        84
+      ],
+      "manual_pelvis_in_crop": [
+        590,
+        795
+      ],
+      "pelvis_in_cell": [
+        128,
+        174
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "duration_seconds": 0.16,
+      "status": "recovered_candidate"
+    },
+    {
+      "index": 3,
+      "phase_intent": "passing_far_support",
+      "visible_evidence": "Dark boot planted beneath body; brighter boot crosses in front slightly above it. Distinct foreground overlap visible.",
+      "source": "kits/source/eleanor-east-opposite-passing-v7.png",
+      "source_sha256": "d4ab694fa40815c8b7a17438c07ee4df8791cbd9964e3efcb503fd0d6189b4f3",
+      "source_crop_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "keyed_trim_xyxy_in_crop": [
+        402,
+        283,
+        715,
+        1153
+      ],
+      "full_resolution_crop": "03-full-resolution.png",
+      "source_body_height": 870,
+      "scale": 0.1839080459770115,
+      "size": [
+        58,
+        160
+      ],
+      "offset": [
+        100,
+        84
+      ],
+      "manual_pelvis_in_crop": [
+        556,
+        775
+      ],
+      "pelvis_in_cell": [
+        128,
+        174
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "duration_seconds": 0.16,
+      "status": "recovered_candidate"
+    }
+  ],
+  "source_metadata": "kits/workcycles/eleanor-east-v7/metadata.json",
+  "frame_order": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "review_clip": {
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "durations_seconds": [
+      0.16,
+      0.16,
+      0.16,
+      0.16
+    ],
+    "loop": true,
+    "status": "provisional_contact_sheet_review"
+  },
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "generation": "None; recovered existing original sources only.",
+  "outfit": "Original Eleanor cream long-sleeve blouse, brown waistcoat, long indigo riding skirt and brown boots.",
+  "actual_facing": "east_oblique_profile",
+  "observation": "All four native source poses located. Nearcontact has warm boot forwardright; oppositecontact has darkboot forwardright and warmboot trailingleft. Far-support passing shows warmboot crossing ahead of dark planted boot. Original face and outfit preserved.",
+  "limitations": [
+    "Skirt obscures hip/knee reversal, so visible boots establish provisional phase evidence, not complete anatomical certification.",
+    "Passingnear pose partly hides farfoot.",
+    "Source art itself has coarse pixel clusters despite recovered160px output; this does not invent missing detail.",
+    "Manual pelvis centers approximate hidden anatomy; durations are provisional, no engine playback performed."
+  ],
+  "processing": "Hash-verified source crop, original binarymagenta rule, native transparenttrim, wholefigure nearest downsample160height, manually alignedpelvis with256padding. No40pxupscale, newgeneration, detachedlimb or pixelpainting."
+}

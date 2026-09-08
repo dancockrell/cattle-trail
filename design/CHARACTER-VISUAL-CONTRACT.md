@@ -33,3 +33,11 @@ The user explicitly accepted the four Ines summer outfits on September 8 as the 
 `frame_anchors` may override a clip pivot for a specific global atlas frame. Pivot precedence is frame, then clip, then default; returning to an ordinary frame restores its default. Source-space sockets follow the same sprite transform, including complete-figure reflection. Legacy assets default to one source pixel per world unit. Explicit static facing sets can use real idle views without fabricated walking clips.
 
 The older Ada v6 sequence was rejected at its coarse presentation size, but its corrected source contact remained available at full resolution. `kits/workcycles/ada-detailed-recovered-walk-v1` extracts those original whole figures at 160 pixels, with pelvis registration and raw provenance. This recovers detail; it does not resolve body-volume differences or certify the motion. Its explicitly named review clip retains the provisional four-phase sequence for sheet work.
+
+## Elevated master pass
+
+The `ada-high-angle-v1`, `eleanor-high-angle-v1` and `ines-high-angle-v1` wardrobe folders preserve new detailed southeast camera candidates. They show more crown, shoulder and boot upper surfaces than the earlier eye-level turnaround studies. They are camera references for production, not a measured 40-degree calibration or user-approved room replacement. Ines's additional northeast view is distinct; its companion east attempt remains front-oblique and must not be renamed as a correct profile.
+
+The recovered Eleanor sequence is a pose guide only: its larger raw sources retain coarse original clusters. Larger output dimensions alone are not evidence of added detail. Keep that geometry reference distinct from the newly generated detailed masters. Ada low-pass v2 made only a slight proportion change and remains unselected.
+
+Action clips now share one elapsed-time clock for pose sampling and their release event. Frame holds determine both; listeners read sockets from the release frame even if a display hitch skips over it. This engine contract improves event reliability without certifying an art sequence.

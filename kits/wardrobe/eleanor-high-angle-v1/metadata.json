@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "id": "eleanor_high_angle",
+  "age": 24,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "body_height": 160,
+  "rect": [
+    0,
+    0,
+    256,
+    256
+  ],
+  "source": "source.png",
+  "source_sha256": "292b12bbaf9df0db64f05e21bf942a2a767c5949c9339f4671dd3127fab4f8bf",
+  "source_rect": [
+    253,
+    163,
+    534,
+    1209
+  ],
+  "size": [
+    71,
+    160
+  ],
+  "offset": [
+    93,
+    84
+  ],
+  "prompt": "prompt.txt",
+  "references": [
+    {
+      "role": "identity",
+      "path": "kits/wardrobe/rancher-summer-v1/cream_offshoulder_split_skirt-full-resolution.png",
+      "sha256": "74156b77744e6a10edc47e591f17c88a8de1930ccf32831da90d562daaa8ca2f"
+    },
+    {
+      "role": "camera_only",
+      "path": "kits/wardrobe/ines-high-angle-v1/source.png",
+      "sha256": "c4402d82ace77c22667be8de46f1d4a875cf7447e89f7fcf1bc6d77565ba9249"
+    }
+  ],
+  "tool": "builtin image_gen",
+  "status": "high_angle_master_candidate",
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "actual_camera": "Highthreequarter southeast: broad visiblecrown/topshoulders, shortenedtorsoandlegprojection, visiblebootuppers. Elevation clearlyincreased relative to summersource; exactdegrees notmeasured.",
+  "identity": "Adult24 Eleanor chestnutbraid/creamwovenblouse/indigosplitridingskirtoveropaquebrownunderlayer/leatherboots/brasscompass.",
+  "limitations": [
+    "Static master only; no turn/walk clip.",
+    "Bust definition exceeds originalsmallchestpreference, retainedasreviewcandidate.",
+    "Costume remains period-inspired fantasy rather than reconstructed1870sdress."
+  ],
+  "processing": "Wholefigure sourcebackground huekey, fullnative transparentcrop, nearest160height padded256cell; no painting rigging or bodypart manipulation."
+}
