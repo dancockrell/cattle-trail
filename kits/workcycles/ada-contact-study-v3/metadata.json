@@ -1,0 +1,31 @@
+{
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "rejected_as_walk_candidate_costume_study",
+  "runtime_admitted": false,
+  "grid": {
+    "columns": 4,
+    "rows": 2
+  },
+  "sources": [
+    {
+      "file": "source.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "73f684923cd10fdc682a0e289802104e487f3984d99e73cf86179dbef6057e37"
+    },
+    {
+      "file": "corrected-source.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "bf6fd06c7bafed346081acf8ac63dd59e978605e645b462d08b307e37dd96323"
+    }
+  ],
+  "review": "Both sheets repeat the same forward boot silhouette across all eight frames. Opposite contacts are not established; no animation clip has been admitted. Corrected source follows full blouse and split riding skirt over trousers direction, but garment folds still drift and thin silhouette needs user review."
+}

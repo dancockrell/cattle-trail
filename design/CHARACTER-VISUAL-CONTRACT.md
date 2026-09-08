@@ -34,6 +34,8 @@ For movement, preserve the accepted master detail across near contact, near pass
 
 ## Accepted wardrobe reference
 
+Latest proportion and garment correction: keep adult figures visibly slender with small, understated busts. The fuller Eleanor thighs and chest were rejected. Use fewer garments with clear construction and only one leg garment: a skirt OR trousers, not a skirt layered over trousers or shorts. Eleanor's current candidate is a tucked blouse, one blue walking-slit skirt and boots; Ada should use one pair of fitted trousers with a blouse. Earlier cropped-blouse/ambiguous-shorts Eleanor and the subsequent waistcoat/skirt-over-trousers revision are superseded. This does not revoke the broader adult PG13 styling range or make all characters wear the same outfit.
+
 The user explicitly accepted the four Ines summer outfits on September 8 as the general clothing level for the adult cast. Reference: `kits/wardrobe/spirit-scout-summer-v1/source.png`. This accepts clothing coverage and styling; it does not certify animation, game-camera alignment or every body proportion. Preserve this reference for future master and variant prompts.
 
 ## Engine metadata and recovered motion

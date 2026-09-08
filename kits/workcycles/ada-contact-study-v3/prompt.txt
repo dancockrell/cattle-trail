@@ -1,0 +1,17 @@
+Create a production 2D pixel-art walk animation CONTACT STUDY for Ada Mercer, an adult woman age 22. Reference image is the identity and costume reference, NOT a pose to repeat. Preserve red braid, brass goggles, cream opaque tied linen blouse, brown waistcoat, olive riding shorts, toolbelt with wrench at her anatomical right hip (viewer left), brown boots. Warm 1870s steampunk Western adventure game, clearly adult, full opaque coverage, no nudity. Match detailed hard-edged pixel artwork.
+
+Output exactly EIGHT distinct full-body sequential sprites in a 4 columns x 2 rows uniform grid on a truly transparent background, no labels, no grid lines, no ground shadows. Fixed elevated high three-quarter camera looking down, Ada always faces southeast/screen lower right, same body proportions and camera in every frame. Each cell contains whole body including braid and both boot soles, generous empty margins.
+
+CRITICAL BIOMECHANICAL DRAWING: A walk has TWO OPPOSITE CONTACT POSES. Do NOT draw the leftmost visible leg extended forward in every cell. Show actual occlusion reversal of the thighs across the pelvis. Anatomical RIGHT leg is the NEAR leg, attached below the tool pouch on viewer-left side of pelvis. Anatomical LEFT leg is the FAR leg, attached to viewer-right pelvis. Boots must trade front and back positions by the midpoint. Head/torso remain same facing, never mirror the sprite or swap tool pouch sides.
+
+Read cells left-to-right top row then bottom row:
+1 RIGHT HEEL CONTACT: near RIGHT leg reaches far ahead toward screen lower-right, near boot the bottommost and rightmost boot. Far LEFT leg trails up-left behind pelvis, far heel raised.
+2 RIGHT SUPPORT DOWN: right foot supports ahead, knee absorbs weight; left boot leaves the rear ground.
+3 LEFT PASSING: right leg straight under pelvis supporting; left knee swings forward past right knee, left boot airborne near opposite calf.
+4 LEFT UP: left knee farther forward down-right, left lower leg unfolding; right foot trails with heel lifting.
+5 LEFT HEEL CONTACT: far LEFT leg now reaches far ahead toward screen lower-right and its boot is bottommost/rightmost; near RIGHT leg beneath pouch stretches BACK toward screen upper-left. This pose MUST visibly reverse which leg leads compared to frame 1. Draw near thigh angled back-left, with far thigh clearly visible angled forward-right.
+6 LEFT SUPPORT DOWN: left foot supports ahead knee absorbs weight; right boot leaves rear ground.
+7 RIGHT PASSING: left leg supports under pelvis; near right knee swings forward, right boot airborne near opposite calf.
+8 RIGHT UP: near right knee farther forward down-right unfolding; left foot trails heel lifted, ready to return to frame 1.
+
+Counter-swing both arms naturally. Small torso bob only, no hopping. One complete stride, eight unique hand-drawn whole-character poses. Prioritize anatomically explicit opposite contacts 1 and 5 over decorative detail. Do not duplicate, recolor, mirror, warp or jitter a static pose.

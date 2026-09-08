@@ -1,0 +1,9 @@
+Revise this eight-cell sprite sheet into a CORRECTED contact-study sheet. Eight whole-character sprites, 4 columns by 2 rows, fixed southeast high three-quarter elevated camera. The source sheet is BROKEN: it repeats the same leading leg eight times. REDRAW THE LEGS instead of preserving their poses.
+
+Ada Mercer is clearly adult age 22, lean slender build, small bust. Keep red braid, brass goggles, brown waistcoat, toolbelt and wrench on viewer-left hip. CHANGE CLOTHES: cream full-length linen blouse TUCKED INTO waist, no exposed midriff; a clearly constructed brown split riding skirt with two parted skirt panels over opaque fitted olive trousers, brown calf boots. 1870s Weird West mechanic. Clear fabric seams and coverage, slim silhouette, no shorts, no crop top.
+
+TOP ROW four unique poses with tool-pouch-side leg leading: contact, down, passing, up.
+BOTTOM ROW four complementary poses with OTHER leg leading: contact, down, passing, up.
+At bottom-left contact pose: leg attached beneath tool pouch must stretch BACK toward screen upper-left; its boot near x=130,y=370 within cell. OTHER thigh emerges from viewer-right pelvis and extends FORWARD toward screen lower-right, boot near x=265,y=460 within cell. At top-left contact pose reverse this: tool-pouch leg travels diagonally down-right and other leg trails. The two leg attachments and boot silhouettes must visibly exchange positions. Never mirror the torso or move the tool pouch. Opposite arms counter-swing. Both legs can be read through the parted skirt panels.
+
+Draw coherent native pixel-art detail and hard edges. Eight UNIQUE whole-body drawings with consistent scale, head shape, torso and equipment, not jittered duplicates. Every boot fully visible within its own evenly spaced cell. Truly transparent background, no printed checkerboard or labels.
