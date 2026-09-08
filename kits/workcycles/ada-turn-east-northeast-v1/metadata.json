@@ -1,0 +1,79 @@
+{
+  "id": "ada-turn-east-northeast-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "rejected_for_turn_bridge_retained_static_pose",
+  "texture": "whole-frame.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "requested_facing": "east_northeast_intermediate",
+  "actual_facing": "east_front_oblique_endpoint_like",
+  "facing_confidence": "high_not_an_intermediate",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "source": "kits/workcycles/ada-turn-east-northeast-v1/source.png",
+  "source_sha256": "a85f592afbb9a3e4bdb3e0218ef3a4581be221b52373c2e14ff9ff17ae42b57e",
+  "source_alpha_bounds_xyxy": [
+    473,
+    143,
+    766,
+    971
+  ],
+  "alpha_bounds_xyxy": [
+    25,
+    21,
+    39,
+    61
+  ],
+  "rgba_sha256": "7d4b11b0801d2d66d36eb36f7f5f994a25532ffe3bc64dbe8dd3d905cc39f003",
+  "comparison_order": [
+    "existing_east",
+    "candidate_bridge",
+    "existing_northeast"
+  ],
+  "endpoint_sources": [
+    {
+      "path": "kits/workcycles/ada-mercer-idle-v1/east.png",
+      "sha256": "64021aabc149e586ff78f8cfb15efb34537169bc24498b65bcda33dafddbfa4b"
+    },
+    {
+      "path": "kits/workcycles/ada-mercer-idle-v1/northeast.png",
+      "sha256": "dda4a7189b20e2dc2414125ce9be557e55090263c68f422f9c78c6f50865e58f"
+    }
+  ],
+  "clip": {
+    "name": "turn_east_northeast_candidate",
+    "frames": [
+      0
+    ],
+    "duration_seconds": 0.08,
+    "loop": false,
+    "timing": "provisional",
+    "admitted": false
+  },
+  "provenance": {
+    "tool": "builtin image_gen",
+    "prompt": "prompt.txt",
+    "transforms": [
+      "magenta chroma key",
+      "wholefigure crop",
+      "nearestresize40pxheight",
+      "bottomcenteranchor32,61"
+    ]
+  },
+  "validation": [
+    "Singlewholefigure, binary alpha and40pxheight checked.",
+    "No native motion or game test.",
+    "Compared existing E / new pose / existing NE at40pxheight. New torso still presents cream blouse and both front lapels like E; no side/back rotation. Planted complete pose is useful static reference but not admitted as turn bridge."
+  ]
+}

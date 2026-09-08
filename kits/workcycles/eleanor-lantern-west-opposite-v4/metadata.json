@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "status": "rejected_opposite_contact_same_lead",
+  "character": "eleanor",
+  "age": 24,
+  "direction": "west",
+  "carry_hand": "anatomical_right_far",
+  "near_hand": "anatomical_left_empty",
+  "source": "source.png",
+  "source_sha256": "18fd26e977e93781a2016244bbfa4bc5489206bf8f800a17fcfdee7bdd653f27",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "body_height": 40,
+  "trim_xyxy": [
+    245,
+    244,
+    883,
+    1245
+  ],
+  "resized_size": [
+    25,
+    40
+  ],
+  "cell_offset": [
+    20,
+    21
+  ],
+  "comparison_order": [
+    "old contact",
+    "low passing",
+    "rejected opposite attempt"
+  ],
+  "observation": "Correct far-hand lantern retained, but warm near boot still leads on screenleft; trailing screenright boot remains dark. Wider stride and skirt hem changed, requested leg swap did not occur.",
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "limitations": [
+    "Not the missing opposite contact. Do not insert into west walk cycle or call a completed loop."
+  ],
+  "transformation": "Magenta key, whole-character crop, nearest resize to40height, wholeframe padding; no body drawing or disconnected limb edits."
+}
