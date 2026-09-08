@@ -2060,6 +2060,98 @@
         }
       }
     },
+    "v9_walk_east": {
+      "anchor": [
+        45,
+        93
+      ],
+      "frames": [
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243
+      ],
+      "observed": {
+        "236": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 89
+        },
+        "237": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 92
+        },
+        "238": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 101
+        },
+        "239": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 94
+        },
+        "240": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 97
+        },
+        "241": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 97
+        },
+        "242": {
+          "shirt_x": 45.0,
+          "hoof_y": 93,
+          "blue_pixels": 98
+        },
+        "243": {
+          "shirt_x": 45.5,
+          "hoof_y": 93,
+          "blue_pixels": 102
+        }
+      }
+    },
+    "v10_walk_northwest": {
+      "anchor": [
+        49,
+        93
+      ],
+      "frames": [
+        244,
+        245,
+        246,
+        247
+      ],
+      "observed": {
+        "244": {
+          "shirt_x": 49.5,
+          "hoof_y": 93,
+          "blue_pixels": 96
+        },
+        "245": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 109
+        },
+        "246": {
+          "shirt_x": 50.0,
+          "hoof_y": 93,
+          "blue_pixels": 109
+        },
+        "247": {
+          "shirt_x": 49.0,
+          "hoof_y": 93,
+          "blue_pixels": 107
+        }
+      }
+    },
     "idle": {
       "anchor": [
         47,

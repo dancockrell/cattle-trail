@@ -11,9 +11,9 @@
   ],
   "families": {
     "rider": {
-      "extracted": 244,
-      "unique_rgba_cells": 244,
-      "clips": 65,
+      "extracted": 248,
+      "unique_rgba_cells": 248,
+      "clips": 66,
       "cell": [
         96,
         96
@@ -66,9 +66,9 @@
       "source_hashes_verified": true
     },
     "eleanor": {
-      "extracted": 104,
-      "unique_rgba_cells": 104,
-      "clips": 53,
+      "extracted": 108,
+      "unique_rgba_cells": 108,
+      "clips": 54,
       "cell": [
         64,
         64
@@ -156,5 +156,5 @@
     }
   },
   "visual_acceptance": false,
-  "total_extracted": 936
+  "total_extracted": 944
 }

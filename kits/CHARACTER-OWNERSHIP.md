@@ -15,3 +15,5 @@ Each owner now also maintains a character-specific sequence selection in `assets
 Whole sprites remain the production approach. The rejected detached-limb experiment is historical evidence only. State kits supply gestures and reactions; they do not count as repaired walking cycles. Additional characters receive their own ownership when they enter the authorized room scope.
 
 The latest movement sheets remain candidates: Eleanor is nearly north with a slight northeast turn, and some boot/hoof configurations repeat. The review recording shows their actual appearance rather than treating a requested phase name as visual proof.
+
+Latest integrated work: rider-nw-low-walk-v10 supplies three grounded northwest poses plus recovery, and Eleanor east-walk-v5 supplies a bag-free step/pass strip for her playable activity. There are 944 extracted cells. The four northern rider turn intermediates in rider-northern-turn-v1.png are preserved source candidates awaiting extraction and endpoint playback; they are not included in that count. Eleanor's owner also maintains the independent companion state and save validation.

@@ -1,0 +1,304 @@
+{
+  "schema_version": 2,
+  "status": "selected_whole_pose_candidate_for_engine_review",
+  "apply_to_runtime": true,
+  "family": "rider",
+  "direction": "northwest",
+  "target_clip": "walk_northwest",
+  "source_clip": "v10_walk_northwest",
+  "source_catalog": "kits/manifest.json",
+  "source": "kits/source/rider-nw-low-walk-v10.png",
+  "texture": "res://kits/atlases/rider.png",
+  "frames": [
+    244,
+    245,
+    246,
+    247
+  ],
+  "frame_ids": [
+    "rider_244",
+    "rider_245",
+    "rider_246",
+    "rider_247"
+  ],
+  "frame_index_space": "families.rider.frames; verify stable source/id if catalog is regenerated",
+  "source_frame_order_one_based": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "fps": 8,
+  "loop": true,
+  "durations": [
+    0.14,
+    0.14,
+    0.12,
+    0.1
+  ],
+  "nominal_speed": 24,
+  "estimated_stride_world_pixels": 12,
+  "cycle_seconds_at_nominal_speed": 0.5,
+  "speed_scale_at_gameplay_32": 1.3333333333333333,
+  "anchor": [
+    49,
+    93
+  ],
+  "frame_sockets": {
+    "244": {
+      "rope_hand": [
+        41,
+        49
+      ]
+    },
+    "245": {
+      "rope_hand": [
+        41,
+        50
+      ]
+    },
+    "246": {
+      "rope_hand": [
+        41,
+        50
+      ]
+    },
+    "247": {
+      "rope_hand": [
+        41,
+        51
+      ]
+    }
+  },
+  "frame_records": [
+    {
+      "source_rect": [
+        0,
+        0,
+        566,
+        724
+      ],
+      "trim": [
+        162,
+        191,
+        460,
+        579
+      ],
+      "row": 0,
+      "col": 0,
+      "source": "kits/source/rider-nw-low-walk-v10.png",
+      "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+      "direction": "northwest",
+      "scale": 0.15917843388960207,
+      "job": "rider-nw-low-walk-v10",
+      "action": "walk",
+      "clip_prefix": "v10_",
+      "atlas_rect": [
+        384,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_244",
+      "catalog_index": 244
+    },
+    {
+      "source_rect": [
+        566,
+        0,
+        1086,
+        724
+      ],
+      "trim": [
+        106,
+        188,
+        401,
+        579
+      ],
+      "row": 0,
+      "col": 1,
+      "source": "kits/source/rider-nw-low-walk-v10.png",
+      "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+      "direction": "northwest",
+      "scale": 0.15917843388960207,
+      "job": "rider-nw-low-walk-v10",
+      "action": "walk",
+      "clip_prefix": "v10_",
+      "atlas_rect": [
+        480,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_245",
+      "catalog_index": 245
+    },
+    {
+      "source_rect": [
+        1086,
+        0,
+        1613,
+        724
+      ],
+      "trim": [
+        120,
+        188,
+        418,
+        579
+      ],
+      "row": 0,
+      "col": 2,
+      "source": "kits/source/rider-nw-low-walk-v10.png",
+      "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+      "direction": "northwest",
+      "scale": 0.15917843388960207,
+      "job": "rider-nw-low-walk-v10",
+      "action": "walk",
+      "clip_prefix": "v10_",
+      "atlas_rect": [
+        576,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_246",
+      "catalog_index": 246
+    },
+    {
+      "source_rect": [
+        1613,
+        0,
+        2172,
+        724
+      ],
+      "trim": [
+        110,
+        187,
+        413,
+        570
+      ],
+      "row": 0,
+      "col": 3,
+      "source": "kits/source/rider-nw-low-walk-v10.png",
+      "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+      "direction": "northwest",
+      "scale": 0.15917843388960207,
+      "job": "rider-nw-low-walk-v10",
+      "action": "walk",
+      "clip_prefix": "v10_",
+      "atlas_rect": [
+        672,
+        2880,
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "id": "rider_247",
+      "catalog_index": 247
+    }
+  ],
+  "alignment_measurement": {
+    "reference_idle_frame": 163,
+    "reference_idle_anchor": [
+      48,
+      93
+    ],
+    "reference_blue_shirt_centroid": [
+      48.83,
+      48.0
+    ],
+    "walk_blue_shirt_centroids": [
+      [
+        49.49,
+        48.31
+      ],
+      [
+        49.49,
+        48.39
+      ],
+      [
+        49.61,
+        48.35
+      ],
+      [
+        49.55,
+        49.49
+      ]
+    ],
+    "reason": "Single49,93clipanchor compensates approximately0.7px rightward torso placement. Commonhoofbottom93; fourthpose has1px verticalbodyvariation, preserved instead of creatingperframejitter.",
+    "socket_space": "Native96x96cell coordinates, visible nearhandpalmcenters."
+  },
+  "selection_reason": "Three grounded whole foreleg poses now precede one recovery pose, replacing old84/85/87 repeated highknees. Holdgroundedphases slightlylonger and recoveryshorter.",
+  "uncertainty": [
+    "Fourthpose stillhasbentknee; engineplaybackmustjudgeclearance andloopwrap.",
+    "Stride12px remains an initialcalibration, notmeasuredworldhoofcontact.",
+    "Newhorseneck/head silhouette differsslightlyfromidle; anchoralignstorso butcannotremove drawnshapechange."
+  ],
+  "supersedes": "Previous no_supported_existing_fix record; one new whole-pose source was generated and extracted since that audit.",
+  "proposed_turn_tweens": {
+    "generate_now": false,
+    "whole_pose_only": true,
+    "headings_order": [
+      "northwest",
+      "north-northwest",
+      "north",
+      "north-northeast",
+      "northeast"
+    ],
+    "missing_headings": [
+      {
+        "name": "north-northwest",
+        "movement_vector": [
+          -0.382683,
+          -0.92388
+        ],
+        "visual": "Backvisible; horseheadaboveandjustleftofridercenter, rumpjustright; midwaybetween45degreeNWandstraightN."
+      },
+      {
+        "name": "north-northeast",
+        "movement_vector": [
+          0.382683,
+          -0.92388
+        ],
+        "visual": "Backvisible; horseheadaboveandjustrightofridercenter, rumpjustleft; midwaybetweenstraightNand45degreeNE."
+      }
+    ],
+    "required_states_per_missing_heading": [
+      "Wholemountedquietreinsheldgroundedturnpose, shouldersandhipsrotatecoherently, allhoovesnearcontact.",
+      "Wholemountedlowpassingwalkturnpose withshortstaggeredlegs andquietreins; preservesphaseforamovingturn."
+    ],
+    "reference_idle_frames": {
+      "northwest": [
+        163
+      ],
+      "north": [
+        187
+      ],
+      "northeast": [
+        155
+      ]
+    },
+    "candidate_layout": "One4cell sheet later:NNWgrounded,NNEgrounded,NNWlowpassing,NNElowpassing. Fournewwholeposes, nothandorlegcutouts.",
+    "timing_plan": "Brief60\u201390msintermediateheading when crossing45degreeboundary; usecorrespondinggrounded/passingpose bywalkphase. Verifyactualturnrenderbeforedirectoradmission.",
+    "invariants": [
+      "Samefixedcamera, bodyheight, saddleandhatidentity; keepgroundanchorconsistent.",
+      "Directionchangecomesfromwholebodyorientation, nothorizontalreflectionorrotatingtheflatimage.",
+      "Measureseparaterope_handcontactsfornewheadingsbeforeleadingcattlethroughturns."
+    ]
+  }
+}

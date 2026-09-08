@@ -1028,5 +1028,31 @@
     "clip_prefix": "v3_",
     "prompt_file": "kits/source/rustler-ne-walk-v3-prompt.txt",
     "ref": 1
+  },
+  {
+    "id": "rider-nw-low-walk-v10",
+    "family": "rider",
+    "rows": 1,
+    "columns": 4,
+    "direction": "northwest",
+    "actions": [
+      "walk"
+    ],
+    "clip_prefix": "v10_",
+    "prompt_file": "kits/source/rider-nw-low-walk-v10-prompt.txt",
+    "ref": 0
+  },
+  {
+    "id": "eleanor-east-walk-v5",
+    "family": "eleanor",
+    "rows": 1,
+    "columns": 4,
+    "direction": "east",
+    "actions": [
+      "walk"
+    ],
+    "clip_prefix": "v5_",
+    "prompt_file": "kits/source/eleanor-east-walk-v5-prompt.txt",
+    "ref": 1
   }
 ]

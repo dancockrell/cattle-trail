@@ -43,6 +43,8 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         # Two standing hand gestures keep the bag out of the animation.
         spec['clips']['talk_east']={'frames':[4,5,4,5],'fps':3,'loop':False}
         spec['clips']['idle_east']={'frames':[4],'fps':1,'loop':True}
+        if 'v5_walk_east' in source:
+            spec['clips']['walk_east']={'frames':source['v5_walk_east']['frames'],'fps':6,'loop':True,'durations':[0.18,0.15,0.18,0.15]}
     if name=='rustler':
         reaction_path=root/'assets/curation/rustler-reaction.json'
         if reaction_path.exists():
@@ -99,8 +101,9 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
         spec['locomotion'].update(travel_speed=32,clip_nominal_speeds={'walk_northeast':24},stride_basis='NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review.')
     if name=='rustler': spec['locomotion'].update(escape_speed=48,clip_nominal_speeds={'run_east':48})
     if name=='rider':
-        walk_path=root/'assets/curation/rider-next-walk.json'
-        if walk_path.exists():
+        walk_paths=[root/'assets/curation/rider-next-walk.json',root/'assets/curation/rider-northwest-walk.json']
+        for walk_path in walk_paths:
+            if not walk_path.exists(): continue
             walk=json.loads(walk_path.read_text(encoding='utf-8'))
             clip_name=walk['target_clip']
             assert all(spec['frames'][i]['id']==fid for i,fid in zip(walk['frames'],walk['frame_ids']))

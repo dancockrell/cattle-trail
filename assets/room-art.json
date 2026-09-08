@@ -8177,6 +8177,142 @@
             93
           ],
           "id": "rider_243"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            566,
+            724
+          ],
+          "trim": [
+            162,
+            191,
+            460,
+            579
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-nw-low-walk-v10.png",
+          "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+          "direction": "northwest",
+          "scale": 0.15917843388960207,
+          "job": "rider-nw-low-walk-v10",
+          "action": "walk",
+          "clip_prefix": "v10_",
+          "atlas_rect": [
+            384,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_244"
+        },
+        {
+          "source_rect": [
+            566,
+            0,
+            1086,
+            724
+          ],
+          "trim": [
+            106,
+            188,
+            401,
+            579
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-nw-low-walk-v10.png",
+          "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+          "direction": "northwest",
+          "scale": 0.15917843388960207,
+          "job": "rider-nw-low-walk-v10",
+          "action": "walk",
+          "clip_prefix": "v10_",
+          "atlas_rect": [
+            480,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_245"
+        },
+        {
+          "source_rect": [
+            1086,
+            0,
+            1613,
+            724
+          ],
+          "trim": [
+            120,
+            188,
+            418,
+            579
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-nw-low-walk-v10.png",
+          "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+          "direction": "northwest",
+          "scale": 0.15917843388960207,
+          "job": "rider-nw-low-walk-v10",
+          "action": "walk",
+          "clip_prefix": "v10_",
+          "atlas_rect": [
+            576,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_246"
+        },
+        {
+          "source_rect": [
+            1613,
+            0,
+            2172,
+            724
+          ],
+          "trim": [
+            110,
+            187,
+            413,
+            570
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-nw-low-walk-v10.png",
+          "source_sha256": "2b7d43ee3dc656700f33e04fc85ddc97c1ce401c5b91506a0f39c75675cd642e",
+          "direction": "northwest",
+          "scale": 0.15917843388960207,
+          "job": "rider-nw-low-walk-v10",
+          "action": "walk",
+          "clip_prefix": "v10_",
+          "atlas_rect": [
+            672,
+            2880,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_247"
         }
       ],
       "clips": {
@@ -8286,13 +8422,19 @@
         },
         "walk_northwest": {
           "frames": [
-            84,
-            85,
-            86,
-            87
+            244,
+            245,
+            246,
+            247
           ],
-          "fps": 7,
-          "loop": true
+          "fps": 8,
+          "loop": true,
+          "durations": [
+            0.14,
+            0.14,
+            0.12,
+            0.1
+          ]
         },
         "idle_southeast": {
           "frames": [
@@ -8623,7 +8765,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 244,
+      "count": 248,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -8714,7 +8856,7 @@
           93
         ],
         "walk_northwest": [
-          48,
+          49,
           93
         ],
         "lasso_northwest": [
@@ -8883,6 +9025,14 @@
         ],
         "social_v1_braced_southwest": [
           52,
+          93
+        ],
+        "v9_walk_east": [
+          45,
+          93
+        ],
+        "v10_walk_northwest": [
+          49,
           93
         ],
         "idle": [
@@ -9617,6 +9767,30 @@
             54,
             54
           ]
+        },
+        "244": {
+          "rope_hand": [
+            41,
+            49
+          ]
+        },
+        "245": {
+          "rope_hand": [
+            41,
+            50
+          ]
+        },
+        "246": {
+          "rope_hand": [
+            41,
+            50
+          ]
+        },
+        "247": {
+          "rope_hand": [
+            41,
+            51
+          ]
         }
       },
       "procedural_rope_clips": [
@@ -9642,7 +9816,8 @@
         "travel_speed": 32,
         "clip_nominal_speeds": {
           "walk_northeast": 24,
-          "walk_east": 24.0
+          "walk_east": 24.0,
+          "walk_northwest": 24
         },
         "stride_basis": "NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review."
       },
@@ -27012,6 +27187,142 @@
             61
           ],
           "id": "eleanor_103"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            610,
+            724
+          ],
+          "trim": [
+            229,
+            144,
+            479,
+            597
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/eleanor-east-walk-v5.png",
+          "source_sha256": "2faa6421cccaea17a44311e074cef4ebd1c3a3b0bf1281132649f06d9c08c075",
+          "direction": "east",
+          "scale": 0.08820286659316427,
+          "job": "eleanor-east-walk-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            0,
+            832,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_104"
+        },
+        {
+          "source_rect": [
+            610,
+            0,
+            1063,
+            724
+          ],
+          "trim": [
+            133,
+            142,
+            316,
+            596
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/eleanor-east-walk-v5.png",
+          "source_sha256": "2faa6421cccaea17a44311e074cef4ebd1c3a3b0bf1281132649f06d9c08c075",
+          "direction": "east",
+          "scale": 0.08820286659316427,
+          "job": "eleanor-east-walk-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            64,
+            832,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_105"
+        },
+        {
+          "source_rect": [
+            1063,
+            0,
+            1588,
+            724
+          ],
+          "trim": [
+            138,
+            143,
+            392,
+            597
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/eleanor-east-walk-v5.png",
+          "source_sha256": "2faa6421cccaea17a44311e074cef4ebd1c3a3b0bf1281132649f06d9c08c075",
+          "direction": "east",
+          "scale": 0.08820286659316427,
+          "job": "eleanor-east-walk-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            128,
+            832,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_106"
+        },
+        {
+          "source_rect": [
+            1588,
+            0,
+            2172,
+            724
+          ],
+          "trim": [
+            134,
+            144,
+            338,
+            596
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/eleanor-east-walk-v5.png",
+          "source_sha256": "2faa6421cccaea17a44311e074cef4ebd1c3a3b0bf1281132649f06d9c08c075",
+          "direction": "east",
+          "scale": 0.08820286659316427,
+          "job": "eleanor-east-walk-v5",
+          "action": "walk",
+          "clip_prefix": "v5_",
+          "atlas_rect": [
+            192,
+            832,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "id": "eleanor_107"
         }
       ],
       "clips": {
@@ -27024,13 +27335,19 @@
         },
         "walk_east": {
           "frames": [
-            0,
-            1,
-            2,
-            3
+            104,
+            105,
+            106,
+            107
           ],
-          "fps": 7,
-          "loop": true
+          "fps": 6,
+          "loop": true,
+          "durations": [
+            0.18,
+            0.15,
+            0.18,
+            0.15
+          ]
         },
         "idle_west": {
           "frames": [
@@ -27102,7 +27419,7 @@
         }
       },
       "status": "selected_for_room_review",
-      "count": 104,
+      "count": 108,
       "world_body_height": 40,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation.",
