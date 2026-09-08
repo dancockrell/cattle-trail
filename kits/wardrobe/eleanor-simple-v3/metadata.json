@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "id": "eleanor_simple_v3",
+  "age": 24,
+  "source": "source.png",
+  "atlas": "atlas.png",
+  "source_sha256": "502ad3ab01cb460ef8ca56f41365a5b70b79a5e5365aec64dc8b1c0bfe121574",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "uniform_scale": 0.24427480916030533,
+  "frames": [
+    {
+      "id": 0,
+      "source_rect": [
+        33,
+        82,
+        217,
+        636
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        89
+      ],
+      "native_sha256": "7994549a4039705d1835687374249aba3226025b84bcf2ee892dd12f68d06950"
+    },
+    {
+      "id": 1,
+      "source_rect": [
+        279,
+        82,
+        226,
+        635
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        101,
+        89
+      ],
+      "native_sha256": "4be36f025926e69d7f0b168bfad8b380bc75875d71a92e05064d6e7f4fef164a"
+    },
+    {
+      "id": 2,
+      "source_rect": [
+        537,
+        82,
+        219,
+        639
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        88
+      ],
+      "native_sha256": "d2a94c0682857ba1e1ae25c71c869a343c1456949483777f8196515063a4a5c1"
+    },
+    {
+      "id": 3,
+      "source_rect": [
+        784,
+        84,
+        218,
+        634
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        89
+      ],
+      "native_sha256": "c3864930ca9c84e2e5558691fac51beac846ba2c257ed682ecfa90a71bda6fb8"
+    },
+    {
+      "id": 4,
+      "source_rect": [
+        42,
+        793,
+        169,
+        647
+      ],
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "native_sha256": "adc5e1b7155627ad553195f92b8d48e53c849ebfd0ed47f2c48bb8dac5f5eb95"
+    },
+    {
+      "id": 5,
+      "source_rect": [
+        285,
+        793,
+        207,
+        635
+      ],
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        103,
+        89
+      ],
+      "native_sha256": "3f68b2207610ecab152935a7e5cfac2a2418bb56c2d3efc3bbd2b25d3cc60823"
+    },
+    {
+      "id": 6,
+      "source_rect": [
+        531,
+        793,
+        211,
+        638
+      ],
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        88
+      ],
+      "native_sha256": "e99525202c25ee4de5e46752d66963b447e9fa1ed5f186fc79a249f9fcfed537"
+    },
+    {
+      "id": 7,
+      "source_rect": [
+        780,
+        794,
+        219,
+        655
+      ],
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        84
+      ],
+      "native_sha256": "2931ae81945ba9afa61c71b9f3248020879fb108c4219f09e6f37481f1a1e004"
+    }
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "processing": "Border-connected neutral checker key; intact native crops; common nearest scale; bottom registration for static review only.",
+  "limitations": [
+    "Enclosed checker patches may remain; white fabric protected by connectivity.",
+    "Bottom registration is for static outfit comparison, not motion foot-lock.",
+    "Repeated leading leg and braid-side drift; no complete walk or turn admitted."
+  ]
+}

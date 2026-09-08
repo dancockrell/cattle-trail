@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "status": "future_animation_contract_and_observed_static_views",
+  "runtime_admitted": false,
+  "approved_clips": [],
+  "source": {
+    "file": "source.png",
+    "width": 1024,
+    "height": 1536,
+    "columns": 4,
+    "rows": 2,
+    "index_order": "row_major_zero_based",
+    "cell_size": [256, 768],
+    "cell_note": "Source grid windows only; these are not extracted bounds or final atlas cells."
+  },
+  "appearance_contract": {
+    "body": "Clearly adult, slender limbs and build, understated small bust.",
+    "garments": ["One ivory linen blouse tucked into the waistband", "One opaque blue skirt with a functional walking slit", "Brown leather boots"],
+    "accessories": ["Simple belt", "Brass compass"],
+    "continuity": "Preserve braid attachment, compass side, skirt construction and body volume across every view. No trousers, shorts, leggings, waistcoat or second skirt layer."
+  },
+  "observed_frames": [
+    {"index": 0, "grid": [0, 0], "view_candidate": "SE", "use": "static_front_three_quarter", "phase": null},
+    {"index": 1, "grid": [1, 0], "view_candidate": "SE", "use": "static_stepping_pose", "phase": null},
+    {"index": 2, "grid": [2, 0], "view_candidate": "SE", "use": "static_stepping_pose", "phase": null},
+    {"index": 3, "grid": [3, 0], "view_candidate": "SE", "use": "static_stepping_pose", "phase": null},
+    {"index": 4, "grid": [0, 1], "view_candidate": "E", "use": "static_right_profile", "phase": null},
+    {"index": 5, "grid": [1, 1], "view_candidate": "NE", "use": "static_rear_three_quarter", "phase": null},
+    {"index": 6, "grid": [2, 1], "view_candidate": "NW", "use": "static_rear_three_quarter", "phase": null},
+    {"index": 7, "grid": [3, 1], "view_candidate": "S", "use": "static_near_front", "phase": null}
+  ],
+  "observed_limitations": [
+    "The top row repeats similar leading-leg contacts; four drawings do not prove four successive gait phases.",
+    "No complete alternating left/right walk loop is present.",
+    "Bottom-row directions are approximate static visual assignments, not an authored turn sequence.",
+    "Braid placement and accessory continuity need correction before animation admission."
+  ],
+  "intended_walk": {
+    "status": "to_be_drawn_not_observed",
+    "directions": ["S", "SE", "E", "NE", "N", "NW", "W", "SW"],
+    "unique_frames_per_direction": 8,
+    "total_unique_frames": 64,
+    "proposed_duration_ms": 1000,
+    "proposed_frame_duration_ms": 125,
+    "phase_definition": "Left and right mean the character's anatomical legs, never screen side. Contact labels apply independently at every facing.",
+    "phases": [
+      {"order": 0, "id": "left_contact", "pose": "Left heel contacts ahead; right toe finishes behind. Right arm leads."},
+      {"order": 1, "id": "left_down", "pose": "Weight settles onto left leg; left knee bends; right foot leaves ground. Pelvis reaches low point."},
+      {"order": 2, "id": "right_passing", "pose": "Left leg supports; bent right leg passes beneath pelvis. Arms pass near neutral."},
+      {"order": 3, "id": "left_up", "pose": "Left support heel rises; right leg swings ahead. Pelvis reaches high point."},
+      {"order": 4, "id": "right_contact", "pose": "Right heel contacts ahead; left toe finishes behind. Left arm leads; clearly opposite to phase zero."},
+      {"order": 5, "id": "right_down", "pose": "Weight settles onto right leg; right knee bends; left foot leaves ground. Pelvis reaches low point."},
+      {"order": 6, "id": "left_passing", "pose": "Right leg supports; bent left leg passes beneath pelvis. Arms pass near neutral."},
+      {"order": 7, "id": "right_up", "pose": "Right support heel rises; left leg swings ahead. Pelvis reaches high point and returns naturally into left contact."}
+    ],
+    "loop_closure": "Play phases 0 through 7 and then 0. Do not append a duplicated first frame or use ping-pong playback to substitute for missing opposite contacts.",
+    "drawing_requirements": [
+      "Draw the entire character in each phase; retain fixed high three-quarter camera and consistent scale.",
+      "Keep a common ground anchor while allowing intentional pelvis bob; do not recenter each frame by bounding box.",
+      "Show planted-foot progression, opposite arm swing and skirt/braid follow-through without swapping garment construction.",
+      "Author each facing with correct overlap and compass side; mirroring an asymmetric character does not fulfill a new facing.",
+      "Preserve opaque hip and seat coverage throughout the single skirt's motion."
+    ]
+  },
+  "intended_turns": {
+    "status": "to_be_drawn_not_observed",
+    "clockwise_facing_order": ["S", "SW", "W", "NW", "N", "NE", "E", "SE"],
+    "requirements": [
+      "Provide distinct clockwise and counterclockwise whole-body transition poses between adjacent facings.",
+      "Use planted-foot pivot, intermediate torso orientation and settled destination pose, with stable ground registration.",
+      "Preserve current gait phase when transitioning between moving directional loops; a static facing sheet is not a turn animation."
+    ]
+  }
+}
