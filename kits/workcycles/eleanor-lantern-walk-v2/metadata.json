@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "status": "candidate_phase_repetition_not_complete_walk",
+  "source": "kits/source/eleanor-lantern-walk-v2.png",
+  "source_sha256": "b4b184f3e9c0277929b07c22a3be1689cc99aac96fe2c8e5e3bb290944abeccd",
+  "source_size": [
+    2172,
+    724
+  ],
+  "prompt": "kits/source/eleanor-lantern-walk-v2-prompt.txt",
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "intended_phase": "contact_A",
+      "observed_pose": "extended contact-like stance",
+      "direction": "east",
+      "carry_hand": "right",
+      "lantern": "attached beneath visible nearhand throughout",
+      "source_crop_xyxy": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        136,
+        113,
+        424,
+        637
+      ],
+      "scale": 0.07633587786259542,
+      "resized_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 1,
+      "intended_phase": "passing_A",
+      "observed_pose": "narrower passing-like stance",
+      "direction": "east",
+      "carry_hand": "right",
+      "lantern": "attached beneath visible nearhand throughout",
+      "source_crop_xyxy": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        125,
+        113,
+        361,
+        637
+      ],
+      "scale": 0.07633587786259542,
+      "resized_size": [
+        18,
+        40
+      ],
+      "cell_offset": [
+        23,
+        21
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 2,
+      "intended_phase": "opposite_contact",
+      "observed_pose": "extended stance repeats first leading boot",
+      "direction": "east",
+      "carry_hand": "right",
+      "lantern": "attached beneath visible nearhand throughout",
+      "source_crop_xyxy": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        98,
+        113,
+        388,
+        637
+      ],
+      "scale": 0.07633587786259542,
+      "resized_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    },
+    {
+      "index": 3,
+      "intended_phase": "passing_B",
+      "observed_pose": "extended stance, not requested opposite passing",
+      "direction": "east",
+      "carry_hand": "right",
+      "lantern": "attached beneath visible nearhand throughout",
+      "source_crop_xyxy": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        75,
+        113,
+        364,
+        637
+      ],
+      "scale": 0.07633587786259542,
+      "resized_size": [
+        22,
+        40
+      ],
+      "cell_offset": [
+        21,
+        21
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ]
+    }
+  ],
+  "transformation": "Wholefigure crop,binarymagenta key,wholebody nearestrescale andpadding only.",
+  "limitations": [
+    "Frames0,2,3 repeat extended same-leadingboot poses.",
+    "Frame3 fails requested opposite passing pose; cannot claim complete alternatingwalk.",
+    "Lantern is consistently attached in rightnearhand and preserved as wholefigure pixels.",
+    "No gameplayrun or sharedcatalog admission."
+  ]
+}

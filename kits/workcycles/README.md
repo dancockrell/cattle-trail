@@ -38,3 +38,5 @@ Only static sheets were reviewed in this pass. Short rider bridge timings are pr
 - crossing-spirit-v1: four spectral longhorn states, all with northeast body orientation: wary, agitated, listening and settled. Transparent 72×64 cells, [36,61] anchors. Separate static-state clips; not a walk animation. The palette stays pale turquoise, seafoam and ivory against the warm trail.
 
 These two working kits support the authored adventure under construction. Neither is globally admitted or placed in the current playable room yet.
+
+Lantern animation follow-up: eleanor-lantern-walk-v2 provides four whole east carry poses but repeats contact-like frames and lacks opposite passing, so it remains a working candidate. crossing-spirit-settle-v2 provides two new lower-head poses with exact original endpoints. The selected-preview atlas uses source frames 0→1→3, omitting the second new pose because it lowers beyond the final endpoint and would force an upward correction. Its short nonloop timings are provisional; neither working animation is a runtime replacement yet.

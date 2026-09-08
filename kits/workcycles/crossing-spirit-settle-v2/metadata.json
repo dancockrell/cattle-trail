@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "status": "candidate_transition_pending_visual_admission",
+  "character": "crossing_spirit",
+  "actual_body_facing": "northeast",
+  "source": "kits/source/crossing-spirit-settle-v2.png",
+  "source_sha256": "8da05444f974be82faa31bddefa3940ddd48caaf0c8ae73bda396c126845f2a8",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "source_grid": [
+    2,
+    1
+  ],
+  "texture": "atlas.png",
+  "atlas_size": [
+    288,
+    64
+  ],
+  "cell": [
+    72,
+    64
+  ],
+  "anchor": [
+    36,
+    61
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "role": "original_listening",
+      "source": "kits/source/crossing-spirit-v1.png",
+      "source_index": 2,
+      "preserved_endpoint_pixels": true,
+      "atlas_rect_xywh": [
+        0,
+        0,
+        72,
+        64
+      ],
+      "anchor": [
+        36,
+        61
+      ],
+      "rgba_sha256": "bb50277c6e7c5966bdeb35db0c819af865fed4ade712cbb5f7b4dfa089401701"
+    },
+    {
+      "index": 1,
+      "role": "new_lowering_1",
+      "source": "kits/source/crossing-spirit-settle-v2.png",
+      "source_cell_ltrb": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "trim_ltrb_in_cell": [
+        115,
+        281,
+        698,
+        774
+      ],
+      "scale": 0.065,
+      "scaled_size": [
+        38,
+        32
+      ],
+      "offset": [
+        17,
+        29
+      ],
+      "atlas_rect_xywh": [
+        72,
+        0,
+        72,
+        64
+      ],
+      "anchor": [
+        36,
+        61
+      ],
+      "rgba_sha256": "f046cbd53ca9b9fc92362e0f68d8fe5fcd0bf6338a3b7b3f34ba981fbbe9c7a1"
+    },
+    {
+      "index": 2,
+      "role": "new_lowering_2",
+      "source": "kits/source/crossing-spirit-settle-v2.png",
+      "source_cell_ltrb": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "trim_ltrb_in_cell": [
+        83,
+        353,
+        686,
+        776
+      ],
+      "scale": 0.065,
+      "scaled_size": [
+        39,
+        27
+      ],
+      "offset": [
+        16,
+        34
+      ],
+      "atlas_rect_xywh": [
+        144,
+        0,
+        72,
+        64
+      ],
+      "anchor": [
+        36,
+        61
+      ],
+      "rgba_sha256": "72b809b7a9ee1ec5b198f37db28f5c52485e80eb117cd66b6a217575d101c41f"
+    },
+    {
+      "index": 3,
+      "role": "original_settled",
+      "source": "kits/source/crossing-spirit-v1.png",
+      "source_index": 3,
+      "preserved_endpoint_pixels": true,
+      "atlas_rect_xywh": [
+        216,
+        0,
+        72,
+        64
+      ],
+      "anchor": [
+        36,
+        61
+      ],
+      "rgba_sha256": "592fecd5551912b20d6d8319f71ede4339e2b0659afd99df39d7926657cf7b9c"
+    }
+  ],
+  "clip": {
+    "name": "listen_to_settle",
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "durations_seconds": [
+      0.18,
+      0.16,
+      0.18,
+      0.4
+    ],
+    "loop": false,
+    "sequence_verified": false
+  },
+  "processing": {
+    "alpha": "binary0/255, zeroRGBA magenta-keyed pixels",
+    "resampling": "nearest",
+    "new_frames_shared_scale": 0.065,
+    "scale_basis": "Approximate native hind-hoof separation matching original endpoints; endpoints retain exact existing pixels.",
+    "no_detached_parts": true
+  },
+  "inspection": {
+    "new_pose_order": "Left then right lowers the head progressively.",
+    "limitations": [
+      "The second new pose lowers the head slightly beyond the original final settled endpoint; final transition may have a small upward correction.",
+      "New head faces somewhat more toward the viewer; body remains northeast.",
+      "New far horn remains visible while original settled far horn is occluded. Native visual admission is pending."
+    ]
+  },
+  "selected_preview": {
+    "atlas": "selected-preview-atlas.png",
+    "source_frame_order": [
+      0,
+      1,
+      3
+    ],
+    "cell": [
+      72,
+      64
+    ],
+    "anchor": [
+      36,
+      61
+    ],
+    "durations_seconds": [
+      0.14,
+      0.12,
+      0.2
+    ],
+    "loop": false,
+    "status": "static_review_candidate_not_runtime_admitted",
+    "selection_reason": "Omit frame2 which overshoots the settled endpoint and causes an upward correction."
+  }
+}
