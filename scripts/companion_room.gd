@@ -9,6 +9,7 @@ const LanternRoom = preload("res://scripts/lantern_room.gd")
 const LanternEquipment = preload("res://scripts/lantern_equipment.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
 const InesState = preload("res://scripts/ines_companion.gd")
+const InesRoom = preload("res://scripts/ines_room.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
@@ -30,6 +31,7 @@ var camp_recovery = Recovery.new()
 var camp_care
 var lantern
 var mechanic
+var ines
 var lantern_equipment: Sprite2D
 
 func sync_lantern_equipment() -> void:
@@ -64,6 +66,7 @@ func _init(owner_room: Control) -> void:
 	mechanic = MechanicRoom.new(self)
 	cart = CartRoom.new(self)
 	camp_care = CampCare.new(self)
+	ines = InesRoom.new(self)
 	lantern_equipment = LanternEquipment.new()
 	lantern_equipment.configure(room.eleanor,load("res://assets/lantern/carried_lantern.png"),Vector2(16,8))
 	room.eleanor.add_child(lantern_equipment)
@@ -110,6 +113,7 @@ func switch_character() -> void:
 	tell("Playing Eleanor, 24 / Walk to a restless steer and Talk to steady it." if is_eleanor() else "Playing the trail boss / Eleanor's progress is kept.")
 
 func interact() -> bool:
+	if ines != null and ines.interact(): return true
 	if cart != null and cart.interact(): return true
 	if mechanic.interact(): return true
 	if lantern.interact(): return true
@@ -156,6 +160,7 @@ func rest_together() -> void:
 	camp_care.rest()
 
 func flirt() -> void:
+	if ines != null and ines.flirt(): return
 	if cart != null and cart.flirt(): return
 	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
 		tell("As the trail boss, meet Eleanor at the wagon for a quiet moment.")
@@ -191,6 +196,7 @@ func decorate_ui() -> void:
 	if mechanic != null: mechanic.decorate_ui()
 	if cart != null: cart.decorate_ui()
 	if camp_care != null: camp_care.decorate_ui()
+	if ines != null: ines.decorate_ui()
 
 func save_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
@@ -281,6 +287,7 @@ func load_game(test_path := "") -> bool:
 	lantern.sync_after_load()
 	mechanic.sync_after_load()
 	cart.sync_after_load()
+	ines.sync_after_load()
 	sync_lantern_equipment()
 	tell("Outfit restored. Your companions and completed actions are remembered.")
 	return true

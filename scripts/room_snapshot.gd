@@ -48,6 +48,7 @@ static func validate(data: Dictionary) -> bool:
 		if not data.ines_companion is Dictionary: return false
 		var ines := InesState.new()
 		if not ines.load_dict(data.ines_companion): return false
+		if ines.met and (not data.get("ada_cart_adventure") is Dictionary or data.ada_cart_adventure.get("status") != "completed"): return false
 	if data.has("ada_cart_position") and not valid_point(data.ada_cart_position): return false
 	if data.has("ada_cart_heading"):
 		if not valid_point(data.ada_cart_heading): return false

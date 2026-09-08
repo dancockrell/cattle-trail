@@ -2,7 +2,7 @@
   "version": 1,
   "character_id": "ines_vale",
   "age": 23,
-  "status": "authored_for_pending_room_encounter",
+  "status": "connected_to_source_room_encounter",
   "events": [
     {"id":"intro","speaker":"INES","priority":2,"text":"Hear that bell? No cow attached. That's usually a clue."},
     {"id":"bell_tracks","speaker":"INES","priority":1,"text":"Hoofprints going both ways. Somebody wants us lost."},
