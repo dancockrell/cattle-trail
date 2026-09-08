@@ -416,6 +416,7 @@ func _physics_process(delta: float) -> void:
 			message = "A steer settles in the east gathering. %d of 6 safe." % secured_count()
 	if companion != null and companion.lantern != null: companion.lantern.tick(delta)
 	if companion != null: companion.sync_lantern_equipment()
+	if companion != null and companion.mechanic != null: companion.mechanic.tick(delta)
 	update_rope(delta)
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()
@@ -455,6 +456,7 @@ func limit_position(at: Vector2) -> Vector2:
 			if candidate.x < 24 or candidate.x > 616 or candidate.y < 71 or candidate.y > 303:
 				candidate = center + center.direction_to(Vector2(320,187)) * radius
 			result = candidate
+	if companion != null and companion.mechanic != null: result = companion.mechanic.limit_motion(result)
 	return result.clamp(Vector2(24, 71), Vector2(616, 303))
 
 func secured_count() -> int:
@@ -477,6 +479,7 @@ func interact() -> void:
 	refresh()
 
 func lasso() -> void:
+	if companion != null and companion.mechanic.toggle_feed(): return
 	if won and companion != null:
 		companion.flirt()
 		return
@@ -514,6 +517,7 @@ func wait_for_lasso_resolution() -> void:
 	assert(remaining>0, "Lasso wind-up and flight must resolve within two seconds")
 
 func shoot() -> void:
+	if companion != null and companion.mechanic.toggle_vent(): return
 	if companion != null and companion.is_eleanor(): return
 	if won or shot_cooldown > 0 or player.action_time > 0: return
 	if ammo == 0:

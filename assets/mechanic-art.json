@@ -1,0 +1,1093 @@
+{
+  "schema_version": 1,
+  "status": "mechanic_controller_static_art_package",
+  "sprites": {
+    "ada_mercer": {
+      "texture": "res://assets/mechanic/ada-mercer.png",
+      "cell": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "default_facing": "east",
+      "frames": [
+        {
+          "index": 0,
+          "direction": "east",
+          "source_row": 0,
+          "source_col": 0,
+          "source_cell_ltrb": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "trim_ltrb_in_cell": [
+            260,
+            74,
+            438,
+            562
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "scaled_size": [
+            15,
+            40
+          ],
+          "cell_offset": [
+            24,
+            21
+          ],
+          "rgba_sha256": "7047777926daad8e5e65aa7a920489892bc4eea9cab295b3d89911ac159cece2",
+          "id": "ada-mercer-idle-v1_000",
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "source": "kits/source/ada-mercer-idle-v1.png",
+          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
+          "candidate_atlas_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/east.png",
+          "candidate_image_sha256": "64021aabc149e586ff78f8cfb15efb34537169bc24498b65bcda33dafddbfa4b",
+          "source_frame_metadata": {
+            "index": 0,
+            "direction": "east",
+            "source_row": 0,
+            "source_col": 0,
+            "source_cell_ltrb": [
+              0,
+              0,
+              627,
+              627
+            ],
+            "trim_ltrb_in_cell": [
+              260,
+              74,
+              438,
+              562
+            ],
+            "atlas_rect_xywh": [
+              0,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "scaled_size": [
+              15,
+              40
+            ],
+            "cell_offset": [
+              24,
+              21
+            ],
+            "rgba_sha256": "7047777926daad8e5e65aa7a920489892bc4eea9cab295b3d89911ac159cece2"
+          },
+          "alpha_bounds_xyxy": [
+            24,
+            21,
+            39,
+            61
+          ]
+        },
+        {
+          "index": 1,
+          "direction": "northeast",
+          "source_row": 0,
+          "source_col": 1,
+          "source_cell_ltrb": [
+            627,
+            0,
+            1254,
+            627
+          ],
+          "trim_ltrb_in_cell": [
+            173,
+            71,
+            337,
+            556
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "scaled_size": [
+            13,
+            40
+          ],
+          "cell_offset": [
+            25,
+            21
+          ],
+          "rgba_sha256": "7d21745c7408362732289e60633dbe9dafe00921ee3b38a1ede66fdd696f6532",
+          "id": "ada-mercer-idle-v1_001",
+          "atlas_rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "source": "kits/source/ada-mercer-idle-v1.png",
+          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
+          "candidate_atlas_rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/northeast.png",
+          "candidate_image_sha256": "dda4a7189b20e2dc2414125ce9be557e55090263c68f422f9c78c6f50865e58f",
+          "source_frame_metadata": {
+            "index": 1,
+            "direction": "northeast",
+            "source_row": 0,
+            "source_col": 1,
+            "source_cell_ltrb": [
+              627,
+              0,
+              1254,
+              627
+            ],
+            "trim_ltrb_in_cell": [
+              173,
+              71,
+              337,
+              556
+            ],
+            "atlas_rect_xywh": [
+              64,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "scaled_size": [
+              13,
+              40
+            ],
+            "cell_offset": [
+              25,
+              21
+            ],
+            "rgba_sha256": "7d21745c7408362732289e60633dbe9dafe00921ee3b38a1ede66fdd696f6532"
+          },
+          "alpha_bounds_xyxy": [
+            25,
+            21,
+            38,
+            61
+          ]
+        },
+        {
+          "index": 2,
+          "direction": "northwest",
+          "source_row": 1,
+          "source_col": 0,
+          "source_cell_ltrb": [
+            0,
+            627,
+            627,
+            1254
+          ],
+          "trim_ltrb_in_cell": [
+            273,
+            57,
+            433,
+            539
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "scaled_size": [
+            13,
+            40
+          ],
+          "cell_offset": [
+            25,
+            21
+          ],
+          "rgba_sha256": "b8d2daf2a133110b6a2afb4d4772b210ef97a070211c19eb3b604ff520baaa64",
+          "id": "ada-mercer-idle-v1_002",
+          "atlas_rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "source": "kits/source/ada-mercer-idle-v1.png",
+          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
+          "candidate_atlas_rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/northwest.png",
+          "candidate_image_sha256": "7ed2d3cc2694bfcd05b25963129002f7e80b6c6084ae154dcaa73634d8f49556",
+          "source_frame_metadata": {
+            "index": 2,
+            "direction": "northwest",
+            "source_row": 1,
+            "source_col": 0,
+            "source_cell_ltrb": [
+              0,
+              627,
+              627,
+              1254
+            ],
+            "trim_ltrb_in_cell": [
+              273,
+              57,
+              433,
+              539
+            ],
+            "atlas_rect_xywh": [
+              128,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "scaled_size": [
+              13,
+              40
+            ],
+            "cell_offset": [
+              25,
+              21
+            ],
+            "rgba_sha256": "b8d2daf2a133110b6a2afb4d4772b210ef97a070211c19eb3b604ff520baaa64"
+          },
+          "alpha_bounds_xyxy": [
+            25,
+            21,
+            38,
+            61
+          ]
+        },
+        {
+          "index": 3,
+          "direction": "south",
+          "source_row": 1,
+          "source_col": 1,
+          "source_cell_ltrb": [
+            627,
+            627,
+            1254,
+            1254
+          ],
+          "trim_ltrb_in_cell": [
+            170,
+            57,
+            354,
+            542
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "scaled_size": [
+            15,
+            40
+          ],
+          "cell_offset": [
+            24,
+            21
+          ],
+          "rgba_sha256": "0aefba0a76b74d500fed040acd58f39103ee2b7e546425842ca582f7ada6e8d2",
+          "id": "ada-mercer-idle-v1_003",
+          "atlas_rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "source": "kits/source/ada-mercer-idle-v1.png",
+          "source_sha256": "557a375af341289fe6a6c57062b6a2477fe23ffc98bbfd38416e2bfd5e3b5e1e",
+          "candidate_atlas_rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "candidate_image": "kits/workcycles/ada-mercer-idle-v1/south.png",
+          "candidate_image_sha256": "92e9714017f6435c62a7a8427dc0db5f1ccf37deff65059040100078fa9c3dd2",
+          "source_frame_metadata": {
+            "index": 3,
+            "direction": "south",
+            "source_row": 1,
+            "source_col": 1,
+            "source_cell_ltrb": [
+              627,
+              627,
+              1254,
+              1254
+            ],
+            "trim_ltrb_in_cell": [
+              170,
+              57,
+              354,
+              542
+            ],
+            "atlas_rect_xywh": [
+              192,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "scaled_size": [
+              15,
+              40
+            ],
+            "cell_offset": [
+              24,
+              21
+            ],
+            "rgba_sha256": "0aefba0a76b74d500fed040acd58f39103ee2b7e546425842ca582f7ada6e8d2"
+          },
+          "alpha_bounds_xyxy": [
+            24,
+            21,
+            39,
+            61
+          ]
+        }
+      ],
+      "clips": {
+        "idle_east": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_northeast": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_northwest": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle_south": {
+          "frames": [
+            3
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "status": "packaged_whole_static_source_frames",
+      "source_metadata": "kits/workcycles/ada-mercer-idle-v1/metadata.json",
+      "source_metadata_sha256": "ca9a2e8b4522a612abf50ff6b0e9ec41ef83905b330006c01e2c464d80dc714f",
+      "source_processing": {
+        "shared_scale": 0.08196721311475409,
+        "max_whole_character_height": 40,
+        "resampling": "nearest",
+        "alpha": "binary0/255, zeroRGBA magenta pixels",
+        "whole_source_sprites_only": true
+      },
+      "source_inspection": {
+        "whole_figures": true,
+        "direction_mapping": "E front-oblique, NE rear-oblique, NW rear-oblique, S frontal.",
+        "identity": "Same braid/goggles/jacket/trousers silhouette across four directions.",
+        "limitations": [
+          "Northwest source shows two hanging tools, while other angles show one; toolbelt consistency needs review before final admission.",
+          "East is a front-oblique presentation rather than a strict lateral profile.",
+          "New identity candidate only; no existing Ada runtime sprite was replaced."
+        ],
+        "not_a_walk_cycle": true
+      },
+      "packaging": {
+        "rescaled": false,
+        "recolored": false,
+        "redrawn": false,
+        "pixel_equality_verified": true
+      },
+      "age": 22,
+      "texture_sha256": "8d47775284475fb84f0aae21df81583ab57d7d26ea94f6e858d4e56a99c1bad3"
+    },
+    "steam_handler": {
+      "texture": "res://assets/mechanic/steam-handler.png",
+      "cell": [
+        96,
+        96
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "default_facing": "southwest",
+      "frames": [
+        {
+          "index": 0,
+          "state": "idle",
+          "actual_direction": "southwest",
+          "atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "cell_offset": [
+            27,
+            45
+          ],
+          "scaled_size": [
+            42,
+            48
+          ],
+          "source_cell": {
+            "index": 0,
+            "row": 0,
+            "column": 0,
+            "file": "cell_00_00.png",
+            "source_rect": [
+              0,
+              0,
+              634,
+              612
+            ],
+            "trim_rect_in_cell": [
+              166,
+              119,
+              529,
+              533
+            ],
+            "source_trim_rect": [
+              166,
+              119,
+              529,
+              533
+            ],
+            "size": [
+              363,
+              414
+            ],
+            "rgba_sha256": "a70598ab86ebbd95e1f1c1104ae2630498ff3be0b390aa2b7b0e9bf7deed0c04",
+            "components_before_filter": 1,
+            "components_kept": 1,
+            "removed_small_component_pixels": 0
+          },
+          "alpha_bounds_xyxy": [
+            27,
+            45,
+            69,
+            93
+          ],
+          "rgba_sha256": "6639c3cae69a172ba601910ab006de72f31aa75aed893cf102a8ef900701be56",
+          "id": "steam-cattle-handler-v1_000",
+          "source": "kits/source/steam-cattle-handler-v1.png",
+          "source_sha256": "0c52ad302e96f9a92bdaf670480f6ee1d49cc81fef5f110679518b6c344717d4",
+          "candidate_atlas_rect": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "candidate_image": "kits/workcycles/steam-cattle-handler-v1/idle.png",
+          "candidate_image_sha256": "78ea07cd5adbe558fc7a9936714c46e85f5050f92ed1370d8f89e8b60d8bc548",
+          "source_frame_metadata": {
+            "index": 0,
+            "state": "idle",
+            "actual_direction": "southwest",
+            "atlas_rect": [
+              0,
+              0,
+              96,
+              96
+            ],
+            "anchor": [
+              48,
+              93
+            ],
+            "cell_offset": [
+              27,
+              45
+            ],
+            "scaled_size": [
+              42,
+              48
+            ],
+            "source_cell": {
+              "index": 0,
+              "row": 0,
+              "column": 0,
+              "file": "cell_00_00.png",
+              "source_rect": [
+                0,
+                0,
+                634,
+                612
+              ],
+              "trim_rect_in_cell": [
+                166,
+                119,
+                529,
+                533
+              ],
+              "source_trim_rect": [
+                166,
+                119,
+                529,
+                533
+              ],
+              "size": [
+                363,
+                414
+              ],
+              "rgba_sha256": "a70598ab86ebbd95e1f1c1104ae2630498ff3be0b390aa2b7b0e9bf7deed0c04",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            "alpha_bounds_xyxy": [
+              27,
+              45,
+              69,
+              93
+            ],
+            "rgba_sha256": "6639c3cae69a172ba601910ab006de72f31aa75aed893cf102a8ef900701be56"
+          }
+        },
+        {
+          "index": 1,
+          "state": "stalled",
+          "actual_direction": "southwest",
+          "atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "cell_offset": [
+            28,
+            45
+          ],
+          "scaled_size": [
+            39,
+            48
+          ],
+          "source_cell": {
+            "index": 1,
+            "row": 0,
+            "column": 1,
+            "file": "cell_00_01.png",
+            "source_rect": [
+              634,
+              0,
+              1254,
+              612
+            ],
+            "trim_rect_in_cell": [
+              106,
+              115,
+              443,
+              533
+            ],
+            "source_trim_rect": [
+              740,
+              115,
+              1077,
+              533
+            ],
+            "size": [
+              337,
+              418
+            ],
+            "rgba_sha256": "9ca6fe855c05277fdfbea3aa6631d3d0bb3ad76b75a2004eb3ea85b4b7bfa5ae",
+            "components_before_filter": 1,
+            "components_kept": 1,
+            "removed_small_component_pixels": 0
+          },
+          "alpha_bounds_xyxy": [
+            28,
+            45,
+            67,
+            93
+          ],
+          "rgba_sha256": "ef6e984bfd2927e92eb353099fc57034b31ebd72254066c0595ce46544bcb33b",
+          "id": "steam-cattle-handler-v1_001",
+          "source": "kits/source/steam-cattle-handler-v1.png",
+          "source_sha256": "0c52ad302e96f9a92bdaf670480f6ee1d49cc81fef5f110679518b6c344717d4",
+          "candidate_atlas_rect": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "candidate_image": "kits/workcycles/steam-cattle-handler-v1/stalled.png",
+          "candidate_image_sha256": "0556bfedd675831731a1a7156b2ce0e7cc541ce56a06f19d97013036888ed2ca",
+          "source_frame_metadata": {
+            "index": 1,
+            "state": "stalled",
+            "actual_direction": "southwest",
+            "atlas_rect": [
+              96,
+              0,
+              96,
+              96
+            ],
+            "anchor": [
+              48,
+              93
+            ],
+            "cell_offset": [
+              28,
+              45
+            ],
+            "scaled_size": [
+              39,
+              48
+            ],
+            "source_cell": {
+              "index": 1,
+              "row": 0,
+              "column": 1,
+              "file": "cell_00_01.png",
+              "source_rect": [
+                634,
+                0,
+                1254,
+                612
+              ],
+              "trim_rect_in_cell": [
+                106,
+                115,
+                443,
+                533
+              ],
+              "source_trim_rect": [
+                740,
+                115,
+                1077,
+                533
+              ],
+              "size": [
+                337,
+                418
+              ],
+              "rgba_sha256": "9ca6fe855c05277fdfbea3aa6631d3d0bb3ad76b75a2004eb3ea85b4b7bfa5ae",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            "alpha_bounds_xyxy": [
+              28,
+              45,
+              67,
+              93
+            ],
+            "rgba_sha256": "ef6e984bfd2927e92eb353099fc57034b31ebd72254066c0595ce46544bcb33b"
+          }
+        },
+        {
+          "index": 2,
+          "state": "repaired",
+          "actual_direction": "southwest",
+          "atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "cell_offset": [
+            28,
+            45
+          ],
+          "scaled_size": [
+            40,
+            48
+          ],
+          "source_cell": {
+            "index": 2,
+            "row": 1,
+            "column": 0,
+            "file": "cell_01_00.png",
+            "source_rect": [
+              0,
+              612,
+              624,
+              1254
+            ],
+            "trim_rect_in_cell": [
+              166,
+              82,
+              514,
+              496
+            ],
+            "source_trim_rect": [
+              166,
+              694,
+              514,
+              1108
+            ],
+            "size": [
+              348,
+              414
+            ],
+            "rgba_sha256": "748c22e657145605f7adda2917fe5ee25a1f92d02c2e40bc6759b9b992dd917c",
+            "components_before_filter": 1,
+            "components_kept": 1,
+            "removed_small_component_pixels": 0
+          },
+          "alpha_bounds_xyxy": [
+            28,
+            45,
+            68,
+            93
+          ],
+          "rgba_sha256": "e75964758da4a138467979220fd7dc3065f0fecfaa68d52a29698cb10a09c10b",
+          "id": "steam-cattle-handler-v1_002",
+          "source": "kits/source/steam-cattle-handler-v1.png",
+          "source_sha256": "0c52ad302e96f9a92bdaf670480f6ee1d49cc81fef5f110679518b6c344717d4",
+          "candidate_atlas_rect": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "candidate_image": "kits/workcycles/steam-cattle-handler-v1/repaired.png",
+          "candidate_image_sha256": "b5c47f0a4af6e5ec894190fc0b727e22e7991877aee32cf51519eab10347939e",
+          "source_frame_metadata": {
+            "index": 2,
+            "state": "repaired",
+            "actual_direction": "southwest",
+            "atlas_rect": [
+              192,
+              0,
+              96,
+              96
+            ],
+            "anchor": [
+              48,
+              93
+            ],
+            "cell_offset": [
+              28,
+              45
+            ],
+            "scaled_size": [
+              40,
+              48
+            ],
+            "source_cell": {
+              "index": 2,
+              "row": 1,
+              "column": 0,
+              "file": "cell_01_00.png",
+              "source_rect": [
+                0,
+                612,
+                624,
+                1254
+              ],
+              "trim_rect_in_cell": [
+                166,
+                82,
+                514,
+                496
+              ],
+              "source_trim_rect": [
+                166,
+                694,
+                514,
+                1108
+              ],
+              "size": [
+                348,
+                414
+              ],
+              "rgba_sha256": "748c22e657145605f7adda2917fe5ee25a1f92d02c2e40bc6759b9b992dd917c",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            "alpha_bounds_xyxy": [
+              28,
+              45,
+              68,
+              93
+            ],
+            "rgba_sha256": "e75964758da4a138467979220fd7dc3065f0fecfaa68d52a29698cb10a09c10b"
+          }
+        }
+      ],
+      "clips": {
+        "idle_southwest": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "stalled": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "repaired": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": true
+        },
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true
+        }
+      },
+      "status": "packaged_whole_static_source_frames",
+      "source_metadata": "kits/workcycles/steam-cattle-handler-v1/metadata.json",
+      "source_metadata_sha256": "7a6a3505c3efb3b36ce5069ba766929098cc9e6759fc5c2df1e2436041ba40ca",
+      "source_processing": {
+        "whole_sprite_only": true,
+        "key": "binary magenta cleanup",
+        "resampling": "nearest",
+        "grid": {
+          "schema_version": 1,
+          "status": "extracted_candidates_pending_visual_review",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "columns": 2,
+          "rows": 2,
+          "rect_convention": "left/top/right/bottom; right and bottom exclusive",
+          "processing": {
+            "magenta_difference": 25,
+            "source_alpha_threshold": 128,
+            "min_component_pixels": 1,
+            "connectivity": 4,
+            "rescaled": false,
+            "all_retained_components_preserved": true
+          },
+          "ycuts": [
+            0,
+            612,
+            1254
+          ],
+          "xcuts_by_row": [
+            [
+              0,
+              634,
+              1254
+            ],
+            [
+              0,
+              624,
+              1254
+            ]
+          ],
+          "review_warnings": [],
+          "cells": [
+            {
+              "index": 0,
+              "row": 0,
+              "column": 0,
+              "file": "cell_00_00.png",
+              "source_rect": [
+                0,
+                0,
+                634,
+                612
+              ],
+              "trim_rect_in_cell": [
+                166,
+                119,
+                529,
+                533
+              ],
+              "source_trim_rect": [
+                166,
+                119,
+                529,
+                533
+              ],
+              "size": [
+                363,
+                414
+              ],
+              "rgba_sha256": "a70598ab86ebbd95e1f1c1104ae2630498ff3be0b390aa2b7b0e9bf7deed0c04",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            {
+              "index": 1,
+              "row": 0,
+              "column": 1,
+              "file": "cell_00_01.png",
+              "source_rect": [
+                634,
+                0,
+                1254,
+                612
+              ],
+              "trim_rect_in_cell": [
+                106,
+                115,
+                443,
+                533
+              ],
+              "source_trim_rect": [
+                740,
+                115,
+                1077,
+                533
+              ],
+              "size": [
+                337,
+                418
+              ],
+              "rgba_sha256": "9ca6fe855c05277fdfbea3aa6631d3d0bb3ad76b75a2004eb3ea85b4b7bfa5ae",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            {
+              "index": 2,
+              "row": 1,
+              "column": 0,
+              "file": "cell_01_00.png",
+              "source_rect": [
+                0,
+                612,
+                624,
+                1254
+              ],
+              "trim_rect_in_cell": [
+                166,
+                82,
+                514,
+                496
+              ],
+              "source_trim_rect": [
+                166,
+                694,
+                514,
+                1108
+              ],
+              "size": [
+                348,
+                414
+              ],
+              "rgba_sha256": "748c22e657145605f7adda2917fe5ee25a1f92d02c2e40bc6759b9b992dd917c",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            },
+            {
+              "index": 3,
+              "row": 1,
+              "column": 1,
+              "file": "cell_01_01.png",
+              "source_rect": [
+                624,
+                612,
+                1254,
+                1254
+              ],
+              "trim_rect_in_cell": [
+                110,
+                81,
+                478,
+                496
+              ],
+              "source_trim_rect": [
+                734,
+                693,
+                1102,
+                1108
+              ],
+              "size": [
+                368,
+                415
+              ],
+              "rgba_sha256": "94e4527a1a5c2b289aa759356d71881691319ba91e209f504ed821a2c93ffec7",
+              "components_before_filter": 1,
+              "components_kept": 1,
+              "removed_small_component_pixels": 0
+            }
+          ]
+        }
+      },
+      "source_inspection": {
+        "identity": "Consistent compact brass-banded iron boiler, four jointed legs, front wood bumper and bell.",
+        "direction": "Requested NE, generated front bumper faces SW; retain actual SW labeling.",
+        "states": "Idle planted; stalled has valve-attached ivory steam; repaired amber pilot; passing raises front-left visible foot.",
+        "limitations": [
+          "Four whole state candidates, not a full walking cycle.",
+          "Repaired and passing top valve/pilot differ; no seamless animation claim.",
+          "No NE-facing admission."
+        ]
+      },
+      "packaging": {
+        "rescaled": false,
+        "recolored": false,
+        "redrawn": false,
+        "pixel_equality_verified": true
+      },
+      "source_extraction_scale": 0.11594202898550725,
+      "texture_sha256": "4f889dcda9c0f32d3b475fd236ba9a36a7eae12599119901b37f00d2e48f2981"
+    }
+  },
+  "scope": "Existing whole static source pixels only. No walking-cycle admission or source-art edits."
+}
