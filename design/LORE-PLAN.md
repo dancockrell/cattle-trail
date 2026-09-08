@@ -1,241 +1,135 @@
-# Cattle Trail — plan for ~1000 composed pages
+# Cattle Trail — lore plan, game-shaped
 
-Authority: `GAME-DESIGN.md` owns systems. `design/LORE.md` owns world voice. This file owns production order, page budgets and the test for whether a page is lore or sludge.
+`GAME-DESIGN.md` owns systems. `design/LORE.md` owns voice. This file owns what lore is for, because Cattle Trail is not a novel with a room attached.
 
-A page here means a manuscript page of finished prose, about 300 words, that could be read aloud without smelling like notes. One thousand pages is about 300,000 words. That is three short novels, or sixty to eighty chapters at house length (3,500–5,500 words). It is not a wiki, not a pantheon, and not a thousand flavor blurbs.
+## What the game is
 
-If a stretch could be deleted without anyone in the outfit losing a job, a grudge, a crossing, or a name they use, it does not count toward the thousand.
+You run a small cattle outfit on an alternate May 12, 1872 at Clear Fork.
 
-## What these pages are for
+The verbs are ride, push, lasso, shoot, talk, switch into a companion, repair a machine, carry a lantern, rest, flirt. The herd is the moving bank. The wagon is the only wall you own. Women join because a job already started near them. Romance is a separate door. Madness is strain from the country pressing on the household. Spirits are neighbors. Steam has a correct order. Gods stay argued-over weather.
 
-They are the deep well the game drinks from.
+It should feel like a simple, lively RPG with a Sims mouth: story arrives as short comments during work, then a few minutes playing as someone else, then camp. Not a dialogue tree. Not a chosen-one chronicle. Not three silent novels behind the HUD.
 
-After a chapter exists, harvest from it:
+Lore that cannot become a bubble, a four-minute adventure, a camp remark, or the next trail encounter is not lore for this game.
 
-- two or three speech-bubble lines that already happened in a mouth
-- one journal crumb
-- one encounter brief that still has a readable objective
-- nothing that needs a new room until a room is actually built
+## What 1000 pages means here
 
-Do not write the harvest first. That is how fifty-one cards become one skeleton. Write the scene. Cut the index card out of it later.
+A page is still about 300 words of finished writing that does not smell like notes. A thousand pages is about 300,000 words of game fuel, mostly small units:
 
-## Laws carried in from work that already failed at scale
+- Line: one sentence. Speech bubble during an action.
+- Beat: 120–330 words. Camp remark, rest, flirt door, journal crumb.
+- Played scene: 750–1,350 words. Backing for one companion adventure or encounter.
+- Package: 800–1,500 words. One generated woman who must not reroll as Eleanor.
 
-These are Cattle Trail rules now. They come from the WW2 corpus and from house prose.
+Chapters are allowed only when a companion adventure or a stretch of trail needs a spine. They are not the default.
 
-- Magical realism: the marvelous is reported like weather. Nobody stops to be astonished that a ford spoke.
-- A story is a person wanting something against another person, a machine, a herd, or the river. If you delete every ledger, brand book, report and sermon and nothing remains, you have not written one yet.
-- Decide rank, age, sex, date, kin and whether a surname is shared. Language will fill the unmarked case and be wrong. Rosa Vale and Ines Vale stay two women until a page decides they are not.
-- A device used once is a choice. Used across a hundred pages it is the formula. Ban, after three uses, any ending that is only “the count did not match” or “the witness could not say.”
-- No chosen-one hiring. No historical lecture. No town that exists to sell hats.
-- Systems stay in `GAME-DESIGN.md`. These pages may show a regulator fail. They may not invent a new perk.
+If you cannot point to the button, the trigger, or the adventure that will speak the sentence, do not write the sentence yet.
 
-## The composition unit
+## The loop lore has to feed
 
-Write in house lengths, not in encyclopedia entries.
+Travel and tend → person, machine, or uncanny thing → help, talk, or fight → strain and parts → wagon → relationship and recovery → pick who rides tomorrow.
 
-| Unit | Words | Job |
-|---|---|---|
-| Witness page | 500–750 | Open on a job already running. One body discomfort. One fact that does not pay off here. |
-| Played scene | 750–1,350 | What the game can later stage. One objective. |
-| Print scene | 1,200–2,250 | Same room, more work before the turn. This is the default lore page-block. |
-| Chapter | 3,500–5,500 | Two to four scenes. One lead turn. Remainder left on the wagon. |
-| Sequence | 2–3 chapters | One job, one night, or one stretch of creek. |
+Every finished piece of lore names which step it belongs to.
 
-Default output for a writing day: one print scene, or a chapter if the room is already hot.
+## Page budget by system
 
-Each finished scene carries a header the index can parse:
+### 1. Work on the grass — 80 pages
 
-```
-# <title>
-volume: <I–VII>
-place: wagon | gathering | crossing | cart | clue | timber | offstage
-hour: <date or trail time>
-people: <named, adult ages already decided>
-objective: <one readable job>
-remainder: <object or unfinished count>
-game_use: bubble | journal | adventure | camp | none-yet
-canon: locked | provisional | witness-only
-```
+Rider, horse, six longhorns, rustler, east gathering.
 
-`witness-only` means the speaker can be wrong. That is how gods stay disputed without a chart.
+Lines for facing a steer wrong, a good catch, a miss, empty chambers, the rustler running, the count sitting, trail minutes passing.
 
-## Seven volumes (page budgets)
+This is the verb. If the country cannot talk while you rope, the romance layer will float.
 
-Budgets are targets, not permissions to pad.
+### 2. Companion adventures — 280 pages
 
-### I. The Working Year at Clear Fork — 250 pages
+The actual romance engine. Play as her. One readable objective. Her skill in your hands. A short lively payoff door that can stay shut.
 
-May 12 through first frost, lived from the wagon. This is the spine the current room already implies.
+Named first, in the order the room already knows:
 
-Write it as sequences, not a diary of dates:
+- Eleanor: three cattle, then lanterns at the ford
+- Ada: regulator, then two seats and lanterns in order
+- Rosa: the moon's wrong reflection (still design)
+- Ines: clue stretch as presence, not a recruit script until design says so
 
-- the gather (rustler, six head, east count)
-- lanterns at the remembered ford
-- the stalled walker and the two-seat cart
-- nights the count is right and still nobody sleeps
-- a week of ordinary grass, so the uncanny does not happen every page
+Then more authored adventures only when a woman has a job the player can perform. About 12–18 adventures, 12–18 pages of lines-plus-backing each. Failure and retry included. No duplicate reward text.
 
-About 12–16 chapters. Eleanor is present from page one. Ada arrives when the machine does. Rosa is not owed a chapter because a quota is open.
+### 3. Camp household — 200 pages
 
-### II. Household Books — 200 pages
+Talk, rest, flirt, perk remarks, who is strained, who can ride.
 
-One book per named bond, written as work first.
+Keyed to recruitment stage, relationship stage, madness band, and whether an adventure just ended. Rest is intimacy that may be only quiet. Flirt is a different key.
 
-- Eleanor: 70 pages. Competence, a scare, rest that is not rent. Courting only after shared jobs.
-- Ada: 60 pages. Brass, teasing after a ride that worked, the first time a machine speaks.
-- Rosa: 50 pages. Testimony that can be false. A crossing that agrees with itself once.
-- Ines: 20 pages of presence, not recruitment. She points. If kinship with Rosa is real, it is an authored remainder in this book, decided on purpose.
+This is the Sims layer. Formula dies here if every night ends on the same gladness.
 
-Player interior stays thin. He is seen in what he ropes, skips, and puts off. Do not give him a secret bloodline to fill pages.
+### 4. Trail encounters — 180 pages
 
-### III. The Country That Talks — 150 pages
+The travel step. Person, stalled machine, spirit, other outfit, wrong brand, weather that is not only weather.
 
-Places earn pages by being walked. Labels in `LORE.md` stay labels until a scene has leftover mud from them.
+Each encounter: one objective, who is present, what success looks like, what strain it adds, one harvest line. Sixty encounters at two or three pages beats six essays about the West.
 
-Order:
+### 5. Cast mouths — 90 pages
 
-1. wagon and east gathering (already implied — deepen, do not replace)
-2. dry crossing in more than one hour
-3. cart stop and walker shed
-4. clue stretch
-5. timber line at weather
-6. one other outfit on the same grass
-7. Fort Griffin as rumor that finally costs a ride, only when a remainder forces the road
+Eleanor, Ada, Rosa, Ines, rustler, trail boss as seen in deeds.
 
-Do not open a street map of Griffin to chase the count.
+Not biographies. Voice chips expanded into lines that can fire. Ages stay as decided. Rosa and Ines stay two people until a game beat decides otherwise.
 
-### IV. Machines and Hands — 100 pages
+### 6. Generated women — 90 pages
 
-Steam as agricultural and trail-grade. Stories about a part that has a correct order. Ada can lead; she does not have to own every page.
+Thirty or so packages: name, adult age, job, compatible perk, encounter hook, a four-minute adventure seed, ten lines that only she would say. Stable seed. Save must not reroll her.
 
-Allowed: a walker that will not rise, a cart that steers, a regulator that was sold twice, a mecha later only if it has a rancher’s job.
+### 7. Uncanny texture — 40 pages
 
-Forbidden: a manual, a parts catalog, a cute ghost in the boiler used for charm.
+Short on purpose. Witness lines that disagree. Crossing spirit, talking brass, brand that will not stay, moon that shows a second ford. Never a pantheon chapter. Never hide the objective behind a name.
 
-### V. Local Dead — 150 pages
+### 8. Callbacks — 40 pages
 
-Particular spirits with jobs. Crossing, herd, well, branded calf, a lantern that is honest when the bank is not.
+The household memory. She mentions the steer that would not walk. He does not re-explain the regulator. This is what makes a season feel like one outfit.
 
-Eleanor treats distress as medical. Rosa treats speech as evidence. Ines reads sign. The player decides whether this one is lying today.
+That is a thousand pages if you actually write the banks. It is a few dozen if you write summaries and call them lore.
 
-Cap any single spirit at two print scenes unless the second scene changes the job.
+## Order that matches the build
 
-### VI. Disputed Powers — 80 pages
+1. Harvest the implemented room into lines: Eleanor intro, first catch, rustler gone, six head east, invite, three-cattle calm, lantern crossing, Ada valves, cart ride, rest, optional flirt.
+2. Fill work-on-the-grass so herding talks.
+3. Deepen Eleanor and Ada adventures until each has a full line bank and a shuttable door.
+4. Camp matrix for those two plus the player, all four madness bands, stages through courting.
+5. Encounter deck that can happen on the present dry trail without new scenery.
+6. Rosa's adventure only after the crossing can speak without her.
+7. Generated packages after three authored mouths exist, so copies are obvious.
+8. Callbacks last, cut from play that already happened.
 
-Keep this the shortest on purpose. A long god book becomes a pantheon.
+Do not open Fort Griffin to make page count. Do not write the working year as a novel and mine it later. That was the wrong object.
 
-Write bundles of witnesses who do not agree:
+## How a piece gets written
 
-- the thing that walks the river at flood
-- the brand that will not stay
-- the sermon that arrives in a machine
-- the moon’s wrong reflection
+Start from a trigger the room already has or a trigger the next encounter will have.
 
-No legal names on the HUD. No origin chapter. If two bundles would reconcile neatly, throw one away.
+Example triggers: lasso connects; steer settles; rustler takes a hit; Talk at wagon; Tab into Eleanor; lantern raised; valve C closed; cart reaches second lantern; Rest; Flirt declined.
 
-### VII. Other Outfits, Other Women — 70 pages
+Write the line in her mouth. Then, only if the adventure needs weight, write the 750–1,350 word played scene that justifies why that line exists.
 
-Seed stories for generated companions. Each is a person with a job, a perk-shaped skill, and a short adventure remainder. Persist identity. Do not reroll a saved woman in prose either.
+Header fields: trigger, actor, relationship stage, madness band, loop step, canon (locked / provisional / witness-only).
 
-Ten to fourteen people, five to seven pages each, not seventy templates.
+Locked means the current room already does this. Witness-only may be wrong. Provisional may move when the ford gets water.
 
-## Order of composition
+## Tests
 
-Do not start seven volumes at once.
+- Can this be said while a steer is still walking?
+- Does it change a count, a part, a door, or a temperature in camp?
+- Would two women say this the same way? Rewrite one.
+- Did the last line explain the theme? Cut it.
+- Does it require a new system? Then it belongs in GAME-DESIGN.md or it does not belong.
 
-**Pass A — lock the index (not pages).** A one-page ledger of decided facts: ages, who is recruited, which places exist, which rumors are not quests. Most of this is already in `characters.json` and `LORE.md`. Copy decisions. Do not invent.
+## First writing, in game order
 
-**Pass B — 80 pages on the implemented spine.** The gather, Eleanor’s three cattle, the lantern crossing, Ada’s valves and cart, camp rest as household. This is the only pass that must match the current room beat for beat. Canon: locked where the room already happens; provisional where the room still uses dry trail for a ford.
+1. Eleanor at the tailgate before the herd is in — six lines, one beat.
+2. Lasso and push lines that are not generic praise.
+3. Rustler off the grass — his line and hers.
+4. Invite into the outfit — work language, not a vow.
+5. Three-cattle calm as Eleanor — lines at first, second, third, return.
+6. Lantern crossing — spirit is frightened, not theatrical.
+7. Ada valves — parts in the correct order, then a grin.
+8. Rest and Flirt as two keys.
 
-**Pass C — Eleanor book to the scare and the laugh.** Stop before a vow speech.
-
-**Pass D — Ada book through the talking machine.** One scene only for the voice in the brass.
-
-**Pass E — crossing hour book (Country + Local Dead overlapping).** Same ford in daylight, dusk, and a lie.
-
-**Pass F — Rosa’s first sequence.** Only after the ford has been written without her, so she does not become the explanation for the country.
-
-**Pass G — other outfit and two generated women.** Test that Volume VII does not clone Eleanor.
-
-**Pass H — disputed powers as leftovers.** Build this from contradictions already on the table. Do not outline gods first.
-
-**Pass I — fill the working year.** Ordinary weeks. Hunger, wet, pay too small, a count that is merely correct.
-
-**Pass J — Griffin only if a remainder has already forced the ride.**
-
-Revisit harvest after each pass: bubbles, journal, adventure briefs. Never as a substitute for the pass.
-
-## Cadence that can actually finish
-
-House prose does not survive a thousand-page sprint.
-
-A serious rate for pages that pass a blind test is 4–8 finished pages a day when the room is hot, less when inventing a new place. At 6 pages a day, 1,000 pages is about 170 writing days. Calendar time with animation work in parallel is closer to six to nine months, not a weekend corpus.
-
-Suggested week:
-
-- 4 writing days: one print scene each, or two witness pages
-- 1 harvest day: pull bubbles and briefs from what already exists; no new lore
-- 1 audit day: read three newest endings next to three older ones. If the shape matches, rewrite the new ending before adding pages
-
-Agents may draft. They do not lock canon. A page is locked only after a read-aloud pass and a check against `LORE.md` plus `GAME-DESIGN.md`.
-
-## Tests before a page joins the count
-
-Read it aloud. Then ask:
-
-1. Could a stranger think this was mid-book and not a model?
-2. Is a job still running?
-3. Did anyone decide the facts that appear (age, kin, date, whether the spirit is lying)?
-4. If every document and brand book vanished, would the scene still happen?
-5. Does the last paragraph explain the theme? Cut it.
-6. Has this ending already been used?
-7. Can the game take one sentence from it without a new system?
-
-Fail any one and the page is draft, not corpus.
-
-## File layout when writing starts
-
-Keep it in `cattle-trail`, not a second universe repo, until the corpus is large enough to fight the game for ownership.
-
-```
-design/LORE.md                 world voice (short)
-design/LORE-PLAN.md            this plan
-lore/INDEX.md                  decided facts only
-lore/vol-01-working-year/
-lore/vol-02-household/
-lore/vol-03-country/
-lore/vol-04-machines/
-lore/vol-05-local-dead/
-lore/vol-06-disputed/
-lore/vol-07-others/
-lore/harvest/bubbles.md        extracted after prose
-lore/harvest/adventures.md
-lore/harvest/journal.md
-```
-
-One chapter per file. Filenames carry date or sequence, not vibe titles.
-
-## What does not count toward 1000
-
-- design contracts, perk tables, art briefs
-- repeated rumor lists
-- a map key
-- dialogue trees written as trees
-- pages that only recap the previous chapter
-- any scene whose turn is “they realized they cared”
-
-Those can exist as tools. They are not the book.
-
-## First pages to write (Pass B, in order)
-
-1. Wagon tailgate, morning of May 12, herd not in. Eleanor already working. 1 print scene.
-2. Rustler on the same grass. He wants a calf and maybe a whisper. 1 print scene.
-3. East gathering when the count finally sits. Remainder: a lantern that has not been lit. 1 print scene.
-4. Eleanor walking three cattle as herself. 1 print scene.
-5. Dry crossing, frightened spirit, three stranded head. 1–2 print scenes.
-6. Ada and the regulator. Valves in the correct order. 1 print scene.
-7. Two seats, lanterns in order, optional kiss left as a door, not a trophy. 1 print scene.
-8. Shared rest that lowers strain and does not collect a vow. 1 print scene.
-
-That is roughly 25–35 pages. After those exist, the thousand has a grain. Everything else grows from remainders those scenes leave on the wagon.
+When those speak in the room, the thousand has a grain. The rest is more of that loop, not another book.
