@@ -14,7 +14,6 @@
       "index": 0,
       "row": 0,
       "column": 0,
-      "file": "cell_00_00.png",
       "source_rect": [
         0,
         0,
@@ -62,13 +61,14 @@
       "image_offset_in_cell": [
         16,
         31
-      ]
+      ],
+      "extraction_cell_label": "cell_00_00.png",
+      "whole_frame_file": "frame-00.png"
     },
     {
       "index": 1,
       "row": 0,
       "column": 1,
-      "file": "cell_00_01.png",
       "source_rect": [
         454,
         0,
@@ -116,13 +116,14 @@
       "image_offset_in_cell": [
         16,
         31
-      ]
+      ],
+      "extraction_cell_label": "cell_00_01.png",
+      "whole_frame_file": "frame-01.png"
     },
     {
       "index": 2,
       "row": 0,
       "column": 0,
-      "file": "cell_00_00.png",
       "source_rect": [
         0,
         0,
@@ -170,13 +171,14 @@
       "image_offset_in_cell": [
         14,
         31
-      ]
+      ],
+      "extraction_cell_label": "cell_00_00.png",
+      "whole_frame_file": "frame-02.png"
     },
     {
       "index": 3,
       "row": 0,
       "column": 0,
-      "file": "cell_00_00.png",
       "source_rect": [
         0,
         0,
@@ -224,7 +226,9 @@
       "image_offset_in_cell": [
         14,
         31
-      ]
+      ],
+      "extraction_cell_label": "cell_00_00.png",
+      "whole_frame_file": "frame-03.png"
     }
   ],
   "processing": "Adaptive whole-cell crop, binary magenta key and nearest resize only; no anatomical image edits during assembly.",
