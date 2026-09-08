@@ -1,0 +1,1771 @@
+{
+  "schema_version": 1,
+  "id": "ines-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "cfdcbb2160707d36d570a050f30aeaf3a56d14bf74964b4ce4a66be8c0b12d7d",
+  "reference": "kits/wardrobe/ines-high-angle-v1/source.png",
+  "reference_sha256": "c4402d82ace77c22667be8de46f1d4a875cf7447e89f7fcf1bc6d77565ba9249",
+  "prompt": "prompt.txt",
+  "requested_size": [
+    3840,
+    3072
+  ],
+  "actual_size": [
+    1402,
+    1122
+  ],
+  "requested_grid": [
+    8,
+    6
+  ],
+  "observed_figure_count": 48,
+  "source_transparency": "RGB with baked checkerboard; not true generated alpha",
+  "extraction": "Boundary-connected bright-neutral checkerboard removal, native whole-cell crops and whole-figure trims, no rescaling or anatomy assembly; atlas alignment is static preview only, not measured animation registration.",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "texture": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        0,
+        175,
+        190
+      ],
+      "native_cell": "cell-00-native.png",
+      "native_figure": "figure-00-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        7,
+        150,
+        190
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        119,
+        183
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 1,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        0,
+        350,
+        190
+      ],
+      "native_cell": "cell-01-native.png",
+      "native_figure": "figure-01-native.png",
+      "trim_bounds_xyxy": [
+        28,
+        8,
+        147,
+        189
+      ],
+      "atlas_rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        119,
+        181
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 2,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        0,
+        526,
+        190
+      ],
+      "native_cell": "cell-02-native.png",
+      "native_figure": "figure-02-native.png",
+      "trim_bounds_xyxy": [
+        27,
+        8,
+        149,
+        190
+      ],
+      "atlas_rect_xywh": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        122,
+        182
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 3,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        0,
+        701,
+        190
+      ],
+      "native_cell": "cell-03-native.png",
+      "native_figure": "figure-03-native.png",
+      "trim_bounds_xyxy": [
+        25,
+        9,
+        144,
+        190
+      ],
+      "atlas_rect_xywh": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        119,
+        181
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 4,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        0,
+        876,
+        190
+      ],
+      "native_cell": "cell-04-native.png",
+      "native_figure": "figure-04-native.png",
+      "trim_bounds_xyxy": [
+        20,
+        9,
+        140,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        120,
+        181
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 5,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        0,
+        1052,
+        190
+      ],
+      "native_cell": "cell-05-native.png",
+      "native_figure": "figure-05-native.png",
+      "trim_bounds_xyxy": [
+        27,
+        9,
+        144,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        117,
+        181
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 6,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        0,
+        1227,
+        190
+      ],
+      "native_cell": "cell-06-native.png",
+      "native_figure": "figure-06-native.png",
+      "trim_bounds_xyxy": [
+        18,
+        8,
+        140,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        122,
+        182
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 7,
+      "requested_group": "se_walk",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        0,
+        1402,
+        190
+      ],
+      "native_cell": "cell-07-native.png",
+      "native_figure": "figure-07-native.png",
+      "trim_bounds_xyxy": [
+        23,
+        9,
+        138,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        115,
+        181
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 8,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        190,
+        175,
+        365
+      ],
+      "native_cell": "cell-08-native.png",
+      "native_figure": "figure-08-native.png",
+      "trim_bounds_xyxy": [
+        35,
+        2,
+        148,
+        171
+      ],
+      "atlas_rect_xywh": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        113,
+        169
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 9,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        190,
+        350,
+        365
+      ],
+      "native_cell": "cell-09-native.png",
+      "native_figure": "figure-09-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        3,
+        149,
+        171
+      ],
+      "atlas_rect_xywh": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        118,
+        168
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 10,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        190,
+        526,
+        365
+      ],
+      "native_cell": "cell-10-native.png",
+      "native_figure": "figure-10-native.png",
+      "trim_bounds_xyxy": [
+        30,
+        3,
+        148,
+        172
+      ],
+      "atlas_rect_xywh": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        118,
+        169
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 11,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        190,
+        701,
+        365
+      ],
+      "native_cell": "cell-11-native.png",
+      "native_figure": "figure-11-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        3,
+        148,
+        173
+      ],
+      "atlas_rect_xywh": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        117,
+        170
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 12,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        190,
+        876,
+        365
+      ],
+      "native_cell": "cell-12-native.png",
+      "native_figure": "figure-12-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        3,
+        144,
+        172
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        113,
+        169
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 13,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        190,
+        1052,
+        365
+      ],
+      "native_cell": "cell-13-native.png",
+      "native_figure": "figure-13-native.png",
+      "trim_bounds_xyxy": [
+        32,
+        3,
+        146,
+        172
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        114,
+        169
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 14,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        190,
+        1227,
+        365
+      ],
+      "native_cell": "cell-14-native.png",
+      "native_figure": "figure-14-native.png",
+      "trim_bounds_xyxy": [
+        33,
+        3,
+        143,
+        173
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        110,
+        170
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 15,
+      "requested_group": "ne_walk",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        190,
+        1402,
+        365
+      ],
+      "native_cell": "cell-15-native.png",
+      "native_figure": "figure-15-native.png",
+      "trim_bounds_xyxy": [
+        28,
+        0,
+        142,
+        173
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        114,
+        173
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 16,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        365,
+        175,
+        555
+      ],
+      "native_cell": "cell-16-native.png",
+      "native_figure": "figure-16-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        1,
+        150,
+        183
+      ],
+      "atlas_rect_xywh": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        119,
+        182
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 17,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        365,
+        350,
+        555
+      ],
+      "native_cell": "cell-17-native.png",
+      "native_figure": "figure-17-native.png",
+      "trim_bounds_xyxy": [
+        35,
+        0,
+        142,
+        179
+      ],
+      "atlas_rect_xywh": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        107,
+        179
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 18,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        365,
+        526,
+        555
+      ],
+      "native_cell": "cell-18-native.png",
+      "native_figure": "figure-18-native.png",
+      "trim_bounds_xyxy": [
+        30,
+        1,
+        150,
+        181
+      ],
+      "atlas_rect_xywh": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        120,
+        180
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 19,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        365,
+        701,
+        555
+      ],
+      "native_cell": "cell-19-native.png",
+      "native_figure": "figure-19-native.png",
+      "trim_bounds_xyxy": [
+        27,
+        1,
+        142,
+        181
+      ],
+      "atlas_rect_xywh": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        115,
+        180
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 20,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        365,
+        876,
+        555
+      ],
+      "native_cell": "cell-20-native.png",
+      "native_figure": "figure-20-native.png",
+      "trim_bounds_xyxy": [
+        24,
+        1,
+        143,
+        183
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        119,
+        182
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 21,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        365,
+        1052,
+        555
+      ],
+      "native_cell": "cell-21-native.png",
+      "native_figure": "figure-21-native.png",
+      "trim_bounds_xyxy": [
+        31,
+        1,
+        137,
+        182
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        106,
+        181
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 22,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        365,
+        1227,
+        555
+      ],
+      "native_cell": "cell-22-native.png",
+      "native_figure": "figure-22-native.png",
+      "trim_bounds_xyxy": [
+        30,
+        1,
+        140,
+        186
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        110,
+        185
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 23,
+      "requested_group": "east_walk",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        365,
+        1402,
+        555
+      ],
+      "native_cell": "cell-23-native.png",
+      "native_figure": "figure-23-native.png",
+      "trim_bounds_xyxy": [
+        27,
+        2,
+        140,
+        183
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        113,
+        181
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 24,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        555,
+        175,
+        747
+      ],
+      "native_cell": "cell-24-native.png",
+      "native_figure": "figure-24-native.png",
+      "trim_bounds_xyxy": [
+        33,
+        7,
+        127,
+        192
+      ],
+      "atlas_rect_xywh": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        94,
+        185
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 25,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        555,
+        350,
+        747
+      ],
+      "native_cell": "cell-25-native.png",
+      "native_figure": "figure-25-native.png",
+      "trim_bounds_xyxy": [
+        26,
+        4,
+        130,
+        191
+      ],
+      "atlas_rect_xywh": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        104,
+        187
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 26,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        555,
+        526,
+        747
+      ],
+      "native_cell": "cell-26-native.png",
+      "native_figure": "figure-26-native.png",
+      "trim_bounds_xyxy": [
+        27,
+        3,
+        129,
+        192
+      ],
+      "atlas_rect_xywh": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        102,
+        189
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 27,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        555,
+        701,
+        747
+      ],
+      "native_cell": "cell-27-native.png",
+      "native_figure": "figure-27-native.png",
+      "trim_bounds_xyxy": [
+        48,
+        9,
+        148,
+        188
+      ],
+      "atlas_rect_xywh": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        100,
+        179
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 28,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        555,
+        876,
+        747
+      ],
+      "native_cell": "cell-28-native.png",
+      "native_figure": "figure-28-native.png",
+      "trim_bounds_xyxy": [
+        43,
+        9,
+        148,
+        188
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        105,
+        179
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 29,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        555,
+        1052,
+        747
+      ],
+      "native_cell": "cell-29-native.png",
+      "native_figure": "figure-29-native.png",
+      "trim_bounds_xyxy": [
+        43,
+        7,
+        142,
+        187
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        99,
+        180
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 30,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        555,
+        1227,
+        747
+      ],
+      "native_cell": "cell-30-native.png",
+      "native_figure": "figure-30-native.png",
+      "trim_bounds_xyxy": [
+        39,
+        3,
+        131,
+        190
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        92,
+        187
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 31,
+      "requested_group": "direction_stands",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        555,
+        1402,
+        747
+      ],
+      "native_cell": "cell-31-native.png",
+      "native_figure": "figure-31-native.png",
+      "trim_bounds_xyxy": [
+        28,
+        7,
+        130,
+        192
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        102,
+        185
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 32,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        747,
+        175,
+        925
+      ],
+      "native_cell": "cell-32-native.png",
+      "native_figure": "figure-32-native.png",
+      "trim_bounds_xyxy": [
+        21,
+        7,
+        146,
+        178
+      ],
+      "atlas_rect_xywh": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        125,
+        171
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 33,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        747,
+        350,
+        925
+      ],
+      "native_cell": "cell-33-native.png",
+      "native_figure": "figure-33-native.png",
+      "trim_bounds_xyxy": [
+        33,
+        5,
+        137,
+        178
+      ],
+      "atlas_rect_xywh": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        104,
+        173
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 34,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        747,
+        526,
+        925
+      ],
+      "native_cell": "cell-34-native.png",
+      "native_figure": "figure-34-native.png",
+      "trim_bounds_xyxy": [
+        19,
+        0,
+        148,
+        178
+      ],
+      "atlas_rect_xywh": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        129,
+        178
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 35,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        747,
+        701,
+        925
+      ],
+      "native_cell": "cell-35-native.png",
+      "native_figure": "figure-35-native.png",
+      "trim_bounds_xyxy": [
+        19,
+        41,
+        175,
+        173
+      ],
+      "atlas_rect_xywh": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        156,
+        132
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 36,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        747,
+        876,
+        925
+      ],
+      "native_cell": "cell-36-native.png",
+      "native_figure": "figure-36-native.png",
+      "trim_bounds_xyxy": [
+        0,
+        1,
+        166,
+        167
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        166,
+        166
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 37,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        747,
+        1052,
+        925
+      ],
+      "native_cell": "cell-37-native.png",
+      "native_figure": "figure-37-native.png",
+      "trim_bounds_xyxy": [
+        13,
+        11,
+        144,
+        178
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        131,
+        167
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 38,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        747,
+        1227,
+        925
+      ],
+      "native_cell": "cell-38-native.png",
+      "native_figure": "figure-38-native.png",
+      "trim_bounds_xyxy": [
+        20,
+        8,
+        168,
+        178
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        148,
+        170
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 39,
+      "requested_group": "spirit_tracking",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        747,
+        1402,
+        925
+      ],
+      "native_cell": "cell-39-native.png",
+      "native_figure": "figure-39-native.png",
+      "trim_bounds_xyxy": [
+        38,
+        0,
+        151,
+        178
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        113,
+        178
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 40,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        925,
+        175,
+        1122
+      ],
+      "native_cell": "cell-40-native.png",
+      "native_figure": "figure-40-native.png",
+      "trim_bounds_xyxy": [
+        25,
+        0,
+        134,
+        184
+      ],
+      "atlas_rect_xywh": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        109,
+        184
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 41,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        175,
+        925,
+        350,
+        1122
+      ],
+      "native_cell": "cell-41-native.png",
+      "native_figure": "figure-41-native.png",
+      "trim_bounds_xyxy": [
+        25,
+        0,
+        151,
+        186
+      ],
+      "atlas_rect_xywh": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        126,
+        186
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 42,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        350,
+        925,
+        526,
+        1122
+      ],
+      "native_cell": "cell-42-native.png",
+      "native_figure": "figure-42-native.png",
+      "trim_bounds_xyxy": [
+        28,
+        0,
+        140,
+        188
+      ],
+      "atlas_rect_xywh": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        112,
+        188
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 43,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        526,
+        925,
+        701,
+        1122
+      ],
+      "native_cell": "cell-43-native.png",
+      "native_figure": "figure-43-native.png",
+      "trim_bounds_xyxy": [
+        17,
+        2,
+        135,
+        186
+      ],
+      "atlas_rect_xywh": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        118,
+        184
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 44,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        701,
+        925,
+        876,
+        1122
+      ],
+      "native_cell": "cell-44-native.png",
+      "native_figure": "figure-44-native.png",
+      "trim_bounds_xyxy": [
+        24,
+        3,
+        126,
+        188
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        102,
+        185
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 45,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        876,
+        925,
+        1052,
+        1122
+      ],
+      "native_cell": "cell-45-native.png",
+      "native_figure": "figure-45-native.png",
+      "trim_bounds_xyxy": [
+        22,
+        0,
+        145,
+        188
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        123,
+        188
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 46,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1052,
+        925,
+        1227,
+        1122
+      ],
+      "native_cell": "cell-46-native.png",
+      "native_figure": "figure-46-native.png",
+      "trim_bounds_xyxy": [
+        9,
+        0,
+        171,
+        191
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        162,
+        191
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 47,
+      "requested_group": "talk_emotes",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1227,
+        925,
+        1402,
+        1122
+      ],
+      "native_cell": "cell-47-native.png",
+      "native_figure": "figure-47-native.png",
+      "trim_bounds_xyxy": [
+        38,
+        2,
+        149,
+        188
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "native_figure_size": [
+        111,
+        186
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "review": "48 intact-looking subjects visible. Walking rows repeat leading-leg shapes; phase alternation unverified. Direction row includes several ambiguous facings. Spirit and social rows add distinct gesture silhouettes. Lower-than-requested resolution and keyed checkerboard require final extraction inspection."
+}

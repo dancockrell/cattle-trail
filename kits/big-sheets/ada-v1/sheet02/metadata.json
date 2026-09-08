@@ -1,0 +1,1472 @@
+{
+  "id": "ada-big-sheet-02",
+  "character": "ada_mercer",
+  "age": 22,
+  "sheet_number": 2,
+  "status": "generated_big_sheet_candidates_unadmitted",
+  "source": "source.png",
+  "source_sha256": "b6122e96fca30d84d184b5b0df74946f3083683bd893f561971c49a7daec15b4",
+  "source_dimensions": [
+    1774,
+    887
+  ],
+  "prompt": "prompt.txt",
+  "reference": "kits/wardrobe/ada-high-angle-v1/source.png",
+  "reference_sha256": "a680616bf203237c3cde8275873f26d8b0c1c215e62d9aae3e71ddd3e1a37729",
+  "texture": "atlas.png",
+  "native_texture": "atlas-native.png",
+  "columns": 8,
+  "rows": 4,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "uniform_scale": 0.7339449541284404,
+  "row_ground_source_local": [
+    222.0,
+    219.25,
+    219.5,
+    213.75
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "requested_row": "walk_northwest",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        56,
+        4,
+        180,
+        220
+      ],
+      "native_size": [
+        124,
+        216
+      ],
+      "native_image": "00-native.png",
+      "native_rgba_sha256": "61d59c64e820ac40a6d152f0d7e69ee28eea1007cfd0012ef79b898acc942f85",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        84
+      ],
+      "scaled_size": [
+        91,
+        159
+      ],
+      "rgba_sha256": "2ff0eafadb82e3de0862ecc899f02225a84e024d6fb66ba0a4ecb6eaf4a413f6"
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "requested_row": "walk_northwest",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        281,
+        4,
+        402,
+        218
+      ],
+      "native_size": [
+        121,
+        214
+      ],
+      "native_image": "01-native.png",
+      "native_rgba_sha256": "145f724958d70224136937df14600844fdda2711a46764244c186d433bb1db23",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        90,
+        84
+      ],
+      "scaled_size": [
+        89,
+        157
+      ],
+      "rgba_sha256": "4eecc2cdf805d19dd1a58f29be11b77c882c36dde2712c3f7600da1e3a3d43b1"
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "requested_row": "walk_northwest",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        500,
+        4,
+        626,
+        221
+      ],
+      "native_size": [
+        126,
+        217
+      ],
+      "native_image": "02-native.png",
+      "native_rgba_sha256": "b9d7c0e5bb6659c4a4508b03c5353835d519fe622f1e6f799d69642552651215",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        84
+      ],
+      "scaled_size": [
+        92,
+        159
+      ],
+      "rgba_sha256": "f281d5195df9658bc7f67c75ce7bb6a97845d7c512c4e8fe6f498f7e5794b624"
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "requested_row": "walk_northwest",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        718,
+        4,
+        847,
+        219
+      ],
+      "native_size": [
+        129,
+        215
+      ],
+      "native_image": "03-native.png",
+      "native_rgba_sha256": "283717b8f62e590b307ee0ac24bda5bd8d1b04f011800fd473eb8f3f238a33b9",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        85,
+        84
+      ],
+      "scaled_size": [
+        95,
+        158
+      ],
+      "rgba_sha256": "a438abf1db4c919be25615b5502cfa8bf0d8813ce89185a2d46900b102af4f76"
+    },
+    {
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "requested_row": "walk_northwest",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        942,
+        4,
+        1065,
+        221
+      ],
+      "native_size": [
+        123,
+        217
+      ],
+      "native_image": "04-native.png",
+      "native_rgba_sha256": "1a94281b26de9fe57dca2e7e42f8815049240689a2df18b6c285ea6ca7493650",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        84
+      ],
+      "scaled_size": [
+        90,
+        159
+      ],
+      "rgba_sha256": "2e228e7d2f3c1173a1313fea4bb7b50367e1f400faee8622616d3ea8a72cf1e7"
+    },
+    {
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "requested_row": "walk_northwest",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1164,
+        4,
+        1290,
+        222
+      ],
+      "native_size": [
+        126,
+        218
+      ],
+      "native_image": "05-native.png",
+      "native_rgba_sha256": "cf3737be7037a98b9113b7c6b32e43ec0648e45998784a01ae3f17e7005b12b3",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        84
+      ],
+      "scaled_size": [
+        92,
+        160
+      ],
+      "rgba_sha256": "968cf49c7dfa2053088368a1c099f11ce7c74f66375f7f8a90184c1d3d681785"
+    },
+    {
+      "index": 6,
+      "row": 0,
+      "column": 6,
+      "requested_row": "walk_northwest",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1388,
+        4,
+        1510,
+        219
+      ],
+      "native_size": [
+        122,
+        215
+      ],
+      "native_image": "06-native.png",
+      "native_rgba_sha256": "eb85e3fe62a6fb8a345276804a0eb3520b01c775318428ce9dd2abeeb4859233",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        89,
+        84
+      ],
+      "scaled_size": [
+        90,
+        158
+      ],
+      "rgba_sha256": "e7410e39ba478ca6149c88e7f5dc2a484c48178e40bf6edb66d4e46ca2d8a649"
+    },
+    {
+      "index": 7,
+      "row": 0,
+      "column": 7,
+      "requested_row": "walk_northwest",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1611,
+        4,
+        1733,
+        216
+      ],
+      "native_size": [
+        122,
+        212
+      ],
+      "native_image": "07-native.png",
+      "native_rgba_sha256": "58fae1c4f11f2445e588911430d699bd0e1b9454387d962f0de9e3f493bb26bc",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        90,
+        84
+      ],
+      "scaled_size": [
+        90,
+        156
+      ],
+      "rgba_sha256": "1951bc36e21bc573534829db3290f685e14b5cc523a4b597fa7f9bf169b31081"
+    },
+    {
+      "index": 8,
+      "row": 1,
+      "column": 0,
+      "requested_row": "walk_north",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        62,
+        224,
+        169,
+        440
+      ],
+      "native_size": [
+        107,
+        216
+      ],
+      "native_image": "08-native.png",
+      "native_rgba_sha256": "bd30e2cd7d8d53054b1951ec8b204ccae9fc1d4a0107c3fb3cf8eab6895ac1f1",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        85
+      ],
+      "scaled_size": [
+        79,
+        159
+      ],
+      "rgba_sha256": "417dc33e2ed470a39813ce69ec00eb07a063dc174e476fe5df95e3e238942592"
+    },
+    {
+      "index": 9,
+      "row": 1,
+      "column": 1,
+      "requested_row": "walk_north",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        278,
+        225,
+        385,
+        441
+      ],
+      "native_size": [
+        107,
+        216
+      ],
+      "native_image": "09-native.png",
+      "native_rgba_sha256": "5dcdbe49e5e2d82648636dfbb9a6ce848b52f0b10551abe83e3d5bc0df9cdd1b",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        85
+      ],
+      "scaled_size": [
+        79,
+        159
+      ],
+      "rgba_sha256": "83fa847c267f9eb3cc716b7c37b8d9115cb994119d4adc08d9bfb5d921c8d341"
+    },
+    {
+      "index": 10,
+      "row": 1,
+      "column": 2,
+      "requested_row": "walk_north",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        500,
+        225,
+        605,
+        440
+      ],
+      "native_size": [
+        105,
+        215
+      ],
+      "native_image": "10-native.png",
+      "native_rgba_sha256": "92351c19a5443e04bce2c3fd93731a14d8bb2c3e0fb8aa3b28126cb8c9d62784",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        85
+      ],
+      "scaled_size": [
+        77,
+        158
+      ],
+      "rgba_sha256": "fc7fce05142f6a7ccbca6e9cb029d7ae119450c460b071d1c0a301f2f27db683"
+    },
+    {
+      "index": 11,
+      "row": 1,
+      "column": 3,
+      "requested_row": "walk_north",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        720,
+        225,
+        826,
+        440
+      ],
+      "native_size": [
+        106,
+        215
+      ],
+      "native_image": "11-native.png",
+      "native_rgba_sha256": "7dbb4afd6be7a75c4334b5ddeb21a69d111d4fa9a037fac706dbf0acf5cadcd5",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        85
+      ],
+      "scaled_size": [
+        78,
+        158
+      ],
+      "rgba_sha256": "e334576f3fba382bf037eea066503e32c70f423e22b9394f94878067c2582012"
+    },
+    {
+      "index": 12,
+      "row": 1,
+      "column": 4,
+      "requested_row": "walk_north",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        942,
+        225,
+        1054,
+        437
+      ],
+      "native_size": [
+        112,
+        212
+      ],
+      "native_image": "12-native.png",
+      "native_rgba_sha256": "d7b3ffad8482b64d2354029e5cfb4c8065c6e98570110eebc824f9e6a9edaa32",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        85
+      ],
+      "scaled_size": [
+        82,
+        156
+      ],
+      "rgba_sha256": "a38030517a656a8255bdc3f9c50493a315f10df210230b1e901c221ab802ce39"
+    },
+    {
+      "index": 13,
+      "row": 1,
+      "column": 5,
+      "requested_row": "walk_north",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1169,
+        225,
+        1276,
+        440
+      ],
+      "native_size": [
+        107,
+        215
+      ],
+      "native_image": "13-native.png",
+      "native_rgba_sha256": "79d8b88c965badf4bff510049d8e1f01433ebbd9e6e08eafaae6dc2fdd20712f",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        91,
+        85
+      ],
+      "scaled_size": [
+        79,
+        158
+      ],
+      "rgba_sha256": "812ef5fcfd48e7e63c396cc71e3d2b99dc3eaf01d568acfa001546fa31fa8bc6"
+    },
+    {
+      "index": 14,
+      "row": 1,
+      "column": 6,
+      "requested_row": "walk_north",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1387,
+        225,
+        1493,
+        440
+      ],
+      "native_size": [
+        106,
+        215
+      ],
+      "native_image": "14-native.png",
+      "native_rgba_sha256": "6848b7a4285c6b6126490042da66e4e2fef40a47679efa61e06e6af1e7623a0a",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        85
+      ],
+      "scaled_size": [
+        78,
+        158
+      ],
+      "rgba_sha256": "4bbfeeb9875287a07de13ecc87692003750ebaa4a62f5a63f49be508de954226"
+    },
+    {
+      "index": 15,
+      "row": 1,
+      "column": 7,
+      "requested_row": "walk_north",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1608,
+        225,
+        1718,
+        441
+      ],
+      "native_size": [
+        110,
+        216
+      ],
+      "native_image": "15-native.png",
+      "native_rgba_sha256": "815d1ba47ffdfc5758e6c6c05bdd4a33bbafd47f328bba15492e8b6894d3c3c3",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        85
+      ],
+      "scaled_size": [
+        81,
+        159
+      ],
+      "rgba_sha256": "42326c5178c9f0d132778219cddd71a2d20b15171361157dced5d0cc9f66a368"
+    },
+    {
+      "index": 16,
+      "row": 2,
+      "column": 0,
+      "requested_row": "walk_northeast",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        46,
+        446,
+        166,
+        661
+      ],
+      "native_size": [
+        120,
+        215
+      ],
+      "native_image": "16-native.png",
+      "native_rgba_sha256": "5f4c908dd758c576fd67d11ed772e2d6787d354b82b4fc2955cc55e3f44bab24",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        80,
+        85
+      ],
+      "scaled_size": [
+        88,
+        158
+      ],
+      "rgba_sha256": "8ef003f95089d69b0b26181634f26786d7fbc9b9f84cd1a5051d3fe4ccf33966"
+    },
+    {
+      "index": 17,
+      "row": 2,
+      "column": 1,
+      "requested_row": "walk_northeast",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        268,
+        447,
+        386,
+        663
+      ],
+      "native_size": [
+        118,
+        216
+      ],
+      "native_image": "17-native.png",
+      "native_rgba_sha256": "75b94e10431789949ae93756ce8ea62d92269d0c6c06942158355e69807c8013",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        81,
+        85
+      ],
+      "scaled_size": [
+        87,
+        159
+      ],
+      "rgba_sha256": "db5a274556c517f35ae35e413b58aaceae35ad0cf7eb5c3a13126a150b08ba30"
+    },
+    {
+      "index": 18,
+      "row": 2,
+      "column": 2,
+      "requested_row": "walk_northeast",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        489,
+        447,
+        616,
+        660
+      ],
+      "native_size": [
+        127,
+        213
+      ],
+      "native_image": "18-native.png",
+      "native_rgba_sha256": "7e8c0e6f4187d2461e1ee4414e9d249fd6973ae91ce2985a3cf691d0d434085d",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        80,
+        85
+      ],
+      "scaled_size": [
+        93,
+        156
+      ],
+      "rgba_sha256": "52f381f86354e3b181dcbf5ef25e0dcd754c9b3799859f1e2b1cc5c7621f518f"
+    },
+    {
+      "index": 19,
+      "row": 2,
+      "column": 3,
+      "requested_row": "walk_northeast",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        712,
+        446,
+        837,
+        661
+      ],
+      "native_size": [
+        125,
+        215
+      ],
+      "native_image": "19-native.png",
+      "native_rgba_sha256": "f2708089e6cab8bf3a559eb7362268bf4adf00f59a130a56066d683ce5af630c",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        81,
+        85
+      ],
+      "scaled_size": [
+        92,
+        158
+      ],
+      "rgba_sha256": "24c9a7a731d3ecdeaf7a95823c7ebeb196001fa7ce9be995aea29eff738a022e"
+    },
+    {
+      "index": 20,
+      "row": 2,
+      "column": 4,
+      "requested_row": "walk_northeast",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        933,
+        447,
+        1062,
+        660
+      ],
+      "native_size": [
+        129,
+        213
+      ],
+      "native_image": "20-native.png",
+      "native_rgba_sha256": "108ac69402f99a5207431295ff6c18c3ef69f32e53f84faca01e2a5a32911ab1",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        80,
+        85
+      ],
+      "scaled_size": [
+        95,
+        156
+      ],
+      "rgba_sha256": "4a9496e37cc7163fe053376521d7a90eebe3cf1f33f1f9bc8005120addd80bfc"
+    },
+    {
+      "index": 21,
+      "row": 2,
+      "column": 5,
+      "requested_row": "walk_northeast",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1155,
+        447,
+        1283,
+        660
+      ],
+      "native_size": [
+        128,
+        213
+      ],
+      "native_image": "21-native.png",
+      "native_rgba_sha256": "031a238bad0a4e59c2b5464b556b1fe11823f71733a25462bd21687ab5d54614",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        81,
+        85
+      ],
+      "scaled_size": [
+        94,
+        156
+      ],
+      "rgba_sha256": "bef1c2454f216fa21b49c0c910ae7b2f5adcf03736df1a1ed1f79aff2a66cfd3"
+    },
+    {
+      "index": 22,
+      "row": 2,
+      "column": 6,
+      "requested_row": "walk_northeast",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1378,
+        446,
+        1501,
+        661
+      ],
+      "native_size": [
+        123,
+        215
+      ],
+      "native_image": "22-native.png",
+      "native_rgba_sha256": "1eee793220f77532c658888a8ba8a5a55879d07c456f142101958784c452ff93",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        81,
+        85
+      ],
+      "scaled_size": [
+        90,
+        158
+      ],
+      "rgba_sha256": "f06e92adcf8e9a777139dafebff8633e246a9851657388a173c22a7e6b4307b0"
+    },
+    {
+      "index": 23,
+      "row": 2,
+      "column": 7,
+      "requested_row": "walk_northeast",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1602,
+        446,
+        1723,
+        657
+      ],
+      "native_size": [
+        121,
+        211
+      ],
+      "native_image": "23-native.png",
+      "native_rgba_sha256": "f96a69194754715f2624ec6fa297937eee518942309b425490cc17015b6df13e",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        83,
+        85
+      ],
+      "scaled_size": [
+        89,
+        155
+      ],
+      "rgba_sha256": "3aaeb2a6aaf8d47030901304ad610875d742569d791e951e5bd13a9de0d2a2fa"
+    },
+    {
+      "index": 24,
+      "row": 3,
+      "column": 0,
+      "requested_row": "walk_west",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        45,
+        666,
+        160,
+        879
+      ],
+      "native_size": [
+        115,
+        213
+      ],
+      "native_image": "24-native.png",
+      "native_rgba_sha256": "7be0d32b4dd8bd16dafd7b5f2d2fb4a3b9a26c4afcb30cb5f2431578c4468fca",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        80,
+        88
+      ],
+      "scaled_size": [
+        84,
+        156
+      ],
+      "rgba_sha256": "d846691974274a7b01716936bd3a868a37fc65f985dbc11e05ca4bad0701d5c1"
+    },
+    {
+      "index": 25,
+      "row": 3,
+      "column": 1,
+      "requested_row": "walk_west",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        257,
+        665,
+        380,
+        875
+      ],
+      "native_size": [
+        123,
+        210
+      ],
+      "native_image": "25-native.png",
+      "native_rgba_sha256": "04c3a7ebbdcda06186ebdd6901125f6b829bdba8c1c5ea8dcf6e1cad4c5536cc",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        72,
+        87
+      ],
+      "scaled_size": [
+        90,
+        154
+      ],
+      "rgba_sha256": "8e27539b5650a8656244d7799a1b240ffa0c67436b3f65272429e645ea1d4831"
+    },
+    {
+      "index": 26,
+      "row": 3,
+      "column": 2,
+      "requested_row": "walk_west",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        473,
+        665,
+        599,
+        873
+      ],
+      "native_size": [
+        126,
+        208
+      ],
+      "native_image": "26-native.png",
+      "native_rgba_sha256": "d2e2acb21b1b20cfe7c534e5d2d1c74cf983b051d9368f58cc0d2c84100b78d5",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        68,
+        87
+      ],
+      "scaled_size": [
+        92,
+        153
+      ],
+      "rgba_sha256": "5d0d03cb23d0ce4d1b605f7c9af0ab0ce0c00143e47b2e324367d15518bf23a2"
+    },
+    {
+      "index": 27,
+      "row": 3,
+      "column": 3,
+      "requested_row": "walk_west",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        694,
+        665,
+        831,
+        875
+      ],
+      "native_size": [
+        137,
+        210
+      ],
+      "native_image": "27-native.png",
+      "native_rgba_sha256": "e5af6cb344124bba672472ea3e0fdeeb7141cbfb3091e21e07c8d54f1d4cb003",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        68,
+        87
+      ],
+      "scaled_size": [
+        101,
+        154
+      ],
+      "rgba_sha256": "3e6850cfb87057b7f325d14e0458409aeda4bb5526a8a09336c6c4b26903621c"
+    },
+    {
+      "index": 28,
+      "row": 3,
+      "column": 4,
+      "requested_row": "walk_west",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        913,
+        666,
+        1041,
+        874
+      ],
+      "native_size": [
+        128,
+        208
+      ],
+      "native_image": "28-native.png",
+      "native_rgba_sha256": "7921cc03fac1e328b4a98a04f0ebf8a08598c2083fcc471ff4278605692a910f",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        66,
+        88
+      ],
+      "scaled_size": [
+        94,
+        153
+      ],
+      "rgba_sha256": "765edac20b057ce3208720749a22cadbafc86340af84b4c1e6d528268901ece2"
+    },
+    {
+      "index": 29,
+      "row": 3,
+      "column": 5,
+      "requested_row": "walk_west",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1137,
+        665,
+        1273,
+        875
+      ],
+      "native_size": [
+        136,
+        210
+      ],
+      "native_image": "29-native.png",
+      "native_rgba_sha256": "7855fc84430efc0a9da66216ced2da5932dbdf5cf0a9f922a104f632e0b0a450",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        67,
+        87
+      ],
+      "scaled_size": [
+        100,
+        154
+      ],
+      "rgba_sha256": "b0783f628535e9ab4a6daba2d21a69eb147cc3c760edb21df108587b7cad9693"
+    },
+    {
+      "index": 30,
+      "row": 3,
+      "column": 6,
+      "requested_row": "walk_west",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1360,
+        666,
+        1485,
+        874
+      ],
+      "native_size": [
+        125,
+        208
+      ],
+      "native_image": "30-native.png",
+      "native_rgba_sha256": "bd8f6ed52e1ecd6b8b52e387377c9bda88663113fd2b0c7a2c8a4fee94bb143f",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        68,
+        88
+      ],
+      "scaled_size": [
+        92,
+        153
+      ],
+      "rgba_sha256": "e97aadbdffc09f18160cf646b1a948522b4fead92ba3e3ed96bd08930cc9f8c7"
+    },
+    {
+      "index": 31,
+      "row": 3,
+      "column": 7,
+      "requested_row": "walk_west",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1583,
+        666,
+        1711,
+        874
+      ],
+      "native_size": [
+        128,
+        208
+      ],
+      "native_image": "31-native.png",
+      "native_rgba_sha256": "d7e08ced8f1cc13e6d710187f1e2347dbf3c076669e3d8ac149b91073148a9a8",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        69,
+        88
+      ],
+      "scaled_size": [
+        94,
+        153
+      ],
+      "rgba_sha256": "ad2aa14966827fae848328e9550c3c4067e668c81fceb612dc4be2ab913984dd"
+    }
+  ],
+  "row_labels": [
+    "walk_northwest",
+    "walk_north",
+    "walk_northeast",
+    "walk_west"
+  ],
+  "clips": {
+    "walk_northwest_review": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "walk_north_review": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "walk_northeast_review": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "walk_west_review": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    }
+  },
+  "review": [
+    "Generated artwork is unique source output; no frame duplication, recoloring, mirroring or padding was performed by extraction.",
+    "Requested eight-phase order is preserved as source column order, not verified anatomical timing.",
+    "One fixed scale and per-row source-coordinate ground registration preserve relative bob; no per-pose resizing.",
+    "Observed row1 points back-right (NE-like) while requestedNW; observedrow3 points back-left (NW-like) while requestedNE.",
+    "Walking rows repeat several contact/support shapes; completeopposite-phase order not established."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "successful_calls_this_sheet": 1,
+    "transforms": [
+      "background key",
+      "connectedwholefigure native extraction",
+      "nativeatlas preserves original layout",
+      "one uniform nearest scale",
+      "rowregistered256cell atlas"
+    ]
+  }
+}

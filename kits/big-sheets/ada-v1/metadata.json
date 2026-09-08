@@ -1,0 +1,2182 @@
+{
+  "id": "ada-big-sheet-01",
+  "character": "ada_mercer",
+  "age": 22,
+  "sheet_number": 1,
+  "status": "generated_big_sheet_candidates_unadmitted",
+  "source": "source.png",
+  "source_sha256": "9725dec202ccbc48de2779317ec11b56809e0736066310260e803482fb93caf9",
+  "source_dimensions": [
+    1448,
+    1086
+  ],
+  "prompt": "prompt.txt",
+  "reference": "kits/wardrobe/ada-high-angle-v1/source.png",
+  "reference_sha256": "a680616bf203237c3cde8275873f26d8b0c1c215e62d9aae3e71ddd3e1a37729",
+  "texture": "atlas.png",
+  "native_texture": "atlas-native.png",
+  "columns": 8,
+  "rows": 6,
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "pixels_per_world_unit": 4,
+  "uniform_scale": 0.8421052631578947,
+  "row_ground_source_local": [
+    188.0,
+    192.0,
+    185.0,
+    186.0,
+    176.0,
+    173.0
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "requested_row": "walk_southeast",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        48,
+        0,
+        150,
+        187
+      ],
+      "native_size": [
+        102,
+        187
+      ],
+      "native_image": "00-native.png",
+      "native_rgba_sha256": "9f7564968d14fff8b993f60316547deec3e88624fae711258679d9bdbe686891",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": true,
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        86
+      ],
+      "scaled_size": [
+        86,
+        157
+      ],
+      "rgba_sha256": "0290641a569ef9e9e38dceb0de3a5d4243ffc53b0822b49efa89fdd9f19f48ca"
+    },
+    {
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "requested_row": "walk_southeast",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        244,
+        3,
+        345,
+        187
+      ],
+      "native_size": [
+        101,
+        184
+      ],
+      "native_image": "01-native.png",
+      "native_rgba_sha256": "b9e33929558e83ff72794bc523d489784eec9df0cf6b5b4a6f2df6275a310159",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        105,
+        88
+      ],
+      "scaled_size": [
+        85,
+        155
+      ],
+      "rgba_sha256": "54f02e747cdd03213c4bfdec6e7bb5eb143826cef84199e99ac0df954dc4f41b"
+    },
+    {
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "requested_row": "walk_southeast",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        430,
+        2,
+        529,
+        188
+      ],
+      "native_size": [
+        99,
+        186
+      ],
+      "native_image": "02-native.png",
+      "native_rgba_sha256": "6d4f59fba414b9d08c706bd951c40aeb506f1c922ace1f0e90c87796da616ee6",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        109,
+        87
+      ],
+      "scaled_size": [
+        83,
+        157
+      ],
+      "rgba_sha256": "07a54042d16e4f639abd018d072106b6f9f8f64aa1a4a6765dbd8531632ec8a9"
+    },
+    {
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "requested_row": "walk_southeast",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        600,
+        1,
+        704,
+        181
+      ],
+      "native_size": [
+        104,
+        180
+      ],
+      "native_image": "03-native.png",
+      "native_rgba_sha256": "b089066567221625fdd9197980f33e5872ac50dfe5741bff783093e782466bbf",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        100,
+        87
+      ],
+      "scaled_size": [
+        88,
+        152
+      ],
+      "rgba_sha256": "f9da66a69549af53985a55938151ca8672c241a937cf06cc9edeaf5ea9de6607"
+    },
+    {
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "requested_row": "walk_southeast",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        784,
+        2,
+        897,
+        188
+      ],
+      "native_size": [
+        113,
+        186
+      ],
+      "native_image": "04-native.png",
+      "native_rgba_sha256": "6722d3e527ed6de70ee8ddef77c6fd9de788750d58281d04b7ce96838c6b0640",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        102,
+        87
+      ],
+      "scaled_size": [
+        95,
+        157
+      ],
+      "rgba_sha256": "406cf1c770a2055f91b7414b2ce1f940275f37db5db005e797c5e74ea11d0d58"
+    },
+    {
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "requested_row": "walk_southeast",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        969,
+        2,
+        1072,
+        188
+      ],
+      "native_size": [
+        103,
+        186
+      ],
+      "native_image": "05-native.png",
+      "native_rgba_sha256": "acb199aadeb72d7613d33321e55ab2bbe1ff898c8f19f58abba9f31ca3e2be02",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        106,
+        87
+      ],
+      "scaled_size": [
+        87,
+        157
+      ],
+      "rgba_sha256": "7b12a4b472796956aad21ee1cf62a40b8dae0414ab53fe6e7c579eebdc7184a8"
+    },
+    {
+      "index": 6,
+      "row": 0,
+      "column": 6,
+      "requested_row": "walk_southeast",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1149,
+        3,
+        1262,
+        188
+      ],
+      "native_size": [
+        113,
+        185
+      ],
+      "native_image": "06-native.png",
+      "native_rgba_sha256": "48eea1f874a13c6cd22a873a4f931696d37cead9856268762101f74ba898f1af",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        105,
+        88
+      ],
+      "scaled_size": [
+        95,
+        156
+      ],
+      "rgba_sha256": "b479539dfadc6e263836e898f07ba3c1139f930ef6ed00957e479269beba480c"
+    },
+    {
+      "index": 7,
+      "row": 0,
+      "column": 7,
+      "requested_row": "walk_southeast",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1320,
+        3,
+        1423,
+        187
+      ],
+      "native_size": [
+        103,
+        184
+      ],
+      "native_image": "07-native.png",
+      "native_rgba_sha256": "a04c12fedb53849462e80721f9a3d7bab2d2795c1a241b70090c361c5aeb58a8",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        88
+      ],
+      "scaled_size": [
+        87,
+        155
+      ],
+      "rgba_sha256": "6ce7295d9d4e61eb95388b88068bd1f1eb1a00511b9d07c66523644129c3009c"
+    },
+    {
+      "index": 8,
+      "row": 1,
+      "column": 0,
+      "requested_row": "walk_northeast",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        39,
+        182,
+        135,
+        370
+      ],
+      "native_size": [
+        96,
+        188
+      ],
+      "native_image": "08-native.png",
+      "native_rgba_sha256": "1b1da990e1ab72c0b29334fc0c015da5345255ec31da5b3d24b944dbbe64aa44",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        85,
+        83
+      ],
+      "scaled_size": [
+        81,
+        158
+      ],
+      "rgba_sha256": "9299c6f45635a613b36246cc11bf99791e4978ef4feb7ad919119884a5dad523"
+    },
+    {
+      "index": 9,
+      "row": 1,
+      "column": 1,
+      "requested_row": "walk_northeast",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        234,
+        183,
+        333,
+        373
+      ],
+      "native_size": [
+        99,
+        190
+      ],
+      "native_image": "09-native.png",
+      "native_rgba_sha256": "779a5ae256c64fec2965155496e2fb54842e6082a95f4aa1508b4fde753a1c6c",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        84
+      ],
+      "scaled_size": [
+        83,
+        160
+      ],
+      "rgba_sha256": "d9f00447625ca1856388a0d90d125b05b69b96c153e69028bdbcd95d57849f86"
+    },
+    {
+      "index": 10,
+      "row": 1,
+      "column": 2,
+      "requested_row": "walk_northeast",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        414,
+        183,
+        516,
+        371
+      ],
+      "native_size": [
+        102,
+        188
+      ],
+      "native_image": "10-native.png",
+      "native_rgba_sha256": "e04aa073f99ae0f780aef2fac17d98d4a8ce2b9e0a56159045e1e0f554184800",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        84
+      ],
+      "scaled_size": [
+        86,
+        158
+      ],
+      "rgba_sha256": "2c40fd421df497cf7399ed12e7c4cdfc59d93c76e45bc000f303854ca6387520"
+    },
+    {
+      "index": 11,
+      "row": 1,
+      "column": 3,
+      "requested_row": "walk_northeast",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        600,
+        183,
+        697,
+        368
+      ],
+      "native_size": [
+        97,
+        185
+      ],
+      "native_image": "11-native.png",
+      "native_rgba_sha256": "ed69807fe80f99eff0f3c4f734134ff601b6853b3d7348651cac3f222033f71b",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        100,
+        84
+      ],
+      "scaled_size": [
+        82,
+        156
+      ],
+      "rgba_sha256": "31bcb82e8a987e67a248b11ead4511add179f327694054e254901351ada1313c"
+    },
+    {
+      "index": 12,
+      "row": 1,
+      "column": 4,
+      "requested_row": "walk_northeast",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        776,
+        182,
+        875,
+        368
+      ],
+      "native_size": [
+        99,
+        186
+      ],
+      "native_image": "12-native.png",
+      "native_rgba_sha256": "eef405d04e368fa426a1ae38c3d40162a3154cf3108f15a3f815aa90212848f5",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        83
+      ],
+      "scaled_size": [
+        83,
+        157
+      ],
+      "rgba_sha256": "fdf22cbc206015dccfa32af25f3d8b81a724e1472d9ebd468728b2dd63df43ab"
+    },
+    {
+      "index": 13,
+      "row": 1,
+      "column": 5,
+      "requested_row": "walk_northeast",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        973,
+        182,
+        1063,
+        370
+      ],
+      "native_size": [
+        90,
+        188
+      ],
+      "native_image": "13-native.png",
+      "native_rgba_sha256": "bb79c4df7a99053ec6947402166cb11f541616c097f5cdb00d5c0672f49b46b4",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        109,
+        83
+      ],
+      "scaled_size": [
+        76,
+        158
+      ],
+      "rgba_sha256": "01592b13715e67140e8a5d102a02edb3c745bbfb14c6350f1cdda556ffe2baad"
+    },
+    {
+      "index": 14,
+      "row": 1,
+      "column": 6,
+      "requested_row": "walk_northeast",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1145,
+        183,
+        1246,
+        373
+      ],
+      "native_size": [
+        101,
+        190
+      ],
+      "native_image": "14-native.png",
+      "native_rgba_sha256": "0059d5466e420ea872a843e4fe42b05fc219e09feb2b9bce8e0c4922a288cad3",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        101,
+        84
+      ],
+      "scaled_size": [
+        85,
+        160
+      ],
+      "rgba_sha256": "0c358487f9bfbbcb0531c3ce0c77ed483644f7796a44fabe594a0985aa937874"
+    },
+    {
+      "index": 15,
+      "row": 1,
+      "column": 7,
+      "requested_row": "walk_northeast",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1313,
+        182,
+        1406,
+        371
+      ],
+      "native_size": [
+        93,
+        189
+      ],
+      "native_image": "15-native.png",
+      "native_rgba_sha256": "8c29747c2c1ce72739d6158d1062659ce5da4ca5e59e8d075a9de806cd486cdd",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        91,
+        83
+      ],
+      "scaled_size": [
+        78,
+        159
+      ],
+      "rgba_sha256": "1ace950a91a35a93e9f93767f4be99164c62261d05dc3afa3384aadbc43b24d9"
+    },
+    {
+      "index": 16,
+      "row": 2,
+      "column": 0,
+      "requested_row": "walk_east",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        34,
+        368,
+        161,
+        547
+      ],
+      "native_size": [
+        127,
+        179
+      ],
+      "native_image": "16-native.png",
+      "native_rgba_sha256": "9568c815579c391e93ec7b8f8d2cdd85bec38a9fd4ceddf82754c257da038aa1",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        80,
+        93
+      ],
+      "scaled_size": [
+        107,
+        151
+      ],
+      "rgba_sha256": "0fbdc5df0394206c4553e59e734c4283989ed6482c1b7b685ac36733626a1e94"
+    },
+    {
+      "index": 17,
+      "row": 2,
+      "column": 1,
+      "requested_row": "walk_east",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        229,
+        366,
+        345,
+        547
+      ],
+      "native_size": [
+        116,
+        181
+      ],
+      "native_image": "17-native.png",
+      "native_rgba_sha256": "3eb9116d33fade45a7cb295d5e30bf3fbcee058a3dbf749da9c8dc1743dbcebe",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        92
+      ],
+      "scaled_size": [
+        98,
+        152
+      ],
+      "rgba_sha256": "9ad21306b546f07260de65cbce2b45a3181b9b073c44d23d83ed937c7b5b22cb"
+    },
+    {
+      "index": 18,
+      "row": 2,
+      "column": 2,
+      "requested_row": "walk_east",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        415,
+        368,
+        533,
+        540
+      ],
+      "native_size": [
+        118,
+        172
+      ],
+      "native_image": "18-native.png",
+      "native_rgba_sha256": "f10927eeb1f04b72ab74fc50efc7ec94dce8cbd2737cea41921566038481f80b",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        93
+      ],
+      "scaled_size": [
+        99,
+        145
+      ],
+      "rgba_sha256": "b1ca162a4bf8308977c032406bd6fe68b4d82f7e14ac4a6e4e7d1730f646bb1a"
+    },
+    {
+      "index": 19,
+      "row": 2,
+      "column": 3,
+      "requested_row": "walk_east",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        598,
+        366,
+        710,
+        541
+      ],
+      "native_size": [
+        112,
+        175
+      ],
+      "native_image": "19-native.png",
+      "native_rgba_sha256": "89ac2c7829789a8424236263f2fa2278a3964b72caebcdda559a576a5a50b010",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        98,
+        92
+      ],
+      "scaled_size": [
+        94,
+        147
+      ],
+      "rgba_sha256": "6273cc1f8a406d358d0e51e8a44a84120e9964f0f958d43283728cc1bb267670"
+    },
+    {
+      "index": 20,
+      "row": 2,
+      "column": 4,
+      "requested_row": "walk_east",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        776,
+        368,
+        894,
+        545
+      ],
+      "native_size": [
+        118,
+        177
+      ],
+      "native_image": "20-native.png",
+      "native_rgba_sha256": "5abd6033b6f750708eecc3aaea312170f5ae50e69b2ab5fb2facd9b648fb46f2",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        96,
+        93
+      ],
+      "scaled_size": [
+        99,
+        149
+      ],
+      "rgba_sha256": "6066b6122a936b75cd6d8936b64259753c2fa0edbb20888841710b8e32cedad9"
+    },
+    {
+      "index": 21,
+      "row": 2,
+      "column": 5,
+      "requested_row": "walk_east",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        964,
+        369,
+        1079,
+        547
+      ],
+      "native_size": [
+        115,
+        178
+      ],
+      "native_image": "21-native.png",
+      "native_rgba_sha256": "4fd60e7fd2af7e5b3992c69467d7f9dd5778fed64f5f1d287fef48d551c66329",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        101,
+        94
+      ],
+      "scaled_size": [
+        97,
+        150
+      ],
+      "rgba_sha256": "9e69cf1b40d4c4cec93942434c72e2ba700014334a20726186aed8b6d8b67bbd"
+    },
+    {
+      "index": 22,
+      "row": 2,
+      "column": 6,
+      "requested_row": "walk_east",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1142,
+        368,
+        1264,
+        546
+      ],
+      "native_size": [
+        122,
+        178
+      ],
+      "native_image": "22-native.png",
+      "native_rgba_sha256": "c8cf9a488699bd0d50aa0014ee3076b4f811eedca049c4c5b560763173ad64a7",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        99,
+        93
+      ],
+      "scaled_size": [
+        103,
+        150
+      ],
+      "rgba_sha256": "be3b02a6df2d735e8aff259e88de7947ce2049f9378f7ce385e21633a84b767a"
+    },
+    {
+      "index": 23,
+      "row": 2,
+      "column": 7,
+      "requested_row": "walk_east",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1318,
+        367,
+        1416,
+        545
+      ],
+      "native_size": [
+        98,
+        178
+      ],
+      "native_image": "23-native.png",
+      "native_rgba_sha256": "14d64550b72d68d762b4ec647b7fe0665053eda75ed664178391220b85b25b1e",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        95,
+        92
+      ],
+      "scaled_size": [
+        83,
+        150
+      ],
+      "rgba_sha256": "aec3bcfa9f6891152a4095935688a7ab0c6c07ff76835d21b78040b72cacfeba"
+    },
+    {
+      "index": 24,
+      "row": 3,
+      "column": 0,
+      "requested_row": "turn_endviews",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        42,
+        548,
+        137,
+        726
+      ],
+      "native_size": [
+        95,
+        178
+      ],
+      "native_image": "24-native.png",
+      "native_rgba_sha256": "5607b263a20d90c89cf2ad0d22d187726facee19e118bf33d7794c40c2ca07c9",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        92
+      ],
+      "scaled_size": [
+        80,
+        150
+      ],
+      "rgba_sha256": "eea1d32890ad7c5f1d7221f6327dcdbe3dd93ad8e5344024b742a5b03b01b43d"
+    },
+    {
+      "index": 25,
+      "row": 3,
+      "column": 1,
+      "requested_row": "turn_endviews",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        223,
+        549,
+        313,
+        726
+      ],
+      "native_size": [
+        90,
+        177
+      ],
+      "native_image": "25-native.png",
+      "native_rgba_sha256": "cba3528b2b0a5be71b4974a9f6c6c413660a0a0e6d3ad8abd0543224884e0a48",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        87,
+        92
+      ],
+      "scaled_size": [
+        76,
+        149
+      ],
+      "rgba_sha256": "483e6c13b37ed55e408a61d6d2d6092dd388fd46acba38e2633d3b7f03068bf4"
+    },
+    {
+      "index": 26,
+      "row": 3,
+      "column": 2,
+      "requested_row": "turn_endviews",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        406,
+        548,
+        499,
+        726
+      ],
+      "native_size": [
+        93,
+        178
+      ],
+      "native_image": "26-native.png",
+      "native_rgba_sha256": "87ea9bcb972d65f39d2ed5fbf0a263780822923f380be7af72227463835e01ee",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        89,
+        92
+      ],
+      "scaled_size": [
+        78,
+        150
+      ],
+      "rgba_sha256": "38b54b83cdc62d31a4f129c0d87a4ec8d6fcf97eca0d6a0c6c37b417e2637be7"
+    },
+    {
+      "index": 27,
+      "row": 3,
+      "column": 3,
+      "requested_row": "turn_endviews",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        589,
+        550,
+        665,
+        726
+      ],
+      "native_size": [
+        76,
+        176
+      ],
+      "native_image": "27-native.png",
+      "native_rgba_sha256": "9009afa870852d7ff91a90ad48f4c2f7f5718b748537ebc7a879c7800da7ed64",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        91,
+        93
+      ],
+      "scaled_size": [
+        64,
+        148
+      ],
+      "rgba_sha256": "f68b9800a8b39603028914e330f0fca1c17156f127e618f52b4cfae3a017301f"
+    },
+    {
+      "index": 28,
+      "row": 3,
+      "column": 4,
+      "requested_row": "turn_endviews",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        765,
+        547,
+        864,
+        724
+      ],
+      "native_size": [
+        99,
+        177
+      ],
+      "native_image": "28-native.png",
+      "native_rgba_sha256": "38feade5b788a89f866576d0c63304e62e19cc3e324b0fc1960d3896c4ccdd11",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        86,
+        91
+      ],
+      "scaled_size": [
+        83,
+        149
+      ],
+      "rgba_sha256": "db8d68bf311e54483c74f05eb23f416946bed8bea84bf005c86c9fe9e4c28b4a"
+    },
+    {
+      "index": 29,
+      "row": 3,
+      "column": 5,
+      "requested_row": "turn_endviews",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        961,
+        549,
+        1046,
+        725
+      ],
+      "native_size": [
+        85,
+        176
+      ],
+      "native_image": "29-native.png",
+      "native_rgba_sha256": "fabe8c4850a49bc577d026726e28d6563d69787040d1c0805a046532b09177ce",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        99,
+        92
+      ],
+      "scaled_size": [
+        72,
+        148
+      ],
+      "rgba_sha256": "526e685892b25b836908a7a78244de033d58230a25418fe805a52683b2e81671"
+    },
+    {
+      "index": 30,
+      "row": 3,
+      "column": 6,
+      "requested_row": "turn_endviews",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1157,
+        549,
+        1229,
+        723
+      ],
+      "native_size": [
+        72,
+        174
+      ],
+      "native_image": "30-native.png",
+      "native_rgba_sha256": "42825f119a6960ca7f6d20b12635ad361667f875623a744d48a7ba1037cdbade",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        112,
+        92
+      ],
+      "scaled_size": [
+        61,
+        147
+      ],
+      "rgba_sha256": "6ea8e38b5510257dc0a7f150bfcb026fd0bfabb06199c9d534b78dd75bbcf36c"
+    },
+    {
+      "index": 31,
+      "row": 3,
+      "column": 7,
+      "requested_row": "turn_endviews",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1316,
+        548,
+        1405,
+        729
+      ],
+      "native_size": [
+        89,
+        181
+      ],
+      "native_image": "31-native.png",
+      "native_rgba_sha256": "053fccd5aa673ff0beeb9344a4c4058e4ecaea51b82f01a6e320146644264874",
+      "touching_neighbor_crop": true,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        93,
+        92
+      ],
+      "scaled_size": [
+        75,
+        152
+      ],
+      "rgba_sha256": "0966633e3f56db5a787bcf98c3427b97541c68f2e57d5e307ee778cce2e53d5f"
+    },
+    {
+      "index": 32,
+      "row": 4,
+      "column": 0,
+      "requested_row": "repair",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        35,
+        728,
+        134,
+        900
+      ],
+      "native_size": [
+        99,
+        172
+      ],
+      "native_image": "32-native.png",
+      "native_rgba_sha256": "51f62917c87477193fe4886e7219a6737f4970a94eacef1012d2929fc87cd3dd",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        81,
+        99
+      ],
+      "scaled_size": [
+        83,
+        145
+      ],
+      "rgba_sha256": "1f0511e297f261e870eb91d9c6f893167276099cbbe74ad2f87bb4bb8cfec927"
+    },
+    {
+      "index": 33,
+      "row": 4,
+      "column": 1,
+      "requested_row": "repair",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        229,
+        726,
+        327,
+        900
+      ],
+      "native_size": [
+        98,
+        174
+      ],
+      "native_image": "33-native.png",
+      "native_rgba_sha256": "642e91d17920d3479a81975ac82327624df421ce439b5baaf11b1b889852cc68",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        97
+      ],
+      "scaled_size": [
+        83,
+        147
+      ],
+      "rgba_sha256": "c77b2c9fc5a577effb1458eb9a026be9444ae5909f9b3013422e87d99e148c50"
+    },
+    {
+      "index": 34,
+      "row": 4,
+      "column": 2,
+      "requested_row": "repair",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        410,
+        727,
+        518,
+        900
+      ],
+      "native_size": [
+        108,
+        173
+      ],
+      "native_image": "34-native.png",
+      "native_rgba_sha256": "31bdac38644d6953673e2dfe89fc562120212ba04bceaa048e1941c69925c4e2",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        98
+      ],
+      "scaled_size": [
+        91,
+        146
+      ],
+      "rgba_sha256": "5c1f2df9faccb29dbf8ed67428c6bd57d4a9a567bc5833b9c4ac1f97ee250f25"
+    },
+    {
+      "index": 35,
+      "row": 4,
+      "column": 3,
+      "requested_row": "repair",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        588,
+        765,
+        689,
+        882
+      ],
+      "native_size": [
+        101,
+        117
+      ],
+      "native_image": "35-native.png",
+      "native_rgba_sha256": "50ff4608bb6b1f83e3cef2b2d8a26fd86170fe13112dfa301ef055d9ee378d5c",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        90,
+        130
+      ],
+      "scaled_size": [
+        85,
+        99
+      ],
+      "rgba_sha256": "3b65db2f9d89a406df052c2b8324e305a9731f7d272f06a84bfd1d03edb45192"
+    },
+    {
+      "index": 36,
+      "row": 4,
+      "column": 4,
+      "requested_row": "repair",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        765,
+        769,
+        881,
+        890
+      ],
+      "native_size": [
+        116,
+        121
+      ],
+      "native_image": "36-native.png",
+      "native_rgba_sha256": "e2d52335efdcfbd102c651795a070400ac017dccc7aab3be80f76e4150997ccc",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        86,
+        134
+      ],
+      "scaled_size": [
+        98,
+        102
+      ],
+      "rgba_sha256": "bc95dc82798c6b349736e938c85093adbf69db06c18f681c9871ede22548abc5"
+    },
+    {
+      "index": 37,
+      "row": 4,
+      "column": 5,
+      "requested_row": "repair",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        948,
+        738,
+        1058,
+        900
+      ],
+      "native_size": [
+        110,
+        162
+      ],
+      "native_image": "37-native.png",
+      "native_rgba_sha256": "60a9e28bb3b362bdcf45c261b7849b6f3d29c762c2a3d53323cc40536180da5a",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        108
+      ],
+      "scaled_size": [
+        93,
+        136
+      ],
+      "rgba_sha256": "f070cecca91462e348844cf28807e42748ab918fdcd193e795a6a1a911f3aef0"
+    },
+    {
+      "index": 38,
+      "row": 4,
+      "column": 6,
+      "requested_row": "repair",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1133,
+        727,
+        1221,
+        900
+      ],
+      "native_size": [
+        88,
+        173
+      ],
+      "native_image": "38-native.png",
+      "native_rgba_sha256": "70eeaf8ca26cb1e200663e052b3109374fe71e966a5cce2f8e547b70a4e52063",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        91,
+        98
+      ],
+      "scaled_size": [
+        74,
+        146
+      ],
+      "rgba_sha256": "511c67c97671b0a6578dd73943b787cff1b55ac9aee1dfc8a7fa05e023ea1282"
+    },
+    {
+      "index": 39,
+      "row": 4,
+      "column": 7,
+      "requested_row": "repair",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1315,
+        729,
+        1404,
+        900
+      ],
+      "native_size": [
+        89,
+        171
+      ],
+      "native_image": "39-native.png",
+      "native_rgba_sha256": "b065b491827842505062652a6964881489ad9acc787e8527f31683771c064683",
+      "touching_neighbor_crop": true,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        1024,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        92,
+        100
+      ],
+      "scaled_size": [
+        75,
+        144
+      ],
+      "rgba_sha256": "7dc2ea0f78d7a111d3f1d921363e81eb219984528b05c5a4504906ebdec3fcbd"
+    },
+    {
+      "index": 40,
+      "row": 5,
+      "column": 0,
+      "requested_row": "expressive_gestures",
+      "requested_order": 0,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        43,
+        897,
+        140,
+        1077
+      ],
+      "native_size": [
+        97,
+        180
+      ],
+      "native_image": "40-native.png",
+      "native_rgba_sha256": "f06206123e278b8f06658caeafcd0f58f2559ba055acb8bd07a99e0c5ce9f7b1",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        0,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        88,
+        92
+      ],
+      "scaled_size": [
+        82,
+        152
+      ],
+      "rgba_sha256": "5384bbfe89f125b71112da9ba66f84d44ed489496b2e96ac4dec5873277526d5"
+    },
+    {
+      "index": 41,
+      "row": 5,
+      "column": 1,
+      "requested_row": "expressive_gestures",
+      "requested_order": 1,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        231,
+        892,
+        326,
+        1078
+      ],
+      "native_size": [
+        95,
+        186
+      ],
+      "native_image": "41-native.png",
+      "native_rgba_sha256": "c61f294760baefa3934ecaca7cf337207e3944ba9c1765e3d53af2730a80456d",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        256,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        94,
+        87
+      ],
+      "scaled_size": [
+        80,
+        157
+      ],
+      "rgba_sha256": "36d584027ba2d87dd6f87b0758f61ad293689752a6530cfd95b296e3dd0a1f2e"
+    },
+    {
+      "index": 42,
+      "row": 5,
+      "column": 2,
+      "requested_row": "expressive_gestures",
+      "requested_order": 2,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        401,
+        897,
+        543,
+        1078
+      ],
+      "native_size": [
+        142,
+        181
+      ],
+      "native_image": "42-native.png",
+      "native_rgba_sha256": "314ca09ec7cc8b6111bbba8937056166be5244416ebb6087c38d1aa7d165207b",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        512,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        85,
+        92
+      ],
+      "scaled_size": [
+        120,
+        152
+      ],
+      "rgba_sha256": "342fe3342c25b73a73ddcb9387ff06f2bd339d8e37d105c49961930913643762"
+    },
+    {
+      "index": 43,
+      "row": 5,
+      "column": 3,
+      "requested_row": "expressive_gestures",
+      "requested_order": 3,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        581,
+        892,
+        685,
+        1078
+      ],
+      "native_size": [
+        104,
+        186
+      ],
+      "native_image": "43-native.png",
+      "native_rgba_sha256": "0180855f24e9720b0408c92d0d0b20e3b0f26b0cdd9ae29aaf72fa30b4ed0263",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        768,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        84,
+        87
+      ],
+      "scaled_size": [
+        88,
+        157
+      ],
+      "rgba_sha256": "0c9df78ab4aa4384059d1590a1546b5577d43cb42dec3ce6850fef64d2875079"
+    },
+    {
+      "index": 44,
+      "row": 5,
+      "column": 4,
+      "requested_row": "expressive_gestures",
+      "requested_order": 4,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        744,
+        896,
+        896,
+        1075
+      ],
+      "native_size": [
+        152,
+        179
+      ],
+      "native_image": "44-native.png",
+      "native_rgba_sha256": "461bfcb74d850cc7b36109801db8c4d3cf0ee2de47a8a44c0308ab758cd79bdb",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1024,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        69,
+        91
+      ],
+      "scaled_size": [
+        128,
+        151
+      ],
+      "rgba_sha256": "48bd1bc4d00116e86fc1e92598c9fc58cc8fb18a03c216831d37c4cd73ea5b9b"
+    },
+    {
+      "index": 45,
+      "row": 5,
+      "column": 5,
+      "requested_row": "expressive_gestures",
+      "requested_order": 5,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        951,
+        893,
+        1050,
+        1077
+      ],
+      "native_size": [
+        99,
+        184
+      ],
+      "native_image": "45-native.png",
+      "native_rgba_sha256": "2af8880e320ee3669043898a70e8daa3eb40ec648bdc6e39451c338b880f99a1",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1280,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        91,
+        88
+      ],
+      "scaled_size": [
+        83,
+        155
+      ],
+      "rgba_sha256": "6a671814178fe890d3db6a8390804d88a97c08903782fdf53f6493fe54f55a85"
+    },
+    {
+      "index": 46,
+      "row": 5,
+      "column": 6,
+      "requested_row": "expressive_gestures",
+      "requested_order": 6,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1135,
+        897,
+        1233,
+        1078
+      ],
+      "native_size": [
+        98,
+        181
+      ],
+      "native_image": "46-native.png",
+      "native_rgba_sha256": "64dc1ffca12ccd3649d14e4bc7d295524fff3bfc2fae44c58acee8445291fcea",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1536,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        93,
+        92
+      ],
+      "scaled_size": [
+        83,
+        152
+      ],
+      "rgba_sha256": "21a0af5c772a30c60c6105bb7dcdcb6a2f3cd402b8274984c52ce39d09e5dde0"
+    },
+    {
+      "index": 47,
+      "row": 5,
+      "column": 7,
+      "requested_row": "expressive_gestures",
+      "requested_order": 7,
+      "verified_phase": null,
+      "phase_status": "not_verified",
+      "source_bounds_xyxy": [
+        1316,
+        897,
+        1433,
+        1077
+      ],
+      "native_size": [
+        117,
+        180
+      ],
+      "native_image": "47-native.png",
+      "native_rgba_sha256": "13a893b3e78dad215fcb5470104db6a90ec4cfa5d508fc7a2549c7cd6b87da6b",
+      "touching_neighbor_crop": false,
+      "touches_source_edge": false,
+      "atlas_rect": [
+        1792,
+        1280,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "offset": [
+        93,
+        92
+      ],
+      "scaled_size": [
+        99,
+        152
+      ],
+      "rgba_sha256": "4725d1cfc89237df120d914fcf95ae05b0ef5859d24da995bf6d96fbffee18c4"
+    }
+  ],
+  "row_labels": [
+    "walk_southeast",
+    "walk_northeast",
+    "walk_east",
+    "turn_endviews",
+    "repair",
+    "expressive_gestures"
+  ],
+  "clips": {
+    "walk_southeast_review": {
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "walk_northeast_review": {
+      "frames": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "walk_east_review": {
+      "frames": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "turn_endviews_review": {
+      "frames": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "repair_review": {
+      "frames": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    },
+    "expressive_gestures_review": {
+      "frames": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "fps": 8,
+      "loop": true,
+      "admitted": false,
+      "timing": "provisional_source_order_review"
+    }
+  },
+  "review": [
+    "Generated artwork is unique source output; no frame duplication, recoloring, mirroring or padding was performed by extraction.",
+    "Requested eight-phase order is preserved as source column order, not verified anatomical timing.",
+    "One fixed scale and per-row source-coordinate ground registration preserve relative bob; no per-pose resizing.",
+    "Generator returned1448x1086, not requested4K; original detail preserved.",
+    "Baked pale checkerboard keyed; neutralbright tool highlights may also be removed. Rawsource retained.",
+    "Two source figures touch at row4/5 col8, flagged boundary crops; first figure reaches source topedge.",
+    "Walking rows contain repeated lead-leg silhouettes; turn/repair/emote rows are pose banks, not approved complete loops."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "successful_calls_this_sheet": 1,
+    "transforms": [
+      "background key",
+      "connectedwholefigure native extraction",
+      "nativeatlas preserves original layout",
+      "one uniform nearest scale",
+      "rowregistered256cell atlas"
+    ]
+  }
+}

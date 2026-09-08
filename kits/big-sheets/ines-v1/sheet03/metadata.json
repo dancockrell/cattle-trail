@@ -1,0 +1,1194 @@
+{
+  "schema_version": 1,
+  "id": "ines-sheet03",
+  "character": "Ines Vale",
+  "age": 23,
+  "source": "source.png",
+  "source_sha256": "6868513e123870173382c3493b999f728bbeb9fd447ed4c18346abff528f5e26",
+  "actual_size": [
+    1723,
+    913
+  ],
+  "requested_size": [
+    3840,
+    2048
+  ],
+  "requested_grid": [
+    8,
+    4
+  ],
+  "observed_figure_count": 32,
+  "reference": "kits/wardrobe/ines-high-angle-v1/source.png",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "texture": "atlas.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    244
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        0,
+        215,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        30,
+        8,
+        187,
+        221
+      ],
+      "native_cell": "cell-00-native.png",
+      "native_figure": "figure-00-native.png",
+      "native_figure_size": [
+        157,
+        213
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 1,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        215,
+        0,
+        431,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        33,
+        8,
+        176,
+        220
+      ],
+      "native_cell": "cell-01-native.png",
+      "native_figure": "figure-01-native.png",
+      "native_figure_size": [
+        143,
+        212
+      ],
+      "atlas_rect_xywh": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 2,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        431,
+        0,
+        646,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        34,
+        7,
+        191,
+        220
+      ],
+      "native_cell": "cell-02-native.png",
+      "native_figure": "figure-02-native.png",
+      "native_figure_size": [
+        157,
+        213
+      ],
+      "atlas_rect_xywh": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 3,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        646,
+        0,
+        862,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        28,
+        2,
+        196,
+        209
+      ],
+      "native_cell": "cell-03-native.png",
+      "native_figure": "figure-03-native.png",
+      "native_figure_size": [
+        168,
+        207
+      ],
+      "atlas_rect_xywh": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 4,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        862,
+        0,
+        1077,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        36,
+        9,
+        182,
+        222
+      ],
+      "native_cell": "cell-04-native.png",
+      "native_figure": "figure-04-native.png",
+      "native_figure_size": [
+        146,
+        213
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 5,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        1077,
+        0,
+        1292,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        26,
+        9,
+        185,
+        221
+      ],
+      "native_cell": "cell-05-native.png",
+      "native_figure": "figure-05-native.png",
+      "native_figure_size": [
+        159,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 6,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1292,
+        0,
+        1508,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        29,
+        2,
+        197,
+        218
+      ],
+      "native_cell": "cell-06-native.png",
+      "native_figure": "figure-06-native.png",
+      "native_figure_size": [
+        168,
+        216
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 7,
+      "requested_group": "run_e",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1508,
+        0,
+        1723,
+        232
+      ],
+      "trim_bounds_xyxy": [
+        28,
+        10,
+        183,
+        222
+      ],
+      "native_cell": "cell-07-native.png",
+      "native_figure": "figure-07-native.png",
+      "native_figure_size": [
+        155,
+        212
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 8,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        232,
+        215,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        33,
+        7,
+        175,
+        215
+      ],
+      "native_cell": "cell-08-native.png",
+      "native_figure": "figure-08-native.png",
+      "native_figure_size": [
+        142,
+        208
+      ],
+      "atlas_rect_xywh": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 9,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        215,
+        232,
+        431,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        34,
+        7,
+        177,
+        207
+      ],
+      "native_cell": "cell-09-native.png",
+      "native_figure": "figure-09-native.png",
+      "native_figure_size": [
+        143,
+        200
+      ],
+      "atlas_rect_xywh": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 10,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        431,
+        232,
+        646,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        33,
+        8,
+        178,
+        228
+      ],
+      "native_cell": "cell-10-native.png",
+      "native_figure": "figure-10-native.png",
+      "native_figure_size": [
+        145,
+        220
+      ],
+      "atlas_rect_xywh": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 11,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        646,
+        232,
+        862,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        34,
+        7,
+        176,
+        227
+      ],
+      "native_cell": "cell-11-native.png",
+      "native_figure": "figure-11-native.png",
+      "native_figure_size": [
+        142,
+        220
+      ],
+      "atlas_rect_xywh": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 12,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        862,
+        232,
+        1077,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        33,
+        8,
+        185,
+        225
+      ],
+      "native_cell": "cell-12-native.png",
+      "native_figure": "figure-12-native.png",
+      "native_figure_size": [
+        152,
+        217
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 13,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        1077,
+        232,
+        1292,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        36,
+        9,
+        180,
+        223
+      ],
+      "native_cell": "cell-13-native.png",
+      "native_figure": "figure-13-native.png",
+      "native_figure_size": [
+        144,
+        214
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 14,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1292,
+        232,
+        1508,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        33,
+        7,
+        179,
+        224
+      ],
+      "native_cell": "cell-14-native.png",
+      "native_figure": "figure-14-native.png",
+      "native_figure_size": [
+        146,
+        217
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 15,
+      "requested_group": "run_se",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1508,
+        232,
+        1723,
+        463
+      ],
+      "trim_bounds_xyxy": [
+        34,
+        7,
+        175,
+        227
+      ],
+      "native_cell": "cell-15-native.png",
+      "native_figure": "figure-15-native.png",
+      "native_figure_size": [
+        141,
+        220
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 16,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        463,
+        215,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        30,
+        3,
+        163,
+        228
+      ],
+      "native_cell": "cell-16-native.png",
+      "native_figure": "figure-16-native.png",
+      "native_figure_size": [
+        133,
+        225
+      ],
+      "atlas_rect_xywh": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 17,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        215,
+        463,
+        431,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        29,
+        4,
+        162,
+        228
+      ],
+      "native_cell": "cell-17-native.png",
+      "native_figure": "figure-17-native.png",
+      "native_figure_size": [
+        133,
+        224
+      ],
+      "atlas_rect_xywh": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 18,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        431,
+        463,
+        646,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        28,
+        4,
+        169,
+        228
+      ],
+      "native_cell": "cell-18-native.png",
+      "native_figure": "figure-18-native.png",
+      "native_figure_size": [
+        141,
+        224
+      ],
+      "atlas_rect_xywh": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 19,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        646,
+        463,
+        862,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        28,
+        4,
+        165,
+        228
+      ],
+      "native_cell": "cell-19-native.png",
+      "native_figure": "figure-19-native.png",
+      "native_figure_size": [
+        137,
+        224
+      ],
+      "atlas_rect_xywh": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 20,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        862,
+        463,
+        1077,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        28,
+        4,
+        166,
+        223
+      ],
+      "native_cell": "cell-20-native.png",
+      "native_figure": "figure-20-native.png",
+      "native_figure_size": [
+        138,
+        219
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 21,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        1077,
+        463,
+        1292,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        27,
+        4,
+        162,
+        207
+      ],
+      "native_cell": "cell-21-native.png",
+      "native_figure": "figure-21-native.png",
+      "native_figure_size": [
+        135,
+        203
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 22,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1292,
+        463,
+        1508,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        29,
+        3,
+        168,
+        228
+      ],
+      "native_cell": "cell-22-native.png",
+      "native_figure": "figure-22-native.png",
+      "native_figure_size": [
+        139,
+        225
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 23,
+      "requested_group": "run_s",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1508,
+        463,
+        1723,
+        691
+      ],
+      "trim_bounds_xyxy": [
+        27,
+        4,
+        169,
+        226
+      ],
+      "native_cell": "cell-23-native.png",
+      "native_figure": "figure-23-native.png",
+      "native_figure_size": [
+        142,
+        222
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        512,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 24,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 0,
+      "source_rect_xyxy": [
+        0,
+        691,
+        215,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        37,
+        0,
+        181,
+        206
+      ],
+      "native_cell": "cell-24-native.png",
+      "native_figure": "figure-24-native.png",
+      "native_figure_size": [
+        144,
+        206
+      ],
+      "atlas_rect_xywh": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 25,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 1,
+      "source_rect_xyxy": [
+        215,
+        691,
+        431,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        40,
+        0,
+        181,
+        206
+      ],
+      "native_cell": "cell-25-native.png",
+      "native_figure": "figure-25-native.png",
+      "native_figure_size": [
+        141,
+        206
+      ],
+      "atlas_rect_xywh": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 26,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 2,
+      "source_rect_xyxy": [
+        431,
+        691,
+        646,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        34,
+        0,
+        185,
+        212
+      ],
+      "native_cell": "cell-26-native.png",
+      "native_figure": "figure-26-native.png",
+      "native_figure_size": [
+        151,
+        212
+      ],
+      "atlas_rect_xywh": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 27,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 3,
+      "source_rect_xyxy": [
+        646,
+        691,
+        862,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        39,
+        0,
+        187,
+        213
+      ],
+      "native_cell": "cell-27-native.png",
+      "native_figure": "figure-27-native.png",
+      "native_figure_size": [
+        148,
+        213
+      ],
+      "atlas_rect_xywh": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 28,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 4,
+      "source_rect_xyxy": [
+        862,
+        691,
+        1077,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        42,
+        2,
+        191,
+        217
+      ],
+      "native_cell": "cell-28-native.png",
+      "native_figure": "figure-28-native.png",
+      "native_figure_size": [
+        149,
+        215
+      ],
+      "atlas_rect_xywh": [
+        1024,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 29,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 5,
+      "source_rect_xyxy": [
+        1077,
+        691,
+        1292,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        35,
+        0,
+        187,
+        204
+      ],
+      "native_cell": "cell-29-native.png",
+      "native_figure": "figure-29-native.png",
+      "native_figure_size": [
+        152,
+        204
+      ],
+      "atlas_rect_xywh": [
+        1280,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 30,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 6,
+      "source_rect_xyxy": [
+        1292,
+        691,
+        1508,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        45,
+        0,
+        190,
+        214
+      ],
+      "native_cell": "cell-30-native.png",
+      "native_figure": "figure-30-native.png",
+      "native_figure_size": [
+        145,
+        214
+      ],
+      "atlas_rect_xywh": [
+        1536,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": true,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    },
+    {
+      "index": 31,
+      "requested_group": "run_sw",
+      "requested_group_ordinal": 7,
+      "source_rect_xyxy": [
+        1508,
+        691,
+        1723,
+        913
+      ],
+      "trim_bounds_xyxy": [
+        44,
+        2,
+        188,
+        197
+      ],
+      "native_cell": "cell-31-native.png",
+      "native_figure": "figure-31-native.png",
+      "native_figure_size": [
+        144,
+        195
+      ],
+      "atlas_rect_xywh": [
+        1792,
+        768,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        244
+      ],
+      "edge_warning": false,
+      "status": "candidate_unverified_phase",
+      "duration_ms": null
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "source_transparency": "RGB with baked checkerboard, removed by boundary-connected bright neutral key; raw source preserved",
+  "transform": "Whole native grid cells, complete figure trims, no rescale or duplicated padding; isolated sub3pixel background debris removed for atlas. Per-frame centering is preview alignment, not animation registration.",
+  "review": "Requested row actions are metadata intent, not verified complete cycles. Leading-leg repetitions, body/costume drift and incomplete gutters remain possible. No source pixels duplicated to increase frame counts."
+}
