@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "character": "ada_mercer",
+  "age": 22,
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "texture": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "phase": "near_leg_contact",
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/00-whole-frame.png",
+      "source_sha256": "f7c6b8b926e7a469e6869e51a87f2c81597b0e3afcbb8eec09fd60a124d0febd",
+      "rgba_sha256": "e6055e07e39d0c7f3b110d7402fd2cb9a0d10184d9c4f16214b5c16dc97e0108",
+      "duration_seconds": 0.16
+    },
+    {
+      "index": 1,
+      "phase": "near_leg_support_passing",
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/01-whole-frame.png",
+      "source_sha256": "024cb20ffcd65de6b6d6d17095fdf4af296aa848d5255cb76fab025f22cb54d8",
+      "rgba_sha256": "43b9947eefa2079dddb8ecf99db88de1dc91f5c2ccb6f2cd6a0b48e72ba10043",
+      "duration_seconds": 0.16
+    },
+    {
+      "index": 2,
+      "phase": "far_leg_contact_side_profile",
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "source": "kits/workcycles/ada-master-east-contact-v5/whole-frame.png",
+      "source_sha256": "ffc0f2ee83546c00abc29a4954ccbe543fed73fb60c2c0f0b7e4a5cd03abae3e",
+      "rgba_sha256": "37c0ca2eb0db47c89b0bca98de95cc53351c638827adbd0b0aceadcf0cd1be36",
+      "duration_seconds": 0.16
+    },
+    {
+      "index": 3,
+      "phase": "far_leg_support_low_passing",
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/03-whole-frame.png",
+      "source_sha256": "5c0225e3d24ca97ca041b788521e4fd08007ac8481ae2c8434bf0d6e5274b9d2",
+      "rgba_sha256": "9b38f3f15ccd2bd317c40afe143577f83fd81255f5699ad20873ca5465ec4fc0",
+      "duration_seconds": 0.16
+    }
+  ],
+  "status": "ordered_whole_pose_working_candidate",
+  "clips": {
+    "walk_east_candidate": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 6.25,
+      "loop": true,
+      "admitted": false
+    }
+  },
+  "changes": [
+    "Frame2 uses the corrected side-profile opposite contact.",
+    "Frame3 uses the lowered passing foot, replacing the raised marching knee."
+  ],
+  "limits": [
+    "Whole figures still need consistent body volume, stride spacing and cadence review.",
+    "These phase labels describe selected visual candidates, not in-game animation approval."
+  ],
+  "processing": "Exact whole-cell assembly, no repaint, rescale, mirroring or limb recombination"
+}
