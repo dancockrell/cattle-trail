@@ -26,7 +26,7 @@ for index,(path,phase) in enumerate(inputs):
 atlas.save(OUT/'atlas.png')
 atlas.resize((1536,384),Image.Resampling.NEAREST).save(OUT/'comparison.png')
 metadata = {'version':1,'character':'ada_mercer','age':22,'cell':[64,64],'anchor':[32,61],
- 'texture':'atlas.png','frames':records,'status':'ordered_whole_pose_working_candidate',
+ 'texture':'atlas.png','frames':records,'status':'rejected_user_quality', 'rejection_reason':'User rejected coarse detail in the four-pose sheet on 2026-09-08; not a production master.',
  'clips':{'walk_east_candidate':{'frames':[0,1,2,3],'fps':6.25,'loop':True,'admitted':False}},
  'changes':['Frame2 uses the corrected side-profile opposite contact.',
             'Frame3 uses the lowered passing foot, replacing the raised marching knee.'],

@@ -12,7 +12,7 @@
     {
       "id": "adult_cast",
       "status": "accepted_user",
-      "decision": "All romance women are adults 18 or older, mostly 18\u201324; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
+      "decision": "All romance women are adults 18 or older, mostly 18–24; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
       "consequence": "Explicit age in all authored/generated romance records; no child-coded design. Earlier proposed 21+ minimum is superseded."
     },
     {
@@ -54,7 +54,7 @@
     {
       "id": "tuning",
       "status": "provisional",
-      "decision": "Madness 0\u2013100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
+      "decision": "Madness 0–100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
       "consequence": "Untested values require a bounded implementation and playtest."
     },
     {
@@ -86,6 +86,19 @@
       "status": "accepted_user",
       "decision": "Build out the game following the design while walk and turn work continues, including generated tweens and parallel agents.",
       "consequence": "Supersedes the earlier implementation freeze pending full room visual approval; visual acceptance remains unproven."
+    },
+    {
+      "id": "detailed_character_masters_and_daring_wardrobe",
+      "status": "accepted_user",
+      "decision": "Reject the coarse Ada walk sheet; produce richly detailed adult masters and daring PG-13 wardrobe variants with visible skin and confident self-expression.",
+      "consequence": "design/CHARACTER-VISUAL-CONTRACT.md supersedes the 40-pixel production target. New 160-pixel figure candidates preserve native crops; runtime scale change remains unimplemented."
+    },
+    {
+      "id": "ines_summer_clothing_reference",
+      "status": "accepted_user",
+      "decision": "The four Ines summer outfits establish the general adult-cast clothing level: non-nude, daring, intended for a teen audience.",
+      "reference": "kits/wardrobe/spirit-scout-summer-v1/source.png",
+      "consequence": "Use this coverage and styling in future wardrobe prompts; camera, motion and runtime admission remain separate."
     }
   ]
 }

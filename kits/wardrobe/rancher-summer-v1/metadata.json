@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "age": 24,
+  "family": "rancher",
+  "purpose": "static_summer_wardrobe_identity_study",
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    184
+  ],
+  "body_height": 160,
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "id": "cream_offshoulder_split_skirt",
+      "rect": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "source_rect": [
+        165,
+        30,
+        257,
+        710
+      ],
+      "size": [
+        58,
+        160
+      ],
+      "offset": [
+        67,
+        24
+      ],
+      "status": "high_detail_candidate"
+    },
+    {
+      "id": "brown_vest_riding_shorts",
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "source_rect": [
+        628,
+        30,
+        252,
+        710
+      ],
+      "size": [
+        57,
+        160
+      ],
+      "offset": [
+        68,
+        24
+      ],
+      "status": "high_detail_candidate"
+    },
+    {
+      "id": "rust_offshoulder_hat",
+      "rect": [
+        384,
+        0,
+        192,
+        192
+      ],
+      "source_rect": [
+        1078,
+        20,
+        253,
+        720
+      ],
+      "size": [
+        56,
+        160
+      ],
+      "offset": [
+        68,
+        24
+      ],
+      "status": "high_detail_candidate"
+    },
+    {
+      "id": "olive_blouse_tan_shorts",
+      "rect": [
+        576,
+        0,
+        192,
+        192
+      ],
+      "source_rect": [
+        1535,
+        30,
+        251,
+        710
+      ],
+      "size": [
+        57,
+        160
+      ],
+      "offset": [
+        68,
+        24
+      ],
+      "status": "high_detail_candidate"
+    }
+  ],
+  "source": "source.png",
+  "source_sha256": "384e8b5b3159d43c9826f792d58d5364753ff2dc7a4398fd5dbf844d9886611f",
+  "reference": "kits/character-families/rancher/master-v1.png",
+  "reference_sha256": "6d3268c732fd11fc2454bba29adf86050704b03d5845a7a369e6e581bcf179dc",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "actual_facing": "southeast_oblique_front",
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "processing": "Source background magenta hue key, intact wholefigure trim, nearest-neighbor160pxheight in192cells. Full-resolution transparent trims retained. No drawing, rigging, recoloring or interpolation.",
+  "observation": "Four intact adult24 Eleanor wardrobe candidates retain braid, boots and compass. Opaque tops, bare shoulders/midriff, shorts and split skirts provide requested PG13 summerstyle. Face/hands/clothes readable at160pixels.",
+  "limitations": [
+    "User quality correction supersedes originally requested40px output; no40pxatlas produced.",
+    "Static wardrobe variations are not walk phases.",
+    "Camera remains more frontal than runtimehighangle.",
+    "Generated styling has more bust definition than minimal-bust brief; retained as candidate, not approved identity replacement."
+  ]
+}

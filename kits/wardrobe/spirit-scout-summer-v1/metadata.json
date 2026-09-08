@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "id": "spirit-scout-summer-v1",
+  "character": "Ines Vale",
+  "age": 23,
+  "reference": "kits/character-families/spirit-scout/master-v1.png",
+  "source": "source.png",
+  "source_sha256": "e3ccc9f538fac2ef07ad4ea33b4b81ac313c9241919e4f119e770c74f7a1d2bd",
+  "tool": "builtin image_gen",
+  "model": "not exposed",
+  "date": "2026-09-08",
+  "prompt": "prompt.txt",
+  "texture": "atlas.png",
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    185
+  ],
+  "figure_height": 160,
+  "native_extractions_preserved": true,
+  "frames": [
+    {
+      "id": "ines_summer_01",
+      "age": 23,
+      "source_rect_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        203,
+        10,
+        437,
+        582
+      ],
+      "native_image": "outfit-01-native.png",
+      "image": "outfit-01.png",
+      "atlas_rect_xywh": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "anchor": [
+        96,
+        185
+      ],
+      "status": "candidate_static_outfit",
+      "animations": {}
+    },
+    {
+      "id": "ines_summer_02",
+      "age": 23,
+      "source_rect_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        137,
+        12,
+        372,
+        582
+      ],
+      "native_image": "outfit-02-native.png",
+      "image": "outfit-02.png",
+      "atlas_rect_xywh": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "anchor": [
+        96,
+        185
+      ],
+      "status": "candidate_static_outfit",
+      "animations": {}
+    },
+    {
+      "id": "ines_summer_03",
+      "age": 23,
+      "source_rect_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        203,
+        5,
+        437,
+        577
+      ],
+      "native_image": "outfit-03-native.png",
+      "image": "outfit-03.png",
+      "atlas_rect_xywh": [
+        0,
+        192,
+        192,
+        192
+      ],
+      "anchor": [
+        96,
+        185
+      ],
+      "status": "candidate_static_outfit",
+      "animations": {}
+    },
+    {
+      "id": "ines_summer_04",
+      "age": 23,
+      "source_rect_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        137,
+        2,
+        372,
+        576
+      ],
+      "native_image": "outfit-04-native.png",
+      "image": "outfit-04.png",
+      "atlas_rect_xywh": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "anchor": [
+        96,
+        185
+      ],
+      "status": "candidate_static_outfit",
+      "animations": {}
+    }
+  ],
+  "animations": {},
+  "runtime_admitted": false,
+  "transform": "Magenta key; complete-figure trim preserved at native resolution; nearest-neighbor full-figure scale to160px inside192pxcell; no smoothing or repaint",
+  "scale_decision": "160px master output supersedes earlier40px request after user rejected coarse small-character presentation."
+}

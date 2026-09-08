@@ -69,7 +69,7 @@
       "duration_seconds": 0.16
     }
   ],
-  "status": "ordered_whole_pose_working_candidate",
+  "status": "rejected_user_quality",
   "clips": {
     "walk_east_candidate": {
       "frames": [
@@ -91,5 +91,6 @@
     "Whole figures still need consistent body volume, stride spacing and cadence review.",
     "These phase labels describe selected visual candidates, not in-game animation approval."
   ],
-  "processing": "Exact whole-cell assembly, no repaint, rescale, mirroring or limb recombination"
+  "processing": "Exact whole-cell assembly, no repaint, rescale, mirroring or limb recombination",
+  "rejection_reason": "User rejected coarse detail in the four-pose sheet on 2026-09-08; not a production master."
 }

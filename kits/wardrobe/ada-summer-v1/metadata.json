@@ -1,0 +1,281 @@
+{
+  "id": "ada-summer-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "status": "high_detail_wardrobe_candidates",
+  "source": "kits/wardrobe/ada-summer-v1/source.png",
+  "source_sha256": "7e0f1efeba32633afd5d4b1e20b02ca29c0e9539d1c52798cb562e6a121b20bf",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/character-families/mechanic/master.png",
+  "identity_reference_sha256": "f00e28b12c14ed69d7c998572501878d9e89d262396d0382ca3a428e3a499ea1",
+  "texture": "atlas-160.png",
+  "cell": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "native_texture": "atlas-native.png",
+  "native_cell": [
+    640,
+    640
+  ],
+  "native_anchor": [
+    320,
+    624
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "outfit": "tied_workshirt_shorts",
+      "age": 22,
+      "facing": "east_front_oblique",
+      "source_region_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        222,
+        17,
+        449,
+        615
+      ],
+      "native_size": [
+        227,
+        598
+      ],
+      "native_image": "tied_workshirt_shorts-native.png",
+      "native_rgba_sha256": "40ff166b4afd9d3283918493785fffcc166a332e351802f6699771f0615f7b4c",
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "detail_height": 160,
+      "native_atlas_rect": [
+        0,
+        0,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ],
+      "alpha_bounds_xyxy": [
+        98,
+        80,
+        159,
+        240
+      ]
+    },
+    {
+      "index": 1,
+      "outfit": "waistcoat_halter_shorts",
+      "age": 22,
+      "facing": "east_front_oblique",
+      "source_region_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        148,
+        17,
+        339,
+        615
+      ],
+      "native_size": [
+        191,
+        598
+      ],
+      "native_image": "waistcoat_halter_shorts-native.png",
+      "native_rgba_sha256": "68330ceab911700b9f1cee2a5f28488dad943a79078366bce2a9a92bd7f11ab7",
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "detail_height": 160,
+      "native_atlas_rect": [
+        640,
+        0,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ],
+      "alpha_bounds_xyxy": [
+        103,
+        80,
+        154,
+        240
+      ]
+    },
+    {
+      "index": 2,
+      "outfit": "offshoulder_wrapskirt",
+      "age": 22,
+      "facing": "east_front_oblique",
+      "source_region_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "source_alpha_bounds_xyxy": [
+        236,
+        9,
+        426,
+        607
+      ],
+      "native_size": [
+        190,
+        598
+      ],
+      "native_image": "offshoulder_wrapskirt-native.png",
+      "native_rgba_sha256": "56ebb8cac4a7ccc33c2be3b16d5ee89df3126cda17d3de5e4f7195b42630085c",
+      "atlas_rect": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "detail_height": 160,
+      "native_atlas_rect": [
+        0,
+        640,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ],
+      "alpha_bounds_xyxy": [
+        103,
+        80,
+        154,
+        240
+      ]
+    },
+    {
+      "index": 3,
+      "outfit": "openback_halter_shorts",
+      "age": 22,
+      "facing": "northeast_back_oblique",
+      "source_region_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "source_alpha_bounds_xyxy": [
+        169,
+        2,
+        368,
+        588
+      ],
+      "native_size": [
+        199,
+        586
+      ],
+      "native_image": "openback_halter_shorts-native.png",
+      "native_rgba_sha256": "6fb6450b50304198b0d61a01ff89f4aa1d4506e9275fc3733ecf5f652ab9fd9d",
+      "atlas_rect": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        240
+      ],
+      "detail_height": 160,
+      "native_atlas_rect": [
+        640,
+        640,
+        640,
+        640
+      ],
+      "native_anchor": [
+        320,
+        624
+      ],
+      "alpha_bounds_xyxy": [
+        101,
+        80,
+        155,
+        240
+      ]
+    }
+  ],
+  "clips": {
+    "tied_workshirt_shorts": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "waistcoat_halter_shorts": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "offshoulder_wrapskirt": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "openback_halter_shorts": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "motion": "Four independent wardrobes; no walk or turn sequence.",
+  "resolution_authority": "Latest user rejects40px reduction; native whole crops retained and160px detailed candidates delivered. No40px derivative produced.",
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta key with binary alpha",
+      "wholefigure crop preserved atnative dimensions",
+      "native atlas placement without resampling",
+      "separate160pxheight nearest-only derivative in256cells"
+    ]
+  },
+  "review": [
+    "Adult Ada identity and opaque upperPG13 wardrobe.",
+    "No runtime replacement or game tests."
+  ]
+}
