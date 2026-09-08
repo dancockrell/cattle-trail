@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "character_id": "ines_vale",
+  "age": 23,
+  "status": "authored_for_pending_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"INES","priority":2,"text":"Hear that bell? No cow attached. That's usually a clue."},
+    {"id":"bell_tracks","speaker":"INES","priority":1,"text":"Hoofprints going both ways. Somebody wants us lost."},
+    {"id":"cold_ashes","speaker":"INES","priority":1,"text":"Cold ashes, fresh smoke. The fire's remembering."},
+    {"id":"wrong_shadow","speaker":"INES","priority":1,"text":"Watch the shadow. It's the only honest thing here."},
+    {"id":"trail_completed","speaker":"INES","priority":2,"text":"There. A perfectly ordinary impossible trail."},
+    {"id":"recruited","speaker":"INES","priority":2,"text":"I'll scout ahead. Try to keep up with the living."},
+    {"id":"romance_acknowledged","speaker":"INES","priority":2,"text":"You noticed me before the ghost. Good priorities."}
+  ]
+}

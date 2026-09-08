@@ -36,6 +36,7 @@ CHECKS = {
     'compile': (['--headless', '--script', 'tools/compile_sources.gd'], r'SOURCE COMPILATION PASS: \d+ runtime scripts loaded and can_instantiate\(\) verified; no scenes instantiated'),
     'storage': (['--headless', '--script', 'tools/save_storage_test.gd'], r'SAVE STORAGE PASS: roundtrip, replacement, backup fallback, corrupt-primary repair, failed-write preservation, schema fallback, validator isolation, cleanup'),
     'snapshot': (['--headless', '--script', 'tools/room_snapshot_test.gd'], r'ROOM SNAPSHOT PASS: typed data, finite positions, encounter consistency and JSON roundtrip'),
+    'ines': (['--headless', '--script', 'tools/ines_companion_test.gd'], r'INES COMPANION PASS: distinct clues, one-time trail/recruitment/romance, deferred acceptance, field-only perk, finite madness and atomic strict saves'),
     'phase': (['--headless', '--script', 'tools/animation_phase_test.gd'], r'ANIMATION PHASE PASS: unequal holds, directional remapping, cycle boundaries and roundtrip'),
     'state': (['--headless', '--script', 'tools/companion_state_test.gd'], r'COMPANION STATE: \d+ checks, 0 failures'),
     'room': (['--', '--qa'], r'QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture'),

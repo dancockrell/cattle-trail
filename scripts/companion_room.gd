@@ -8,6 +8,7 @@ const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const LanternRoom = preload("res://scripts/lantern_room.gd")
 const LanternEquipment = preload("res://scripts/lantern_equipment.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
+const InesState = preload("res://scripts/ines_companion.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
@@ -21,6 +22,7 @@ var room: Control
 var state = State.new()
 var lantern_adventure = LanternAdventure.new()
 var ada_state = AdaState.new()
+var ines_state = InesState.new()
 var generated_roster = GeneratedRoster.new()
 var cart_adventure = CartAdventure.new()
 var cart
@@ -36,7 +38,9 @@ var minutes := 720.0
 var banter: Dictionary = {}
 
 func field_perk(stat: String, baseline := 0.0) -> float:
-	return Perks.value(generated_roster.perk_state_records(), "field", stat, baseline)
+	var records: Array = generated_roster.perk_state_records()
+	records.append(ines_state.perk_record())
+	return Perks.value(records, "field", stat, baseline)
 
 func advance_time(delta: float) -> void:
 	minutes = Clock.advance(minutes,delta)
@@ -196,6 +200,7 @@ func save_game(test_path := "") -> bool:
 	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
 	data["lantern_adventure"] = lantern_adventure.to_dict()
 	data["ada_companion"] = ada_state.to_dict()
+	data["ines_companion"] = ines_state.to_dict()
 	data["camp_recovery"] = camp_recovery.to_dict()
 	data["generated_companions"] = generated_roster.to_dict()
 	data["ada_cart_adventure"] = cart_adventure.to_dict()
@@ -218,11 +223,14 @@ func load_game(test_path := "") -> bool:
 	if not restored_roster.load_dict(data.get("generated_companions", restored_roster.to_dict())): return false
 	var restored_ada = AdaState.new()
 	if not restored_ada.load_dict(data.get("ada_companion",restored_ada.to_dict())): return false
+	var restored_ines = InesState.new()
+	if not restored_ines.load_dict(data.get("ines_companion",restored_ines.to_dict())): return false
 	var restored_lantern = LanternAdventure.new()
 	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
 	lantern_adventure = restored_lantern
 	ada_state = restored_ada
+	ines_state = restored_ines
 	generated_roster = restored_roster
 	cart_adventure = restored_cart
 	camp_recovery = restored_care

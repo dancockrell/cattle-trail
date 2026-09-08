@@ -124,5 +124,14 @@ func _initialize() -> void:
 	var bad_cart := data.duplicate(true)
 	bad_cart.ada_cart_position = [INF,280]
 	assert(not Snapshot.validate(bad_cart))
+	var ines = load("res://scripts/ines_companion.gd").new()
+	data.ines_companion = ines.to_dict()
+	assert(Snapshot.validate(JSON.parse_string(JSON.stringify(data))),"Optional Ines state survives JSON roundtrip")
+	var bad_ines := data.duplicate(true)
+	bad_ines.ines_companion.age = 17
+	assert(not Snapshot.validate(bad_ines),"Named adult identity is fixed")
+	bad_ines = data.duplicate(true)
+	bad_ines.ines_companion = []
+	assert(not Snapshot.validate(bad_ines),"Ines save must be a typed record")
 	print("ROOM SNAPSHOT PASS: typed data, finite positions, encounter consistency and JSON roundtrip")
 	quit()

@@ -3,6 +3,7 @@ const CampCare = preload("res://scripts/camp_care_room.gd")
 const CompanionState = preload("res://scripts/companion_state.gd")
 const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
+const InesState = preload("res://scripts/ines_companion.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const CartAdventure = preload("res://scripts/ada_cart_adventure.gd")
 
@@ -43,6 +44,10 @@ static func validate(data: Dictionary) -> bool:
 	if data.has("generated_companions"):
 		var roster := GeneratedRoster.new()
 		if not roster.load_dict(data.generated_companions): return false
+	if data.has("ines_companion"):
+		if not data.ines_companion is Dictionary: return false
+		var ines := InesState.new()
+		if not ines.load_dict(data.ines_companion): return false
 	if data.has("ada_cart_position") and not valid_point(data.ada_cart_position): return false
 	if data.has("ada_cart_heading"):
 		if not valid_point(data.ada_cart_heading): return false
