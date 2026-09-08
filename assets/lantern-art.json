@@ -1,0 +1,800 @@
+{
+  "schema_version": 1,
+  "status": "optional_encounter_bundle_not_room_admitted",
+  "encounter": "lanterns_at_the_ford",
+  "sprites": {
+    "eleanor_lantern": {
+      "texture": "res://assets/lantern/eleanor_lantern.png",
+      "cell": [
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "frames": [
+        {
+          "id": "eleanor_lantern_000",
+          "atlas_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            24,
+            21,
+            40,
+            61
+          ],
+          "source": "kits/source/eleanor-lantern-v1.png",
+          "source_sha256": "c8b20af9514f8b7c7332d0ea430bc7afabe0d6cad2be3c34044f108e209a8e69",
+          "source_rect": [
+            0,
+            0,
+            543,
+            724
+          ],
+          "trim": [
+            216,
+            145,
+            397,
+            599
+          ],
+          "source_frame_index": 0,
+          "input_cell": "kits/workcycles/eleanor-lantern-v1/00-whole-frame.png",
+          "input_cell_sha256": "412a28b839e8cfa7b0272dfd220a88821fbf9706778fa3ed413675a84584849e",
+          "rgba_sha256": "368879908701fe22453ef4aa2c9cfd324db025e83e282fc39b81f7a98dbd69c0",
+          "source_record": {
+            "index": 0,
+            "direction": "E",
+            "actual_view": "east front-right",
+            "requested_carry_hand": "right",
+            "observed_carry_hand": "right",
+            "lantern_screen_side": "left",
+            "source_crop_xyxy": [
+              0,
+              0,
+              543,
+              724
+            ],
+            "trim_xyxy_in_crop": [
+              216,
+              145,
+              397,
+              599
+            ],
+            "scale": 0.0881057268722467,
+            "resized_size": [
+              16,
+              40
+            ],
+            "cell_offset": [
+              24,
+              21
+            ],
+            "atlas_rect": [
+              0,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "sockets": {
+              "lantern_handle_grip": {
+                "source_pixel_xy": [
+                  248,
+                  442
+                ],
+                "cell_pixel_xy": [
+                  27,
+                  47
+                ],
+                "relative_to_ground_anchor": [
+                  -5,
+                  -14
+                ]
+              },
+              "lantern_light_center": {
+                "source_pixel_xy": [
+                  248,
+                  513
+                ],
+                "cell_pixel_xy": [
+                  27,
+                  53
+                ],
+                "relative_to_ground_anchor": [
+                  -5,
+                  -8
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "eleanor_lantern_001",
+          "atlas_rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            24,
+            21,
+            41,
+            61
+          ],
+          "source": "kits/source/eleanor-lantern-v1.png",
+          "source_sha256": "c8b20af9514f8b7c7332d0ea430bc7afabe0d6cad2be3c34044f108e209a8e69",
+          "source_rect": [
+            543,
+            0,
+            1086,
+            724
+          ],
+          "trim": [
+            184,
+            148,
+            379,
+            603
+          ],
+          "source_frame_index": 1,
+          "input_cell": "kits/workcycles/eleanor-lantern-v1/01-whole-frame.png",
+          "input_cell_sha256": "86a4a40dd1166ac9338568f51502d1b7a8e0b41a22e39386737ed87908a58bae",
+          "rgba_sha256": "2d73e8a00db156ff8acfd852a67580f046d2bbc79ba98314e3ac8e7afa1843d5",
+          "source_record": {
+            "index": 1,
+            "direction": "NE",
+            "actual_view": "northeast rear-right",
+            "requested_carry_hand": "right",
+            "observed_carry_hand": "right",
+            "lantern_screen_side": "right",
+            "source_crop_xyxy": [
+              543,
+              0,
+              1086,
+              724
+            ],
+            "trim_xyxy_in_crop": [
+              184,
+              148,
+              379,
+              603
+            ],
+            "scale": 0.08791208791208792,
+            "resized_size": [
+              17,
+              40
+            ],
+            "cell_offset": [
+              24,
+              21
+            ],
+            "atlas_rect": [
+              64,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "sockets": {
+              "lantern_handle_grip": {
+                "source_pixel_xy": [
+                  891,
+                  443
+                ],
+                "cell_pixel_xy": [
+                  38,
+                  47
+                ],
+                "relative_to_ground_anchor": [
+                  6,
+                  -14
+                ]
+              },
+              "lantern_light_center": {
+                "source_pixel_xy": [
+                  891,
+                  515
+                ],
+                "cell_pixel_xy": [
+                  38,
+                  53
+                ],
+                "relative_to_ground_anchor": [
+                  6,
+                  -8
+                ]
+              }
+            }
+          }
+        },
+        {
+          "id": "eleanor_lantern_002",
+          "atlas_rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "anchor": [
+            32,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            23,
+            21,
+            42,
+            61
+          ],
+          "source": "kits/source/eleanor-lantern-v1.png",
+          "source_sha256": "c8b20af9514f8b7c7332d0ea430bc7afabe0d6cad2be3c34044f108e209a8e69",
+          "source_rect": [
+            1629,
+            0,
+            2172,
+            724
+          ],
+          "trim": [
+            80,
+            148,
+            296,
+            598
+          ],
+          "source_frame_index": 3,
+          "input_cell": "kits/workcycles/eleanor-lantern-v1/03-whole-frame.png",
+          "input_cell_sha256": "6029c50119e05723f276cbca042aafa1dbbd643778e90249f5bb889700c516dd",
+          "rgba_sha256": "694882be6cc1075ab82e727671bc6a682d34660acbfc2b41d9ea513d529529ce",
+          "source_record": {
+            "index": 3,
+            "direction": "S",
+            "actual_view": "south front",
+            "requested_carry_hand": "right",
+            "observed_carry_hand": "right",
+            "lantern_screen_side": "left",
+            "source_crop_xyxy": [
+              1629,
+              0,
+              2172,
+              724
+            ],
+            "trim_xyxy_in_crop": [
+              80,
+              148,
+              296,
+              598
+            ],
+            "scale": 0.08888888888888889,
+            "resized_size": [
+              19,
+              40
+            ],
+            "cell_offset": [
+              23,
+              21
+            ],
+            "atlas_rect": [
+              192,
+              0,
+              64,
+              64
+            ],
+            "anchor": [
+              32,
+              61
+            ],
+            "sockets": {
+              "lantern_handle_grip": {
+                "source_pixel_xy": [
+                  1744,
+                  439
+                ],
+                "cell_pixel_xy": [
+                  26,
+                  47
+                ],
+                "relative_to_ground_anchor": [
+                  -6,
+                  -14
+                ]
+              },
+              "lantern_light_center": {
+                "source_pixel_xy": [
+                  1744,
+                  512
+                ],
+                "cell_pixel_xy": [
+                  26,
+                  53
+                ],
+                "relative_to_ground_anchor": [
+                  -6,
+                  -8
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "clips": {
+        "carry_idle_east": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "carry_idle_northeast": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "carry_idle_south": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        }
+      },
+      "count": 3,
+      "frame_sockets": {
+        "0": {
+          "lantern_handle_grip": [
+            27,
+            47
+          ],
+          "lantern_light_center": [
+            27,
+            53
+          ]
+        },
+        "1": {
+          "lantern_handle_grip": [
+            38,
+            47
+          ],
+          "lantern_light_center": [
+            38,
+            53
+          ]
+        },
+        "2": {
+          "lantern_handle_grip": [
+            26,
+            47
+          ],
+          "lantern_light_center": [
+            26,
+            53
+          ]
+        }
+      },
+      "default_facing": "east",
+      "status": "optional_encounter_bundle_not_room_admitted",
+      "provenance": {
+        "metadata": "kits/workcycles/eleanor-lantern-v1/metadata.json",
+        "metadata_sha256": "5d89096becb9ba97d81eb69c2479d47aca28d1464cf30ae73df8612fd6ef4078",
+        "source_sha256": "c8b20af9514f8b7c7332d0ea430bc7afabe0d6cad2be3c34044f108e209a8e69",
+        "processing": "Exact existing whole RGBA cells repacked; no rescale or pixel edits"
+      },
+      "texture_sha256": "460d283f81fab00819414a3f814f67308cbb290cd139e5dc1dcd15c55d7649da",
+      "atlas_size": [
+        192,
+        64
+      ]
+    },
+    "crossing_spirit": {
+      "texture": "res://assets/lantern/crossing_spirit.png",
+      "cell": [
+        72,
+        64
+      ],
+      "anchor": [
+        36,
+        61
+      ],
+      "frames": [
+        {
+          "id": "crossing_spirit_000",
+          "atlas_rect": [
+            0,
+            0,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            18,
+            23,
+            54,
+            61
+          ],
+          "source": "kits/source/crossing-spirit-v1.png",
+          "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "trim": [
+            145,
+            99,
+            533,
+            505
+          ],
+          "source_frame_index": 0,
+          "input_cell": "kits/workcycles/crossing-spirit-v1/wary.png",
+          "input_cell_sha256": "08ecb2e502dd493fe4bece6eaca16b6e225bdd6fc6b570b776736176f4e93a68",
+          "rgba_sha256": "77a172e89ae95a789a76b660361e0b3cdfdceb137f00a6c75177adb1a07dfdd2",
+          "source_record": {
+            "index": 0,
+            "state": "wary",
+            "actual_body_facing": "northeast",
+            "anchor": [
+              36,
+              61
+            ],
+            "source_row": 0,
+            "source_col": 0,
+            "source_cell_ltrb": [
+              0,
+              0,
+              627,
+              627
+            ],
+            "trim_ltrb_in_cell": [
+              145,
+              99,
+              533,
+              505
+            ],
+            "atlas_rect_xywh": [
+              0,
+              0,
+              72,
+              64
+            ],
+            "scaled_size": [
+              36,
+              38
+            ],
+            "cell_offset": [
+              18,
+              23
+            ],
+            "rgba_sha256": "77a172e89ae95a789a76b660361e0b3cdfdceb137f00a6c75177adb1a07dfdd2"
+          }
+        },
+        {
+          "id": "crossing_spirit_001",
+          "atlas_rect": [
+            72,
+            0,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            16,
+            23,
+            55,
+            61
+          ],
+          "source": "kits/source/crossing-spirit-v1.png",
+          "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+          "source_rect": [
+            627,
+            0,
+            1254,
+            627
+          ],
+          "trim": [
+            45,
+            99,
+            461,
+            506
+          ],
+          "source_frame_index": 1,
+          "input_cell": "kits/workcycles/crossing-spirit-v1/agitated.png",
+          "input_cell_sha256": "8b8df9b550d2b692053d1963f9a754ce0639ab2a996582a73ec5545bd64ad9f0",
+          "rgba_sha256": "a1ee7ffb7bce6ce64a8e6c05ad4acd3e032be949dd24c8ce710973c797bf69fe",
+          "source_record": {
+            "index": 1,
+            "state": "agitated",
+            "actual_body_facing": "northeast",
+            "anchor": [
+              36,
+              61
+            ],
+            "source_row": 0,
+            "source_col": 1,
+            "source_cell_ltrb": [
+              627,
+              0,
+              1254,
+              627
+            ],
+            "trim_ltrb_in_cell": [
+              45,
+              99,
+              461,
+              506
+            ],
+            "atlas_rect_xywh": [
+              72,
+              0,
+              72,
+              64
+            ],
+            "scaled_size": [
+              39,
+              38
+            ],
+            "cell_offset": [
+              16,
+              23
+            ],
+            "rgba_sha256": "a1ee7ffb7bce6ce64a8e6c05ad4acd3e032be949dd24c8ce710973c797bf69fe"
+          }
+        },
+        {
+          "id": "crossing_spirit_002",
+          "atlas_rect": [
+            144,
+            0,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            18,
+            23,
+            53,
+            61
+          ],
+          "source": "kits/source/crossing-spirit-v1.png",
+          "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+          "source_rect": [
+            0,
+            627,
+            627,
+            1254
+          ],
+          "trim": [
+            141,
+            77,
+            514,
+            484
+          ],
+          "source_frame_index": 2,
+          "input_cell": "kits/workcycles/crossing-spirit-v1/listening.png",
+          "input_cell_sha256": "e813adfa361357c2992455b170866e9dd0735914d4ce19272cc5a48122c8adc1",
+          "rgba_sha256": "bb50277c6e7c5966bdeb35db0c819af865fed4ade712cbb5f7b4dfa089401701",
+          "source_record": {
+            "index": 2,
+            "state": "listening",
+            "actual_body_facing": "northeast",
+            "anchor": [
+              36,
+              61
+            ],
+            "source_row": 1,
+            "source_col": 0,
+            "source_cell_ltrb": [
+              0,
+              627,
+              627,
+              1254
+            ],
+            "trim_ltrb_in_cell": [
+              141,
+              77,
+              514,
+              484
+            ],
+            "atlas_rect_xywh": [
+              144,
+              0,
+              72,
+              64
+            ],
+            "scaled_size": [
+              35,
+              38
+            ],
+            "cell_offset": [
+              18,
+              23
+            ],
+            "rgba_sha256": "bb50277c6e7c5966bdeb35db0c819af865fed4ade712cbb5f7b4dfa089401701"
+          }
+        },
+        {
+          "id": "crossing_spirit_003",
+          "atlas_rect": [
+            216,
+            0,
+            72,
+            64
+          ],
+          "anchor": [
+            36,
+            61
+          ],
+          "alpha_bounds_xyxy": [
+            17,
+            31,
+            54,
+            61
+          ],
+          "source": "kits/source/crossing-spirit-v1.png",
+          "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+          "source_rect": [
+            627,
+            627,
+            1254,
+            1254
+          ],
+          "trim": [
+            79,
+            164,
+            476,
+            490
+          ],
+          "source_frame_index": 3,
+          "input_cell": "kits/workcycles/crossing-spirit-v1/settled.png",
+          "input_cell_sha256": "7425e05ca1892a2b935b38c09bf395c9700b6ee52d7a840715c9ef7cdd1eac41",
+          "rgba_sha256": "592fecd5551912b20d6d8319f71ede4339e2b0659afd99df39d7926657cf7b9c",
+          "source_record": {
+            "index": 3,
+            "state": "settled",
+            "actual_body_facing": "northeast",
+            "anchor": [
+              36,
+              61
+            ],
+            "source_row": 1,
+            "source_col": 1,
+            "source_cell_ltrb": [
+              627,
+              627,
+              1254,
+              1254
+            ],
+            "trim_ltrb_in_cell": [
+              79,
+              164,
+              476,
+              490
+            ],
+            "atlas_rect_xywh": [
+              216,
+              0,
+              72,
+              64
+            ],
+            "scaled_size": [
+              37,
+              30
+            ],
+            "cell_offset": [
+              17,
+              31
+            ],
+            "rgba_sha256": "592fecd5551912b20d6d8319f71ede4339e2b0659afd99df39d7926657cf7b9c"
+          }
+        }
+      ],
+      "clips": {
+        "wary": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "agitated": {
+          "frames": [
+            1
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "listening": {
+          "frames": [
+            2
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "settled": {
+          "frames": [
+            3
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        },
+        "idle": {
+          "frames": [
+            0
+          ],
+          "fps": 1,
+          "loop": true,
+          "presentation": "static state hold"
+        }
+      },
+      "count": 4,
+      "frame_sockets": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      },
+      "default_facing": "northeast",
+      "status": "optional_encounter_bundle_not_room_admitted",
+      "provenance": {
+        "metadata": "kits/workcycles/crossing-spirit-v1/metadata.json",
+        "metadata_sha256": "0d1f685ea434ae041dfb3b1e146fc4debcaf27800e4934d693315791ddafdb93",
+        "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+        "processing": "Exact existing whole RGBA cells repacked; no rescale or pixel edits"
+      },
+      "texture_sha256": "12d39b538c10e73fcb37a031cd60dcaff57df116215bf4499e9326a0363ffa07",
+      "atlas_size": [
+        288,
+        64
+      ]
+    }
+  },
+  "limitations": [
+    "Static whole-pose states only; no carry walk or transition cycle.",
+    "Eleanor northwest omitted because source carry hand is inconsistent.",
+    "Lantern is baked into Eleanor; sockets locate its grip and light, not a second prop.",
+    "Crossing spirit sockets are empty: no authored attachment points.",
+    "Bundle preparation does not activate the encounter or establish in-game visual approval."
+  ]
+}
