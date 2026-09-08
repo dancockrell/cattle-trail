@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "character": "ines_vale",
+  "age": 23,
+  "identity_reference": "kits/character-families/spirit-scout/variants-v1.png#row0col0",
+  "source": "kits/workcycles/ines-east-walk-v1/source.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "status": "incomplete_phase_bank_not_a_cycle",
+  "runtime_admitted": false,
+  "camera": "eastward front-oblique high three-quarter; still more front-facing than strict east",
+  "intended_cell": [
+    64,
+    64
+  ],
+  "intended_anchor": [
+    32,
+    61
+  ],
+  "intended_figure_height": 40,
+  "texture": "candidate-bank.png",
+  "animations": {},
+  "frames": [
+    {
+      "source_rect": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "requested_phase": "near_contact",
+      "observed_phase": "near_contact",
+      "phase_confidence": "medium",
+      "duration_ms_provisional": 160,
+      "notes": "Bright foreground thigh extends screen-right; trailing darker leg screen-left."
+    },
+    {
+      "source_rect": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "requested_phase": "near_support_passing",
+      "observed_phase": "near_support_passing",
+      "phase_confidence": "medium",
+      "duration_ms_provisional": 160,
+      "notes": "Bright near leg supports under body; far boot swings behind. Foot elevation is somewhat high."
+    },
+    {
+      "source_rect": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "requested_phase": "far_contact",
+      "observed_phase": "repeated_near_contact",
+      "phase_confidence": "high",
+      "duration_ms_provisional": null,
+      "notes": "Reject for opposite-contact slot: same bright near leg leads as first frame."
+    },
+    {
+      "source_rect": [
+        627,
+        627,
+        627,
+        627
+      ],
+      "requested_phase": "far_support_passing",
+      "observed_phase": "probable_far_support_passing",
+      "phase_confidence": "medium",
+      "duration_ms_provisional": 160,
+      "notes": "Near bright bent knee crosses ahead of darker support leg, unlike first passing. Needs comparison to a valid opposite contact."
+    }
+  ],
+  "repair_attempt": {
+    "source": "opposite-contact-rejected.png",
+    "prompt": "opposite-contact.prompt.txt",
+    "status": "rejected",
+    "reason": "Single whole-character edit still draws the bright near leg forward; it does not provide the missing opposite contact."
+  },
+  "generation": {
+    "tool": "builtin image_gen",
+    "model": "not exposed",
+    "date": "2026-09-08",
+    "prompt": "prompt.txt"
+  },
+  "next_work": "Author a fresh single whole-character far-leg contact from a distinct pose reference, then compare all four phases before atlas admission. No limb rig or body-part recombination.",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "extracted_candidates": [
+    {
+      "index": 0,
+      "source": "source.png",
+      "source_sha256": "bb05d85188a4d7b62ef8d84f9735e9388570f53b2b63e2e76e58f27fbc748d74",
+      "source_rect_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        190,
+        37,
+        504,
+        543
+      ],
+      "image": "pose-00.png",
+      "atlas_rect_xywh": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "near-contact",
+      "status": "candidate",
+      "duration_ms_provisional": 160
+    },
+    {
+      "index": 1,
+      "source": "source.png",
+      "source_sha256": "bb05d85188a4d7b62ef8d84f9735e9388570f53b2b63e2e76e58f27fbc748d74",
+      "source_rect_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_bounds_xyxy": [
+        172,
+        49,
+        389,
+        539
+      ],
+      "image": "pose-01.png",
+      "atlas_rect_xywh": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "near-support-passing",
+      "status": "candidate",
+      "duration_ms_provisional": 160
+    },
+    {
+      "index": 2,
+      "source": "source.png",
+      "source_sha256": "bb05d85188a4d7b62ef8d84f9735e9388570f53b2b63e2e76e58f27fbc748d74",
+      "source_rect_xyxy": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        197,
+        35,
+        511,
+        539
+      ],
+      "image": "pose-02.png",
+      "atlas_rect_xywh": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "repeated-near-contact",
+      "status": "rejected_for_opposite_contact_slot",
+      "duration_ms_provisional": null
+    },
+    {
+      "index": 3,
+      "source": "source.png",
+      "source_sha256": "bb05d85188a4d7b62ef8d84f9735e9388570f53b2b63e2e76e58f27fbc748d74",
+      "source_rect_xyxy": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_bounds_xyxy": [
+        172,
+        37,
+        388,
+        529
+      ],
+      "image": "pose-03.png",
+      "atlas_rect_xywh": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "probable-far-support-passing",
+      "status": "candidate",
+      "duration_ms_provisional": 160
+    },
+    {
+      "index": 4,
+      "source": "opposite-contact-rejected.png",
+      "source_sha256": "f3fdaa9a5621e2533136faca2e066e3066d276653d8bfaedc8676702ee6265b2",
+      "source_rect_xyxy": null,
+      "trim_bounds_xyxy": [
+        331,
+        139,
+        961,
+        1057
+      ],
+      "image": "pose-04.png",
+      "atlas_rect_xywh": [
+        256,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "repair-repeated-near-contact",
+      "status": "rejected_for_opposite_contact_slot",
+      "duration_ms_provisional": null
+    },
+    {
+      "index": 5,
+      "source": "opposite-contact-focused.png",
+      "source_sha256": "05bc5964fe2c1beaebf495e2f536f7ff8b9ef6ea3e8433073eae9d600335c57d",
+      "source_rect_xyxy": null,
+      "trim_bounds_xyxy": [
+        307,
+        81,
+        1019,
+        1127
+      ],
+      "image": "pose-05.png",
+      "atlas_rect_xywh": [
+        320,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "observed_phase": "focused-repeated-near-contact",
+      "status": "rejected_for_opposite_contact_slot",
+      "duration_ms_provisional": null
+    }
+  ],
+  "focused_repair_attempt": {
+    "source": "opposite-contact-focused.png",
+    "prompt": "focused-edit.prompt.txt",
+    "status": "rejected_for_opposite_contact_slot",
+    "reason": "Near warm leg still leads forward after edit from isolated whole-character input; preserved as a whole candidate image, not used to fill missing phase."
+  },
+  "transform": "Magenta key, complete-figure trim, nearest-neighbor whole-figure resize to40px, baseline61; no painting, limb rig or recombination",
+  "pose_transfer_attempt": {
+    "source": "pose-transfer.png",
+    "sha256": "947e8558aa614c9c01df0d6ad52473611f923db96e54f1274de0c4512a81c1ec",
+    "prompt": "pose-transfer.prompt.txt",
+    "pose_reference": "kits/source/eleanor-east-opposite-contact-v7.png",
+    "identity_reference": "contact-reference.png",
+    "status": "rejected_for_opposite_contact_slot",
+    "reason": "Inspected output still shows warm near thigh forward right and dark far leg trailing left; copied identity reference stance rather than pose reference leg order. Not added to bank."
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": "ada-master-east-walk-v4",
+  "character": "ada_mercer",
+  "age": 22,
+  "texture": "atlas.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "facing": "east",
+  "frames": [
+    {
+      "index": 0,
+      "phase": "contact_near_forward",
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/source.png",
+      "source_sha256": "f25f0af2c322308296ade6b0ee69e1e9b8eec931ae6555d45ce7706024537e46",
+      "source_region_xyxy": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        206,
+        77,
+        515,
+        534
+      ],
+      "alpha_bounds_xyxy": [
+        19,
+        21,
+        46,
+        61
+      ],
+      "duration_seconds": 0.16,
+      "duration_status": "provisional",
+      "rgba_sha256": "e6055e07e39d0c7f3b110d7402fd2cb9a0d10184d9c4f16214b5c16dc97e0108",
+      "attachment_points_provisional": {
+        "near_foot": [
+          43,
+          60
+        ],
+        "far_foot": [
+          24,
+          60
+        ],
+        "near_hand": [
+          25,
+          45
+        ],
+        "far_hand": [
+          38,
+          43
+        ]
+      },
+      "attachment_status": "manual sheet estimate, leg identity not admitted"
+    },
+    {
+      "index": 1,
+      "phase": "low_pass_near_support",
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/source.png",
+      "source_sha256": "f25f0af2c322308296ade6b0ee69e1e9b8eec931ae6555d45ce7706024537e46",
+      "source_region_xyxy": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "source_alpha_bounds_xyxy": [
+        169,
+        77,
+        393,
+        533
+      ],
+      "alpha_bounds_xyxy": [
+        22,
+        21,
+        42,
+        61
+      ],
+      "duration_seconds": 0.16,
+      "duration_status": "provisional",
+      "rgba_sha256": "43b9947eefa2079dddb8ecf99db88de1dc91f5c2ccb6f2cd6a0b48e72ba10043",
+      "attachment_points_provisional": {
+        "near_foot": [
+          39,
+          60
+        ],
+        "far_foot": [
+          24,
+          57
+        ],
+        "near_hand": [
+          31,
+          46
+        ],
+        "far_hand": [
+          35,
+          44
+        ]
+      },
+      "attachment_status": "manual sheet estimate, leg identity not admitted"
+    },
+    {
+      "index": 2,
+      "phase": "contact_near_back_candidate",
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/pose-transfer.png",
+      "source_sha256": "d30aba4347b0288b09e9378c55de584f47803de89f71cb8bbaccbd7d2dc1659d",
+      "source_region_xyxy": [
+        0,
+        0,
+        1085,
+        1450
+      ],
+      "source_alpha_bounds_xyxy": [
+        349,
+        302,
+        849,
+        1190
+      ],
+      "alpha_bounds_xyxy": [
+        21,
+        21,
+        44,
+        61
+      ],
+      "duration_seconds": 0.16,
+      "duration_status": "provisional",
+      "rgba_sha256": "b1d60a1551916accfa6b2830f76053f5986eafc1471bc445200331dbb0bd66e9",
+      "attachment_points_provisional": {
+        "near_foot": [
+          25,
+          60
+        ],
+        "far_foot": [
+          40,
+          60
+        ],
+        "near_hand": [
+          27,
+          47
+        ],
+        "far_hand": [
+          41,
+          43
+        ]
+      },
+      "attachment_status": "manual sheet estimate, leg identity not admitted",
+      "phase_confidence": "clear near-rear/far-forward contact; camera continuity unresolved"
+    },
+    {
+      "index": 3,
+      "phase": "opposite_pass_far_support_candidate",
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source": "kits/workcycles/ada-master-east-walk-v4/low-pass-corrected.png",
+      "source_sha256": "5ed5e7246f7c3f91e7c274506f730bc2c31a5912b8ef0811c0af8b333ebbdf60",
+      "source_region_xyxy": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_alpha_bounds_xyxy": [
+        473,
+        136,
+        726,
+        998
+      ],
+      "alpha_bounds_xyxy": [
+        26,
+        21,
+        38,
+        61
+      ],
+      "duration_seconds": 0.16,
+      "duration_status": "provisional",
+      "rgba_sha256": "9b38f3f15ccd2bd317c40afe143577f83fd81255f5699ad20873ca5465ec4fc0",
+      "attachment_points_provisional": {
+        "near_foot": [
+          31,
+          59
+        ],
+        "far_foot": [
+          35,
+          61
+        ],
+        "near_hand": [
+          27,
+          43
+        ],
+        "far_hand": [
+          37,
+          40
+        ]
+      },
+      "attachment_status": "manual sheet estimate, leg identity not admitted"
+    }
+  ],
+  "clips": {
+    "walk_east_candidate": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 6.25,
+      "loop": true,
+      "admitted": false
+    }
+  },
+  "status": "working_phase_candidates_not_runtime",
+  "generation_tool": "builtin image_gen",
+  "transforms": [
+    "magenta chroma key with binary alpha",
+    "wholefigure bounds crop",
+    "nearest sampling to40pxheight",
+    "anchor placement32,61"
+  ],
+  "review": [
+    "Identity and complete four bodies inspected on sheet.",
+    "Single opposite-contact correction repeated foreground-leg ambiguity and changed arm swing; retained as rejected.",
+    "Timing and anchors remain provisional; no game run or motion approval.",
+    "Raised opposite-pass preserved separately; selected low-pass correction has the near leg crossing in front and airborne boot just above supporting sole.",
+    "Pose-transfer from Eleanor v7 selected for contact2: near warm boot trails screenleft, far darker boot leads screenright. Lower-body phase is clearer, but face/torso rotated more front-oblique and proportions drift from the other three side views; candidate cycle remains unadmitted."
+  ],
+  "pose_transfer_reference": {
+    "path": "kits/source/eleanor-east-opposite-contact-v7.png",
+    "sha256": "39c2143a3fc6521af62d41eab65b306138917c19892947d3d3308ac57525091f",
+    "role": "whole pose topology authority"
+  }
+}
