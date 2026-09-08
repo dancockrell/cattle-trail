@@ -65,12 +65,15 @@ func _initialize():
 	legacy.camp_recovery.next_available.player=NAN
 	assert(Care.restored_recovery(legacy)==null)
 	owner.minutes=4000
-	owner.cart_adventure.status="paused"
+	owner.cart_adventure.status="active"
 	assert(not care.rest())
 	owner.cart_adventure.status="completed"
-	owner.lantern_adventure.status="paused"
+	owner.lantern_adventure.status="active"
 	assert(not care.rest())
+	owner.lantern_adventure.status="paused"
+	assert(care.rest(),"Returning to camp during a paused outing permits recovery")
 	owner.lantern_adventure.status="completed"
+	owner.minutes=6000
 	owner.state.events.adventure_completed=false
 	var before: Dictionary=owner.camp_recovery.to_dict()
 	assert(not care.rest() and owner.camp_recovery.to_dict()==before,"Failed Eleanor rest does not spend generic cooldown")

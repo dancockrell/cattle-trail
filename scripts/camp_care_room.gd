@@ -18,14 +18,14 @@ static func restored_recovery(data: Dictionary):
 	return recovery
 
 func _pending() -> bool:
-	return owner.cart_adventure.status in ["active","paused"] or owner.lantern_adventure.status in ["active","paused","failed"] or owner.state.adventure_status in ["active","paused"]
+	return owner.cart_adventure.status=="active" or owner.lantern_adventure.status=="active" or owner.state.adventure_status=="active"
 
 func near_ada() -> bool:
 	return owner.cart_adventure.status=="completed" and owner.ada_state.recruitment=="recruited" and not owner.is_eleanor() and is_instance_valid(owner.mechanic.ada) and owner.room.player.position.distance_to(owner.mechanic.ada.position)<=45
 
 func rest() -> bool:
 	if _pending():
-		owner.tell("Finish the pending companion outing before sharing camp rest.")
+		owner.tell("Pause the companion outing and return to camp before sharing rest.")
 		return false
 	if owner.room.player.action_time>0 or owner.room.rope_time>0 or owner.room.rope_flight_time>0:
 		owner.tell("Finish the current action before resting.")
