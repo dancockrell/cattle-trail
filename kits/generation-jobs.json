@@ -1054,5 +1054,23 @@
     "clip_prefix": "v5_",
     "prompt_file": "kits/source/eleanor-east-walk-v5-prompt.txt",
     "ref": 1
+  },
+  {
+    "id": "rider-northern-turn-v1",
+    "family": "rider",
+    "rows": 1,
+    "columns": 4,
+    "column_directions": [
+      "north-northwest",
+      "north-northeast",
+      "north-northwest",
+      "north-northeast"
+    ],
+    "actions": [
+      "turn"
+    ],
+    "clip_prefix": "turn_v1_",
+    "prompt_file": "kits/source/rider-northern-turn-v1-prompt.txt",
+    "ref": 0
   }
 ]

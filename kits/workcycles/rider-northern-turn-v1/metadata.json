@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "runtime_admitted": false,
+  "cell": [
+    96,
+    96
+  ],
+  "anchor": [
+    48,
+    93
+  ],
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-00.png",
+      "source": "kits/source/rider-northern-turn-v1.png",
+      "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+      "source_rect": [
+        0,
+        0,
+        564,
+        724
+      ],
+      "trim": [
+        261,
+        183,
+        406,
+        566
+      ],
+      "scale": 0.1618798955613577,
+      "offset": [
+        36,
+        31
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        96,
+        96
+      ],
+      "heading": "north-northwest",
+      "pose": "grounded"
+    },
+    {
+      "index": 1,
+      "file": "frame-01.png",
+      "source": "kits/source/rider-northern-turn-v1.png",
+      "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+      "source_rect": [
+        564,
+        0,
+        1064,
+        724
+      ],
+      "trim": [
+        157,
+        183,
+        302,
+        565
+      ],
+      "scale": 0.1618798955613577,
+      "offset": [
+        36,
+        31
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "atlas_rect": [
+        96,
+        0,
+        96,
+        96
+      ],
+      "heading": "north-northeast",
+      "pose": "grounded"
+    },
+    {
+      "index": 2,
+      "file": "frame-02.png",
+      "source": "kits/source/rider-northern-turn-v1.png",
+      "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+      "source_rect": [
+        1064,
+        0,
+        1578,
+        724
+      ],
+      "trim": [
+        198,
+        183,
+        341,
+        566
+      ],
+      "scale": 0.1618798955613577,
+      "offset": [
+        36,
+        31
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        96,
+        96
+      ],
+      "heading": "north-northwest",
+      "pose": "passing"
+    },
+    {
+      "index": 3,
+      "file": "frame-03.png",
+      "source": "kits/source/rider-northern-turn-v1.png",
+      "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+      "source_rect": [
+        1578,
+        0,
+        2172,
+        724
+      ],
+      "trim": [
+        169,
+        183,
+        314,
+        566
+      ],
+      "scale": 0.1618798955613577,
+      "offset": [
+        36,
+        31
+      ],
+      "anchor": [
+        48,
+        93
+      ],
+      "atlas_rect": [
+        288,
+        0,
+        96,
+        96
+      ],
+      "heading": "north-northeast",
+      "pose": "passing"
+    }
+  ],
+  "processing": "Whole-pose crop, binary magenta key, common scale, nearest sampling; no limb edits.",
+  "transition_duration_seconds": 0.09,
+  "timing_status": "provisional",
+  "comparison_order": [
+    "northwest",
+    "north-northwest",
+    "north",
+    "north-northeast",
+    "northeast"
+  ]
+}

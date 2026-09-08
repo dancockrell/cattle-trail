@@ -111,6 +111,31 @@ for name in ['rider','longhorn','cream','spotted','eleanor','rustler']:
             spec['clip_anchors'][clip_name]=walk['anchor']
             spec['locomotion']['clip_nominal_speeds'][clip_name]=walk['nominal_speed']
             spec['frame_sockets'].update(walk.get('frame_sockets',{}))
+        # Authored whole-rider 22.5-degree bridges; both turn directions use
+        # the same intermediate heading, with a grounded or low-passing pose.
+        bridges={
+            'nnw':{'source':'turn_v1_turn_north-northwest','hands':[[40,46],[40,46]]},
+            'nne':{'source':'turn_v1_turn_north-northeast','hands':[[54,45],[54,45]]},
+        }
+        spec['turn_transitions']={}
+        for heading,bridge in bridges.items():
+            if bridge['source'] not in source: continue
+            indices=source[bridge['source']]['frames']
+            assert len(indices)==2, f"Expected grounded/passing pair for {heading}"
+            anchor=alignment['clips'][bridge['source']]['anchor']
+            for ordinal,state in enumerate(['grounded','passing']):
+                index=indices[ordinal]
+                assert spec['frames'][index]['source']=='kits/source/rider-northern-turn-v1.png'
+                clip_name=f'turn_{heading}_{state}'
+                spec['clips'][clip_name]={'frames':[index],'fps':1,'loop':False}
+                spec['clip_anchors'][clip_name]=anchor
+                spec['frame_sockets'][str(index)]={'rope_hand':bridge['hands'][ordinal]}
+            endpoints=['northwest','north'] if heading=='nnw' else ['north','northeast']
+            for start,end in [endpoints,endpoints[::-1]]:
+                modes={'idle':{'clip':f'turn_{heading}_grounded','seconds':0.08},
+                       'walk':{'clip':f'turn_{heading}_passing','seconds':0.07}}
+                assert all(len(spec['clips'][data['clip']]['frames'])==1 for data in modes.values())
+                spec['turn_transitions'].setdefault(start,{})[end]=modes
     spec['selection_note']='Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate.'
     out['sprites'][name]=spec
 out['sprites']['wagon']=copy.deepcopy(original['sprites']['wagon'])

@@ -23,6 +23,15 @@ for name,spec in manifest['sprites'].items():
             assert 0<=event['frame']<len(data['frames'])
             assert event['once_per_action']
     count+=len(used)
+    for start,destinations in spec.get('turn_transitions',{}).items():
+        assert 'idle_'+start in spec['clips']
+        for end,modes in destinations.items():
+            assert start!=end and 'idle_'+end in spec['clips']
+            for mode,transition in modes.items():
+                assert mode in ('idle','walk')
+                assert transition['clip'] in spec['clips']
+                assert not spec['clips'][transition['clip']]['loop']
+                assert 0.02<=transition['seconds']<=0.20
     for index,sockets in spec.get('frame_sockets',{}).items():
         x,y,w,h=spec['frames'][int(index)]['atlas_rect']
         for point in sockets.values(): assert 0<=point[0]<w and 0<=point[1]<h

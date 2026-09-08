@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "status": "standalone_turn_candidate_not_runtime_admitted",
+  "character": "eleanor",
+  "source": "kits/source/eleanor-turn-v1.png",
+  "source_sha256": "083e091c651b20c3f06c2c73dec98213388283d481243575ce8a7df384c3909b",
+  "prompt": "kits/source/eleanor-turn-v1-prompt.txt",
+  "source_size": [
+    1774,
+    887
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "body_height": 40,
+  "frame_order": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "requested_degrees_north_of_east": 22.5,
+      "actual_view": "Mostly east/right, face and front vest still visible; requested22.5degrees north of east.",
+      "source_crop_xyxy": [
+        0,
+        0,
+        443,
+        887
+      ],
+      "trim_xyxy_in_crop": [
+        140,
+        199,
+        328,
+        694
+      ],
+      "scale": 0.08080808080808081,
+      "resized_body_size": [
+        15,
+        40
+      ],
+      "cell_offset": [
+        25,
+        21
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "extraction_cell_identifier": null,
+      "file": "frame-00.png"
+    },
+    {
+      "index": 1,
+      "requested_degrees_north_of_east": 45,
+      "actual_view": "Rear-right threequarter; approximately NE.",
+      "source_crop_xyxy": [
+        443,
+        0,
+        887,
+        887
+      ],
+      "trim_xyxy_in_crop": [
+        122,
+        199,
+        308,
+        694
+      ],
+      "scale": 0.08080808080808081,
+      "resized_body_size": [
+        15,
+        40
+      ],
+      "cell_offset": [
+        25,
+        21
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "extraction_cell_identifier": null,
+      "file": "frame-01.png"
+    },
+    {
+      "index": 2,
+      "requested_degrees_north_of_east": 67.5,
+      "actual_view": "Mostly rear with slight rightward body/boot bias; head nearly rear.",
+      "source_crop_xyxy": [
+        887,
+        0,
+        1330,
+        887
+      ],
+      "trim_xyxy_in_crop": [
+        108,
+        199,
+        304,
+        694
+      ],
+      "scale": 0.08080808080808081,
+      "resized_body_size": [
+        16,
+        40
+      ],
+      "cell_offset": [
+        24,
+        21
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "extraction_cell_identifier": null,
+      "file": "frame-02.png"
+    },
+    {
+      "index": 3,
+      "requested_degrees_north_of_east": 90,
+      "actual_view": "Rear/north; face hidden and braid central.",
+      "source_crop_xyxy": [
+        1330,
+        0,
+        1774,
+        887
+      ],
+      "trim_xyxy_in_crop": [
+        88,
+        199,
+        293,
+        694
+      ],
+      "scale": 0.08080808080808081,
+      "resized_body_size": [
+        17,
+        40
+      ],
+      "cell_offset": [
+        24,
+        21
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "extraction_cell_identifier": null,
+      "file": "frame-03.png"
+    }
+  ],
+  "transform": "Wholefigure crop, binary magenta key, nearest wholebody rescale, paddedatlas placement; no mirroring or separate limb edits.",
+  "key_rule": "red-green>25 and blue-green>25 => transparent RGBAzero; remainingalpha255",
+  "limitations": [
+    "Angles are requested directions, not measured exact rotations.",
+    "Third and fourth heads are both near-rear; shoulder/boot orientation supplies their difference.",
+    "Static grounded turn states; no engine playback performed."
+  ]
+}

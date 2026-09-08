@@ -8314,6 +8314,142 @@
             93
           ],
           "id": "rider_247"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            564,
+            724
+          ],
+          "trim": [
+            261,
+            183,
+            406,
+            566
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northwest",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            0,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_248"
+        },
+        {
+          "source_rect": [
+            564,
+            0,
+            1064,
+            724
+          ],
+          "trim": [
+            157,
+            183,
+            302,
+            565
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northeast",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            96,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_249"
+        },
+        {
+          "source_rect": [
+            1064,
+            0,
+            1578,
+            724
+          ],
+          "trim": [
+            198,
+            183,
+            341,
+            566
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northwest",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            192,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_250"
+        },
+        {
+          "source_rect": [
+            1578,
+            0,
+            2172,
+            724
+          ],
+          "trim": [
+            169,
+            183,
+            314,
+            566
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northeast",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            288,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_251"
         }
       ],
       "clips": {
@@ -8960,10 +9096,26 @@
           ],
           "fps": 7,
           "loop": true
+        },
+        "turn_v1_turn_north-northwest": {
+          "frames": [
+            248,
+            250
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "turn_v1_turn_north-northeast": {
+          "frames": [
+            249,
+            251
+          ],
+          "fps": 5,
+          "loop": true
         }
       },
       "status": "extracted_candidate",
-      "count": 248,
+      "count": 252,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -35017,5 +35169,5 @@
       "reason": "Superseded dense foliage with broader pixel clusters matching the approved concept. Original preserved, excluded from current count."
     }
   ],
-  "total_extracted": 944
+  "total_extracted": 948
 }

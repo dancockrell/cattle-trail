@@ -8313,6 +8313,142 @@
             93
           ],
           "id": "rider_247"
+        },
+        {
+          "source_rect": [
+            0,
+            0,
+            564,
+            724
+          ],
+          "trim": [
+            261,
+            183,
+            406,
+            566
+          ],
+          "row": 0,
+          "col": 0,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northwest",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            0,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_248"
+        },
+        {
+          "source_rect": [
+            564,
+            0,
+            1064,
+            724
+          ],
+          "trim": [
+            157,
+            183,
+            302,
+            565
+          ],
+          "row": 0,
+          "col": 1,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northeast",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            96,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_249"
+        },
+        {
+          "source_rect": [
+            1064,
+            0,
+            1578,
+            724
+          ],
+          "trim": [
+            198,
+            183,
+            341,
+            566
+          ],
+          "row": 0,
+          "col": 2,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northwest",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            192,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_250"
+        },
+        {
+          "source_rect": [
+            1578,
+            0,
+            2172,
+            724
+          ],
+          "trim": [
+            169,
+            183,
+            314,
+            566
+          ],
+          "row": 0,
+          "col": 3,
+          "source": "kits/source/rider-northern-turn-v1.png",
+          "source_sha256": "011bea102999008e7915658c41852788dfae56ad66adafa3b05efd6a79f84a89",
+          "direction": "north-northeast",
+          "scale": 0.1618798955613577,
+          "job": "rider-northern-turn-v1",
+          "action": "turn",
+          "clip_prefix": "turn_v1_",
+          "atlas_rect": [
+            288,
+            2976,
+            96,
+            96
+          ],
+          "anchor": [
+            48,
+            93
+          ],
+          "id": "rider_251"
         }
       ],
       "clips": {
@@ -8762,10 +8898,38 @@
           ],
           "fps": 1,
           "loop": true
+        },
+        "turn_nnw_grounded": {
+          "frames": [
+            248
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "turn_nnw_passing": {
+          "frames": [
+            250
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "turn_nne_grounded": {
+          "frames": [
+            249
+          ],
+          "fps": 1,
+          "loop": false
+        },
+        "turn_nne_passing": {
+          "frames": [
+            251
+          ],
+          "fps": 1,
+          "loop": false
         }
       },
       "status": "selected_for_room_review",
-      "count": 248,
+      "count": 252,
       "world_body_height": 62,
       "review_notes": [
         "Candidate poses; timing, silhouette consistency, foot contacts and attachment continuity require motion curation."
@@ -9035,12 +9199,36 @@
           49,
           93
         ],
+        "turn_v1_turn_north-northwest": [
+          47,
+          93
+        ],
+        "turn_v1_turn_north-northeast": [
+          47,
+          93
+        ],
         "idle": [
           47,
           93
         ],
         "greeting_northwest": [
           48,
+          93
+        ],
+        "turn_nnw_grounded": [
+          47,
+          93
+        ],
+        "turn_nnw_passing": [
+          47,
+          93
+        ],
+        "turn_nne_grounded": [
+          47,
+          93
+        ],
+        "turn_nne_passing": [
+          47,
           93
         ]
       },
@@ -9791,6 +9979,30 @@
             41,
             51
           ]
+        },
+        "248": {
+          "rope_hand": [
+            40,
+            46
+          ]
+        },
+        "250": {
+          "rope_hand": [
+            40,
+            46
+          ]
+        },
+        "249": {
+          "rope_hand": [
+            54,
+            45
+          ]
+        },
+        "251": {
+          "rope_hand": [
+            54,
+            45
+          ]
         }
       },
       "procedural_rope_clips": [
@@ -9820,6 +10032,54 @@
           "walk_northwest": 24
         },
         "stride_basis": "NE: provisional12 pixels per0.5sec compact cycle from assets/curation/rider-walk.json; other facings provisional24px/sec nominal. Contact anatomy remains under review."
+      },
+      "turn_transitions": {
+        "northwest": {
+          "north": {
+            "idle": {
+              "clip": "turn_nnw_grounded",
+              "seconds": 0.08
+            },
+            "walk": {
+              "clip": "turn_nnw_passing",
+              "seconds": 0.07
+            }
+          }
+        },
+        "north": {
+          "northwest": {
+            "idle": {
+              "clip": "turn_nnw_grounded",
+              "seconds": 0.08
+            },
+            "walk": {
+              "clip": "turn_nnw_passing",
+              "seconds": 0.07
+            }
+          },
+          "northeast": {
+            "idle": {
+              "clip": "turn_nne_grounded",
+              "seconds": 0.08
+            },
+            "walk": {
+              "clip": "turn_nne_passing",
+              "seconds": 0.07
+            }
+          }
+        },
+        "northeast": {
+          "north": {
+            "idle": {
+              "clip": "turn_nne_grounded",
+              "seconds": 0.08
+            },
+            "walk": {
+              "clip": "turn_nne_passing",
+              "seconds": 0.07
+            }
+          }
+        }
       },
       "selection_note": "Walk and stationary facing reviewed together; action strips selectively enabled. Final room acceptance is separate."
     },
@@ -31412,6 +31672,6 @@
     "sampling": "nearest",
     "provenance": "Quieter clustered empty-ground derivative generated from approved source/concept-start.jpg; prompt in source/ground-v3-prompt.txt"
   },
-  "integrated_unique_actor_frames": 326,
+  "integrated_unique_actor_frames": 330,
   "integrated_unique_scenery_frames": 30
 }

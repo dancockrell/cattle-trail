@@ -2152,6 +2152,50 @@
         }
       }
     },
+    "turn_v1_turn_north-northwest": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        248,
+        250
+      ],
+      "observed": {
+        "248": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 109
+        },
+        "250": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 108
+        }
+      }
+    },
+    "turn_v1_turn_north-northeast": {
+      "anchor": [
+        47,
+        93
+      ],
+      "frames": [
+        249,
+        251
+      ],
+      "observed": {
+        "249": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 107
+        },
+        "251": {
+          "shirt_x": 47.0,
+          "hoof_y": 93,
+          "blue_pixels": 106
+        }
+      }
+    },
     "idle": {
       "anchor": [
         47,
