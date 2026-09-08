@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "status": "equipment_candidate_not_globally_admitted",
+  "equipment": "spirit_lantern",
+  "source": "kits/source/spirit-lantern-prop-v1.png",
+  "source_sha256": "7d15b267aa5a5c969bddb74b9bfa24473b09270694486cc902aa50713fc7c597",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "reference": "kits/source/eleanor-lantern-v1.png",
+  "source_grid": [
+    2,
+    2
+  ],
+  "texture": "atlas.png",
+  "atlas_size": [
+    128,
+    32
+  ],
+  "cell": [
+    32,
+    32
+  ],
+  "anchor": [
+    16,
+    8
+  ],
+  "anchor_meaning": "Grip point at top centre of carrying handle, cell-local pixels, y down. Position cell at actor hand minus this anchor.",
+  "display_height_pixels": 14,
+  "frames": [
+    {
+      "index": 0,
+      "state": "unlit",
+      "source_row": 0,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        268,
+        160,
+        466,
+        521
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "grip_anchor": [
+        16,
+        8
+      ],
+      "scaled_size": [
+        8,
+        14
+      ],
+      "cell_offset": [
+        12,
+        8
+      ],
+      "rgba_sha256": "81d4bcee5cad89a1561eadecb490fcf589061186638fab6924fd7d8d19b8e3cc"
+    },
+    {
+      "index": 1,
+      "state": "low_flame",
+      "source_row": 0,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        161,
+        160,
+        360,
+        521
+      ],
+      "atlas_rect_xywh": [
+        32,
+        0,
+        32,
+        32
+      ],
+      "grip_anchor": [
+        16,
+        8
+      ],
+      "scaled_size": [
+        8,
+        14
+      ],
+      "cell_offset": [
+        12,
+        8
+      ],
+      "rgba_sha256": "f6313dfacabb7152b94a862a15ff9902d80fcc0f09cd09847fc419a891410b15"
+    },
+    {
+      "index": 2,
+      "state": "warm_flame",
+      "source_row": 1,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        268,
+        74,
+        466,
+        437
+      ],
+      "atlas_rect_xywh": [
+        64,
+        0,
+        32,
+        32
+      ],
+      "grip_anchor": [
+        16,
+        8
+      ],
+      "scaled_size": [
+        8,
+        14
+      ],
+      "cell_offset": [
+        12,
+        8
+      ],
+      "rgba_sha256": "6584a7b88ab41992e61303b25d570c4c765865ad9601d8ca7b9efecce14a827f"
+    },
+    {
+      "index": 3,
+      "state": "spirit_flame",
+      "source_row": 1,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        161,
+        74,
+        360,
+        437
+      ],
+      "atlas_rect_xywh": [
+        96,
+        0,
+        32,
+        32
+      ],
+      "grip_anchor": [
+        16,
+        8
+      ],
+      "scaled_size": [
+        8,
+        14
+      ],
+      "cell_offset": [
+        12,
+        8
+      ],
+      "rgba_sha256": "5cb0e30dc8ca396bde4ee7fc6bf3f725a8be0ffe331a4d9f79df420d41a02330"
+    }
+  ],
+  "states": {
+    "unlit": {
+      "frames": [
+        0
+      ],
+      "loop": false,
+      "presentation": "static equipment state"
+    },
+    "low_flame": {
+      "frames": [
+        1
+      ],
+      "loop": false,
+      "presentation": "static equipment state"
+    },
+    "warm_flame": {
+      "frames": [
+        2
+      ],
+      "loop": false,
+      "presentation": "static equipment state"
+    },
+    "spirit_flame": {
+      "frames": [
+        3
+      ],
+      "loop": false,
+      "presentation": "static equipment state"
+    }
+  },
+  "processing": {
+    "common_scale": 0.03856749311294766,
+    "resampling": "nearest",
+    "alpha": "binary0/255; zeroRGBA keyed magenta",
+    "key_rule": "R-G>50 and B-G>50",
+    "whole_generated_lantern_only": true
+  },
+  "inspection": {
+    "whole_prop": true,
+    "no_hand_or_body": true,
+    "same_handle_and_body_silhouette": true,
+    "states_readable": "Darkglass, tinyamberwick, brightwarmflame, turquoise spiritflame.",
+    "notes": "Brass contours are retained at small native size. Candidate source has a near-frontal high view with top cap visible."
+  }
+}

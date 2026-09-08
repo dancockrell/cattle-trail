@@ -30,6 +30,7 @@ static func validate(data: Dictionary) -> bool:
 		var lantern := LanternAdventure.new()
 		if not lantern.load_dict(data.lantern_adventure): return false
 		if lantern.stage!="not_started" and candidate.recruitment!="recruited": return false
+		if lantern.stage!="not_started" and candidate.adventure_status!="completed": return false
 	return true
 
 static func number(value) -> bool:

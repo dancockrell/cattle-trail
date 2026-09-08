@@ -370,6 +370,7 @@ func _physics_process(delta: float) -> void:
 	controlled.pose(actual_motion.length() > 0.01, direction, actual_motion.length() / delta)
 	for cow in cows:
 		var velocity := Vector2.ZERO
+		if companion != null and companion.lantern.owns_cow(cow): continue
 		var away: Vector2 = cow.position - player.position
 		if cow.secured:
 			cow.pose(false)
@@ -395,6 +396,8 @@ func _physics_process(delta: float) -> void:
 		if CORRAL.has_point(cow.position) and not rustler_active:
 			cow.secured = true
 			message = "A steer settles in the east gathering. %d of 6 safe." % secured_count()
+	if companion != null and companion.lantern != null: companion.lantern.tick(delta)
+	if companion != null: companion.sync_lantern_equipment()
 	update_rope(delta)
 	shot_time -= delta
 	if shot_time <= 0: shot.clear_points()

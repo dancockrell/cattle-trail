@@ -71,7 +71,7 @@ def package(actor, folder, selections):
     spec = {"texture": f"res://assets/lantern/{actor}.png", "cell": size, "anchor": anchor,
             "frames": frames, "clips": clips, "count": len(frames), "frame_sockets": frame_sockets,
             "default_facing": "east" if actor == "eleanor_lantern" else "northeast",
-            "status": "optional_encounter_bundle_not_room_admitted",
+            "status": "encounter_bundle_spirit_integrated_carry_poses_optional",
             "provenance": {"metadata": metadata_path.relative_to(ROOT).as_posix(),
                            "metadata_sha256": sha(metadata_path), "source_sha256": meta["source_sha256"],
                            "processing": "Exact existing whole RGBA cells repacked; no rescale or pixel edits"}}
@@ -86,13 +86,13 @@ def main():
             (3, "carry_idle_south", "03-whole-frame.png")]),
         "crossing_spirit": package("crossing_spirit", "crossing-spirit-v1", [
             (i, state, state + ".png") for i, state in enumerate(["wary", "agitated", "listening", "settled"])])}
-    manifest = {"schema_version": 1, "status": "optional_encounter_bundle_not_room_admitted",
+    manifest = {"schema_version": 1, "status": "encounter_bundle_spirit_integrated_carry_poses_optional",
                 "encounter": "lanterns_at_the_ford", "sprites": {},
                 "limitations": ["Static whole-pose states only; no carry walk or transition cycle.",
                                 "Eleanor northwest omitted because source carry hand is inconsistent.",
                                 "Lantern is baked into Eleanor; sockets locate its grip and light, not a second prop.",
                                 "Crossing spirit sockets are empty: no authored attachment points.",
-                                "Bundle preparation does not activate the encounter or establish in-game visual approval."]}
+                                "The crossing spirit is connected to the source room controller; Eleanor carry poses remain optional and visual approval is outstanding."]}
     target = ROOT / "assets/lantern"
     target.mkdir(parents=True, exist_ok=True)
     for actor, (spec, atlas) in bundles.items():

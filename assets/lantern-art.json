@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "optional_encounter_bundle_not_room_admitted",
+  "status": "encounter_bundle_spirit_integrated_carry_poses_optional",
   "encounter": "lanterns_at_the_ford",
   "sprites": {
     "eleanor_lantern": {
@@ -401,7 +401,7 @@
         }
       },
       "default_facing": "east",
-      "status": "optional_encounter_bundle_not_room_admitted",
+      "status": "encounter_bundle_spirit_integrated_carry_poses_optional",
       "provenance": {
         "metadata": "kits/workcycles/eleanor-lantern-v1/metadata.json",
         "metadata_sha256": "5d89096becb9ba97d81eb69c2479d47aca28d1464cf30ae73df8612fd6ef4078",
@@ -776,7 +776,7 @@
         "3": {}
       },
       "default_facing": "northeast",
-      "status": "optional_encounter_bundle_not_room_admitted",
+      "status": "encounter_bundle_spirit_integrated_carry_poses_optional",
       "provenance": {
         "metadata": "kits/workcycles/crossing-spirit-v1/metadata.json",
         "metadata_sha256": "0d1f685ea434ae041dfb3b1e146fc4debcaf27800e4934d693315791ddafdb93",
@@ -795,6 +795,6 @@
     "Eleanor northwest omitted because source carry hand is inconsistent.",
     "Lantern is baked into Eleanor; sockets locate its grip and light, not a second prop.",
     "Crossing spirit sockets are empty: no authored attachment points.",
-    "Bundle preparation does not activate the encounter or establish in-game visual approval."
+    "The crossing spirit is connected to the source room controller; Eleanor carry poses remain optional and visual approval is outstanding."
   ]
 }

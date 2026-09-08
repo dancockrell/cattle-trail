@@ -1,0 +1,16 @@
+{
+  "source": "kits/workcycles/spirit-lantern-prop-v1/warm_flame.png",
+  "metadata": "kits/workcycles/spirit-lantern-prop-v1/metadata.json",
+  "texture": "res://assets/lantern/carried_lantern.png",
+  "cell": [
+    32,
+    32
+  ],
+  "grip_anchor": [
+    16,
+    8
+  ],
+  "display_height": 14,
+  "sha256": "72c0bc5c20b95e91898c02505820abf7c799895afc1a63302bf9fc8f45968f9f",
+  "presentation": "Belt carried equipment using unchanged generated whole prop; no limb animation."
+}

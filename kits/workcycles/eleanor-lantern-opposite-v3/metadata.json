@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "whole_sprite_opposite_passing_candidate",
+  "character": "eleanor",
+  "direction": "east",
+  "carry_hand": "right",
+  "source": "kits/source/eleanor-lantern-opposite-v3.png",
+  "source_sha256": "72c0cfa82992c75ba470c824c8ea11d11086ec44590e352aec14562b66b42f43",
+  "source_size": [
+    1085,
+    1450
+  ],
+  "prompt": "kits/source/eleanor-lantern-opposite-v3-prompt.txt",
+  "trim_xyxy": [
+    360,
+    250,
+    697,
+    1187
+  ],
+  "scale": 0.042689434364994665,
+  "resized_size": [
+    14,
+    40
+  ],
+  "cell_offset": [
+    25,
+    21
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "body_height": 40,
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "atlas_rect": [
+    0,
+    0,
+    64,
+    64
+  ],
+  "visible_pose": "Narrow passing silhouette; warmnearboot crosses infront of darkerfarboot beneathhips, lantern attached to right hand.",
+  "comparison_sources": [
+    {
+      "file": "kits/workcycles/eleanor-lantern-walk-v2/01-whole-frame.png",
+      "sha256": "5802cae5304bd2f0c81bbcb62e8a92a49c4123ded37d60d81cf7921b982552b0"
+    },
+    {
+      "file": "kits/workcycles/eleanor-east-v7/03-whole-frame.png",
+      "sha256": "824101b4fcee8e460b6cfd138973ff2dedbe52772c99733b0cc9c7c2b6f90f61"
+    }
+  ],
+  "limitations": [
+    "Strongly different from extendedcontactrepeat; precise footgroundclearance remains a motionreview question.",
+    "This is onepose, not a complete lanternwalkcycle."
+  ],
+  "transformation": "Wholefigure binarymagenta key,trim,nearest40pxrescale,padding; no limb edits."
+}
