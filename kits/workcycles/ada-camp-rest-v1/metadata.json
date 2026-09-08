@@ -1,0 +1,139 @@
+{
+  "id": "ada-camp-rest-v1",
+  "character": "ada_mercer",
+  "age": 22,
+  "texture": "atlas.png",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "status": "static_rest_state_candidates",
+  "facing": "east_oblique",
+  "source": "kits/workcycles/ada-camp-rest-v1/source.png",
+  "source_sha256": "e0884aef9cd2e8ef78b06e8323b98a11d5b184ba763c8717ad3a8b55e60cba1d",
+  "prompt": "prompt.txt",
+  "identity_reference": "kits/character-families/mechanic/master.png",
+  "identity_reference_sha256": "f00e28b12c14ed69d7c998572501878d9e89d262396d0382ca3a428e3a499ea1",
+  "frames": [
+    {
+      "index": 0,
+      "state": "seated_mug",
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source_ground_anchor_estimate": [
+        528,
+        913
+      ],
+      "source_region_xyxy": [
+        0,
+        0,
+        768,
+        1024
+      ],
+      "source_alpha_bounds_xyxy": [
+        209,
+        250,
+        642,
+        919
+      ],
+      "alpha_bounds_xyxy": [
+        17,
+        29,
+        38,
+        61
+      ],
+      "figure_and_crate_height": 32,
+      "offset": [
+        17,
+        29
+      ],
+      "rgba_sha256": "3237cc51068bb4796f3c05d966979b6da3c0411f636ea6188e1de73c47b2b7dd"
+    },
+    {
+      "index": 1,
+      "state": "standing_mug",
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "source_ground_anchor_estimate": [
+        1200,
+        875
+      ],
+      "source_region_xyxy": [
+        768,
+        0,
+        1536,
+        1024
+      ],
+      "source_alpha_bounds_xyxy": [
+        58,
+        78,
+        536,
+        897
+      ],
+      "alpha_bounds_xyxy": [
+        14,
+        22,
+        37,
+        62
+      ],
+      "figure_and_crate_height": 40,
+      "offset": [
+        14,
+        22
+      ],
+      "rgba_sha256": "96762a04b8724e0433e7827fb96a224c5f78c7d4fc89f59154ad06271b9595bb"
+    }
+  ],
+  "clips": {
+    "rest_seated_mug": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    },
+    "rest_standing_mug": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "transition": "state switch only; no sit/stand animation supplied",
+  "review": [
+    "Two separate complete whole-character compositions including wooden crate.",
+    "Standing height40, seatedheight32, binaryalpha andnearestsampling.",
+    "Staticstates only; no rendered-game or motion tests."
+  ],
+  "provenance": {
+    "tool": "builtin image_gen",
+    "attempts": 1,
+    "transforms": [
+      "magenta chromakey",
+      "wholecomposition crop",
+      "nearest32/40height",
+      "64cellanchor32,61"
+    ]
+  }
+}

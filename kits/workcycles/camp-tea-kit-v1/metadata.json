@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "id": "camp_tea_kit",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "id": "coffee_pot_closed",
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "source_rect": [
+        78,
+        323,
+        189,
+        229
+      ],
+      "size": [
+        13,
+        16
+      ],
+      "offset": [
+        26,
+        45
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "coffee_pot_steaming",
+      "frame": 1,
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "source_rect": [
+        362,
+        310,
+        197,
+        244
+      ],
+      "size": [
+        15,
+        18
+      ],
+      "offset": [
+        25,
+        43
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "mugs_full_pair",
+      "frame": 2,
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "source_rect": [
+        646,
+        420,
+        237,
+        131
+      ],
+      "size": [
+        18,
+        10
+      ],
+      "offset": [
+        23,
+        51
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "mugs_empty_pair",
+      "frame": 3,
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "source_rect": [
+        965,
+        432,
+        241,
+        126
+      ],
+      "size": [
+        19,
+        10
+      ],
+      "offset": [
+        23,
+        51
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "blanket_roll",
+      "frame": 4,
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ],
+      "source_rect": [
+        54,
+        710,
+        227,
+        186
+      ],
+      "size": [
+        15,
+        12
+      ],
+      "offset": [
+        25,
+        49
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "blanket_folded",
+      "frame": 5,
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "source_rect": [
+        343,
+        725,
+        267,
+        175
+      ],
+      "size": [
+        18,
+        12
+      ],
+      "offset": [
+        23,
+        49
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Generated blanket is folded, not fully laid out."
+    },
+    {
+      "id": "supplies_crate",
+      "frame": 6,
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "source_rect": [
+        696,
+        717,
+        203,
+        199
+      ],
+      "size": [
+        20,
+        20
+      ],
+      "offset": [
+        22,
+        41
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    },
+    {
+      "id": "lantern_warm",
+      "frame": 7,
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "source_rect": [
+        1025,
+        655,
+        132,
+        248
+      ],
+      "size": [
+        7,
+        14
+      ],
+      "offset": [
+        29,
+        47
+      ],
+      "status": "candidate",
+      "use": "camp_detail_static",
+      "observation": "Whole prop or intact mug pair; no clipping."
+    }
+  ],
+  "source": "source.png",
+  "source_sha256": "a01862488cf7e615f04aeeaf1e03ed8ca99ca334e1d4d6a6152bb82b85939cd8",
+  "prompt": "prompt.txt",
+  "tool": "builtin image_gen",
+  "references": [
+    "kits/source/camp.png",
+    "kits/source/spirit-lantern-prop-v1.png"
+  ],
+  "runtime_admitted": false,
+  "animation_clips": {},
+  "observation": "Eight actual campprops with matching warm material palette and elevated camera; mugsfull/empty remain wholepairs. Blanket requested laidflat arrived folded, labeled honestly.",
+  "limitations": [
+    "No full laid blanket in this source.",
+    "Pot states are separately generated; do not claim pixel-identical animation.",
+    "Steam tint and small highlights simplify at native sizes."
+  ],
+  "processing": "Source magenta hue key including handleholes, wholeprop crop, individually declared worldscale10to20pxheight, nearest resize andpadding. No painted geometry or reconstructedparts."
+}
