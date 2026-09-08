@@ -118,3 +118,7 @@ design/companion.schema.json defines the proposed adult companion record. design
 ### Trail time in the current room
 
 The source now advances saved trail time at a provisional one game minute per real second of active simulation. Day 1 starts at noon on May 12, 1872. Shared rest spends its declared 30 minutes and becomes available after its existing daily cooldown; ordinary play can now expire that cooldown. The HUD shows trail day/time and completed-adventure rest availability. No offline elapsed time is applied. This implements the clock and recovery availability, not world travel, a day/night art set or scheduled NPC behavior.
+
+### Lantern adventure production boundary
+
+Lanterns at the Ford now has initial whole-character source art: Eleanor carrying a brass lantern and four states of the crossing spirit. Its authored progression is being implemented as a separate persisted backend: take the lantern, settle the spirit, guide three distinct cattle and return to the wagon. Pause and recoverable failure return control safely while preserving the checkpoint. Completion uses a stable milestone and cannot issue a duplicate completion reward. The Clear Fork cattle-calming activity remains the current playable adventure; lantern-carry walking, the ford layout and room interactions still need integration. New lantern dialogue is authored event content and is not yet triggered in the room.

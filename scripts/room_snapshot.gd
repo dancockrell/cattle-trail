@@ -1,5 +1,6 @@
 extends RefCounted
 const CompanionState = preload("res://scripts/companion_state.gd")
+const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 
 static func validate(data: Dictionary) -> bool:
 	if data.get("version",0)!=1 or not data.get("cattle") is Array or data.cattle.size()!=6: return false
@@ -24,6 +25,11 @@ static func validate(data: Dictionary) -> bool:
 	var candidate := CompanionState.new()
 	if not candidate.load_dict(data.companion): return false
 	if candidate.recruitment=="recruited" and not data.won: return false
+	if data.has("lantern_adventure"):
+		if not data.lantern_adventure is Dictionary: return false
+		var lantern := LanternAdventure.new()
+		if not lantern.load_dict(data.lantern_adventure): return false
+		if lantern.stage!="not_started" and candidate.recruitment!="recruited": return false
 	return true
 
 static func number(value) -> bool:

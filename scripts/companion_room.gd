@@ -4,10 +4,12 @@ const State = preload("res://scripts/companion_state.gd")
 const Storage = preload("res://scripts/save_storage.gd")
 const Snapshot = preload("res://scripts/room_snapshot.gd")
 const Clock = preload("res://scripts/trail_clock.gd")
+const LanternAdventure = preload("res://scripts/lantern_adventure.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
 var room: Control
 var state = State.new()
+var lantern_adventure = LanternAdventure.new()
 var minutes := 720.0
 var banter: Dictionary = {}
 
@@ -155,6 +157,7 @@ func save_game(test_path := "") -> bool:
 	var cattle := []
 	for cow in room.cows: cattle.append({"position":[cow.position.x,cow.position.y],"secured":cow.secured})
 	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
+	data["lantern_adventure"] = lantern_adventure.to_dict()
 	return Storage.write(SAVE_PATH if test_path.is_empty() else test_path,data)
 
 func load_game(test_path := "") -> bool:
@@ -162,7 +165,10 @@ func load_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
 	var data: Dictionary = Storage.read(path,Snapshot.validate)
 	if data.is_empty(): return false
+	var restored_lantern = LanternAdventure.new()
+	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
+	lantern_adventure = restored_lantern
 	minutes = float(data.get("minutes",720))
 	room.player.position = room.limit_position(Vector2(data.player[0],data.player[1]))
 	room.eleanor.position = room.limit_position(Vector2(data.eleanor[0],data.eleanor[1]))
@@ -182,6 +188,9 @@ func load_game(test_path := "") -> bool:
 	room.rustler.pose(false)
 	room.hits = int(data.get("hits",0))
 	room.spoken_beats = data.get("spoken_beats",{})
+	room.speech.remaining = 0
+	room.speech.visible = false
+	room.speech.speaker = null
 	room.target = Vector2.INF
 	room.rope_time = 0
 	room.rope_flight_time = 0
