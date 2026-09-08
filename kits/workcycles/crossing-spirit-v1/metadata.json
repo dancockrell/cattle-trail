@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "status": "source_candidate_not_globally_admitted",
+  "character": "crossing_spirit",
+  "encounter": "Lanterns at Ford",
+  "source": "kits/source/crossing-spirit-v1.png",
+  "source_sha256": "64ebd4aa46c010917f9b6d0151a46a297cbd1acd7e25592d9f41f829605c5e9c",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "reference": "kits/source/longhorn-rear-v3.png",
+  "source_grid": [
+    2,
+    2
+  ],
+  "texture": "atlas.png",
+  "atlas_size": [
+    288,
+    64
+  ],
+  "cell": [
+    72,
+    64
+  ],
+  "anchor": [
+    36,
+    61
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "state": "wary",
+      "actual_body_facing": "northeast",
+      "anchor": [
+        36,
+        61
+      ],
+      "source_row": 0,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        145,
+        99,
+        533,
+        505
+      ],
+      "atlas_rect_xywh": [
+        0,
+        0,
+        72,
+        64
+      ],
+      "scaled_size": [
+        36,
+        38
+      ],
+      "cell_offset": [
+        18,
+        23
+      ],
+      "rgba_sha256": "77a172e89ae95a789a76b660361e0b3cdfdceb137f00a6c75177adb1a07dfdd2"
+    },
+    {
+      "index": 1,
+      "state": "agitated",
+      "actual_body_facing": "northeast",
+      "anchor": [
+        36,
+        61
+      ],
+      "source_row": 0,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "trim_ltrb_in_cell": [
+        45,
+        99,
+        461,
+        506
+      ],
+      "atlas_rect_xywh": [
+        72,
+        0,
+        72,
+        64
+      ],
+      "scaled_size": [
+        39,
+        38
+      ],
+      "cell_offset": [
+        16,
+        23
+      ],
+      "rgba_sha256": "a1ee7ffb7bce6ce64a8e6c05ad4acd3e032be949dd24c8ce710973c797bf69fe"
+    },
+    {
+      "index": 2,
+      "state": "listening",
+      "actual_body_facing": "northeast",
+      "anchor": [
+        36,
+        61
+      ],
+      "source_row": 1,
+      "source_col": 0,
+      "source_cell_ltrb": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        141,
+        77,
+        514,
+        484
+      ],
+      "atlas_rect_xywh": [
+        144,
+        0,
+        72,
+        64
+      ],
+      "scaled_size": [
+        35,
+        38
+      ],
+      "cell_offset": [
+        18,
+        23
+      ],
+      "rgba_sha256": "bb50277c6e7c5966bdeb35db0c819af865fed4ade712cbb5f7b4dfa089401701"
+    },
+    {
+      "index": 3,
+      "state": "settled",
+      "actual_body_facing": "northeast",
+      "anchor": [
+        36,
+        61
+      ],
+      "source_row": 1,
+      "source_col": 1,
+      "source_cell_ltrb": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "trim_ltrb_in_cell": [
+        79,
+        164,
+        476,
+        490
+      ],
+      "atlas_rect_xywh": [
+        216,
+        0,
+        72,
+        64
+      ],
+      "scaled_size": [
+        37,
+        30
+      ],
+      "cell_offset": [
+        17,
+        31
+      ],
+      "rgba_sha256": "592fecd5551912b20d6d8319f71ede4339e2b0659afd99df39d7926657cf7b9c"
+    }
+  ],
+  "clips": {
+    "wary": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": false,
+      "presentation": "static state hold"
+    },
+    "agitated": {
+      "frames": [
+        1
+      ],
+      "fps": 1,
+      "loop": false,
+      "presentation": "static state hold"
+    },
+    "listening": {
+      "frames": [
+        2
+      ],
+      "fps": 1,
+      "loop": false,
+      "presentation": "static state hold"
+    },
+    "settled": {
+      "frames": [
+        3
+      ],
+      "fps": 1,
+      "loop": false,
+      "presentation": "static state hold"
+    }
+  },
+  "processing": {
+    "key": "R-G>50 and B-G>50",
+    "alpha": "binary0/255; transparent pixels all RGBAzero",
+    "shared_scale": 0.09336609336609336,
+    "max_whole_sprite_height": 38,
+    "resampling": "nearest",
+    "whole_sprite_only": true,
+    "detached_limbs_or_redrawing": false
+  },
+  "inspection": {
+    "direction": "Northeast body orientation in all four states; head turns slightly to communicate emotion.",
+    "states": [
+      "Guarded standing",
+      "Head raised, mouth open, low forehoof lift",
+      "Head cocks and neck relaxes",
+      "Lowered head, calm stance"
+    ],
+    "anatomy": "Whole cattle silhouettes with complete hooves, tail and horn contours; settled far horn partly occluded by head angle.",
+    "palette": "Pale turquoise/seafoam/ivory with dark teal edges; opaque source silhouette for optional runtime alpha.",
+    "not_a_walk_cycle": true
+  }
+}

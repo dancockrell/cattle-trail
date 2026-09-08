@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "adventure_id": "lanterns_at_the_ford",
+  "status": "authored_content_pending_room_integration",
+  "events": [
+    {"id":"lantern_taken","speaker":"ELEANOR","text":"Hold the herd. I'll ask what's troubling our neighbor.","priority":2},
+    {"id":"spirit_agitated","speaker":"ELEANOR","text":"Easy. Nobody's driving you anywhere tonight.","priority":2},
+    {"id":"spirit_settled","speaker":"ELEANOR","text":"There you are. You only wanted someone to listen.","priority":2},
+    {"id":"crossing_started","speaker":"TRAIL BOSS","text":"You've got their attention. I'll keep the strays off your heels.","priority":1},
+    {"id":"first_cow_guided","speaker":"ELEANOR","text":"One brave soul. Mostly interested in the grass, I think.","priority":1},
+    {"id":"crossing_complete","speaker":"ELEANOR","text":"Everyone across. Including one who hasn't needed a bridge in years.","priority":2},
+    {"id":"returned_to_wagon","speaker":"ELEANOR","text":"You stayed. I knew you would, but I like seeing it.","priority":2},
+    {"id":"retry","speaker":"ELEANOR","text":"Let's catch our breath. The ford can wait a moment.","priority":1}
+  ]
+}

@@ -31,3 +31,10 @@ Only static sheets were reviewed in this pass. Short rider bridge timings are pr
 - rider-east-v17: contact A → one low inbetween → passing A, conditioned on the actual v15 source endpoints. Four whole horse legs remain; the foreleg approaches vertical support. Slight head-length drift remains. One candidate, not a complete gait.
 - eleanor-east-v8: contact A → one low inbetween → passing A, with the same bag-free outfit and warm near/darker far boot identity. The new pose is closer to passing than an exact halfway drawing. One candidate, not a replacement walk strip.
 - rustler-east-v6: attempted opposite contact conditioned on the v5 contact. Identity and gray trouser panels remain, but the leading-foot overlap repeats. Preserve the source and endpoint comparison as unadmitted evidence.
+
+## Lanterns at the Ford production
+
+- eleanor-lantern-v1: four whole lantern-carry poses E/NE/NW/S, 64×64 cells and [32,61] anchors. Existing outfit and a small brass lantern; grip/light sockets are recorded. NW appears to swap anatomical carrying hand and needs correction. Static poses do not provide lantern-carry walking coverage.
+- crossing-spirit-v1: four spectral longhorn states, all with northeast body orientation: wary, agitated, listening and settled. Transparent 72×64 cells, [36,61] anchors. Separate static-state clips; not a walk animation. The palette stays pale turquoise, seafoam and ivory against the warm trail.
+
+These two working kits support the authored adventure under construction. Neither is globally admitted or placed in the current playable room yet.

@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "character": "eleanor",
+  "status": "static_lantern_carry_candidate",
+  "source": "kits/source/eleanor-lantern-v1.png",
+  "source_sha256": "c8b20af9514f8b7c7332d0ea430bc7afabe0d6cad2be3c34044f108e209a8e69",
+  "prompt": "kits/source/eleanor-lantern-v1-prompt.txt",
+  "source_size": [
+    2172,
+    724
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    61
+  ],
+  "body_height": 40,
+  "atlas": "atlas.png",
+  "frames": [
+    {
+      "index": 0,
+      "direction": "E",
+      "actual_view": "east front-right",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "right",
+      "lantern_screen_side": "left",
+      "source_crop_xyxy": [
+        0,
+        0,
+        543,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        216,
+        145,
+        397,
+        599
+      ],
+      "scale": 0.0881057268722467,
+      "resized_size": [
+        16,
+        40
+      ],
+      "cell_offset": [
+        24,
+        21
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "sockets": {
+        "lantern_handle_grip": {
+          "source_pixel_xy": [
+            248,
+            442
+          ],
+          "cell_pixel_xy": [
+            27,
+            47
+          ],
+          "relative_to_ground_anchor": [
+            -5,
+            -14
+          ]
+        },
+        "lantern_light_center": {
+          "source_pixel_xy": [
+            248,
+            513
+          ],
+          "cell_pixel_xy": [
+            27,
+            53
+          ],
+          "relative_to_ground_anchor": [
+            -5,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "index": 1,
+      "direction": "NE",
+      "actual_view": "northeast rear-right",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "right",
+      "lantern_screen_side": "right",
+      "source_crop_xyxy": [
+        543,
+        0,
+        1086,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        184,
+        148,
+        379,
+        603
+      ],
+      "scale": 0.08791208791208792,
+      "resized_size": [
+        17,
+        40
+      ],
+      "cell_offset": [
+        24,
+        21
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "sockets": {
+        "lantern_handle_grip": {
+          "source_pixel_xy": [
+            891,
+            443
+          ],
+          "cell_pixel_xy": [
+            38,
+            47
+          ],
+          "relative_to_ground_anchor": [
+            6,
+            -14
+          ]
+        },
+        "lantern_light_center": {
+          "source_pixel_xy": [
+            891,
+            515
+          ],
+          "cell_pixel_xy": [
+            38,
+            53
+          ],
+          "relative_to_ground_anchor": [
+            6,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "index": 2,
+      "direction": "NW",
+      "actual_view": "northwest rear-left",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "left_apparent_needs_correction",
+      "lantern_screen_side": "left",
+      "source_crop_xyxy": [
+        1086,
+        0,
+        1629,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        131,
+        148,
+        330,
+        603
+      ],
+      "scale": 0.08791208791208792,
+      "resized_size": [
+        17,
+        40
+      ],
+      "cell_offset": [
+        24,
+        21
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "sockets": {
+        "lantern_handle_grip": {
+          "source_pixel_xy": [
+            1249,
+            444
+          ],
+          "cell_pixel_xy": [
+            27,
+            47
+          ],
+          "relative_to_ground_anchor": [
+            -5,
+            -14
+          ]
+        },
+        "lantern_light_center": {
+          "source_pixel_xy": [
+            1249,
+            513
+          ],
+          "cell_pixel_xy": [
+            27,
+            53
+          ],
+          "relative_to_ground_anchor": [
+            -5,
+            -8
+          ]
+        }
+      }
+    },
+    {
+      "index": 3,
+      "direction": "S",
+      "actual_view": "south front",
+      "requested_carry_hand": "right",
+      "observed_carry_hand": "right",
+      "lantern_screen_side": "left",
+      "source_crop_xyxy": [
+        1629,
+        0,
+        2172,
+        724
+      ],
+      "trim_xyxy_in_crop": [
+        80,
+        148,
+        296,
+        598
+      ],
+      "scale": 0.08888888888888889,
+      "resized_size": [
+        19,
+        40
+      ],
+      "cell_offset": [
+        23,
+        21
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "anchor": [
+        32,
+        61
+      ],
+      "sockets": {
+        "lantern_handle_grip": {
+          "source_pixel_xy": [
+            1744,
+            439
+          ],
+          "cell_pixel_xy": [
+            26,
+            47
+          ],
+          "relative_to_ground_anchor": [
+            -6,
+            -14
+          ]
+        },
+        "lantern_light_center": {
+          "source_pixel_xy": [
+            1744,
+            512
+          ],
+          "cell_pixel_xy": [
+            26,
+            53
+          ],
+          "relative_to_ground_anchor": [
+            -6,
+            -8
+          ]
+        }
+      }
+    }
+  ],
+  "socket_method": "Hand-handle joint and glass light center visually picked on source; exact selected source pixels and transformed cell coordinates recorded. Not a physics attachment calibration.",
+  "render_contract": "Lantern is baked into wholefigure; sockets are referencepoints for light/interaction, do not draw a secondlantern.",
+  "transformation": "Wholefigure crop,binarymagenta key,nearestrescale,padding only.",
+  "limitations": [
+    "NW rearleft pose appears to carry lantern in anatomicalleft hand; do not admit as right-hand continuation without correction.",
+    "Lantern hangs low near skirt hem rather than uppercalf in someviews.",
+    "Static carryposes only; no lantern walk or transition cycle claimed."
+  ]
+}
