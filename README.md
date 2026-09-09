@@ -10,7 +10,7 @@ This is production authority, not a claim that every existing runtime or binary 
 
 # Cattle Trail — Clear Fork
 
-A real Godot 4.3 playable room using recovered Cattle Trail art plus rich sprite and terrain derivatives generated from those approved references. This is the one-room visual and interaction proof for an adult harem-romance Weird West RPG. GAME-DESIGN.md defines the current identity: alternate1870s, spirits, steampunk machinery and playable-companion romance adventures. Those larger systems are design contracts, not implemented gameplay.
+A real Godot 4.3 playable room using recovered Cattle Trail art plus rich sprite and terrain derivatives generated from those approved references. This is the one-room visual and interaction proof for an adult harem-romance Weird West RPG. GAME-DESIGN.md defines the current identity: alternate 1870s, spirits, steampunk machinery and playable-companion romance adventures. Those larger systems are design contracts, not implemented gameplay.
 
 ## Play
 
@@ -78,11 +78,17 @@ Generated-companion source support now includes full resolved identity persisten
 
 ## Ada's cart outing in the source
 
-After repairing the walker and inviting Ada, board the cart on the lower trail withTalk[E]. Inspect, then useL/F/G to toggle valvesA/B/C. OpenA/C and closeB; Etests the routing. Drive through the three brasslanterns in order, return to the cartstop, and Talk to finish. Tabpauses; Board resumes the saveddrivingpoint. A separate optionalKiss[H] appears beside the cart aftercompletion.
+After repairing the walker and inviting Ada, board the cart on the lower trail with Talk [E]. Inspect, then use L/F/G to toggle valves A/B/C. Open A/C and close B; E tests the routing. Drive through the three brass lanterns in order, return to the cart stop, and Talk to finish. Tab pauses; Board resumes the saved driving point. A separate optional Kiss [H] appears beside the cart after completion.
 
-This source feature uses five selectedrealcart sprites, including an emptyparkedview. It was checked without rendering thegame; the packagedWindows executable still predates these sourcechanges.
+This source feature uses five selected real cart sprites, including an empty parked view. It was checked without rendering the game; the packaged Windows executable still predates these source changes.
 
 The cart now accelerates, brakes and steers through turns. Use Brake[E] during the lantern route to stop and clear a tap destination. Its wider collision footprint leaves room around scenery; saves retain heading and restart with the cart stationary.
+
+## Ines's spirit trail in the source
+
+Ines's encounter unlocks after Ada's cart outing completes and stands stationary at the northern trail. Talk [E] beside her to meet her, then read the three nearby scenery landmarks — southern trail grass, northern trail stones, southeast scrub — with the same Talk action; each yields a hint and no repeat reward on revisit. Return to Ines once all three are read to complete the trail for a one-time trust reward, then Talk again to accept her offer to scout for the outfit. Recruiting her assigns her to camp; Talk beside her again toggles camp/field assignment. Field assignment activates her Spirit Sense perk, extending landmark warning range from 24 to 36 world units. Flirt [H] beside her is a separate, optional romance acknowledgement; it never follows automatically from recruitment.
+
+This source integration passed isolated headless controller checks (`python tools/verify_godot.py ines ines-room`); the Windows binary remains older.
 
 ## Detailed character sheets and camp care
 
@@ -90,7 +96,7 @@ New detailed source kits preserve native whole figures and 160-pixel derivatives
 
 The sprite renderer supports these denser textures without changing character world size. Display density, frame pivots, reflected sockets and input mapping passed isolated headless checks. The new candidate characters have not replaced the room actors.
 
-After finishing Ada's cart outing, Rest beside her restores up to 10 madness each and spends 30 trail minutes. Her short camp remark accompanies the action. Eleanor retains her 13/10 recovery; both interactions share the player's daily cooldown. Saves retain deadlines and migrate older Eleanor rest records. Active outings must be paused before camp rest. These source changes have focused headless verification; no new game capture or Windows rebuild was performed for this pass.
+After finishing Ada's cart outing, Rest beside her restores up to 10 madness each and spends 30 trail minutes. Her short camp remark accompanies the action. Once Ines is recruited and assigned to camp, Rest beside her (within 45 units) offers the same up-to-10-each recovery with an optional spirit-themed remark; romance is not required. Eleanor retains her 13/10 recovery; all three companions share the player's daily cooldown. Saves retain deadlines and migrate older Eleanor rest records. Active outings must be paused before camp rest. These source changes have focused headless verification; no new game capture or Windows rebuild was performed for this pass.
 
 The selected older Ada four-pose sequence has also been recovered directly from its full-resolution sources, preserving the corrected opposite contact at 160-pixel figure height. It retains her brown work jacket and trousers. Pelvis alignment, source landmarks and provisional 0.16-second pose holds are recorded; body proportions and arm counter-swing remain unfinished. Its `review_walk_east` clip is for sheet inspection, not live room selection. No coarse sprite was enlarged to make this recovered kit.
 
