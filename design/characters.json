@@ -229,33 +229,33 @@
       }
     },
     {
-      "id": "rosa_vale",
+      "id": "ines_vale",
       "content_status": "design_only",
       "origin": "named",
-      "name": "Rosa Vale",
-      "age": 20,
+      "name": "Ines Vale",
+      "age": 23,
       "gender": "woman",
       "romance_eligible": true,
       "identity": {
-        "background": "Draft trail scout who hears local spirits and distrusts grand explanations.",
+        "background": "Trail scout who reads spirit signs the living miss and distrusts grand explanations.",
         "personality": [
           "observant",
           "playful",
           "skeptical",
           "self-confident"
         ],
-        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. Existing generated sprite in assets/ines.png and assets/ines-art.json.",
         "outfit_brief": "Gathered cotton blouse, fitted short waistcoat, short or split riding skirt over opaque riding layers, leather boots and spirit-listener accessories. Adult athletic confidence, bare shoulders or midriff, daring PG-13 coverage with visible 1870s fabric and closures.",
-        "art_status": "unapproved_draft",
+        "art_status": "existing_sprite_continuity",
         "seed": null
       },
       "recruitment": {
         "initial_state": "available",
-        "encounter_hook": "A spirit warns of a ford whose location changes between witnesses.",
+        "encounter_hook": "Meet Ines on the northern trail after Ada's cart outing is complete.",
         "conditions": [
-          "Investigate the conflicting ford accounts.",
-          "Respect her decision about a spirit encounter.",
-          "Rosa accepts the invitation."
+          "Read the southern trail grass, northern trail stones and southeast scrub clues.",
+          "Return to Ines with all three clues to complete the trail.",
+          "Ines offers to scout for the outfit; accept her invitation."
         ],
         "acceptance_requires_character_choice": true
       },
@@ -269,20 +269,20 @@
         "boundaries": [
           "Recruitment is separate from romance.",
           "Affectionate contact requires mutual acceptance.",
-          "Multiple partners require a mutually acknowledged agreement.",
+          "Multiple partners require a mutually agreed agreement.",
           "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
         ]
       },
       "party_role": {
         "specialty": "spirit-listener and scout",
-        "initial_assignment": "none",
-        "availability": "Draft encounter availability; no current party implementation."
+        "initial_assignment": "camp",
+        "availability": "Runtime toggles camp/field assignment after recruitment; field activates her Spirit Sense perk."
       },
       "perks": [
         {
-          "id": "rosa_vale_perk",
+          "id": "spirit_sense",
           "label": "Between the Footprints",
-          "description": "Draft benefit to trail_hazard_notice; numerical effect is untested.",
+          "description": "Extends spirit-trail landmark warning radius from 24 to 36 world units while assigned to the field.",
           "activation": "field",
           "effect": {
             "stat": "trail_hazard_notice",
@@ -306,9 +306,9 @@
         "support_preference": "An embrace or quiet time with a trusted loved one."
       },
       "recovery_offer": {
-        "id": "rosa_vale_shared_rest",
+        "id": "ines_vale_shared_rest",
         "label": "Quiet time together",
-        "requires_trusted_relationship": true,
+        "requires_trusted_relationship": false,
         "requires_mutual_acceptance": true,
         "amount": 10,
         "game_minutes": 30,
@@ -316,7 +316,9 @@
         "tuning_status": "provisional"
       },
       "continuity_notes": [
-        "Name, appearance and encounter are provisional.",
+        "Supersedes the earlier 'Rosa Vale' draft of this same spirit-listener/scout role; do not reintroduce Rosa as a separate character.",
+        "Runtime implements meet, three-clue trail, recruitment, camp/field assignment, optional romance acknowledgement and shared camp rest (scripts/ines_companion.gd, scripts/ines_room.gd, scripts/camp_care_room.gd).",
+        "Her encounter unlocks only after Ada's cart outing completes; she is stationary at the northern trail. Player-controlled scouting and a short authored romance adventure remain future work.",
         "Spirits are real; their testimony can still be mistaken or deceptive."
       ],
       "playable_companion": {
@@ -329,10 +331,10 @@
       "romance_adventure": {
         "id": "moons_wrong_reflection",
         "title": "The Moon's Wrong Reflection",
-        "controlled_actor_id": "rosa_vale",
+        "controlled_actor_id": "ines_vale",
         "objective": "Follow spirit reflections to locate a safe creek crossing.",
         "companion_skill": "Directly playable spirit perception and trail finding.",
-        "protagonist_support": "The protagonist follows Rosa's signals through the crossing.",
+        "protagonist_support": "The protagonist follows Ines's signals through the crossing.",
         "affectionate_payoff": "A playful secluded moment and an optional kiss.",
         "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
         "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
@@ -382,7 +384,7 @@
     },
     "generation_rules": [
       "Validate resolved age as at least 18 before any art or dialogue generation.",
-      "Use the default 18–24 age range for most generated companions; any older exception remains explicitly adult.",
+      "Use the default 18â€“24 age range for most generated companions; any older exception remains explicitly adult.",
       "Resolve background, equipment, perk and encounter from a compatible authored package.",
       "Use curated adult characterization and PG-13 wardrobe; no child-coded presentation.",
       "Keep recruitment, relationship, party role, perks and madness separate.",
