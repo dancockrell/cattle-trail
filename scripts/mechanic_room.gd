@@ -30,8 +30,8 @@ func near_machine() -> bool:
 func _busy() -> bool:
 	return room.player.action_time > 0 or room.rope_time > 0 or room.rope_flight_time > 0
 
-func _say(beat: String, line: String) -> void:
-	if is_instance_valid(ada): room.say_once("ada_"+beat,ada,"ADA",line,2)
+func _say(beat: String) -> void:
+	owner.say_ada_event(beat,"ada_"+beat,ada)
 
 func _changed(message: String) -> void:
 	_sync_view()
@@ -71,12 +71,12 @@ func interact() -> bool:
 		if _busy(): return true
 		if not state.met:
 			state.meet()
-			_say("met","Ada Mercer. My walker lost its regulator; there's a spare packed at your wagon.")
+			_say("met")
 			_changed("Meet Ada / Retrieve the regulator from the wagon, then vent the walker before installing it.")
 		elif state.recruitment != "recruited":
 			var result: Dictionary = state.invite(true)
 			if result.get("ok",false):
-				_say("invited","A place in your outfit? You've seen my work. I'll take it.")
+				_say("invited")
 				_changed("Ada joins the outfit as your steam mechanic. Her repaired walker is ready.")
 		else: owner.tell("Ada and her walker are ready to travel with the outfit.")
 		return true
@@ -94,14 +94,14 @@ func interact() -> bool:
 	if not repair.regulator_installed:
 		var result: Dictionary = repair.install_regulator()
 		if result.ok:
-			_say("installed","A clean fit. Close the vent, build pressure, then shut the feed before testing.")
+			_say("installed")
 			_changed("Regulator fitted / Close vent, open feed to 30–50, close feed, then Test.")
 		else:
 			owner.tell("Retrieve the spare regulator from the wagon first." if not repair.regulator_recovered else "Close the feed and open the vent. Install only when pressure is 5 or below.")
 	else:
 		var result: Dictionary = repair.test_machine()
 		if result.ok:
-			_say("repaired","Listen to that. A steady heartbeat, and not a hoof out of place.")
+			_say("repaired")
 			_changed("Walker repaired / Talk to Ada to invite her into the outfit.")
 		else: owner.tell("For the test, close both valves and hold pressure at 30–50. Vent a fault down to 5 before retrying.")
 	return true
@@ -127,7 +127,7 @@ func tick(delta: float) -> void:
 	repair.tick(delta)
 	if repair.fault != was_faulted:
 		if repair.fault:
-			_say("fault","Feed's shut itself. Open the vent; we'll give it another try.")
+			_say("fault")
 			_changed("Pressure fault / Feed shut automatically. Open vent to lower pressure to 5.")
 		else: _changed("Fault cleared. Your regulator is kept; close the vent when ready to retry.")
 

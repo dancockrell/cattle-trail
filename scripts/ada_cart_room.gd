@@ -30,8 +30,8 @@ func sync_after_load():
 	if is_active() and is_instance_valid(vehicle): vehicle.position = saved_position
 func _near() -> bool: return room.player.position.distance_to(PARK) <= 50
 func _busy() -> bool: return room.player.action_time > 0 or room.rope_time > 0 or room.rope_flight_time > 0
-func _say(beat: String, line: String):
-	if is_instance_valid(vehicle): room.say_once("ada_cart_"+beat,vehicle,"ADA",line,2)
+func _say(beat: String):
+	owner.say_ada_event(beat,"ada_cart_"+beat,vehicle)
 func _changed(line: String):
 	sync_view()
 	owner.tell(line)
@@ -86,18 +86,18 @@ func interact() -> bool:
 		motion.stop()
 		vehicle.position = saved_position
 		room.target = Vector2.INF
-		_say("board","You get the second seat. Try to look impressed before we start moving.")
+		_say("board")
 		_changed("PLAYING ADA / Inspect the regulator [E]. Tab pauses the outing.")
 		return true
 	if state.stage == "inspect":
 		state.inspect()
-		_say("valves","Outer feeds open. Middle bypass shut. Simple—until somebody improves it.")
+		_say("valves")
 		_changed("ROUTE PRESSURE / Open A and C; close B. L toggles A, F toggles B, G toggles C. E tests.")
 	elif state.stage == "route_pressure":
 		var result: Dictionary = state.confirm_routing()
 		if result.ok:
 			room.target = Vector2.INF
-			_say("ready","That's our heartbeat. Follow the lanterns. I'll do the steering; you enjoy the view.")
+			_say("ready")
 			_changed("DRIVE / Playing Ada. Follow each brass lantern, then return to the cart stop.")
 		else:
 			owner.ada_state.madness = minf(100,owner.ada_state.madness+float(result.get("strain_delta",0)))
@@ -114,7 +114,7 @@ func interact() -> bool:
 			saved_position = PARK
 			room.player.position = PARK+Vector2(0,20)
 			room.target = Vector2.INF
-			_say("home","There. Two seats, one regulator, and not a single apology to the laws of nature.")
+			_say("home")
 			_changed("OUTING COMPLETE / Ada +15 trust. Shared adventure complete; an optional Kiss is a separate choice.")
 		else: owner.tell("Bring the cart back to its stop on the lower trail, then Talk.")
 	return true
@@ -144,7 +144,7 @@ func flirt() -> bool:
 	var result: Dictionary = state.choose_romance(true)
 	if result.ok:
 		owner.ada_state.trust = mini(100,owner.ada_state.trust+5)
-		_say("kiss","One more thing before we call that a successful test drive.")
+		_say("kiss")
 		_changed("You lean closer; Ada meets you with a quick, laughing kiss. The outing is remembered.")
 	else: owner.tell("Ada grins at the memory of your ride. That moment is already yours.")
 	return true
@@ -156,7 +156,7 @@ func tick(_delta: float):
 	if index < STOPS.size() and vehicle.position.distance_to(STOPS[index])<=24:
 		var result: Dictionary = state.checkpoint_arrived(index)
 		if result.ok:
-			_say("stop%d"%index,["See? Perfectly civilized machinery.","If the kettle whistles, pretend that was deliberate.","Now home. We should stop while we're still excellent at this."][index])
+			_say("stop%d"%index)
 			_changed("Lantern %d of 3 reached. %s" % [index+1,"Return to the lower-trail cart stop and Talk." if index==2 else "Follow the next lantern."])
 
 func decorate_ui():

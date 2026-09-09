@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "character_id": "ada_mercer",
+  "age": 22,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"met","speaker":"ADA","priority":2,"text":"Ada Mercer. My walker lost its regulator; there's a spare packed at your wagon."},
+    {"id":"invited","speaker":"ADA","priority":2,"text":"A place in your outfit? You've seen my work. I'll take it."},
+    {"id":"installed","speaker":"ADA","priority":2,"text":"A clean fit. Close the vent, build pressure, then shut the feed before testing."},
+    {"id":"repaired","speaker":"ADA","priority":2,"text":"Listen to that. A steady heartbeat, and not a hoof out of place."},
+    {"id":"fault","speaker":"ADA","priority":1,"text":"Feed's shut itself. Open the vent; we'll give it another try."},
+    {"id":"board","speaker":"ADA","priority":2,"text":"You get the second seat. Try to look impressed before we start moving."},
+    {"id":"valves","speaker":"ADA","priority":1,"text":"Outer feeds open. Middle bypass shut. Simple—until somebody improves it."},
+    {"id":"ready","speaker":"ADA","priority":2,"text":"That's our heartbeat. Follow the lanterns. I'll do the steering; you enjoy the view."},
+    {"id":"home","speaker":"ADA","priority":2,"text":"There. Two seats, one regulator, and not a single apology to the laws of nature."},
+    {"id":"kiss","speaker":"ADA","priority":2,"text":"One more thing before we call that a successful test drive."},
+    {"id":"stop0","speaker":"ADA","priority":1,"text":"See? Perfectly civilized machinery."},
+    {"id":"stop1","speaker":"ADA","priority":1,"text":"If the kettle whistles, pretend that was deliberate."},
+    {"id":"stop2","speaker":"ADA","priority":1,"text":"Now home. We should stop while we're still excellent at this."}
+  ]
+}

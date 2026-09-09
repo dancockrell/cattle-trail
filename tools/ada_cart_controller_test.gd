@@ -24,11 +24,11 @@ class Owner extends RefCounted:
 	func is_eleanor(): return false
 	func tell(_line): pass
 	func save_game(): last_position=cart.position_for_save()
+	func say_ada_event(_event_id: String,_saved_beat_id: String,_actor: Node2D): pass
 class Controller extends "res://scripts/ada_cart_room.gd":
 	func sync_view():
 		if not is_instance_valid(vehicle): vehicle=Subject.new()
 		if not is_active(): vehicle.position=PARK
-	func _say(_beat: String,_line: String): pass
 func _initialize():
 	var owner = Owner.new()
 	var controller = Controller.new(owner)

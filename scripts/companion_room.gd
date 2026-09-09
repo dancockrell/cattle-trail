@@ -19,6 +19,7 @@ const CampCare = preload("res://scripts/camp_care_room.gd")
 const Recovery = preload("res://scripts/camp_recovery.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
+const ADA_BANTER_PATH := "res://data/ada_banter.json"
 var room: Control
 var state = State.new()
 var lantern_adventure = LanternAdventure.new()
@@ -38,6 +39,23 @@ func sync_lantern_equipment() -> void:
 	if lantern_equipment != null: lantern_equipment.sync_state(lantern_adventure)
 var minutes := 720.0
 var banter: Dictionary = {}
+var ada_banter: Dictionary = {}
+
+## Shared by every per-character banter file: reject anything not matching
+## this speaker so one character's file can never voice another's line.
+static func _load_banter(path: String, speaker: String) -> Dictionary:
+	var result := {}
+	if not FileAccess.file_exists(path): return result
+	var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if not content is Dictionary or not content.get("events") is Array: return result
+	for event in content.events:
+		if not event is Dictionary: continue
+		if not event.get("id") is String or not event.get("text") is String: continue
+		if event.id.is_empty() or event.text.is_empty() or event.get("speaker") != speaker: continue
+		var priority: Variant = event.get("priority")
+		if not (priority is int or priority is float) or priority not in [0,1,2]: continue
+		result[event.id] = event
+	return result
 
 func field_perk(stat: String, baseline := 0.0) -> float:
 	var records: Array = generated_roster.perk_state_records()
@@ -52,16 +70,8 @@ func clock_label() -> String:
 
 func _init(owner_room: Control) -> void:
 	room = owner_room
-	if FileAccess.file_exists(BANTER_PATH):
-		var content: Variant = JSON.parse_string(FileAccess.get_file_as_string(BANTER_PATH))
-		if content is Dictionary and content.get("events") is Array:
-			for event in content.events:
-				if not event is Dictionary: continue
-				if not event.get("id") is String or not event.get("text") is String: continue
-				if event.id.is_empty() or event.text.is_empty() or event.get("speaker") != "ELEANOR": continue
-				var priority: Variant = event.get("priority")
-				if not (priority is int or priority is float) or priority not in [0,1,2]: continue
-				banter[event.id] = event
+	banter = _load_banter(BANTER_PATH,"ELEANOR")
+	ada_banter = _load_banter(ADA_BANTER_PATH,"ADA")
 	lantern = LanternRoom.new(self)
 	mechanic = MechanicRoom.new(self)
 	cart = CartRoom.new(self)
@@ -76,6 +86,11 @@ func say_event(event_id: String, saved_beat_id: String) -> void:
 	if not banter.has(event_id): return
 	var event: Dictionary = banter[event_id]
 	room.say_once(saved_beat_id,room.eleanor,event.speaker,event.text,int(event.priority))
+
+func say_ada_event(event_id: String, saved_beat_id: String, actor: Node2D) -> void:
+	if not ada_banter.has(event_id) or not is_instance_valid(actor): return
+	var event: Dictionary = ada_banter[event_id]
+	room.say_once(saved_beat_id,actor,event.speaker,event.text,int(event.priority))
 
 func is_eleanor() -> bool:
 	return state.controlled_actor == "eleanor" or lantern_adventure.controlled_actor == "eleanor"

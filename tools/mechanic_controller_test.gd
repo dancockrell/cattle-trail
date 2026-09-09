@@ -25,6 +25,7 @@ class Owner extends RefCounted:
 	func save_game() -> bool:
 		saves += 1
 		return true
+	func say_ada_event(_event_id: String,_saved_beat_id: String,_actor: Node2D) -> void: pass
 class Controller extends "res://scripts/mechanic_room.gd":
 	func _sync_view() -> void: pass # No room scene, texture loading or rendering.
 func _initialize() -> void:
