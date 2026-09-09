@@ -1,7 +1,7 @@
 {
   "version": 1,
   "authority": "../GAME-DESIGN.md",
-  "implementation_status": "Source implements Eleanor recruitment and cattle activity, lantern crossing, Ada steam repair and cart outing, separate romance choices, camp recovery, and saved character state. Detailed character animation and room visual acceptance remain unfinished.",
+  "implementation_status": "Source implements Eleanor recruitment and cattle activity, the full Lanterns at the Ford crossing, Ada steam repair and the full Two Seats, One Regulator cart outing, Ines's three-clue spirit trail and camp/field assignment, separate romance choices, camp recovery, and saved character state. Detailed character animation and room visual acceptance remain unfinished.",
   "decisions": [
     {
       "id": "genre",
@@ -12,7 +12,7 @@
     {
       "id": "adult_cast",
       "status": "accepted_user",
-      "decision": "All romance women are adults 18 or older, mostly 18–24; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
+      "decision": "All romance women are adults 18 or older, mostly 18â€“24; older adults allowed. Slim, small-busted adult silhouettes and provocative PG-13 clothing.",
       "consequence": "Explicit age in all authored/generated romance records; no child-coded design. Earlier proposed 21+ minimum is superseded."
     },
     {
@@ -54,7 +54,7 @@
     {
       "id": "tuning",
       "status": "provisional",
-      "decision": "Madness 0–100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
+      "decision": "Madness 0â€“100, four bands, sample perks, recovery amount/time/caps and relationship stage names.",
       "consequence": "Untested values require a bounded implementation and playtest."
     },
     {
