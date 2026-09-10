@@ -12,6 +12,9 @@ const InesState = preload("res://scripts/ines_companion.gd")
 const InesRoom = preload("res://scripts/ines_room.gd")
 const BirdieState = preload("res://scripts/birdie_companion.gd")
 const BirdieRoom = preload("res://scripts/birdie_room.gd")
+const SimpleState = preload("res://scripts/simple_companion_state.gd")
+const SimpleRoom = preload("res://scripts/simple_companion_room.gd")
+const SimpleCatalog = preload("res://scripts/simple_companion_catalog.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
@@ -37,6 +40,7 @@ var lantern
 var mechanic
 var ines
 var birdie
+var simple_companions: Array = [] # Array of {"id":String,"state":SimpleState,"room":SimpleRoom}
 var lantern_equipment: Sprite2D
 
 func sync_lantern_equipment() -> void:
@@ -82,6 +86,13 @@ func _init(owner_room: Control) -> void:
 	camp_care = CampCare.new(self)
 	ines = InesRoom.new(self)
 	birdie = BirdieRoom.new(self)
+	for row in SimpleCatalog.ROWS:
+		var s_state = SimpleState.new()
+		s_state.configure(row.id, row.age, row.perk_id)
+		var runtime_config: Dictionary = row.duplicate()
+		runtime_config["position"] = SimpleCatalog.position_for(row)
+		var s_room = SimpleRoom.new(self, runtime_config, s_state)
+		simple_companions.append({"id": row.id, "state": s_state, "room": s_room})
 	lantern_equipment = LanternEquipment.new()
 	lantern_equipment.configure(room.eleanor,load("res://assets/lantern/carried_lantern.png"),Vector2(16,8))
 	room.eleanor.add_child(lantern_equipment)
@@ -96,6 +107,14 @@ func say_ada_event(event_id: String, saved_beat_id: String, actor: Node2D) -> vo
 	if not ada_banter.has(event_id) or not is_instance_valid(actor): return
 	var event: Dictionary = ada_banter[event_id]
 	room.say_once(saved_beat_id,actor,event.speaker,event.text,int(event.priority))
+
+## Resolves simple_companion_catalog.gd's "unlock_key" strings. Add a case
+## here when a future data row needs a new gate; this is the one place that
+## has to change, not every controller that shares the gate.
+func check_unlock(key: String) -> bool:
+	match key:
+		"birdie_recruited": return birdie_state.recruitment == "recruited"
+		_: return false
 
 func is_eleanor() -> bool:
 	return state.controlled_actor == "eleanor" or lantern_adventure.controlled_actor == "eleanor"
@@ -135,6 +154,8 @@ func switch_character() -> void:
 func interact() -> bool:
 	if ines != null and ines.interact(): return true
 	if birdie != null and birdie.interact(): return true
+	for entry in simple_companions:
+		if entry.room.interact(): return true
 	if cart != null and cart.interact(): return true
 	if mechanic.interact(): return true
 	if lantern.interact(): return true
@@ -183,6 +204,8 @@ func rest_together() -> void:
 func flirt() -> void:
 	if ines != null and ines.flirt(): return
 	if birdie != null and birdie.flirt(): return
+	for entry in simple_companions:
+		if entry.room.flirt(): return
 	if cart != null and cart.flirt(): return
 	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
 		tell("As the trail boss, meet Eleanor at the wagon for a quiet moment.")
@@ -220,6 +243,7 @@ func decorate_ui() -> void:
 	if camp_care != null: camp_care.decorate_ui()
 	if ines != null: ines.decorate_ui()
 	if birdie != null: birdie.decorate_ui()
+	for entry in simple_companions: entry.room.decorate_ui()
 
 func save_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
@@ -231,6 +255,9 @@ func save_game(test_path := "") -> bool:
 	data["ada_companion"] = ada_state.to_dict()
 	data["ines_companion"] = ines_state.to_dict()
 	data["birdie_companion"] = birdie_state.to_dict()
+	var simple_data := {}
+	for entry in simple_companions: simple_data[entry.id] = entry.state.to_dict()
+	data["simple_companions"] = simple_data
 	data["camp_recovery"] = camp_recovery.to_dict()
 	data["generated_companions"] = generated_roster.to_dict()
 	data["ada_cart_adventure"] = cart_adventure.to_dict()
@@ -257,6 +284,14 @@ func load_game(test_path := "") -> bool:
 	if not restored_ines.load_dict(data.get("ines_companion",restored_ines.to_dict())): return false
 	var restored_birdie = BirdieState.new()
 	if not restored_birdie.load_dict(data.get("birdie_companion",restored_birdie.to_dict())): return false
+	var simple_saved: Dictionary = data.get("simple_companions",{})
+	if not simple_saved is Dictionary: return false
+	var restored_simple := {}
+	for row in SimpleCatalog.ROWS:
+		var candidate = SimpleState.new()
+		candidate.configure(row.id, row.age, row.perk_id)
+		if not candidate.load_dict(simple_saved.get(row.id, candidate.to_dict())): return false
+		restored_simple[row.id] = candidate
 	var restored_lantern = LanternAdventure.new()
 	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
@@ -264,6 +299,9 @@ func load_game(test_path := "") -> bool:
 	ada_state = restored_ada
 	ines_state = restored_ines
 	birdie_state = restored_birdie
+	for entry in simple_companions:
+		entry.state = restored_simple[entry.id]
+		entry.room.state = entry.state
 	generated_roster = restored_roster
 	cart_adventure = restored_cart
 	camp_recovery = restored_care
@@ -316,6 +354,7 @@ func load_game(test_path := "") -> bool:
 	cart.sync_after_load()
 	ines.sync_after_load()
 	birdie.sync_after_load()
+	for entry in simple_companions: entry.room.sync_after_load()
 	sync_lantern_equipment()
 	tell("Outfit restored. Your companions and completed actions are remembered.")
 	return true

@@ -1,0 +1,70 @@
+extends SceneTree
+const Simple = preload("res://scripts/simple_companion_state.gd")
+const Perks = preload("res://scripts/companion_perks.gd")
+
+func _initialize() -> void:
+	var c := Simple.new()
+	c.configure("delphine_cruz", 24, "trail_company")
+	var initial := c.to_dict()
+	assert(not c.complete_task().ok)
+	assert(not c.invite(true).ok and not c.acknowledge_romance(true).ok)
+	assert(c.to_dict()==initial)
+	assert(c.meet() and not c.meet() and c.trust==5)
+	assert(not c.invite(true).ok)
+	assert(Perks.resolve([c.perk_record()],"camp").bonuses.is_empty())
+	var before := c.to_dict()
+	assert(c.complete_task().ok and c.trust==10)
+	assert(not c.complete_task().ok and c.trust==10 and c.to_dict()!=before)
+	before = c.to_dict()
+	assert(not c.invite(false).ok and c.to_dict()==before)
+	assert(c.invite(true).ok and c.trust==20 and not c.romance_acknowledged)
+	assert(not c.invite(true).ok)
+	assert(Perks.value([c.perk_record()],"camp","rest_madness_recovery")==1.0)
+	assert(Perks.resolve([c.perk_record()],"field").bonuses.is_empty())
+	before = c.to_dict()
+	assert(not c.acknowledge_romance(false).ok and c.to_dict()==before)
+	assert(c.acknowledge_romance(true).ok and c.trust==25)
+	assert(not c.acknowledge_romance(true).ok and c.trust==25)
+	assert(c.change_madness(1000) and c.madness==100)
+	assert(c.change_madness(-1000) and c.madness==0)
+	assert(not c.change_madness(NAN) and not c.change_madness(INF) and c.madness==0)
+	assert(c.change_madness(12.5) and c.madness==12.5)
+	var saved := c.to_dict()
+	var restored := Simple.new()
+	restored.configure("delphine_cruz", 24, "trail_company")
+	assert(restored.load_dict(JSON.parse_string(JSON.stringify(saved))) and restored.to_dict()==saved)
+	# Configured with the wrong identity, the same saved dict must be rejected --
+	# this is the field that would let one companion's save silently load into another's slot.
+	var wrong_id := Simple.new()
+	wrong_id.configure("cleo_bannister", 24, "trail_company")
+	assert(not wrong_id.load_dict(JSON.parse_string(JSON.stringify(saved))))
+	var wrong_age := Simple.new()
+	wrong_age.configure("delphine_cruz", 30, "trail_company")
+	assert(not wrong_age.load_dict(JSON.parse_string(JSON.stringify(saved))))
+	var wrong_perk := Simple.new()
+	wrong_perk.configure("delphine_cruz", 24, "camp_song")
+	assert(not wrong_perk.load_dict(JSON.parse_string(JSON.stringify(saved))))
+	for key in saved:
+		var missing := saved.duplicate(true)
+		missing.erase(key)
+		_reject(restored,missing,saved)
+	for change in [{"age":19},{"character_id":"cleo_bannister"},{"version":2},{"met":false},
+		{"met":1},{"task_done":false},{"romance_acknowledged":1},{"trust":26},
+		{"trust":NAN},{"madness":INF},{"madness":-1},{"madness":101},{"extra":true},
+		{"recruitment":"available"},{"perk_id":"camp_song"}]:
+		var malformed := saved.duplicate(true)
+		malformed.merge(change,true)
+		_reject(restored,malformed,saved)
+	var fresh := Simple.new()
+	fresh.configure("delphine_cruz", 24, "trail_company")
+	var impossible: Dictionary = fresh.to_dict()
+	impossible.task_done = true
+	_reject(restored,impossible,saved)
+	assert(not restored.complete_task().ok and not restored.invite(true).ok and not restored.acknowledge_romance(true).ok)
+	assert(restored.trust==25)
+	print("SIMPLE COMPANION PASS: generic meet/task/recruit/romance, identity-checked saves, camp-only perk, finite madness")
+	quit()
+
+func _reject(subject, malformed, unchanged: Dictionary) -> void:
+	assert(not subject.load_dict(malformed))
+	assert(subject.to_dict()==unchanged)

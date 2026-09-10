@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "prisca_montaigne",
+  "age": 24,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"PRISCA","priority":2,"text":"Cobbett's paper already has three versions of what happened out there, none of them true. I'd like the actual one, if you'll give it to me."},
+    {"id":"facts_verified","speaker":"PRISCA","priority":2,"text":"There. Boring, accurate, and going to press before Cobbett's version gets any less wrong."},
+    {"id":"recruited","speaker":"PRISCA","priority":2,"text":"A place, and an honest source when this outfit's story is worth printing. I'll take that."},
+    {"id":"romance_acknowledged","speaker":"PRISCA","priority":2,"text":"You checked your facts before you told them to me. Do you know how rare that is in my line of work?"}
+  ]
+}

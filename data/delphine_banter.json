@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "delphine_cruz",
+  "age": 24,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"DELPHINE","priority":2,"text":"Sit down. I'll deal you a fair hand, which is more than you can say for most tables in Griffin."},
+    {"id":"won_fairly","speaker":"DELPHINE","priority":2,"text":"There. Beat me straight. I respect that more than I'd respect you losing on purpose."},
+    {"id":"recruited","speaker":"DELPHINE","priority":2,"text":"A place, not a stake in the pot. I've quit better games than this for less."},
+    {"id":"romance_acknowledged","speaker":"DELPHINE","priority":2,"text":"I read tables for a living. You I had to actually watch to figure out."}
+  ]
+}

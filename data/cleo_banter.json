@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "cleo_bannister",
+  "age": 23,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"CLEO","priority":2,"text":"Sit still and I'll give you the closest, cleanest shave this side of Griffin. Free, first time -- call it advertising."},
+    {"id":"heard_something_useful","speaker":"CLEO","priority":2,"text":"There. Clean shave, and the most useful thing you've heard all week, free of charge."},
+    {"id":"recruited","speaker":"CLEO","priority":2,"text":"A place, and an ear for whatever this outfit needs to know. Fair trade."},
+    {"id":"romance_acknowledged","speaker":"CLEO","priority":2,"text":"I read people while my hands are busy. Took me longer than usual to read you."}
+  ]
+}

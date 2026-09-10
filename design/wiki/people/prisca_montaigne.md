@@ -41,7 +41,7 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 
 ## Notes
 - Name, appearance and encounter are provisional. Deliberately contrasts with percival_wren in npcs.json without being his enemy.
-- Not implemented in scripts/. This is a design-only record awaiting a room.
+- This is one of three companions actually implemented this pass via the new generic scripts/simple_companion_state.gd + scripts/simple_companion_room.gd system (see scripts/simple_companion_catalog.gd), rather than a bespoke pair of .gd files. Gated behind Birdie's recruitment. Verified with `python tools/verify_godot.py simple-companion simple-companion-room`.
 ## Known associates
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Providence](../organizations/providence.md)
