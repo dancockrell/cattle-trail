@@ -4,6 +4,20 @@ extends RefCounted
 ## row in simple_companion_catalog.gd -- no new .gd file needed to bring
 ## another same-shaped companion into the game.
 const Actor = preload("res://scripts/actor.gd")
+const Clock = preload("res://scripts/trail_clock.gd")
+
+## What a companion wants before her task beat will fire. The row picks one
+## with "task_kind" and puts the numbers beside it, so a companion who is
+## harder to please is still a row and a banter file, not a new script.
+##   "talk"   nothing. The original shape, kept for the quiet ones.
+##   "herd"   "task_herd" head secured in the east gathering.
+##   "clock"  the trail clock past "task_after_minutes" (absolute, so waiting
+##            always works and a satisfied gate never closes again).
+##   "friend" "task_friend" recruited first, by catalog id or unlock key.
+##   "spend"  "task_cash" out of the player's pocket, taken on completion.
+## Ammunition is deliberately not a price: room.gd never gives a round back,
+## so a player who emptied the pistol would be stranded on that companion.
+const TASK_KINDS := ["talk","herd","clock","friend","spend"]
 var owner
 var config: Dictionary
 var state
@@ -44,6 +58,68 @@ func _say(beat_key: String) -> void:
 	if event_id != "" and is_instance_valid(actor) and remarks.has(event_id):
 		owner.room.say_once(config.id+"_"+event_id,actor,config.speaker,remarks[event_id],2)
 
+func task_kind() -> String:
+	var kind: String = str(config.get("task_kind","talk"))
+	return kind if kind in TASK_KINDS else "talk"
+
+## {"ok":bool,"reason":String}. When ok is false, reason is her own words and
+## is never empty: a requirement she will not explain is worse than no
+## requirement at all, so every refusal path here has to produce a line.
+func task_requirement() -> Dictionary:
+	match task_kind():
+		"herd":
+			var need := int(config.get("task_herd",6))
+			var have := _secured_count()
+			if have >= need: return {"ok":true,"reason":""}
+			return _refused({"have":have,"need":need},"She wants %d head standing east. %d are." % [need,have])
+		"clock":
+			var due := float(config.get("task_after_minutes",0.0))
+			var now := _minutes()
+			if now >= due: return {"ok":true,"reason":""}
+			return _refused({"time":Clock.label(due),"now":Clock.label(now)},"Not until %s. It is %s." % [Clock.label(due),Clock.label(now)])
+		"friend":
+			var friend: String = str(config.get("task_friend",""))
+			if friend == "" or _recruited(friend): return {"ok":true,"reason":""}
+			return _refused({"friend":friend},"She wants somebody else riding with the outfit first.")
+		"spend":
+			var price := int(config.get("task_cash",0))
+			var purse := _cash()
+			if purse >= price: return {"ok":true,"reason":""}
+			return _refused({"price":price,"purse":purse},"It costs $%d. You are carrying $%d." % [price,purse])
+	return {"ok":true,"reason":""}
+
+func _refused(values: Dictionary, fallback: String) -> Dictionary:
+	var line: String = str(config.get("task_refusal",""))
+	if line == "": line = fallback
+	return {"ok":false,"reason":line.format(values)}
+
+## Paid on completion, not on the check, so a refused press never costs money.
+func _charge_task() -> void:
+	if task_kind() != "spend": return
+	var price := int(config.get("task_cash",0))
+	if price > 0 and _cash() >= price: owner.room.cash -= price
+
+func _secured_count() -> int:
+	return owner.room.secured_count() if owner.room.has_method("secured_count") else 0
+
+func _cash() -> int:
+	var purse: Variant = owner.room.get("cash")
+	return int(purse) if (purse is int or purse is float) else 0
+
+func _minutes() -> float:
+	var now: Variant = owner.get("minutes")
+	return float(now) if (now is int or now is float) else 0.0
+
+## A catalog id first, since most friends are rows in the same catalog, then
+## the owner's own unlock table for the hand-written companions.
+func _recruited(companion_id: String) -> bool:
+	var roster: Variant = owner.get("simple_companions")
+	if roster is Array:
+		for entry in roster:
+			if entry is Dictionary and entry.get("id") == companion_id and entry.get("state") != null:
+				return entry.state.recruitment == "recruited"
+	return owner.check_unlock(companion_id)
+
 func _changed(line: String) -> void:
 	owner.tell(line)
 	owner.save_game()
@@ -80,7 +156,12 @@ func interact() -> bool:
 		_say("meet_beat")
 		_changed(config.get("meet_message",""))
 	elif not state.task_done:
+		var want := task_requirement()
+		if not want.ok:
+			owner.tell(want.reason)
+			return true
 		if state.complete_task().get("ok",false):
+			_charge_task()
 			_say("task_beat")
 			_changed(config.get("task_message",""))
 	elif state.recruitment != "recruited":
@@ -109,7 +190,10 @@ func decorate_ui() -> void:
 	elif state.task_done: label = "Invite"
 	elif state.met: label = config.get("task_label","Continue")
 	owner.room.buttons.get_child(0).text = label if owner.room.size.x < 600 else label+" [E]"
-	owner.room.objective.text = config.id.to_upper() + " / " + ("Camp company" if state.recruitment == "recruited" else "Talk beside " + str(config.get("location_label","the camp edge")))
+	var goal := "Talk beside " + str(config.get("location_label","the camp edge"))
+	if state.recruitment == "recruited": goal = "Camp company"
+	elif state.met and not state.task_done and not task_requirement().ok: goal = str(config.get("task_want",goal))
+	owner.room.objective.text = config.id.to_upper() + " / " + goal
 	var speaker: String = config.speaker
 	var tag_prefix := "  " + speaker + " "
 	if not owner.room.stats.text.contains(tag_prefix):
