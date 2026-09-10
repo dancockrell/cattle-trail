@@ -26,6 +26,11 @@
       "type": "string",
       "minLength": 1
     },
+    "category": {
+      "type": "string",
+      "description": "Groups the roster for navigation as it grows. Pick the closest fit; do not add a new value without also re-grouping npcs.json by it.",
+      "enum": ["family", "rival_outfit", "outfit_hand", "town", "antagonist", "supernatural", "wanderer"]
+    },
     "location_ref": {
       "type": "string",
       "description": "A location name from design/LOCATIONS.md or LORE.md's 'The country', or 'unplaced' if not yet tied to one.",
@@ -68,6 +73,7 @@
     "content_status",
     "name",
     "role",
+    "category",
     "location_ref",
     "personality",
     "hook",
