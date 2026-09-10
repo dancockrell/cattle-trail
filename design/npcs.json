@@ -108,6 +108,31 @@
       ]
     },
     {
+      "id": "sallie_voss",
+      "content_status": "design_only",
+      "name": "Sallie Voss",
+      "age": 19,
+      "role": "Nettie Voss's daughter, learning the trading-post trade",
+      "category": "family",
+      "location_ref": "Fort Griffin",
+      "personality": [
+        "eager to prove herself",
+        "softer-edged than her mother",
+        "sharp underneath it"
+      ],
+      "hook": "Gives Nettie Voss a family tie and a future succession question -- does the trading post stay Nettie's sharp operation or does Sallie's warmer instinct change it. Not a recruitable companion; a town-continuity character.",
+      "voice_lines": [
+        "Mother says I give too much credit. I say she gives none. We're both a little right.",
+        "I'll run this counter myself someday. I'm not in a hurry to prove when.",
+        "You want the fair price or the kind one? I can only promise one of those today."
+      ],
+      "appearance_brief": "Adult woman, nineteen, dressed like her mother but softer about it, quick to smile.",
+      "art_prompt": "A young woman restocking shelves behind a trading-post counter, glancing toward an older shopkeeper (Nettie) with a mix of fondness and exasperation.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
       "id": "reed_hargrove",
       "content_status": "design_only",
       "name": "Reed Hargrove",
@@ -330,6 +355,31 @@
       "art_prompt": "A rustler crouched low in tall grass at dusk, worn clothes, glancing over his shoulder at something off-screen rather than at the player -- he's spooked by more than the outfit.",
       "continuity_notes": [
         "The rustler actor and its behavior are already implemented in scripts/room.gd; this record only proposes a name, voice and the 'own strain' framing from LORE.md. No banter file exists for him yet."
+      ]
+    },
+    {
+      "id": "orin_teague",
+      "content_status": "design_only",
+      "name": "Orin Teague",
+      "age": 44,
+      "role": "The county's other blacksmith, resents Naomi Freeman's forge taking business",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "petty rather than dangerous",
+        "genuinely skilled, which is what makes his resentment sting",
+        "all talk until he isn't"
+      ],
+      "hook": "A non-violent, personal antagonist directly tied to Naomi Freeman's madness stressor in characters.json ('a woman's forge work needs a man's name on it to count'). Best used for a reputation or business-rivalry beat rather than a fight.",
+      "voice_lines": [
+        "Folks ride past my shop to hers now. I'd mind less if her work wasn't better.",
+        "Nobody asked my opinion on a woman running a forge. I'm giving it anyway.",
+        "I'll admit the wheel held. I won't admit I'm glad about it."
+      ],
+      "appearance_brief": "Adult man, mid-forties, forge-built shoulders, a permanent scowl that's more habit than heat.",
+      "art_prompt": "A blacksmith at his own quieter forge, arms crossed, watching a customer's wagon head toward a rival's shop instead of his. Sullen rather than menacing.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Directly referenced by naomi_freeman's madness.personal_stressor in characters.json."
       ]
     },
     {
@@ -608,6 +658,56 @@
       ]
     },
     {
+      "id": "elena_ochoa",
+      "content_status": "design_only",
+      "name": "Elena Ochoa",
+      "age": 34,
+      "role": "A homesteading widow raising a son alone near the trail",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "practical",
+        "guarded with strangers, warm once trust is earned",
+        "refuses charity but accepts trade"
+      ],
+      "hook": "An ordinary human-scale story rather than a supernatural or business one -- a source of small, real stakes (a roof, a debt, a harvest) that doesn't need a ghost or a rival outfit to matter. Her son Tobias is referenced but does not need his own record.",
+      "voice_lines": [
+        "I don't take charity. I take a fair trade, same as anyone.",
+        "My boy asks when his father's coming back. I've stopped answering that one directly.",
+        "Neighbors help each other out here. That's not owed. That's just what holds the county together."
+      ],
+      "appearance_brief": "Adult woman, mid-thirties, practical homestead dress, tired but not defeated.",
+      "art_prompt": "A homesteader repairing a fence line alone at dusk, a small house with one lit window behind her, a young boy's silhouette visible in the doorway.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "ellison_rhodes",
+      "content_status": "design_only",
+      "name": "Sergeant Ellison Rhodes",
+      "age": 43,
+      "role": "A former cavalry sergeant, now an independent guide working out of Fort Griffin",
+      "category": "town",
+      "location_ref": "Fort Griffin",
+      "personality": [
+        "disciplined",
+        "dry sense of humor",
+        "chooses his own jobs now and is particular about it"
+      ],
+      "hook": "A skilled, dignified guide-for-hire distinct from Deacon Marsh's bounty trade -- Rhodes reads country and weather, not people's pasts. A specific, competent person with his own history, not a generic background figure.",
+      "voice_lines": [
+        "I took orders for twenty years. I still will, if the pay and the reason are both good enough.",
+        "I don't guide for outfits that lie to me about what they're actually looking for.",
+        "County like this, the weather kills more men than anything with a name. Watch the sky, not just the trail."
+      ],
+      "appearance_brief": "Adult man, early forties, upright bearing from years of service, plain but well-kept gear.",
+      "art_prompt": "A former cavalryman in plain trail clothes with a cavalry-issue coat repurposed for civilian wear, reading the horizon with clear expertise. Dignified, specific, not a background silhouette.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
       "id": "the_split_oak_traveler",
       "content_status": "design_only",
       "name": "The man from farther west",
@@ -771,6 +871,31 @@
       ]
     },
     {
+      "id": "the_lantern_man",
+      "content_status": "design_only",
+      "name": "The Lantern Man",
+      "age": null,
+      "role": "A man who should have stayed buried and did not, per LORE.md's list",
+      "category": "supernatural",
+      "location_ref": "unplaced",
+      "personality": [
+        "polite in a way that is itself the warning sign",
+        "repeats the same small talk each encounter",
+        "does not seem to know he's dead"
+      ],
+      "hook": "Distinct from the Ford Widow and the Drover Who Isn't -- this haunting's wrongness is social rather than physical: he offers ordinary trail courtesy (a shared fire, directions, a lantern to borrow) and the lantern he lends is always returned somewhere he never was. Late sign material per LORE.md, not an early one.",
+      "voice_lines": [
+        "Evening. Cold one. You're welcome to share the fire, such as it is.",
+        "Take the lantern. I've got no more need of the light than I do the road.",
+        "I keep meaning to get back to town. Feels like I've been meaning to for some time now."
+      ],
+      "appearance_brief": "An ordinary-looking older traveler by firelight; his wrongness should surface only in small temporal/spatial inconsistencies, not appearance.",
+      "art_prompt": "A traveler at a small fire at night, offering a lantern toward the viewer, perfectly ordinary in appearance -- the unease should come from context and repetition across encounters, not from his design.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
       "id": "little_tam",
       "content_status": "design_only",
       "name": "Tam",
@@ -793,6 +918,56 @@
       "art_prompt": "A boy sitting on a fence rail at dusk, relaxed posture, looking toward something off-screen that the viewer cannot see. Keep this depiction clearly childlike and non-sexualized; he is a courier character, not cast material.",
       "continuity_notes": [
         "Not implemented in scripts/. Explicitly not romance-eligible; do not add him to characters.json under any circumstance."
+      ]
+    },
+    {
+      "id": "hiram_cobb",
+      "content_status": "design_only",
+      "name": "Hiram Cobb",
+      "age": 56,
+      "role": "Willow Byrne's semi-retired former bounty-circuit partner",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "easygoing about a hard trade",
+        "still sharp despite the retirement talk",
+        "genuinely fond of Willow"
+      ],
+      "hook": "A friendly wanderer tied to Willow's backstory rather than a threat -- someone who could vouch for her, needle her about quitting, or bring one more old case to her door.",
+      "voice_lines": [
+        "Byrne taught herself to quit. I never managed it. Ask me again in ten years.",
+        "She was the better tracker. I was better at knowing when to stop. We balanced out.",
+        "Tell her Cobb says hello, and that the offer to come back still stands, and that I already know she'll say no."
+      ],
+      "appearance_brief": "Adult man, mid-fifties, comfortable rather than hardened, gear well-used but not desperate.",
+      "art_prompt": "An older tracker resting against a fence post with a coffee, relaxed posture, watching the road rather than working it -- a man who has genuinely slowed down.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "percival_wren",
+      "content_status": "design_only",
+      "name": "Percival Wren",
+      "age": 37,
+      "role": "A traveling newspaper correspondent chasing tall-tale stories for an Eastern paper",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "credulous in print, skeptical in person",
+        "genuinely curious",
+        "will print the exciting version regardless of what actually happened"
+      ],
+      "hook": "A comic-tinged wanderer who turns the outfit's real, mundane hardships into lurid tabloid copy -- a lens on how the Weird West gets flattened into myth even while it's happening, without the game itself needing to endorse that flattening.",
+      "voice_lines": [
+        "A rustler and some spooked cattle. My editor will have it as a gunfight with the walking dead by Friday.",
+        "I don't need it to be true. I need it to sell papers in Boston.",
+        "Tell me the story again, and this time include a monster. My readers expect a monster."
+      ],
+      "appearance_brief": "Adult man, late thirties, city clothes increasingly worn by trail conditions, notebook always out.",
+      "art_prompt": "An Eastern journalist taking notes with an ink pen, dust-covered good coat, comically overdressed for the trail compared to everyone around him.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
       ]
     }
   ]
