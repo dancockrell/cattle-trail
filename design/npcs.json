@@ -182,6 +182,78 @@
       "continuity_notes": ["Intentionally underspecified per LORE.md's Native-magic caution and its general rule against inventing more than is needed. Not implemented."]
     },
     {
+      "id": "reverend_pike",
+      "content_status": "design_only",
+      "name": "Reverend Josiah Pike",
+      "age": 44,
+      "role": "Providence's preacher, building a church with no steeple yet",
+      "location_ref": "Providence",
+      "personality": ["earnest", "practical about money for a preacher", "genuinely liked"],
+      "hook": "A grounding, non-cynical voice in a boomtown full of speculation. Useful for a rumor delivery that isn't a con, in contrast to Ezra Lowry.",
+      "voice_lines": [
+        "The steeple can wait. The roof mattered more this winter.",
+        "I've buried men who bought Lowry's lots. I don't say that to be unkind.",
+        "Every town needs one building nobody's trying to sell you."
+      ],
+      "appearance_brief": "Adult man, mid-forties, plain dark coat, hands rough from building his own church.",
+      "art_prompt": "A preacher on a half-built church platform, sleeves rolled, a hymnal set down next to a hammer. Warm, unglamorous, not a caricature of piety.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "consuelo_diaz",
+      "content_status": "design_only",
+      "name": "Consuelo Diaz",
+      "age": 36,
+      "role": "Hide trader and freighter working out of Fort Griffin",
+      "location_ref": "Fort Griffin",
+      "personality": ["shrewd", "well-traveled", "keeps her own counsel"],
+      "hook": "A second Griffin business contact distinct from Nettie Voss's general trading post -- specifically the hide/freight market the outfit would actually sell cattle-adjacent goods into.",
+      "voice_lines": [
+        "Hides are down this month. Everyone's is. Don't take it personal.",
+        "I've freighted for outfits twice yours and half yours. Size isn't what breaks a deal.",
+        "Bring me a clean count and a fair story. I can work with either alone, not neither."
+      ],
+      "appearance_brief": "Adult woman, mid-thirties, practical trail clothes, ledger book always within reach.",
+      "art_prompt": "A freighter checking a manifest against stacked hide bales near a wagon yard, dust and midday light, competent rather than glamorous.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "doc_alvarez",
+      "content_status": "design_only",
+      "name": "Dr. Rafael Alvarez",
+      "age": 47,
+      "role": "The nearest doctor, based at Fort Griffin",
+      "location_ref": "Fort Griffin",
+      "personality": ["dry", "unshockable after years of frontier medicine", "quietly generous with credit"],
+      "hook": "A practical, non-supernatural counterpart to Eleanor's spirit-healing -- for ordinary injuries the room's madness/spirit framing shouldn't cover. Also a plausible source of grounded skepticism about a strange story the outfit brings in.",
+      "voice_lines": [
+        "I've set worse breaks than this before breakfast.",
+        "Tell me what actually happened, not what you think I want to hear.",
+        "Pay me when the herd sells. I've heard that promise before and I'm still here."
+      ],
+      "appearance_brief": "Adult man, late forties, spectacles, sleeves permanently rolled, a bag that has clearly been everywhere.",
+      "art_prompt": "A frontier doctor at a cluttered desk of instruments and ledgers, spectacles low on his nose, a half-packed medical bag beside him.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "little_tam",
+      "content_status": "design_only",
+      "name": "Tam",
+      "age": null,
+      "role": "A spirit-touched boy who runs messages between camps and outfits",
+      "location_ref": "unplaced",
+      "personality": ["quiet", "sees things adults argue about", "unbothered by the dead"],
+      "hook": "A living child character used carefully: not a companion, not in danger for shock value, a message-carrier who treats the ordinary supernatural of this world exactly as ordinary as LORE.md says it is. His age is deliberately unspecified rather than stated, since he is not a romance-adjacent character and does not need one.",
+      "voice_lines": [
+        "The lady at the crossing says to tell you she's still there. She always is, though.",
+        "Grown-ups ask if I'm scared. I don't know what I'd be scared of that isn't also just Tuesday.",
+        "I can carry a message further than a rumor. Rumors get things wrong on the way."
+      ],
+      "appearance_brief": "A child, practical patched clothes, unhurried in a way that unsettles adults more than it should.",
+      "art_prompt": "A boy sitting on a fence rail at dusk, relaxed posture, looking toward something off-screen that the viewer cannot see. Keep this depiction clearly childlike and non-sexualized; he is a courier character, not cast material.",
+      "continuity_notes": ["Not implemented in scripts/. Explicitly not romance-eligible; do not add him to characters.json under any circumstance."]
+    },
+    {
       "id": "quiet_rows_caretaker",
       "content_status": "design_only",
       "name": "The Quiet Rows caretaker",
