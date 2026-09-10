@@ -133,6 +133,56 @@
       ]
     },
     {
+      "id": "the_calloway_foreman",
+      "content_status": "design_only",
+      "name": "Jed Aldrich",
+      "age": 47,
+      "role": "Foreman of the Calloway Spread's hands, reports directly to Cole",
+      "category": "family",
+      "location_ref": "The Calloway Spread",
+      "personality": [
+        "loyal to Cole specifically, not the family generally",
+        "hard but fair with the hands he manages",
+        "privately sympathetic to Birdie without ever saying so to Cole"
+      ],
+      "hook": "Gives the Calloway Spread a working-level voice distinct from the family itself -- someone who actually runs day-to-day operations and has his own read on the family drama.",
+      "voice_lines": [
+        "Mr. Calloway doesn't need my opinion on his daughter. I keep it to myself and keep the hands working.",
+        "Whit's a fair boss in training. He'll be a better one once his father stops looking over his shoulder.",
+        "I've said my goodbyes to Birdie plenty of times when nobody was watching. Don't tell Cole that either."
+      ],
+      "appearance_brief": "Adult man, late forties, weathered foreman's bearing, clearly the one who actually runs the daily work.",
+      "art_prompt": "A ranch foreman directing hands from horseback, competent and unhurried, watching the whole operation rather than any one task.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to the Calloway family records."
+      ]
+    },
+    {
+      "id": "the_calloway_ranch_hand",
+      "content_status": "design_only",
+      "name": "Boyd Farrow",
+      "age": 24,
+      "role": "A Calloway Spread ranch hand who's sweet on Sallie Voss",
+      "category": "family",
+      "location_ref": "The Calloway Spread",
+      "personality": [
+        "shy",
+        "hardworking",
+        "hopeless at hiding his feelings"
+      ],
+      "hook": "A small, human-scale thread connecting the Calloway Spread and Fort Griffin's Voss family -- a courtship subplot that doesn't need to involve the player's own companions at all.",
+      "voice_lines": [
+        "I ride to Griffin more than the job strictly requires. Nobody's fooled, least of all Sallie.",
+        "Whit says I should just say something. Whit has never once said something either.",
+        "Her mother charges me full price at the counter. I think that means she approves."
+      ],
+      "appearance_brief": "Adult man, mid-twenties, ordinary ranch hand, visibly nervous whenever a certain trading post comes up in conversation.",
+      "art_prompt": "A young ranch hand loitering with visible awkwardness near a trading-post counter, clearly working up the nerve to say something.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties Calloway Spread and sallie_voss together independent of the player."
+      ]
+    },
+    {
       "id": "reed_hargrove",
       "content_status": "design_only",
       "name": "Reed Hargrove",
@@ -205,6 +255,31 @@
       "art_prompt": "An unremarkable trail hand coiling rope by a chuck wagon, glancing toward his own outfit's boss with visible discomfort.",
       "continuity_notes": [
         "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "the_hargrove_foreman",
+      "content_status": "design_only",
+      "name": "Suze Kirwan",
+      "age": 35,
+      "role": "Foreman of the Hargrove outfit's hands, more competent than her employers deserve",
+      "category": "rival_outfit",
+      "location_ref": "The Hargrove Range",
+      "personality": [
+        "extremely competent",
+        "privately unimpressed by Reed's ambition",
+        "loyal to the paycheck more than the family"
+      ],
+      "hook": "A working-level counterpart to Jed Aldrich on the Hargrove side -- the actual reason the newer, scrappier outfit functions at all despite Reed's overreach.",
+      "voice_lines": [
+        "Reed has ideas. I have the actual job of making them not fall apart.",
+        "Cass at least does her own math. I respect that more than I respect Reed's confidence.",
+        "I'll work for whoever pays on time. Today that's the Hargroves. Ask me again next season."
+      ],
+      "appearance_brief": "Adult woman, mid-thirties, no-nonsense trail gear, clearly the most competent person on the Hargrove payroll.",
+      "art_prompt": "A ranch foreman checking tack and gear with visible competence, unimpressed expression aimed just off-camera at her employer.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to reed_hargrove and cass_hargrove."
       ]
     },
     {
@@ -380,6 +455,31 @@
       "art_prompt": "A blacksmith at his own quieter forge, arms crossed, watching a customer's wagon head toward a rival's shop instead of his. Sullen rather than menacing.",
       "continuity_notes": [
         "Not implemented in scripts/. Directly referenced by naomi_freeman's madness.personal_stressor in characters.json."
+      ]
+    },
+    {
+      "id": "the_troupe_manager",
+      "content_status": "design_only",
+      "name": "Victor Ashgrove",
+      "age": 41,
+      "role": "The theater manager who absconded with Marlowe Castellano's troupe's takings",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "charming in exactly the way that should have been a warning sign",
+        "genuinely not violent, just a thief",
+        "always already gone by the time anyone catches up"
+      ],
+      "hook": "The specific, low-stakes antagonist behind Marlowe Castellano's stranding -- a financial-crime figure rather than a physical threat, matching the Widow Stroud's non-violent antagonist pattern.",
+      "voice_lines": [
+        "I didn't steal from them. I simply arrived at the bank before they did.",
+        "The show must go on. It's just going on somewhere I am and they aren't.",
+        "If Marlowe's found honest work, good. I did her a favor she'll never admit to."
+      ],
+      "appearance_brief": "Adult man, early forties, expensively but tastelessly dressed, always in motion toward an exit.",
+      "art_prompt": "A theater manager mid-stride away from a wagon, coat flaring, glancing back with an unbothered smile.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to marlowe_castellano."
       ]
     },
     {
@@ -708,6 +808,207 @@
       ]
     },
     {
+      "id": "otis_beckwith",
+      "content_status": "design_only",
+      "name": "Otis Beckwith",
+      "age": 39,
+      "role": "Fort Griffin's telegraph office manager, Prudence Hale's superior",
+      "category": "town",
+      "location_ref": "Fort Griffin",
+      "personality": [
+        "by-the-book",
+        "not unkind, just tired",
+        "protective of his one skilled operator"
+      ],
+      "hook": "Ties Prudence Hale's companion record to a real supervisor and workplace, and gives the telegraph office a second voice besides hers.",
+      "voice_lines": [
+        "The line's down again. It's always down when I actually need it.",
+        "Hale's the best operator I've had. I try not to work her past what's fair.",
+        "I don't read the private wires. I just notice which ones come marked urgent too often."
+      ],
+      "appearance_brief": "Adult man, late thirties, ink-stained shirt cuffs, permanently harried expression.",
+      "art_prompt": "A telegraph office manager at a cluttered desk surrounded by spooled wire and forms, pinching the bridge of his nose.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to prudence_hale in characters.json."
+      ]
+    },
+    {
+      "id": "hollis_teague",
+      "content_status": "design_only",
+      "name": "Hollis Teague",
+      "age": null,
+      "role": "Orin Teague's apprentice at the rival forge",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "eager",
+        "quietly better at the trade than his master admits",
+        "caught in the middle of a rivalry he didn't start"
+      ],
+      "hook": "A young apprentice who privately admires Naomi Freeman's work more than his own master's, giving Orin Teague's rivalry a sympathetic pressure point.",
+      "voice_lines": [
+        "Don't tell Mr. Teague I said this, but her joints hold better than ours.",
+        "I'm learning the trade. I didn't sign up for the grudge that comes with it.",
+        "Someday I'll have my own forge. I already know whose work I'll study."
+      ],
+      "appearance_brief": "A teenage boy, soot-streaked apron, clearly still growing into the trade's physical demands.",
+      "art_prompt": "A young forge apprentice pumping bellows, glancing toward a rival shop's smoke with open curiosity rather than loyalty.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to orin_teague and naomi_freeman.",
+        "Age intentionally left null, not stated as a minor age, matching little_tam's precedent for a non-adult, non-romance-eligible character."
+      ]
+    },
+    {
+      "id": "captain_dunwoody",
+      "content_status": "design_only",
+      "name": "Captain Dunwoody",
+      "age": 48,
+      "role": "Commanding officer of the Fort Griffin garrison",
+      "category": "town",
+      "location_ref": "Fort Griffin",
+      "personality": [
+        "formally correct",
+        "privately weary of frontier postings",
+        "answers to distant orders that rarely fit local reality"
+      ],
+      "hook": "Gives Corporal Ness's garrison a commanding officer and a source of official (as opposed to gossip) information, distinct from Sheriff Dell's civilian authority.",
+      "voice_lines": [
+        "My orders come from further away than this county understands.",
+        "I keep this garrison out of local disputes. It's the only policy that's worked so far.",
+        "Dell and I have an understanding. Neither of us wants the other's job."
+      ],
+      "appearance_brief": "Adult man, late forties, uniform kept correct even in frontier heat, controlled bearing.",
+      "art_prompt": "A garrison commander at a plain desk with a map of the county pinned behind him, formal but not cold.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "widow_alcott",
+      "content_status": "design_only",
+      "name": "The Widow Alcott",
+      "age": 61,
+      "role": "Runs Providence's boarding house for unmarried working women",
+      "category": "town",
+      "location_ref": "Providence",
+      "personality": [
+        "formidable in her own right",
+        "protective of her boarders",
+        "no patience for Ezra Lowry's pitches"
+      ],
+      "hook": "A second Providence institution distinct from Mrs. Pruitt's hotel -- specifically housing for the town's working women (seamstresses, teachers, telegraph operators passing through), giving several new companions a plausible shared address.",
+      "voice_lines": [
+        "My house, my rules, and my rules are simpler than most: pay on time and mind your own business.",
+        "I've heard every one of Lowry's pitches twice. I still haven't bought a lot.",
+        "A woman working alone out here needs one door that locks properly. Mine does."
+      ],
+      "appearance_brief": "Adult woman, early sixties, sharp-eyed, dressed plainly but with evident self-respect.",
+      "art_prompt": "A boarding-house keeper on her own porch, arms crossed, watching the street with clear proprietary interest.",
+      "continuity_notes": [
+        "Not implemented in scripts/. A plausible shared residence for Winnie Doyle, Louisa Okoye, Cordelia Sinclair and similar Providence-adjacent companions."
+      ]
+    },
+    {
+      "id": "padre_ruiz",
+      "content_status": "design_only",
+      "name": "Padre Ruiz",
+      "age": 58,
+      "role": "A settled priest at a small mission chapel distinct from Providence's Protestant church",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "measured",
+        "long memory of the county's actual history",
+        "quietly skeptical of both Lowry's boosterism and ghost stories alike"
+      ],
+      "hook": "Gives the county's Catholic/mission presence a specific person rather than an absence, and a longer institutional memory of the region than Providence's newer church.",
+      "voice_lines": [
+        "This mission stood before Providence had a name. I've seen towns rise and empty out before.",
+        "I don't chase every strange story that rides through. Most resolve into something ordinary by morning.",
+        "Come pray or don't. Come talk either way. My door doesn't check which."
+      ],
+      "appearance_brief": "Adult man, late fifties, plain cassock adapted for practical frontier wear, calm demeanor.",
+      "art_prompt": "A mission priest at a small adobe chapel doorway, weathered building behind him, unhurried and watchful expression.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "delia_frost",
+      "content_status": "design_only",
+      "name": "Delia Frost",
+      "age": 33,
+      "role": "Runs Providence's rooming saloon, distinct from a simple bar",
+      "category": "town",
+      "location_ref": "Providence",
+      "personality": [
+        "shrewd businesswoman",
+        "protective of her staff",
+        "no illusions about Lowry's promises"
+      ],
+      "hook": "A saloon-keeper giving Providence's nightlife a specific proprietor, distinct from Mrs. Pruitt's hotel and the Widow Alcott's boarding house -- a third, working-class Providence institution.",
+      "voice_lines": [
+        "Drinks, cards, and a place to sit that isn't the mud. That's the whole business plan.",
+        "Every girl who works for me keeps every cent she earns. I take my cut off drinks, not off them.",
+        "Lowry drinks here every night talking up lots he hasn't sold. Good for business, bad for his liver."
+      ],
+      "appearance_brief": "Adult woman, early thirties, sharp practical dress suited to running a busy room, keen eye on the whole floor.",
+      "art_prompt": "A saloon proprietor behind her own bar, surveying a busy room with a proprietor's practiced eye rather than a performer's.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "marshal_odom",
+      "content_status": "design_only",
+      "name": "Territorial Marshal Odom",
+      "age": 44,
+      "role": "A federal marshal whose jurisdiction actually covers what Sheriff Dell's doesn't",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "formal",
+        "genuinely more reach than patience",
+        "arrives only when something crosses a real legal line"
+      ],
+      "hook": "Gives Temperance Vane's deputized-peacekeeper record a superior authority to answer to, and a source of larger-jurisdiction plot pressure distinct from Dell's town-only concerns.",
+      "voice_lines": [
+        "Dell keeps his town. I keep everything he doesn't want. We rarely need to discuss the line.",
+        "I deputized Vane because she does the job right, not because the badge needed filling.",
+        "I don't ride out for every rumor. I ride out for the ones with a body count attached."
+      ],
+      "appearance_brief": "Adult man, mid-forties, plain but authoritative bearing, a federal badge worn without ceremony.",
+      "art_prompt": "A territorial marshal dismounting at a dusty crossroads, unhurried authority, badge visible but not flaunted.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to temperance_vane."
+      ]
+    },
+    {
+      "id": "the_hemp_works_owner",
+      "content_status": "design_only",
+      "name": "Cyrus Boone",
+      "age": 55,
+      "role": "Owns the hemp works where Marisol Vasquez makes rope, and the cheaper rival who undercut her",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "gruff but fair",
+        "values Marisol's work correctly even when it costs him",
+        "frustrated by his own rival supplier"
+      ],
+      "hook": "Gives Marisol Vasquez's rope-making record an actual employer/workplace rather than existing in isolation, and names the competitive pressure her companion hook references.",
+      "voice_lines": [
+        "Vasquez's rope costs more because it's actually rope. I've stopped apologizing for the price.",
+        "I fired the supplier who sold your outfit that bad line. Wasn't hard; the complaints did the work for me.",
+        "Thirty years in hemp and rawhide. I can tell good line from bad blindfolded, and so can she."
+      ],
+      "appearance_brief": "Adult man, mid-fifties, calloused hands, plain but well-run workshop visible behind him.",
+      "art_prompt": "A hemp-works owner inspecting a coil of rope critically, workshop with hanging rope lines visible behind him.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to marisol_vasquez."
+      ]
+    },
+    {
       "id": "the_split_oak_traveler",
       "content_status": "design_only",
       "name": "The man from farther west",
@@ -968,6 +1269,56 @@
       "art_prompt": "An Eastern journalist taking notes with an ink pen, dust-covered good coat, comically overdressed for the trail compared to everyone around him.",
       "continuity_notes": [
         "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "brother_amos",
+      "content_status": "design_only",
+      "name": "Brother Amos",
+      "age": 52,
+      "role": "An itinerant preacher circuit-riding between Providence, Griffin and smaller camps",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "gentle",
+        "genuinely humble",
+        "distinct from Reverend Pike -- has no fixed church at all"
+      ],
+      "hook": "A wandering counterpart to Reverend Pike's settled congregation, useful for delivering a rumor or a moment of grace somewhere with no church building at all.",
+      "voice_lines": [
+        "I preach wherever the fire is lit and someone's willing to listen. Most nights that's enough of a church.",
+        "Pike's got a roof going up. I've got a horse and a Bible. We compare notes when our trails cross.",
+        "I've buried more strangers than I've married couples out here. I try not to let that harden me."
+      ],
+      "appearance_brief": "Adult man, early fifties, simple worn coat, saddlebags that carry more sermons than possessions.",
+      "art_prompt": "An itinerant preacher on horseback at a crossroads, hat in hand, a small worn Bible visible in a saddlebag.",
+      "continuity_notes": [
+        "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "the_riverboat_captain",
+      "content_status": "design_only",
+      "name": "Captain Ines Fournier",
+      "age": 50,
+      "role": "Josephine Merriweather's former riverboat captain, now retired to a shore job",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "gruff",
+        "genuinely fond of her old crew",
+        "misses the river as much as Josephine does"
+      ],
+      "hook": "Gives Josephine Merriweather's backstory a specific former colleague/mentor, and a possible route back to river work if that thread is ever picked up.",
+      "voice_lines": [
+        "Merriweather kept my boilers honest for six years. Land's lucky to have her, if land deserves it.",
+        "I retired because my knees quit before my nerve did. She's got years left in her, out there or in here.",
+        "Tell her the old girl's still afloat, if she ever wants to see a proper boiler again."
+      ],
+      "appearance_brief": "Adult woman, fifty, weathered river-trade coat, the particular squint of someone who spent decades watching water.",
+      "art_prompt": "A retired riverboat captain on a porch far from any river, looking distinctly out of place and slightly wistful about it.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to josephine_merriweather."
       ]
     }
   ]
