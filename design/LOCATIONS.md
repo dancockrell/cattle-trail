@@ -38,6 +38,12 @@ A neighboring cattle operation, larger and better-fenced than the outfit's own, 
 
 <!-- art prompt: A proper ranch house and outbuildings behind good fencing, windmill pumping water into a stock tank, tidier and more established than the outfit's own wagon camp. Same period and palette; this should read as "further along the same road," not a different setting. -->
 
+## The Hargrove Range
+
+A second, newer rival spread, home to Reed and Cass Hargrove (see design/npcs.json). Where the Calloway Spread reads as established and tidy, Hargrove ground reads as recently claimed and still being proven -- fresh fence wire, a half-finished barn, more debt than the buildings show. Friction here runs on water rights and overreach rather than old-family pride.
+
+<!-- art prompt: A newer ranch spread with visibly fresh-cut fence posts and a half-raised barn frame, a surveyor's stakes still in the ground nearby. Same palette as Clear Fork and the Calloway Spread; the "newness" should read through construction state, not a different color grade. -->
+
 ## Providence
 
 A rail-line town growing fast on the promise of a spur line that may or may not get built. Boomtown energy: fresh lumber, tents next to real buildings, speculators, a church with no steeple yet. A good place for the outfit to feel out of step with where the country is actually heading.
