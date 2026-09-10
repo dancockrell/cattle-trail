@@ -176,6 +176,63 @@
       "continuity_notes": ["Not implemented in scripts/."]
     },
     {
+      "id": "cutter_boyle",
+      "content_status": "design_only",
+      "name": "Cutter Boyle",
+      "age": 40,
+      "role": "A hired gun working the edges of the county for whoever pays",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": ["businesslike about violence", "not sadistic", "has walked away from jobs before"],
+      "hook": "A mercenary antagonist distinct from Silas's desperation -- Boyle isn't cornered, he's a professional, which makes him negotiable in a way a cornered man isn't. Useful if a later encounter needs an antagonist who can be talked out of a job rather than only fought.",
+      "voice_lines": [
+        "I don't get paid enough to hate you personally. Take that as comfort or don't.",
+        "Somebody's always willing to pay more. Ask them first before you ask me to stop.",
+        "I've walked off three jobs this year. This one's not decided yet."
+      ],
+      "appearance_brief": "Adult man, forty, plain trail gear built for function, no flash on the gun rig.",
+      "art_prompt": "A hired gun leaning against a fence post, arms crossed, watching from a distance rather than confronting directly. Understated, not a mustache-twirling design.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "the_widow_stroud",
+      "content_status": "design_only",
+      "name": "The Widow Stroud",
+      "age": 51,
+      "role": "A moneylender operating out of Fort Griffin with an interest in outfits that fall behind",
+      "category": "antagonist",
+      "location_ref": "Fort Griffin",
+      "personality": ["unfailingly polite", "utterly unsentimental about debt", "patient because patience compounds interest"],
+      "hook": "A non-violent antagonist: financial pressure rather than a gun. If the outfit ever needs money fast, she's who lends it, and she never needs to threaten anyone -- the terms do that on their own.",
+      "voice_lines": [
+        "I don't want your herd. I want what your herd is worth, on the date we agreed.",
+        "Interest doesn't care whether your trip was hard. Neither, regrettably, do I.",
+        "I've never once raised my voice collecting a debt. I've rarely needed to twice."
+      ],
+      "appearance_brief": "Adult woman, early fifties, dressed well but not ostentatiously, composed in a way that reads as controlled rather than warm.",
+      "art_prompt": "A well-dressed widow at a writing desk with an open ledger and a coffee going cold, calm and unhurried posture, the numbers doing the intimidating rather than her expression.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "point_rider_alma",
+      "content_status": "design_only",
+      "name": "Alma Okafor",
+      "age": 30,
+      "role": "The outfit's point rider, reads the trail ahead before the herd commits to it",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": ["watchful", "economical with words", "trusted by Pardo, which is not easily earned"],
+      "hook": "A third piece of the outfit's own background crew, distinct from Pardo (institutional memory) and Dutch (green enthusiasm) -- she's the one whose judgment the trail actually depends on day to day.",
+      "voice_lines": [
+        "Ground's soft past that ridge. Take the herd around, not through.",
+        "I ride ahead so nobody's surprised. Surprised is how outfits lose stock.",
+        "Pardo trusts my eyes. That took two years. Yours is still open for negotiation."
+      ],
+      "appearance_brief": "Adult woman, thirty, lean and alert, dressed for long hours in the saddle rather than for looks.",
+      "art_prompt": "A point rider surveying open country from a low rise, hand shading her eyes, horse and rider both in a working, unglamorous posture.",
+      "continuity_notes": ["Not implemented in scripts/. Background outfit crew, not a recruitable companion."]
+    },
+    {
       "id": "silas_rourke",
       "content_status": "design_only",
       "name": "Silas Rourke",
@@ -364,6 +421,63 @@
       "appearance_brief": "Adult man, late forties, spectacles, sleeves permanently rolled, a bag that has clearly been everywhere.",
       "art_prompt": "A frontier doctor at a cluttered desk of instruments and ledgers, spectacles low on his nose, a half-packed medical bag beside him.",
       "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "gideon_stark",
+      "content_status": "design_only",
+      "name": "Gideon Stark",
+      "age": 63,
+      "role": "One of the last holdouts at Bellhollow, refuses to leave the played-out mining camp",
+      "category": "town",
+      "location_ref": "Bellhollow",
+      "personality": ["stubborn past reason", "not senile, just committed", "knows more about the bell than he'll say plainly"],
+      "hook": "A living source of information about the Bellhollow haunting who won't give a straight answer, per LORE.md's instruction not to write a monster manual -- his evasions are the content, not a lore dump.",
+      "voice_lines": [
+        "Bell rings when it rings. I stopped asking it to explain itself years back.",
+        "This claim paid out once. I'm not fool enough to think it owes me twice, but I'm staying anyway.",
+        "You want the story straight, go ask the bell. It's got as much to say as I do on a bad night."
+      ],
+      "appearance_brief": "Adult man, early sixties, gaunt from a hard decade, clothes patched rather than replaced.",
+      "art_prompt": "An old prospector on the porch of a leaning shack, corncob pipe, watching the collapsed mine workings rather than the viewer. Weathered, stubborn posture.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "the_stark_widow_sister",
+      "content_status": "design_only",
+      "name": "Eulalie Stark",
+      "age": 59,
+      "role": "Gideon's sister, the other Bellhollow holdout",
+      "category": "town",
+      "location_ref": "Bellhollow",
+      "personality": ["more practical than Gideon", "keeps the camp's one lit window lit", "worried but loyal"],
+      "hook": "The reason Bellhollow isn't fully abandoned: she stays because Gideon won't leave, not because she isn't afraid. A more sympathetic entry point into the location than Gideon's stubbornness alone.",
+      "voice_lines": [
+        "He won't leave the claim. I won't leave him. That's the whole arrangement.",
+        "I keep that window lit so he can find his way back from the workings. Some nights that's the only reason he does.",
+        "Ask him about the bell and you'll get a riddle. Ask me and I'll tell you I don't know either, plainly."
+      ],
+      "appearance_brief": "Adult woman, late fifties, practical widow's dress, tired but not broken.",
+      "art_prompt": "A woman in a shack doorway with a lit lamp, looking out toward the dark mine workings, worry rather than fear in her posture.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "the_split_oak_traveler",
+      "content_status": "design_only",
+      "name": "The man from farther west",
+      "age": null,
+      "role": "A recurring, never-named drifter met at Split Oak Camp",
+      "category": "wanderer",
+      "location_ref": "Split Oak Camp",
+      "personality": ["deliberately unnamed and slightly unplaceable", "not unfriendly", "carries news from further than anyone else the outfit meets"],
+      "hook": "This is the rider referenced in LORE.md's rumor list: 'a rider from farther west said the sky over the ocean had been wrong for a week. Nobody here needed the rest of that story.' Written here as a recurring figure specifically so he can be met more than once without a name pinning him down -- per LORE.md, nobody in Clear Fork should ever need or get the rest of that story.",
+      "voice_lines": [
+        "Sky was wrong out past the coast for a week. Didn't ask why. Wasn't going to like the answer.",
+        "I carry news, not opinions about it. Take the first, leave the second.",
+        "Same fire, different trail every time you meet me. That's the arrangement."
+      ],
+      "appearance_brief": "Adult man, indeterminate age, road-worn gear that doesn't obviously belong to any one region.",
+      "art_prompt": "A lone rider at the edge of firelight at Split Oak Camp, face partially in shadow, bedroll and gear that suggest long travel from an unspecified direction. Deliberately keep him slightly harder to pin down than named characters.",
+      "continuity_notes": ["Not implemented in scripts/. Deliberately unnamed -- do not assign him a proper name in a future pass without a specific decision to do so; the anonymity is load-bearing for LORE.md's 'do not name the Japan thing' rule by proxy."]
     },
     {
       "id": "the_ford_widow",
