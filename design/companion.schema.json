@@ -237,6 +237,7 @@
             "enum": [
               "field",
               "camp",
+              "recruited",
               "recruited_passive"
             ]
           },

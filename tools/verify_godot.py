@@ -38,6 +38,8 @@ CHECKS = {
     'snapshot': (['--headless', '--script', 'tools/room_snapshot_test.gd'], r'ROOM SNAPSHOT PASS: typed data, finite positions, encounter consistency and JSON roundtrip'),
     'ines-room': (['--headless', '--script', 'tools/ines_room_test.gd'], r'INES ROOM PASS: unlock, busy guards, distinct clues, explicit recruitment and romance, field warnings, mobile labels, save counts and restore; no rendering'),
     'ines': (['--headless', '--script', 'tools/ines_companion_test.gd'], r'INES COMPANION PASS: distinct clues, one-time trail/recruitment/romance, deferred acceptance, field-only perk, finite madness and atomic strict saves'),
+    'birdie': (['--headless', '--script', 'tools/birdie_test.gd'], r'BIRDIE COMPANION PASS: linear meet/sing/recruit/romance, deferred acceptance, camp-only perk, finite madness and atomic strict saves'),
+    'birdie-room': (['--headless', '--script', 'tools/birdie_room_test.gd'], r'BIRDIE ROOM PASS: unlock, busy guards, meet/sing/recruit sequence, romance, mobile labels, save counts and restore; no rendering'),
     'phase': (['--headless', '--script', 'tools/animation_phase_test.gd'], r'ANIMATION PHASE PASS: unequal holds, directional remapping, cycle boundaries and roundtrip'),
     'state': (['--headless', '--script', 'tools/companion_state_test.gd'], r'COMPANION STATE: \d+ checks, 0 failures'),
     'room': (['--', '--qa'], r'QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture'),

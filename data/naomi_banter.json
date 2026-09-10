@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "character_id": "naomi_freeman",
+  "age": 23,
+  "status": "design_only_not_wired",
+  "events": [
+    {"id":"intro","speaker":"NAOMI","priority":2,"text":"Fast and right aren't the same job. You want right, or you want fast?"},
+    {"id":"axle_fixed","speaker":"NAOMI","priority":2,"text":"That'll outlast the wagon it's bolted to. My father taught me not to sign worse work."},
+    {"id":"recruited","speaker":"NAOMI","priority":2,"text":"Standing work, not a favor. I'll take that arrangement."},
+    {"id":"romance_acknowledged","speaker":"NAOMI","priority":2,"text":"You handed me the hammer back the same way you handed it over. That's not nothing."},
+    {"id":"forge_pride","speaker":"NAOMI","priority":1,"text":"My name's on that forge whether or not the county wants to admit it."}
+  ]
+}

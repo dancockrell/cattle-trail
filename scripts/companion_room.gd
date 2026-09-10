@@ -10,6 +10,8 @@ const LanternEquipment = preload("res://scripts/lantern_equipment.gd")
 const AdaState = preload("res://scripts/ada_companion.gd")
 const InesState = preload("res://scripts/ines_companion.gd")
 const InesRoom = preload("res://scripts/ines_room.gd")
+const BirdieState = preload("res://scripts/birdie_companion.gd")
+const BirdieRoom = preload("res://scripts/birdie_room.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
@@ -25,6 +27,7 @@ var state = State.new()
 var lantern_adventure = LanternAdventure.new()
 var ada_state = AdaState.new()
 var ines_state = InesState.new()
+var birdie_state = BirdieState.new()
 var generated_roster = GeneratedRoster.new()
 var cart_adventure = CartAdventure.new()
 var cart
@@ -33,6 +36,7 @@ var camp_care
 var lantern
 var mechanic
 var ines
+var birdie
 var lantern_equipment: Sprite2D
 
 func sync_lantern_equipment() -> void:
@@ -77,6 +81,7 @@ func _init(owner_room: Control) -> void:
 	cart = CartRoom.new(self)
 	camp_care = CampCare.new(self)
 	ines = InesRoom.new(self)
+	birdie = BirdieRoom.new(self)
 	lantern_equipment = LanternEquipment.new()
 	lantern_equipment.configure(room.eleanor,load("res://assets/lantern/carried_lantern.png"),Vector2(16,8))
 	room.eleanor.add_child(lantern_equipment)
@@ -129,6 +134,7 @@ func switch_character() -> void:
 
 func interact() -> bool:
 	if ines != null and ines.interact(): return true
+	if birdie != null and birdie.interact(): return true
 	if cart != null and cart.interact(): return true
 	if mechanic.interact(): return true
 	if lantern.interact(): return true
@@ -176,6 +182,7 @@ func rest_together() -> void:
 
 func flirt() -> void:
 	if ines != null and ines.flirt(): return
+	if birdie != null and birdie.flirt(): return
 	if cart != null and cart.flirt(): return
 	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
 		tell("As the trail boss, meet Eleanor at the wagon for a quiet moment.")
@@ -212,6 +219,7 @@ func decorate_ui() -> void:
 	if cart != null: cart.decorate_ui()
 	if camp_care != null: camp_care.decorate_ui()
 	if ines != null: ines.decorate_ui()
+	if birdie != null: birdie.decorate_ui()
 
 func save_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
@@ -222,6 +230,7 @@ func save_game(test_path := "") -> bool:
 	data["lantern_adventure"] = lantern_adventure.to_dict()
 	data["ada_companion"] = ada_state.to_dict()
 	data["ines_companion"] = ines_state.to_dict()
+	data["birdie_companion"] = birdie_state.to_dict()
 	data["camp_recovery"] = camp_recovery.to_dict()
 	data["generated_companions"] = generated_roster.to_dict()
 	data["ada_cart_adventure"] = cart_adventure.to_dict()
@@ -246,12 +255,15 @@ func load_game(test_path := "") -> bool:
 	if not restored_ada.load_dict(data.get("ada_companion",restored_ada.to_dict())): return false
 	var restored_ines = InesState.new()
 	if not restored_ines.load_dict(data.get("ines_companion",restored_ines.to_dict())): return false
+	var restored_birdie = BirdieState.new()
+	if not restored_birdie.load_dict(data.get("birdie_companion",restored_birdie.to_dict())): return false
 	var restored_lantern = LanternAdventure.new()
 	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
 	lantern_adventure = restored_lantern
 	ada_state = restored_ada
 	ines_state = restored_ines
+	birdie_state = restored_birdie
 	generated_roster = restored_roster
 	cart_adventure = restored_cart
 	camp_recovery = restored_care
@@ -303,6 +315,7 @@ func load_game(test_path := "") -> bool:
 	mechanic.sync_after_load()
 	cart.sync_after_load()
 	ines.sync_after_load()
+	birdie.sync_after_load()
 	sync_lantern_equipment()
 	tell("Outfit restored. Your companions and completed actions are remembered.")
 	return true

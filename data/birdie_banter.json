@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "birdie_calloway",
+  "age": 20,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"BIRDIE","priority":2,"text":"Didn't mean to walk right up on your fire. I'll move on if you want the quiet back."},
+    {"id":"song","speaker":"BIRDIE","priority":2,"text":"Here. Camp always sounds better with something other than the wind in it."},
+    {"id":"recruited","speaker":"BIRDIE","priority":2,"text":"A place, not a favor. I can cook, and I don't scare at a long day."},
+    {"id":"romance_acknowledged","speaker":"BIRDIE","priority":2,"text":"You asked me to sing again before you asked what was wrong. I noticed that."}
+  ]
+}

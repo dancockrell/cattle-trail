@@ -28,6 +28,8 @@ class Owner extends RefCounted:
 	var ada_state = {"recruitment":"recruited","madness":40.0}
 	var ines_state = {"recruitment":"recruited","party_assignment":"camp","madness":40.0,"romance_acknowledged":false}
 	var ines = {"ines":Node2D.new()}
+	var birdie_state = {"recruitment":"available","madness":40.0}
+	var birdie = {"birdie":Node2D.new()}
 	var mechanic = {"ada":Node2D.new()}
 	var saves := 0
 	func is_eleanor(): return false
@@ -45,6 +47,7 @@ func _initialize():
 	owner.state.madness.player=50.0
 	owner.state.madness.eleanor=40.0
 	owner.ines.ines.position=Vector2(405,105)
+	owner.birdie.birdie.position=Vector2(110,180)
 	owner.mechanic.ada.position=Vector2(220,280)
 	owner.room.player.position=owner.mechanic.ada.position
 	assert(care.rest())
@@ -117,6 +120,7 @@ func _initialize():
 	assert(not care.rest(),"Ines rest requires proximity to her actual actor")
 	owner.room.dispose()
 	owner.ines.ines.free()
+	owner.birdie.birdie.free()
 	owner.mechanic.ada.free()
 	print("CAMP CARE CONTROLLER PASS: Ada rest, shared partner cooldown, Eleanor bonus, staged failure, migration, pending outing, UI reset")
 	quit()

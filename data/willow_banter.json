@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "character_id": "willow_byrne",
+  "age": 24,
+  "status": "design_only_not_wired",
+  "events": [
+    {"id":"intro","speaker":"WILLOW","priority":2,"text":"His partner rode north. Yours rode into your grass. I'll take yours."},
+    {"id":"rustler_partner_driven_off","speaker":"WILLOW","priority":2,"text":"That's one file I get to close honest."},
+    {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Steady pay and a straight answer. I've worked for worse reasons."},
+    {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I don't say things twice, so listen the first time: I'm glad you asked."},
+    {"id":"old_case_mentioned","speaker":"WILLOW","priority":1,"text":"Three counties of paper on one man, and he was already in the ground. Nobody tells you that part."}
+  ]
+}

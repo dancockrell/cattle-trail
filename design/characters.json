@@ -341,6 +341,457 @@
         "duration_target_minutes": 4,
         "tuning_status": "provisional"
       }
+    },
+    {
+      "id": "fina_reyes",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Josefina \"Fina\" Reyes",
+      "age": 21,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Vaquera who broke horses for a bigger outfit before deciding her own rope answered to her alone.",
+        "personality": [
+          "confident",
+          "protective",
+          "quick-tempered",
+          "warm"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Fitted charro-style short jacket over a working blouse, riding skirt or split trousers, wide flat-brimmed hat, braided rawhide reata at the hip, leather chaps for brushy work. Adult athletic confidence and daring PG-13 coverage in period vaquero dress.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A green colt has already thrown two hands at the Calloway Spread; Fina is finishing what they started when the outfit rides through.",
+        "conditions": [
+          "Watch Fina gentle the colt without interfering.",
+          "Offer her a place with better pay and her own say than day work at the Spread.",
+          "Fina accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "vaquera and horse-breaker",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_herd",
+          "label": "Trail Hand",
+          "description": "Reuses the existing rancher-family perk definition rather than authoring a duplicate: extends lasso lead duration once recruited.",
+          "activation": "recruited",
+          "effect": {
+            "stat": "lasso_follow_seconds",
+            "operation": "add",
+            "value": 2,
+            "unit": "extra seconds"
+          },
+          "stacking_group": "lasso_follow_seconds",
+          "stacking_cap": 4,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Watching an animal worked past what it can give.",
+        "support_preference": "Hard riding by day, quiet company by the fire at night."
+      },
+      "recovery_offer": {
+        "id": "fina_reyes_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance, encounter and the Calloway Spread rivalry hook are provisional; see design/LOCATIONS.md.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_grulla_that_would_not_load",
+        "title": "The Grulla That Would Not Load",
+        "controlled_actor_id": "fina_reyes",
+        "objective": "Play as Fina gentling a spooked grulla mare so she'll load into a borrowed stock car, while the protagonist keeps the rest of the string calm outside.",
+        "companion_skill": "Directly playable horse-handling: read the animal's stance and approach at the right pace rather than force her.",
+        "protagonist_support": "The protagonist holds the string and keeps the yard quiet so Fina can work.",
+        "affectionate_payoff": "A shared laugh once the mare finally walks up the ramp, and an offered seat beside Fina on the ride back.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "willow_byrne",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Willow Byrne",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Former bounty tracker who has stopped taking paper on the living and would rather ride escort now.",
+        "personality": [
+          "guarded",
+          "dry-humored",
+          "watchful",
+          "loyal once earned"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Weathered brown duster over a plain shirt and vest, gun belt worn for use rather than show, low-crowned hat pulled down, scuffed boots. Practical PG-13 coverage; nothing decorative that would catch on brush or a saddle horn.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The rustler has a partner Willow has been quietly tracking for three counties; she rides in on the same trouble from the other direction.",
+        "conditions": [
+          "Drive off or capture the rustler's partner without Willow having to do it alone.",
+          "Offer her steady pay and a straight answer about what the outfit actually does.",
+          "Willow accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "gunhand and tracker",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_aim",
+          "label": "Steady Aim",
+          "description": "Extends the player's effective shooting range while Willow is assigned to the field.",
+          "activation": "field",
+          "effect": {
+            "stat": "shot_range_bonus",
+            "operation": "add",
+            "value": 20,
+            "unit": "world pixels"
+          },
+          "stacking_group": "shot_range_bonus",
+          "stacking_cap": 40,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A face she tracked turning out to already be dead.",
+        "support_preference": "Being trusted with the watch rather than talked at about it."
+      },
+      "recovery_offer": {
+        "id": "willow_byrne_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "companion_perks.gd's \"steady_aim\" definition and the \"shot_range_bonus\" stat are new with this record; no combat code currently reads that stat.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "three_counties_behind",
+        "title": "Three Counties Behind",
+        "controlled_actor_id": "willow_byrne",
+        "objective": "Play as Willow reading old sign to find where her original quarry actually went, while the protagonist keeps watch on the camp she left behind.",
+        "companion_skill": "Directly playable tracking: choose the true trail among several false ones read from hoofprints and camp litter.",
+        "protagonist_support": "The protagonist covers her back at the cold camp she is investigating.",
+        "affectionate_payoff": "Closing an old file out loud to someone who actually listens, and a hand held a beat longer than necessary.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "naomi_freeman",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Naomi Freeman",
+      "age": 23,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Freedwoman homesteader and blacksmith who took over her late father's forge and kept its custom.",
+        "personality": [
+          "steady",
+          "proud",
+          "plainspoken",
+          "dry wit"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Heavy canvas work apron over a rolled-sleeve shirt, sturdy trousers, hair tied back and covered against forge sparks, forearms bared from the work. Adult, capable, daring PG-13 coverage suited to smithing rather than riding.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A cracked wagon axle strands the outfit near her homestead forge and she names a fair price to fix it right instead of fast.",
+        "conditions": [
+          "Trust her judgment over a quicker, worse repair.",
+          "Offer standing work rather than a one-time job.",
+          "Naomi accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "blacksmith and wainwright",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "field_repairs",
+          "label": "Sure-Handed Tuning",
+          "description": "Reuses the existing shared repair-efficiency perk definition rather than authoring a duplicate.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being told a woman's forge work needs a man's name on it to count.",
+        "support_preference": "Working alongside someone rather than being fussed over."
+      },
+      "recovery_offer": {
+        "id": "naomi_freeman_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Deliberately reuses the \"field_repairs\" perk id already shared with generated mechanic-family companions, rather than adding a third identical definition (see companion_perks.gd).",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_customers_who_would_not_pay",
+        "title": "The Customers Who Would Not Pay",
+        "controlled_actor_id": "naomi_freeman",
+        "objective": "Play as Naomi facing down two men trying to take a finished wagon wheel without paying, while the protagonist backs her at the door.",
+        "companion_skill": "Directly playable plain talk and a forge hammer held with obvious competence, not violence played for spectacle.",
+        "protagonist_support": "The protagonist stands visibly at her back without taking the argument from her.",
+        "affectionate_payoff": "She hands the protagonist the hammer to hold, which is trust, and says so out loud.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "birdie_calloway",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Birdie Calloway",
+      "age": 20,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Runaway daughter of the Calloway Spread who traded a bigger house for her own say, and sings for her supper along the way.",
+        "personality": [
+          "warm",
+          "playful",
+          "homesick",
+          "stubborn"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. Existing generated sprite in assets/birdie.png and assets/birdie-art.json once produced; currently unapproved.",
+        "outfit_brief": "Simple calico dress with a practical apron for camp work, sleeves rolled, hair loose or in a single braid, no riding gear -- she walks rather than rides. Adult, unpretentious, daring PG-13 coverage suited to camp rather than trail.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She turns up at the edge of camp one evening, having walked off the Calloway Spread rather than marry where she was told to.",
+        "conditions": [
+          "Talk with her once to hear why she left.",
+          "Talk with her again after she has sung at the fire and the camp is easier for it.",
+          "Offer her a place; Birdie accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "camp cook and singer",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation. This is the companion actually wired into scripts/ this pass -- see continuity_notes."
+      },
+      "perks": [
+        {
+          "id": "camp_song",
+          "label": "Camp Song",
+          "description": "Adds to the shared camp madness-recovery bonus alongside Eleanor's Steady Company, under the same stat cap.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 2,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being told what she is going to do with her own life.",
+        "support_preference": "Being asked to sing rather than being asked what is wrong."
+      },
+      "recovery_offer": {
+        "id": "birdie_calloway_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": false,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Deliberately estranged daughter of the Calloway Spread (design/LOCATIONS.md), a story hook for later rivalry or reconciliation content; not resolved by this record.",
+        "This is the one new companion actually implemented this pass: scripts/birdie_companion.gd and scripts/birdie_room.gd give her a stationary meet-hear-recruit conversation (no puzzle, no visible actor yet pending art). Verified with `python tools/verify_godot.py birdie birdie-room`.",
+        "romance_adventure below is not yet built; only recruitment, camp rest and flirt are live."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_song_her_mother_taught_her",
+        "title": "The Song Her Mother Taught Her",
+        "controlled_actor_id": "birdie_calloway",
+        "objective": "Play as Birdie teaching the protagonist a half-remembered song around the fire, filling gaps in the words together.",
+        "companion_skill": "Directly playable call-and-response singing rather than a dialogue tree.",
+        "protagonist_support": "The protagonist gets the verses wrong on purpose at least once, which is part of the point.",
+        "affectionate_payoff": "Finishing the song together and a moment neither one names out loud.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
     }
   ],
   "procedural_template": {
