@@ -15,7 +15,7 @@ extends RefCounted
 const ROWS := [
 	{
 		"id": "delphine_cruz", "speaker": "DELPHINE", "age": 24, "perk_id": "trail_company",
-		"position_x": 480.0, "position_y": 150.0, "near_radius": 36.0,
+		"position_x": 571.0, "position_y": 294.0, "near_radius": 36.0,
 		"banter_path": "res://data/delphine_banter.json",
 		"meet_beat": "intro", "task_beat": "won_fairly", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "DELPHINE, 24 / Beat her fairly at a hand of cards to earn her respect.",
@@ -43,7 +43,7 @@ const ROWS := [
 	},
 	{
 		"id": "prisca_montaigne", "speaker": "PRISCA", "age": 24, "perk_id": "trail_company",
-		"position_x": 520.0, "position_y": 240.0, "near_radius": 36.0,
+		"position_x": 460.0, "position_y": 279.0, "near_radius": 36.0,
 		"banter_path": "res://data/prisca_banter.json",
 		"meet_beat": "intro", "task_beat": "facts_verified", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "PRISCA, 24 / Confirm the outfit's actual story so she can print the true version.",
@@ -71,7 +71,7 @@ const ROWS := [
 	},
 	{
 		"id": "louisa_okoye", "speaker": "LOUISA", "age": 22, "perk_id": "trail_company",
-		"position_x": 600.0, "position_y": 150.0, "near_radius": 36.0,
+		"position_x": 280.0, "position_y": 294.0, "near_radius": 36.0,
 		"banter_path": "res://data/louisa_banter.json",
 		"meet_beat": "intro", "task_beat": "lesson_given", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "LOUISA, 22 / Volunteer an outfit hand to learn his letters.",
@@ -85,7 +85,7 @@ const ROWS := [
 	},
 	{
 		"id": "faustina_achebe", "speaker": "FAUSTINA", "age": 23, "perk_id": "trail_company",
-		"position_x": 280.0, "position_y": 320.0, "near_radius": 36.0,
+		"position_x": 70.0, "position_y": 156.0, "near_radius": 36.0,
 		"banter_path": "res://data/faustina_banter.json",
 		"meet_beat": "intro", "task_beat": "hives_recovered", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "FAUSTINA, 23 / Help her recover hives a storm knocked loose.",
@@ -99,7 +99,7 @@ const ROWS := [
 	},
 	{
 		"id": "constance_whitlock", "speaker": "CONSTANCE", "age": 27, "perk_id": "trail_company",
-		"position_x": 600.0, "position_y": 320.0, "near_radius": 36.0,
+		"position_x": 472.0, "position_y": 201.0, "near_radius": 36.0,
 		"banter_path": "res://data/constance_banter.json",
 		"meet_beat": "intro", "task_beat": "error_found", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "CONSTANCE, 27 / Let her find the error in the outfit's own books.",
@@ -141,7 +141,7 @@ const ROWS := [
 	},
 	{
 		"id": "modesty_kane", "speaker": "MODESTY", "age": 23, "perk_id": "trail_company",
-		"position_x": 150.0, "position_y": 320.0, "near_radius": 36.0,
+		"position_x": 106.0, "position_y": 294.0, "near_radius": 36.0,
 		"banter_path": "res://data/modesty_banter.json",
 		"meet_beat": "intro", "task_beat": "plate_developed", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "MODESTY, 23 / Sit still for a photograph and mind her equipment through the trouble that follows.",
@@ -155,7 +155,7 @@ const ROWS := [
 	},
 	{
 		"id": "clementine_osei", "speaker": "CLEMENTINE", "age": 28, "perk_id": "trail_company",
-		"position_x": 380.0, "position_y": 92.0, "near_radius": 36.0,
+		"position_x": 283.0, "position_y": 219.0, "near_radius": 36.0,
 		"banter_path": "res://data/clementine_banter.json",
 		"meet_beat": "intro", "task_beat": "emergency_handled", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "CLEMENTINE, 28 / Give her a steady pair of hands during an actual medical emergency.",
@@ -183,7 +183,7 @@ const ROWS := [
 	},
 	{
 		"id": "delia_marsh", "speaker": "DELIA", "age": 25, "perk_id": "steady_aim",
-		"position_x": 436.0, "position_y": 296.0, "near_radius": 36.0,
+		"position_x": 391.0, "position_y": 294.0, "near_radius": 36.0,
 		"banter_path": "res://data/delia_banter.json",
 		"meet_beat": "intro", "task_beat": "fair_deal_shown", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "DELIA, 25 / Prove the outfit deals fairer than Hargrove does, in front of her.",
@@ -197,7 +197,7 @@ const ROWS := [
 	},
 	{
 		"id": "rilla_sorrel", "speaker": "RILLA", "age": 22, "perk_id": "field_repairs",
-		"position_x": 60.0, "position_y": 132.0, "near_radius": 36.0,
+		"position_x": 214.0, "position_y": 168.0, "near_radius": 36.0,
 		"banter_path": "res://data/rilla_banter.json",
 		"meet_beat": "intro", "task_beat": "rifle_diagnosed", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "RILLA, 22 / Bring her the jammed rifle and pay her fair asking price without haggling.",
@@ -211,7 +211,7 @@ const ROWS := [
 	},
 	{
 		"id": "nell_corrigan", "speaker": "NELL", "age": 26, "perk_id": "camp_song",
-		"position_x": 216.0, "position_y": 92.0, "near_radius": 36.0,
+		"position_x": 415.0, "position_y": 234.0, "near_radius": 36.0,
 		"banter_path": "res://data/nell_banter.json",
 		"meet_beat": "intro", "task_beat": "supper_sat_through", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "NELL, 26 / Sit through supper and don't flinch when the bell rings on its own.",
@@ -225,7 +225,7 @@ const ROWS := [
 	},
 	{
 		"id": "fina_reyes", "speaker": "FINA", "age": 21, "perk_id": "steady_herd",
-		"position_x": 540.0, "position_y": 92.0, "near_radius": 36.0,
+		"position_x": 337.0, "position_y": 177.0, "near_radius": 36.0,
 		"banter_path": "res://data/fina_banter.json",
 		"meet_beat": "intro", "task_beat": "colt_gentled", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "FINA, 21 / Watch her gentle the green colt without stepping in, then offer her better pay and her own say.",
@@ -252,7 +252,7 @@ const ROWS := [
 	},
 	{
 		"id": "naomi_freeman", "speaker": "NAOMI", "age": 23, "perk_id": "field_repairs",
-		"position_x": 596.0, "position_y": 228.0, "near_radius": 36.0,
+		"position_x": 517.0, "position_y": 267.0, "near_radius": 36.0,
 		"banter_path": "res://data/naomi_banter.json",
 		"meet_beat": "intro", "task_beat": "repair_trusted", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
 		"meet_message": "NAOMI, 23 / Trust her judgment on the cracked axle over a quicker, worse repair.",

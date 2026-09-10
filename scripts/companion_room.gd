@@ -15,6 +15,7 @@ const BirdieRoom = preload("res://scripts/birdie_room.gd")
 const SimpleState = preload("res://scripts/simple_companion_state.gd")
 const SimpleRoom = preload("res://scripts/simple_companion_room.gd")
 const SimpleCatalog = preload("res://scripts/simple_companion_catalog.gd")
+const CompanionActors = preload("res://scripts/companion_actors.gd")
 const MechanicRoom = preload("res://scripts/mechanic_room.gd")
 const GeneratedRoster = preload("res://scripts/generated_companion_roster.gd")
 const Perks = preload("res://scripts/companion_perks.gd")
@@ -43,6 +44,7 @@ var mechanic
 var ines
 var birdie
 var simple_companions: Array = [] # Array of {"id":String,"state":SimpleState,"room":SimpleRoom}
+var companion_actors
 var lantern_equipment: Sprite2D
 
 func sync_lantern_equipment() -> void:
@@ -102,6 +104,10 @@ func _init(owner_room: Control) -> void:
 		runtime_config["position"] = SimpleCatalog.position_for(row)
 		var s_room = SimpleRoom.new(self, runtime_config, s_state)
 		simple_companions.append({"id": row.id, "state": s_state, "room": s_room})
+	# Draw the simple companions. Without this they are coordinates the player
+	# walks to and nothing is on screen where they stand.
+	companion_actors = CompanionActors.new()
+	companion_actors.populate(room, SimpleCatalog.ROWS)
 	lantern_equipment = LanternEquipment.new()
 	lantern_equipment.configure(room.eleanor,load("res://assets/lantern/carried_lantern.png"),Vector2(16,8))
 	room.eleanor.add_child(lantern_equipment)

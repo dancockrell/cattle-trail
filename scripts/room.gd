@@ -8,6 +8,42 @@ const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
 const LEAD_SECONDS := 18.0
+## The beaten rustler waits instead of running. Every row below is a durable
+## difference the player can see afterwards: money, whether he is still on this
+## ground, and whether the outfit is feeding him. Order is the button order.
+const RUSTLER_CHOICES := ["loose", "law", "hire"]
+const RUSTLER_FATES := {
+	"loose": {
+		"label": "Turn Him Loose",
+		"short": "Loose",
+		"cash": 0,
+		"present": false,
+		"hired": false,
+		"rustler_line": "Then I walk. You will not see me on this water again.",
+		"journal": "You let him keep his boots and nothing else. He walks off and does not look back. That is the last of him.",
+		"eleanor_line": "Eleanor: You turned him loose. Some other outfit gets that argument.",
+	},
+	"law": {
+		"label": "Rope Him for the Law",
+		"short": "Law",
+		"cash": 25,
+		"present": true,
+		"hired": false,
+		"rustler_line": "Rope, then. I would sooner see Griffin than this grass.",
+		"journal": "You tie his hands and sit him where you can watch him. He rides to Griffin when the wagon does. The county pays $25 for the trouble.",
+		"eleanor_line": "Eleanor: The county has him. That is one letter I do not have to write.",
+	},
+	"hire": {
+		"label": "Hire Him On",
+		"short": "Hired",
+		"cash": -10,
+		"present": true,
+		"hired": true,
+		"rustler_line": "Wages? I will take wages. I know where your strays go.",
+		"journal": "You feed him and put him on the book. Ten dollars for a saddle and a meal, and one more hand on the outfit.",
+		"eleanor_line": "Eleanor: You hired the man who was stealing from us. He rides drag until I say different.",
+	},
+}
 var ride_speed := 32.0
 var manifest: Dictionary
 var world: Node2D
@@ -47,6 +83,13 @@ var shot_time := 0.0
 var shot_cooldown := 0.0
 var elapsed := 0.0
 var escaped := false
+## Set when he gives up and waits. rustler_fate stays empty until the player
+## says what happens to him; it is the durable record of that decision.
+var rustler_surrendered := false
+var rustler_fate := ""
+var rustler_hired := false
+var rustler_present := true
+var choice_buttons: Array = []
 var qa_mode := false
 var qa_done := false
 var pending_lasso: Node2D
@@ -204,6 +247,8 @@ func _process(delta: float) -> void:
 func say_once(beat: String, actor: Node2D, name_text: String, line: String, importance := 0) -> void:
 	if bot != null: bot.record_line(name_text, line)
 	if spoken_beats.has(beat): return
+	# A room built without its bubble (headless checks) still runs its logic.
+	if not is_instance_valid(speech): return
 	var height := 62 if actor==player else 42
 	if speech.say(actor,name_text,line,height,importance):
 		spoken_beats[beat] = true
@@ -269,26 +314,74 @@ func build_ui() -> void:
 	buttons.add_theme_constant_override("v_separation", 6)
 	add_child(buttons)
 	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Companion [Tab]", switch_companion], ["Rest [G]", rest_companion], ["Reset [R]", reset_room]]:
-		var button := Button.new()
-		button.text = entry[0]
-		button.custom_minimum_size = Vector2(80, 46)
-		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		button.add_theme_stylebox_override("normal", panel_style())
-		button.add_theme_stylebox_override("hover", panel_style())
-		button.add_theme_stylebox_override("pressed", panel_style())
-		button.add_theme_stylebox_override("disabled", panel_style())
-		button.add_theme_font_size_override("font_size", 17)
-		button.add_theme_color_override("font_color", Color("382413"))
-		button.add_theme_color_override("font_disabled_color", Color("382413"))
-		button.add_theme_color_override("font_hover_color", Color("94451d"))
-		button.add_theme_color_override("font_pressed_color", Color("94451d"))
-		button.focus_mode = Control.FOCUS_NONE
+		var button := make_button(entry[0])
 		button.pressed.connect(entry[1])
 		buttons.add_child(button)
 
+func make_button(label: String) -> Button:
+	var button := Button.new()
+	button.text = label
+	button.custom_minimum_size = Vector2(80, 46)
+	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	button.add_theme_stylebox_override("normal", panel_style())
+	button.add_theme_stylebox_override("hover", panel_style())
+	button.add_theme_stylebox_override("pressed", panel_style())
+	button.add_theme_stylebox_override("disabled", panel_style())
+	button.add_theme_font_size_override("font_size", 17)
+	button.add_theme_color_override("font_color", Color("382413"))
+	button.add_theme_color_override("font_disabled_color", Color("382413"))
+	button.add_theme_color_override("font_hover_color", Color("94451d"))
+	button.add_theme_color_override("font_pressed_color", Color("94451d"))
+	button.focus_mode = Control.FOCUS_NONE
+	return button
+
+## The choice row lives after the six standing controls, so every existing
+## index into buttons (companion_room.decorate_ui, the phone labels below)
+## keeps meaning what it meant.
+func build_choice_buttons() -> void:
+	if not is_instance_valid(buttons) or not choice_buttons.is_empty(): return
+	for index in range(RUSTLER_CHOICES.size()):
+		var choice: String = RUSTLER_CHOICES[index]
+		var button := make_button("%d. %s" % [index + 1, RUSTLER_FATES[choice].label])
+		button.disabled = qa_mode
+		button.pressed.connect(choose_rustler.bind(choice))
+		buttons.add_child(button)
+		choice_buttons.append(button)
+	layout_ui()
+
+## Hidden rather than freed: choose_rustler runs inside the pressed signal of
+## one of these buttons, and the row costs nothing once it is out of the
+## layout. Invisible children are skipped by the grid and by bot_api.
+func hide_choice_buttons() -> void:
+	for button in choice_buttons:
+		if not is_instance_valid(button): continue
+		button.visible = false
+		button.disabled = true
+	if is_instance_valid(buttons): layout_ui()
+
+func choice_row_visible() -> bool:
+	for button in choice_buttons:
+		if is_instance_valid(button) and button.visible: return true
+	return false
+
+## The grid lays out visible children only, so the row arithmetic below has to
+## count the same way or it reserves height for a row nobody can see.
+func visible_control_count() -> int:
+	if not is_instance_valid(buttons): return 6
+	var count := 0
+	for button in buttons.get_children():
+		if button.visible: count += 1
+	return maxi(count,1)
+
 func layout_ui() -> void:
 	if not is_instance_valid(view): return
-	var available := Vector2(size.x, maxf(80,size.y - (326 if size.x<600 else 270)))
+	var columns := 2 if size.x < 600 else 6
+	var control_count: int = visible_control_count()
+	var control_rows: int = int(ceil(float(maxi(control_count,1)) / float(columns)))
+	# The choice row is real height. Give the world view less room while it is
+	# on screen instead of letting a button land past the bottom of the window.
+	var extra_rows: int = maxi(0, control_rows - (3 if size.x < 600 else 1))
+	var available := Vector2(size.x, maxf(80,size.y - (326 if size.x<600 else 270) - extra_rows*52))
 	var ratio := minf(available.x / WORLD.x, available.y / WORLD.y)
 	# Whole-number enlargement; fractional reduction only when a phone cannot fit 640 pixels.
 	var zoom := floorf(ratio) if ratio >= 1.0 else ratio
@@ -309,14 +402,21 @@ func layout_ui() -> void:
 	journal.size = Vector2(width - 28, 68 if size.x<600 else 57)
 	journal.add_theme_font_size_override("font_size", 14 if size.x < 600 else 16)
 	objective.add_theme_font_size_override("font_size", 16 if size.x < 600 else 18)
-	buttons.position = Vector2(left, paper.position.y + paper.size.y + 9)
-	buttons.columns = 2 if size.x < 600 else 6
-	buttons.size = Vector2(width, 150 if size.x < 600 else 46)
+	buttons.columns = columns
+	# Labels and font first: a Control never shrinks below the minimum size it
+	# had when its size was assigned, and the desktop labels are wider.
 	for button in buttons.get_children():
 		button.add_theme_font_size_override("font_size", 13 if size.x < 600 else 17)
 		var index: int = button.get_index()
-		button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [R]"][index]
+		var choice_index: int = choice_buttons.find(button)
+		if choice_index >= 0:
+			var fate: Dictionary = RUSTLER_FATES[RUSTLER_CHOICES[choice_index]]
+			button.text = "%d. %s" % [choice_index + 1, fate.short if size.x < 600 else fate.label]
+		elif index < 6:
+			button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [R]"][index]
 		button.custom_minimum_size.x = 0 if size.x < 600 else 80
+	buttons.position = Vector2(left, paper.position.y + paper.size.y + 9)
+	buttons.size = Vector2(width, control_rows*46 + maxi(0,control_rows-1)*6)
 
 func update_render_density(display_zoom: float) -> void:
 	if not is_instance_valid(viewport): return
@@ -346,6 +446,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.keycode == KEY_F5 and companion != null: companion.save_game()
 	if event.keycode == KEY_F9 and companion != null: companion.load_game()
 	if event.keycode == KEY_K: get_tree().change_scene_to_file("res://scenes/kit_browser.tscn")
+	for index in range(RUSTLER_CHOICES.size()):
+		if event.keycode == KEY_1 + index: choose_rustler(RUSTLER_CHOICES[index])
 
 func keyboard() -> Vector2:
 	return Vector2(float(Input.is_physical_key_pressed(KEY_D) or Input.is_physical_key_pressed(KEY_RIGHT)) - float(Input.is_physical_key_pressed(KEY_A) or Input.is_physical_key_pressed(KEY_LEFT)), float(Input.is_physical_key_pressed(KEY_S) or Input.is_physical_key_pressed(KEY_DOWN)) - float(Input.is_physical_key_pressed(KEY_W) or Input.is_physical_key_pressed(KEY_UP)))
@@ -454,7 +556,7 @@ func _physics_process(delta: float) -> void:
 	if not won and talked and secured_count() == 6 and not rustler_active:
 		won = true
 		cash += 60
-		message = "Eleanor: All six accounted for. Clear Fork is behind us. +$60"
+		message = "All six accounted for. +$60  " + eleanor_closing_line()
 		if companion != null: companion.say_event("all_cattle_safe","room_complete")
 	refresh()
 	if qa_mode and not qa_done and elapsed > 0.3:
@@ -579,7 +681,9 @@ func on_player_action_event(event_name: String) -> void:
 		hits += 1
 		endpoint = rustler.position + Vector2(0,-20)
 		message = "The rustler flinches. One more shot will send him running."
-		if hits >= 2: clear_rustler("Two shots send the rustler running. Bring the herd east.")
+		if hits >= 2: rustler_surrenders("The second shot puts him on his knees with his hands up. He waits on your word.")
+	elif rustler_choice_pending() and player.position.distance_to(rustler.position) < 190:
+		message = "He is already beaten and waiting. Say what happens to him."
 	else:
 		message = "The shot goes wide. Get within range of the rustler."
 	shot.points = PackedVector2Array([origin, endpoint])
@@ -593,7 +697,7 @@ func catch_rope(caught: Node2D) -> void:
 	elif caught == rustler and rustler_active:
 		rope_target = caught
 		rope_time = 0.7
-		clear_rustler("Your loop catches his gun arm. The rustler flees.")
+		rustler_surrenders("Your loop takes his gun arm and he quits fighting it. He waits on your word.")
 	elif caught in cows and not caught.secured:
 		rope_target = caught
 		rope_time = LEAD_SECONDS + (companion.field_perk("lasso_follow_seconds") if companion != null else 0.0)
@@ -651,23 +755,71 @@ func append_rope_loop(points: PackedVector2Array, center: Vector2, radius: Vecto
 		var angle := float(i)/16.0*TAU
 		points.append((center+Vector2(cos(angle)*radius.x,sin(angle)*radius.y)).round())
 
-func clear_rustler(text: String) -> void:
+## He is beaten, not gone. rustler_active drops here so the herd can be
+## gathered whatever the player decides, and the decision stays open until it
+## is made. A player who shoots twice and rides off still finishes the room.
+func rustler_surrenders(text: String) -> void:
 	if not rustler_active: return
 	if companion != null:
 		companion.state.add_madness("player",8)
 		companion.state.add_madness("rustler",20)
-	say_once("rustler_retreat",rustler,"RUSTLER","All right! Keep your cattle!",1)
-	rustler.action("yield_southwest",Vector2(-1,1))
+	say_once("rustler_retreat",rustler,"RUSTLER","All right! I am done. Do not shoot.",1)
+	if is_instance_valid(rustler): rustler.action("yield_southwest",Vector2(-1,1))
 	rustler_active = false
-	escaped = true
-	cash += 18
+	rustler_surrendered = true
+	escaped = false
 	message = text
+	build_choice_buttons()
 	refresh()
+
+func rustler_choice_pending() -> bool:
+	return rustler_surrendered and rustler_fate == ""
+
+## Pure lookup so the outcomes can be compared without a running room.
+static func rustler_fate_for(choice: String) -> Dictionary:
+	if not RUSTLER_FATES.has(choice): return {}
+	return (RUSTLER_FATES[choice] as Dictionary).duplicate(true)
+
+## The one place a fate is applied. Returns false when there is nothing to
+## decide, so a stray press cannot pay a second bounty.
+func choose_rustler(choice: String) -> bool:
+	if not rustler_choice_pending(): return false
+	var fate := rustler_fate_for(choice)
+	if fate.is_empty(): return false
+	rustler_fate = choice
+	cash += int(fate.cash)
+	rustler_hired = bool(fate.hired)
+	rustler_present = bool(fate.present)
+	message = str(fate.journal)
+	if is_instance_valid(speech) and is_instance_valid(rustler):
+		say_once("rustler_fate_"+choice,rustler,"RUSTLER",str(fate.rustler_line),1)
+	if is_instance_valid(rustler):
+		if rustler_present:
+			rustler.visible = true
+			rustler.pose(false,Vector2.LEFT)
+		else:
+			# He walks himself off the ground on the existing exit path.
+			escaped = true
+	hide_choice_buttons()
+	refresh()
+	return true
+
+## Observable outcome for saves, the bot and tests.
+func rustler_outcome() -> Dictionary:
+	return {"fate":rustler_fate,"hired":rustler_hired,"present":rustler_present,
+		"surrendered":rustler_surrendered,"pending":rustler_choice_pending()}
+
+func eleanor_closing_line() -> String:
+	if rustler_fate != "": return str(RUSTLER_FATES[rustler_fate].eleanor_line)
+	if rustler_surrendered: return "Eleanor: That rustler is still sitting out there waiting on you. Say your piece."
+	return "Eleanor: Clear Fork is behind us."
 
 func refresh() -> void:
 	if not is_instance_valid(stats): return
 	stats.text = "$%d    CATTLE %d/6    AMMO %d    %s" % [cash,secured_count(),ammo,companion.clock_label() if companion != null else "Day 1 12:00"]
 	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
+	if rustler_choice_pending():
+		objective.text = "RUSTLER BEATEN  /  Say what happens to him  /  Loose, law, or wages"
 	if not won and rope_time > 0 and rope_target in cows:
 		objective.text = "STEER ROPED  /  %.1fs remaining  /  Ride toward the east gathering" % rope_time
 	journal.text = message
@@ -1053,6 +1205,32 @@ func run_qa() -> void:
 	shoot()
 	await get_tree().create_timer(0.5).timeout
 	assert(not rustler_active and ammo == 4)
+	# The beaten rustler waits for a decision, and the decision is the player's.
+	assert(rustler_surrendered and rustler_choice_pending(), "Two hits must end in a surrender, not a disappearance")
+	assert(choice_row_visible() and choice_buttons.size() == RUSTLER_CHOICES.size(), "Every fate must be offered on screen")
+	# The choice row adds a row of controls. Prove it fits a phone while it is
+	# actually on screen, which the end-of-run phone check cannot: by then the
+	# decision is made and the row is gone.
+	var desktop_window := get_window().size
+	get_window().size = Vector2i(390,844)
+	await get_tree().create_timer(0.2).timeout
+	var offered := 0
+	for button in buttons.get_children():
+		if not button.visible: continue
+		offered += 1
+		var rect: Rect2 = button.get_global_rect()
+		if rect.end.x > size.x or rect.end.y > size.y:
+			print("CHOICE ROW QA: ", button.text, " rect=", rect, " window=", size, " grid=", buttons.get_global_rect())
+		assert(rect.end.x <= size.x and rect.end.y <= size.y, "The choice row must fit a phone window")
+	assert(offered == 6 + RUSTLER_CHOICES.size(), "Standing controls and every fate must be reachable at once")
+	get_window().size = desktop_window
+	await get_tree().create_timer(0.2).timeout
+	var cash_before_choice: int = cash
+	assert(choose_rustler("nonsense") == false and rustler_choice_pending(), "Only authored fates resolve the encounter")
+	assert(choose_rustler("law"), "The law option must resolve a pending encounter")
+	assert(cash == cash_before_choice + 25 and rustler_present and not rustler_hired)
+	assert(not choose_rustler("hire") and cash == cash_before_choice + 25, "A settled fate cannot be paid twice")
+	assert(not choice_row_visible(), "The choice row leaves once the decision is made")
 	player.position = cows[0].position - Vector2(45, 0)
 	lasso()
 	if player.directional: assert(pending_lasso == cows[0], "Lasso must wind up before attachment")
@@ -1088,7 +1266,8 @@ func run_qa() -> void:
 		rope_time = 0
 	await get_tree().physics_frame
 	await get_tree().physics_frame
-	assert(won and cash == 420)
+	assert(won and cash == 427, "Start 342, the county's 25 for the rustler, 60 for the herd")
+	assert(message.contains(RUSTLER_FATES.law.eleanor_line), "Eleanor closes on the fate the player chose")
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("res://room-complete.png")
 	get_window().size = Vector2i(390,844)
@@ -1096,8 +1275,14 @@ func run_qa() -> void:
 	for width in [360,390]:
 		get_window().size = Vector2i(width,844)
 		await get_tree().create_timer(0.15).timeout
+		var measured := 0
 		for button in buttons.get_children():
+			# A hidden button keeps its last rect and is not on screen; the
+			# claim is about controls a thumb can reach.
+			if not button.visible: continue
+			measured += 1
 			assert(button.get_global_rect().end.x <= size.x and button.get_global_rect().end.y <= size.y, "Phone controls must fit in the window")
+		assert(measured >= 6, "Phone control check must actually measure the standing controls")
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("res://room-phone.png")
 	print("QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture")

@@ -1,0 +1,291 @@
+{
+ "version": 1,
+ "note": "Which extracted character variant stands in for each simple companion. Static idle art from kits/character-families; anchor is bottom-center in source pixels.",
+ "companions": {
+  "delphine_cruz": {
+   "variant": "mechanic_17",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  },
+  "cleo_bannister": {
+   "variant": "spirit_scout_17",
+   "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+   "rect": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "spirit-scout"
+  },
+  "prisca_montaigne": {
+   "variant": "mechanic_18",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    64,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  },
+  "winnie_doyle": {
+   "variant": "rancher_17",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    0,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "louisa_okoye": {
+   "variant": "rancher_18",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    64,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "faustina_achebe": {
+   "variant": "spirit_scout_18",
+   "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+   "rect": [
+    64,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "spirit-scout"
+  },
+  "constance_whitlock": {
+   "variant": "rancher_19",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    128,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "beatrix_lowe": {
+   "variant": "rancher_20",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    192,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "roisin_dunmore": {
+   "variant": "mechanic_19",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    128,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  },
+  "modesty_kane": {
+   "variant": "spirit_scout_19",
+   "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+   "rect": [
+    128,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "spirit-scout"
+  },
+  "clementine_osei": {
+   "variant": "spirit_scout_20",
+   "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+   "rect": [
+    192,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "spirit-scout"
+  },
+  "sable_quinn": {
+   "variant": "rancher_21",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    0,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "delia_marsh": {
+   "variant": "rancher_22",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    64,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "rilla_sorrel": {
+   "variant": "mechanic_20",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    192,
+    0,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  },
+  "nell_corrigan": {
+   "variant": "spirit_scout_21",
+   "atlas": "res://kits/character-families/spirit-scout/batch02/atlas.png",
+   "rect": [
+    0,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "spirit-scout"
+  },
+  "fina_reyes": {
+   "variant": "rancher_23",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    128,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "willow_byrne": {
+   "variant": "rancher_24",
+   "atlas": "res://kits/character-families/rancher/batch02/atlas.png",
+   "rect": [
+    192,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "rancher"
+  },
+  "naomi_freeman": {
+   "variant": "mechanic_21",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    0,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  },
+  "ottilie_braun": {
+   "variant": "mechanic_22",
+   "atlas": "res://kits/character-families/mechanic/batch02/atlas.png",
+   "rect": [
+    64,
+    64,
+    64,
+    64
+   ],
+   "anchor": [
+    32,
+    61
+   ],
+   "family": "mechanic"
+  }
+ }
+}

@@ -58,6 +58,42 @@ func _say(beat_key: String) -> void:
 	if event_id != "" and is_instance_valid(actor) and remarks.has(event_id):
 		owner.room.say_once(config.id+"_"+event_id,actor,config.speaker,remarks[event_id],2)
 
+## Her authored words for a beat, "" if the row names no beat or the banter
+## file has no such id.
+func beat_line(beat_key: String) -> String:
+	var event_id: String = str(config.get(beat_key,""))
+	if event_id == "": return ""
+	return str(remarks.get(event_id,""))
+
+## The one rule for getting a beat in front of the player, and the reason this
+## is a function rather than four call sites.
+##
+## A speech bubble needs a sprite actor to hang on, and these rows are
+## art-optional by design (see _sync_view) -- nineteen of them have no bundle
+## on disk, so _say() is a no-op for the whole cast and always will be until
+## art exists. The journal (room.message, via owner.tell) needs no art and is
+## where most of this game's prose already reaches the player, so it is the
+## floor: every beat lands there whether or not a bubble was possible.
+##
+## The *_message rows are status summaries -- what changed -- and the banter
+## file is the writing in her own voice. They are not alternatives, so both go
+## out, summary first then her line quoted the way room.gd already quotes
+## Eleanor ("SPEAKER: ..."). Neither silently replaces the other.
+func journal_line(beat_key: String, message_key: String) -> String:
+	var status: String = str(config.get(message_key,""))
+	var spoken := beat_line(beat_key)
+	if spoken == "":
+		# Three states, not two: a beat that fired with nothing to say must say
+		# so out loud rather than blanking the journal, or a missing line is
+		# indistinguishable from a beat that never fired.
+		return status if status != "" else "%s says nothing here (%s has no line)." % [str(config.get("speaker","She")), beat_key]
+	var quoted: String = str(config.get("speaker","")) + ": " + spoken
+	return quoted if status == "" else status + "  " + quoted
+
+func _beat(beat_key: String, message_key: String) -> void:
+	_say(beat_key)
+	_changed(journal_line(beat_key,message_key))
+
 func task_kind() -> String:
 	var kind: String = str(config.get("task_kind","talk"))
 	return kind if kind in TASK_KINDS else "talk"
@@ -153,8 +189,7 @@ func interact() -> bool:
 	if _busy(): return true
 	if not state.met:
 		state.meet()
-		_say("meet_beat")
-		_changed(config.get("meet_message",""))
+		_beat("meet_beat","meet_message")
 	elif not state.task_done:
 		var want := task_requirement()
 		if not want.ok:
@@ -162,12 +197,10 @@ func interact() -> bool:
 			return true
 		if state.complete_task().get("ok",false):
 			_charge_task()
-			_say("task_beat")
-			_changed(config.get("task_message",""))
+			_beat("task_beat","task_message")
 	elif state.recruitment != "recruited":
 		if state.invite(true).get("ok",false):
-			_say("recruited_beat")
-			_changed(config.get("recruited_message",""))
+			_beat("recruited_beat","recruited_message")
 	else:
 		owner.tell(config.get("idle_message","She's glad to be along."))
 	return true
@@ -176,8 +209,7 @@ func flirt() -> bool:
 	if not _available() or not _near_npc(): return false
 	if _busy(): return true
 	if state.acknowledge_romance(true).get("ok",false):
-		_say("romance_beat")
-		_changed(config.get("romance_message",""))
+		_beat("romance_beat","romance_message")
 	else:
 		owner.tell(config.get("romance_repeat_message","She's already given you that answer.") if state.romance_acknowledged else config.get("romance_too_soon_message","Not yet. Finish getting to know her first."))
 	return true

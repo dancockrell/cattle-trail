@@ -81,6 +81,51 @@ func attempt_task(owner: Owner, row: Dictionary) -> Dictionary:
 	return {"done": controller.state.task_done, "line": owner.last_line, "goal": goal,
 		"spent": cash_before-owner.room.cash, "saved": owner.saves-saves_before}
 
+## The property, not the mechanism. The old catalog-vs-banter check below
+## proves every beat id resolves; it passed for months while the romance beat
+## put nothing on screen for anybody, because "the id exists" and "the player
+## reads the words" are different claims. This drives the real sequence and
+## reads back what the journal actually holds.
+##
+## Authored text is loaded straight from the banter file rather than from the
+## controller's own remarks dict, so this compares the shipped writing against
+## the running game and not the code against itself.
+func authored_lines(row: Dictionary) -> Dictionary:
+	var source: Variant = JSON.parse_string(FileAccess.get_file_as_string(row.banter_path))
+	assert(source is Dictionary and source.get("events") is Array, "Malformed banter file for %s" % row.id)
+	var by_id := {}
+	for event in source.events:
+		if event.get("speaker") == row.speaker: by_id[event.id] = str(event.text)
+	var out := {}
+	for beat_key in ["meet_beat","task_beat","recruited_beat","romance_beat"]:
+		assert(by_id.has(row[beat_key]), "%s has no line for %s in %s" % [row.id, beat_key, row.banter_path])
+		out[beat_key] = by_id[row[beat_key]]
+	return out
+
+## Meet, task, recruit, flirt -- the whole arc a player walks -- returning what
+## the journal held after each of the four beats fired.
+func run_sequence(owner: Owner, row: Dictionary, sabotage_id: String) -> Dictionary:
+	var controller := make_controller(owner, row)
+	if sabotage_id == row.id:
+		# The injection point: reproduce exactly the shipped defect -- a beat that
+		# resolves and puts nothing in front of the player -- so this test can be
+		# shown to fail rather than promised to.
+		controller.remarks.erase(row.romance_beat)
+	var seen := {}
+	owner.last_line = ""
+	assert(controller.interact() and controller.state.met, "%s must meet on the first press" % row.id)
+	seen["meet_beat"] = owner.last_line
+	owner.last_line = ""
+	assert(controller.interact() and controller.state.task_done, "%s must finish her task in a world that gives her what she asks" % row.id)
+	seen["task_beat"] = owner.last_line
+	owner.last_line = ""
+	assert(controller.interact() and controller.state.recruitment == "recruited", "%s must recruit on the next press" % row.id)
+	seen["recruited_beat"] = owner.last_line
+	owner.last_line = ""
+	assert(controller.flirt() and controller.state.romance_acknowledged, "%s must acknowledge romance once recruited" % row.id)
+	seen["romance_beat"] = owner.last_line
+	return seen
+
 func _initialize():
 	# The cast must not be one companion with nineteen names. Count the kinds
 	# first: this is the assertion that goes red if every row shares a kind,
@@ -219,5 +264,52 @@ func _initialize():
 		completed += 1
 	generous.room.dispose()
 
-	print("SIMPLE COMPANION ROOM PASS: unlock gate, busy guards, meet/task/recruit sequence, romance, mobile labels, save/restore across the catalog; no rendering; %d rows across %d task kinds %s; %d refusals in words (%d distinct), %d talk rows unblocked, %d completed when asked, $%d taken" % [Catalog.ROWS.size(), kinds.size(), str(kinds), refused_count, refusals.size(), free_count, completed, charged])
+	# Every beat, every companion, in front of the player. A beat that resolves
+	# to a real id and produces no readable text is the bug this exists to catch.
+	var sabotage_id: String = OS.get_environment("CT_SABOTAGE_ROMANCE")
+	var beat_keys := ["meet_beat","task_beat","recruited_beat","romance_beat"]
+	var message_keys := {"meet_beat":"meet_message","task_beat":"task_message","recruited_beat":"recruited_message","romance_beat":"romance_message"}
+	var voiced := 0
+	var summarised := 0
+	var voiced_rows := 0
+	var distinct_lines := {}
+	var silent: Array = []
+	for r in Catalog.ROWS:
+		var world := build_owner(999999, 6, 100000.0, true)
+		var authored := authored_lines(r)
+		var seen := run_sequence(world, r, sabotage_id)
+		var full_row := true
+		for beat_key in beat_keys:
+			var shown: String = str(seen[beat_key])
+			var want: String = str(authored[beat_key])
+			# Collected rather than asserted here, so the count below is a real
+			# denominator and the report names every companion that went silent,
+			# not just the first one.
+			if shown == "" or not shown.contains(want) or not shown.contains(r.speaker+": "):
+				full_row = false
+				silent.append("%s/%s: journal said '%s', her banter says '%s'" % [r.id, beat_key, shown, want])
+				continue
+			distinct_lines[want] = true
+			voiced += 1
+			# ...and the status summary is shown as well, never silently replaced.
+			var status: String = str(r.get(message_keys[beat_key],""))
+			if status != "":
+				assert(shown.contains(status), "%s dropped its %s summary in favour of the banter line" % [r.id, message_keys[beat_key]])
+				summarised += 1
+		if full_row: voiced_rows += 1
+		world.room.dispose()
+	# Not an assert: a failed assert halts the script without ever reaching
+	# quit(), so the harness waits out its whole timeout and a real failure
+	# looks like a hung machine. This names the companions and exits.
+	if not silent.is_empty():
+		push_error("SIMPLE COMPANION ROOM FAIL: %d beat(s) resolve but never reach the player: %s" % [silent.size(), "; ".join(silent)])
+		print("SIMPLE COMPANION ROOM FAIL: %d beat(s) resolve but never reach the player: %s" % [silent.size(), "; ".join(silent)])
+		quit(1)
+		return
+	assert(voiced == Catalog.ROWS.size()*beat_keys.size(), "Checked %d beats, expected %d" % [voiced, Catalog.ROWS.size()*beat_keys.size()])
+	assert(voiced_rows == Catalog.ROWS.size(), "Only %d of %d companions surface all four beats" % [voiced_rows, Catalog.ROWS.size()])
+	assert(distinct_lines.size() == voiced, "The cast shares lines: %d distinct across %d beats" % [distinct_lines.size(), voiced])
+	assert(sabotage_id == "", "CT_SABOTAGE_ROMANCE was set to '%s' and the suite still reached the end" % sabotage_id)
+
+	print("SIMPLE COMPANION ROOM PASS: unlock gate, busy guards, meet/task/recruit sequence, romance, mobile labels, save/restore across the catalog; no rendering; %d rows across %d task kinds %s; %d refusals in words (%d distinct), %d talk rows unblocked, %d completed when asked, $%d taken; %d beats read back from the journal across %d/%d companions (%d distinct lines, %d summaries kept alongside)" % [Catalog.ROWS.size(), kinds.size(), str(kinds), refused_count, refusals.size(), free_count, completed, charged, voiced, voiced_rows, Catalog.ROWS.size(), distinct_lines.size(), summarised])
 	quit()
