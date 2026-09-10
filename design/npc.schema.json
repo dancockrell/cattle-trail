@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cattle-trail:npc:1",
+  "title": "Cattle Trail minor/supporting character record",
+  "description": "Design-only content contract for non-romance-eligible characters: antagonists, family, townsfolk, spirits. Not consumed by current runtime. Lighter than companion.schema.json on purpose -- these characters do not have perks, recruitment, or a relationship arc.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]+$"
+    },
+    "content_status": {
+      "type": "string",
+      "enum": ["design_only"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age": {
+      "type": ["integer", "null"],
+      "minimum": 18
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location_ref": {
+      "type": "string",
+      "description": "A location name from design/LOCATIONS.md or LORE.md's 'The country', or 'unplaced' if not yet tied to one.",
+      "minLength": 1
+    },
+    "personality": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "hook": {
+      "type": "string",
+      "description": "What this character is for -- the story or gameplay reason they exist. Not a quest; see design/LOCATIONS.md's rule that a location/character earns a room when something actually needs it.",
+      "minLength": 1
+    },
+    "voice_lines": {
+      "type": "array",
+      "description": "Example lines only, written to LORE.md's style guide. Not wired to any banter file unless a continuity_note says so.",
+      "items": {"type": "string", "minLength": 1},
+      "minItems": 1
+    },
+    "appearance_brief": {
+      "type": "string",
+      "minLength": 1
+    },
+    "art_prompt": {
+      "type": "string",
+      "description": "Art-direction comment for whoever paints this character later. Not a request to generate art now.",
+      "minLength": 1
+    },
+    "continuity_notes": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "minItems": 1
+    }
+  },
+  "required": [
+    "id",
+    "content_status",
+    "name",
+    "role",
+    "location_ref",
+    "personality",
+    "hook",
+    "voice_lines",
+    "appearance_brief",
+    "art_prompt"
+  ]
+}

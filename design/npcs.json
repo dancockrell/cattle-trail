@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "status": "design_only_not_runtime_data",
+  "schema": "npc.schema.json",
+  "characters": [
+    {
+      "id": "cole_calloway",
+      "content_status": "design_only",
+      "name": "Cole Calloway",
+      "age": 52,
+      "role": "Patriarch of the Calloway Spread",
+      "location_ref": "The Calloway Spread",
+      "personality": ["proud", "controlling", "not cruel by his own lights", "unbending"],
+      "hook": "Birdie's father. He arranged her marriage to settle a water dispute and cannot understand why that isn't obviously the right call. A future reconciliation or rivalry beat for Birdie's arc runs through him.",
+      "voice_lines": [
+        "A Calloway doesn't walk off a deal because she didn't like the terms.",
+        "You'll come back when the romance of it wears off.",
+        "I built this place so my children wouldn't have to gamble the way I did."
+      ],
+      "appearance_brief": "Adult man in his fifties, weathered and upright, dressed better than his hands but not showy about it.",
+      "art_prompt": "Silver-haired rancher in a clean but worn canvas coat, string tie, standing very straight on his own porch. Confident posture, not a villain's sneer -- he believes he is right.",
+      "continuity_notes": ["Not implemented in scripts/. Referenced by fina_reyes and birdie_calloway's encounter hooks in characters.json."]
+    },
+    {
+      "id": "hattie_calloway",
+      "content_status": "design_only",
+      "name": "Hattie Calloway",
+      "age": 48,
+      "role": "Birdie's mother",
+      "location_ref": "The Calloway Spread",
+      "personality": ["quietly complicit", "warmer than Cole", "conflict-averse", "misses her daughter"],
+      "hook": "Wants Birdie back but won't cross Cole to say so directly. A softer entry point into the Calloway rivalry than Cole himself.",
+      "voice_lines": [
+        "He isn't wrong often. That doesn't mean he's right about this.",
+        "Tell her the garden misses her. She'll know what I mean.",
+        "I raised her to have a spine. I don't know why I'm surprised she used it."
+      ],
+      "appearance_brief": "Adult woman in her late forties, practical dress, tired kindness in her face.",
+      "art_prompt": "A ranch matriarch on a porch step, apron over a plain dress, looking toward the horizon rather than at the viewer. Warm late light, quieter composition than Cole's.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "whit_calloway",
+      "content_status": "design_only",
+      "name": "Whit Calloway",
+      "age": 26,
+      "role": "Birdie's older brother, heir to the Spread",
+      "location_ref": "The Calloway Spread",
+      "personality": ["resentful", "dutiful", "competitive", "not actually unkind"],
+      "hook": "Stands to inherit everything Birdie walked away from and cannot decide if he envies her or is furious at her. A rival or reluctant ally depending on later choices.",
+      "voice_lines": [
+        "Funny how the one who left is the one everybody still asks about.",
+        "I didn't get a say either. I just didn't have anywhere else to go.",
+        "Tell her the fence line held. She'll know that took some doing."
+      ],
+      "appearance_brief": "Adult man, mid-twenties, built for ranch work, dresses like his father wants him to.",
+      "art_prompt": "A young rancher on horseback checking a fence line, hat low, expression unreadable rather than openly hostile.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "silas_rourke",
+      "content_status": "design_only",
+      "name": "Silas Rourke",
+      "age": 34,
+      "role": "The rustler already in the Clear Fork room",
+      "location_ref": "Clear Fork",
+      "personality": ["desperate rather than evil", "carries a grudge", "superstitious"],
+      "hook": "Names and voices the rustler actor that already exists in scenes/room.tscn (currently silent). Per LORE.md: he may be carrying a mark that will not stay on a hide, and has his own strain. The room does not require a killing for flavor.",
+      "voice_lines": [
+        "Man's got to eat. Don't make it personal.",
+        "You didn't see what I saw at the last water. I'm not going back to check.",
+        "Take the herd. Just don't ask why I stopped fighting for it."
+      ],
+      "appearance_brief": "Adult man, lean and sun-worn, dressed rough, visibly on his last luck.",
+      "art_prompt": "A rustler crouched low in tall grass at dusk, worn clothes, glancing over his shoulder at something off-screen rather than at the player -- he's spooked by more than the outfit.",
+      "continuity_notes": ["The rustler actor and its behavior are already implemented in scripts/room.gd; this record only proposes a name, voice and the 'own strain' framing from LORE.md. No banter file exists for him yet."]
+    },
+    {
+      "id": "deacon_marsh",
+      "content_status": "design_only",
+      "name": "Deacon Marsh",
+      "age": 45,
+      "role": "Bounty man at Fort Griffin",
+      "location_ref": "Fort Griffin",
+      "personality": ["professionally cold", "not without a code", "tired of the work"],
+      "hook": "The man who handed Willow the paper on a target who was already dead. A source of old business surfacing if Willow's arc returns to Griffin.",
+      "voice_lines": [
+        "I sell information. What you do with it isn't my trade.",
+        "Byrne quit smarter than most. Didn't stop me sending her out one more time.",
+        "Dead men don't refund the fee. I do, if it's clean."
+      ],
+      "appearance_brief": "Adult man in his mid-forties, plain dark coat, unremarkable on purpose.",
+      "art_prompt": "A bounty broker at a trading-post counter, ledger open, lamp light, deliberately forgettable clothing -- he wants to not be noticed.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "nettie_voss",
+      "content_status": "design_only",
+      "name": "Nettie Voss",
+      "age": 39,
+      "role": "Trading-post owner at Fort Griffin",
+      "location_ref": "Fort Griffin",
+      "personality": ["sharp", "fair but not generous", "knows everyone's business"],
+      "hook": "The outfit's most likely trade and rumor contact at Griffin. A recurring merchant rather than a one-scene NPC.",
+      "voice_lines": [
+        "I'll give you a fair price. Fair, not friendly -- don't confuse the two.",
+        "Everything that passes through this county passes through my ledger eventually.",
+        "You want gossip or you want goods? I charge different rates."
+      ],
+      "appearance_brief": "Adult woman, late thirties, sleeves rolled, sharp-eyed, dressed for the counter not for show.",
+      "art_prompt": "A trading-post proprietor behind a plank counter stacked with goods, arms crossed, appraising look. Practical period dress, no frontier-madam cliche.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "amos_dell",
+      "content_status": "design_only",
+      "name": "Sheriff Amos Dell",
+      "age": 50,
+      "role": "Fort Griffin's lawman",
+      "location_ref": "Fort Griffin",
+      "personality": ["minds his own business", "pragmatic", "not corrupt, just selective"],
+      "hook": "Per LORE.md, Griffin's garrison and law mostly mind their own business. Dell is the specific face of that: he'll help if it's simple and stay out of it if it isn't.",
+      "voice_lines": [
+        "Whatever happened out past the fork stays past the fork, far as this office is concerned.",
+        "I keep the peace inside the town line. Outside it, that's your business and God's.",
+        "Come back if it follows you in here. Otherwise, good luck to you."
+      ],
+      "appearance_brief": "Adult man, fifty, unhurried, badge worn plain, no showy gun rig.",
+      "art_prompt": "A small-town sheriff leaning in a doorway, hat pushed back, watching the street without urgency. Muted, unglamorous period lawman look.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "ezra_lowry",
+      "content_status": "design_only",
+      "name": "Ezra Lowry",
+      "age": 41,
+      "role": "Land speculator at Providence",
+      "location_ref": "Providence",
+      "personality": ["charming", "overpromising", "genuinely believes his own pitch"],
+      "hook": "Sells plots along a rail spur that may never get built. A comic or cautionary encounter about where the country is actually heading, not a combat antagonist.",
+      "voice_lines": [
+        "The spur's coming. I have it on good authority, which is to say I want it to be true.",
+        "Buy now, before the price reflects what this town's actually going to be.",
+        "Every boomtown looked like a bad bet the week before it wasn't."
+      ],
+      "appearance_brief": "Adult man, early forties, sharper city clothes than anyone else in Providence, a little too clean for the mud around him.",
+      "art_prompt": "A land speculator in a good suit standing on raw new lumber decking, gesturing at an empty lot with a hand-painted sign, mud-splashed boots betraying the polish above them.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "tomas_reyes",
+      "content_status": "design_only",
+      "name": "Tomas Reyes",
+      "age": 58,
+      "role": "Fina's father, a respected vaquero at a neighboring outfit",
+      "location_ref": "unplaced",
+      "personality": ["taciturn", "deeply skilled", "proud of Fina without saying so directly"],
+      "hook": "Fina's continuity anchor and a source of vaquero-tradition rumors or a future encounter about her past.",
+      "voice_lines": [
+        "She rides like her mother and argues like me. God help whoever marries her.",
+        "I taught her the rope. The temper she came with on her own.",
+        "A horse doesn't lie about who broke it right. Watch hers move."
+      ],
+      "appearance_brief": "Adult man, late fifties, deeply sun-weathered, immaculate in his gear if nothing else.",
+      "art_prompt": "An older vaquero checking a saddle cinch, silver in his hair, worn but beautifully maintained tack -- read as expertise through the equipment's condition.",
+      "continuity_notes": ["Not implemented in scripts/."]
+    },
+    {
+      "id": "bellhollow_bell",
+      "content_status": "design_only",
+      "name": "The Bellhollow bell-ringer",
+      "age": null,
+      "role": "Unresolved haunting at Bellhollow",
+      "location_ref": "Bellhollow",
+      "personality": ["deliberately unresolved: not a character with a personality yet"],
+      "hook": "Per LORE.md's rule on the dead: name a thing by what it does on this ground, then put a job on it. This entry exists only so the mine bell isn't invented twice by two different future writers. Whether it is a person, a warning, or a mistake is an open question for whoever builds the Bellhollow room.",
+      "voice_lines": [
+        "(no dialogue yet -- the bell rings; it does not speak)"
+      ],
+      "appearance_brief": "Not yet given a visual form. May never need one if the haunting stays purely audible.",
+      "art_prompt": "Do not design a character sprite for this yet. If a visual is ever needed, keep it implied (a shadow, a swinging rope) rather than a fully rendered figure -- the mystery is the point.",
+      "continuity_notes": ["Intentionally underspecified per LORE.md's Native-magic caution and its general rule against inventing more than is needed. Not implemented."]
+    },
+    {
+      "id": "quiet_rows_caretaker",
+      "content_status": "design_only",
+      "name": "The Quiet Rows caretaker",
+      "age": null,
+      "role": "Unresolved caretaker of the family cemetery",
+      "location_ref": "The Quiet Rows",
+      "personality": ["deliberately unresolved"],
+      "hook": "Per design/LOCATIONS.md: the plot is tended by someone nobody in the outfit has met. This entry exists so that fact isn't accidentally contradicted before a room actually resolves who it is.",
+      "voice_lines": [
+        "(unmet -- do not write dialogue for this character until a room decision resolves who or what they are)"
+      ],
+      "appearance_brief": "Not yet given a visual form.",
+      "art_prompt": "Do not design art for this entry. Its entire narrative function depends on staying unseen until a specific decision resolves it.",
+      "continuity_notes": ["Not implemented. Deliberately a placeholder for a mystery, not a stub awaiting completion on a schedule."]
+    }
+  ]
+}
