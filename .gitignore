@@ -7,3 +7,4 @@ source/*.import
 
 # Generated Godot image import sidecars
 *.png.import
+reports/

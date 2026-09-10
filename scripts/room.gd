@@ -18,6 +18,7 @@ var player: Node2D
 var eleanor: Node2D
 var rustler: Node2D
 var cows: Array[Node2D] = []
+var bot
 var stats: Label
 var journal: Label
 var title: Label
@@ -172,6 +173,9 @@ func _ready() -> void:
 		qa_mode = true
 		qa_done = true
 		run_companion_qa.call_deferred()
+	elif "--bot" in OS.get_cmdline_user_args():
+		bot = preload("res://scripts/bot_api.gd").new()
+		add_child(bot)
 	elif not qa_mode and not "--smoke" in OS.get_cmdline_user_args():
 		companion.load_game()
 
@@ -198,6 +202,7 @@ func _process(delta: float) -> void:
 			break
 
 func say_once(beat: String, actor: Node2D, name_text: String, line: String, importance := 0) -> void:
+	if bot != null: bot.record_line(name_text, line)
 	if spoken_beats.has(beat): return
 	var height := 62 if actor==player else 42
 	if speech.say(actor,name_text,line,height,importance):
