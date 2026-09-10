@@ -7510,6 +7510,566 @@
         "duration_target_minutes": 4,
         "tuning_status": "provisional"
       }
+    },
+    {
+      "id": "electra_finsbury",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Electra Finsbury",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A watchmaker's rival specialty: an electrician experimenting with early battery and wire work most of the county has never seen.",
+        "personality": [
+          "fascinated by invisible forces",
+          "careful about real danger she understands better than anyone nearby",
+          "patient teacher when asked",
+          "quietly thrilled by her own field"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical work clothes with rubber-soled boots for safety, wire and battery components in a fitted case, careful deliberate movements.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A test of hers goes wrong near the trail, damaging her equipment and nearly hurting her, and she needs practical help recovering it safely without anyone getting shocked in the process.",
+        "conditions": [
+          "Trust her judgment about something that looks harmless but isn't.",
+          "Help her recover equipment lost in a bad experiment.",
+          "Electra accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "early electrical experimentation",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "field_repairs",
+          "label": "Sure-Handed Tuning",
+          "description": "Reuses the existing shared repair-efficiency perk definition rather than authoring a duplicate.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being dismissed as reckless for a field nobody else understands well enough to judge fairly.",
+        "support_preference": "Someone actually listening when she explains a real danger instead of laughing it off."
+      },
+      "recovery_offer": {
+        "id": "electra_finsbury_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. Introduces early electrical experimentation as a new flavor of steam-adjacent technology without expanding it into a full new game system.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_current_that_almost_caught_her",
+        "title": "The Current That Almost Caught Her",
+        "controlled_actor_id": "electra_finsbury",
+        "objective": "Play as Electra safely recovering damaged electrical equipment, respecting real hazards the protagonist has never had to consider before.",
+        "companion_skill": "Directly playable hazard-aware careful-handling beats, introducing a genuinely new kind of danger to the game's repair-adventure family.",
+        "protagonist_support": "The protagonist follows her exact safety instructions without improvising.",
+        "affectionate_payoff": "Equipment recovered safely, and her rare, delighted explanation of what she was actually trying to build.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "juniper_holloway",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Juniper Holloway",
+      "age": 22,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A tea and coffee roaster whose small trade keeps half the county's mornings functional.",
+        "personality": [
+          "warm",
+          "detail-oriented about flavor and freshness",
+          "quietly competitive about quality",
+          "generous with a good cup"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical work clothes marked faintly by roasting smoke, an apron with pockets for sample scoops, warm unhurried manner.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Her regular shipment of beans is stuck at a washed-out crossing and about to spoil in the heat, threatening her whole season's supply.",
+        "conditions": [
+          "Help her recover a shipment of beans damaged or delayed in transit.",
+          "Actually taste the difference in her work instead of treating coffee as interchangeable.",
+          "Juniper accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "roasting and trade",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A carefully sourced batch ruined by delay or poor storage.",
+        "support_preference": "Someone actually noticing the difference good work makes in something ordinary."
+      },
+      "recovery_offer": {
+        "id": "juniper_holloway_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_shipment_that_almost_spoiled",
+        "title": "The Shipment That Almost Spoiled",
+        "controlled_actor_id": "juniper_holloway",
+        "objective": "Play as Juniper rescuing a spoiling shipment against time and heat, prioritizing what can still be saved.",
+        "companion_skill": "Directly playable triage-under-time-pressure beats, a lighter-stakes parallel to the roster's other spoilage-crisis adventures.",
+        "protagonist_support": "The protagonist hauls the heaviest sacks while she sorts salvageable from lost.",
+        "affectionate_payoff": "Most of the shipment saved, and the first cup from it poured specifically for the protagonist.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "seraphina_oduya",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Seraphina Oduya",
+      "age": 25,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A midwife's professional rival in method, not warmth: a trained physician's assistant who trusts instruments where Marguerite trusts hands.",
+        "personality": [
+          "confident in formal training",
+          "initially condescending to folk-taught practitioners, growing out of it",
+          "genuinely skilled",
+          "capable of real humility once proven wrong"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A neat, formally professional traveling coat over practical clothes, a proper medical bag with real instruments, precise confident bearing.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She arrives at a crisis at the same time as Marguerite Solis, initially clashing over method until the emergency forces them to combine both approaches to save the patient.",
+        "conditions": [
+          "Watch her and Marguerite Solis actually work together instead of competing.",
+          "Take her formal training seriously without dismissing folk method either.",
+          "Seraphina accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "formal medicine and physician's assistance",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being proven wrong about a method she was certain of, in front of someone she'd dismissed.",
+        "support_preference": "Being treated as a colleague once trust is actually earned, not assumed from credentials."
+      },
+      "recovery_offer": {
+        "id": "seraphina_oduya_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. Deliberately designed to interact with marguerite_solis's existing record -- a professional rivalry that resolves into respect rather than staying adversarial.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_two_kinds_of_medicine",
+        "title": "The Two Kinds of Medicine",
+        "controlled_actor_id": "seraphina_oduya",
+        "objective": "Play as Seraphina and, by extension, alongside Marguerite Solis combining formal and folk methods to handle a crisis neither could manage as well alone.",
+        "companion_skill": "Directly playable collaborative-medicine beats: two different skill sets applied to the same emergency.",
+        "protagonist_support": "The protagonist relays information between the two of them as they work.",
+        "affectionate_payoff": "A patient saved by both methods together, and Seraphina's genuine, hard-won respect for Marguerite by the end.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "matilda_greaves",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Matilda Greaves",
+      "age": 23,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A cartographer's rival in method: a self-taught mapmaker who works from lived trail experience rather than Beatrix Lowe's formal surveying instruments.",
+        "personality": [
+          "intuitive",
+          "distrustful of instruments she can't personally verify",
+          "warm and practical",
+          "surprisingly accurate despite unconventional methods"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical trail clothes, a satchel of hand-drawn maps annotated in her own shorthand, calloused capable hands from years of riding while sketching.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Beatrix Lowe's formal survey and Matilda's own hand-drawn map disagree about a stretch of trail, and someone needs to actually ride it to find out which one is right before an outfit gets lost trusting the wrong version.",
+        "conditions": [
+          "Trust her hand-drawn map over a more official but less current one.",
+          "Help her verify and update a map before an outfit relies on a wrong one.",
+          "Matilda accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "informal cartography and trail memory",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "spirit_sense",
+          "label": "Between the Footprints",
+          "description": "Reuses the existing shared trail-hazard perk definition rather than authoring a duplicate -- lived trail knowledge reads hazards as well as formal surveying does.",
+          "activation": "field",
+          "effect": {
+            "stat": "trail_hazard_notice",
+            "operation": "add",
+            "value": 1,
+            "unit": "early warning tier"
+          },
+          "stacking_group": "trail_hazard_notice",
+          "stacking_cap": 2,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A map trusted over lived experience, leading someone astray.",
+        "support_preference": "Being trusted for what she's actually seen, not just what's officially recorded."
+      },
+      "recovery_offer": {
+        "id": "matilda_greaves_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. Deliberately designed to interact with beatrix_lowe's existing record -- two different cartographic methods reconciled rather than one proven superior.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_two_maps_that_disagreed",
+        "title": "The Two Maps That Disagreed",
+        "controlled_actor_id": "matilda_greaves",
+        "objective": "Play as Matilda riding a disputed stretch of trail to determine whose map is actually correct, resolving a disagreement with evidence rather than authority.",
+        "companion_skill": "Directly playable trail-verification beats that pair naturally with Beatrix Lowe's surveying adventure without duplicating it.",
+        "protagonist_support": "The protagonist keeps track of landmarks while she cross-checks against both maps.",
+        "affectionate_payoff": "A corrected map that both mapmakers actually agree on afterward, and mutual respect instead of rivalry.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "yasmin_okoro",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Yasmin Okoro",
+      "age": 21,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A rodeo clown and arena safety specialist, distinct from Odalys Bright's exhibition trick riding -- her job is protecting riders, not performing for applause.",
+        "personality": [
+          "brave in a specifically selfless way",
+          "self-deprecating sense of humor as a professional tool",
+          "sharp read of animal behavior under stress",
+          "protective of the riders she works with"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Deliberately bright, attention-grabbing clothing designed to draw a bull's focus, protective padding underneath, quick agile build.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She saves a rider from a genuinely dangerous situation at a stock exhibition, at real risk to herself, and the outfit is the only one who actually thanks her for it instead of just moving on to the next event.",
+        "conditions": [
+          "Trust her judgment about when a situation is actually dangerous versus just looking dangerous.",
+          "Don't mistake her comic performance for a lack of real skill.",
+          "Yasmin accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "arena safety and animal behavior",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_herd",
+          "label": "Trail Hand",
+          "description": "Reuses the existing rancher-family perk definition rather than authoring a duplicate -- reading animal stress under pressure crosses directly from arena to trail.",
+          "activation": "recruited",
+          "effect": {
+            "stat": "lasso_follow_seconds",
+            "operation": "add",
+            "value": 2,
+            "unit": "extra seconds"
+          },
+          "stacking_group": "lasso_follow_seconds",
+          "stacking_cap": 4,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A rider hurt because she couldn't get there in time.",
+        "support_preference": "Being thanked specifically, not just applauded generically as part of a show."
+      },
+      "recovery_offer": {
+        "id": "yasmin_okoro_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. Deliberately distinct from odalys_bright: Yasmin's skill is protective and self-effacing where Odalys's is performative, giving the roster two different relationships to a rodeo-adjacent trade.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_job_nobody_claps_for",
+        "title": "The Job Nobody Claps For",
+        "controlled_actor_id": "yasmin_okoro",
+        "objective": "Play as Yasmin protecting a rider from a genuinely dangerous animal using misdirection and precise timing rather than force.",
+        "companion_skill": "Directly playable risk-management beats: draw danger away from someone else at calculated personal risk.",
+        "protagonist_support": "The protagonist gets the endangered rider clear while she manages the animal.",
+        "affectionate_payoff": "The rider safe, and her surprised, genuine reaction to being thanked by name instead of just cheered as part of the show.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
     }
   ],
   "procedural_template": {
