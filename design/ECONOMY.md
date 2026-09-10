@@ -19,6 +19,28 @@ Not a number that goes up. A small cattle outfit that gets *more capable*: a big
 
 **Open question:** exact base price and the numeric weight of each factor above are unresolved, matching this project's standing rule (`decisions.json`'s "unresolved" entry) against silently inventing balance.
 
+## Shrewd dealing, as a mechanic (PROPOSAL — not accepted design)
+
+`decisions.json`'s `simulation_pillars` names shrewd dealing as one of the four growth levers, alongside drives, exploration, and romance, and it's currently the least defined of the four as an actual player action. This section proposes one concrete shape for it. It is a proposal for future review, same status as the rest of this document — not something to build against yet.
+
+**1. The negotiation itself: a single counter-offer beat, not a tree.** `decisions.json`'s `gameplay_romance` decision already sets the house style for this kind of interaction — "avoid endless conversation trees, begging and constant refusal/persuasion loops" — and a sale should follow the same rule rather than inventing a separate, wordier standard for money. Proposed shape: the buyer states an opening price (already the output of the cattle-market factors above — count/condition, venue, season/tension, reputation). The player has exactly one response: accept, counter once with a number, or walk. A counter either lands (small gain, buyer's patience/reputation tolerates it) or doesn't (buyer holds firm, or — for a rigged actor like Chester Vane — the "counter" is itself the bluff moment, since Vane's whole role in `conflicts-and-rivalries.md` is that his auctions aren't honest in the first place). No second round, no dialogue tree: one offer, one counter, one outcome. This keeps a sale a fifteen-second beat that reads as a real choice rather than a haggling minigame, and it's a small enough surface that it can plug into any buyer (Birdena Holt, Chester Vane, a rival outfit) without per-buyer scripting beyond the numbers.
+
+**2. Reputation with a buyer — first-pass numbers.** The market section above already names buyer reputation as a price factor; this proposes the actual curve, clearly a first pass for future tuning rather than balance:
+
+- Reputation is per-buyer, ranges 0–5, starts at a neutral middle value (2, proposed).
+- A fair sale (accepted at the opening price, or a counter that lands) is +1, capped at 5.
+- A walked-away sale is neutral — no gain, no loss; refusing a bad offer shouldn't be punished.
+- A sale to a buyer known to be rigged (Chester Vane) or a sale where the player's counter is caught as a bluff costs −2.
+- Each point of reputation nudges the buyer's opening price in the player's favor by some small, tunable percentage (not specified here — that's exactly the "numeric weight" already flagged unresolved below).
+
+**3. Debt and the Widow Stroud — first-pass numbers.** The existing "Debt and financing" section establishes that the Widow Stroud lends at real interest cost and that Magistrate Holt is where disputes escalate; this proposes the shape of that arc, again a first pass:
+
+- A loan carries a simple flat per-period interest rate (proposed starting point: 10% per drive-cycle, not per day — matching the game's drive-cycle pacing rather than a real-time clock), added to principal each cycle it's outstanding.
+- Missing a set number of consecutive repayment windows (proposed: three) moves the debt from "Stroud's own ledger" to "escalated" — Mortimer Vance's collecting failing to resolve it — at which point it becomes Magistrate Holt's matter per the existing text, with consequences (seizure, forced sale, standing loss) left to a future systems pass rather than specified here.
+- None of this should read as punitive dice-rolling: the player always sees the current balance and the escalation threshold before it's crossed, matching this project's existing "late signs should visibly move prices, not just flavor text" standard from the market section.
+
+**4. A shrewd-dealing perk, on the existing perk system.** `field_repairs`/`ada_mercer_perk`, `steady_herd`, and `spirit_sense` (per "What the player invests in," reading `scripts/companion_perks.gd`) are the existing precedent: a companion's stat reduces a real cost or risk. A shrewd-dealing perk extends that same system rather than needing a new category — proposed effect is a small, fixed improvement to the counter-offer's odds of landing and/or a reputation-gain bonus, read from the same companion-stat mechanism the three existing perks already use. This is design-only: no new script name, class, or perk id is being claimed as implemented here, only that the existing perk architecture already has room for this without extension.
+
 ## Trade goods, by category and who deals them
 
 Everything here is a real character's actual trade, not an invented commodity list. A future systems pass turning this into numbers should attach values to *these* actors, not new ones.
@@ -75,7 +97,10 @@ The [Calloway Spread](wiki/organizations/calloway-spread.md), [Hargrove Range](w
 
 ## Unresolved
 
-- Exact numeric prices, interest rates, and perk-to-currency conversion.
+- Exact numeric prices, and the exact numeric weight of each cattle-market factor.
+- The shrewd-dealing counter-offer's actual shape (one offer/one counter/one outcome) is now proposed above, but the reputation curve (+1/−2/cap 5), the interest rate (10%/cycle), the missed-payment threshold (three cycles), and the perk's exact bonus are all first-pass numbers only — tuning, not accepted balance.
+- What "escalated to Magistrate Holt" actually does mechanically (seizure, forced sale, standing loss, or something else) is still open; only the trigger condition is proposed.
+- Whether the shrewd-dealing perk needs its own perk id in `companion_perks.gd` or reuses an existing one — proposed as extending the existing system, not specified further.
 - Whether the player can found a *second* trade relationship that competes with an existing rivalry (e.g., backing Marisol against the hemp rival) or only influence the existing one.
 - Whether goods are simulated as inventory items at all, or abstracted into a single "trade goods" resource the player allocates.
 - How land purchase (Lowry) interacts with the ranch's own footprint, if at all.
