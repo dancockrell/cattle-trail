@@ -78,6 +78,20 @@ func _handle(line: String) -> void:
 			_act(str(command.get("name", "")))
 		"step":
 			await _step(int(command.get("frames", 1)))
+		"choose":
+			# The room's numbered answers (the rustler's fate, and any future
+			# numbered reply) are not reachable through the verb list, so the
+			# bot could not exercise the game's only real decision without this.
+			var picked: String = str(command.get("option", ""))
+			var taken := false
+			if room.has_method("choose_rustler"): taken = room.choose_rustler(picked)
+			_emit({"type": "ok", "cmd": "choose", "option": picked, "taken": taken,
+				"message": room.message})
+		"options":
+			var choices: Array = []
+			if "RUSTLER_CHOICES" in room and room.has_method("rustler_choice_pending") and room.rustler_choice_pending():
+				for choice in room.RUSTLER_CHOICES: choices.append(str(choice))
+			_emit({"type": "ok", "cmd": "options", "options": choices})
 		"speed":
 			# Scales in-game time so timers (an 18s lasso lead, camp cooldowns)
 			# cost the bot frames rather than wall-clock seconds.

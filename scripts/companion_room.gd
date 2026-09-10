@@ -22,8 +22,10 @@ const CartAdventure = preload("res://scripts/ada_cart_adventure.gd")
 const CartRoom = preload("res://scripts/ada_cart_room.gd")
 const CampCare = preload("res://scripts/camp_care_room.gd")
 const Recovery = preload("res://scripts/camp_recovery.gd")
+const Dialogue = preload("res://scripts/dialogue_scene.gd")
 const SAVE_PATH := "user://clear-fork-save.json"
 const BANTER_PATH := "res://data/eleanor_banter.json"
+const WAGON_SCENE_PATH := "res://data/eleanor_wagon_scene.json"
 const ADA_BANTER_PATH := "res://data/ada_banter.json"
 var room: Control
 var state = State.new()
@@ -48,6 +50,13 @@ func sync_lantern_equipment() -> void:
 var minutes := 720.0
 var banter: Dictionary = {}
 var ada_banter: Dictionary = {}
+## The wagon conversation. Every other verb in this room is "ride somewhere
+## and press a button"; this is the one place a person wants something and
+## the player answers. The scene itself is data, so the next one is a JSON
+## file and nothing here changes.
+var wagon_talk = Dialogue.new()
+var wagon_scene_open := false
+var wagon_record: Dictionary = blank_wagon_record()
 
 ## Shared by every per-character banter file: reject anything not matching
 ## this speaker so one character's file can never voice another's line.
@@ -128,6 +137,9 @@ func tell(line: String) -> void:
 	room.refresh()
 
 func switch_character() -> void:
+	if wagon_scene_open:
+		choose_wagon_option(2)
+		return
 	if cart != null and cart.pause_or_resume(): return
 	if state.adventure_status=="completed" and lantern.switch_character(): return
 	if state.recruitment != "recruited":
@@ -152,6 +164,7 @@ func switch_character() -> void:
 	tell("Playing Eleanor, 24 / Walk to a restless steer and Talk to steady it." if is_eleanor() else "Playing the trail boss / Eleanor's progress is kept.")
 
 func interact() -> bool:
+	if wagon_scene_open: return choose_wagon_option(0)
 	if ines != null and ines.interact(): return true
 	if birdie != null and birdie.interact(): return true
 	for entry in simple_companions:
@@ -192,12 +205,26 @@ func interact() -> bool:
 		if state.recruitment != "recruited":
 			state.recruit(true,true)
 			say_event("recruited","eleanor_recruited")
-			tell("Eleanor, 24, joins the outfit. Choose Companion [Tab] to play her short cattle-calming adventure.")
+			tell("Eleanor, 24, joins the outfit. Talk again at the wagon; she has been trying to say something. Companion [Tab] plays her short cattle-calming adventure.")
 			save_game()
+			return true
+	# Talk at the tailgate used to repeat her introduction forever. It opens
+	# the conversation instead, and once that conversation has happened it
+	# reports which camp the player left himself in.
+	if wagon_scene_available():
+		open_wagon_scene()
+		return true
+	if room.won and not is_eleanor() and state.recruitment == "recruited" and room.player.position.distance_to(room.eleanor.position) <= FLIRT_RANGE:
+		var standing: String = wagon_standing_line()
+		if not standing.is_empty():
+			tell(standing)
 			return true
 	return false
 
 func rest_together() -> void:
+	if wagon_scene_open:
+		choose_wagon_option(3)
+		return
 	if cart != null and cart.toggle_valve(2): return
 	camp_care.rest()
 
@@ -246,6 +273,9 @@ func _flirt_refused(reason: String, lines: Array) -> void:
 	tell(lines[flirt_refusal_count])
 
 func flirt() -> void:
+	if wagon_scene_open:
+		choose_wagon_option(1)
+		return
 	if ines != null and ines.flirt(): return
 	if birdie != null and birdie.flirt(): return
 	for entry in simple_companions:
@@ -273,6 +303,158 @@ func flirt() -> void:
 	else:
 		_flirt_refused("too_soon",FLIRT_TOO_SOON_LINES)
 
+## --- The wagon conversation -------------------------------------------
+## Entry is Talk at the wagon once she is in the outfit, which is the press
+## that used to repeat her introduction. The scene borrows the four camp
+## controls that already exist, in the order they sit on the row, so no new
+## UI appears: Talk [E] is answer 1, Flirt [H] is 2, Companion [Tab] is 3,
+## Rest [G] is 4. Shoot has no answer behind it and is switched off rather
+## than left looking live.
+const WAGON_OPTION_SLOTS := [0, 1, 3, 4]
+## The key each answer slot actually answers on. These are NOT numbered,
+## deliberately: keys 1-3 belong to the rustler's fate, so a numbered answer
+## row here would put two numbered menus on screen claiming the same keys.
+const WAGON_OPTION_KEYS := ["[E]", "[H]", "[Tab]", "[G]"]
+
+## The record adds one field to the dialogue system's own: which endings
+## have already been paid for, so replaying cannot hand out trust twice.
+static func blank_wagon_record() -> Dictionary:
+	var record: Dictionary = Dialogue.blank_record()
+	record["paid"] = []
+	return record
+
+static func valid_wagon_record(value) -> bool:
+	if not value is Dictionary: return false
+	var data: Dictionary = (value as Dictionary).duplicate(true)
+	var paid: Variant = data.get("paid")
+	if not paid is Array: return false
+	for entry in paid:
+		if not entry is String or entry.is_empty() or entry.length() > 128: return false
+	data.erase("paid")
+	return Dialogue.valid_record(data)
+
+## Resolves the scene's "requires" keys. Whether her cattle-calming
+## adventure is finished is this room's business, not the dialogue file's.
+func wagon_scene_facts() -> Dictionary:
+	return {
+		"steadied_three": state.adventure_status == "completed",
+		"crossing_settled": lantern_adventure.status == "completed",
+		"courting": bool(state.events.get("romance_chosen", false)),
+	}
+
+## Deferring is the only ending that leaves her ask open, so it is the only
+## one that lets the player come back to it. Everything else is said once.
+func wagon_scene_available() -> bool:
+	if wagon_scene_open or is_eleanor(): return false
+	if not room.won or state.recruitment != "recruited": return false
+	if lantern_adventure.status == "active": return false
+	if room.player.action_time > 0 or room.rope_time > 0 or room.rope_flight_time > 0: return false
+	if room.player.position.distance_to(room.eleanor.position) > FLIRT_RANGE: return false
+	if bool(wagon_record.visited) and String(wagon_record.terminal) != "deferred": return false
+	return true
+
+func open_wagon_scene() -> bool:
+	var data: Dictionary = Dialogue.load_file(WAGON_SCENE_PATH)
+	if data.is_empty() or not wagon_talk.configure(data, wagon_scene_facts()):
+		# Loud. A missing scene file must not fall quietly back to the two
+		# sentences Eleanor used to have.
+		push_error("Eleanor's wagon scene did not load: " + str(Dialogue.validate(data)))
+		tell("Eleanor's wagon scene did not load. " + WAGON_SCENE_PATH + " is missing or malformed.")
+		return false
+	wagon_scene_open = true
+	_speak_wagon_node()
+	return true
+
+func _speak_wagon_node(said := "") -> void:
+	var node: Dictionary = wagon_talk.current()
+	if node.is_empty(): return
+	if room.eleanor.action_time <= 0:
+		room.eleanor.action("talk", room.player.position - room.eleanor.position)
+	var prefix := ""
+	if not said.is_empty(): prefix = "You: %s  " % said
+	tell("%s%s: %s" % [prefix, node.speaker, node.line])
+
+## The one place an answer is applied. Returns true whenever the scene ate
+## the press, an unavailable option included: pressing a shut door tells the
+## player why instead of letting the button do its ordinary camp job.
+func choose_wagon_option(slot: int) -> bool:
+	if not wagon_scene_open: return false
+	var listed: Array = wagon_talk.options()
+	var said := ""
+	if slot >= 0 and slot < listed.size(): said = String(listed[slot].text)
+	var result: Dictionary = wagon_talk.choose(slot)
+	if not result.ok:
+		if result.reason == "unavailable": tell(String(result.note))
+		else: tell("There is no answer in that seat. Pick one of the numbered replies.")
+		return true
+	if wagon_talk.finished: _finish_wagon_scene(said)
+	else: _speak_wagon_node(said)
+	return true
+
+func _finish_wagon_scene(said: String) -> void:
+	var outcome: Dictionary = wagon_talk.outcome()
+	var written: Dictionary = wagon_talk.record()
+	wagon_scene_open = false
+	var ending := String(outcome.id)
+	var gained := 0
+	if not (wagon_record.paid as Array).has(ending):
+		(wagon_record.paid as Array).append(ending)
+		gained = int(outcome.trust)
+		state.trust = clampi(state.trust + gained, 0, 100)
+	var flags: Array = (wagon_record.flags as Array).duplicate()
+	for flag in written.flags:
+		if not flags.has(flag): flags.append(flag)
+	wagon_record.visited = true
+	wagon_record.terminal = written.terminal
+	wagon_record.flags = flags
+	wagon_record.taken = written.taken
+	if room.eleanor.action_time <= 0:
+		room.eleanor.action("talk", room.player.position - room.eleanor.position)
+	var trust_note := ""
+	if gained > 0: trust_note = " Eleanor's trust +%d." % gained
+	var prefix := ""
+	if not said.is_empty(): prefix = "You: %s  " % said
+	tell("%sELEANOR: %s / %s%s" % [prefix, outcome.line, outcome.summary, trust_note])
+	save_game()
+
+func wagon_flag(flag: String) -> bool:
+	return (wagon_record.flags as Array).has(flag)
+
+## Where the scene's flags are actually read. A promise given, a promise
+## refused and a boundary pushed leave three different camps behind them,
+## and Talk at the tailgate is where the player hears which one he is in.
+func wagon_standing_line() -> String:
+	if wagon_flag("eleanor_sent_for"): return "Eleanor: First light, north line. Do not bring the bag."
+	if wagon_flag("eleanor_spirit_boundary_pushed"): return "Eleanor: Kettle is hot. That is the whole of what I have for you tonight."
+	if wagon_flag("eleanor_burial_promise"): return "Eleanor: Ordinary ground. You said it, I heard it, and that is the end of it."
+	if wagon_flag("eleanor_refused_promise"): return "Eleanor: I wrote to Alvarez. Sit down anyway, the coffee is made."
+	return ""
+
+## Buttons carry the short label at every width: this row has to fit a
+## 360-pixel window, and a Button grows its own minimum size to fit its
+## text, so a long reply would push the row off the bottom of a phone. The
+## reply the player actually chose is echoed back in full in the journal.
+func decorate_wagon_scene_ui() -> void:
+	if not wagon_scene_open: return
+	var options: Array = wagon_talk.options()
+	var locked_note := ""
+	for slot in range(WAGON_OPTION_SLOTS.size()):
+		var button = room.buttons.get_child(WAGON_OPTION_SLOTS[slot])
+		if slot >= options.size():
+			button.text = "-"
+			button.disabled = true
+			button.tooltip_text = ""
+			continue
+		var option: Dictionary = options[slot]
+		button.text = "%s %s" % [WAGON_OPTION_KEYS[slot], option.short]
+		button.disabled = not option.available
+		button.tooltip_text = String(option.reason) if not option.available else String(option.text)
+		if not option.available and locked_note.is_empty():
+			locked_note = "%s is shut: %s" % [WAGON_OPTION_KEYS[slot], option.reason]
+	room.buttons.get_child(2).disabled = true
+	room.buttons.get_child(2).text = "-"
+	room.objective.text = "ELEANOR AT THE WAGON / " + (locked_note if not locked_note.is_empty() else "Answer her: [E] [H] [Tab] [G]")
+
 func decorate_ui() -> void:
 	for index in [0,1,2,4]: room.buttons.get_child(index).disabled = false
 	room.stats.tooltip_text = Clock.label(minutes)
@@ -298,6 +480,7 @@ func decorate_ui() -> void:
 	if ines != null: ines.decorate_ui()
 	if birdie != null: birdie.decorate_ui()
 	for entry in simple_companions: entry.room.decorate_ui()
+	decorate_wagon_scene_ui()
 
 func save_game(test_path := "") -> bool:
 	if room.qa_mode and test_path.is_empty(): return false
@@ -313,6 +496,7 @@ func save_game(test_path := "") -> bool:
 	for entry in simple_companions: simple_data[entry.id] = entry.state.to_dict()
 	data["simple_companions"] = simple_data
 	data["camp_recovery"] = camp_recovery.to_dict()
+	data["eleanor_wagon_scene"] = wagon_record.duplicate(true)
 	data["generated_companions"] = generated_roster.to_dict()
 	data["ada_cart_adventure"] = cart_adventure.to_dict()
 	var cart_position: Vector2 = cart.position_for_save() if cart != null else CartRoom.PARK
@@ -346,6 +530,8 @@ func load_game(test_path := "") -> bool:
 		candidate.configure(row.id, row.age, row.perk_id)
 		if not candidate.load_dict(simple_saved.get(row.id, candidate.to_dict())): return false
 		restored_simple[row.id] = candidate
+	var restored_wagon: Variant = data.get("eleanor_wagon_scene", blank_wagon_record())
+	if not valid_wagon_record(restored_wagon): return false
 	var restored_lantern = LanternAdventure.new()
 	if not restored_lantern.load_dict(data.get("lantern_adventure",restored_lantern.to_dict())): return false
 	if not state.load_dict(data.get("companion",{})): return false
@@ -359,6 +545,10 @@ func load_game(test_path := "") -> bool:
 	generated_roster = restored_roster
 	cart_adventure = restored_cart
 	camp_recovery = restored_care
+	wagon_record = (restored_wagon as Dictionary).duplicate(true)
+	# A conversation in progress is not a saved thing; a reload puts the
+	# player back outside it rather than mid-sentence with stale options.
+	wagon_scene_open = false
 	var cart_point: Array = data.get("ada_cart_position",[220,280])
 	cart.saved_position = Vector2(cart_point[0],cart_point[1])
 	var cart_heading: Array = data.get("ada_cart_heading",[1,0])

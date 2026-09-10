@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "id": "eleanor_wagon",
+  "title": "At the tailgate",
+  "start": "open",
+  "nodes": [
+    {
+      "id": "open",
+      "speaker": "ELEANOR",
+      "line": "Sit down a minute. I have been trying to say a thing for two days and it comes out wrong every time, so tonight I am going to say it badly and be done with it.",
+      "options": [
+        {
+          "id": "hear_it",
+          "text": "Say it badly, then.",
+          "short": "Say it badly",
+          "next": "promise"
+        },
+        {
+          "id": "ask_cost",
+          "text": "What did coming out here cost you?",
+          "short": "What did it cost?",
+          "next": "gave_up"
+        },
+        {
+          "id": "ask_tool",
+          "text": "First. Could the one at the crossing tell me where my strays went?",
+          "short": "Ask the crossing?",
+          "next": "tool_ask"
+        },
+        {
+          "id": "defer",
+          "text": "It will keep. The count is short.",
+          "short": "It will keep",
+          "next": "left"
+        }
+      ]
+    },
+    {
+      "id": "promise",
+      "speaker": "ELEANOR",
+      "line": "If I go wrong out there. If something at a water gets hold of me and I am still walking around afterward. You put me in the ground, ordinary, and you keep me there. Nobody carries me down to a crossing to be asked questions. Nobody keeps me lit because I was useful. That is what I want from you.",
+      "options": [
+        {
+          "id": "give_word",
+          "text": "You have my word.",
+          "short": "You have my word",
+          "next": "promised"
+        },
+        {
+          "id": "refuse",
+          "text": "No. I will not promise that.",
+          "short": "No",
+          "next": "refused"
+        },
+        {
+          "id": "ask_why",
+          "text": "Why me? Alvarez is closer.",
+          "short": "Why me?",
+          "next": "why"
+        },
+        {
+          "id": "ask_tool",
+          "text": "Before I answer. Could he find my strays?",
+          "short": "Ask the crossing?",
+          "next": "tool_ask"
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "speaker": "ELEANOR",
+      "line": "Because Alvarez sets bones and then goes home. Everyone inside forty miles brings me their dying and then goes home too. I am the last face a great many people see. I have thought about who is going to be at mine, and the list came out at one, and you are standing on it.",
+      "options": [
+        {
+          "id": "give_word",
+          "text": "You have my word.",
+          "short": "You have my word",
+          "next": "promised"
+        },
+        {
+          "id": "ask_back",
+          "text": "There is a second thing. You have had it behind your teeth all night.",
+          "short": "The second thing",
+          "next": "asked_back",
+          "requires": "steadied_three",
+          "unavailable": "You have not worked a day beside her. Steady three head with her first, then ask her what else she wants.",
+          "closes_reason": "She stopped offering after you asked her to put a frightened man to work."
+        },
+        {
+          "id": "ask_cost",
+          "text": "What did coming out here cost you?",
+          "short": "What did it cost?",
+          "next": "gave_up"
+        },
+        {
+          "id": "refuse",
+          "text": "No. I will not promise that.",
+          "short": "No",
+          "next": "refused"
+        }
+      ]
+    },
+    {
+      "id": "gave_up",
+      "speaker": "ELEANOR",
+      "line": "A room with a door that shuts. A brother who used to write. Alvarez offered me a share of his practice at Griffin if I would hand him my instruments and call that a partnership. I do not miss the door as much as I expected to.",
+      "options": [
+        {
+          "id": "give_word",
+          "text": "Whatever you are going to ask me for, you have it.",
+          "short": "You have my word",
+          "next": "promised"
+        },
+        {
+          "id": "ask_back",
+          "text": "There is a second thing. You have had it behind your teeth all night.",
+          "short": "The second thing",
+          "next": "asked_back",
+          "requires": "steadied_three",
+          "unavailable": "You have not worked a day beside her. Steady three head with her first, then ask her what else she wants.",
+          "closes_reason": "She stopped offering after you asked her to put a frightened man to work."
+        },
+        {
+          "id": "refuse",
+          "text": "That is your business, not mine.",
+          "short": "No",
+          "next": "refused"
+        }
+      ]
+    },
+    {
+      "id": "asked_back",
+      "speaker": "ELEANOR",
+      "line": "One more, then, and it is small and it is stupid. Send for me some day when nobody is dying. A count that will not come out. A bad ford. A day with nothing wrong in it at all. Every person who says my name is already frightened by the time they say it. I would like to hear it flat, once.",
+      "options": [
+        {
+          "id": "word_both",
+          "text": "Tomorrow. North line. Nothing wrong with it, and I want you along.",
+          "short": "Tomorrow, north line",
+          "next": "sent_for"
+        },
+        {
+          "id": "give_word",
+          "text": "You have my word on the first. The other I cannot swear to.",
+          "short": "You have my word",
+          "next": "promised"
+        },
+        {
+          "id": "refuse",
+          "text": "No. To both.",
+          "short": "No",
+          "next": "refused"
+        }
+      ]
+    },
+    {
+      "id": "tool_ask",
+      "speaker": "ELEANOR",
+      "line": "No. He is a frightened man standing in the water that killed him. He is not a lantern and he is not a bird dog. Ask me for a poultice. Ask me to sit up with a hand who is coughing. Do not ask me for that.",
+      "options": [
+        {
+          "id": "push_tool",
+          "text": "He is dead. The strays are not. Ask him.",
+          "short": "Ask him anyway",
+          "next": "tool_push",
+          "closes": [
+            "ask_back"
+          ],
+          "closes_reason": "She stopped offering after you asked her to put a frightened man to work."
+        },
+        {
+          "id": "push_self",
+          "text": "Then I will go down and ask him myself.",
+          "short": "I will ask him",
+          "next": "tool_push",
+          "closes": [
+            "ask_back"
+          ],
+          "closes_reason": "She stopped offering after you told her you would go and bargain with him."
+        },
+        {
+          "id": "retract",
+          "text": "Fair. Forget I said it.",
+          "short": "Forget I said it",
+          "next": "promise"
+        }
+      ]
+    },
+    {
+      "id": "tool_push",
+      "speaker": "ELEANOR",
+      "line": "I said no. I am not going to say it a third time with a kinder face on. Go down and bargain with him if you want to. Do it knowing exactly what I think of a man who would.",
+      "options": [
+        {
+          "id": "stand_down",
+          "text": "Understood. I will leave him be.",
+          "short": "I will leave him be",
+          "next": "promise"
+        },
+        {
+          "id": "defy",
+          "text": "It is my water and my count.",
+          "short": "My water, my count",
+          "next": "withdrawn"
+        }
+      ]
+    },
+    {
+      "id": "promised",
+      "speaker": "ELEANOR",
+      "line": "Good. I will not raise it again, and I will hold you to it in front of witnesses if it comes to that. That is the first thing anybody has agreed to do for me that does not involve a bandage.",
+      "terminal": true,
+      "outcome": {
+        "id": "burial_promise",
+        "summary": "Eleanor has your word: ordinary ground, and nobody carries her to a crossing.",
+        "trust": 8,
+        "flags": [
+          "eleanor_burial_promise"
+        ]
+      }
+    },
+    {
+      "id": "sent_for",
+      "speaker": "ELEANOR",
+      "line": "The north line. Nothing wrong with it at all. You have no idea what you just agreed to and I am not going to explain it and spoil it. Be at the wagon at first light and do not bring the bag.",
+      "terminal": true,
+      "outcome": {
+        "id": "sent_for",
+        "summary": "Your word, and a day on the north line with nothing wrong in it.",
+        "trust": 12,
+        "flags": [
+          "eleanor_burial_promise",
+          "eleanor_sent_for"
+        ]
+      }
+    },
+    {
+      "id": "refused",
+      "speaker": "ELEANOR",
+      "line": "All right. I would sooner have a flat no than a yes you would argue yourself out of at the graveside. I will ask Alvarez. He will say yes, and I will not believe him. Go on, your count is short.",
+      "terminal": true,
+      "outcome": {
+        "id": "refused_promise",
+        "summary": "You would not give your word. She did not ask twice, and she did not ask for anything else.",
+        "trust": 4,
+        "flags": [
+          "eleanor_refused_promise"
+        ]
+      }
+    },
+    {
+      "id": "left",
+      "speaker": "ELEANOR",
+      "line": "It will keep. It has kept two days.",
+      "terminal": true,
+      "outcome": {
+        "id": "deferred",
+        "summary": "She went back to the kettle. Whatever it was, she is still holding it.",
+        "trust": 0,
+        "flags": []
+      }
+    },
+    {
+      "id": "withdrawn",
+      "speaker": "ELEANOR",
+      "line": "Then we are finished talking tonight. Mind the bank on your way down. It lies.",
+      "terminal": true,
+      "outcome": {
+        "id": "withdrawn",
+        "summary": "You pushed her on the crossing. She stopped asking you for anything.",
+        "trust": 0,
+        "flags": [
+          "eleanor_spirit_boundary_pushed"
+        ]
+      }
+    }
+  ]
+}

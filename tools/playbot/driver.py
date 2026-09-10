@@ -80,6 +80,12 @@ class Game:
     def step(self, frames: int = 6) -> dict:
         return self.send(cmd="step", frames=frames)
 
+    def options(self) -> dict:
+        return self.send(cmd="options")
+
+    def choose(self, option: str) -> dict:
+        return self.send(cmd="choose", option=option)
+
     def speed(self, scale: float) -> dict:
         return self.send(cmd="speed", scale=scale)
 
