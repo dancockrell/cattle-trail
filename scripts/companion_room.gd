@@ -493,7 +493,7 @@ func save_game(test_path := "") -> bool:
 	if room.player.action_time>0 or room.rope_time>0 or room.rope_flight_time>0: return false
 	var cattle := []
 	for cow in room.cows: cattle.append({"position":[cow.position.x,cow.position.y],"secured":cow.secured})
-	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"hits":room.hits,"spoken_beats":room.spoken_beats}
+	var data := {"version":1,"companion":state.to_dict(),"minutes":minutes,"player":[room.player.position.x,room.player.position.y],"eleanor":[room.eleanor.position.x,room.eleanor.position.y],"cattle":cattle,"cash":room.cash,"ammo":room.ammo,"won":room.won,"talked":room.talked,"rustler_active":room.rustler_active,"rustler_surrendered":room.rustler_surrendered,"rustler_fate":room.rustler_fate,"rustler_hired":room.rustler_hired,"rustler_present":room.rustler_present,"hits":room.hits,"spoken_beats":room.spoken_beats}
 	data["lantern_adventure"] = lantern_adventure.to_dict()
 	data["ada_companion"] = ada_state.to_dict()
 	data["ines_companion"] = ines_state.to_dict()
@@ -570,7 +570,19 @@ func load_game(test_path := "") -> bool:
 	room.won = bool(data.get("won",false))
 	room.talked = bool(data.get("talked",false))
 	room.rustler_active = bool(data.get("rustler_active",true))
-	room.rustler.visible = room.rustler_active
+	# The decision the player made about him is part of the world, not a line of
+	# dialogue. A save written before the decision existed carries none of these
+	# fields, so each one falls back to what that older world meant: nobody had
+	# surrendered, no fate was chosen, and he stood on the ground exactly while
+	# he was still active.
+	room.rustler_surrendered = bool(data.get("rustler_surrendered",false))
+	room.rustler_fate = String(data.get("rustler_fate",""))
+	room.rustler_hired = bool(data.get("rustler_hired",false))
+	room.rustler_present = bool(data.get("rustler_present",room.rustler_active))
+	# A man roped for the law or riding for wages is still on this ground. The
+	# old line hid him whenever he was no longer a threat, which erased the
+	# hired hand the player is paying.
+	room.rustler.visible = room.rustler_active or room.rustler_present
 	room.escaped = false
 	room.rustler.position = Vector2(550,164)
 	room.rustler.action_time = 0
@@ -606,6 +618,19 @@ func load_game(test_path := "") -> bool:
 	birdie.sync_after_load()
 	for entry in simple_companions: entry.room.sync_after_load()
 	sync_lantern_equipment()
+	# An unanswered question is restored as a question. build_choice_buttons()
+	# only ever builds the row once, so a row hidden by a decision made earlier
+	# in this session has to be put back on screen for a save where the choice
+	# is still open, and taken back off for one where it is settled.
+	if room.rustler_choice_pending():
+		room.build_choice_buttons()
+		for button in room.choice_buttons:
+			if not is_instance_valid(button): continue
+			button.visible = true
+			button.disabled = room.qa_mode
+		room.layout_ui()
+	else:
+		room.hide_choice_buttons()
 	tell("Outfit restored. Your companions and completed actions are remembered.")
 	return true
 

@@ -23,6 +23,7 @@ static func validate(data: Dictionary) -> bool:
 	for key in ["won","talked","rustler_active"]:
 		if not data.get(key) is bool: return false
 	if data.won and (secured!=6 or not data.talked or data.rustler_active): return false
+	if not valid_rustler_fate(data): return false
 	if not data.get("spoken_beats") is Dictionary: return false
 	for key in data.spoken_beats:
 		if not key is String or not data.spoken_beats[key] is bool: return false
@@ -62,6 +63,46 @@ static func validate(data: Dictionary) -> bool:
 			if not data.get("ada_companion") is Dictionary or data.ada_companion.get("recruitment")!="recruited": return false
 			if not data.get("lantern_adventure") is Dictionary or data.lantern_adventure.get("status")!="completed": return false
 		if cart.status=="active" and candidate.controlled_actor!="player": return false
+	return true
+
+## The authored fate table is room.gd's, and it is read rather than copied:
+## a second list of fate names here would drift away from the one the game
+## actually applies. Loaded at call time because room.gd reaches this file
+## through companion_room.gd, and a preload would close that circle.
+static func rustler_fates() -> Dictionary:
+	var script = load("res://scripts/room.gd")
+	if script == null: return {}
+	var constants: Dictionary = script.get_script_constant_map()
+	var table: Variant = constants.get("RUSTLER_FATES")
+	return table if table is Dictionary else {}
+
+## What the player decided about the beaten rustler, and the combinations that
+## cannot have happened. A save saying a man was hired while he is still an
+## active threat, or naming a fate the game does not author, is a tampered or
+## corrupt save and is refused rather than half-restored.
+static func valid_rustler_fate(data: Dictionary) -> bool:
+	for key in ["rustler_surrendered","rustler_hired","rustler_present"]:
+		if data.has(key) and not data[key] is bool: return false
+	if data.has("rustler_fate") and not data.rustler_fate is String: return false
+	var fate: String = String(data.get("rustler_fate",""))
+	var active: bool = bool(data.rustler_active)
+	var surrendered: bool = bool(data.get("rustler_surrendered",false))
+	if surrendered and active: return false
+	if fate.is_empty():
+		# Nobody is on the payroll until the player put him there.
+		if bool(data.get("rustler_hired",false)): return false
+		return true
+	var fates: Dictionary = rustler_fates()
+	if fates.is_empty():
+		push_error("Room snapshot could not read the authored rustler fates; a fated save cannot be checked.")
+		return false
+	if not fates.has(fate): return false
+	# A fate is only handed down to a man who gave up, and deciding his fate is
+	# what ends the fight.
+	if active or not data.get("rustler_surrendered",true): return false
+	var row: Dictionary = fates[fate]
+	if data.has("rustler_hired") and bool(data.rustler_hired) != bool(row.hired): return false
+	if data.has("rustler_present") and bool(data.rustler_present) != bool(row.present): return false
 	return true
 
 static func number(value) -> bool:
