@@ -29,4 +29,3 @@ Adult man, fifty, ordinary rancher, arms crossed at a fence line, aggrieved rath
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Briony Wexford](briony_wexford.md)
-

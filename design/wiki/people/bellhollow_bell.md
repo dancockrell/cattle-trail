@@ -24,3 +24,4 @@ Not yet given a visual form. May never need one if the haunting stays purely aud
 
 **Affiliated with:** [Bellhollow](../organizations/bellhollow.md)
 
+**Connected to:** [Nell Corrigan](nell_corrigan.md)

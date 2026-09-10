@@ -47,4 +47,3 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 **Affiliated with:** [Providence](../organizations/providence.md)
 
 **Connected to:** [Louisa Okoye](louisa_okoye.md), [The Widow Alcott](widow_alcott.md), [Winnifred "Winnie" Doyle](winnie_doyle.md)
-

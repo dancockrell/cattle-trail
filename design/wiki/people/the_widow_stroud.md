@@ -28,5 +28,4 @@ Adult woman, early fifties, dressed well but not ostentatiously, composed in a w
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Fort Griffin](../organizations/fort-griffin.md), [Providence](../organizations/providence.md)
 
-**Connected to:** [Magistrate Holt](magistrate_holt.md), [Temperance Vane](temperance_vane.md), [Mortimer Vance](the_stroud_clerk.md), [Zenobia Whitmore](zenobia_whitmore.md)
-
+**Connected to:** [Magistrate Holt](magistrate_holt.md), [Mortimer Vance](the_stroud_clerk.md), [Temperance Vane](temperance_vane.md), [Zenobia Whitmore](zenobia_whitmore.md)

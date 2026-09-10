@@ -48,4 +48,3 @@ Adds to the shared camp madness-recovery bonus alongside Eleanor's Steady Compan
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md), [The Outfit](../organizations/the-outfit.md)
 
 **Connected to:** [Ada Mercer](ada_mercer.md), [Eleanor](eleanor.md), [Ines Vale](ines_vale.md)
-

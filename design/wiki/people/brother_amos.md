@@ -29,4 +29,3 @@ Adult man, early fifties, simple worn coat, saddlebags that carry more sermons t
 **Affiliated with:** [Providence](../organizations/providence.md)
 
 **Connected to:** [Padre Ruiz](padre_ruiz.md)
-

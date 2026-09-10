@@ -27,4 +27,3 @@ Adult man, early thirties, expensive gear worn a little too new, restless energy
 ## Known associates
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md)
-

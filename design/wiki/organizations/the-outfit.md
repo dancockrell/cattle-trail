@@ -25,6 +25,14 @@ Every other companion in [characters.json](../../characters.json) (67 more as of
 | [Alma Okafor](../people/point_rider_alma.md) | Point rider, reads the trail ahead of the herd |
 | ["Young" Dutch](../people/young_dutch.md) | Newest hand, still enthusiastic |
 
+The rest of the crew, also standing and not yet given a table row of their own:
+
+- [Maren "Cookie" Holt](../people/outfit_cook_maren.md), chuckwagon cook, keeps the fire and the outfit's unofficial ledger of who's owed what favor.
+- [Jonas Whitfield](../people/remuda_wrangler_jonas.md), horse wrangler, manages the remuda separately from the cattle herd — the same ground where the outfit would first meet the still-unplaced [Sable Quinn](../people/sable_quinn.md), a remuda wrangler of her own hunting for a fairer outfit to ride for.
+- [Coy Ashworth](../people/night_herder_coy.md), night herder, treats a bad night the way [Ines Vale](../people/ines_vale.md) treats a bad track — information, not omen — and is usually the first hand to notice something like the [Night Birds](../people/the_night_birds.md) that leave no tracks.
+- [Del Ochoa](../people/outfit_farrier_del.md), farrier, the ordinary-mechanical counterpart to [Ada Mercer](../people/ada_mercer.md)'s steam work — the hand to loop in when her contraptions need an anvil instead of a clever fix.
+- [Pim Sorensen](../people/drag_rider_pim.md), rides drag, and wants nothing more than [Pardo](../people/pardo.md)'s word that he's ready to ride point.
+
 ## How it actually works
 
 Recruitment, relationship, and camp assignment are tracked separately per [GAME-DESIGN.md](../../../GAME-DESIGN.md)'s state contracts — a companion can be in the household and stay unpartnered, and being hired is never a purchase of consent. Camp is where the ledger gets honest about who's strained and who can ride, per [LORE.md](../../LORE.md)'s household section.

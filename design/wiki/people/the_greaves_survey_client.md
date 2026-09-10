@@ -29,4 +29,3 @@ Adult man, late thirties, harried office clerk, stacks of unfiled land records v
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Beatrix Lowe](beatrix_lowe.md), [Matilda Greaves](matilda_greaves.md)
-

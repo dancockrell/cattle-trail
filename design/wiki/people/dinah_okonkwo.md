@@ -46,5 +46,4 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Fort Griffin](../organizations/fort-griffin.md)
 
-**Connected to:** [Augustine Marchetti](augustine_marchetti.md), [Dr. Rafael Alvarez](doc_alvarez.md), [Eleanor](eleanor.md), [Marguerite Solis](marguerite_solis.md), [Dr. Barnabus Thistlewood](the_okonkwo_quack.md)
-
+**Connected to:** [Augustine Marchetti](augustine_marchetti.md), [Dr. Barnabus Thistlewood](the_okonkwo_quack.md), [Dr. Rafael Alvarez](doc_alvarez.md), [Eleanor](eleanor.md), [Marguerite Solis](marguerite_solis.md)

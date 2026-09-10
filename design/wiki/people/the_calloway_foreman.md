@@ -27,4 +27,3 @@ Adult man, late forties, weathered foreman's bearing, clearly the one who actual
 ## Known associates
 
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md)
-

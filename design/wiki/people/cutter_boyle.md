@@ -27,4 +27,3 @@ Adult man, forty, plain trail gear built for function, no flash on the gun rig.
 ## Known associates
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
-

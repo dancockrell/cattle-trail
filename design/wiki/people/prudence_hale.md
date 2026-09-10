@@ -47,4 +47,3 @@ Reuses the existing shared repair-efficiency perk definition rather than authori
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Otis Beckwith](otis_beckwith.md)
-

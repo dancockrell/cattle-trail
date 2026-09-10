@@ -26,7 +26,6 @@ Adult man, mid-twenties, ordinary ranch hand, visibly nervous whenever a certain
 - Not implemented in scripts/. Ties Calloway Spread and sallie_voss together independent of the player.
 ## Known associates
 
-**Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md), [Fort Griffin](../organizations/fort-griffin.md)
+**Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md), [The Calloway Spread](../organizations/calloway-spread.md)
 
 **Connected to:** [Nettie Voss](nettie_voss.md), [Sallie Voss](sallie_voss.md)
-

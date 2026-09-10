@@ -27,4 +27,3 @@ Adult man, mid-forties, precise formal dress, careful measured speech implied by
 ## Known associates
 
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md)
-

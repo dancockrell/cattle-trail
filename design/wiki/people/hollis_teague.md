@@ -29,5 +29,4 @@ A teenage boy, soot-streaked apron, clearly still growing into the trade's physi
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Family and personal networks](../organizations/family-and-personal-networks.md)
 
-**Connected to:** [Naomi Freeman](naomi_freeman.md), [Orin Teague](orin_teague.md), [Marta Teague](the_hollis_teague_mother.md)
-
+**Connected to:** [Marta Teague](the_hollis_teague_mother.md), [Naomi Freeman](naomi_freeman.md), [Orin Teague](orin_teague.md)

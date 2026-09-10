@@ -48,5 +48,4 @@ Extends spirit-trail landmark warning radius from 24 to 36 world units while ass
 
 **Affiliated with:** [The Outfit](../organizations/the-outfit.md)
 
-**Connected to:** [Ada Mercer](ada_mercer.md), [Birdie Calloway](birdie_calloway.md), [Eleanor](eleanor.md)
-
+**Connected to:** [Ada Mercer](ada_mercer.md), [Birdie Calloway](birdie_calloway.md), [Coy Ashworth](night_herder_coy.md), [Eleanor](eleanor.md), [The Night Birds](the_night_birds.md)

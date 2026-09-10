@@ -47,4 +47,3 @@ Reuses the existing rancher-family perk definition rather than authoring a dupli
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Tomas Reyes](tomas_reyes.md)
-

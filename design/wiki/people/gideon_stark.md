@@ -27,4 +27,3 @@ Adult man, early sixties, gaunt from a hard decade, clothes patched rather than 
 ## Known associates
 
 **Affiliated with:** [Bellhollow](../organizations/bellhollow.md)
-

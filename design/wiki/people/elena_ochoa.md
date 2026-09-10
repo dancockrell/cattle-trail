@@ -28,5 +28,4 @@ Adult woman, mid-thirties, practical homestead dress, tired but not defeated.
 
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
-**Connected to:** [Tam](little_tam.md), [Little Pim](the_boucher_apprentice.md), [Tobias Ochoa](the_ochoa_boy.md)
-
+**Connected to:** [Little Pim](the_boucher_apprentice.md), [Tam](little_tam.md), [Tobias Ochoa](the_ochoa_boy.md)

@@ -29,4 +29,3 @@ Adult man, mid-thirties, ill-fitting formal clothes, visibly uncomfortable with 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [The Widow Stroud](the_widow_stroud.md)
-

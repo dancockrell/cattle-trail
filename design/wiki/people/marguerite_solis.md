@@ -47,4 +47,3 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Augustine Marchetti](augustine_marchetti.md), [Dinah Okonkwo](dinah_okonkwo.md), [Dr. Rafael Alvarez](doc_alvarez.md), [Eleanor](eleanor.md)
-

@@ -28,5 +28,4 @@ Adult man, late fifties, plain but formal dress, tired but attentive expression.
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md), [Providence](../organizations/providence.md)
 
-**Connected to:** [Hepzibah Thorne](hepzibah_thorne.md), [Temperance Vane](temperance_vane.md), [Judge Abernathy](the_thorne_customer.md), [The Widow Stroud](the_widow_stroud.md), [Zenobia Whitmore](zenobia_whitmore.md)
-
+**Connected to:** [Hepzibah Thorne](hepzibah_thorne.md), [Judge Abernathy](the_thorne_customer.md), [Temperance Vane](temperance_vane.md), [The Widow Stroud](the_widow_stroud.md), [Zenobia Whitmore](zenobia_whitmore.md)

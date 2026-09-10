@@ -29,4 +29,3 @@ Adult man, early forties, well-dressed in a way that suggests money from somewhe
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Roisin Dunmore](roisin_dunmore.md)
-

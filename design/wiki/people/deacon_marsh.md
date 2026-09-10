@@ -29,4 +29,3 @@ Adult man in his mid-forties, plain dark coat, unremarkable on purpose.
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md), [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Hiram Cobb](hiram_cobb.md), [Willow Byrne](willow_byrne.md)
-

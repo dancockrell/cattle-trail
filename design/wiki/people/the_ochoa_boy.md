@@ -28,5 +28,4 @@ A young boy in patched practical clothes, watchful and quiet, older in manner th
 
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
-**Connected to:** [Elena Ochoa](elena_ochoa.md), [Tam](little_tam.md), [Little Pim](the_boucher_apprentice.md)
-
+**Connected to:** [Elena Ochoa](elena_ochoa.md), [Little Pim](the_boucher_apprentice.md), [Tam](little_tam.md)

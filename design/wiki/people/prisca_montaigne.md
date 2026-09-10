@@ -47,4 +47,3 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Providence](../organizations/providence.md)
 
 **Connected to:** [Silas Cobbett](the_montaigne_rival_editor.md)
-

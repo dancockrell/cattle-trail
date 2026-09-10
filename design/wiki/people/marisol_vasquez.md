@@ -47,4 +47,3 @@ Reuses the existing rancher-family perk definition rather than authoring a dupli
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Cyrus Boone](the_hemp_works_owner.md)
-

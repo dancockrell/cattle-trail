@@ -27,4 +27,3 @@ Adult woman, mid-thirties, practical trail clothes, ledger book always within re
 ## Known associates
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
-

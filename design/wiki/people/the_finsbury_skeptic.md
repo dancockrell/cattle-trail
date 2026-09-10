@@ -29,4 +29,3 @@ Adult man, mid-forties, self-important formal dress, performs authority he doesn
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Electra Finsbury](electra_finsbury.md)
-

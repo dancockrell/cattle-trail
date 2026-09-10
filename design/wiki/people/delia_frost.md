@@ -27,4 +27,3 @@ Adult woman, early thirties, sharp practical dress suited to running a busy room
 ## Known associates
 
 **Affiliated with:** [Providence](../organizations/providence.md)
-

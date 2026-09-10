@@ -29,4 +29,3 @@ Adult man, mid-twenties, paint-stained but noticeably sloppier work than Wilhelm
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Wilhelmina Frost](wilhelmina_frost.md)
-

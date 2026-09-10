@@ -47,5 +47,4 @@ Reuses the existing shared repair-efficiency perk definition rather than authori
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Family and personal networks](../organizations/family-and-personal-networks.md)
 
-**Connected to:** [Hollis Teague](hollis_teague.md), [Orin Teague](orin_teague.md), [Marta Teague](the_hollis_teague_mother.md)
-
+**Connected to:** [Hollis Teague](hollis_teague.md), [Marta Teague](the_hollis_teague_mother.md), [Orin Teague](orin_teague.md)

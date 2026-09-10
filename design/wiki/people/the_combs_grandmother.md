@@ -29,4 +29,3 @@ Adult woman, mid-seventies, frail but alert, surrounded by fabric and the visibl
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Loretta Combs](loretta_combs.md)
-

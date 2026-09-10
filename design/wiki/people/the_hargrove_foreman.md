@@ -27,4 +27,3 @@ Adult woman, mid-thirties, no-nonsense trail gear, clearly the most competent pe
 ## Known associates
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md)
-

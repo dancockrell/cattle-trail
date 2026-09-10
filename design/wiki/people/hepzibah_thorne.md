@@ -45,5 +45,4 @@ Reuses the existing shared repair-efficiency perk definition rather than authori
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
-**Connected to:** [Magistrate Holt](magistrate_holt.md), [Judge Abernathy](the_thorne_customer.md)
-
+**Connected to:** [Judge Abernathy](the_thorne_customer.md), [Magistrate Holt](magistrate_holt.md)

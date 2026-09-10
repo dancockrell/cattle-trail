@@ -27,4 +27,3 @@ Adult woman, mid-fifties, formidable posture, immaculately kept despite the mud 
 ## Known associates
 
 **Affiliated with:** [Providence](../organizations/providence.md)
-

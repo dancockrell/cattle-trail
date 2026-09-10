@@ -29,4 +29,3 @@ Adult man, late sixties, weathered, one old hooded hawk still on a perch beside 
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Artemisia Falk](artemisia_falk.md)
-

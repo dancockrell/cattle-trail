@@ -28,3 +28,4 @@ Adult man, late forties, uniform kept correct even in frontier heat, controlled 
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
+**Connected to:** [Rilla Sorrel](rilla_sorrel.md)

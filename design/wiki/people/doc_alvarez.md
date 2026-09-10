@@ -29,4 +29,3 @@ Adult man, late forties, spectacles, sleeves permanently rolled, a bag that has 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Augustine Marchetti](augustine_marchetti.md), [Dinah Okonkwo](dinah_okonkwo.md), [Eleanor](eleanor.md), [Marguerite Solis](marguerite_solis.md)
-

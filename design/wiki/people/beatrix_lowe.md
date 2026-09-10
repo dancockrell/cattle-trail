@@ -46,5 +46,4 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [The Hargrove Range](../organizations/hargrove-range.md)
 
-**Connected to:** [Ada Mercer](ada_mercer.md), [Matilda Greaves](matilda_greaves.md), [County Land Office Clerk Purdy](the_greaves_survey_client.md)
-
+**Connected to:** [Ada Mercer](ada_mercer.md), [County Land Office Clerk Purdy](the_greaves_survey_client.md), [Esme Radcliffe](hargrove_line_rider_esme.md), [Matilda Greaves](matilda_greaves.md)

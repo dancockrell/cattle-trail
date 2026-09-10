@@ -47,4 +47,3 @@ Reuses the existing shared trail-hazard perk definition rather than authoring a 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Gustaf Renner](the_ferry_rival.md)
-

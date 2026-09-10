@@ -29,4 +29,3 @@ Adult man, mid-forties, plain but authoritative bearing, a federal badge worn wi
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Temperance Vane](temperance_vane.md)
-

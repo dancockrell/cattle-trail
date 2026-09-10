@@ -29,4 +29,3 @@ Adult woman, fifty, weathered river-trade coat, the particular squint of someone
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Josephine Merriweather](josephine_merriweather.md)
-

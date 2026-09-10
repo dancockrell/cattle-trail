@@ -47,4 +47,3 @@ Reuses the existing shared trail-hazard perk definition rather than authoring a 
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Old Ansel Vogt](the_falk_falconry_mentor.md)
-

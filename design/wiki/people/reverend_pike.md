@@ -27,4 +27,3 @@ Adult man, mid-forties, plain dark coat, hands rough from building his own churc
 ## Known associates
 
 **Affiliated with:** [Providence](../organizations/providence.md)
-

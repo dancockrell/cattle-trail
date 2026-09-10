@@ -29,4 +29,3 @@ A young apprentice covered in wood shavings, watching a cooper work with clear d
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Elena Ochoa](elena_ochoa.md), [Tam](little_tam.md), [Tobias Ochoa](the_ochoa_boy.md)
-

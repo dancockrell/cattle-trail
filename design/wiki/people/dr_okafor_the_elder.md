@@ -29,4 +29,3 @@ Adult woman, early fifties, composed and professional bearing, a physician's pra
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Justina Okafor](justina_okafor.md), [Vashti Okafor](vashti_okafor.md)
-

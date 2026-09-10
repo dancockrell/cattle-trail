@@ -48,4 +48,3 @@ Draft benefit to rest_madness_recovery; numerical effect is untested.
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md), [The Outfit](../organizations/the-outfit.md)
 
 **Connected to:** [Ada Mercer](ada_mercer.md), [Augustine Marchetti](augustine_marchetti.md), [Birdie Calloway](birdie_calloway.md), [Dinah Okonkwo](dinah_okonkwo.md), [Dr. Rafael Alvarez](doc_alvarez.md), [Ines Vale](ines_vale.md), [Marguerite Solis](marguerite_solis.md)
-

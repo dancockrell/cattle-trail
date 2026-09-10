@@ -29,4 +29,3 @@ Adult man, late forties, ink-stained but more polished than Prisca's shop, a hin
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Providence](../organizations/providence.md)
 
 **Connected to:** [Prisca Montaigne](prisca_montaigne.md)
-

@@ -27,4 +27,3 @@ Adult man, mid-twenties, built for ranch work, dresses like his father wants him
 ## Known associates
 
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md)
-

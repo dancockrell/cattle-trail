@@ -29,4 +29,3 @@ Adult man, mid-fifties, comfortable rather than hardened, gear well-used but not
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Deacon Marsh](deacon_marsh.md), [Willow Byrne](willow_byrne.md)
-

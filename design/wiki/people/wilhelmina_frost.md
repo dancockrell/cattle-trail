@@ -47,4 +47,3 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Cato Villanueva](the_frost_apprentice_rival.md)
-

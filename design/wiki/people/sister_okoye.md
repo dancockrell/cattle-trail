@@ -29,4 +29,3 @@ Adult woman, mid-twenties, plain traveling-appropriate dress, worried but compos
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Louisa Okoye](louisa_okoye.md)
-

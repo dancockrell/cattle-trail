@@ -27,4 +27,3 @@ Adult man, late twenties, uniform a little rumpled, clearly off-duty posture eve
 ## Known associates
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
-

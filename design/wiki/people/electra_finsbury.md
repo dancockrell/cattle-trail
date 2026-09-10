@@ -47,4 +47,3 @@ Reuses the existing shared repair-efficiency perk definition rather than authori
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Reeve Talmadge](the_finsbury_skeptic.md)
-

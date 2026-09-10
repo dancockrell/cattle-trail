@@ -27,4 +27,3 @@ Adult man, early forties, upright bearing from years of service, plain but well-
 ## Known associates
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
-

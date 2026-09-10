@@ -29,4 +29,3 @@ Adult man, late fifties, formal academic dress, precise and exacting bearing sof
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Seraphina Oduya](seraphina_oduya.md)
-

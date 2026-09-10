@@ -46,5 +46,4 @@ Reuses the existing shared trail-hazard perk definition rather than authoring a 
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [The Hargrove Range](../organizations/hargrove-range.md)
 
-**Connected to:** [Ada Mercer](ada_mercer.md), [Beatrix Lowe](beatrix_lowe.md), [County Land Office Clerk Purdy](the_greaves_survey_client.md)
-
+**Connected to:** [Ada Mercer](ada_mercer.md), [Beatrix Lowe](beatrix_lowe.md), [County Land Office Clerk Purdy](the_greaves_survey_client.md), [Esme Radcliffe](hargrove_line_rider_esme.md)

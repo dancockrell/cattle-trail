@@ -27,4 +27,3 @@ Adult man in his fifties, weathered and upright, dressed better than his hands b
 ## Known associates
 
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md)
-

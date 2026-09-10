@@ -29,4 +29,3 @@ Adult man, late fifties, deeply sun-weathered, immaculate in his gear if nothing
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Josefina "Fina" Reyes](fina_reyes.md)
-

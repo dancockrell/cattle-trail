@@ -28,5 +28,4 @@ Adult woman, late thirties, sleeves rolled, sharp-eyed, dressed for the counter 
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
-**Connected to:** [Sallie Voss](sallie_voss.md), [Boyd Farrow](the_calloway_ranch_hand.md)
-
+**Connected to:** [Boyd Farrow](the_calloway_ranch_hand.md), [Sallie Voss](sallie_voss.md)

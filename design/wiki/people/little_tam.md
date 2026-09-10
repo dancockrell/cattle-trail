@@ -29,4 +29,3 @@ A child, practical patched clothes, unhurried in a way that unsettles adults mor
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Elena Ochoa](elena_ochoa.md), [Little Pim](the_boucher_apprentice.md), [Tobias Ochoa](the_ochoa_boy.md)
-

@@ -47,4 +47,3 @@ Reuses the existing rancher-family perk definition rather than authoring a dupli
 **Affiliated with:** [Independent trail crews](../organizations/independent-outfits.md)
 
 **Connected to:** [Zilpah Hendricks](zilpah_hendricks.md)
-

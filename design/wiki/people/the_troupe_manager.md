@@ -29,4 +29,3 @@ Adult man, early forties, expensively but tastelessly dressed, always in motion 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Marlowe Castellano](marlowe_castellano.md)
-

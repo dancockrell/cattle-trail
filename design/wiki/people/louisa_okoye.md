@@ -46,5 +46,4 @@ Reuses the existing shared camp-company perk definition rather than authoring a 
 
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md), [Providence](../organizations/providence.md)
 
-**Connected to:** [Cordelia Sinclair](cordelia_sinclair.md), [Adaeze Okoye](sister_okoye.md), [The Widow Alcott](widow_alcott.md), [Winnifred "Winnie" Doyle](winnie_doyle.md)
-
+**Connected to:** [Adaeze Okoye](sister_okoye.md), [Cordelia Sinclair](cordelia_sinclair.md), [The Widow Alcott](widow_alcott.md), [Winnifred "Winnie" Doyle](winnie_doyle.md)

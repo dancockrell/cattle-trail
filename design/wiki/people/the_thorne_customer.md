@@ -29,4 +29,3 @@ Adult man, early sixties, retired formal dress, checking a pocket watch with evi
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Hepzibah Thorne](hepzibah_thorne.md), [Magistrate Holt](magistrate_holt.md)
-

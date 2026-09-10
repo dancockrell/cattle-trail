@@ -47,4 +47,3 @@ Reuses the existing shared repair-efficiency perk definition rather than authori
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Captain Ines Fournier](the_riverboat_captain.md)
-

@@ -27,4 +27,3 @@ Adult woman, late fifties, practical widow's dress, tired but not broken.
 ## Known associates
 
 **Affiliated with:** [Bellhollow](../organizations/bellhollow.md)
-

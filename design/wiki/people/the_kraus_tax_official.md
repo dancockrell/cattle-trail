@@ -29,4 +29,3 @@ Adult man, late thirties, formal traveling clothes, a satchel of forms and stamp
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Adelheid Kraus](adelheid_kraus.md)
-

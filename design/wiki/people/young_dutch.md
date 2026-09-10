@@ -28,5 +28,4 @@ A young adult man, gear too new, still figuring out how to wear a hat properly.
 
 **Affiliated with:** [The Outfit](../organizations/the-outfit.md)
 
-**Connected to:** [Pardo](pardo.md), [Alma Okafor](point_rider_alma.md)
-
+**Connected to:** [Alma Okafor](point_rider_alma.md), [Pardo](pardo.md)

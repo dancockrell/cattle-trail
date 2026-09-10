@@ -29,4 +29,3 @@ Adult woman, early forties, practical dress, tired but warm expression.
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Family and personal networks](../organizations/family-and-personal-networks.md)
 
 **Connected to:** [Hollis Teague](hollis_teague.md), [Naomi Freeman](naomi_freeman.md), [Orin Teague](orin_teague.md)
-

@@ -29,4 +29,3 @@ Adult man, mid-fifties, calloused hands, plain but well-run workshop visible beh
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Marisol Vasquez](marisol_vasquez.md)
-

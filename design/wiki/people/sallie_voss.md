@@ -26,7 +26,6 @@ Adult woman, nineteen, dressed like her mother but softer about it, quick to smi
 - Not implemented in scripts/.
 ## Known associates
 
-**Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md), [Fort Griffin](../organizations/fort-griffin.md)
+**Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md), [The Calloway Spread](../organizations/calloway-spread.md)
 
-**Connected to:** [Nettie Voss](nettie_voss.md), [Boyd Farrow](the_calloway_ranch_hand.md)
-
+**Connected to:** [Boyd Farrow](the_calloway_ranch_hand.md), [Nettie Voss](nettie_voss.md)

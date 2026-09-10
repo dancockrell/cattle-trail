@@ -47,4 +47,3 @@ Reuses the existing shared combat-range perk definition rather than authoring a 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md), [Providence](../organizations/providence.md)
 
 **Connected to:** [Magistrate Holt](magistrate_holt.md), [Territorial Marshal Odom](marshal_odom.md), [The Widow Stroud](the_widow_stroud.md), [Zenobia Whitmore](zenobia_whitmore.md)
-

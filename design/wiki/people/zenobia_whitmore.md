@@ -47,4 +47,3 @@ Reuses the existing shared trail-hazard perk definition rather than authoring a 
 **Affiliated with:** [Providence](../organizations/providence.md)
 
 **Connected to:** [Magistrate Holt](magistrate_holt.md), [Temperance Vane](temperance_vane.md), [The Widow Stroud](the_widow_stroud.md)
-

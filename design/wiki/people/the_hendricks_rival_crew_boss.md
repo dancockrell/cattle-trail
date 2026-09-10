@@ -27,4 +27,3 @@ Adult man, fifty, superficially affable, harder eyes than his manner suggests.
 ## Known associates
 
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md), [Independent trail crews](../organizations/independent-outfits.md)
-

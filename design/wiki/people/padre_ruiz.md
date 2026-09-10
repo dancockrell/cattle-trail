@@ -29,4 +29,3 @@ Adult man, late fifties, plain cassock adapted for practical frontier wear, calm
 **Affiliated with:** [Providence](../organizations/providence.md)
 
 **Connected to:** [Brother Amos](brother_amos.md)
-

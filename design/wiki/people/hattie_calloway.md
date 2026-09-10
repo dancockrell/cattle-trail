@@ -27,4 +27,3 @@ Adult woman in her late forties, practical dress, tired kindness in her face.
 ## Known associates
 
 **Affiliated with:** [The Calloway Spread](../organizations/calloway-spread.md)
-

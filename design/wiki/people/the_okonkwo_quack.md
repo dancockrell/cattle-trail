@@ -29,4 +29,3 @@ Adult man, early fifties, ostentatious traveling-salesman dress, practiced charm
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Dinah Okonkwo](dinah_okonkwo.md)
-

@@ -19,6 +19,7 @@ A hide-and-soldier town, loud, crowded, and largely indifferent to what the outf
 - **[Deacon Marsh](../people/deacon_marsh.md)** brokers bounty paper — including the dead man's paper he once sold **[Willow Byrne](../people/willow_byrne.md)**, a conversation she still owes him.
 - **[The Widow Stroud](../people/the_widow_stroud.md)** lends money to outfits that fall behind, unfailingly polite and utterly unsentimental about the terms; her clerk **[Mortimer Vance](../people/the_stroud_clerk.md)** is visibly uncomfortable delivering her collection notices in person.
 - **[Ellison Rhodes](../people/ellison_rhodes.md)**, a former cavalry sergeant, guides independently out of Griffin.
+- **[Rilla Sorrel](../people/rilla_sorrel.md)** keeps a gunsmith's bench in town, fixing and fitting the rifles and revolvers **[Captain Dunwoody](../people/captain_dunwoody.md)**'s garrison and outfits both depend on — she charges honestly enough that either kind of customer comes back.
 
 ## Medicine
 

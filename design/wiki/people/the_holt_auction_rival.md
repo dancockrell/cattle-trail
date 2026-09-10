@@ -29,4 +29,3 @@ Adult man, mid-forties, flashier dress than the trade requires, ingratiating smi
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Birdena Holt](birdena_holt.md)
-

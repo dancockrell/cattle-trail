@@ -29,4 +29,3 @@ Adult man, late thirties, ink-stained shirt cuffs, permanently harried expressio
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Prudence Hale](prudence_hale.md)
-

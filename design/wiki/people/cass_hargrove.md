@@ -27,4 +27,3 @@ Adult woman, late twenties, sharply practical dress, always has a ledger within 
 ## Known associates
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md)
-

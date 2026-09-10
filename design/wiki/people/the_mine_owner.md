@@ -29,4 +29,3 @@ Adult man, mid-fifties, well-dressed for a mine owner, more comfortable with led
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Birgitta Holm](birgitta_holm.md)
-

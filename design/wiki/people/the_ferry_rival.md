@@ -29,4 +29,3 @@ Adult man, early forties, affable and a little too casual about visible risk, il
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Clementina Reyes-Boone](clementina_reyesboone.md)
-

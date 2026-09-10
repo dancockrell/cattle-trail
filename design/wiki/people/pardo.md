@@ -28,5 +28,4 @@ Adult man, mid-forties, permanently sun-cured, moves like every motion is consid
 
 **Affiliated with:** [The Outfit](../organizations/the-outfit.md)
 
-**Connected to:** [Alma Okafor](point_rider_alma.md), ["Young" Dutch](young_dutch.md)
-
+**Connected to:** [Alma Okafor](point_rider_alma.md), [Pim Sorensen](drag_rider_pim.md), ["Young" Dutch](young_dutch.md)

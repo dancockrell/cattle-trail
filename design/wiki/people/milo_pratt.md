@@ -28,3 +28,4 @@ Adult man, mid-twenties, ordinary trail hand, nothing about him stands out on pu
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md)
 
+**Connected to:** [Delia Marsh](delia_marsh.md), [Tam Wexford](hargrove_wrangler_tam.md)

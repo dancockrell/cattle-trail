@@ -27,4 +27,3 @@ Adult man, lean and sun-worn, dressed rough, visibly on his last luck.
 ## Known associates
 
 **Affiliated with:** [The Outfit](../organizations/the-outfit.md)
-

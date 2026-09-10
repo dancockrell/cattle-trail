@@ -47,4 +47,3 @@ Reuses the existing rancher-family perk definition rather than authoring a dupli
 **Affiliated with:** [Conflicts and rivalries](../organizations/conflicts-and-rivalries.md)
 
 **Connected to:** [Hosea Pruett](the_wexford_dairy_neighbor.md)
-

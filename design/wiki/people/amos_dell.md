@@ -27,4 +27,3 @@ Adult man, fifty, unhurried, badge worn plain, no showy gun rig.
 ## Known associates
 
 **Affiliated with:** [Fort Griffin](../organizations/fort-griffin.md)
-

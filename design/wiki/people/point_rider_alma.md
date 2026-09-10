@@ -29,4 +29,3 @@ Adult woman, thirty, lean and alert, dressed for long hours in the saddle rather
 **Affiliated with:** [The Outfit](../organizations/the-outfit.md)
 
 **Connected to:** [Pardo](pardo.md), ["Young" Dutch](young_dutch.md)
-

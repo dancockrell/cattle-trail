@@ -29,4 +29,3 @@ Adult woman, early sixties, sharp-eyed, dressed plainly but with evident self-re
 **Affiliated with:** [Providence](../organizations/providence.md)
 
 **Connected to:** [Cordelia Sinclair](cordelia_sinclair.md), [Louisa Okoye](louisa_okoye.md), [Winnifred "Winnie" Doyle](winnie_doyle.md)
-

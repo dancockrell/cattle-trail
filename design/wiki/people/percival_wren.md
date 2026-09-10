@@ -27,4 +27,3 @@ Adult man, late thirties, city clothes increasingly worn by trail conditions, no
 ## Known associates
 
 **Affiliated with:** [Providence](../organizations/providence.md)
-

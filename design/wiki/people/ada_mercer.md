@@ -46,5 +46,4 @@ Draft benefit to machine_repair_efficiency; numerical effect is untested.
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md), [The Outfit](../organizations/the-outfit.md)
 
-**Connected to:** [Beatrix Lowe](beatrix_lowe.md), [Birdie Calloway](birdie_calloway.md), [Eleanor](eleanor.md), [Ines Vale](ines_vale.md), [Matilda Greaves](matilda_greaves.md)
-
+**Connected to:** [Beatrix Lowe](beatrix_lowe.md), [Birdie Calloway](birdie_calloway.md), [Del Ochoa](outfit_farrier_del.md), [Eleanor](eleanor.md), [Ines Vale](ines_vale.md), [Matilda Greaves](matilda_greaves.md)

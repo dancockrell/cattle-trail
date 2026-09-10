@@ -27,4 +27,3 @@ Adult man, early forties, sharper city clothes than anyone else in Providence, a
 ## Known associates
 
 **Affiliated with:** [Providence](../organizations/providence.md)
-

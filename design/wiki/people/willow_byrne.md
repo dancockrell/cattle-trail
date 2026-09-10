@@ -48,4 +48,3 @@ Extends the player's effective shooting range while Willow is assigned to the fi
 **Affiliated with:** [Family and personal networks](../organizations/family-and-personal-networks.md), [Fort Griffin](../organizations/fort-griffin.md)
 
 **Connected to:** [Deacon Marsh](deacon_marsh.md), [Hiram Cobb](hiram_cobb.md)
-
