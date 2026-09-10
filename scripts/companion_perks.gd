@@ -8,7 +8,8 @@ const DEFINITIONS := {
 	"ada_mercer_perk": {"label":"Sure-Handed Tuning", "activation":"field", "stat":"machine_repair_efficiency", "operation":"multiply", "value":1.1, "cap":1.25},
 	"spirit_sense": {"label":"Between the Footprints", "activation":"field", "stat":"trail_hazard_notice", "operation":"add", "value":1.0, "cap":2.0},
 	"steady_aim": {"label":"Steady Aim", "activation":"field", "stat":"shot_range_bonus", "operation":"add", "value":20.0, "cap":40.0},
-	"camp_song": {"label":"Camp Song", "activation":"camp", "stat":"rest_madness_recovery", "operation":"add", "value":2.0, "cap":6.0}
+	"camp_song": {"label":"Camp Song", "activation":"camp", "stat":"rest_madness_recovery", "operation":"add", "value":2.0, "cap":6.0},
+	"trail_company": {"label":"Good Company", "activation":"camp", "stat":"rest_madness_recovery", "operation":"add", "value":1.0, "cap":6.0}
 }
 
 static func resolve(companions: Array, context: String) -> Dictionary:

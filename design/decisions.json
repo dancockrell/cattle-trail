@@ -58,9 +58,15 @@
       "consequence": "Untested values require a bounded implementation and playtest."
     },
     {
+      "id": "roster_scale",
+      "status": "accepted_user",
+      "decision": "Dan, 2026-09-10: the romance roster should be large -- hundreds of options over time -- and the wider named/minor cast should run into many hundreds, each with a distinct reason for being, story, lore and quests. This resolves the roster-limit half of the old 'unresolved' entry below.",
+      "consequence": "This is reached two ways, not by hand-authoring hundreds of full companion.schema.json records in one sitting (that would either take an enormous amount of sustained work or degrade into repetitive filler, neither of which serves 'each unique'): (1) the procedural generator (scripts/character_factory.gd, design/characters.json's procedural_template) now draws from much larger name/temperament pools and seven distinct family archetypes with their own hooks and perks, so every generated companion the system can produce is genuinely differentiated, not just renamed; (2) hand-authored named companions (full romance mechanics, unique quests) and minor/supporting characters (design/npcs.json's lighter schema) continue in large organized batches session over session. The real ceiling today is art, not writing: the procedural generator can only place a visible companion for one of the 96 extracted candidates in kits/character-families/catalog.json, none of which are 'approved' status yet -- see design/CHARACTER-VISUAL-CONTRACT.md and the art-admission process already established in VALIDATION.md/VISUAL-AUDIT.md. Written/lore-level characters are not blocked by that ceiling and can scale ahead of it."
+    },
+    {
       "id": "unresolved",
       "status": "unresolved",
-      "decision": "Roster limits, death/departure persistence policy, world scale, machine economy, mecha control and procedural population weights.",
+      "decision": "Death/departure persistence policy, world scale, machine economy, mecha control and exact procedural background weights.",
       "consequence": "Do not silently implement assumptions as accepted design."
     },
     {

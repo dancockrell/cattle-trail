@@ -811,19 +811,22 @@
     "id_pattern": "generated_<persistent_identity_key>",
     "pools": {
       "background": [
-        "trail scout",
-        "steam mechanic",
-        "frontier healer",
-        "spirit medium",
+        "rancher",
+        "mechanic",
+        "spirit-scout",
+        "healer",
+        "gunhand",
+        "singer",
         "teamster"
       ],
+      "background_pool_source_of_truth": "scripts/character_factory.gd's FAMILY_HOOKS keys. Keep this list in sync with that dictionary's keys, not the other way around -- the code is what actually runs.",
       "temperament": [
-        "forthright",
-        "wry",
-        "gentle",
-        "adventurous",
-        "reserved"
+        "dry wit", "bright curiosity", "quiet confidence", "playful daring", "warm directness", "patient mischief",
+        "stubborn cheer", "watchful calm", "restless energy", "unhurried patience", "sharp practicality", "gentle stubbornness",
+        "guarded warmth", "loud confidence", "quiet intensity", "easy humor", "careful precision", "reckless generosity",
+        "skeptical kindness", "steady nerve", "wry patience", "open curiosity", "measured pride", "hard-won calm"
       ],
+      "temperament_pool_source_of_truth": "scripts/character_factory.gd's DEFAULT_TEMPERAMENTS array (each family also draws from its own narrower FAMILY_TEMPERAMENTS slice). Keep this list byte-identical to DEFAULT_TEMPERAMENTS.",
       "appearance": [
         "ordinary but gorgeous clearly adult woman; slim and small-chested; healthy, active, charismatic and self-confident"
       ],
@@ -846,10 +849,11 @@
       "Resolve a compatible playable skill, protagonist support role and brief affectionate payoff for each companion adventure.",
       "Treat rebellious PG-13 clothing as personal expression rather than the character's entire identity."
     ],
+    "roster_scale_decision": "Dan, 2026-09-10: a large romance roster (hundreds over time) is the accepted direction, resolving the 'Roster and deployment limits' question this template previously left open. The mechanism for reaching that scale is this procedural generator plus continued hand-authored named companions (see named_characters above), not hundreds of individually bespoke companion.schema.json records authored one at a time -- see design/decisions.json's 'roster_scale' entry for the full reasoning, including the real ceiling this hits today (96 extracted, zero admitted, art candidates in kits/character-families/catalog.json).",
     "unresolved": [
       "Exact background weights",
-      "Roster and deployment limits",
-      "Duplicate perk stacking beyond per-group caps"
+      "Duplicate perk stacking beyond per-group caps",
+      "How many of the 96 existing art candidates (or a future larger catalog) get admitted, and on what visual bar -- an art-review decision, not a data one"
     ]
   }
 }

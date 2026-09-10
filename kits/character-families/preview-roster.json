@@ -6,9 +6,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_32",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_0c244fa17f36a5654a2e",
 			"madness": 10,
-			"name": "Vera Vega",
+			"name": "Kate Prescott",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -29,7 +30,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -38,9 +39,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_13",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_ead0f6d5f70eacbd6afc",
 			"madness": 10,
-			"name": "Alma Santos",
+			"name": "Nora Gable",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -61,7 +63,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "unhurried patience",
 			"trust": 0
 		},
 		{
@@ -70,9 +72,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_26",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_8795bd03dc35f198a7d8",
 			"madness": 10,
-			"name": "Nell Marsh",
+			"name": "Queenie Navarro",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -93,7 +96,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "careful precision",
 			"trust": 0
 		},
 		{
@@ -102,9 +105,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_05",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_ea047a212b2eca961a4a",
 			"madness": 10,
-			"name": "Clara Mercado",
+			"name": "Clara Briggs",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -134,6 +138,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_11",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_1762590e29da35c21326",
 			"madness": 10,
 			"name": "Nell Hale",
@@ -157,7 +162,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "measured pride",
 			"trust": 0
 		},
 		{
@@ -166,9 +171,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_23",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_16d80a9cfae071938546",
 			"madness": 10,
-			"name": "Tess Mercado",
+			"name": "Zora Kellerman",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -189,7 +195,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "reckless generosity",
 			"trust": 0
 		},
 		{
@@ -198,9 +204,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_28",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_01a0441b3f0ebbbf034a",
 			"madness": 10,
-			"name": "June Voss",
+			"name": "Beulah Voss",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -221,7 +228,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -230,9 +237,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_04",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_fb4566c71f0356977b57",
 			"madness": 10,
-			"name": "Iris Santos",
+			"name": "Dolores Whitfield",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -253,7 +261,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -262,9 +270,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_31",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_50c067f73eeadbfee365",
 			"madness": 10,
-			"name": "Sofia Quinn",
+			"name": "Sofia Yates",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -285,7 +294,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -294,9 +303,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_02",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_3e32570df8214e4d7a61",
 			"madness": 10,
-			"name": "Nell Quinn",
+			"name": "Ada Quinn",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -312,70 +322,6 @@
 				"atlas": "res://kits/character-families/rancher/atlas.png",
 				"rect": [
 					64,
-					0,
-					64,
-					64
-				]
-			},
-			"temperament": "playful daring",
-			"trust": 0
-		},
-		{
-			"affection": 0,
-			"age": 24,
-			"animation_status": "static_identity_only",
-			"art_id": "rancher_11",
-			"family": "rancher",
-			"id": "generated_18d42f2a2ab1fb5d4f60",
-			"madness": 10,
-			"name": "Clara Vega",
-			"origin": "generated",
-			"perk_id": "steady_herd",
-			"perk_status": "design_only",
-			"production_preview": true,
-			"recruitment": "available",
-			"relationship": "unmet",
-			"romance_requires_mutual_acceptance": true,
-			"sprite": {
-				"anchor": [
-					32,
-					61
-				],
-				"atlas": "res://kits/character-families/rancher/atlas.png",
-				"rect": [
-					128,
-					128,
-					64,
-					64
-				]
-			},
-			"temperament": "warm directness",
-			"trust": 0
-		},
-		{
-			"affection": 0,
-			"age": 23,
-			"animation_status": "static_identity_only",
-			"art_id": "spirit_scout_01",
-			"family": "spirit-scout",
-			"id": "generated_9ad9aecb036aba3f6c2a",
-			"madness": 10,
-			"name": "Iris Cross",
-			"origin": "generated",
-			"perk_id": "spirit_sense",
-			"perk_status": "design_only",
-			"production_preview": true,
-			"recruitment": "available",
-			"relationship": "unmet",
-			"romance_requires_mutual_acceptance": true,
-			"sprite": {
-				"anchor": [
-					32,
-					61
-				],
-				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
-				"rect": [
-					0,
 					0,
 					64,
 					64
@@ -386,13 +332,80 @@
 		},
 		{
 			"affection": 0,
+			"age": 24,
+			"animation_status": "static_identity_only",
+			"art_id": "rancher_11",
+			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
+			"id": "generated_18d42f2a2ab1fb5d4f60",
+			"madness": 10,
+			"name": "Cora Prescott",
+			"origin": "generated",
+			"perk_id": "steady_herd",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/rancher/atlas.png",
+				"rect": [
+					128,
+					128,
+					64,
+					64
+				]
+			},
+			"temperament": "hard-won calm",
+			"trust": 0
+		},
+		{
+			"affection": 0,
+			"age": 23,
+			"animation_status": "static_identity_only",
+			"art_id": "spirit_scout_01",
+			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
+			"id": "generated_9ad9aecb036aba3f6c2a",
+			"madness": 10,
+			"name": "Dolores Cross",
+			"origin": "generated",
+			"perk_id": "spirit_sense",
+			"perk_status": "design_only",
+			"production_preview": true,
+			"recruitment": "available",
+			"relationship": "unmet",
+			"romance_requires_mutual_acceptance": true,
+			"sprite": {
+				"anchor": [
+					32,
+					61
+				],
+				"atlas": "res://kits/character-families/spirit-scout/atlas.png",
+				"rect": [
+					0,
+					0,
+					64,
+					64
+				]
+			},
+			"temperament": "watchful calm",
+			"trust": 0
+		},
+		{
+			"affection": 0,
 			"age": 23,
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_25",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_21e4792662c84a2e86c2",
 			"madness": 10,
-			"name": "Clara Hale",
+			"name": "Cora Jacoby",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -413,7 +426,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "quiet intensity",
 			"trust": 0
 		},
 		{
@@ -422,9 +435,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_29",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_b5ecb191f4e387a28c24",
 			"madness": 10,
-			"name": "Tess Reed",
+			"name": "Tess Rourke",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -445,7 +459,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -454,9 +468,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_21",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_99b6e14994ccfaecf4ab",
 			"madness": 10,
-			"name": "Mae Reed",
+			"name": "Ursula Boone",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -477,7 +492,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -486,9 +501,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_14",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_e593aba4bac57cd3ebcc",
 			"madness": 10,
-			"name": "Vera West",
+			"name": "Kate Calloway",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -509,7 +525,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		},
 		{
@@ -518,9 +534,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_30",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_8c8784f736a8a231cabb",
 			"madness": 10,
-			"name": "Sofia Voss",
+			"name": "Guadalupe Ellison",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -541,7 +558,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -550,9 +567,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_12",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_31766b0b055fbb1c6283",
 			"madness": 10,
-			"name": "Nell West",
+			"name": "Ada Calloway",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -573,7 +591,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		},
 		{
@@ -582,9 +600,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_26",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_96b1ecd45c36581d18fe",
 			"madness": 10,
-			"name": "Alma Bennett",
+			"name": "Esperanza Delgado",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -605,7 +624,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		},
 		{
@@ -614,9 +633,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_27",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_ccd789ca3b64c388e76b",
 			"madness": 10,
-			"name": "Iris Hale",
+			"name": "Minnie Jacoby",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -637,7 +657,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "reckless generosity",
 			"trust": 0
 		},
 		{
@@ -646,9 +666,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_32",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_a691b54ae245bf79a25d",
 			"madness": 10,
-			"name": "Mae Pike",
+			"name": "Mae Farrow",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -669,7 +690,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "quiet intensity",
 			"trust": 0
 		},
 		{
@@ -678,6 +699,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_13",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_dcb516613b39a7710153",
 			"madness": 10,
 			"name": "Willa Santos",
@@ -701,7 +723,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -710,9 +732,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_25",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_34e35145fcd0c70477e5",
 			"madness": 10,
-			"name": "Mae Reed",
+			"name": "Mae Rourke",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -733,7 +756,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -742,9 +765,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_18",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_099397c053186476b6fe",
 			"madness": 10,
-			"name": "Iris Quinn",
+			"name": "Minnie Quinn",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -765,7 +789,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "measured pride",
 			"trust": 0
 		},
 		{
@@ -774,9 +798,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_26",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_8c84018d9f91593183e1",
 			"madness": 10,
-			"name": "Rose Reed",
+			"name": "Rose Rourke",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -797,7 +822,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -806,9 +831,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_04",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_b706b07fa4300934a68b",
 			"madness": 10,
-			"name": "Celia Bell",
+			"name": "Ximena Quintero",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -829,7 +855,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -838,9 +864,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_24",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_25bedb4caffc058e3444",
 			"madness": 10,
-			"name": "Mae West",
+			"name": "Ursula West",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -861,7 +888,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "dry wit",
 			"trust": 0
 		},
 		{
@@ -870,9 +897,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_16",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_bbdb2776268bd8d4375b",
 			"madness": 10,
-			"name": "Celia Quinn",
+			"name": "Hazel Quinn",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -893,7 +921,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -902,9 +930,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_20",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_7a67aba8077fd3a2a3da",
 			"madness": 10,
-			"name": "Vera West",
+			"name": "Vera Lowe",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -925,7 +954,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -934,9 +963,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_02",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_f638636545a327ae3e15",
 			"madness": 10,
-			"name": "Willa Hart",
+			"name": "Winnie Tanner",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -957,7 +987,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -966,9 +996,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_07",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_8ce0cb027e0f9c572ef5",
 			"madness": 10,
-			"name": "Nell West",
+			"name": "Nell Lowe",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -989,7 +1020,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -998,9 +1029,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_08",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_956683e8de8a19c0a589",
 			"madness": 10,
-			"name": "Della Hart",
+			"name": "Opal Dade",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1021,7 +1053,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -1030,9 +1062,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_21",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_043e5a9d9e4b9e5e9158",
 			"madness": 10,
-			"name": "Tess Mercado",
+			"name": "Tess Briggs",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1062,9 +1095,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_01",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_295d294d0dee1e09061d",
 			"madness": 10,
-			"name": "Mae Hale",
+			"name": "Effie Jacoby",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1085,7 +1119,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "reckless generosity",
 			"trust": 0
 		},
 		{
@@ -1094,9 +1128,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_19",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_e000d491c5cba346049b",
 			"madness": 10,
-			"name": "Tess Voss",
+			"name": "Josie Voss",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1117,7 +1152,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -1126,9 +1161,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_11",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_4c78779f1f46fabfc8c9",
 			"madness": 10,
-			"name": "Tess Quinn",
+			"name": "Tess Yates",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1149,7 +1185,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "bright curiosity",
 			"trust": 0
 		},
 		{
@@ -1158,9 +1194,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_22",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_6995e0ab2352dd25280e",
 			"madness": 10,
-			"name": "Vera Bell",
+			"name": "Kate Alvarado",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1181,7 +1218,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -1190,9 +1227,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_14",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_40aae301b3561a0b713a",
 			"madness": 10,
-			"name": "Nell Hart",
+			"name": "Queenie Tanner",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1213,7 +1251,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -1222,9 +1260,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_27",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_13969b3c04dc39b08315",
 			"madness": 10,
-			"name": "Lucia West",
+			"name": "Lucia Lowe",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1245,7 +1284,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "quiet intensity",
 			"trust": 0
 		},
 		{
@@ -1254,9 +1293,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_03",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_5daa3b36ccd4dea7d558",
 			"madness": 10,
-			"name": "Lucia West",
+			"name": "Dot Calloway",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1286,9 +1326,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_04",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_d59dbac893be269f1bec",
 			"madness": 10,
-			"name": "Iris Mercado",
+			"name": "Minnie Mercado",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1309,7 +1350,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -1318,9 +1359,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_22",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_9ea527789f91e7afeac8",
 			"madness": 10,
-			"name": "Celia Quinn",
+			"name": "Ximena Holt",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1341,7 +1383,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -1350,9 +1392,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_31",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_716909e4804b54b6f09c",
 			"madness": 10,
-			"name": "Della Hale",
+			"name": "Flora Ashford",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1373,7 +1416,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "restless energy",
 			"trust": 0
 		},
 		{
@@ -1382,9 +1425,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_10",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_a86325f3312d7043917e",
 			"madness": 10,
-			"name": "Sofia Pike",
+			"name": "Piper Vance",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1405,7 +1449,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -1414,6 +1458,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_13",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_44c1c907c0ea58a10f36",
 			"madness": 10,
 			"name": "Nell Hale",
@@ -1437,7 +1482,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -1446,9 +1491,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_14",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_ee7beef92ac29ae095ee",
 			"madness": 10,
-			"name": "Sofia Cross",
+			"name": "Guadalupe Cross",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1469,7 +1515,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -1478,9 +1524,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_09",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_4369f4f6f02ef4c0d4dd",
 			"madness": 10,
-			"name": "Sofia Voss",
+			"name": "Guadalupe Ellison",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1501,7 +1548,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "careful precision",
 			"trust": 0
 		},
 		{
@@ -1510,9 +1557,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_10",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_ab58b2a39478248ca65e",
 			"madness": 10,
-			"name": "Vera Flores",
+			"name": "Beatriz Flores",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1533,7 +1581,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -1542,9 +1590,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_01",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_ab49e49a3897643d7f4e",
 			"madness": 10,
-			"name": "Tess Voss",
+			"name": "Josie Voss",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1565,7 +1614,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "stubborn cheer",
 			"trust": 0
 		},
 		{
@@ -1574,6 +1623,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_03",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_81e7f62785e5ce2fe470",
 			"madness": 10,
 			"name": "Clara Santos",
@@ -1597,7 +1647,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -1606,9 +1656,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_06",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_89f6efe22f0ec57ad27a",
 			"madness": 10,
-			"name": "Della Vega",
+			"name": "Opal Prescott",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1629,7 +1680,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -1638,6 +1689,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_06",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_fab9f33e34935cfd3dba",
 			"madness": 10,
 			"name": "Lucia Hart",
@@ -1661,7 +1713,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "measured pride",
 			"trust": 0
 		},
 		{
@@ -1670,6 +1722,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_05",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_da7e402c160ea5fb2426",
 			"madness": 10,
 			"name": "Clara Bell",
@@ -1693,7 +1746,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -1702,9 +1755,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_29",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_e39749c17451c7451361",
 			"madness": 10,
-			"name": "Iris Hale",
+			"name": "Minnie Jacoby",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1725,7 +1779,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "reckless generosity",
 			"trust": 0
 		},
 		{
@@ -1734,9 +1788,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_03",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_69c2888fed6177bd6bea",
 			"madness": 10,
-			"name": "Rose Finch",
+			"name": "Rose Ibarra",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1757,7 +1812,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -1766,9 +1821,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_09",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_ed923fc1b06471acfb60",
 			"madness": 10,
-			"name": "Iris Vega",
+			"name": "Dolores Graves",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -1798,9 +1854,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_25",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_2d9aa9cf936a6802a3fa",
 			"madness": 10,
-			"name": "Iris Hale",
+			"name": "Dolores Ashford",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1821,7 +1878,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "restless energy",
 			"trust": 0
 		},
 		{
@@ -1830,9 +1887,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_12",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_6c1b8779d0cf578996bd",
 			"madness": 10,
-			"name": "Celia Quinn",
+			"name": "Celia Yates",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1853,7 +1911,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "restless energy",
 			"trust": 0
 		},
 		{
@@ -1862,9 +1920,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_10",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_814f88fd3ee3c3a6273a",
 			"madness": 10,
-			"name": "Sofia Finch",
+			"name": "Guadalupe Finch",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1885,7 +1944,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "stubborn cheer",
 			"trust": 0
 		},
 		{
@@ -1894,9 +1953,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_32",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_44e0d6952ee789b68bc4",
 			"madness": 10,
-			"name": "Tess Santos",
+			"name": "Zora Whitfield",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -1917,7 +1977,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "bright curiosity",
 			"trust": 0
 		},
 		{
@@ -1926,9 +1986,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_17",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_43873bfb08d323ad06a7",
 			"madness": 10,
-			"name": "Sofia West",
+			"name": "Sofia Lowe",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1949,7 +2010,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "unhurried patience",
 			"trust": 0
 		},
 		{
@@ -1958,9 +2019,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_31",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_4bcb82f9ebbe8c58411b",
 			"madness": 10,
-			"name": "Sofia Flores",
+			"name": "Sofia Carver",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -1981,7 +2043,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -1990,9 +2052,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_23",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_75e945fa9a2091e73262",
 			"madness": 10,
-			"name": "Sofia Pike",
+			"name": "Guadalupe Pike",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2013,7 +2076,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -2022,9 +2085,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_15",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_41d201cc159460885089",
 			"madness": 10,
-			"name": "Iris Reed",
+			"name": "Iris Rourke",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2045,7 +2109,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "restless energy",
 			"trust": 0
 		},
 		{
@@ -2054,9 +2118,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_24",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_bf5133cb1bc1bf4fe611",
 			"madness": 10,
-			"name": "Iris Hart",
+			"name": "Dolores Tanner",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2086,9 +2151,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_08",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_a880b0eda78b5ade0d26",
 			"madness": 10,
-			"name": "Della Bell",
+			"name": "Opal Alvarado",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2109,7 +2175,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "careful precision",
 			"trust": 0
 		},
 		{
@@ -2118,6 +2184,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_23",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_199fefce9987fbbb01de",
 			"madness": 10,
 			"name": "Iris Vega",
@@ -2141,7 +2208,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "stubborn cheer",
 			"trust": 0
 		},
 		{
@@ -2150,9 +2217,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_24",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_622954b040ff510d865c",
 			"madness": 10,
-			"name": "Lena Voss",
+			"name": "Lettie Voss",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2173,7 +2241,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -2182,9 +2250,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_20",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_e6b5c108138b5ca82518",
 			"madness": 10,
-			"name": "Nell Reed",
+			"name": "Ada Reed",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2205,7 +2274,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -2214,9 +2283,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_02",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_4fae2dea44a036586e60",
 			"madness": 10,
-			"name": "Della Marsh",
+			"name": "Opal Marsh",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2237,7 +2307,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -2246,6 +2316,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_05",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_d47b467900dd1e2c37d0",
 			"madness": 10,
 			"name": "Celia Santos",
@@ -2269,7 +2340,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "stubborn cheer",
 			"trust": 0
 		},
 		{
@@ -2278,6 +2349,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_17",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_d67f1f3232c613045251",
 			"madness": 10,
 			"name": "Lucia Vega",
@@ -2301,7 +2373,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -2310,9 +2382,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_19",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_50b672d0fedb2f3da30a",
 			"madness": 10,
-			"name": "Alma Flores",
+			"name": "Nora Sawyer",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2333,7 +2406,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -2342,9 +2415,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_15",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_e1c5a7a4224a61c2aa6c",
 			"madness": 10,
-			"name": "Vera Quinn",
+			"name": "Kate Quinn",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2365,7 +2439,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -2374,9 +2448,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_16",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_d00a68f75c34b2cce8bf",
 			"madness": 10,
-			"name": "Sofia Finch",
+			"name": "Piper Zamora",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2397,7 +2472,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "guarded warmth",
 			"trust": 0
 		},
 		{
@@ -2406,9 +2481,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_28",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_b929fbe43d34655a27f2",
 			"madness": 10,
-			"name": "Della West",
+			"name": "Della Lowe",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2429,7 +2505,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "careful precision",
 			"trust": 0
 		},
 		{
@@ -2438,9 +2514,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_09",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_9ab4eeed8f263b11b073",
 			"madness": 10,
-			"name": "Della Cross",
+			"name": "Flora Cross",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2461,7 +2538,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "stubborn cheer",
 			"trust": 0
 		},
 		{
@@ -2470,9 +2547,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_12",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_7438109e6c0565133c19",
 			"madness": 10,
-			"name": "Tess Bell",
+			"name": "Zora Quintero",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2502,9 +2580,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_30",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_6513ae8308aa6f0f0db8",
 			"madness": 10,
-			"name": "Rose Cross",
+			"name": "Rose Osgood",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2525,7 +2604,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "reckless generosity",
 			"trust": 0
 		},
 		{
@@ -2534,9 +2613,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_08",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_0cd934a40d762515c225",
 			"madness": 10,
-			"name": "Vera Voss",
+			"name": "Beatriz Ellison",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2557,7 +2637,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "unhurried patience",
 			"trust": 0
 		},
 		{
@@ -2566,9 +2646,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_18",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_7ab49ee68a3baa66674b",
 			"madness": 10,
-			"name": "Della Cross",
+			"name": "Opal Fenwick",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2589,7 +2670,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "bright curiosity",
 			"trust": 0
 		},
 		{
@@ -2598,9 +2679,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_21",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_8512b4f87212699f586f",
 			"madness": 10,
-			"name": "Sofia Voss",
+			"name": "Piper Voss",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2621,7 +2703,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -2630,9 +2712,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_29",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_8f7d8e8c1019748ca561",
 			"madness": 10,
-			"name": "Rose Cross",
+			"name": "Yolanda Cross",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2653,7 +2736,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -2662,9 +2745,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_06",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_c407fb205053d1a7e761",
 			"madness": 10,
-			"name": "Clara West",
+			"name": "Cora Calloway",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2685,7 +2769,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "bright curiosity",
 			"trust": 0
 		},
 		{
@@ -2694,9 +2778,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_22",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_4f78bebb92127bb077a4",
 			"madness": 10,
-			"name": "Lena Cross",
+			"name": "Carmen Cross",
 			"origin": "generated",
 			"perk_id": "field_repairs",
 			"perk_status": "design_only",
@@ -2717,7 +2802,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -2726,9 +2811,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_16",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_0df34918abf851a56ec8",
 			"madness": 10,
-			"name": "June Hale",
+			"name": "Ruby Ashford",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2749,7 +2835,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		},
 		{
@@ -2758,6 +2844,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "mechanic_07",
 			"family": "mechanic",
+			"hook": "learned steam and brass from a relative who couldn't get credit for it, and has been quietly better at the trade ever since.",
 			"id": "generated_f95a3fe0e0de4e847458",
 			"madness": 10,
 			"name": "Della Vega",
@@ -2781,7 +2868,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "wry patience",
 			"trust": 0
 		},
 		{
@@ -2790,9 +2877,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_27",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_c5671fdc34f5b5054d32",
 			"madness": 10,
-			"name": "Alma Vega",
+			"name": "Nora Prescott",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2813,7 +2901,7 @@
 					64
 				]
 			},
-			"temperament": "bright curiosity",
+			"temperament": "unhurried patience",
 			"trust": 0
 		},
 		{
@@ -2822,9 +2910,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_19",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_f66769ccdc0ad124eb15",
 			"madness": 10,
-			"name": "Iris Hale",
+			"name": "Minnie Jacoby",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -2845,7 +2934,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "skeptical kindness",
 			"trust": 0
 		},
 		{
@@ -2854,9 +2943,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_18",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_a5016702eaee6de4b43b",
 			"madness": 10,
-			"name": "Nell Quinn",
+			"name": "Queenie Holt",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2877,7 +2967,7 @@
 					64
 				]
 			},
-			"temperament": "warm directness",
+			"temperament": "hard-won calm",
 			"trust": 0
 		},
 		{
@@ -2886,9 +2976,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_28",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_bea219b9f5bb1915a828",
 			"madness": 10,
-			"name": "Lena Hale",
+			"name": "Carmen Ashford",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2909,7 +3000,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -2918,6 +3009,7 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_07",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_53a339df46c405ae7b7b",
 			"madness": 10,
 			"name": "Alma Hale",
@@ -2941,7 +3033,7 @@
 					64
 				]
 			},
-			"temperament": "playful daring",
+			"temperament": "dry wit",
 			"trust": 0
 		},
 		{
@@ -2950,9 +3042,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_15",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_d0c6af78de6a83f90815",
 			"madness": 10,
-			"name": "Celia Vega",
+			"name": "Ximena Graves",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -2973,7 +3066,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		},
 		{
@@ -2982,9 +3075,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_20",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_7c991840280638daf6dd",
 			"madness": 10,
-			"name": "Mae Finch",
+			"name": "Effie Zamora",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -3005,7 +3099,7 @@
 					64
 				]
 			},
-			"temperament": "patient mischief",
+			"temperament": "sharp practicality",
 			"trust": 0
 		},
 		{
@@ -3014,9 +3108,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "spirit_scout_17",
 			"family": "spirit-scout",
+			"hook": "reads what a place remembers the way most people read a trail sign, and has learned not to explain that gift to strangers.",
 			"id": "generated_b9c3aa7b3a252b12a4a6",
 			"madness": 10,
-			"name": "Celia Mercado",
+			"name": "Hazel Mercado",
 			"origin": "generated",
 			"perk_id": "spirit_sense",
 			"perk_status": "design_only",
@@ -3037,7 +3132,7 @@
 					64
 				]
 			},
-			"temperament": "dry wit",
+			"temperament": "watchful calm",
 			"trust": 0
 		},
 		{
@@ -3046,9 +3141,10 @@
 			"animation_status": "static_identity_only",
 			"art_id": "rancher_30",
 			"family": "rancher",
+			"hook": "grew up breaking horses and mending fence on someone else's spread before deciding to ride for wages that came with a say in the work.",
 			"id": "generated_4a2648a207716b1403a0",
 			"madness": 10,
-			"name": "Vera Finch",
+			"name": "Kate Zamora",
 			"origin": "generated",
 			"perk_id": "steady_herd",
 			"perk_status": "design_only",
@@ -3069,7 +3165,7 @@
 					64
 				]
 			},
-			"temperament": "quiet confidence",
+			"temperament": "steady nerve",
 			"trust": 0
 		}
 	],
