@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "constance_whitlock",
+  "age": 27,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"CONSTANCE","priority":2,"text":"Your books don't balance. I'd have said nothing if it were a shilling. It isn't a shilling."},
+    {"id":"error_found","speaker":"CONSTANCE","priority":2,"text":"There. Third column, second week. Someone either can't add or didn't want you to notice. I'd bet on the second."},
+    {"id":"recruited","speaker":"CONSTANCE","priority":2,"text":"Standing work, not a favor paid once. I'll keep your numbers honest whether you ask or not."},
+    {"id":"romance_acknowledged","speaker":"CONSTANCE","priority":2,"text":"I take my spectacles off to make a point. I've been taking them off around you rather a lot lately."}
+  ]
+}

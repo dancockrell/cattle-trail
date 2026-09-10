@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "faustina_achebe",
+  "age": 23,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"FAUSTINA","priority":2,"text":"Storm knocked three hives loose. Move slow, don't swat, and we'll get them home before the colony scatters for good."},
+    {"id":"hives_recovered","speaker":"FAUSTINA","priority":2,"text":"Not a single sting on you. I'm almost disappointed -- I'd have respected the honesty of a yelp."},
+    {"id":"recruited","speaker":"FAUSTINA","priority":2,"text":"A place with the outfit, and room enough for the hives. That's a fair trade in my book."},
+    {"id":"romance_acknowledged","speaker":"FAUSTINA","priority":2,"text":"My bees taught me patience. I didn't expect to need it twice in one week, for two very different reasons."}
+  ]
+}

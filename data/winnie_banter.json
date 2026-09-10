@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "winnie_doyle",
+  "age": 23,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"WINNIE","priority":2,"text":"Torn coat, is it. Let's see what's worth saving before I decide what's worth throwing out."},
+    {"id":"mended_well","speaker":"WINNIE","priority":2,"text":"There. Better than the original, though I'd never say that to whoever cut it first."},
+    {"id":"recruited","speaker":"WINNIE","priority":2,"text":"A place with the outfit. Good cloth deserves a steady hand near it -- I suppose that's me now."},
+    {"id":"romance_acknowledged","speaker":"WINNIE","priority":2,"text":"I read a county by what it can afford to wear. You're harder to read than most."}
+  ]
+}

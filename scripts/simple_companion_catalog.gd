@@ -43,6 +43,54 @@ const ROWS := [
 		"task_label": "Verify the story", "location_label": "her press",
 		"unlock_key": "birdie_recruited"
 	},
+	{
+		"id": "winnie_doyle", "speaker": "WINNIE", "age": 23, "perk_id": "trail_company",
+		"position_x": 280.0, "position_y": 150.0, "near_radius": 36.0,
+		"banter_path": "res://data/winnie_banter.json",
+		"meet_beat": "intro", "task_beat": "mended_well", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "WINNIE, 23 / Bring her a torn coat or dress that matters to someone.",
+		"task_message": "Mending's finished, and better than the original. Talk to her again to offer a place.",
+		"recruited_message": "Winnie joins the outfit. Good cloth, kept in good repair.",
+		"idle_message": "Winnie's already riding with the outfit.",
+		"task_label": "Bring mending", "location_label": "her stall",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "louisa_okoye", "speaker": "LOUISA", "age": 22, "perk_id": "trail_company",
+		"position_x": 600.0, "position_y": 150.0, "near_radius": 36.0,
+		"banter_path": "res://data/louisa_banter.json",
+		"meet_beat": "intro", "task_beat": "lesson_given", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "LOUISA, 22 / Volunteer an outfit hand to learn his letters.",
+		"task_message": "He read his own letter out loud, badly, and finished it. Talk to her again to offer a place.",
+		"recruited_message": "Louisa joins the outfit. A schoolteacher with nowhere else that would have her.",
+		"idle_message": "Louisa's already riding with the outfit.",
+		"task_label": "Sit for a lesson", "location_label": "her books",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "faustina_achebe", "speaker": "FAUSTINA", "age": 23, "perk_id": "trail_company",
+		"position_x": 280.0, "position_y": 320.0, "near_radius": 36.0,
+		"banter_path": "res://data/faustina_banter.json",
+		"meet_beat": "intro", "task_beat": "hives_recovered", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "FAUSTINA, 23 / Help her recover hives a storm knocked loose.",
+		"task_message": "Hives recovered, no one stung. Talk to her again to offer a place.",
+		"recruited_message": "Faustina joins the outfit. Bees and all.",
+		"idle_message": "Faustina's already riding with the outfit.",
+		"task_label": "Recover the hives", "location_label": "her hives",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "constance_whitlock", "speaker": "CONSTANCE", "age": 27, "perk_id": "trail_company",
+		"position_x": 600.0, "position_y": 320.0, "near_radius": 36.0,
+		"banter_path": "res://data/constance_banter.json",
+		"meet_beat": "intro", "task_beat": "error_found", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "CONSTANCE, 27 / Let her find the error in the outfit's own books.",
+		"task_message": "Error found and named plainly. Talk to her again to offer a place.",
+		"recruited_message": "Constance joins the outfit. The books balance now.",
+		"idle_message": "Constance's already riding with the outfit.",
+		"task_label": "Check the ledger", "location_label": "her desk",
+		"unlock_key": "birdie_recruited"
+	},
 ]
 
 static func position_for(row: Dictionary) -> Vector2:
