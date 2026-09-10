@@ -733,6 +733,106 @@
       ]
     },
     {
+      "id": "the_montaigne_rival_editor",
+      "content_status": "design_only",
+      "name": "Silas Cobbett",
+      "age": 48,
+      "role": "Editor of a rival Providence broadsheet that prints whatever sells",
+      "category": "antagonist",
+      "location_ref": "Providence",
+      "personality": [
+        "cynical",
+        "genuinely talented, wasted on sensationalism",
+        "not evil, just chose money over accuracy long ago"
+      ],
+      "hook": "The specific person behind the exciting-false-story competition in Prisca Montaigne's encounter hook, giving her professional rivalry an actual face.",
+      "voice_lines": [
+        "Truth sells fine. Excitement sells better. I stopped pretending otherwise years back.",
+        "Montaigne's paper is more honest than mine. It's also read by about a third as many people.",
+        "I'm not sorry. I am, occasionally, a little embarrassed. Different feeling entirely."
+      ],
+      "appearance_brief": "Adult man, late forties, ink-stained but more polished than Prisca's shop, a hint of genuine talent under the cynicism.",
+      "art_prompt": "A rival newspaper editor at a busier, flashier print shop, reviewing lurid headline proofs with practiced indifference.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to prisca_montaigne."
+      ]
+    },
+    {
+      "id": "the_okonkwo_quack",
+      "content_status": "design_only",
+      "name": "Dr. Barnabus Thistlewood",
+      "age": 52,
+      "role": "The traveling salesman selling the harmful tonic Dinah Okonkwo exposes",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "smooth",
+        "genuinely believes his own pitch more than he should",
+        "not malicious, just reckless and profit-driven"
+      ],
+      "hook": "Names the specific antagonist behind Dinah Okonkwo's encounter hook -- a classic patent-medicine huckster, non-violent, defeated by evidence rather than force.",
+      "voice_lines": [
+        "Dr. Thistlewood's Vital Restorative has cured more ailments than any licensed physician, by my own count.",
+        "I don't claim it's harmless. I claim it's effective. Those aren't always the same promise.",
+        "Miss Okonkwo's welcome to test it herself. I've found most chemists lack the courage of their convictions."
+      ],
+      "appearance_brief": "Adult man, early fifties, ostentatious traveling-salesman dress, practiced charming patter implied by posture.",
+      "art_prompt": "A patent-medicine salesman at a wagon stacked with colorful bottles, mid-pitch to a small skeptical crowd.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to dinah_okonkwo."
+      ]
+    },
+    {
+      "id": "the_wexford_dairy_neighbor",
+      "content_status": "design_only",
+      "name": "Hosea Pruett",
+      "age": 50,
+      "role": "A neighboring rancher who resents Briony Wexford's water usage for her dairy herd",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "stubborn",
+        "genuinely believes he's the wronged party",
+        "not violent, just petty and persistent"
+      ],
+      "hook": "A small-scale, human-sized antagonist for Briony Wexford distinct from the county's larger rival-outfit or supernatural threats -- ordinary neighborly friction over water.",
+      "voice_lines": [
+        "Her cows drink what my cattle need. Nobody asked me if that arrangement was fair.",
+        "I've complained to three different people about her water use. None of them have done anything about it either.",
+        "I don't want a feud. I want an answer. I haven't gotten one, so here we are."
+      ],
+      "appearance_brief": "Adult man, fifty, ordinary rancher, arms crossed at a fence line, aggrieved rather than dangerous posture.",
+      "art_prompt": "A neighboring rancher gesturing at a shared water source, visibly frustrated but not threatening.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to briony_wexford."
+      ]
+    },
+    {
+      "id": "the_holt_auction_rival",
+      "content_status": "design_only",
+      "name": "Chester Vane",
+      "age": 46,
+      "role": "A corrupt rival auctioneer trying to lowball the outfit's cattle sale",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "oily",
+        "skilled at manipulation",
+        "cowardly under direct pressure"
+      ],
+      "hook": "Names the specific rigged-auction threat in Birdena Holt's encounter hook.",
+      "voice_lines": [
+        "Every auction has a little management to it. Call it experience, not dishonesty.",
+        "Holt runs an honest sale. Honest doesn't always mean profitable, for me anyway.",
+        "I'll find another county if this one's gotten too smart for my methods."
+      ],
+      "appearance_brief": "Adult man, mid-forties, flashier dress than the trade requires, ingratiating smile.",
+      "art_prompt": "A rival auctioneer working a crowd with exaggerated showmanship, subtly signaling to a planted bidder.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to birdena_holt."
+      ]
+    },
+    {
       "id": "deacon_marsh",
       "content_status": "design_only",
       "name": "Deacon Marsh",
@@ -1309,6 +1409,56 @@
       ]
     },
     {
+      "id": "the_reinholt_investor",
+      "content_status": "design_only",
+      "name": "Cornelius Drake",
+      "age": 44,
+      "role": "A skeptical investor who partly funds Augusta Reinholt's aeronautics work",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "risk-averse",
+        "increasingly regretting the investment",
+        "not a villain, just nervous about money"
+      ],
+      "hook": "Gives Augusta Reinholt's aeronautics hobby real financial stakes and a source of pressure that isn't a monster or a rival -- just an anxious backer wanting results.",
+      "voice_lines": [
+        "I funded a balloon, not a crash site. I'd like a demonstration that ends with both intact.",
+        "She's brilliant. Brilliant doesn't always pay for itself before the money runs out.",
+        "One more test flight. I keep saying that. She keeps needing another."
+      ],
+      "appearance_brief": "Adult man, mid-forties, businesslike traveling dress, visibly anxious posture around anything airborne.",
+      "art_prompt": "A nervous investor watching a balloon test from a safe distance, wringing his hands slightly, clearly regretting his enthusiasm from a calmer conversation weeks earlier.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to augusta_reinholt."
+      ]
+    },
+    {
+      "id": "the_thorne_customer",
+      "content_status": "design_only",
+      "name": "Judge Abernathy",
+      "age": 61,
+      "role": "A regular customer of Hepzibah Thorne's clock-repair trade, county's retired circuit judge",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "formal",
+        "fond of precision in all things, including his pocket watch",
+        "a source of legal-history rumors distinct from magistrate_holt's current caseload"
+      ],
+      "hook": "Gives Hepzibah Thorne a recurring customer relationship and a plausible source of older county history and closed cases, distinct from the currently-serving Magistrate Holt.",
+      "voice_lines": [
+        "A judge who can't trust his own watch has no business trusting his own judgment. Miss Thorne keeps both honest.",
+        "I presided over stranger cases in this county than most people know about. Most of them stayed off the record.",
+        "Precision is a virtue in clockwork and in verdicts. Few people apply it evenly to both."
+      ],
+      "appearance_brief": "Adult man, early sixties, retired formal dress, checking a pocket watch with evident habitual precision.",
+      "art_prompt": "A retired judge checking a fine pocket watch outside a clock shop, formal old-fashioned bearing.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to hepzibah_thorne; a plausible source of older county rumors for a future writer."
+      ]
+    },
+    {
       "id": "the_split_oak_traveler",
       "content_status": "design_only",
       "name": "The man from farther west",
@@ -1619,6 +1769,56 @@
       "art_prompt": "A retired riverboat captain on a porch far from any river, looking distinctly out of place and slightly wistful about it.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to josephine_merriweather."
+      ]
+    },
+    {
+      "id": "the_falk_falconry_mentor",
+      "content_status": "design_only",
+      "name": "Old Ansel Vogt",
+      "age": 68,
+      "role": "The retired falconer who trained Artemisia Falk",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "gruff",
+        "genuinely proud of his student surpassing him",
+        "half-retired, still keeps one old hawk"
+      ],
+      "hook": "Gives Artemisia Falk a mentor and continuity anchor, and a source of falconry lore/rumors distinct from the county's other trades.",
+      "voice_lines": [
+        "I taught her to listen to the birds instead of talking at them. She listens better than I ever did.",
+        "My hands aren't steady enough for the gauntlet anymore. Hers are.",
+        "A hawk doesn't lie about trust. Neither does a good student, eventually."
+      ],
+      "appearance_brief": "Adult man, late sixties, weathered, one old hooded hawk still on a perch beside him.",
+      "art_prompt": "An old falconer on a porch with a single aged hawk, watching a younger falconer's silhouette in the distance with quiet pride.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to artemisia_falk."
+      ]
+    },
+    {
+      "id": "the_boucher_apprentice",
+      "content_status": "design_only",
+      "name": "Little Pim",
+      "age": null,
+      "role": "Temperance Boucher's cooperage apprentice, a quiet orphan she took in",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "quiet",
+        "eager to please",
+        "clearly attached to Temperance beyond just the trade"
+      ],
+      "hook": "Gives Temperance Boucher an unexpected soft edge -- she's quietly raising an apprentice who isn't just staff to her, without making it a romance thread. Treated with the same careful non-romantic precedent as Tam and Tobias Ochoa.",
+      "voice_lines": [
+        "Miss Boucher says a barrel that leaks is worse than no barrel at all. I believe everything she tells me.",
+        "She doesn't talk about where I came from. I don't ask. Seems like a fair trade.",
+        "I want a shop of my own someday. She says I'll have earned it by the time I'm ready."
+      ],
+      "appearance_brief": "A young apprentice covered in wood shavings, watching a cooper work with clear devotion and attention.",
+      "art_prompt": "A child apprentice handing tools to a cooper at a workbench, small and careful movements, clearly trusted with real responsibility. Keep clearly childlike and non-sexualized, a background family-adjacent character, not cast material -- same treatment as little_tam and tobias_ochoa.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to temperance_boucher. Explicitly not romance-eligible; do not add to characters.json under any circumstance."
       ]
     }
   ]
