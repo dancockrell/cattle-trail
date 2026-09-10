@@ -4,9 +4,9 @@
   "age": 24,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"ROISIN","priority":2,"text":"Fort Griffin's offering good money for a lock I shouldn't open. Find me honest work worth the same and I'll take that instead, no promises beyond it."},
-    {"id":"job_secured","speaker":"ROISIN","priority":2,"text":"Paid in full, and nobody had to break in anywhere to earn it. I'd forgotten that felt this good."},
-    {"id":"recruited","speaker":"ROISIN","priority":2,"text":"A place, not a job I have to keep proving I'm not casing. Fine. I'll ride with the outfit."},
-    {"id":"romance_acknowledged","speaker":"ROISIN","priority":2,"text":"I've picked locks that gave up less than you did. That's not a complaint, for once."}
+    {"id":"intro","speaker":"ROISIN","priority":2,"text":"There's a strongbox at Griffin somebody will pay me handsomely to open without asking after it. Find me lawful work that pays near the same and I'll take yours instead. I'm promising you nothing past that, mind."},
+    {"id":"job_secured","speaker":"ROISIN","priority":2,"text":"Paid in full, in daylight, and nobody had to be asleep for me to earn it. Fenwick Gray would call that the long way round. Fenwick Gray has been in the same jail twice."},
+    {"id":"recruited","speaker":"ROISIN","priority":2,"text":"A place, and nobody standing over my hands the whole while I'm near the strongbox. A lock is only there to keep an honest woman honest. Let it do its job on me and I'll stay."},
+    {"id":"romance_acknowledged","speaker":"ROISIN","priority":2,"text":"I've had things give up harder than you did. I mean that kindly, which is a new sort of sentence for me."}
   ]
 }

@@ -4,9 +4,9 @@
   "age": 24,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"SABLE","priority":2,"text":"That rope's not going to hold him, and grabbing at his head sure won't either. Give me room and don't chase anything -- we settle this one horse at a time."},
-    {"id":"remuda_gathered","speaker":"SABLE","priority":2,"text":"Every one of them caught, and not a leg pulled up lame doing it. That gelding'll trust a rope again by next week. Most people won't."},
-    {"id":"recruited","speaker":"SABLE","priority":2,"text":"An outfit that let me do it my way instead of yours. I'll take that deal. Try to keep up with the string."},
-    {"id":"romance_acknowledged","speaker":"SABLE","priority":2,"text":"I judge most things by whether they spook a green horse. You don't. That's about the highest compliment I hand out."}
+    {"id":"intro","speaker":"SABLE","priority":2,"text":"That rope won't hold him and grabbing at his head will get your jaw broke. Give me room. One horse at a time, and nobody chases a thing."},
+    {"id":"remuda_gathered","speaker":"SABLE","priority":2,"text":"All of them in, and not one leg pulled up short doing it. That gelding will let a rope near him again by next week. Jonas can have the others back. That one's mine to finish."},
+    {"id":"recruited","speaker":"SABLE","priority":2,"text":"You rode drag and turned them to me instead of running them down yourself. I'll stay on. Don't put a hand on my string without asking first, and we'll get on fine."},
+    {"id":"romance_acknowledged","speaker":"SABLE","priority":2,"text":"I judge a man by whether a green horse minds him being close by. You walked right past that gelding and he did not so much as lift his head. I've got no higher word than that in me."}
   ]
 }

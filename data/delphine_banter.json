@@ -4,9 +4,9 @@
   "age": 24,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"DELPHINE","priority":2,"text":"Sit down. I'll deal you a fair hand, which is more than you can say for most tables in Griffin."},
-    {"id":"won_fairly","speaker":"DELPHINE","priority":2,"text":"There. Beat me straight. I respect that more than I'd respect you losing on purpose."},
-    {"id":"recruited","speaker":"DELPHINE","priority":2,"text":"A place, not a stake in the pot. I've quit better games than this for less."},
-    {"id":"romance_acknowledged","speaker":"DELPHINE","priority":2,"text":"I read tables for a living. You I had to actually watch to figure out."}
+    {"id":"intro","speaker":"DELPHINE","priority":2,"text":"Sit. The cards are mine, so cut them anyway. I would far rather you suspected me now than an hour from now with money on the table and your temper up."},
+    {"id":"won_fairly","speaker":"DELPHINE","priority":2,"text":"Beat me straight and didn't crow about it after. Those two seldom turn up together. Deal again if you like. I wouldn't, in your seat."},
+    {"id":"recruited","speaker":"DELPHINE","priority":2,"text":"I've folded better hands than this town. A cot and honest company will do me. I keep what I win and I don't deal for anybody's house but my own."},
+    {"id":"romance_acknowledged","speaker":"DELPHINE","priority":2,"text":"Four cards and I have a man read. You've taken me the better part of a season, and I am not in the habit of staying in a hand that long."}
   ]
 }

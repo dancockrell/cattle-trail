@@ -4,9 +4,9 @@
   "age": 23,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"CLEO","priority":2,"text":"Sit still and I'll give you the closest, cleanest shave this side of Griffin. Free, first time -- call it advertising."},
-    {"id":"heard_something_useful","speaker":"CLEO","priority":2,"text":"There. Clean shave, and the most useful thing you've heard all week, free of charge."},
-    {"id":"recruited","speaker":"CLEO","priority":2,"text":"A place, and an ear for whatever this outfit needs to know. Fair trade."},
-    {"id":"romance_acknowledged","speaker":"CLEO","priority":2,"text":"I read people while my hands are busy. Took me longer than usual to read you."}
+    {"id":"intro","speaker":"CLEO","priority":2,"text":"Chin up and quit talking, you'll cost yourself an ear. Good. Now, do you want to know who's buying beef at Griffin this month, or who's quit paying his tab, or who has been asking after you by name at the hide yard? I have all three before noon most days. The shave is only the part you pay me for."},
+    {"id":"heard_something_useful","speaker":"CLEO","priority":2,"text":"Fellow sat in that chair Tuesday and told me where he was headed twice, and it was two different places, and he did not hear himself do it. I didn't ask which was the lie. That's your errand. Come back and tell me, I hate a story with no end on it."},
+    {"id":"recruited","speaker":"CLEO","priority":2,"text":"You sat all the way through without one look at the razor. Do you know how rare that is? I'll come. I'll want a chair and a mirror set up wherever we stop longer than a night."},
+    {"id":"romance_acknowledged","speaker":"CLEO","priority":2,"text":"I know a man's whole week by how he sits down in my chair. I had to go and ask about you like anybody else. You have no idea how that vexed me."}
   ]
 }

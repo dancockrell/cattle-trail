@@ -4,9 +4,9 @@
   "age": 25,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"DELIA","priority":2,"text":"I'm mending fence on the line, not looking at your outfit. Say what you're going to say, but don't ask me to badmouth the people still signing my pay."},
-    {"id":"fair_deal_shown","speaker":"DELIA","priority":2,"text":"I watched the whole trade, start to finish, and nobody got shorted a thing. Hargrove's never once shown me that. I don't forget a thing like that."},
-    {"id":"recruited","speaker":"DELIA","priority":2,"text":"You never once asked me to say a bad word about the family that raised me on that spread. I'm riding with people who deal fair. That's the whole decision."},
-    {"id":"romance_acknowledged","speaker":"DELIA","priority":2,"text":"I'm slow to trust and I know it. But I've decided about you already, and I don't take that back once it's said."}
+    {"id":"intro","speaker":"DELIA","priority":2,"text":"I'm on Hargrove wire and Hargrove pay. Say your piece from that side of the line. And don't ask me what the family owes or what that half a barn cost them, because I do know, and I'm not the one who'll tell you."},
+    {"id":"fair_deal_shown","speaker":"DELIA","priority":2,"text":"You counted it out where the man could see your hands, and you counted it right, and you didn't shave it at the end. Milo Pratt is two months behind on a wage he was promised in front of six witnesses. I've now seen both. That's all I mean to say about it."},
+    {"id":"recruited","speaker":"DELIA","priority":2,"text":"You did not once ask me to speak ill of the people who raised me on that spread. I'll draw my last pay, ride the fence one more night, and come across at noon where anybody who wants to can watch me do it."},
+    {"id":"romance_acknowledged","speaker":"DELIA","priority":2,"text":"I'm slow, and you've had months of me being slow. I settled it about you a good while back, though. I don't go back on a thing once I've settled it, so you may as well know."}
   ]
 }

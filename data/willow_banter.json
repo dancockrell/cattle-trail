@@ -4,9 +4,9 @@
   "age": 24,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"WILLOW","priority":2,"text":"Three counties I've had this one's partner's sign. He's yours to flush and mine to finish -- don't lose him in the brush for me."},
-    {"id":"partner_driven_off","speaker":"WILLOW","priority":2,"text":"Driven off, not dead, and I didn't have to do it alone this time. Mark that down, it doesn't happen often."},
-    {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Steady pay and a straight answer about what this outfit actually does. That's more honesty than most paper I've carried. I'm in."},
-    {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I've watched a lot of backs go bad on me. Yours hasn't yet. I'm allowed to notice that."}
+    {"id":"intro","speaker":"WILLOW","priority":2,"text":"Three counties I've had his partner's sign. He's yours to push out of the brush and mine to finish. Don't lose him for me in there."},
+    {"id":"partner_driven_off","speaker":"WILLOW","priority":2,"text":"Driven off, not killed, and I wasn't alone doing it. Hiram Cobb rode nine years at my shoulder and never once gave me that."},
+    {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Straight pay, and a straight answer about what happens on a bad night. Deacon Marsh never gave me either one. I'll take the watch."},
+    {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I've had a lot of backs go bad on me. Yours hasn't. I figure I'm allowed to say that out loud the once."}
   ]
 }

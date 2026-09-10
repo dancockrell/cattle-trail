@@ -4,9 +4,9 @@
   "age": 22,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"LOUISA","priority":2,"text":"A post that never existed, a trunk of books that did. Somebody around here must want to learn something."},
-    {"id":"lesson_given","speaker":"LOUISA","priority":2,"text":"He read it out loud, badly, and finished. That is a better lesson than most I taught back east."},
-    {"id":"recruited","speaker":"LOUISA","priority":2,"text":"A place, and someone who'll actually sit still for it. I'll take that over the post I lost."},
-    {"id":"romance_acknowledged","speaker":"LOUISA","priority":2,"text":"You corrected my grammar back at me once, badly, on purpose. I've thought about it more than I should."}
+    {"id":"intro","speaker":"LOUISA","priority":2,"text":"The post I was promised is in a town that never got built. The books are real enough. Forty of them came off the wagon into the mud and I have dried every one. Somebody out here wants reading. I am not particular which somebody."},
+    {"id":"lesson_given","speaker":"LOUISA","priority":2,"text":"He read his own letter out loud, badly, the whole way to the end, and not one man laughed at him. My sister Adaeze is still waiting on a letter from me. She will hear about this one first."},
+    {"id":"recruited","speaker":"LOUISA","priority":2,"text":"A place, then, and half an hour of an evening when the hands will sit still for it. That is the whole of what I am asking. Cordelia Sinclair hauls a library about in a wagon, so plainly the thing can be done."},
+    {"id":"romance_acknowledged","speaker":"LOUISA","priority":2,"text":"You said it wrong at supper on purpose so that I would correct you, and then you sat there pleased with yourself. That was not fair play. I have thought about it a great deal more than I mean to admit."}
   ]
 }

@@ -4,9 +4,9 @@
   "age": 23,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"FAUSTINA","priority":2,"text":"Storm knocked three hives loose. Move slow, don't swat, and we'll get them home before the colony scatters for good."},
-    {"id":"hives_recovered","speaker":"FAUSTINA","priority":2,"text":"Not a single sting on you. I'm almost disappointed -- I'd have respected the honesty of a yelp."},
-    {"id":"recruited","speaker":"FAUSTINA","priority":2,"text":"A place with the outfit, and room enough for the hives. That's a fair trade in my book."},
-    {"id":"romance_acknowledged","speaker":"FAUSTINA","priority":2,"text":"My bees taught me patience. I didn't expect to need it twice in one week, for two very different reasons."}
+    {"id":"intro","speaker":"FAUSTINA","priority":2,"text":"Slower than that. Slower than feels right to you. Don't swat, don't breathe hard across the top of them, and don't stand between me and the box. They are not angry, they are lost, and a lost colony will follow her queen into a fence post if nobody sets down somewhere better for her to go."},
+    {"id":"hives_recovered","speaker":"FAUSTINA","priority":2,"text":"All three queens are boxed, and the flyers will find their own way back before dusk. You did not hurry me one time. I have been helped by men who cost me a whole colony trying to be quick about it, and they meant well too."},
+    {"id":"recruited","speaker":"FAUSTINA","priority":2,"text":"I'll come, and the hives come with me. The tailgate of the second wagon will hold them, and I'll want one quiet morning wherever we stop for water."},
+    {"id":"romance_acknowledged","speaker":"FAUSTINA","priority":2,"text":"Bees teach you to wait on a thing without deciding it is late. I have been waiting on you the same way, and there's honey at the end of it either road, so I don't mind."}
   ]
 }

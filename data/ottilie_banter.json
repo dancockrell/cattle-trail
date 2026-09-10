@@ -4,9 +4,9 @@
   "age": 21,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"OTTILIE","priority":2,"text":"Half that shipment's already cracked from the road, and every lamp in your outfit is going to fail dark unless someone who actually knows glass gets to it first."},
-    {"id":"glass_recovered","speaker":"OTTILIE","priority":2,"text":"Recovered, and I can work with what's left. A repaired lamp holds a flame steadier than a cheap new one ever will -- I'd stake my name on that."},
-    {"id":"recruited","speaker":"OTTILIE","priority":2,"text":"You trusted the repair over buying new. That's the whole argument I've been having with this town for years, and you just settled it in my favor."},
-    {"id":"romance_acknowledged","speaker":"OTTILIE","priority":2,"text":"I like heat and pressure and knowing exactly what a flame will do next. You're a little less predictable than that, and I find I don't mind it."}
+    {"id":"intro","speaker":"OTTILIE","priority":2,"text":"Half of that crate is cracked and the rest is crazed where you can't see it yet. Cheap glass throws a flame crooked and then dies in a wind, which is exactly the hour you wanted it. Let me at it before anybody else puts a hand in."},
+    {"id":"glass_recovered","speaker":"OTTILIE","priority":2,"text":"Enough saved to do something with. A piece I've reheated and drawn myself holds a flame straighter than anything that comes packed in straw from Saint Louis, and I'll say so to whoever likes."},
+    {"id":"recruited","speaker":"OTTILIE","priority":2,"text":"You paid for a mend instead of buying new. Nobody in this county does that. I'll want a bench, a roof over the bench, and coal that isn't green."},
+    {"id":"romance_acknowledged","speaker":"OTTILIE","priority":2,"text":"I know what a flame means to do at every heat there is. That's most of why I love the trade. You I can't predict at all, and I've quit wishing I could."}
   ]
 }

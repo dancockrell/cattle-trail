@@ -4,9 +4,9 @@
   "age": 25,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"BEATRIX","priority":2,"text":"Both outfits swear the water runs their way. Hold this end of the chain steady and we'll find out which of them is lying."},
-    {"id":"boundary_resurveyed","speaker":"BEATRIX","priority":2,"text":"There. The line runs exactly where it runs, whether anyone likes it. I find that's usually the more useful outcome."},
-    {"id":"recruited","speaker":"BEATRIX","priority":2,"text":"A place with an outfit that reads the numbers before arguing about them? I've surveyed for worse reasons."},
-    {"id":"romance_acknowledged","speaker":"BEATRIX","priority":2,"text":"I measure ground for a living. You're harder to get an accurate reading on, and I mean that as a compliment."}
+    {"id":"intro","speaker":"BEATRIX","priority":2,"text":"Purdy commissioned this line twice and got two answers back, which tells you more about Purdy than about the ground. Take the far end of the chain to that mesquite and keep it off the grass. A chain allowed to sag reads short, and short is what both of them are hoping for."},
+    {"id":"boundary_resurveyed","speaker":"BEATRIX","priority":2,"text":"Four hundred and six links from the pin to the water's edge. Esme Radcliffe watched me set every one and has not said a word in an hour. That is the particular quiet a number makes when nobody can argue it down."},
+    {"id":"recruited","speaker":"BEATRIX","priority":2,"text":"Matilda Greaves maps by memory and is right far oftener than she has any business being. I would rather be right on paper, where it keeps. Give me a dry corner of the wagon for the charts and I will ride along."},
+    {"id":"romance_acknowledged","speaker":"BEATRIX","priority":2,"text":"I put a figure to nearly everything. Distances, elevations, how long a rain means to sit. I have no figure at all for you, and I find lately that this does not trouble me."}
   ]
 }

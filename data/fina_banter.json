@@ -4,9 +4,9 @@
   "age": 21,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"FINA","priority":2,"text":"Stand back and stay quiet. This colt's already been fought twice today, and a rope answers to whoever asks it right, not whoever shouts loudest."},
-    {"id":"colt_gentled","speaker":"FINA","priority":2,"text":"There. Loaded easy, no whip, no rush. He'll remember being asked instead of forced, and so will I."},
-    {"id":"recruited","speaker":"FINA","priority":2,"text":"Better pay and my own say. That's the only offer I was ever going to take. My rope, my terms."},
-    {"id":"romance_acknowledged","speaker":"FINA","priority":2,"text":"I run hot and I know it. You didn't flinch and you didn't try to cool me down. Keep doing that."}
+    {"id":"intro","speaker":"FINA","priority":2,"text":"Quiet, now. He's been fought twice today already and he's finished being asked politely by strangers. Stand where he can see you and keep your hands still."},
+    {"id":"colt_gentled","speaker":"FINA","priority":2,"text":"There. He walked up on his own four feet and nobody laid a whip on him. My father says a rope only repeats what your body already asked. He's right about horses and about very little else."},
+    {"id":"recruited","speaker":"FINA","priority":2,"text":"Better pay, and my own say in which horse I ride and on what day. That was always the only offer I'd have taken. My reata, my terms, and nobody starts a green colt on this place but me."},
+    {"id":"romance_acknowledged","speaker":"FINA","priority":2,"text":"I run hot. Everyone tells me so as though it were news to me. You never once tried to cool me down. Don't you start."}
   ]
 }

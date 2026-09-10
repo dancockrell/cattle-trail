@@ -4,9 +4,9 @@
   "age": 27,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"CONSTANCE","priority":2,"text":"Your books don't balance. I'd have said nothing if it were a shilling. It isn't a shilling."},
-    {"id":"error_found","speaker":"CONSTANCE","priority":2,"text":"There. Third column, second week. Someone either can't add or didn't want you to notice. I'd bet on the second."},
-    {"id":"recruited","speaker":"CONSTANCE","priority":2,"text":"Standing work, not a favor paid once. I'll keep your numbers honest whether you ask or not."},
-    {"id":"romance_acknowledged","speaker":"CONSTANCE","priority":2,"text":"I take my spectacles off to make a point. I've been taking them off around you rather a lot lately."}
+    {"id":"intro","speaker":"CONSTANCE","priority":2,"text":"Your third column has not balanced since April. Over a shilling I would have kept quiet. It is not a shilling, it is eleven dollars and forty cents, and it goes astray in the same week of every month, which is the part that ought to interest you."},
+    {"id":"error_found","speaker":"CONSTANCE","priority":2,"text":"Here. The same hand wrote both entries and only one of them reached the tally. That is not arithmetic giving out. Arithmetic does not grow tired on the second Tuesday and recover by the third."},
+    {"id":"recruited","speaker":"CONSTANCE","priority":2,"text":"I want no fee for it. I want standing leave to read every page before you put your name to anything, and I want you to stop putting your name to things by lamplight when you are tired."},
+    {"id":"romance_acknowledged","speaker":"CONSTANCE","priority":2,"text":"I take my spectacles off to make a point. I have been taking them off in front of you when there is no point whatever to be made, and I am too precise a woman not to have noticed."}
   ]
 }

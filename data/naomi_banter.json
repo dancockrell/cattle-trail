@@ -4,9 +4,9 @@
   "age": 23,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"NAOMI","priority":2,"text":"That axle's cracked clean through the hub, not just the spoke. I can weld it right in a day, or you can find someone to weld it wrong in an hour. Your call."},
-    {"id":"repair_trusted","speaker":"NAOMI","priority":2,"text":"Done right, and it'll outlast the wagon it's bolted to. My father taught this forge its standards, and I haven't lowered them for anybody yet."},
-    {"id":"recruited","speaker":"NAOMI","priority":2,"text":"Standing work, not a one-time favor. Nobody's put my name on a receipt and meant it like that before."},
-    {"id":"romance_acknowledged","speaker":"NAOMI","priority":2,"text":"Most people fuss over a burn scar or look away from it. You just asked how I got it. I'll take plainspoken over polite every time."}
+    {"id":"intro","speaker":"NAOMI","priority":2,"text":"The hub is split, not the spoke. I can weld it right by tomorrow evening, or Orin Teague will weld it wrong tonight and you'll be back at my door inside the month paying me for it anyway. Decide now. My fire's up either way."},
+    {"id":"repair_trusted","speaker":"NAOMI","priority":2,"text":"That'll outlast the wagon it's bolted to. My father's name is on the anvil and mine is on the job, and I do not let those two disagree about what good enough means."},
+    {"id":"recruited","speaker":"NAOMI","priority":2,"text":"Standing work, written down, with my own name on the paper and no man's beside it. That's the whole of what I want. You said it before I had to ask for it, so yes."},
+    {"id":"romance_acknowledged","speaker":"NAOMI","priority":2,"text":"You asked me how I got the burn instead of finding somewhere else to look. That's a small thing. It's also the only thing anybody's done right about it in five years."}
   ]
 }

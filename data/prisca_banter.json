@@ -4,9 +4,9 @@
   "age": 24,
   "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"PRISCA","priority":2,"text":"Cobbett's paper already has three versions of what happened out there, none of them true. I'd like the actual one, if you'll give it to me."},
-    {"id":"facts_verified","speaker":"PRISCA","priority":2,"text":"There. Boring, accurate, and going to press before Cobbett's version gets any less wrong."},
-    {"id":"recruited","speaker":"PRISCA","priority":2,"text":"A place, and an honest source when this outfit's story is worth printing. I'll take that."},
-    {"id":"romance_acknowledged","speaker":"PRISCA","priority":2,"text":"You checked your facts before you told them to me. Do you know how rare that is in my line of work?"}
+    {"id":"intro","speaker":"PRISCA","priority":2,"text":"Cobbett has three versions of it standing in type and every one has a monster in it. I have a press, four hours, and no facts whatever. Give me the plain account and I'll set it tonight."},
+    {"id":"facts_verified","speaker":"PRISCA","priority":2,"text":"Dull, correct, and going on the front page. Cobbett will outsell me four to one by Thursday. It will still be the true account, and it will still be true in ten years, when his is lining somebody's drawer."},
+    {"id":"recruited","speaker":"PRISCA","priority":2,"text":"A place, then, and first word whenever this camp does something worth a column. Understand that I will print it when it makes you look poor at the job, too."},
+    {"id":"romance_acknowledged","speaker":"PRISCA","priority":2,"text":"You checked a thing before you told it to me. Have you any notion how seldom that happens? I have printed retractions over men who could not manage it once in a twelvemonth."}
   ]
 }
