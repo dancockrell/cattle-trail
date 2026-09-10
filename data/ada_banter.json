@@ -16,6 +16,8 @@
     {"id":"kiss","speaker":"ADA","priority":2,"text":"One more thing before we call that a successful test drive."},
     {"id":"stop0","speaker":"ADA","priority":1,"text":"See? Perfectly civilized machinery."},
     {"id":"stop1","speaker":"ADA","priority":1,"text":"If the kettle whistles, pretend that was deliberate."},
-    {"id":"stop2","speaker":"ADA","priority":1,"text":"Now home. We should stop while we're still excellent at this."}
+    {"id":"stop2","speaker":"ADA","priority":1,"text":"Now home. We should stop while we're still excellent at this."},
+    {"id":"ezra_lowry_mentioned","speaker":"ADA","priority":1,"text":"Lowry tried to sell me a stake in his rail spur. I offered to sell him a regulator that doesn't exist yet. He didn't see the joke."},
+    {"id":"hargrove_mentioned","speaker":"ADA","priority":1,"text":"The Hargroves run good machinery on bad debt. I can fix one of those problems. Not the one they're asking about."}
   ]
 }

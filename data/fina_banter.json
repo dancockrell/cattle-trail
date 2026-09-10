@@ -8,6 +8,7 @@
     {"id":"colt_gentled","speaker":"FINA","priority":2,"text":"There. See? Nobody had to lose a hand today."},
     {"id":"recruited","speaker":"FINA","priority":2,"text":"Better pay and my own say. I've quit for less and stayed for more."},
     {"id":"romance_acknowledged","speaker":"FINA","priority":2,"text":"You held the string steady and didn't tell me how to do my job. That's rarer than you'd think."},
-    {"id":"calloway_mentioned","speaker":"FINA","priority":1,"text":"The Spread pays better. It just doesn't ask what I think of anything."}
+    {"id":"calloway_mentioned","speaker":"FINA","priority":1,"text":"The Spread pays better. It just doesn't ask what I think of anything."},
+    {"id":"tomas_reyes_mentioned","speaker":"FINA","priority":1,"text":"My father taught me the rope. He'll deny teaching me the temper. He's lying."}
   ]
 }

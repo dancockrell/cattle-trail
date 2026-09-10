@@ -8,6 +8,8 @@
     {"id":"rustler_partner_driven_off","speaker":"WILLOW","priority":2,"text":"That's one file I get to close honest."},
     {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Steady pay and a straight answer. I've worked for worse reasons."},
     {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I don't say things twice, so listen the first time: I'm glad you asked."},
-    {"id":"old_case_mentioned","speaker":"WILLOW","priority":1,"text":"Three counties of paper on one man, and he was already in the ground. Nobody tells you that part."}
+    {"id":"old_case_mentioned","speaker":"WILLOW","priority":1,"text":"Three counties of paper on one man, and he was already in the ground. Nobody tells you that part."},
+    {"id":"hiram_cobb_mentioned","speaker":"WILLOW","priority":1,"text":"Cobb still asks if I'm coming back. I still tell him no. We're both comfortable with the ritual."},
+    {"id":"deacon_marsh_mentioned","speaker":"WILLOW","priority":1,"text":"Marsh sold me a dead man's paper once. I don't buy from him anymore. I still owe him a conversation about it."}
   ]
 }

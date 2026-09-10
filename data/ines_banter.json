@@ -10,6 +10,8 @@
     {"id":"wrong_shadow","speaker":"INES","priority":1,"text":"Watch the shadow. It's the only honest thing here."},
     {"id":"trail_completed","speaker":"INES","priority":2,"text":"There. A perfectly ordinary impossible trail."},
     {"id":"recruited","speaker":"INES","priority":2,"text":"I'll scout ahead. Try to keep up with the living."},
-    {"id":"romance_acknowledged","speaker":"INES","priority":2,"text":"You noticed me before the ghost. Good priorities."}
+    {"id":"romance_acknowledged","speaker":"INES","priority":2,"text":"You noticed me before the ghost. Good priorities."},
+    {"id":"lantern_man_mentioned","speaker":"INES","priority":1,"text":"Man offers you his lantern by a fire, don't take it. He's been offering the same one for longer than he'd like to say."},
+    {"id":"bellhollow_bell_mentioned","speaker":"INES","priority":1,"text":"Bellhollow's bell isn't mine to read. I've heard it once. I didn't go back for a second opinion."}
   ]
 }

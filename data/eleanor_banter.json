@@ -60,6 +60,12 @@
       "text": "Six safe, and you still look presentable; come see me by the wagon.",
       "speaker": "ELEANOR",
       "priority": 2
+    },
+    {
+      "id": "doc_alvarez_mentioned",
+      "text": "Alvarez sets bones; I settle spirits. He thinks that split is cleaner than it is.",
+      "speaker": "ELEANOR",
+      "priority": 1
     }
   ]
 }
