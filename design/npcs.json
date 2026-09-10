@@ -183,6 +183,156 @@
       ]
     },
     {
+      "id": "dr_okafor_the_elder",
+      "content_status": "design_only",
+      "name": "Dr. Adaeze Okafor",
+      "age": 52,
+      "role": "Vashti Okafor's aunt, a respected physician in a larger town east of the county",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "accomplished",
+        "quietly proud of her niece's different path",
+        "occasionally writes offering Vashti a 'real' profession"
+      ],
+      "hook": "Gives Vashti Okafor a family tie and a recurring gentle tension: an accomplished relative who thinks trapping and tracking is beneath what Vashti could achieve, without either being wrong.",
+      "voice_lines": [
+        "I offered her a place training under me. She'd rather read tracks than pulses. We've made our peace with the difference.",
+        "She writes more than she lets on. I keep every letter.",
+        "Being a physician and being wrong sometimes are not exclusive facts. I remind young doctors of both."
+      ],
+      "appearance_brief": "Adult woman, early fifties, composed and professional bearing, a physician's practiced calm.",
+      "art_prompt": "A physician at a proper city office desk, framed credentials visible, composed and dignified.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to vashti_okafor."
+      ]
+    },
+    {
+      "id": "the_calloway_water_rights_lawyer",
+      "content_status": "design_only",
+      "name": "Emmett Cross",
+      "age": 46,
+      "role": "The Calloway family's lawyer, handling the water dispute referenced in Cole Calloway's record",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "precise",
+        "loyal to the family retainer, not necessarily to Cole personally",
+        "privately thinks the Birdie marriage arrangement was a mistake"
+      ],
+      "hook": "Gives the arranged-marriage water dispute mentioned in cole_calloway's hook an actual person handling the paperwork, and a subtle crack of disagreement inside the Calloway camp.",
+      "voice_lines": [
+        "I drew up the agreement. I didn't say it was wise. Those are different jobs.",
+        "Cole pays well and argues badly. I've learned to let the second part go.",
+        "If Birdie ever wants to contest the old arrangement formally, she has grounds. Nobody's asked me that yet."
+      ],
+      "appearance_brief": "Adult man, mid-forties, precise formal dress, careful measured speech implied by posture alone.",
+      "art_prompt": "A lawyer at a cluttered desk of contracts and deeds, spectacles, deliberately neutral expression.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to cole_calloway and birdie_calloway's original arranged-marriage hook."
+      ]
+    },
+    {
+      "id": "sister_okoye",
+      "content_status": "design_only",
+      "name": "Adaeze Okoye",
+      "age": 25,
+      "role": "Louisa Okoye's younger sister, still waiting at their original destination town",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "worried",
+        "resourceful in her own right",
+        "writes letters that arrive later than she'd like"
+      ],
+      "hook": "Gives Louisa Okoye an ongoing reason to eventually resolve her situation -- a sister waiting, and letters that take too long to arrive, giving her arc a clock without forcing an ending.",
+      "voice_lines": [
+        "The post takes so long. I don't know if my last three letters even reached her.",
+        "She always did the harder thing when the easier one was available. I don't know why I'm surprised.",
+        "Tell her the position's still open if she ever gets here. Tell her I miss her more than the position matters."
+      ],
+      "appearance_brief": "Adult woman, mid-twenties, plain traveling-appropriate dress, worried but composed expression.",
+      "art_prompt": "A young woman writing a letter at a small desk in a modest room, worry visible in her posture despite steady handwriting.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to louisa_okoye."
+      ]
+    },
+    {
+      "id": "the_ochoa_boy",
+      "content_status": "design_only",
+      "name": "Tobias Ochoa",
+      "age": null,
+      "role": "Elena Ochoa's young son, referenced in her record without needing his own full entry until now",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "quiet",
+        "old for his age",
+        "asks direct questions adults dodge"
+      ],
+      "hook": "Gives Elena Ochoa's referenced son an actual (careful, non-romantic, age-appropriate) presence, matching the same deliberate-non-sexualization pattern already established for Tam.",
+      "voice_lines": [
+        "Mama says Papa's not coming back. She doesn't say why. I've stopped asking, mostly.",
+        "I can already do more chores than she gives me credit for.",
+        "Are you going to stay, or are you like the others who just fix one thing and ride on?"
+      ],
+      "appearance_brief": "A young boy in patched practical clothes, watchful and quiet, older in manner than in years.",
+      "art_prompt": "A boy standing in a homestead doorway watching visitors approach, arms crossed in imitation of an adult's wariness. Keep clearly childlike and non-sexualized, a background family character, not cast material -- same treatment as little_tam.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to elena_ochoa. Explicitly not romance-eligible; do not add to characters.json under any circumstance, matching little_tam's precedent exactly."
+      ]
+    },
+    {
+      "id": "the_hollis_teague_mother",
+      "content_status": "design_only",
+      "name": "Marta Teague",
+      "age": 41,
+      "role": "Hollis Teague's mother and Orin Teague's wife, caught in the middle of the forge rivalry",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "pragmatic",
+        "privately embarrassed by her husband's grudge",
+        "protective of her son's future in the trade"
+      ],
+      "hook": "Gives Orin Teague's antagonist record a family context and a sympathetic pressure point -- someone who'd rather the rivalry with Naomi Freeman just end.",
+      "voice_lines": [
+        "Orin's pride is going to cost Hollis his best years learning from someone worse than he could.",
+        "I've told my husband to let it go. I've told him twice this month.",
+        "If Hollis wants to learn from Naomi Freeman someday, I won't be the one who stops him."
+      ],
+      "appearance_brief": "Adult woman, early forties, practical dress, tired but warm expression.",
+      "art_prompt": "A woman at a modest kitchen table, mending clothes, glancing toward a window facing the direction of her husband's forge.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to orin_teague and hollis_teague."
+      ]
+    },
+    {
+      "id": "the_combs_grandmother",
+      "content_status": "design_only",
+      "name": "Granny Combs",
+      "age": 74,
+      "role": "Loretta Combs's grandmother, who taught her to quilt and started the county-memory tradition",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "frail but sharp",
+        "the actual origin of Loretta's project",
+        "carries the oldest stories in the county"
+      ],
+      "hook": "Gives Loretta Combs's quilt-memory project a real origin and a source of the county's oldest, least-recorded history.",
+      "voice_lines": [
+        "I started stitching what I saw so it wouldn't just disappear when I did. Loretta just does it better than I ever did.",
+        "Ask me about the county forty years back. Ask me before you can't anymore.",
+        "My hands don't hold a needle steady these days. Hers do. That's how it should work."
+      ],
+      "appearance_brief": "Adult woman, mid-seventies, frail but alert, surrounded by fabric and the visible evidence of a lifetime's work.",
+      "art_prompt": "An elderly woman in a rocking chair surrounded by quilting fragments and old fabric scraps, sharp attentive eyes despite her age.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to loretta_combs and is a plausible source of additional county lore/rumors for a future writer to draw on."
+      ]
+    },
+    {
       "id": "reed_hargrove",
       "content_status": "design_only",
       "name": "Reed Hargrove",
@@ -480,6 +630,106 @@
       "art_prompt": "A theater manager mid-stride away from a wagon, coat flaring, glancing back with an unbothered smile.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to marlowe_castellano."
+      ]
+    },
+    {
+      "id": "the_dunmore_old_associate",
+      "content_status": "design_only",
+      "name": "Fenwick Gray",
+      "age": 43,
+      "role": "One of Roisin Dunmore's old associates, still working the illegitimate side of the trade",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "charming",
+        "genuinely fond of Roisin, which makes his pressure worse not better",
+        "not violent, just persistent"
+      ],
+      "hook": "The specific, recurring pressure behind Roisin Dunmore's 'almost took the job' backstory -- someone who keeps offering the old life back, sincerely, which is harder to refuse than a threat would be.",
+      "voice_lines": [
+        "I'm not here to threaten you, Roisin. I'm here because the old crew misses you and the money's real.",
+        "Honest work pays slow. I remember when that used to bother you too.",
+        "I'll ask again next time our paths cross. I always do. You always say no. I keep asking anyway."
+      ],
+      "appearance_brief": "Adult man, early forties, well-dressed in a way that suggests money from somewhere unofficial, easy charming manner.",
+      "art_prompt": "A well-dressed man leaning in a doorway with an easy smile, the kind of charm that reads as a warning sign in retrospect.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to roisin_dunmore."
+      ]
+    },
+    {
+      "id": "the_stroud_clerk",
+      "content_status": "design_only",
+      "name": "Mortimer Vance",
+      "age": 34,
+      "role": "The Widow Stroud's clerk, who actually delivers her collection notices in person",
+      "category": "antagonist",
+      "location_ref": "Fort Griffin",
+      "personality": [
+        "nervous",
+        "doesn't enjoy the job",
+        "surprisingly sympathetic if approached directly"
+      ],
+      "hook": "Softens the Widow Stroud's antagonist role with a human-scale employee who's uncomfortable with the work -- a possible source of leniency or advance warning if the outfit treats him decently.",
+      "voice_lines": [
+        "I don't set the terms. I just deliver the paper. Please don't make me the villain of this conversation.",
+        "Mrs. Stroud would say I'm too soft for this work. I'd agree with her.",
+        "I could mention, unofficially, when a deadline's coming before it's official. I'm not supposed to."
+      ],
+      "appearance_brief": "Adult man, mid-thirties, ill-fitting formal clothes, visibly uncomfortable with confrontation.",
+      "art_prompt": "A nervous clerk holding a folder of papers at someone's door, apologetic posture, clearly wishing he were elsewhere.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to the_widow_stroud."
+      ]
+    },
+    {
+      "id": "the_kraus_tax_official",
+      "content_status": "design_only",
+      "name": "Inspector Wexler",
+      "age": 39,
+      "role": "The territorial tax official investigating Adelheid Kraus's distilling operation",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "by-the-book",
+        "not corrupt, genuinely just doing an unpopular job",
+        "open to a legitimate resolution"
+      ],
+      "hook": "The specific, non-violent bureaucratic threat behind Adelheid Kraus's encounter hook -- a legalistic antagonist who can be satisfied by actually correct paperwork, not defeated by force.",
+      "voice_lines": [
+        "I don't make the tax code. I just have to enforce the part of it that reaches this county eventually.",
+        "If her operation's legitimate, a stamp and a fee solve this today. If it isn't, that's a longer conversation.",
+        "Everyone assumes I want to shut them down. Mostly I just want the paperwork to match reality."
+      ],
+      "appearance_brief": "Adult man, late thirties, formal traveling clothes, a satchel of forms and stamps, patient bureaucratic manner.",
+      "art_prompt": "A tax inspector at a small camp table with official forms spread out, patient and unhurried, no menace intended in his posture.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to adelheid_kraus."
+      ]
+    },
+    {
+      "id": "the_hendricks_rival_crew_boss",
+      "content_status": "design_only",
+      "name": "Amos Ketch",
+      "age": 50,
+      "role": "A third, more genuinely unpleasant independent trail-crew boss, contrasting Zilpah Hendricks's fairness",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "exploitative toward his own crew",
+        "outwardly friendly to outfits he wants something from",
+        "the actual bad-faith operator the Hargroves and Calloways are not"
+      ],
+      "hook": "The county has two large, morally-mixed-but-not-villainous rival outfits (Calloway, Hargrove) and one small, fair independent (Zilpah). Ketch fills a real antagonist niche: an operator who actually treats people badly, giving the setting one clear bad actor without making either rival ranch flatly evil.",
+      "voice_lines": [
+        "My crew works when I say and eats what's left over. That's the arrangement. They knew that going in.",
+        "Hendricks runs her outfit soft. Soft doesn't survive out here. We'll see whose crew is still riding in a year.",
+        "I'm friendly to whoever's useful to me today. Ask me again tomorrow if that's still you."
+      ],
+      "appearance_brief": "Adult man, fifty, superficially affable, harder eyes than his manner suggests.",
+      "art_prompt": "A trail-crew boss glad-handing a stranger with a broad smile that doesn't reach his eyes, crew visible in the background looking tired rather than loyal.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to zilpah_hendricks as a contrasting figure; the setting's clearest non-supernatural bad actor, distinct from the more sympathetic rival outfits."
       ]
     },
     {
@@ -1006,6 +1256,56 @@
       "art_prompt": "A hemp-works owner inspecting a coil of rope critically, workshop with hanging rope lines visible behind him.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to marisol_vasquez."
+      ]
+    },
+    {
+      "id": "magistrate_holt",
+      "content_status": "design_only",
+      "name": "Magistrate Holt",
+      "age": 57,
+      "role": "Rules on the legal disputes Marshal Odom's arrests and Zenobia's claim disputes end up in front of",
+      "category": "town",
+      "location_ref": "Providence",
+      "personality": [
+        "formal",
+        "genuinely tries to be fair",
+        "privately exhausted by how often frontier law is improvised"
+      ],
+      "hook": "Closes the loop on several existing hooks (Temperance Vane's arrests, Zenobia Whitmore's claim, the Widow Stroud's debt collection) by giving the county an actual court rather than leaving legal outcomes implied.",
+      "voice_lines": [
+        "The law out here is half book, half best judgment. I try to keep the ratio honest.",
+        "I've upheld Widow Stroud's contracts and I've thrown two of them out. She respects the second more than the first.",
+        "A claim dispute needs paper, not just conviction. Bring me paper."
+      ],
+      "appearance_brief": "Adult man, late fifties, plain but formal dress, tired but attentive expression.",
+      "art_prompt": "A circuit magistrate at a makeshift bench in a Providence building, ledgers and case papers stacked with visible care.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to temperance_vane, zenobia_whitmore and the_widow_stroud."
+      ]
+    },
+    {
+      "id": "the_larsen_supplier",
+      "content_status": "design_only",
+      "name": "Old Man Prescott",
+      "age": 64,
+      "role": "Sunniva Larsen's sugar and spice supplier, a cranky but fair trader",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "cranky",
+        "fair despite the crankiness",
+        "has known Sunniva since she started her cart"
+      ],
+      "hook": "A recurring supply-chain contact for Sunniva Larsen's confectionery business, giving her trade a visible economic web beyond just her cart.",
+      "voice_lines": [
+        "Sugar's dear this season. I still give her the same price I always have. Don't tell the others.",
+        "That girl's cart is the only reason half this county remembers what a treat tastes like.",
+        "I've sold to worse customers for more money. I keep selling to her for less because she's not one of them."
+      ],
+      "appearance_brief": "Adult man, mid-sixties, gruff trading-post demeanor, soft edges he'd deny having.",
+      "art_prompt": "An old trader at a stall of sacks and jars, gruff expression undercut by a small stash set aside for a regular customer.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to sunniva_larsen."
       ]
     },
     {
