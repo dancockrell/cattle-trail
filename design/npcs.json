@@ -333,6 +333,31 @@
       ]
     },
     {
+      "id": "the_oduya_teacher",
+      "content_status": "design_only",
+      "name": "Professor Nkemdirim",
+      "age": 58,
+      "role": "Seraphina Oduya's former instructor at a formal medical program east of the territory",
+      "category": "family",
+      "location_ref": "unplaced",
+      "personality": [
+        "rigorous",
+        "proud of his student",
+        "would be quietly disappointed to hear she's learned anything from 'unlicensed' practitioners"
+      ],
+      "hook": "Gives Seraphina Oduya's formal training an actual origin and a source of the professional bias she has to grow past in her own companion arc.",
+      "voice_lines": [
+        "I taught her that instruments don't lie. I should have also taught her that hands sometimes know things instruments haven't measured yet.",
+        "She writes asking sharper questions than most of my current students. I don't tell her that as often as I should.",
+        "If she's genuinely learned something from a folk healer, I'd want to hear it. I'd also want to argue about it first."
+      ],
+      "appearance_brief": "Adult man, late fifties, formal academic dress, precise and exacting bearing softened by evident pride.",
+      "art_prompt": "A medical instructor at a lectern with anatomical charts behind him, stern but not unkind expression.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to seraphina_oduya."
+      ]
+    },
+    {
       "id": "reed_hargrove",
       "content_status": "design_only",
       "name": "Reed Hargrove",
@@ -905,6 +930,56 @@
       "art_prompt": "A sign painter working quickly and carelessly on a storefront, glancing enviously toward a more polished sign further down the street.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to wilhelmina_frost."
+      ]
+    },
+    {
+      "id": "the_finsbury_skeptic",
+      "content_status": "design_only",
+      "name": "Reeve Talmadge",
+      "age": 44,
+      "role": "A prominent skeptic publicly mocking Electra Finsbury's electrical experiments as dangerous nonsense",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "condescending",
+        "genuinely afraid of what he doesn't understand, masked as scorn",
+        "influential enough locally to actually hurt her reputation"
+      ],
+      "hook": "A social/reputational antagonist for Electra Finsbury rather than a physical threat -- public ridicule that could cost her the trust and funding she needs to keep working.",
+      "voice_lines": [
+        "Invisible forces, she calls it. I call it a woman playing with lightning and calling it science.",
+        "I've warned the county council that her experiments will burn something down eventually. I stand by that warning.",
+        "If she wants to be taken seriously, she should stop nearly electrocuting herself in public."
+      ],
+      "appearance_brief": "Adult man, mid-forties, self-important formal dress, performs authority he doesn't fully possess.",
+      "art_prompt": "A pompous local figure addressing a small skeptical crowd, gesturing dismissively toward unseen equipment.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to electra_finsbury."
+      ]
+    },
+    {
+      "id": "the_okoro_arena_boss",
+      "content_status": "design_only",
+      "name": "Circuit Manager Vaughn",
+      "age": 51,
+      "role": "Runs the stock exhibition circuit Yasmin Okoro works, undervaluing her safety role",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "profit-focused",
+        "genuinely doesn't understand what Yasmin actually does",
+        "not cruel, just careless about crediting the right people"
+      ],
+      "hook": "Names the specific person behind Yasmin Okoro's 'nobody claps for the job' hook -- an employer who books the flashy act and undervalues the safety work.",
+      "voice_lines": [
+        "The crowd comes for the riders. Okoro just keeps the show from being cancelled by an accident. Necessary, not exciting.",
+        "I pay her the clown's rate because that's technically her job title. The rest is generosity on my part, as I see it.",
+        "If she wants credit, she should ask for it. I'm not in the business of noticing what isn't advertised."
+      ],
+      "appearance_brief": "Adult man, early fifties, businesslike circuit-promoter dress, counting receipts rather than watching the actual performance.",
+      "art_prompt": "A circuit manager counting a cash box at the edge of an arena, indifferent to a dangerous moment happening in the ring behind him.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to yasmin_okoro."
       ]
     },
     {
@@ -1556,6 +1631,56 @@
       "art_prompt": "A small family group at a fresh grave, muted colors, one figure comforting another, understated and respectful composition.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to prudence_kessler. Written to be treated with genuine respect, not as set dressing for spectacle."
+      ]
+    },
+    {
+      "id": "the_greaves_survey_client",
+      "content_status": "design_only",
+      "name": "County Land Office Clerk Purdy",
+      "age": 39,
+      "role": "The clerk who commissioned both Beatrix Lowe's and Matilda Greaves's conflicting surveys",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "overworked",
+        "genuinely just wants the paperwork to match reality",
+        "caught in the middle without meaning to be"
+      ],
+      "hook": "Explains, mundanely, why two different cartographers ended up mapping the same disputed stretch -- an overworked clerk who commissioned both without realizing they'd conflict, rather than any deliberate scheme.",
+      "voice_lines": [
+        "I didn't know they'd disagree. I just wanted the county's records updated before the spring filings.",
+        "Miss Lowe charges more and takes longer. Miss Greaves is faster and cheaper. I hedged. Apparently that was a mistake.",
+        "Bring me one map both of them sign, and I'll never commission a second opinion again as long as I live."
+      ],
+      "appearance_brief": "Adult man, late thirties, harried office clerk, stacks of unfiled land records visible behind him.",
+      "art_prompt": "A county records clerk buried in paperwork at a small office desk, overwhelmed but well-meaning expression.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to beatrix_lowe and matilda_greaves."
+      ]
+    },
+    {
+      "id": "the_holloway_bean_farmer",
+      "content_status": "design_only",
+      "name": "Emmanuel Castro",
+      "age": 47,
+      "role": "The distant supplier whose bean shipment to Juniper Holloway keeps getting delayed",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "apologetic",
+        "genuinely trying his best against bad roads and worse luck",
+        "values the relationship with Juniper specifically"
+      ],
+      "hook": "Gives Juniper Holloway's supply chain an actual person at the other end, distinct from a faceless shipping problem.",
+      "voice_lines": [
+        "The road's worse every season. I keep sending what I can, when I can. She deserves better logistics than I can give her.",
+        "Holloway's the only buyer who's never once complained about a late shipment to my face. I try to earn that.",
+        "Tell her the next batch is better than the last. I finally fixed the drying process she suggested."
+      ],
+      "appearance_brief": "Adult man, mid-forties, weathered farming clothes, apologetic but earnest bearing.",
+      "art_prompt": "A farmer inspecting drying coffee or tea leaves under a covered structure, careful attentive hands.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to juniper_holloway."
       ]
     },
     {
