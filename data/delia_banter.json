@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "delia_marsh",
+  "age": 25,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"DELIA","priority":2,"text":"I'm mending fence on the line, not looking at your outfit. Say what you're going to say, but don't ask me to badmouth the people still signing my pay."},
+    {"id":"fair_deal_shown","speaker":"DELIA","priority":2,"text":"I watched the whole trade, start to finish, and nobody got shorted a thing. Hargrove's never once shown me that. I don't forget a thing like that."},
+    {"id":"recruited","speaker":"DELIA","priority":2,"text":"You never once asked me to say a bad word about the family that raised me on that spread. I'm riding with people who deal fair. That's the whole decision."},
+    {"id":"romance_acknowledged","speaker":"DELIA","priority":2,"text":"I'm slow to trust and I know it. But I've decided about you already, and I don't take that back once it's said."}
+  ]
+}

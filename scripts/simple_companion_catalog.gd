@@ -139,6 +139,54 @@ const ROWS := [
 		"task_label": "Steady the patient", "location_label": "her kit",
 		"unlock_key": "birdie_recruited"
 	},
+	{
+		"id": "sable_quinn", "speaker": "SABLE", "age": 24, "perk_id": "steady_herd",
+		"position_x": 150.0, "position_y": 20.0, "near_radius": 36.0,
+		"banter_path": "res://data/sable_banter.json",
+		"meet_beat": "intro", "task_beat": "remuda_gathered", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "SABLE, 24 / Help her catch and settle the scattered remuda before a horse is lost or hurt.",
+		"task_message": "Every horse caught and settled, her way. Talk to her again to offer a place.",
+		"recruited_message": "Sable joins the outfit. She'll lose a night's sleep over a horse before she'll lose one over a person.",
+		"idle_message": "Sable's already riding with the outfit.",
+		"task_label": "Gather the remuda", "location_label": "the remuda line",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "delia_marsh", "speaker": "DELIA", "age": 25, "perk_id": "steady_aim",
+		"position_x": 450.0, "position_y": 20.0, "near_radius": 36.0,
+		"banter_path": "res://data/delia_banter.json",
+		"meet_beat": "intro", "task_beat": "fair_deal_shown", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "DELIA, 25 / Prove the outfit deals fairer than Hargrove does, in front of her.",
+		"task_message": "She's seen the fair deal with her own eyes. Talk to her again to offer a place.",
+		"recruited_message": "Delia joins the outfit. Nobody had to ask her to badmouth the family that used to sign her pay.",
+		"idle_message": "Delia's already riding with the outfit.",
+		"task_label": "Show her a fair deal", "location_label": "the property line",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "rilla_sorrel", "speaker": "RILLA", "age": 22, "perk_id": "field_repairs",
+		"position_x": 750.0, "position_y": 20.0, "near_radius": 36.0,
+		"banter_path": "res://data/rilla_banter.json",
+		"meet_beat": "intro", "task_beat": "rifle_diagnosed", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "RILLA, 22 / Bring her the jammed rifle and pay her fair asking price without haggling.",
+		"task_message": "Rifle stripped, diagnosed, and running true. Talk to her again to offer a place.",
+		"recruited_message": "Rilla joins the outfit. A mechanism she's fitted herself doesn't fail twice.",
+		"idle_message": "Rilla's already riding with the outfit.",
+		"task_label": "Bring her the rifle", "location_label": "her bench",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "nell_corrigan", "speaker": "NELL", "age": 26, "perk_id": "camp_song",
+		"position_x": 450.0, "position_y": 410.0, "near_radius": 36.0,
+		"banter_path": "res://data/nell_banter.json",
+		"meet_beat": "intro", "task_beat": "supper_sat_through", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "NELL, 26 / Sit through supper and don't flinch when the bell rings on its own.",
+		"task_message": "Supper's finished, and nobody bolted for the door. Talk to her again to offer a place.",
+		"recruited_message": "Nell joins the outfit. She keeps good company, living and otherwise.",
+		"idle_message": "Nell's already riding with the outfit.",
+		"task_label": "Sit through supper", "location_label": "her boarding house",
+		"unlock_key": "birdie_recruited"
+	},
 ]
 
 static func position_for(row: Dictionary) -> Vector2:

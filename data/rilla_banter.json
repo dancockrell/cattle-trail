@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "rilla_sorrel",
+  "age": 22,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"RILLA","priority":2,"text":"Set it on the bench and step back. I don't need you to describe the problem, I need to feel where it's binding. And my price is my price, I don't haggle it down."},
+    {"id":"rifle_diagnosed","speaker":"RILLA","priority":2,"text":"There. Sear was never fitted right from the factory, not just fouled. Cycle it now -- clean as anything. My father taught me to trust my hands over his, and he was right to."},
+    {"id":"recruited","speaker":"RILLA","priority":2,"text":"You paid what I asked without working me down out of habit. That's rarer than a good barrel. I'll ride with an outfit that respects a fair price."},
+    {"id":"romance_acknowledged","speaker":"RILLA","priority":2,"text":"I take quiet pride in a mechanism that runs true. You're the first thing around here I've felt that way about that isn't made of steel."}
+  ]
+}

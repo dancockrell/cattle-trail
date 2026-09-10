@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "nell_corrigan",
+  "age": 26,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"NELL","priority":2,"text":"Supper's on already, I was expecting somebody tonight. Sit and eat, and if the bell rings on its own partway through, that's just Bellhollow. It does that."},
+    {"id":"supper_sat_through","speaker":"NELL","priority":2,"text":"You didn't flinch, didn't reach for a gun, didn't ask me to explain myself. Most folks manage one of those. You'll do fine here."},
+    {"id":"recruited","speaker":"NELL","priority":2,"text":"I'll ride with you, though I'll want back through here on occasion. Somebody has to mind the bell, and I've never minded the company it keeps."},
+    {"id":"romance_acknowledged","speaker":"NELL","priority":2,"text":"I've sat up nights with worse than you for company, and never minded a bit of it being heard. I don't mind you hearing it either."}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "sable_quinn",
+  "age": 24,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"SABLE","priority":2,"text":"That rope's not going to hold him, and grabbing at his head sure won't either. Give me room and don't chase anything -- we settle this one horse at a time."},
+    {"id":"remuda_gathered","speaker":"SABLE","priority":2,"text":"Every one of them caught, and not a leg pulled up lame doing it. That gelding'll trust a rope again by next week. Most people won't."},
+    {"id":"recruited","speaker":"SABLE","priority":2,"text":"An outfit that let me do it my way instead of yours. I'll take that deal. Try to keep up with the string."},
+    {"id":"romance_acknowledged","speaker":"SABLE","priority":2,"text":"I judge most things by whether they spook a green horse. You don't. That's about the highest compliment I hand out."}
+  ]
+}
