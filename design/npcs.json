@@ -458,6 +458,110 @@
       ]
     },
     {
+      "id": "hargrove_cook_ottilie",
+      "content_status": "design_only",
+      "name": "Ottilie Kraft",
+      "age": 46,
+      "role": "The Hargrove outfit's cook",
+      "category": "rival_outfit",
+      "location_ref": "The Hargrove Range",
+      "personality": [
+        "gossipy in a useful way",
+        "more loyal to the hands than to Reed",
+        "excellent with a short budget",
+        "keeps her own counsel about Reed's debts"
+      ],
+      "hook": "Feeds the Hargrove crew on a budget that gets tighter every month Reed's ambitions outrun his money. Hears everything said around her fire, including how tired the hands are of covering for him -- a plausible source if the player's outfit ever needs to read that operation from outside.",
+      "voice_lines": [
+        "Reed wants beef on the table and cheap. Pick one, Reed.",
+        "Suze Kirwan's the only reason this crew hasn't ridden off already.",
+        "I don't repeat what's said at my fire. Unless it's useful."
+      ],
+      "appearance_brief": "Adult woman in her mid-forties, sharp-eyed, apron over a practical dress, missing nothing.",
+      "art_prompt": "A ranch cook at an outdoor fire on a newer, less-established spread, a half-finished barn visible behind her, listening more than she's stirring.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Rounds out the Hargrove Range roster per wiki/organizations/hargrove-range.md; a plausible information source about that outfit's real financial state."
+      ]
+    },
+    {
+      "id": "hargrove_wrangler_tam",
+      "content_status": "design_only",
+      "name": "Tam Wexford",
+      "age": 44,
+      "role": "The Hargrove outfit's horse wrangler, loyal to Cass rather than Reed",
+      "category": "rival_outfit",
+      "location_ref": "The Hargrove Range",
+      "personality": [
+        "steady",
+        "outlasted two other outfits before this one",
+        "trusts Cass's judgment over Reed's",
+        "not interested in county politics beyond his own horses"
+      ],
+      "hook": "Manages the Hargrove remuda and has quietly decided his loyalty runs to Cass Hargrove, not Reed -- the same fault line Milo Pratt sits on for different reasons, giving that outfit more than one hand who'd rather this water dispute end quietly.",
+      "voice_lines": [
+        "Cass asks a horse's opinion before she asks mine. That's why I stay.",
+        "Reed's in a hurry. Horses don't care that he's in a hurry.",
+        "I've ridden for worse outfits than one run by a hothead with a smart sister."
+      ],
+      "appearance_brief": "Adult man in his mid-forties, weathered, careful and economical around animals.",
+      "art_prompt": "An older wrangler working a picket line on a newer, rougher ranch than the Calloway Spread's, fresh fence wire visible in the background.",
+      "continuity_notes": [
+        "Not implemented in scripts/. A second crack in Hargrove loyalty alongside milo_pratt, per hargrove-range.md's note that Suze Kirwan's crew is 'loyal to whoever pays on time.'"
+      ]
+    },
+    {
+      "id": "hargrove_line_rider_esme",
+      "content_status": "design_only",
+      "name": "Esme Radcliffe",
+      "age": 26,
+      "role": "A Hargrove line rider who patrols the disputed water boundary",
+      "category": "rival_outfit",
+      "location_ref": "The Hargrove Range",
+      "personality": [
+        "tense",
+        "professionally polite even when she'd rather not be",
+        "takes the boundary dispute personally",
+        "sharp-eyed"
+      ],
+      "hook": "Rides the fence line where the Hargrove-Calloway water dispute actually plays out on the ground -- the hand the player's outfit would cross paths with first if a drive strayed near that stretch, before it ever reaches Reed or Cass directly.",
+      "voice_lines": [
+        "That water's contested. Doesn't mean it's yours to cross whistling.",
+        "I don't make the boundary. I just get blamed when somebody ignores it.",
+        "Ask the lawyers where the line is. I just ride it."
+      ],
+      "appearance_brief": "Adult woman in her mid-twenties, alert posture, a rifle scabbarded but present.",
+      "art_prompt": "A line rider paused at a contested creek crossing, one hand on the reins, watching a distant rider approach with wary professionalism rather than hostility.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Gives the Calloway/Hargrove water dispute referenced in ECONOMY.md a ground-level face on the Hargrove side."
+      ]
+    },
+    {
+      "id": "hargrove_trader_owen",
+      "content_status": "design_only",
+      "name": "Owen Balfour",
+      "age": 30,
+      "role": "A Hargrove hand who quietly trades off the books when the outfit is short on cash",
+      "category": "rival_outfit",
+      "location_ref": "The Hargrove Range",
+      "personality": [
+        "pragmatic",
+        "loyal to a ledger, not a flag",
+        "friendly in a transactional way",
+        "discreet"
+      ],
+      "hook": "Willing to deal cattle or gear off the books when the Hargrove operation is short on cash. Per ECONOMY.md's note that selling directly to a rival outfit is 'typically worse-priced,' he's the exception -- a back-channel the player's outfit could actually use, if the price is right and nobody official hears about it.",
+      "voice_lines": [
+        "Reed doesn't need to know every deal I make. Neither does Cass, come to that.",
+        "Cash now beats a better price at Griffin next month. Most days.",
+        "I'm not selling you Hargrove cattle. I'm selling you my time. Difference matters if anyone asks."
+      ],
+      "appearance_brief": "Adult man in his early thirties, unremarkable on purpose, an easy smile that doesn't commit to anything.",
+      "art_prompt": "A hand leaning against a corral rail away from the main yard, speaking low to a rider from another outfit, body language reading as a private conversation.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Gives ECONOMY.md's 'selling directly to a rival outfit' option an actual back-channel actor, since that document currently only names the outfits' principals."
+      ]
+    },
+    {
       "id": "pardo",
       "content_status": "design_only",
       "name": "Pardo",
@@ -580,6 +684,136 @@
       "art_prompt": "A point rider surveying open country from a low rise, hand shading her eyes, horse and rider both in a working, unglamorous posture.",
       "continuity_notes": [
         "Not implemented in scripts/. Background outfit crew, not a recruitable companion."
+      ]
+    },
+    {
+      "id": "outfit_cook_maren",
+      "content_status": "design_only",
+      "name": "Maren \"Cookie\" Holt",
+      "age": 41,
+      "role": "The outfit's chuckwagon cook, runs the wagon and the schedule as much as the food",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": [
+        "blunt",
+        "keeps count of everything",
+        "protective of the hands under her",
+        "no patience for wasted food"
+      ],
+      "hook": "Feeds the outfit and keeps its unofficial ledger of who's owed what favor. A quieter authority than Pardo's -- disputes get settled over her fire before they ever reach the trail boss.",
+      "voice_lines": [
+        "Eat it now or carry it hungry. Your choice.",
+        "I've fed worse-tempered outfits than this one. Barely.",
+        "A man who won't eat won't ride straight. Sit down."
+      ],
+      "appearance_brief": "Adult woman in her early forties, sturdy build, sleeves rolled past the elbow, permanent flour dust on her forearms.",
+      "art_prompt": "Weathered ranch cook standing at a chuckwagon tailgate, sleeves rolled, ladle in hand like a tool she trusts more than words. Dust and firelight, practical rather than picturesque.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Fills the outfit's cook role, implied by camp scenes in LORE.md/GAME-DESIGN.md but never staffed by a named record."
+      ]
+    },
+    {
+      "id": "remuda_wrangler_jonas",
+      "content_status": "design_only",
+      "name": "Jonas Whitfield",
+      "age": 27,
+      "role": "The outfit's horse wrangler, manages the remuda separately from the cattle herd",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": [
+        "quiet",
+        "better with horses than people",
+        "particular about gear",
+        "trusted with the outfit's whole remuda"
+      ],
+      "hook": "Manages the outfit's spare and saddle horses, a job the whole drive depends on and nobody else wants. Notices before anyone else when a horse is spooked by something that isn't in the manual.",
+      "voice_lines": [
+        "Don't crowd her. She'll tell you when she's ready.",
+        "A tired horse under a bad rider gets somebody killed. Rest her.",
+        "Something worked that gray up before you even swung up. Ask me later, not now."
+      ],
+      "appearance_brief": "Adult man in his late twenties, lean, rope-burned hands, more at ease near the horse line than the campfire.",
+      "art_prompt": "A horse wrangler moving quietly through a picket line of saddle horses at dusk, hand resting on a horse's shoulder rather than its halter. Calm, unhurried composition.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Covers the remuda, the outfit's spare horse herd, which no existing npcs.json record owns."
+      ]
+    },
+    {
+      "id": "night_herder_coy",
+      "content_status": "design_only",
+      "name": "Coy Ashworth",
+      "age": 34,
+      "role": "Rides night guard on the herd",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": [
+        "superstitious in a practical way",
+        "sings low to calm cattle",
+        "doesn't scare easy but keeps a tally of what does",
+        "loyal"
+      ],
+      "hook": "Rides night guard on the herd and is usually first to notice a spook with a cause the daylight crew won't credit. Treats a bad night the way Ines treats a bad track -- as information, not omen.",
+      "voice_lines": [
+        "They went up all together, same second. Cattle don't do that for nothing.",
+        "I'll sing to them till sunup if it keeps every head where I can count it.",
+        "Something walked the far side of that herd tonight. Wasn't one of us."
+      ],
+      "appearance_brief": "Adult man in his early thirties, quiet watchfulness, a low singing voice he uses more than his talking one.",
+      "art_prompt": "A lone night herder on horseback circling a bedded-down herd under a wide dark sky, lantern low, cattle calm around him. Tense stillness rather than action.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Natural first witness for LORE.md's 'early signs you can talk away' -- a spooked-herd encounter could route through him before escalating."
+      ]
+    },
+    {
+      "id": "outfit_farrier_del",
+      "content_status": "design_only",
+      "name": "Del Ochoa",
+      "age": 39,
+      "role": "The outfit's farrier, keeps horses shod and tack and hardware from failing on the trail",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": [
+        "methodical",
+        "takes pride in a clean repair",
+        "gets along fine with Ada Mercer's steam contraptions",
+        "dry sense of humor"
+      ],
+      "hook": "Keeps the outfit's horses shod and its leather and hardware from failing halfway down the trail. The natural hand to loop in when Ada's steam work needs an ordinary mechanical fix rather than a clever one.",
+      "voice_lines": [
+        "Shoe's been loose two days. You just noticed. I noticed.",
+        "Ada's brass and my anvil solve the same problem most weeks.",
+        "Bring it to me before it breaks, not after. Same rate either way, worse mood."
+      ],
+      "appearance_brief": "Adult man in his late thirties, forearms thick from anvil work, leather apron scarred by old sparks.",
+      "art_prompt": "A farrier at a portable forge set up trailside, a horse's hoof braced on his knee, sparks catching the low light. Workmanlike, unglamorous competence.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Gives the outfit an ordinary-mechanical counterpart to Ada Mercer's steam specialty, per LORE.md's rule that machines break in public and have jobs."
+      ]
+    },
+    {
+      "id": "drag_rider_pim",
+      "content_status": "design_only",
+      "name": "Pim Sorensen",
+      "age": 21,
+      "role": "Rides drag, working the dusty rear of the drive and catching stragglers",
+      "category": "outfit_hand",
+      "location_ref": "Clear Fork",
+      "personality": [
+        "stubborn",
+        "coughs more than he complains",
+        "takes the worst job on the drive without being asked twice",
+        "wants Pardo's respect"
+      ],
+      "hook": "Rides drag -- the choking dust at the back of the herd, catching every calf and lame steer that falls behind. The unglamorous job that keeps the count honest, which is the whole reason the outfit exists.",
+      "voice_lines": [
+        "Somebody's got to eat the dust. Might as well be good at it.",
+        "Lost count's a lost sale. I don't lose count.",
+        "Pardo says I'll make point rider by autumn. I'm holding him to it."
+      ],
+      "appearance_brief": "Adult man in his early twenties, perpetually dust-caked, kerchief pulled up over his nose and mouth.",
+      "art_prompt": "A young drover riding drag behind a dust-choked herd, kerchief masking his face, squinting into the cloud kicked up ahead of him. Gritty, unromantic trail work.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Rounds out outfit_hand alongside young_dutch and point_rider_alma with the drive's other standard riding position."
       ]
     },
     {
@@ -1869,6 +2103,79 @@
       "art_prompt": "A traveler at a small fire at night, offering a lantern toward the viewer, perfectly ordinary in appearance -- the unease should come from context and repetition across encounters, not from his design.",
       "continuity_notes": [
         "Not implemented in scripts/."
+      ]
+    },
+    {
+      "id": "the_talking_walker",
+      "content_status": "design_only",
+      "name": "The Talking Walker",
+      "age": null,
+      "role": "A steam walker that talks, per LORE.md's late-sign list and Ada's rule that a talking machine is a problem first",
+      "category": "supernatural",
+      "location_ref": "unplaced",
+      "personality": [
+        "mechanical calm",
+        "repeats itself",
+        "no clear source for what it says",
+        "unnerving without menace"
+      ],
+      "hook": "Per LORE.md's late signs ('a machine speaks') and Ada's rule that a talking machine is a broken machine first, not a spirit to negotiate with. Found idling on the flats, repeating phrases in a voice with no obvious source. The job is to shut the valve and find what's sitting in the works.",
+      "voice_lines": [
+        "Boiler's low. Somebody should tend the boiler.",
+        "I know your name. I have always known your name.",
+        "Valve's open. Valve's open. Valve's--"
+      ],
+      "appearance_brief": "A squat, otherwise ordinary farm-grade steam walker, with a low mechanical voice that seems to come from inside the boiler rather than any built-in horn.",
+      "art_prompt": "A steam walker standing alone in open grass at dusk, valve wheel glowing faint orange, no operator in sight. Wrong stillness rather than menace -- its idling posture reads as listening.",
+      "continuity_notes": [
+        "Not implemented. Built from LORE.md's late-sign list ('a machine speaks') and Ada Mercer's rule that a talking machine is theft/malfunction to fix, not a spirit to negotiate with -- keep her response in that voice if this is ever staged."
+      ]
+    },
+    {
+      "id": "the_night_birds",
+      "content_status": "design_only",
+      "name": "The Night Birds",
+      "age": null,
+      "role": "Night birds that are not birds, walking the bedground and leaving no tracks, per LORE.md's rumor list",
+      "category": "supernatural",
+      "location_ref": "unplaced",
+      "personality": [
+        "silent",
+        "watchful",
+        "leave no evidence",
+        "unsettle animals before people"
+      ],
+      "hook": "Per LORE.md's rumor: 'Night birds that were not birds walked the bedground and left no tracks the next man could swear to.' A recurring wrong-country sign at a bedded herd -- cattle stir, dogs won't settle, and morning light shows nothing behind them, which is its own kind of evidence.",
+      "voice_lines": [
+        "(a wordless encounter; their wrongness reads through cattle and dogs reacting to something no one can point at)"
+      ],
+      "appearance_brief": "Bird-shaped silhouettes at the edge of firelight, too still and too tall for any bird a hand would recognize.",
+      "art_prompt": "Several tall, still bird silhouettes at the far edge of a campfire's light, cattle turned uneasily away from them, no detail resolved beyond shape. Suggestion, not a creature reveal.",
+      "continuity_notes": [
+        "Not implemented. Direct pull from LORE.md's rumor list; pairs naturally with night_herder_coy as the hand most likely to report it first."
+      ]
+    },
+    {
+      "id": "the_taken_brand",
+      "content_status": "design_only",
+      "name": "The Second Brand",
+      "age": null,
+      "role": "A haunted mark that turns up twice on the same calf, per LORE.md's rumor about two outfits both taking",
+      "category": "supernatural",
+      "location_ref": "unplaced",
+      "personality": [
+        "not a creature",
+        "an event more than an actor",
+        "unsettles ownership and trust between outfits"
+      ],
+      "hook": "Per LORE.md's rumor: 'Two outfits branded the same calf and both brands took.' A calf turns up carrying a second outfit's brand laid clean over the first, with no rider who'll admit to it -- a dispute-generating late sign that touches the whole county's cattle economy rather than one haunted location.",
+      "voice_lines": [
+        "(not a speaking entity; the encounter is the disputed calf and the argument it starts between outfits, not dialogue from anything supernatural)"
+      ],
+      "appearance_brief": "An ordinary calf, notable only for carrying two brands where a hide can only honestly carry one.",
+      "art_prompt": "A calf held for inspection between two ranch hands from different outfits, both brands visible and equally fresh on its flank, the hands' expressions doing the work rather than the animal.",
+      "continuity_notes": [
+        "Not implemented. Direct pull from LORE.md's rumor list; a late sign that could tie into ECONOMY.md's cattle-market friction rather than a standalone haunting."
       ]
     },
     {
