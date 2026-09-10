@@ -13,6 +13,7 @@ from __future__ import annotations
 import math
 from dataclasses import dataclass, field, asdict
 from .driver import Game
+from .progress import Progression
 
 SATISFIED = "satisfied"
 REFUSED = "refused_with_reason"
@@ -34,10 +35,15 @@ class Note:
 
 
 class Player:
-    def __init__(self, game: Game, speed: float = 12.0):
+    def __init__(self, game: Game, speed: float = 12.0, deep: bool = False):
         self.g = game
+        self.deep = deep
         self.notes: list[Note] = []
         self.said: list[str] = []
+        # Every distinct objective line the game has put on screen, in order.
+        # The climb slices this to answer "did the game ever say what to do next".
+        self.objectives: list[str] = []
+        self.climb: Progression | None = None
         self.g.speed(speed)
         self.obs = self.g.observe()
         self.opening_cash = self.obs.get("cash")
@@ -58,7 +64,17 @@ class Player:
         journal = self.obs.get("message", "")
         if journal and f"(journal) {journal}" not in self.said:
             self.said.append(f"(journal) {journal}")
+        objective = self.obs.get("objective", "")
+        if objective and (not self.objectives or self.objectives[-1] != objective):
+            self.objectives.append(objective)
         return self.obs
+
+    def controlled(self, obs: dict | None = None) -> dict:
+        """Where the actor the player is steering actually is. Pressing Tab hands
+        control to Eleanor, and a walk that watched the trail boss instead would
+        report every step as a stall."""
+        o = obs if obs is not None else self.obs
+        return o["eleanor"] if o.get("controlling") == "eleanor" else o["player"]
 
     def dist(self, a: dict, b: dict) -> float:
         return math.hypot(a.get("x", 0) - b.get("x", 0), a.get("y", 0) - b.get("y", 0))
@@ -71,7 +87,7 @@ class Player:
         stalls = 0
         for _ in range(tries):
             o = self.refresh(15)
-            here = o["player"]
+            here = self.controlled(o)
             if self.dist(here, {"x": x, "y": y}) < 18:
                 return True
             if last is not None and self.dist(here, last) < 0.5:
@@ -264,6 +280,126 @@ class Player:
                   f"trust {before.get('trust')} -> {after.get('trust')}",
                   before=before, after=after)
 
+    # ---------- the deep session: the rest of the game ----------
+
+    def desire_to_reach_the_rest_of_the_game(self) -> None:
+        """Nineteen of twenty-two companions sit behind one unlock chain. A
+        player would simply keep playing until they showed up, so the bot does,
+        with the same verbs and no reach into game state."""
+        self.climb = Progression(self)
+        stages = self.climb.run()
+        cleared = [s for s in stages if s.status == "cleared"]
+        stalled = next((s for s in stages if s.status == "stalled"), None)
+        never = [s.name for s in stages if s.status == "not_attempted"]
+        self.note(
+            "I want to reach the rest of the game the pitch promises",
+            SATISFIED if not stalled else BLOCKED,
+            (f"climbed {len(cleared)} of {len(stages)} stages of the unlock chain, "
+             f"as far as {self.climb.reached()}. "
+             + (f"Stalled at {stalled.name}: {stalled.stall}" if stalled else "The chain opened fully.")
+             + (f" Never attempted: {never}." if never else "")),
+            stages=[{"name": s.name, "status": s.status, "actions": s.actions,
+                     "minutes": s.minutes, "lines": len(s.new_lines),
+                     "named_on_entry": s.named_on_entry, "named_during": s.named_during,
+                     "stall": s.stall} for s in stages],
+        )
+        # A stage that costs hundreds of actions for four lines is the finding,
+        # so it gets its own note rather than being buried in the list above.
+        for stage in cleared:
+            per_line = round(stage.actions / len(stage.new_lines), 1) if stage.new_lines else None
+            self.note(
+                "I want the effort a stage asks of me to buy me something",
+                REPEATED if (per_line is None or per_line >= 20) else SATISFIED,
+                (f"{stage.name}: {stage.actions} actions and {stage.minutes} in-game minutes "
+                 f"produced {len(stage.new_lines)} new line(s) of writing"
+                 + (f", {per_line} actions per line" if per_line else "")
+                 + f". The game named this objective on screen beforehand: {stage.named_on_entry}."),
+                stage=stage.name, actions=stage.actions, minutes=stage.minutes,
+                lines=len(stage.new_lines), actions_per_line=per_line,
+                named_on_entry=stage.named_on_entry, named_during=stage.named_during,
+            )
+        # Signposting, across the whole climb, in one note.
+        attempted = [s for s in stages if s.status != "not_attempted"]
+        unsignposted = [s.name for s in attempted if not s.named_on_entry]
+        self.note(
+            "I want the game to tell me where to go next",
+            IGNORED if len(unsignposted) * 2 > len(attempted) else SATISFIED,
+            (f"{len(unsignposted)} of {len(attempted)} attempted stages were never named on "
+             f"screen before the bot went looking for them: {unsignposted}"),
+            unsignposted=unsignposted,
+        )
+
+    def desire_the_cast_is_actually_different(self) -> None:
+        """Twenty-two companions is only twenty-two companions if they are not
+        the same one with different nouns. Visit each one, play her whole
+        sequence, and measure the difference rather than asserting it."""
+        if self.climb is None:
+            self.climb = Progression(self)
+        cast = [c for c in self.obs.get("companions", []) if c.get("kind") == "simple"]
+        unlocked = [c for c in cast if c.get("unlocked")]
+        if not unlocked:
+            self.note("I want the cast to be twenty-two people, not one person restated",
+                      BLOCKED,
+                      f"none of the {len(cast)} catalog companions ever unlocked, so no comparison "
+                      f"between them is possible. The bot reached {self.climb.reached()}.",
+                      unlocked=0, total=len(cast))
+            return
+        result = self.climb.visit_the_cast()
+        shapes = result.get("distinct_interaction_shapes")
+        overlap = result.get("pairwise_word_overlap", {})
+        vocab = result.get("vocabulary", {})
+        blocked = result.get("unreachable", [])
+        detail = (
+            f"visited {result.get('visited')} of {len(unlocked)} unlocked companions; "
+            f"{len(blocked)} were unlocked but physically unreachable "
+            f"({[b['id'] for b in blocked][:12]}). "
+            f"Of the ones reached, {shapes} distinct interaction shape(s) across them all, and "
+            f"{result.get('recruited_in_three_talks')} were fully recruited in three presses of "
+            f"Talk. Word overlap between any two of them averages {overlap.get('mean')} "
+            f"(min {overlap.get('min')}, max {overlap.get('max')}); "
+            f"{vocab.get('words_every_single_one_says')} of "
+            f"{vocab.get('distinct_words_across_the_cast')} distinct words are said by every one "
+            f"of them ({vocab.get('shared_fraction')} of the vocabulary)."
+        )
+        self.note("I want the cast to be twenty-two people, not one person restated",
+                  REPEATED if (shapes or 99) <= 2 else SATISFIED,
+                  detail, **result)
+        if blocked:
+            self.note("I want to be able to walk up to a companion the game has unlocked",
+                      BLOCKED,
+                      f"{len(blocked)} companions unlocked and then could not be approached: "
+                      + "; ".join(f"{b['id']} closest approach {b['distance']}" for b in blocked[:12]),
+                      unreachable=blocked)
+
+    def desire_the_game_ever_offers_me_a_choice(self) -> None:
+        """At a given moment, how many of the verbs on screen actually move the
+        world? Measured by saving, pressing one, and loading back, so the count
+        is of options available at one moment rather than a sequence of them."""
+        if self.climb is None:
+            self.climb = Progression(self)
+        if not self.climb.choice_moments:
+            self.climb.sample_choice("end of session")
+        summary = self.climb.choice_summary()
+        measured = summary["moments_measured"]
+        branching = summary["moments_with_two_or_more_options_that_advance"]
+        if measured == 0:
+            self.note("I want the game to offer me more than one thing worth doing",
+                      IGNORED,
+                      f"no moment could be measured: {summary['moments_unmeasurable']} sampled "
+                      f"moment(s) failed their save and load control, so this says nothing about "
+                      f"the game and everything about the probe",
+                      **summary)
+            return
+        self.note("I want the game to offer me more than one thing worth doing",
+                  SATISFIED if branching else IGNORED,
+                  (f"across {measured} measured moment(s): {branching} offered two or more verbs "
+                   f"that changed the world, {summary['moments_with_exactly_one']} offered exactly "
+                   f"one, {summary['moments_with_none']} offered none. Branching ratio "
+                   f"{summary['branching_ratio']}. "
+                   f"({summary['moments_unmeasurable']} further moment(s) could not be measured "
+                   f"and are excluded rather than counted as zero.)"),
+                  **summary)
+
     # ---------- session ----------
 
     def play(self) -> dict:
@@ -276,9 +412,16 @@ class Player:
         self.desire_explore()
         self.desire_spend_what_i_earn()
         self.desire_progress_survives()
+        if self.deep:
+            self.desire_to_reach_the_rest_of_the_game()
+            self.desire_the_cast_is_actually_different()
+            self.desire_the_game_ever_offers_me_a_choice()
         return {
             "notes": [n.dict() for n in self.notes],
             "heard": self.said,
             "final": self.obs,
+            "objectives": self.objectives,
             "engine_errors": self.g.errors(),
+            "actions": self.g.action_count,
+            "climb": self.climb.report() if self.climb else {},
         }

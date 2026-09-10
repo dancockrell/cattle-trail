@@ -21,6 +21,10 @@ class Game:
     def __init__(self, godot: Path = GODOT, root: Path = ROOT, timeout: float = 60.0):
         self.timeout = timeout
         self.engine_log: list[str] = []
+        # Counts only the things a person does with their hands: a verb pressed
+        # or a place clicked. Observing and letting frames run are free, so a
+        # stage's cost reads as effort rather than as how long the bot looped.
+        self.action_count = 0
         self.proc = subprocess.Popen(
             [str(godot), "--headless", "--path", str(root), "--", "--bot"],
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
@@ -66,9 +70,11 @@ class Game:
         return self.send(cmd="obs")
 
     def act(self, name: str) -> dict:
+        self.action_count += 1
         return self.send(cmd="act", name=name)
 
     def move(self, x: float, y: float) -> dict:
+        self.action_count += 1
         return self.send(cmd="move", x=x, y=y)
 
     def step(self, frames: int = 6) -> dict:
