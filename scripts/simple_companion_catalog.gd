@@ -91,6 +91,54 @@ const ROWS := [
 		"task_label": "Check the ledger", "location_label": "her desk",
 		"unlock_key": "birdie_recruited"
 	},
+	{
+		"id": "beatrix_lowe", "speaker": "BEATRIX", "age": 25, "perk_id": "trail_company",
+		"position_x": 150.0, "position_y": 150.0, "near_radius": 36.0,
+		"banter_path": "res://data/beatrix_banter.json",
+		"meet_beat": "intro", "task_beat": "boundary_resurveyed", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "BEATRIX, 25 / Help her resurvey a boundary line two outfits are ready to fight over.",
+		"task_message": "Line resurveyed and the numbers written plain. Talk to her again to offer a place.",
+		"recruited_message": "Beatrix joins the outfit. Nobody argues with a chain and a transit for long.",
+		"idle_message": "Beatrix's already riding with the outfit.",
+		"task_label": "Resurvey the line", "location_label": "her transit",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "roisin_dunmore", "speaker": "ROISIN", "age": 24, "perk_id": "trail_company",
+		"position_x": 750.0, "position_y": 150.0, "near_radius": 36.0,
+		"banter_path": "res://data/roisin_banter.json",
+		"meet_beat": "intro", "task_beat": "job_secured", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "ROISIN, 24 / Line up honest locksmithing work before she takes the crooked kind.",
+		"task_message": "Legitimate job secured, paid in full. Talk to her again to offer a place.",
+		"recruited_message": "Roisin joins the outfit. Every lock in camp sleeps easier for it.",
+		"idle_message": "Roisin's already riding with the outfit.",
+		"task_label": "Line up honest work", "location_label": "her workbench",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "modesty_kane", "speaker": "MODESTY", "age": 23, "perk_id": "trail_company",
+		"position_x": 150.0, "position_y": 320.0, "near_radius": 36.0,
+		"banter_path": "res://data/modesty_banter.json",
+		"meet_beat": "intro", "task_beat": "plate_developed", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "MODESTY, 23 / Sit still for a photograph and mind her equipment through the trouble that follows.",
+		"task_message": "Plate developed clean, camera intact. Talk to her again to offer a place.",
+		"recruited_message": "Modesty joins the outfit. She's got a plate of you now, and it came out honest.",
+		"idle_message": "Modesty's already riding with the outfit.",
+		"task_label": "Sit for the plate", "location_label": "her camera",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "clementine_osei", "speaker": "CLEMENTINE", "age": 28, "perk_id": "trail_company",
+		"position_x": 750.0, "position_y": 320.0, "near_radius": 36.0,
+		"banter_path": "res://data/clementine_banter.json",
+		"meet_beat": "intro", "task_beat": "emergency_handled", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "CLEMENTINE, 28 / Give her a steady pair of hands during an actual medical emergency.",
+		"task_message": "Emergency handled, patient stable. Talk to her again to offer a place.",
+		"recruited_message": "Clementine joins the outfit. Steadiest hands this side of the fort.",
+		"idle_message": "Clementine's already riding with the outfit.",
+		"task_label": "Steady the patient", "location_label": "her kit",
+		"unlock_key": "birdie_recruited"
+	},
 ]
 
 static func position_for(row: Dictionary) -> Vector2:

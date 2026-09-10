@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "modesty_kane",
+  "age": 23,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"MODESTY","priority":2,"text":"Sit still. The plate takes what it takes, whether the sitter's comfortable with it or not. Mind my case while you're at it -- it's the only one I've got."},
+    {"id":"plate_developed","priority":2,"speaker":"MODESTY","text":"Developed clean, case intact, and the plate held exactly what I pointed it at. No more, no less. I find that disappoints most people."},
+    {"id":"recruited","speaker":"MODESTY","priority":2,"text":"A place where I can point a camera at things without being told to put it away. I accept."},
+    {"id":"romance_acknowledged","speaker":"MODESTY","priority":2,"text":"I've got a plate of you now. It came out steadier than I expected, and so, it turns out, did you."}
+  ]
+}

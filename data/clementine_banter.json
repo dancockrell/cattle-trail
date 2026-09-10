@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "clementine_osei",
+  "age": 28,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"CLEMENTINE","priority":2,"text":"Hands here, pressure steady, don't flinch when it looks bad. It's going to look bad. Do that and you're more use to me than most."},
+    {"id":"emergency_handled","speaker":"CLEMENTINE","priority":2,"text":"Patient's stable and you didn't panic once. I've served with soldiers who managed less."},
+    {"id":"recruited","speaker":"CLEMENTINE","priority":2,"text":"An outfit that doesn't get in the way during a crisis is worth riding with. I'm in."},
+    {"id":"romance_acknowledged","speaker":"CLEMENTINE","priority":2,"text":"I don't do comfort talk easy. But you kept your head when it counted, and that's the part I actually notice."}
+  ]
+}

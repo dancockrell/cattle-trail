@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "roisin_dunmore",
+  "age": 24,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"ROISIN","priority":2,"text":"Fort Griffin's offering good money for a lock I shouldn't open. Find me honest work worth the same and I'll take that instead, no promises beyond it."},
+    {"id":"job_secured","speaker":"ROISIN","priority":2,"text":"Paid in full, and nobody had to break in anywhere to earn it. I'd forgotten that felt this good."},
+    {"id":"recruited","speaker":"ROISIN","priority":2,"text":"A place, not a job I have to keep proving I'm not casing. Fine. I'll ride with the outfit."},
+    {"id":"romance_acknowledged","speaker":"ROISIN","priority":2,"text":"I've picked locks that gave up less than you did. That's not a complaint, for once."}
+  ]
+}
