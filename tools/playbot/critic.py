@@ -26,6 +26,27 @@ def _trim(trace: dict, max_lines: int = 90) -> dict:
     final.pop("companions", None)
     final.pop("transcript", None)
     slim["final"] = final
+    # Probe 1 and probe 2: keep every number and every sentence, drop the raw
+    # node dumps and the resource snapshots the sentences already summarise.
+    presence = dict(trace.get("presence") or {})
+    if presence:
+        presence["findings"] = [{k: v for k, v in f.items() if k != "detail"}
+                                for f in presence.get("findings", [])]
+        slim["presence"] = presence
+    stakes = []
+    for entry in trace.get("stakes") or []:
+        lean = {k: v for k, v in entry.items() if k not in ("plays", "decisions")}
+        lean["runs"] = [{"inputs": p["inputs"], "net": p["net"], "journal": p["journal"]}
+                        for p in entry.get("plays", [])]
+        lean["decision_moments"] = [
+            {"where": m["where"], "options": m.get("options_that_change_the_outcome"),
+             "outcomes": m.get("distinct_outcomes")}
+            for m in (entry.get("decisions") or {}).get("measured", [])]
+        lean["not_checked"] = [m["why"] for m in
+                               (entry.get("decisions") or {}).get("unmeasurable", [])]
+        stakes.append(lean)
+    if stakes:
+        slim["stakes"] = stakes
     return slim
 
 

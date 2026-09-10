@@ -14,6 +14,8 @@ import math
 from dataclasses import dataclass, field, asdict
 from .driver import Game
 from .progress import Progression
+from . import presence
+from .stakes import Stakes, rustler_steps, cattle_steps, greeting_steps, idle_steps
 
 SATISFIED = "satisfied"
 REFUSED = "refused_with_reason"
@@ -44,6 +46,10 @@ class Player:
         # The climb slices this to answer "did the game ever say what to do next".
         self.objectives: list[str] = []
         self.climb: Progression | None = None
+        # Probe 1 and probe 2, kept out of notes as well as in them: the notes
+        # are what the critic reads, these are the numbers a person reads.
+        self.presence: dict = {}
+        self.stakes: list[dict] = []
         self.g.speed(speed)
         self.obs = self.g.observe()
         self.opening_cash = self.obs.get("cash")
@@ -280,6 +286,53 @@ class Player:
                   f"trust {before.get('trust')} -> {after.get('trust')}",
                   before=before, after=after)
 
+    # ---------- probe 1 and probe 2 ----------
+
+    def desire_anyone_is_actually_there(self, tag: str = "") -> None:
+        """Is there a person where the game asks me to stand, or a coordinate?
+
+        This exists because nineteen companions were coordinates with dialogue
+        attached for two days and every session before this one reported them as
+        working. Walking to a spot and reading a line looks identical either way
+        from inside a state machine."""
+        self.presence = presence.note_for(self, tag)
+
+    def desire_anything_is_at_stake(self) -> None:
+        """"It completed successfully" is not evidence that anything was good.
+        Measure whether each encounter can be lost, whether it ever comes out
+        differently, and how often it asks the player to decide."""
+        probe = Stakes(self)
+        for name, steps, runs, moments in [
+                # The floor first. A probe that cannot tell an empty corner from
+                # a gunfight is not measuring the gunfight either.
+                ("resting in an empty corner", idle_steps(), 2, 2),
+                ("greeting Eleanor", greeting_steps(), 2, 2),
+                ("the rustler", rustler_steps(), 3, 3),
+                ("the cattle gather", cattle_steps(3), 2, 2)]:
+            result = probe.measure(name, steps, runs=runs, moments=moments)
+            self.stakes.append(result)
+            if not result.get("measurable"):
+                self.note("I want an encounter where something is at stake",
+                          IGNORED,
+                          f"{name} could not be measured, so this says nothing about the game: "
+                          f"{result.get('why')}",
+                          encounter=name, **{"version": result.get("version")})
+                continue
+            risk = result["risk"]
+            variance = result["variance"]
+            decisions = result["decision_count"]
+            formality = (not risk["anything_at_stake"] and not variance["varies"]
+                         and decisions["moments_with_a_real_choice"] == 0)
+            self.note(
+                "I want an encounter where something is at stake",
+                IGNORED if formality else (REPEATED if not risk["anything_at_stake"] else SATISFIED),
+                result["verdict"] + " Measured against room.gd "
+                + str(result["version"]["files"]["scripts/room.gd"].get("md5"))
+                + " modified " + str(result["version"]["files"]["scripts/room.gd"].get("modified"))
+                + ", so treat it as that build and not as current if the fight is being rewritten.",
+                encounter=name, cost_in_inputs=result["cost_in_inputs"], risk=risk,
+                variance=variance, decisions=decisions, version=result["version"])
+
     # ---------- the deep session: the rest of the game ----------
 
     def desire_to_reach_the_rest_of_the_game(self) -> None:
@@ -404,6 +457,12 @@ class Player:
 
     def play(self) -> dict:
         self.desire_know_what_to_do()
+        # Before anything is pressed: is anybody on screen at all.
+        self.desire_anyone_is_actually_there("opening room")
+        # The stakes probe runs before the room is finished, because a rustler
+        # already dealt with cannot be measured and a corral already full has no
+        # cattle left to rope.
+        self.desire_anything_is_at_stake()
         self.desire_talk_to_someone()
         self.desire_verbs_mean_something()
         self.desire_variety_of_people()
@@ -424,4 +483,6 @@ class Player:
             "engine_errors": self.g.errors(),
             "actions": self.g.action_count,
             "climb": self.climb.report() if self.climb else {},
+            "presence": self.presence,
+            "stakes": self.stakes,
         }

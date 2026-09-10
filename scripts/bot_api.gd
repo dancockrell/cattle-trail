@@ -87,6 +87,18 @@ func _handle(line: String) -> void:
 			if room.has_method("choose_rustler"): taken = room.choose_rustler(picked)
 			_emit({"type": "ok", "cmd": "choose", "option": picked, "taken": taken,
 				"message": room.message})
+		"actors":
+			# Probe 1. "Is anything actually there." An observation of positions
+			# cannot tell a drawn character from a bare coordinate, and nineteen
+			# companions shipped as coordinates with dialogue attached because
+			# nothing here could ask the question.
+			_emit(actor_report())
+		"sabotage":
+			# The injection point for probe 1. A branch nobody can execute on
+			# purpose is a branch nobody can prove they fixed, and the branch
+			# that matters here -- a character who is not on screen -- cannot be
+			# reached from a healthy build at all. Only reachable in --bot.
+			_emit(_sabotage(str(command.get("target", "")), str(command.get("how", "strip"))))
 		"options":
 			var choices: Array = []
 			if "RUSTLER_CHOICES" in room and room.has_method("rustler_choice_pending") and room.rustler_choice_pending():
@@ -104,6 +116,8 @@ func _handle(line: String) -> void:
 		_:
 			_emit({"type": "error", "message": "unknown cmd", "cmd": name})
 
+var _last_storage_ok := false
+
 func _act(action: String) -> void:
 	var before := _fingerprint()
 	match action:
@@ -116,16 +130,22 @@ func _act(action: String) -> void:
 			if room.companion != null: room.companion.flirt()
 		"reset": room.reset_room()
 		"save":
-			if room.companion != null: room.companion.save_game(BOT_SAVE)
+			# The answer is reported. room.gd refuses to save mid-action, and a
+			# refused save is invisible from outside: the next load quietly
+			# restores a much older world and every measurement taken from it is
+			# a measurement of the wrong moment.
+			_last_storage_ok = room.companion != null and room.companion.save_game(BOT_SAVE)
 		"load":
-			if room.companion != null: room.companion.load_game(BOT_SAVE)
+			_last_storage_ok = room.companion != null and room.companion.load_game(BOT_SAVE)
 		_:
 			_emit({"type": "error", "message": "unknown action", "action": action})
 			return
 	# "changed" lets the bot notice an action that silently did nothing, which
 	# is a real complaint category and invisible from a return value alone.
-	_emit({"type": "ok", "cmd": "act", "action": action, "changed": _fingerprint() != before,
-		"message": room.message})
+	var payload := {"type": "ok", "cmd": "act", "action": action,
+		"changed": _fingerprint() != before, "message": room.message}
+	if action == "save" or action == "load": payload["ok"] = _last_storage_ok
+	_emit(payload)
 
 func _step(frames: int) -> void:
 	var count: int = clampi(frames, 1, 600)
@@ -150,6 +170,210 @@ func _fingerprint() -> String:
 	for value in parts: text.append(str(value))
 	return "|".join(text)
 
+# ---------------------------------------------------------------------------
+# Probe 1: rendered presence.
+#
+# Every function below answers one question: is there something on screen where
+# the game is asking the player to stand? A Node2D with no texture, a hidden
+# node and a node that was never created all draw exactly the same thing, so
+# "a node exists" is not the check. The check is a texture, visible in the
+# tree, with a non-zero size and some alpha left in it.
+
+## The texture a single node would draw this frame, or null if it draws nothing.
+func _node_texture(node) -> Texture2D:
+	if node is Sprite2D:
+		return node.texture
+	if node is AnimatedSprite2D:
+		var frames: SpriteFrames = node.sprite_frames
+		if frames == null: return null
+		var clip: String = node.animation
+		if not frames.has_animation(clip): return null
+		var count: int = frames.get_frame_count(clip)
+		if count <= 0: return null
+		return frames.get_frame_texture(clip, clampi(node.frame, 0, count - 1))
+	if node is TextureRect:
+		return node.texture
+	return null
+
+## Walks a node and its descendants for the largest thing it actually draws.
+## Actors keep their art on a child AnimatedSprite2D, so checking the node the
+## game hands out would report every character as textureless.
+func _drawn_part(node, best: Dictionary) -> Dictionary:
+	if node is CanvasItem:
+		var texture: Texture2D = _node_texture(node)
+		if texture != null:
+			var size: Vector2 = texture.get_size()
+			var scale: Vector2 = (node as CanvasItem).get_global_transform().get_scale()
+			var on_screen := Vector2(absf(size.x * scale.x), absf(size.y * scale.y))
+			var area: float = on_screen.x * on_screen.y
+			if area > float(best.get("area", -1.0)):
+				best = {
+					"area": area,
+					"texture_size": {"w": int(size.x), "h": int(size.y)},
+					"on_screen_size": {"w": snapped(on_screen.x, 0.1), "h": snapped(on_screen.y, 0.1)},
+					"visible_in_tree": (node as CanvasItem).is_visible_in_tree(),
+					"alpha": snapped((node as CanvasItem).get_modulate().a, 0.01),
+				}
+	for child in node.get_children():
+		best = _drawn_part(child, best)
+	return best
+
+## Presence of one thing the player is meant to see. Three states, never two:
+## drawn, not drawn with a reason, or no node at all.
+func _presence(node) -> Dictionary:
+	if node == null or not is_instance_valid(node):
+		return {"exists": false, "visible": false, "visible_in_tree": false, "has_texture": false,
+			"texture_size": {"w": 0, "h": 0}, "on_screen_size": {"w": 0.0, "h": 0.0},
+			"alpha": 0.0, "drawn": false, "why_not_drawn": "no node exists at all"}
+	var out := {
+		"exists": true,
+		"class": node.get_class(),
+		"node_name": String(node.name),
+		"visible": bool(node.visible) if node is CanvasItem else true,
+		"visible_in_tree": (node as CanvasItem).is_visible_in_tree() if node is CanvasItem else true,
+		"pos": _pos(node),
+	}
+	var best: Dictionary = _drawn_part(node, {})
+	if best.is_empty():
+		out["has_texture"] = false
+		out["texture_size"] = {"w": 0, "h": 0}
+		out["on_screen_size"] = {"w": 0.0, "h": 0.0}
+		out["alpha"] = snapped((node as CanvasItem).get_modulate().a, 0.01) if node is CanvasItem else 1.0
+		out["drawn"] = false
+		out["why_not_drawn"] = "the node exists but nothing under it has a texture, so it draws nothing"
+		return out
+	out["has_texture"] = true
+	out["texture_size"] = best["texture_size"]
+	out["on_screen_size"] = best["on_screen_size"]
+	out["alpha"] = best["alpha"]
+	out["visible_in_tree"] = bool(out["visible_in_tree"]) and bool(best["visible_in_tree"])
+	var wide: bool = float(best["on_screen_size"]["w"]) > 0.0 and float(best["on_screen_size"]["h"]) > 0.0
+	var lit: bool = float(best["alpha"]) > 0.0
+	out["drawn"] = bool(out["visible_in_tree"]) and wide and lit
+	if out["drawn"]:
+		out["why_not_drawn"] = ""
+	elif not out["visible_in_tree"]:
+		out["why_not_drawn"] = "the node has art but is hidden"
+	elif not wide:
+		out["why_not_drawn"] = "the node's texture has no size"
+	else:
+		out["why_not_drawn"] = "the node is fully transparent"
+	return out
+
+## Breaks one thing on purpose so the presence probe can be proved to notice.
+## "target" is "player", "eleanor", "rustler" or "companion:<id>"; "how" is
+## "hide", "strip" (take the texture away, which is the failure that shipped) or
+## "free" (remove the node entirely).
+func _sabotage(target: String, how: String) -> Dictionary:
+	var node: Node = null
+	if target.begins_with("companion:"):
+		node = room.actors.get_node_or_null("companion_" + target.substr(10)) if is_instance_valid(room.actors) else null
+	elif target == "player": node = room.player
+	elif target == "eleanor": node = room.eleanor
+	elif target == "rustler": node = room.rustler
+	if node == null or not is_instance_valid(node):
+		# A sabotage that changed nothing must never read as a pass.
+		return {"type": "error", "cmd": "sabotage", "target": target, "how": how,
+			"applied": false, "message": "no such node, so nothing was broken"}
+	match how:
+		"hide":
+			(node as CanvasItem).visible = false
+		"strip":
+			var stripped := _strip(node)
+			if not stripped:
+				return {"type": "error", "cmd": "sabotage", "target": target, "how": how,
+					"applied": false, "message": "found nothing with a texture to take away"}
+		"free":
+			node.get_parent().remove_child(node)
+			node.queue_free()
+		_:
+			return {"type": "error", "cmd": "sabotage", "message": "unknown sabotage", "how": how,
+				"applied": false}
+	return {"type": "ok", "cmd": "sabotage", "target": target, "how": how, "applied": true}
+
+func _strip(node) -> bool:
+	var done := false
+	if node is Sprite2D and node.texture != null:
+		node.texture = null
+		done = true
+	if node is AnimatedSprite2D and node.sprite_frames != null:
+		node.sprite_frames = null
+		done = true
+	for child in node.get_children():
+		if _strip(child): done = true
+	return done
+
+func actor_report() -> Dictionary:
+	var out := {"type": "ok", "cmd": "actors"}
+	if not is_instance_valid(room.actors):
+		# Loud zero. A report with no denominator would read as a clean pass.
+		out["layer_present"] = false
+		out["examined"] = 0
+		out["error"] = "room.actors does not exist, so nothing could be examined"
+		return out
+	out["layer_present"] = true
+	var examined := 0
+	var accounted := {}
+
+	# The named actors the game itself holds a reference to.
+	var named: Array = []
+	for pair in [["player", room.player], ["eleanor", room.eleanor], ["rustler", room.rustler]]:
+		var entry: Dictionary = _presence(pair[1])
+		entry["name"] = str(pair[0])
+		# Interactive means the player pressing a verb here does something.
+		entry["interactive"] = true
+		if pair[0] == "rustler":
+			entry["interactive"] = bool(room.rustler_active) or (room.has_method("rustler_choice_pending") and room.rustler_choice_pending())
+		named.append(entry)
+		examined += 1
+		if is_instance_valid(pair[1]): accounted[pair[1].get_instance_id()] = true
+	out["named"] = named
+
+	# The catalog companions: nineteen coordinates with dialogue attached. The
+	# sprite for one is expected under room.actors as companion_<id>.
+	var companions: Array = []
+	if room.companion != null:
+		for entry in room.companion.simple_companions:
+			var config: Dictionary = entry.room.config
+			var expects := "companion_" + String(entry.id)
+			var node = room.actors.get_node_or_null(expects)
+			var record: Dictionary = _presence(node)
+			record["id"] = entry.id
+			record["expects_node"] = expects
+			record["interactive"] = true
+			record["unlocked"] = entry.room.unlocked()
+			record["near_radius"] = float(config.get("near_radius", 36.0))
+			record["asked_to_stand_at"] = {"x": config.position.x, "y": config.position.y}
+			companions.append(record)
+			examined += 1
+			if node != null and is_instance_valid(node): accounted[node.get_instance_id()] = true
+	out["companions"] = companions
+
+	# Cattle. Lassoable, so each one is an interactive target too.
+	var cattle_drawn := 0
+	var cattle_total := 0
+	for cow in room.cows:
+		if not is_instance_valid(cow): continue
+		cattle_total += 1
+		examined += 1
+		accounted[cow.get_instance_id()] = true
+		if bool(_presence(cow).get("drawn", false)): cattle_drawn += 1
+	out["cattle"] = {"total": cattle_total, "drawn": cattle_drawn}
+
+	# Everything else sitting on the actor layer: scenery, props, leftovers.
+	# Counted so the denominator is the whole layer rather than the parts the
+	# probe already knew to look for.
+	var others: Array = []
+	for child in room.actors.get_children():
+		if accounted.has(child.get_instance_id()): continue
+		var record: Dictionary = _presence(child)
+		record["interactive"] = false
+		others.append(record)
+		examined += 1
+	out["unaccounted"] = others
+	out["examined"] = examined
+	return out
+
 func observation() -> Dictionary:
 	var companion = room.companion
 	var data := {
@@ -172,6 +396,15 @@ func observation() -> Dictionary:
 		"buttons": _buttons(),
 		"transcript": transcript.slice(maxi(0, transcript.size() - 12)),
 	}
+	# Probe 2 needs to see everything the player owns that a fight could take.
+	# Read defensively: room.gd is being rewritten around the rustler, and a
+	# missing field must read as "this game has no such resource" rather than
+	# crash the API the whole session depends on.
+	for key in ["strain", "player_hits", "hits", "reload_time", "escaped",
+			"rustler_surrendered", "rustler_fate", "rustler_hired", "rustler_present"]:
+		if key in room:
+			var value: Variant = room.get(key)
+			data[key] = snapped(float(value), 0.01) if value is float else value
 	if companion != null:
 		data["clock"] = companion.clock_label()
 		data["controlling"] = "eleanor" if companion.is_eleanor() else "trail_boss"

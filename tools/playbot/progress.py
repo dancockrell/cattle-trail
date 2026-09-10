@@ -46,8 +46,13 @@ VERBS = ["interact", "lasso", "shoot", "switch", "rest", "flirt"]
 # Fields of an observation that describe the player's standing in the world,
 # as opposed to the journal line, the clock, or a position that drifts a pixel
 # while frames run. A verb that moves one of these did something.
+# The rustler's fate joined this list on 10 Sep 2026: turning him loose changes
+# nothing else a probe could see, so without it the game's one authored choice
+# read as an option that did nothing. Both fields are written to the save and
+# restored from it, so a save-and-load control still round trips.
 HARD_STATE = ["won", "cash", "ammo", "cattle_secured", "rustler_active",
-              "talked", "controlling", "eleanor_state", "companions"]
+              "talked", "controlling", "eleanor_state", "companions",
+              "rustler_fate", "rustler_hired"]
 
 
 def parse_clock(obs: dict) -> float | None:

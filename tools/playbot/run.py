@@ -90,6 +90,65 @@ def print_climb(climb: dict) -> None:
             print(f"    {moment['where']}: {shown}")
 
 
+def print_presence(presence: dict) -> None:
+    """Probe 1. Rendered presence, with its denominator in front of its answer."""
+    if not presence:
+        return
+    print()
+    print("IS ANYBODY ACTUALLY THERE")
+    print("  instrument: " + presence.get("instrument_says", ""))
+    if not presence.get("instrument_ok"):
+        print("  NOT CHECKED. The numbers below would be the probe's, not the game's.")
+        return
+    drawn = presence.get("drawn", {})
+    print(f"  interactive targets drawn: {drawn.get('of_those_on_screen')} of "
+          f"{drawn.get('interactive_targets')}   "
+          f"companions drawn: {drawn.get('companions_on_screen')} of "
+          f"{drawn.get('companions_total')}   "
+          f"cattle drawn: {drawn.get('cattle_on_screen')}   "
+          f"scenery drawn: {drawn.get('scenery_on_screen')}")
+    missing = [f for f in presence.get("findings", []) if f["kind"] == "interactive_but_not_drawn"]
+    furniture = [f for f in presence.get("findings", []) if f["kind"] == "drawn_but_nothing_to_do"]
+    if not missing:
+        print("  nobody the game asks you to talk to is missing from the screen")
+    for finding in missing[:20]:
+        print("  MISSING: " + finding["says"])
+    if furniture:
+        print(f"  {len(furniture)} drawn with no verb that reaches them: "
+              + ", ".join(f["who"] for f in furniture[:8])
+              + (" ..." if len(furniture) > 8 else ""))
+
+
+def print_stakes(stakes: list) -> None:
+    """Probe 2. Whether an encounter is an encounter."""
+    if not stakes:
+        return
+    print()
+    print("WAS ANYTHING AT STAKE")
+    stamp = stakes[0].get("version", {}).get("files", {}).get("scripts/room.gd", {})
+    print(f"  measured against room.gd {stamp.get('md5')} modified {stamp.get('modified')} "
+          f"at {stakes[0].get('version', {}).get('measured_at')}")
+    for entry in stakes:
+        print("  " + entry.get("verdict", entry.get("encounter", "?")))
+        if not entry.get("measurable"):
+            continue
+        risk = entry["risk"]
+        if risk["never_went_down"]:
+            print(f"      never moved against the player: {', '.join(risk['never_went_down'])}")
+        if risk.get("could_not_be_read_as_a_number"):
+            print(f"      NOT CHECKED, no number to read: "
+                  f"{', '.join(risk['could_not_be_read_as_a_number'])}")
+        if risk.get("no_such_resource_as"):
+            print(f"      no such resource in this game at all: "
+                  f"{', '.join(risk['no_such_resource_as'])}")
+        for moment in entry["decisions"]["measured"]:
+            shown = " | ".join("/".join(group) for group in moment["distinct_outcomes"]) or "nothing"
+            print(f"      {moment['where']}: {moment['options_that_change_the_outcome']} "
+                  f"option(s) that change the outcome  [{shown}]")
+        for moment in entry["decisions"]["unmeasurable"]:
+            print(f"      NOT CHECKED at {moment['where']}: {moment['why']}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--no-judge", action="store_true", help="skip the critic")
@@ -131,6 +190,8 @@ def main() -> int:
     for note in trace["notes"]:
         if note["outcome"] in ("ignored_silently", "blocked"):
             print(f"  [{note['outcome']}] {note['desire']}: {note['detail'][:220]}")
+    print_presence(trace.get("presence") or {})
+    print_stakes(trace.get("stakes") or [])
     print_climb(trace.get("climb") or {})
 
     if args.no_judge:

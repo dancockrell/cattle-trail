@@ -46,6 +46,7 @@ CHECKS = {
     'birdie-room': (['--headless', '--script', 'tools/birdie_room_test.gd'], r'BIRDIE ROOM PASS: unlock, busy guards, meet/sing/recruit sequence, romance, mobile labels, save counts and restore; no rendering'),
     'phase': (['--headless', '--script', 'tools/animation_phase_test.gd'], r'ANIMATION PHASE PASS: unequal holds, directional remapping, cycle boundaries and roundtrip'),
     'dialogue-scene': (['--headless', '--script', 'tools/dialogue_scene_test.gd'], r'DIALOGUE SCENE PASS: \d+ checks'),
+    'companion-liveliness': (['--headless', '--script', 'tools/companion_liveliness_test.gd'], r'COMPANION LIVELINESS PASS: \d+ checks; \d+ companions drawn'),
     'companion-art': (['--headless', '--script', 'tools/companion_art_test.gd'], r'COMPANION ART PASS: \d+ of \d+ companions'),
     'gunfight': (['--headless', '--script', 'tools/gunfight_test.gd'], r'GUNFIGHT PASS: \d+ checks; aim decides the shot, range degrades it, cover stops it, he shoots back on a tell, a hit costs and recovers, and the room still finishes'),
     'rustler-choice': (['--headless', '--script', 'tools/rustler_choice_test.gd'], r'RUSTLER CHOICE PASS: \d+ checks; three answers, three durable outcomes, one decision each, room still finishable'),
