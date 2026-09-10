@@ -8520,6 +8520,460 @@
         "duration_target_minutes": 4,
         "tuning_status": "provisional"
       }
+    },
+    {
+      "id": "hallie_brandt",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Hallie Brandt",
+      "age": 23,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Her father built the line-shack under the storm-split oak to run a few strays and a little jerked beef to whoever passed; when he didn't come back from a trip to Griffin two winters ago, she kept the shack, the fire, and the custom that Split Oak stays neutral ground no matter whose brand rides through. She reads every notice nailed to that trunk before anyone else does, and she has opinions about most of them.",
+        "personality": [
+          "plainspoken",
+          "fiercely neutral by policy, not by nature",
+          "collects other people's business without meaning to",
+          "quick to laugh at herself"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A man's canvas coat cut down to fit her, sleeves turned back, a kerchief for trail dust, a belt hung with the small tools of running a line-shack alone.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's pulling down a warning notice about Ketch's crew from the oak's trunk when the outfit rides up, and she sizes them for a brand before she says a word of welcome.",
+        "conditions": [
+          "Trade real news for real news instead of trying to get more than you give.",
+          "Respect that Split Oak's neutrality is hers to keep, not a formality to talk around.",
+          "Hallie accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "waypoint keeper and rumor broker",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "spirit_sense",
+          "label": "Between the Footprints",
+          "description": "Reuses the existing hazard-notice perk definition; nobody reads the county's warnings nailed to a tree better than she does.",
+          "activation": "field",
+          "effect": {
+            "stat": "trail_hazard_notice",
+            "operation": "add",
+            "value": 1.0,
+            "unit": "units of advance warning"
+          },
+          "stacking_group": "trail_hazard_notice",
+          "stacking_cap": 2.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 12,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A notice on the oak naming somebody she liked as trouble, and not knowing if it's true.",
+        "support_preference": "Being asked her actual opinion instead of just her news."
+      },
+      "recovery_offer": {
+        "id": "hallie_brandt_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room.",
+        "Split Oak Camp and its neutral-ground custom are per design/LOCATIONS.md; this record does not resolve who else uses the waypoint."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "what_the_oak_is_owed",
+        "title": "What the Oak Is Owed",
+        "controlled_actor_id": "hallie_brandt",
+        "objective": "Play as Hallie riding a short loop to three parties who left notices on the oak, delivering an honest answer to each before a rival outfit can twist the story first.",
+        "companion_skill": "Directly playable fast, careful riding and reading people at speed, not a dialogue tree.",
+        "protagonist_support": "The protagonist watches the shack and the fire so Split Oak's neutrality holds while she's away.",
+        "affectionate_payoff": "She comes back with the last answer delivered clean and admits it's the first time in two years someone minded the oak so she didn't have to rush.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "verona_ashcombe",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Verona Ashcombe",
+      "age": 27,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "The homestead at the Quiet Rows failed before she was grown, but she never left the fence line -- she keeps the little cemetery mended and the wildflowers cut back from the stones, and she has kept count of the headstones every visit for years without telling anyone why until they've earned it. She is the someone nobody in the outfit has met, and she'd rather it stay that way until she decides otherwise.",
+        "personality": [
+          "patient past the point most people can manage",
+          "exacting about small rituals",
+          "warms slowly and completely once she does",
+          "unnerved by nothing except a wrong number"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A dark, mended work dress suited to kneeling in grass all day, gardening gloves gone soft with use, a small ledger kept in an apron pocket.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit passes the Quiet Rows twice in one season, and the second time she's waiting at the fence instead of pretending not to notice them, ledger in hand.",
+        "conditions": [
+          "Return to the Quiet Rows more than once before pressing her for answers.",
+          "Help her recount the headstones honestly, even when the number is wrong.",
+          "Verona accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "groundskeeper and quiet-omen tracker",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing camp-rest perk definition; her stillness is contagious in the right way at the end of a hard day.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1.0,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 14,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Counting the stones and coming up with one more, or one fewer, than the ledger says.",
+        "support_preference": "Someone willing to walk the fence line with her and count it a second time, without hurrying."
+      },
+      "recovery_offer": {
+        "id": "verona_ashcombe_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room.",
+        "The Quiet Rows is per design/LOCATIONS.md, explicitly a slow-burn location with return visits; this record leans on that rather than resolving what the mismatched headstone count means.",
+        "Spirits are real; their testimony can still be mistaken or deceptive."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_count_that_wont_hold",
+        "title": "The Count That Won't Hold",
+        "controlled_actor_id": "verona_ashcombe",
+        "objective": "Play as Verona walking the fence line at dusk to recount every headstone by hand and mark which one changed since the last visit, before dark makes the count unreliable.",
+        "companion_skill": "Directly playable careful, methodical searching and counting under a closing time limit, not a jump-scare sequence.",
+        "protagonist_support": "The protagonist holds the lantern steady at the gate so she never has to count in her own shadow.",
+        "affectionate_payoff": "The count finally holds, and she tells the protagonist, quietly, that it's the first time in years she hasn't had to face that fence alone at dusk.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "birdie_holloway",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Birdie Holloway",
+      "age": 22,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "She grew up riding night herd for a Fort Griffin outfit twice the size of anyone else's, the one shift nobody wanted, and found out she was better at it than anyone else on the crew -- a low voice, an unhurried song, and a feel for the exact moment a herd is about to come apart before it does. She left that outfit over an argument about a bad river crossing they took anyway, and cattle drowned to prove her right.",
+        "personality": [
+          "unhurried on purpose",
+          "argues facts, not feelings, and wins",
+          "sings without noticing she's doing it",
+          "holds a grudge against bad judgment more than bad luck"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A long night-duster gone soft from years of dew, fingerless gloves for rope work in the dark, a battered harmonica on a cord she uses as much as her voice.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit's herd starts to mill and bawl on a bad night, and a low, unbothered voice picks up a song from just outside the firelight before anyone sees who it belongs to.",
+        "conditions": [
+          "Let her talk the herd down her way instead of driving them harder.",
+          "Back her judgment on a crossing or a night leg even when it costs time.",
+          "Birdie accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "night herder and drive-crossing judgment",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_herd",
+          "label": "Trail Hand",
+          "description": "Reuses the existing lasso/lead-duration perk definition; a herd she's talked down holds together longer under pressure.",
+          "activation": "field",
+          "effect": {
+            "stat": "lasso_follow_seconds",
+            "operation": "add",
+            "value": 2.0,
+            "unit": "seconds of lead retained"
+          },
+          "stacking_group": "lasso_follow_seconds",
+          "stacking_cap": 4.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 11,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A drive pushed across bad water on somebody else's impatience, cattle or people.",
+        "support_preference": "A quiet stretch of night watch shared, no talking required until she starts it."
+      },
+      "recovery_offer": {
+        "id": "birdie_holloway_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room.",
+        "Written per design/DRIVES.md's note that a companion whose skill is directly useful on a drive, not just at home, is underrepresented; her judgment is specifically about river crossings and spooked herds per that document's listed risks.",
+        "Does not resolve DRIVES.md's open numeric-loss-rate questions; this record only supplies the character."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_night_the_herd_almost_ran",
+        "title": "The Night the Herd Almost Ran",
+        "controlled_actor_id": "birdie_holloway",
+        "objective": "Play as Birdie riding the perimeter of a spooked night herd on a drive, singing and turning back the cattle nearest to breaking before the whole herd follows them into a bad crossing.",
+        "companion_skill": "Directly playable mounted night-watch riding and herd-calming under time pressure, not a menu choice.",
+        "protagonist_support": "The protagonist keeps the fire built up and visible so she always has a fixed point to ride back toward in the dark.",
+        "affectionate_payoff": "The herd settles and she rides back into the firelight still half-singing, admitting she trusted the crossing tonight because the protagonist was the one holding the light.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "magnolia_pruitt",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Magnolia Pruitt",
+      "age": 25,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "She grew up on the last homestead before the white ground starts, close enough to the Salt Flats that she learned its false mirages and its real tracks the way other children learned church songs, and she is the only drover for two counties that cattle will actually follow across it without balking. She doesn't explain what she does differently; she just walks the line first, slow, and the herd decides to trust her the way it never decides to trust anyone else.",
+        "personality": [
+          "deliberately calm to a fault",
+          "private about anything that sounds like a gift",
+          "dry-humored about the flats' reputation",
+          "loyal past the point of sense once given"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Pale, sun-bleached canvas to shed the flats' glare, a wide flat hat with a low brim, salt-cracked boots, a wet cloth kept at her neck against the heat.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit's herd stops dead at the edge of the Salt Flats and won't be driven another step, and she's already walking out onto the white ground alone to see if it's worth their trouble to cross today.",
+        "conditions": [
+          "Wait for her to walk the line first instead of forcing the herd across.",
+          "Don't ask her to explain the flats' tricks like they're a parlor game.",
+          "Magnolia accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "Salt Flats crossing guide",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "spirit_sense",
+          "label": "Between the Footprints",
+          "description": "Reuses the existing hazard-notice perk definition; she reads a mirage that doesn't resolve and a track that ends mid-stride before either one costs the drive anything.",
+          "activation": "field",
+          "effect": {
+            "stat": "trail_hazard_notice",
+            "operation": "add",
+            "value": 1.0,
+            "unit": "units of advance warning"
+          },
+          "stacking_group": "trail_hazard_notice",
+          "stacking_cap": 2.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A herd driven onto the flats by someone who wouldn't wait for her to walk the line first.",
+        "support_preference": "Sitting out the worst of the day's heat in real shade with someone who isn't in a hurry."
+      },
+      "recovery_offer": {
+        "id": "magnolia_pruitt_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room.",
+        "The Salt Flats and 'cattle refuse to cross it without a reason to trust the drover' are per design/LOCATIONS.md; this record does not resolve what the flats' late signs actually are."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_line_across_the_white",
+        "title": "The Line Across the White",
+        "controlled_actor_id": "magnolia_pruitt",
+        "objective": "Play as Magnolia walking a slow line across the Salt Flats ahead of the herd, picking the honest ground between mirages and tracks that end mid-stride before the crossing can be called safe.",
+        "companion_skill": "Directly playable careful, deliberate route-picking across deceptive open ground, not a puzzle menu.",
+        "protagonist_support": "The protagonist holds the herd steady at the edge, trusting her pace instead of pushing the cattle forward early.",
+        "affectionate_payoff": "She waves the herd on from the far side and tells the protagonist it's the first crossing in a long while she didn't have to walk alone in her own head.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
     }
   ],
   "procedural_template": {
