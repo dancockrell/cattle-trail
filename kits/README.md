@@ -1,6 +1,6 @@
 # Rich sprite-kit library
 
-This is an expansion of the recovered Cattle Trail art, generated with the built-in image-generation tool using the original approved sheets as references. The original playable room remains the comparison baseline. These new sheets are production candidates; source generation, successful extraction, engine playback, and final visual acceptance are distinct stages.
+This is an expansion of the recovered Cattle Trail art, generated with the built-in image-generation tool using the original sheets as references. Press K in the game to browse it.
 
 ## Inspect and reuse
 
@@ -12,7 +12,7 @@ In the Godot game press **K** to open the kit browser, or launch the Windows bui
 - `generation-jobs.json`: saved generation prompts and original reference index.
 - `reviews/`: alpha review sheets and actual Godot captures.
 - `validation.json`: structural checks; this is not an art approval certificate.
-- `PLAN.md` and `catalog-plan.json`: target coverage. See the measured manifest and delivery report for achieved coverage and exceptions.
+- `catalog-plan.json`: target coverage.
 
 Rebuild with `python tools/extract_kits.py` from the project folder, then `python tools/validate_kits.py`. Requirements: Pillow, NumPy, SciPy. The extractor identifies actual empty gutters rather than assuming the generator obeyed its requested grid, removes magenta with a binary color key, and uses only nearest-neighbor reduction. One scale is applied across a sheet so effects do not resize the actor from pose to pose.
 
@@ -20,8 +20,8 @@ An idle clip may intentionally reuse the first walk pose. Such reuse does not in
 
 ## Direction and animation review
 
-Directional names originally come from the requested generation job. The source can deviate: some north-requested cattle graze or rest poses turn back toward the camera, and some shooting poses aim diagonally rather than straight ahead. Treat those exceptions as documented source limitations, not guaranteed directional action coverage. Use individually reviewed clips or frame poses in gameplay; don't infer a complete four-direction animation system merely from sheet count.
+Directional names originally come from the requested generation job. The source can deviate: some north-requested cattle graze or rest poses turn back toward the camera, and some shooting poses aim diagonally rather than straight ahead. Treat those exceptions as documented source limitations.
 
-Walk/trot/run strips contain four generated poses, not motion-captured or hand-drawn final cycles. Rest, medical, and reaction rows include distinct functional states that can need transition curation. Final gait timing, anatomy consistency, clean silhouettes at chosen game scale, fence connection points, and device-size readability remain visual admission criteria.
+Walk/trot/run strips contain four generated poses, not motion-captured or hand-drawn final cycles. Rest, medical, and reaction rows include distinct functional states that can need transition curation.
 
-The grass/tree/rock/scrub/fence/camp families provide reusable source variation. Their native scale and upper-left lighting are tied to the same style references. The tree kit includes complementary canopy/trunk layers with shared anchors (their union reproduces the original silhouette); fences should be admitted with measured connectors before building collision-critical corrals. These are explicit production tasks rather than capabilities inferred from a concept sheet.
+The grass/tree/rock/scrub/fence/camp families provide reusable source variation. Their native scale and upper-left lighting are tied to the same style references. The tree kit includes complementary canopy/trunk layers with shared anchors (their union reproduces the original silhouette); fences should be admitted with measured connectors before building collision-critical corrals.

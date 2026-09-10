@@ -3,9 +3,9 @@ extends RefCounted
 ## task, invite" recruitment shape. Adding another companion of this shape
 ## (see the note atop simple_companion_state.gd for which shapes qualify)
 ## means adding a row here and a data/<id>_banter.json file, not a new pair
-## of .gd scripts. All three below are gated behind Birdie's recruitment,
-## continuing the single existing unlock chain (Eleanor -> Ada -> Ines ->
-## Birdie) rather than opening several branches from one companion at once.
+## of .gd scripts. Every row below is gated behind Birdie's recruitment,
+## continuing the single unlock chain (Eleanor -> Ada -> Ines -> Birdie)
+## rather than opening several branches from one companion at once.
 const ROWS := [
 	{
 		"id": "delphine_cruz", "speaker": "DELPHINE", "age": 24, "perk_id": "trail_company",

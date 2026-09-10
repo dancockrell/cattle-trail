@@ -41,7 +41,7 @@ Draft benefit to rest_madness_recovery; numerical effect is untested.
 
 ## Notes
 - Age 24 follows the latest adult-age clarification.
-- Runtime implements recruitment, a smaller three-cattle calming activity, optional courting and shared rest, and the full Lanterns at the Ford encounter below (carry the lantern, settle the crossing spirit, guide three stranded cattle, return to the wagon for +10 trust). Verified 2026-09-09 with `python tools/verify_godot.py lantern lantern-controller lantern-view`. Room placement, banter and save/load are wired; visual/animation acceptance is tracked separately in VISUAL-AUDIT.md.
+- Runtime implements recruitment, a smaller three-cattle calming activity, optional courting and shared rest, and the full Lanterns at the Ford encounter below (carry the lantern, settle the crossing spirit, guide three stranded cattle, return to the wagon for +10 trust). Verified 2026-09-09 with `python tools/verify_godot.py lantern lantern-controller lantern-view`. Room placement, banter and save/load are wired.
 - Do not replace her approved visual identity without comparison.
 ## Known associates
 

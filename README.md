@@ -1,114 +1,71 @@
-## Current art production decision — 8 September 2026
+# Cattle Trail
 
-All game artwork is 2D only: authored sprites, sprite animation, painted backgrounds, tiles, portraits and flat effects. Use the existing shared art folder at `C:/Users/Admin/Documents/Codex/shared-game-environment-library` for reusable 2D kits, with compatible perspective, pixel density, palette, anchors and animation metadata across Cattle Trail/Cattle Drive, DR Companion and Pirate Island. Preserve each game's characters, setting and gameplay identity.
+A cattle-ranching and period-economics RPG set in an alternate 1872 Texas, starting on the Clear Fork of the Brazos on Monday, May 12. Spirits are ordinary here, steam machinery is real and breaks in public, and the walking dead are a fact of the country rather than a twist. You run a small outfit and grow it through four connected levers: shrewd dealing (trade, negotiation, debt, market timing), cattle drives (herding, trail risk, delivery), exploration of the wider county, and romance. The romance pillar is harem-lit: adult women with their own work, their own talents and their own reasons for riding with you. All four levers are meant to be the same simulation, not separate minigames wearing one skin.
 
-Do not create, purchase, import, restore, archive for later reuse, or bake sprites from 3D models. Earlier model, rig, mesh, material, body-builder and six-month-resumption plans are retired. New generated artwork uses the user-authorized built-in image generator; no external paid generation APIs. Shared reuse does not make unreviewed art automatically approved.
+Built in Godot 4.3.
 
-Inspect true transparency, sequential poses, stable ground pivots, equipment handedness, native-size readability and actual motion before admission. Keep game state, navigation, combat rules, accessibility and persistence authoritative; changing artwork never changes legal actions. Existing engine API names and historical validation records may mention 3D without authorizing 3D artwork.
+## What runs today
 
-This is production authority, not a claim that every existing runtime or binary has been converted. Legacy-asset deletion is a separate operation: automatic review rejected deletion commands, so deletion remains unverified here. Do not restore those assets or present them as production options.
+- **The Clear Fork room is playable.** Ride, talk, lasso, shoot, gather the herd, drive off the rustler. Save and load.
+- **Eleanor's lantern crossing** plays: take her brass lantern to the pale crossing spirit, settle it, then guide three stranded cattle east past it.
+- **Ada's steam-cart outing** plays: repair the walker, board the two-seat cart, route pressure through valves A/B/C, then drive the lantern course and bring it back.
+- **Ines's spirit trail** plays: meet her at the northern trail, read three landmarks, return to her, recruit her and set her camp or field assignment.
+- **Birdie's encounter** plays, and her recruitment unlocks the rest of the cast.
+- **Nineteen more companions are wired into the game** through the generic simple-companion system. Each is a row in `scripts/simple_companion_catalog.gd` plus a banter file in `data/`, and `scripts/companion_room.gd` builds all nineteen at load: Delphine, Cleo, Prisca, Winnie, Louisa, Faustina, Constance, Beatrix, Roisin, Modesty, Clementine, Sable, Delia, Rilla, Nell, Fina, Willow, Naomi and Ottilie. Meet, do the one thing that matters to her, offer her a place. Recruitment and romance are separate steps in every case.
+- **Perks, madness, trust, camp rest and the trail clock** are implemented and persist across saves. Perks have stacking caps.
+- `scripts/trade_negotiation.gd` implements the dealing beat from `design/ECONOMY.md`: accept, counter once, or walk away, with per-buyer reputation from 0 to 5 that nudges the opening price. `scripts/cattle_drive_resolver.gd` implements one leg of a drive from `design/DRIVES.md`: route hazards, night effects, and the perks that reduce each one. Both are pure logic with their own test suites. The numbers in them are first-pass placeholders waiting on playtesting, not tuned balance.
 
-# Cattle Trail — Clear Fork
-
-A real Godot 4.3 playable room using recovered Cattle Trail art plus rich sprite and terrain derivatives generated from those approved references. This is the one-room visual and interaction proof for an adult harem-romance Weird West RPG. GAME-DESIGN.md defines the current identity: alternate 1870s, spirits, steampunk machinery and playable-companion romance adventures. Those larger systems are design contracts, not implemented gameplay.
+The art is a work in progress. Walk cycles and turns are still being repaired, and detailed character sheets in `kits/` have not replaced the room actors yet.
 
 ## Play
 
-Launch `build/CattleTrail.exe` on Windows, or import `project.godot` in Godot 4.3 and press F6 on `scenes/room.tscn` (F5 runs the project).
+Import `project.godot` in Godot 4.3 and press F6 on `scenes/room.tscn`. F5 runs the project. **Play Cattle Trail.cmd** launches `build/CattleTrail.exe` once you have exported it (see below).
 
 - **WASD / arrow keys:** ride. **Click or tap ground:** ride to that point.
-- **E / Space / Talk:** speak with Eleanor near the wagon.
-- **L / Lasso:** catch a nearby steer for eighteen seconds, then lead it east. At close range, the same action can disarm the rustler.
-- **F / Shoot:** fire at the rustler within 190 world pixels. Two hits drive him away. Six rounds available; the lasso remains usable when ammunition runs out.
-- **R / Reset:** restart the room.
-- **Tab / Companion:** after recruiting Eleanor, switch into her cattle-calming adventure; switch back to pause it without losing progress.
-- **G / Rest:** share recovery time at the wagon after her adventure. Her Steady Company perk adds 3 player recovery; rest cannot be repeatedly farmed.
-- **H / Flirt:** a separate optional courting beat with Eleanor after the adventure. Recruitment and recovery do not require romance.
-- **F5 / F9:** save or restore the outfit. Companion milestones also save automatically; opening the game restores that save. Reset starts a fresh room and clears it.
+- **E / Space:** talk. This is the one interaction verb: recruit, read a landmark, board the cart, steady a steer.
+- **L:** lasso a nearby steer for eighteen seconds, then lead it east. At close range it also disarms the rustler. During Ada's outing it toggles valve A.
+- **F:** shoot the rustler within 190 world pixels. Two hits drive him off. Six rounds; the lasso still works when they run out. Valve B during Ada's outing.
+- **R:** restart the room.
+- **Tab:** switch into the active companion adventure, or back out to pause it without losing progress.
+- **G:** shared rest at camp. Valve C during Ada's outing.
+- **H:** flirt. Always optional, never required for recruitment or recovery.
+- **K:** open the sprite kit browser.
+- **F5 / F9:** save or restore the outfit. Companion milestones also save on their own, and opening the game restores the last save. Reset clears it.
 
-Speak with Eleanor, clear the rustler, and gather all six cattle in the east clearing. Approach cattle from behind to push them, or lasso a stray and lead it. Cattle settle in the east gathering area after the rustler has gone. Clear Fork completes only when all three conditions are satisfied.
+Clear Fork completes when you have spoken with Eleanor, cleared the rustler, and gathered all six cattle in the east clearing. Push cattle from behind, or lasso a stray and lead it. Then ride back to Eleanor and talk to invite her into the outfit.
 
-Then ride back to Eleanor and Talk to invite her into the outfit. Choose Companion to play her: walk close to three different cattle and Talk to steady them, then return to the wagon and Talk. Trust, optional courting and shared rest are separate steps. Eleanor is 24. Her current activity uses the real room sprites and does not yet implement the larger spirit-lantern encounter described in the design.
+## Checks
 
-## Art authority
+```
+python tools/verify_godot.py <check> [<check> ...]
+python tools/verify_godot.py --self-test
+```
 
-`source/PROVENANCE.md` records recovered sources. `assets/sprites.json` defines the original comparison art; `kits/manifest.json` defines expanded extraction; `assets/room-art.json` defines the selected default room. These record original crops, frame rectangles, ground anchors, sequences, speeds and looping. Rebuild the original assets with `tools/extract_assets.py`, expanded atlases with `tools/extract_kits.py`, then the default room selection with `tools/curate_room.py`. Requirements are Python, Pillow, NumPy and SciPy.
+The verifier requires a positive completion marker in the output, because a failed Godot script assertion can still exit zero. `--self-test` proves that by feeding it a deliberate assertion failure and confirming it rejects the run.
 
-The seven atlases contain 24 extracted frames. The rider and each of three cattle appearances have four source poses; Eleanor has three; the rustler has four; the wagon has one. The human sheet's printed frame counts are not treated as evidence that those frames exist.
+Available checks, from the `CHECKS` dict in `tools/verify_godot.py`:
 
-No geometric actor stand-ins are used. The original wagon and wood/paper interface are recovered art; selected actor and scenery sprites are reference-derived expansions. The ground derivative has preserved source and prompt metadata. Rope and shot traces remain runtime line effects alongside the selected rider action poses.
+`compile`, `state`, `storage`, `snapshot`, `clock`, `phase`, `turn`, `turn-actor`, `action-sequence`, `sprite-density`, `banter`, `banter-delivery`, `characters`, `character-roster`, `perks`, `field-perks`, `generated-roster`, `camp-care`, `camp-recovery`, `lantern`, `lantern-view`, `lantern-controller`, `steam`, `ada`, `mechanic-controller`, `ada-cart`, `ada-cart-controller`, `cart-motion`, `cart-clearance`, `ines`, `ines-room`, `birdie`, `birdie-room`, `simple-companion`, `simple-companion-room`, `trade-negotiation`, `cattle-drive`, `room`, `companion`, `motion`.
 
-## Reusable method
+Most are headless. `room`, `companion` and `motion` open a real rendered game and test actual play.
 
-The expanded library currently contains 948 extracted candidates across 13 families. Press **K** in the game or use **Open Sprite Kits.cmd** to inspect them in Godot. The default room now uses 330 selected actor frames and 30 scenery variants in 40 placements, including eight-way rider/cattle poses, corrected cardinal facing strips and the first northeast sequence repair. `assets/room-art.json` defines that selection; `ROOM-INTEGRATION.md` records its checks and remaining visual limits. Use `--original` to run the previous 24-frame comparison room.
+## Build and art pipeline
 
-See `METHOD.md` for the agent-authored conversion method for other games: approved visual reference → preserved sources → reproducible sprite extraction → exact metadata → one playable Godot room → actual visual and interaction verification → acceptance before expansion.
+```
+python tools/extract_assets.py
+godot --headless --path . --editor --import --quit
+godot --headless --path . --export-release Windows build/CattleTrail.exe
+```
 
-## Validation and present limits
+`tools/extract_kits.py` builds the expanded atlases and `tools/curate_room.py` picks the default room selection. The pipeline needs Python with Pillow, NumPy and SciPy.
 
-`VALIDATION.md` separates tested behavior, inspected renders, and remaining art limitations. The room has fixed high three-quarter 2D presentation, nearest filtering, binary alpha, pixel snapping, integer world enlargement, and responsive interface placement. Narrow phone windows reduce the complete world with nearest filtering; that preserves hard edges but cannot preserve equal integer pixel sizes.
+`source/PROVENANCE.md` records where the art came from. `assets/sprites.json`, `kits/manifest.json` and `assets/room-art.json` hold the crops, frame rectangles, ground anchors, sequences and speeds. All artwork is 2D: authored sprites, sprite animation, painted backgrounds, tiles, portraits and flat effects. The Windows export ships runtime assets and scripts, leaving out raw video, source sheets, documents and the extraction tools.
 
-The default room has eight-way selected rider/cattle movement. The northeast rider uses a compact four-pose walk selected from V8, with playback matched to the slower travel pace. All eight directions now use clean-hand lasso sequences with timed rope flight, neck attachment and recovery. Southwest releases at ordinal 3; the other directions release at ordinal 4. These are engine-reviewed replacements; final visual acceptance remains separate. Known grazing turns and bag-changing poses are excluded. A continuous empty-ground derivative replaces the earlier repeated terrain strips. The user's sequence critique remains an open visual gate. Valid direction labels and more frames do not prove a closed gait. The original comparison mode retains its limited northeast/mirrored poses. Final scene-art acceptance remains outstanding. The latest user instruction authorizes expanding gameplay following GAME-DESIGN.md while walk and turn repairs continue in parallel.
+## Design and world
 
-## Reproduce checks
-
-1. `python tools/extract_assets.py`
-2. `godot --headless --path . --editor --import --quit`
-3. `godot --path . -- --qa` — opens an actual rendered game, tests public actions, and captures desktop/completion/phone screenshots. The test moves the player to interaction setup positions, but leads cattle into the goal using the real lasso-following loop rather than teleporting cattle.
-4. `godot --headless --path . --export-release Windows build/CattleTrail.exe`
-
-The Windows export includes runtime assets and scripts, excluding raw video, source sheets, documents, and extraction tools. Keep this source project to edit or rebuild the game.
-
-Source follow-up: trail time now advances during play at one game minute per real second, and shared-rest availability shows its remaining trail minutes. Saves preserve this time. The Windows executable still predates these source changes.
-
-## Lantern crossing in the current source
-
-After completing Eleanor's three-cattle calming activity, return to the wagon as the trail boss and choose Companion [Tab]. Eleanor takes a real brass lantern prop to the pale crossing spirit. Talk beside it to settle it, then Talk again to begin guiding. Talk beside each of three stranded cattle and lead it east past the spirit; reaching the arrival area with that steer earns progress. Return to the wagon and Talk after all three cross. Completion grants 10 trust once and does not choose romance.
-
-Companion pauses the encounter and returns control at the wagon; choosing it there resumes the checkpoint. Loading preserves physical positions and guided cattle IDs; Talk beside the current steer to reacquire following. The source uses the existing dry trail crossing, not a newly painted water ford. Eleanor's lantern hangs from her belt during existing walking clips while full carrying cycles are repaired. This source integration passed isolated controller checks, not a new rendered gameplay run; the Windows binary remains older.
-
-## Master character production
-
-The source now includes three detailed master references and 96 extracted adult character variants (32 rancher, 32 mechanic, 32 spirit-scout appearances). Open `kits/character-families/index.html` for the offline workshop. Exact prompts, transparent atlases, anchors, provenance and deterministic preview character records are included. These static candidates are separate from the room’s existing animation sets. The repeatable method is in `design/character-family-method.md`.
-
-Ada and her actual steam walker sprites are now connected after the lantern crossing: Talk to Ada, retrieve the wagon regulator, vent pressure, install it, then close the valves at stable pressure and test. Successful repair exposes a separate Invite action. This source change passed isolated controller checks; the Windows executable remains older.
-
-Generated-companion source support now includes full resolved identity persistence, separate recruitment/relationship/assignment, and one-time activity rewards. Authored perks respect assignment and stacking caps. Eleanor’s existing rest bonus remains 3; future admitted rancher recruits add 2 seconds each to cattle leading, capped at 4 extra seconds. Candidate art stays in the offline workshop.
-
-
-## Ada's cart outing in the source
-
-After repairing the walker and inviting Ada, board the cart on the lower trail with Talk [E]. Inspect, then use L/F/G to toggle valves A/B/C. Open A/C and close B; E tests the routing. Drive through the three brass lanterns in order, return to the cart stop, and Talk to finish. Tab pauses; Board resumes the saved driving point. A separate optional Kiss [H] appears beside the cart after completion.
-
-This source feature uses five selected real cart sprites, including an empty parked view. It was checked without rendering the game; the packaged Windows executable still predates these source changes.
-
-The cart now accelerates, brakes and steers through turns. Use Brake[E] during the lantern route to stop and clear a tap destination. Its wider collision footprint leaves room around scenery; saves retain heading and restart with the cart stationary.
-
-## Ines's spirit trail in the source
-
-Ines's encounter unlocks after Ada's cart outing completes and stands stationary at the northern trail. Talk [E] beside her to meet her, then read the three nearby scenery landmarks — southern trail grass, northern trail stones, southeast scrub — with the same Talk action; each yields a hint and no repeat reward on revisit. Return to Ines once all three are read to complete the trail for a one-time trust reward, then Talk again to accept her offer to scout for the outfit. Recruiting her assigns her to camp; Talk beside her again toggles camp/field assignment. Field assignment activates her Spirit Sense perk, extending landmark warning range from 24 to 36 world units. Flirt [H] beside her is a separate, optional romance acknowledgement; it never follows automatically from recruitment.
-
-This source integration passed isolated headless controller checks (`python tools/verify_godot.py ines ines-room`); the Windows binary remains older.
-
-## Detailed character sheets and camp care
-
-New detailed source kits preserve native whole figures and 160-pixel derivatives: three four-pose walking studies for Eleanor, Ada and Ines, plus three-facing period costume studies for Ada and Ines. The walking banks remain incomplete; repeated or unclear leg phases are recorded rather than selected as finished loops. Each kit now has an Actor-compatible `actor-spec.json` with source-pixel density, exact rectangles, pivots and static pose clips. `tools/build_detailed_actor_specs.py` rebuilds these specifications from the retained art and validates hashes, dimensions and alpha.
-
-The sprite renderer supports these denser textures without changing character world size. Display density, frame pivots, reflected sockets and input mapping passed isolated headless checks. The new candidate characters have not replaced the room actors.
-
-After finishing Ada's cart outing, Rest beside her restores up to 10 madness each and spends 30 trail minutes. Her short camp remark accompanies the action. Once Ines is recruited and assigned to camp, Rest beside her (within 45 units) offers the same up-to-10-each recovery with an optional spirit-themed remark; romance is not required. Eleanor retains her 13/10 recovery; all three companions share the player's daily cooldown. Saves retain deadlines and migrate older Eleanor rest records. Active outings must be paused before camp rest. These source changes have focused headless verification; no new game capture or Windows rebuild was performed for this pass.
-
-The selected older Ada four-pose sequence has also been recovered directly from its full-resolution sources, preserving the corrected opposite contact at 160-pixel figure height. It retains her brown work jacket and trousers. Pelvis alignment, source landmarks and provisional 0.16-second pose holds are recorded; body proportions and arm counter-swing remain unfinished. Its `review_walk_east` clip is for sheet inspection, not live room selection. No coarse sprite was enlarged to make this recovered kit.
-
-## Higher-camera masters and action timing
-
-Eleanor, Ada and Ines now have detailed southeast master candidates with visibly elevated camera treatment: crown and shoulder tops, boot uppers and foreshortened bodies. Compare `kits/wardrobe/high-angle-master-trio.png`. Ines also has a clear elevated northeast view; the requested east view remains too front-oblique and is labeled accordingly. These sources retain the period-inspired wardrobe and do not replace live room actors yet.
-
-Eleanor's older opposite-contact and passing sources have been recovered as an ordered pose reference. Their original pixel clusters remain coarse, so `eleanor-detailed-recovered-walk-v1` is marked `pose_reference_only`. Both recovered Ada and Eleanor sequences have lossless animated PNG previews (`walk-review.png`), built directly from the source cells with provisional 160ms holds. They can be inspected without running the game.
-
-Actions now use one elapsed-time clock for both visible frames and release events. A slow frame that crosses the release still fires once, with the authored release pose selected before hand or weapon sockets are read. Cancellation drops the old event, and an action started by a callback is not overwritten by the previous completion. Focused headless checks cover these cases, variable pose holds, return to idle and source compilation. No new rendered-game test or Windows export was performed.
-
-## Current Windows package (2026-09-08)
-
-The Windows executable now includes the detailed stationary Ada and Ines masters, Texas ground cover, Ines clue encounter and camp care, and three actual spectral clue sprites. Godot 4.3 import and release export passed; the package was not gameplay-tested in this pass. Production sheets and wardrobe source kits stay in the source collection and are excluded from the executable. Complete walk cycles remain unfinished; the four-sheet character sets are available in the offline sheet workshop for sequence review.
-
+- [`GAME-DESIGN.md`](GAME-DESIGN.md) is the source of truth for how the game plays: the four levers, the state contracts, madness, companion adventures.
+- [`design/LORE.md`](design/LORE.md) says what the world is.
+- [`design/ECONOMY.md`](design/ECONOMY.md), [`design/DRIVES.md`](design/DRIVES.md) and [`design/EXPLORATION.md`](design/EXPLORATION.md) cover trade, cattle drives and county travel.
+- [`design/LOCATIONS.md`](design/LOCATIONS.md) covers the physical places.
+- `design/characters.json` holds 80 named romance-eligible companions; `design/npcs.json` holds 96 everyone-else records. Those two files win over any prose that disagrees with them.
+- [`design/wiki/`](design/wiki/) is the browsable county: 172 people pages and 9 organization pages, cross-linked by who works for whom, who is related to whom, and who is feuding with whom. Start at [`design/wiki/README.md`](design/wiki/README.md).

@@ -779,7 +779,7 @@ func run_stride_compare() -> void:
 	if "--stride-v8" in OS.get_cmdline_user_args(): objective.text = "STRIDE COMPARISON / left V5 / middle V6 curated / right V8 whole-sprite sequence"
 	journal.text = "Same 18-pixel diagnostic stride and .96-second cycle. Compare foot support and loop continuity."
 	await get_tree().create_timer(5.76).timeout
-	print("STRIDE COMPARISON: three source sequences rendered over fixed ground; physical acceptance remains separate")
+	print("STRIDE COMPARISON: three source sequences rendered over fixed ground")
 	get_tree().quit()
 
 func run_movement_batch() -> void:

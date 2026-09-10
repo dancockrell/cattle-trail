@@ -41,7 +41,7 @@ Draft benefit to machine_repair_efficiency; numerical effect is untested.
 
 ## Notes
 - Name, appearance and encounter are provisional.
-- Runtime implements the mechanic room controller (meet, retrieve regulator, vent/feed valves, install, test, invite) and the full Two Seats, One Regulator romance adventure (inspect, route three valves, drive to three lantern checkpoints, return to camp for +15 trust, optional kiss for +5 trust). Verified 2026-09-09 with `python tools/verify_godot.py ada ada-cart ada-cart-controller mechanic-controller`. Visual/animation acceptance is tracked separately in VISUAL-AUDIT.md.
+- Runtime implements the mechanic room controller (meet, retrieve regulator, vent/feed valves, install, test, invite) and the full Two Seats, One Regulator romance adventure (inspect, route three valves, drive to three lantern checkpoints, return to camp for +15 trust, optional kiss for +5 trust). Verified 2026-09-09 with `python tools/verify_godot.py ada ada-cart ada-cart-controller mechanic-controller`.
 ## Known associates
 
 **Affiliated with:** [The Hargrove Range](../organizations/hargrove-range.md), [The Outfit](../organizations/the-outfit.md)

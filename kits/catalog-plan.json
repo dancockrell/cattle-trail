@@ -443,7 +443,7 @@
     "generation_is_not_admission": true,
     "missing_cells": "mark missing and retain unmet target",
     "runtime_authority": "../assets/sprites.json",
-    "future_delivery_inventory": "manifest.json records actual extraction; DELIVERY.md records admission and integration boundaries."
+    "future_delivery_inventory": "manifest.json records actual extraction."
   },
   "revision_note": "First extraction allocates four 4-frame action rows per requested facing; Eleanor expanded to four facings. Direction labels are requests, not verified coverage. Connectivity remains an admission requirement."
 }

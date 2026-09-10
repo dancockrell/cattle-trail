@@ -1,10 +1,10 @@
 # Cattle Trail — exploration and travel
 
-Design-only, per `design/decisions.json`'s "simulation_pillars" entry. Nothing here is implemented in `scripts/`; the actual game is still one room (Clear Fork) per `GAME-DESIGN.md`'s scope decision. This document exists so that when travel *is* built, it connects the ten locations already written in [LOCATIONS.md](LOCATIONS.md) instead of inventing a new map, and reuses the trail clock already running in `scripts/trail_clock.gd` instead of a second time system.
+This is the design for travel between the county's locations. Travel is not built yet: the game is still one room (Clear Fork) per `GAME-DESIGN.md`'s scope decision, and building it is the next step for this system. When it is built it connects the ten locations already written in [LOCATIONS.md](LOCATIONS.md) rather than a new map, and spends the trail clock already running in `scripts/trail_clock.gd` rather than a second time system.
 
 ## The map, as a travel graph
 
-Distances and adjacency below are provisional -- nobody has fixed the county's actual scale yet (`decisions.json`'s "unresolved" list already flags "world scale" as open). What's fixed is the *shape*: Clear Fork is the hub, everything else is reached from it or from a neighbor, and nothing here invents a location `LOCATIONS.md` doesn't already have.
+Distances and adjacency below are provisional, since the county's scale is still open (see "Next decisions"). What's fixed is the *shape*: Clear Fork is the hub, everything else is reached from it or from a neighbor, and nothing here invents a location `LOCATIONS.md` doesn't already have.
 
 ```
                     Providence
@@ -27,7 +27,7 @@ Distances and adjacency below are provisional -- nobody has fixed the county's a
 
 ## What travel actually costs
 
-Per `scripts/trail_clock.gd`, the game already tracks trail minutes precisely enough to derive a day number and clock time (`"Day %d %02d:%02d"`), and camp-rest cooldowns already run on it. Nothing currently branches on day-versus-night -- that would be new logic on top of data the clock already produces, not a new clock. Travel should spend this same one:
+Per `scripts/trail_clock.gd`, the game already tracks trail minutes precisely enough to derive a day number and clock time (`"Day %d %02d:%02d"`), and camp-rest cooldowns already run on it. Nothing currently branches on day-versus-night; that is new logic on top of data the clock already produces, not a new clock. Travel spends this same one:
 
 - A short hop (Clear Fork to the Calloway Spread or Hargrove Range) costs part of a day.
 - A trip to a market town (Fort Griffin, Providence) costs most of a day each way.
@@ -57,12 +57,9 @@ Not movement for its own sake. Every location already has a reason to visit that
 - **Follow rumors** -- `LORE.md`'s own rumor list is written as things heard, not yet resolved into quests; travel is what would let the player go check one.
 - **Visit standing relationships** -- a companion recruited from Providence presumably still has people there ([Mrs. Pruitt](wiki/people/mrs_pruitt.md), [Reverend Pike](wiki/people/reverend_pike.md)) worth a return trip, per the associate links already in the wiki.
 
-## Unresolved
+## Next decisions
 
-- Whether travel is a menu/map screen, a mini drive sequence per leg, or something else entirely -- no UI decision has been made.
-- Real distances and travel-time numbers.
-- Whether the player's herd travels with them on every trip, or stays at Clear Fork while the player travels alone/with one companion.
-- Random encounter frequency and whether it's seeded or authored per trip.
-- How this interacts with the still-open "world scale" question in `decisions.json`.
-
-Per this project's standing rule: do not silently implement any of the above as accepted design.
+- Whether travel is a menu/map screen, a mini drive sequence per leg, or something else. This is the one that has to be settled before any of it can be built.
+- World scale, and from it the real distances and travel-time numbers.
+- Whether the player's herd travels with them on every trip, or stays at Clear Fork while the player travels alone or with one companion. [DRIVES.md](DRIVES.md) takes the "herd along" case as its own subject, so this is really the question of what an ordinary trip does.
+- Random encounter frequency, and whether it's seeded or authored per trip.

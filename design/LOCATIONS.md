@@ -70,7 +70,7 @@ A small family cemetery from a homestead that failed years back, fenced and stil
 
 ## Abilene (offstage)
 
-A name men use in the past tense already, per `LORE.md`. Do not build a room here without a later decision; it exists in dialogue as a horizon, not a destination.
+A name men use in the past tense already, per `LORE.md`. For now it exists in dialogue as a horizon rather than a destination.
 
 ## The other railheads (offstage)
 
