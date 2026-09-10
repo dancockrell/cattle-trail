@@ -201,23 +201,77 @@ func rest_together() -> void:
 	if cart != null and cart.toggle_valve(2): return
 	camp_care.rest()
 
+## Pressing Flirt from across camp used to refuse and tell the player where to
+## stand. The game knows where the quiet moment is, so it walks him there
+## instead, and a repeated refusal for the same reason escalates rather than
+## repeating one string. The counter is runtime only: a reload starts the
+## escalation over, which is the right behaviour and needs no save field.
+var flirt_refusal_reason := ""
+var flirt_refusal_count := 0
+
+const FLIRT_RANGE := 55.0
+const FLIRT_APPROACH := 24.0
+
+const FLIRT_SELF_LINES = [
+	"You are wearing Eleanor's boots at the moment. Switch back to the trail boss first.",
+	"Eleanor catches her own reflection in the kettle and laughs. Companion [Tab] puts you back in your own saddle.",
+	"Eleanor: I am flattered, but I already know what I am thinking. Switch back.",
+	"Eleanor: Courting yourself is a long ride for a short answer. Companion [Tab]."
+]
+const FLIRT_WALK_LINES = [
+	"You start for the wagon. Eleanor sees you coming and keeps her hands busy.",
+	"Still walking. Eleanor: The coffee is not going anywhere either.",
+	"Eleanor: Any slower and I will come and fetch you.",
+	"Eleanor sets the kettle down and waits, openly amused."
+]
+const FLIRT_TOO_SOON_LINES = [
+	"First share Eleanor's cattle-calming adventure. A little history makes a better invitation.",
+	"Eleanor: Steady three head with me first. Then ask.",
+	"Eleanor: You are courting a woman you have not worked beside. Three cattle. Then we talk.",
+	"Eleanor: Still no. Still three cattle. I am nothing if not consistent."
+]
+const FLIRT_SETTLED_LINES = [
+	"Eleanor smiles: We already have a sunset to look forward to.",
+	"Eleanor: You asked, I said yes, and it has not worn off since.",
+	"Eleanor: Ask a third time and I will start to think you forget things.",
+	"Eleanor hands you the kettle. Some answers keep better than others."
+]
+
+func _flirt_refused(reason: String, lines: Array) -> void:
+	if reason == flirt_refusal_reason:
+		flirt_refusal_count = mini(flirt_refusal_count+1,lines.size()-1)
+	else:
+		flirt_refusal_reason = reason
+		flirt_refusal_count = 0
+	tell(lines[flirt_refusal_count])
+
 func flirt() -> void:
 	if ines != null and ines.flirt(): return
 	if birdie != null and birdie.flirt(): return
 	for entry in simple_companions:
 		if entry.room.flirt(): return
 	if cart != null and cart.flirt(): return
-	if room.player.position.distance_to(room.eleanor.position)>55 or is_eleanor():
-		tell("As the trail boss, meet Eleanor at the wagon for a quiet moment.")
+	if is_eleanor():
+		_flirt_refused("self",FLIRT_SELF_LINES)
+		return
+	if room.player.position.distance_to(room.eleanor.position)>FLIRT_RANGE:
+		var toward: Vector2 = (room.player.position-room.eleanor.position).normalized()
+		if toward == Vector2.ZERO: toward = Vector2.RIGHT
+		room.target = room.limit_position(room.eleanor.position+toward*FLIRT_APPROACH)
+		_flirt_refused("walk",FLIRT_WALK_LINES)
 		return
 	var result: Dictionary = state.choose_romance(true)
 	if result.get("ok",false):
+		flirt_refusal_reason = ""
+		flirt_refusal_count = 0
 		room.eleanor.action("talk",room.player.position-room.eleanor.position)
 		say_event("mutual_flirt","mutual_flirt")
 		tell("You choose to stay beside her. Eleanor's answering smile says enough. Relationship: courting. Shared rest remains available either way.")
 		save_game()
+	elif state.events.romance_chosen:
+		_flirt_refused("settled",FLIRT_SETTLED_LINES)
 	else:
-		tell("Eleanor smiles: We already have a sunset to look forward to." if state.events.romance_chosen else "First share Eleanor's cattle-calming adventure. A little history makes a better invitation.")
+		_flirt_refused("too_soon",FLIRT_TOO_SOON_LINES)
 
 func decorate_ui() -> void:
 	for index in [0,1,2,4]: room.buttons.get_child(index).disabled = false

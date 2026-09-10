@@ -29,6 +29,24 @@ func near_ines() -> bool:
 func near_birdie() -> bool:
 	return owner.birdie_state.recruitment=="recruited" and not owner.is_eleanor() and is_instance_valid(owner.birdie.birdie) and owner.room.player.position.distance_to(owner.birdie.birdie.position)<=45
 
+## Names only partners the player has actually recruited, on the same gates
+## near_ines()/near_birdie()/near_ada() use, so the hint can never send a new
+## trail boss looking for someone he has not met. Eleanor is at the wagon from
+## the first morning, so she is always the fallback.
+func _rest_hint() -> String:
+	var places := []
+	if owner.cart_adventure.status=="completed" and owner.ines_state.recruitment=="recruited" and owner.ines_state.party_assignment=="camp":
+		places.append("Ines on the northern trail")
+	if owner.birdie_state.recruitment=="recruited":
+		places.append("Birdie beside the cart")
+	if owner.cart_adventure.status=="completed" and owner.ada_state.recruitment=="recruited":
+		places.append("Ada beside the cart")
+	if places.is_empty():
+		return "Eleanor keeps the kettle at the wagon. Meet her there for shared rest."
+	places.append("Eleanor at the wagon")
+	var last: String = places.pop_back()
+	return "Shared rest waits with %s, or %s." % [", ".join(places),last]
+
 func rest() -> bool:
 	if _pending():
 		owner.tell("Pause the companion outing and return to camp before sharing rest.")
@@ -40,7 +58,7 @@ func rest() -> bool:
 	var birdie: bool = not ines and near_birdie()
 	var ada: bool = not ines and not birdie and near_ada()
 	if not ines and not birdie and not ada and owner.active_actor().position.distance_to(Vector2(148,127))>55:
-		owner.tell("Meet Ines on the northern trail after assigning her to camp, Birdie or Ada beside the cart, or Eleanor at the wagon for shared rest.")
+		owner.tell(_rest_hint())
 		return false
 	var partner := "ines_vale" if ines else ("birdie_calloway" if birdie else ("ada_mercer" if ada else "eleanor"))
 	var staged = Recovery.new()
@@ -63,7 +81,7 @@ func rest() -> bool:
 	else:
 		var eleanor_result: Dictionary = owner.state.shared_rest(owner.minutes,true)
 		if not eleanor_result.ok:
-			owner.tell("Finish Eleanor's three-steer adventure and return her to camp before shared rest.")
+			owner.tell("Finish Eleanor's cattle-calming adventure and return her to camp before shared rest.")
 			return false
 	owner.camp_recovery = staged
 	owner.minutes += float(result.minutes_spent)
