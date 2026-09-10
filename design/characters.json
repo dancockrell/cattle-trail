@@ -8070,6 +8070,456 @@
         "duration_target_minutes": 4,
         "tuning_status": "provisional"
       }
+    },
+    {
+      "id": "sable_quinn",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Sable Quinn",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Broke and re-shod horses for a West Texas remount outfit until debt collectors took the herd out from under her family; now she hires her hands and her eye for a green horse out to whichever outfit can use a wrangler who won't lose a string on a bad crossing.",
+        "personality": [
+          "unflappable",
+          "competitive",
+          "wry",
+          "protective of horses before people"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Split canvas trousers under a long duster for brush country, rawhide chaps scarred from mesquite, a battered flat-brim hat tied down against the wind, sleeves rolled to the forearm.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's talking down a spooked gelding at the edge of Clear Fork's remuda line when a rope snaps loose and the whole string nearly scatters.",
+        "conditions": [
+          "Help her catch and settle the scattered remuda before a horse is lost or hurt.",
+          "Let her handle the gelding her own way instead of forcing it.",
+          "Sable accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "remuda wrangler and horse-breaker",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_herd",
+          "label": "Trail Hand",
+          "description": "Reuses the existing lasso/lead-duration perk definition; her hand on the rope holds a spooked string together longer.",
+          "activation": "field",
+          "effect": {
+            "stat": "lasso_follow_seconds",
+            "operation": "add",
+            "value": 2.0,
+            "unit": "seconds of lead retained"
+          },
+          "stacking_group": "lasso_follow_seconds",
+          "stacking_cap": 4.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A good horse ruined by somebody else's impatience.",
+        "support_preference": "Time at the horse line before anything else, then quiet."
+      },
+      "recovery_offer": {
+        "id": "sable_quinn_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_scattered_remuda",
+        "title": "The Scattered Remuda",
+        "controlled_actor_id": "sable_quinn",
+        "objective": "Play as Sable running down and re-gathering a spooked, scattered horse string across open ground before dark, without losing a single horse to a bad step.",
+        "companion_skill": "Directly playable mounted herding and rope work under time pressure, not a menu.",
+        "protagonist_support": "The protagonist rides drag, turning strays back toward her instead of chasing them down herself.",
+        "affectionate_payoff": "She swings down beside the last horse caught, breathless and grinning, and admits she's glad the protagonist rode drag instead of getting in her way.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "delia_marsh",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Delia Marsh",
+      "age": 25,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Rides fence and night-guards water for the Hargrove Range, close enough to the family's books to know the new spread is mortgaged past what its half-built barn shows; she's stayed loyal out of pay owed, not conviction, and watches Clear Fork's outfit for a fairer offer.",
+        "personality": [
+          "guarded",
+          "dryly observant",
+          "fiercely fair",
+          "slow to trust, decisive once committed"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A cast-off Hargrove foreman's coat let out to fit her, a plain rifle scabbard she keeps oiled better than the coat, boots resoled twice, hair kept short and practical under a flat hat.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's mending a stretch of Hargrove fence exactly on the property line when the outfit catches her looking toward Clear Fork instead of at her work.",
+        "conditions": [
+          "Prove the outfit deals fairer than Hargrove does, in front of her.",
+          "Don't ask her to badmouth the family that still signs her pay, only to leave them.",
+          "Delia accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "line rider and rifle hand",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_aim",
+          "label": "Steady Aim",
+          "description": "Reuses the existing shot-range perk definition; years of riding fence alone taught her to see trouble before it's close.",
+          "activation": "field",
+          "effect": {
+            "stat": "shot_range_bonus",
+            "operation": "add",
+            "value": 20.0,
+            "unit": "range units"
+          },
+          "stacking_group": "shot_range_bonus",
+          "stacking_cap": 40.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being asked to choose a side out loud, in front of people who'll remember it.",
+        "support_preference": "Being told plainly where she stands with someone, and left to decide the rest herself."
+      },
+      "recovery_offer": {
+        "id": "delia_marsh_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "past_the_property_line",
+        "title": "Past the Property Line",
+        "controlled_actor_id": "delia_marsh",
+        "objective": "Play as Delia moving her own string of Hargrove-branded horses across the property line by night without a confrontation that would burn the bridge for good.",
+        "companion_skill": "Directly playable quiet night riding and route choice under real discovery risk, not a stealth-meter abstraction.",
+        "protagonist_support": "The protagonist waits at the line to vouch for her the moment she crosses, so the choice reads as hers and not a rescue.",
+        "affectionate_payoff": "She hands over the reins on Clear Fork ground for the first time and doesn't look back toward Hargrove once.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "rilla_sorrel",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Rilla Sorrel",
+      "age": 22,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Learned gunsmithing from a father who trusted her hands more than his own after they started shaking; now she keeps a bench at Fort Griffin fixing and fitting the rifles and revolvers every outfit's survival actually depends on, and charges honestly enough that soldiers and outfits both come back.",
+        "personality": [
+          "precise",
+          "plainspoken",
+          "unimpressed by bravado",
+          "takes quiet pride in a clean mechanism"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A leather work apron over a plain shirt with cuffs faintly stained by gun oil, a loupe on a cord around her neck, hair pinned back out of the workbench's way.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit's rifle jams at the worst moment on a Fort Griffin supply run, and her bench is the only one in town with a line short enough to fix it before dark.",
+        "conditions": [
+          "Bring her the rifle and let her actually diagnose it instead of describing the problem for her.",
+          "Pay her fair asking price without haggling her down out of habit.",
+          "Rilla accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "gunsmith and armorer",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "field_repairs",
+          "label": "Sure-Handed Tuning",
+          "description": "Reuses the existing repair-efficiency perk definition; a rifle stripped and reset by her hands runs true longer than one merely cleaned.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "repair efficiency multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A weapon that fails someone because it was never fitted right in the first place.",
+        "support_preference": "Sitting with her at the bench while she works something apart and back together, no talking required."
+      },
+      "recovery_offer": {
+        "id": "rilla_sorrel_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_rifle_that_jammed",
+        "title": "The Rifle That Jammed",
+        "controlled_actor_id": "rilla_sorrel",
+        "objective": "Play as Rilla stripping and refitting a failing rifle mechanism against a real clock before the outfit rides out at first light.",
+        "companion_skill": "Directly playable precise bench work and part-by-part diagnosis under time pressure, not a menu.",
+        "protagonist_support": "The protagonist holds the lamp steady and hands her the right tool when she calls for it, without being asked twice.",
+        "affectionate_payoff": "She test-fires it once into a sandbag, nods once, and lets the protagonist see her actually pleased with her own work.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "nell_corrigan",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Nell Corrigan",
+      "age": 26,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "Her family ran the boarding house at Bellhollow back when the mine still paid; when it played out and everyone else left, she stayed to keep the bell the old miners swore marked safe passage through the workings, and to keep company with whoever it is that still rings it when no living hand is near.",
+        "personality": [
+          "unbothered by things that would rattle anyone else",
+          "hospitable",
+          "keeps her own counsel",
+          "finds comfort in routine and a shared meal"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A practical housedress with a shawl kept close against the hill country's night chill, a ring of old mine keys at her belt she never explains, boots suited to uneven ground.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit rides through Bellhollow for shelter from a storm, and she has supper on before anyone's finished tying off the horses -- she was expecting somebody, though not necessarily them.",
+        "conditions": [
+          "Sit through supper and don't flinch when the bell rings on its own.",
+          "Ask her about the bell only if you actually want the honest answer.",
+          "Nell accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "innkeeper and camp morale",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "camp_song",
+          "label": "Camp Song",
+          "description": "Reuses the existing camp-rest perk definition; supper and an old miner's song at Bellhollow settle a camp the way nothing rehearsed could.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 2.0,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6.0,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "The night the bell doesn't ring at all.",
+        "support_preference": "Sitting up with her at the bell tower until whatever's restless settles."
+      },
+      "recovery_offer": {
+        "id": "nell_corrigan_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room.",
+        "Spirits are real; their testimony can still be mistaken or deceptive.",
+        "Bellhollow's bell and its haunting are per design/LOCATIONS.md; this record does not resolve what rings it."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_bell_that_rings_itself",
+        "title": "The Bell That Rings Itself",
+        "controlled_actor_id": "nell_corrigan",
+        "objective": "Play as Nell climbing into the collapsed workings to find and clear whatever's fouling the bell rope before the next storm brings the rest of the headframe down.",
+        "companion_skill": "Directly playable careful climbing and rope-clearing in tight, unstable ground, not a horror set-piece.",
+        "protagonist_support": "The protagonist braces the rope from below and calls out the moment something shifts.",
+        "affectionate_payoff": "The bell rings clean on its own that night, and she tells the protagonist, plainly, that it's the first time in years she hasn't minded somebody hearing her talk back to it.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
     }
   ],
   "procedural_template": {
