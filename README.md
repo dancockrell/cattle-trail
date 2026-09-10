@@ -24,8 +24,10 @@ Import `project.godot` in Godot 4.3 and press F6 on `scenes/room.tscn`. F5 runs 
 - **WASD / arrow keys:** ride. **Click or tap ground:** ride to that point.
 - **E / Space:** talk. This is the one interaction verb: recruit, read a landmark, board the cart, steady a steer.
 - **L:** lasso a nearby steer for eighteen seconds, then lead it east. At close range it also disarms the rustler. During Ada's outing it toggles valve A.
-- **F:** shoot the rustler within 190 world pixels. Two hits drive him off. Six rounds; the lasso still works when they run out. Valve B during Ada's outing.
-- **R:** restart the room.
+- **F:** fire where you are aiming. Point with the mouse or ride facing him; the round goes where you point, not at him. Accuracy falls off with distance and with how badly your hand is shaking, and scenery stops a bullet. Two rounds in him and he surrenders. Valve B during Ada's outing.
+- **R:** reload. Takes 1.6 seconds, during which you cannot fire, and reaching for the rope or catching a round spills it.
+- **1 / 2 / 3:** once the rustler has surrendered, decide him: turn him loose, rope him for the law, or hire him on. Each costs or pays differently and Eleanor has something to say about each.
+- **F2:** restart the room.
 - **Tab:** switch into the active companion adventure, or back out to pause it without losing progress.
 - **G:** shared rest at camp. Valve C during Ada's outing.
 - **H:** flirt. Always optional, never required for recruitment or recovery.

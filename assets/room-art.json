@@ -31022,7 +31022,28 @@
         360,
         103
       ],
-      "collision_radius": 6,
+      "collision_radius": 12,
+      "source_frame_id": "rocks_001"
+    },
+    {
+      "family": "rocks",
+      "frame": 1,
+      "texture": "res://kits/atlases/rocks.png",
+      "region": [
+        80,
+        0,
+        80,
+        64
+      ],
+      "anchor": [
+        40,
+        61
+      ],
+      "position": [
+        466,
+        124
+      ],
+      "collision_radius": 12,
       "source_frame_id": "rocks_001"
     },
     {

@@ -8,6 +8,19 @@ const WORLD := Vector2(640, 360)
 const CORRAL := Rect2(475, 110, 125, 155)
 const WAGON_FOOTPRINT := Rect2(39,73,100,42)
 const LEAD_SECONDS := 18.0
+## Gunplay constants. Every one of these is a decision the player can feel:
+## how far a round carries, how big a man is to hit, what a reload costs, and
+## how long the rustler's aim hangs on you before he pulls.
+const SHOT_RANGE := 200.0
+const BODY_RADIUS := 9.0
+const RELOAD_SECONDS := 1.6
+const CYLINDER := 6
+const RUSTLER_RANGE := 185.0
+const TELL_SECONDS := 0.85
+const RUSTLER_RELOAD := 1.9
+const MAX_STRAIN := 3
+const STRAIN_SECONDS := 9.0
+const GUN_LIFT := Vector2(0, -26)
 ## The beaten rustler waits instead of running. Every row below is a durable
 ## difference the player can see afterwards: money, whether he is still on this
 ## ground, and whether the outfit is feeding him. Order is the button order.
@@ -81,6 +94,21 @@ var rope_catch_age := 0.0
 var shot: Line2D
 var shot_time := 0.0
 var shot_cooldown := 0.0
+## The fight. aim_point is where the player is actually pointing; it is the
+## only thing that decides where a round goes. strain is what being shot costs
+## him: a shaking hand that widens his own aim and wears off on its own.
+var rng := RandomNumberGenerator.new()
+var aim_point := Vector2.INF
+var strain := 0
+var strain_time := 0.0
+var reload_time := 0.0
+var player_hits := 0
+var rustler_tell := 0.0
+var rustler_reload := 1.4
+var rustler_aim := Vector2.LEFT
+var tell_line: Line2D
+var return_fire: Line2D
+var return_fire_time := 0.0
 var elapsed := 0.0
 var escaped := false
 ## Set when he gives up and waits. rustler_fate stays empty until the player
@@ -161,6 +189,17 @@ func _ready() -> void:
 	shot.width = 1.0
 	shot.default_color = Color("ffe9a7")
 	world.add_child(shot)
+	# His aim hangs on you before he fires, and it stops at whatever you put
+	# between the two of you. That line is the whole warning.
+	tell_line = Line2D.new()
+	tell_line.width = 1.0
+	tell_line.default_color = Color(0.85, 0.24, 0.18, 0.55)
+	world.add_child(tell_line)
+	return_fire = Line2D.new()
+	return_fire.width = 1.0
+	return_fire.default_color = Color("ffb27a")
+	world.add_child(return_fire)
+	rng.randomize()
 	view = TextureRect.new()
 	view.texture = viewport.get_texture()
 	view.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -313,7 +352,9 @@ func build_ui() -> void:
 	buttons.add_theme_constant_override("h_separation", 6)
 	buttons.add_theme_constant_override("v_separation", 6)
 	add_child(buttons)
-	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Companion [Tab]", switch_companion], ["Rest [G]", rest_companion], ["Reset [R]", reset_room]]:
+	# The first six keep their order: companion_room, mechanic_room, ada_cart_room
+	# and the rest address these by index. Reload joins on the end.
+	for entry in [["Talk [E]", interact], ["Lasso [L]", lasso], ["Shoot [F]", shoot], ["Companion [Tab]", switch_companion], ["Rest [G]", rest_companion], ["Reset [F2]", reset_room], ["Reload [R]", reload]]:
 		var button := make_button(entry[0])
 		button.pressed.connect(entry[1])
 		buttons.add_child(button)
@@ -367,7 +408,7 @@ func choice_row_visible() -> bool:
 ## The grid lays out visible children only, so the row arithmetic below has to
 ## count the same way or it reserves height for a row nobody can see.
 func visible_control_count() -> int:
-	if not is_instance_valid(buttons): return 6
+	if not is_instance_valid(buttons): return 7
 	var count := 0
 	for button in buttons.get_children():
 		if button.visible: count += 1
@@ -375,7 +416,9 @@ func visible_control_count() -> int:
 
 func layout_ui() -> void:
 	if not is_instance_valid(view): return
-	var columns := 2 if size.x < 600 else 6
+	# Seven standing controls on one wide row, so the fate row lands underneath
+	# it as its own row instead of sharing one with a stray Reload.
+	var columns := 2 if size.x < 600 else 7
 	var control_count: int = visible_control_count()
 	var control_rows: int = int(ceil(float(maxi(control_count,1)) / float(columns)))
 	# The choice row is real height. Give the world view less room while it is
@@ -412,8 +455,8 @@ func layout_ui() -> void:
 		if choice_index >= 0:
 			var fate: Dictionary = RUSTLER_FATES[RUSTLER_CHOICES[choice_index]]
 			button.text = "%d. %s" % [choice_index + 1, fate.short if size.x < 600 else fate.label]
-		elif index < 6:
-			button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [R]"][index]
+		elif index < 7:
+			button.text = ["Talk", "Lasso", "Shoot", "Companion", "Rest", "Reset", "Reload"][index] if size.x < 600 else ["Talk [E]", "Lasso [L]", "Shoot [F]", "Companion [Tab]", "Rest [G]", "Reset [F2]", "Reload [R]"][index]
 		button.custom_minimum_size.x = 0 if size.x < 600 else 80
 	buttons.position = Vector2(left, paper.position.y + paper.size.y + 9)
 	buttons.size = Vector2(width, control_rows*46 + maxi(0,control_rows-1)*6)
@@ -428,10 +471,16 @@ func update_render_density(display_zoom: float) -> void:
 
 func world_input(event: InputEvent) -> void:
 	if qa_mode: return
+	# The cursor is the gun hand. Moving it aims; pressing rides. A player with
+	# no pointer at all still aims, by facing, from the keys.
+	if event is InputEventMouseMotion:
+		aim_point = event.position / view.size * WORLD
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		target = event.position / view.size * WORLD
+		aim_point = target
 	if event is InputEventScreenTouch and event.pressed:
 		target = event.position / view.size * WORLD
+		aim_point = target
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if qa_mode: return
@@ -439,7 +488,8 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if event.keycode == KEY_E or event.keycode == KEY_SPACE: interact()
 	if event.keycode == KEY_L: lasso()
 	if event.keycode == KEY_F: shoot()
-	if event.keycode == KEY_R: reset_room()
+	if event.keycode == KEY_R: reload()
+	if event.keycode == KEY_F2: reset_room()
 	if event.keycode == KEY_TAB: switch_companion()
 	if event.keycode == KEY_G: rest_companion()
 	if event.keycode == KEY_H and companion != null: companion.flirt()
@@ -487,6 +537,7 @@ func _physics_process(delta: float) -> void:
 	elapsed += delta
 	if companion != null: companion.advance_time(delta)
 	shot_cooldown = maxf(0, shot_cooldown - delta)
+	tick_gunfight(delta)
 	var controlled: Node2D = companion.active_actor() if companion != null else player
 	var direction := Vector2.ZERO if qa_mode else keyboard()
 	if direction.length() > 0:
@@ -620,6 +671,8 @@ func lasso() -> void:
 		refresh()
 		return
 	if won or player.action_time > 0: return
+	# Rope or cartridges, not both. Reaching for the loop spills the reload.
+	if reload_time > 0: reload_time = 0.0
 	if rustler_active and player.position.distance_to(rustler.position) < 110:
 		pending_lasso = rustler
 		player.action("lasso", rustler.position - player.position)
@@ -648,20 +701,185 @@ func wait_for_lasso_resolution() -> void:
 		remaining -= get_physics_process_delta_time()
 	assert(remaining>0, "Lasso wind-up and flight must resolve within two seconds")
 
+## Every shot is resolved on the ground plan, where the props, the wagon and
+## both men already live as positions. A round drawn from the shoulder but
+## measured from the boots is how a boulder ends up stopping nothing.
+## GUN_LIFT is presentation only: it raises the drawn line to gun height.
+func muzzle() -> Vector2:
+	return player.position
+
+func rustler_muzzle() -> Vector2:
+	return rustler.position
+
+## Where the player is pointing. The pointer wins when there is one; otherwise
+## the shot goes where he is facing. Nothing here looks at the rustler.
+func aim_direction() -> Vector2:
+	var origin := muzzle()
+	if aim_point.is_finite() and origin.distance_to(aim_point) > 2.0:
+		return origin.direction_to(aim_point)
+	return facing.normalized() if facing.length() > 0 else Vector2.RIGHT
+
+## Aim falls off with range instead of flipping a boolean at some radius, and a
+## man who has been shot at shakes. Returned as a half-angle in radians.
+func aim_spread(distance: float, shake: int) -> float:
+	return deg_to_rad(1.6 + clampf(distance, 0.0, SHOT_RANGE) * 0.035 + float(shake) * 2.2)
+
+## The first solid thing a round crosses, or INF. The wagon and every prop with
+## a collision radius stop lead for whoever fired it.
+func first_blocker(from: Vector2, to: Vector2) -> Vector2:
+	var best := Vector2.INF
+	var best_distance := INF
+	for entry in solid_scenery:
+		var center := Vector2(entry.position[0], entry.position[1])
+		var radius := float(entry.collision_radius)
+		if radius <= 0: continue
+		var contact := Geometry2D.segment_intersects_circle(from, to, center, radius)
+		if contact < 0.0: continue
+		var point: Vector2 = from.lerp(to, contact)
+		if from.distance_to(point) < best_distance:
+			best_distance = from.distance_to(point)
+			best = point
+	var corners := [WAGON_FOOTPRINT.position, Vector2(WAGON_FOOTPRINT.end.x, WAGON_FOOTPRINT.position.y),
+		WAGON_FOOTPRINT.end, Vector2(WAGON_FOOTPRINT.position.x, WAGON_FOOTPRINT.end.y)]
+	for index in range(4):
+		var crossing = Geometry2D.segment_intersects_segment(from, to, corners[index], corners[(index + 1) % 4])
+		if crossing == null: continue
+		var point: Vector2 = crossing
+		if from.distance_to(point) < best_distance:
+			best_distance = from.distance_to(point)
+			best = point
+	return best
+
+## One bullet, resolved the same way for both shooters: a line from the muzzle,
+## bent by the spread, cut short by the first solid thing, and a hit only if it
+## passes within a body's width of the mark. There is no distance test.
+func resolve_bullet(from: Vector2, aim: Vector2, spread: float, mark: Node2D, mark_offset: Vector2) -> Dictionary:
+	var deviation := rng.randf_range(-spread, spread)
+	var finish := from + aim.normalized().rotated(deviation) * SHOT_RANGE
+	var result := {"origin": from, "end": finish, "hit": false, "blocked": false, "miss_by": INF}
+	var wall := first_blocker(from, finish)
+	if wall.is_finite():
+		result.blocked = true
+		result.end = wall
+		finish = wall
+	if is_instance_valid(mark):
+		var center: Vector2 = mark.position + mark_offset
+		var closest := Geometry2D.get_closest_point_to_segment(center, from, finish)
+		result.miss_by = closest.distance_to(center)
+		# A mark standing behind the wall is behind it, however near the wall
+		# the round happened to strike.
+		var short_of_cover: bool = not result.blocked or from.distance_to(closest) < from.distance_to(wall) - 0.5
+		if result.miss_by <= BODY_RADIUS and short_of_cover:
+			result.hit = true
+			result.blocked = false
+			result.end = closest
+	return result
+
+func reload() -> void:
+	if companion != null and companion.is_eleanor(): return
+	if won or reload_time > 0: return
+	if ammo >= CYLINDER:
+		message = "Cylinder is full."
+		refresh()
+		return
+	reload_time = RELOAD_SECONDS
+	message = "Thumbing rounds in. Keep something between you and him."
+	refresh()
+
 func shoot() -> void:
 	if companion != null and companion.cart != null and companion.cart.toggle_valve(1): return
 	if companion != null and companion.mechanic.toggle_vent(): return
 	if companion != null and companion.is_eleanor(): return
 	if won or shot_cooldown > 0 or player.action_time > 0: return
+	if reload_time > 0:
+		message = "Hands full of cartridges."
+		refresh()
+		return
 	if ammo == 0:
-		message = "Empty. You can still lasso the rustler at close range."
+		message = "Empty. Reload [R], or take him with the rope."
+		refresh()
 		return
 	ammo -= 1
 	shot_cooldown = 0.4
 	pending_shot = true
-	pending_aim = player.position.direction_to(rustler.position) if rustler_active and player.position.distance_to(rustler.position) < 190 else facing
+	pending_aim = aim_direction()
 	player.action("shoot", pending_aim)
 	if not player.directional: on_player_action_event("fire")
+	refresh()
+
+## Reload, shake and the rustler's own trigger, all on the same clock. Called
+## once a physics frame from play, and directly by the checks.
+func tick_gunfight(delta: float) -> void:
+	if reload_time > 0:
+		reload_time = maxf(0.0, reload_time - delta)
+		if reload_time == 0:
+			ammo = CYLINDER
+			message = "Six in the cylinder."
+	if strain > 0:
+		strain_time -= delta
+		if strain_time <= 0:
+			strain -= 1
+			strain_time = STRAIN_SECONDS
+			if strain == 0: message = "Hand is steady again."
+	return_fire_time = maxf(0.0, return_fire_time - delta)
+	if return_fire_time == 0 and is_instance_valid(return_fire): return_fire.clear_points()
+	if won or not rustler_active or not is_instance_valid(rustler) or not is_instance_valid(player): return
+	var sighting := first_blocker(rustler_muzzle(), muzzle())
+	if rustler_tell > 0:
+		rustler_tell -= delta
+		rustler_aim = rustler_muzzle().direction_to(muzzle())
+		# The warning line breaks against whatever the player puts in the way.
+		if is_instance_valid(tell_line):
+			tell_line.points = PackedVector2Array([rustler_muzzle() + GUN_LIFT, (sighting if sighting.is_finite() else muzzle()) + GUN_LIFT])
+		if rustler_tell <= 0:
+			rustler_tell = 0.0
+			if is_instance_valid(tell_line): tell_line.clear_points()
+			rustler_fires()
+		return
+	if is_instance_valid(tell_line): tell_line.clear_points()
+	rustler_reload = maxf(0.0, rustler_reload - delta)
+	if rustler_reload > 0: return
+	if rustler_muzzle().distance_to(muzzle()) > RUSTLER_RANGE: return
+	if sighting.is_finite(): return
+	rustler_tell = TELL_SECONDS
+	rustler_aim = rustler_muzzle().direction_to(muzzle())
+	say_once("rustler_first_shot", rustler, "RUSTLER", "Ride off. I will not say it twice.", 1)
+
+func rustler_fires() -> void:
+	rustler_reload = RUSTLER_RELOAD
+	var origin := rustler_muzzle()
+	var bullet := resolve_bullet(origin, rustler_aim, aim_spread(origin.distance_to(muzzle()), 0), player, Vector2.ZERO)
+	if is_instance_valid(return_fire): return_fire.points = PackedVector2Array([origin + GUN_LIFT, bullet.end + GUN_LIFT])
+	return_fire_time = 0.12
+	if bullet.hit:
+		player_struck()
+	elif bullet.blocked:
+		message = "His round goes into the cover you picked. Good ground."
+	else:
+		message = "His round goes by you close enough to hear."
+
+## What losing an exchange costs: a shaking hand for a while, the rope on the
+## ground, the herd broken up again, and the strain of it. Never control, never
+## the day itself. Every one of those is worked back in a minute.
+func player_struck() -> void:
+	player_hits += 1
+	strain = mini(strain + 1, MAX_STRAIN)
+	strain_time = STRAIN_SECONDS
+	var lost_rope := false
+	if rope_time > 0 and is_instance_valid(rope_target):
+		lost_rope = true
+		rope_time = 0.0
+		rope_target = null
+	if reload_time > 0:
+		reload_time = 0.0
+	for cow in cows:
+		if not is_instance_valid(cow) or cow.secured: continue
+		var away := player.position.direction_to(cow.position) if player.position.distance_to(cow.position) > 0.1 else Vector2.LEFT
+		cow.position = limit_position(cow.position + away * rng.randf_range(16.0, 30.0))
+	if companion != null: companion.state.add_madness("player", 10)
+	message = "He puts one through your coat. The rope goes down, the herd breaks, and your hand will not sit still."
+	if lost_rope: message = "Hit. You drop the rope, that steer is gone again, and your hand is shaking."
+	if is_instance_valid(speech): say_once("player_struck", player, "TRAIL BOSS", "That one was close.", 1)
 	refresh()
 
 func on_player_action_event(event_name: String) -> void:
@@ -674,19 +892,24 @@ func on_player_action_event(event_name: String) -> void:
 		else: catch_rope(caught)
 	if event_name != "fire" or not pending_shot: return
 	pending_shot = false
-	shot_time = 0.10
-	var origin: Vector2 = player.position + Vector2(0,-31)
-	var endpoint: Vector2 = origin + pending_aim * 150
-	if rustler_active and player.position.distance_to(rustler.position) < 190:
+	shot_time = 0.12
+	var origin := muzzle()
+	var mark: Node2D = rustler if rustler_active and is_instance_valid(rustler) else null
+	var range_to_mark := origin.distance_to(rustler.position) if is_instance_valid(rustler) else SHOT_RANGE
+	var bullet := resolve_bullet(origin, pending_aim, aim_spread(range_to_mark, strain), mark, Vector2.ZERO)
+	if bullet.hit:
 		hits += 1
-		endpoint = rustler.position + Vector2(0,-20)
-		message = "The rustler flinches. One more shot will send him running."
-		if hits >= 2: rustler_surrenders("The second shot puts him on his knees with his hands up. He waits on your word.")
-	elif rustler_choice_pending() and player.position.distance_to(rustler.position) < 190:
+		message = "It takes him high and turns him. One more and he is done."
+		if hits >= 2: rustler_surrenders("The second round puts him on his knees with his hands up. He waits on your word.")
+	elif bullet.blocked:
+		message = "The round hammers into cover and stops there."
+	elif rustler_choice_pending():
 		message = "He is already beaten and waiting. Say what happens to him."
+	elif float(bullet.miss_by) < 26.0:
+		message = "It cracks past his ear and he gets smaller behind that gun."
 	else:
-		message = "The shot goes wide. Get within range of the rustler."
-	shot.points = PackedVector2Array([origin, endpoint])
+		message = "Wide. Steady the horse and get on him."
+	if is_instance_valid(shot): shot.points = PackedVector2Array([origin + GUN_LIFT, bullet.end + GUN_LIFT])
 	refresh()
 
 func catch_rope(caught: Node2D) -> void:
@@ -767,6 +990,8 @@ func rustler_surrenders(text: String) -> void:
 	if is_instance_valid(rustler): rustler.action("yield_southwest",Vector2(-1,1))
 	rustler_active = false
 	rustler_surrendered = true
+	rustler_tell = 0.0
+	if is_instance_valid(tell_line): tell_line.clear_points()
 	escaped = false
 	message = text
 	build_choice_buttons()
@@ -816,8 +1041,11 @@ func eleanor_closing_line() -> String:
 
 func refresh() -> void:
 	if not is_instance_valid(stats): return
-	stats.text = "$%d    CATTLE %d/6    AMMO %d    %s" % [cash,secured_count(),ammo,companion.clock_label() if companion != null else "Day 1 12:00"]
+	var gun_state := "  RELOADING" if reload_time > 0 else ("  SHAKING %d" % strain if strain > 0 else "")
+	stats.text = "$%d    CATTLE %d/6    AMMO %d%s    %s" % [cash,secured_count(),ammo,gun_state,companion.clock_label() if companion != null else "Day 1 12:00"]
 	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
+	if rustler_tell > 0:
+		objective.text = "HE IS LINING UP ON YOU  /  Break his line or put the wagon between you"
 	if rustler_choice_pending():
 		objective.text = "RUSTLER BEATEN  /  Say what happens to him  /  Loose, law, or wages"
 	if not won and rope_time > 0 and rope_target in cows:
@@ -1116,11 +1344,16 @@ func run_demo() -> void:
 	assert(await demo_ride(Vector2(183,145)))
 	interact()
 	await get_tree().create_timer(1.0).timeout
-	assert(await demo_ride(Vector2(430,180)))
-	shoot()
-	await get_tree().create_timer(0.6).timeout
-	shoot()
-	await get_tree().create_timer(0.6).timeout
+	# Close to pistol work, aim, and keep working him. Riding in under his gun
+	# is the point; a scripted pair of shots from out of range never was.
+	assert(await demo_ride(Vector2(496,172)))
+	var fight_deadline := elapsed + 40.0
+	while rustler_active and elapsed < fight_deadline:
+		aim_point = rustler.position
+		if ammo == 0 and reload_time <= 0: reload()
+		shoot()
+		await get_tree().create_timer(0.55).timeout
+	aim_point = Vector2.INF
 	assert(not rustler_active)
 	var deadline := elapsed + 240
 	while not won and elapsed < deadline:
@@ -1194,17 +1427,48 @@ func run_qa() -> void:
 	player.position = eleanor.position + Vector2(35, 0)
 	interact()
 	assert(talked)
-	player.position = Vector2(430, 175)
+	# The fight, in the running room. A seeded generator so a pass here means
+	# the geometry decided the shot and not the roll of the day.
+	rng.seed = 20250910
+	player.position = Vector2(505, 166)
+	target = Vector2.INF
+	var struck_deadline := elapsed + 8.0
+	while player_hits == 0 and elapsed < struck_deadline:
+		await get_tree().physics_frame
+	assert(player_hits >= 1, "Standing in his open ground must actually cost the player")
+	assert(strain > 0, "A hit must leave something behind on the player")
+	# The boulder on the north approach breaks his line. Same test his own
+	# trigger uses, so cover is not a separate story from the one he reads.
+	player.position = Vector2(420, 106)
+	await get_tree().physics_frame
+	assert(first_blocker(rustler_muzzle(), muzzle()).is_finite(), "Cover must break his line of sight")
+	player.position = Vector2(505, 166)
+	await get_tree().create_timer(0.5).timeout
+	var wasted: int = ammo
+	aim_point = Vector2(90, 300)
 	shoot()
-	assert(ammo == 5)
+	await get_tree().create_timer(0.2).timeout
+	assert(ammo == wasted - 1 and hits == 0, "A shot aimed away from him spends a round and hits nothing")
+	await get_tree().create_timer(0.4).timeout
+	aim_point = rustler.position
+	shoot()
+	assert(ammo == wasted - 2)
 	if player.directional: assert(hits == 0 and pending_shot, "Damage waits for the visible firing pose")
-	await get_tree().create_timer(0.15).timeout
-	assert(hits == 1 and not pending_shot)
+	await get_tree().create_timer(0.2).timeout
+	assert(hits == 1 and not pending_shot, "An aimed shot inside pistol work connects")
 	if player.directional: assert(str(player.art.animation).begins_with("shoot_"))
 	await get_tree().create_timer(0.4).timeout
+	aim_point = rustler.position
 	shoot()
 	await get_tree().create_timer(0.5).timeout
-	assert(not rustler_active and ammo == 4)
+	assert(not rustler_active, "Two aimed rounds put him down")
+	# Reloading is an act with a clock on it, not a free refill.
+	ammo = 2
+	reload()
+	assert(reload_time > 0 and ammo == 2, "Reloading takes time before it gives rounds")
+	await get_tree().create_timer(RELOAD_SECONDS + 0.2).timeout
+	assert(ammo == CYLINDER and reload_time == 0, "A finished reload fills the cylinder")
+	aim_point = Vector2.INF
 	# The beaten rustler waits for a decision, and the decision is the player's.
 	assert(rustler_surrendered and rustler_choice_pending(), "Two hits must end in a surrender, not a disappearance")
 	assert(choice_row_visible() and choice_buttons.size() == RUSTLER_CHOICES.size(), "Every fate must be offered on screen")
@@ -1222,7 +1486,7 @@ func run_qa() -> void:
 		if rect.end.x > size.x or rect.end.y > size.y:
 			print("CHOICE ROW QA: ", button.text, " rect=", rect, " window=", size, " grid=", buttons.get_global_rect())
 		assert(rect.end.x <= size.x and rect.end.y <= size.y, "The choice row must fit a phone window")
-	assert(offered == 6 + RUSTLER_CHOICES.size(), "Standing controls and every fate must be reachable at once")
+	assert(offered == 7 + RUSTLER_CHOICES.size(), "Standing controls and every fate must be reachable at once")
 	get_window().size = desktop_window
 	await get_tree().create_timer(0.2).timeout
 	var cash_before_choice: int = cash
@@ -1282,7 +1546,7 @@ func run_qa() -> void:
 			if not button.visible: continue
 			measured += 1
 			assert(button.get_global_rect().end.x <= size.x and button.get_global_rect().end.y <= size.y, "Phone controls must fit in the window")
-		assert(measured >= 6, "Phone control check must actually measure the standing controls")
+		assert(measured >= 7, "Phone control check must actually measure the standing controls")
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("res://room-phone.png")
 	print("QA PASS: real atlases, tap movement, dialogue, shooting, lasso following, all-six objective, responsive capture")
