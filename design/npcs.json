@@ -833,6 +833,81 @@
       ]
     },
     {
+      "id": "the_mine_owner",
+      "content_status": "design_only",
+      "name": "Elias Thorndike",
+      "age": 55,
+      "role": "Owner of the mine where Birgitta Holm works, cutting corners on safety",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "profit-focused",
+        "not cartoonishly evil, genuinely believes the risk is acceptable",
+        "responds to public pressure more than moral argument"
+      ],
+      "hook": "Names the specific owner behind Birgitta Holm's safety-hazard hook -- a bottom-line antagonist resolvable through evidence and pressure, not violence.",
+      "voice_lines": [
+        "Every mine has some risk. Ours is within acceptable bounds, by my figures.",
+        "Holm's a good miner. Good miners still exaggerate danger to justify a raise.",
+        "Fine. Fix the shoring. But it comes out of the next quarter's wages, understood?"
+      ],
+      "appearance_brief": "Adult man, mid-fifties, well-dressed for a mine owner, more comfortable with ledgers than with the actual mine shafts.",
+      "art_prompt": "A mine owner at a desk far from the actual shaft entrance, reviewing profit figures rather than safety reports.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to birgitta_holm."
+      ]
+    },
+    {
+      "id": "the_ferry_rival",
+      "content_status": "design_only",
+      "name": "Gustaf Renner",
+      "age": 42,
+      "role": "The unsafe rival ferry operator undercutting Clementina Reyes-Boone",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "reckless",
+        "genuinely doesn't understand the risk he's taking",
+        "friendly in a way that makes the danger easy to miss"
+      ],
+      "hook": "Names the specific antagonist behind Clementina Reyes-Boone's encounter hook.",
+      "voice_lines": [
+        "She waits for the water to be perfect. I cross when people need to cross. Simple difference in philosophy.",
+        "Nobody's drowned on my crossing yet. That's not nothing.",
+        "Reyes-Boone thinks she owns the river. Water belongs to whoever's brave enough to use it."
+      ],
+      "appearance_brief": "Adult man, early forties, affable and a little too casual about visible risk, ill-maintained boat gear.",
+      "art_prompt": "A ferry operator grinning confidently at a churning river crossing that clearly worries everyone else present.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to clementina_reyesboone."
+      ]
+    },
+    {
+      "id": "the_frost_apprentice_rival",
+      "content_status": "design_only",
+      "name": "Cato Villanueva",
+      "age": 26,
+      "role": "A rival sign painter, less skilled but more aggressive about undercutting Wilhelmina Frost's commissions",
+      "category": "antagonist",
+      "location_ref": "unplaced",
+      "personality": [
+        "insecure about his own lesser skill",
+        "aggressive in business rather than physically",
+        "occasionally recognizes his own mediocrity in quiet moments"
+      ],
+      "hook": "A low-stakes professional rival for Wilhelmina Frost, purely competitive rather than dangerous, giving her trade some ongoing texture.",
+      "voice_lines": [
+        "Faster and cheaper. That's the whole pitch. Nobody's asking for a masterpiece over a storefront.",
+        "Frost paints slower. Frost also doesn't have half her signs peeling after one winter, if I'm honest with myself.",
+        "I'll underbid her again next season. I always do. She always still gets the good commissions anyway."
+      ],
+      "appearance_brief": "Adult man, mid-twenties, paint-stained but noticeably sloppier work than Wilhelmina's, restless competitive energy.",
+      "art_prompt": "A sign painter working quickly and carelessly on a storefront, glancing enviously toward a more polished sign further down the street.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to wilhelmina_frost."
+      ]
+    },
+    {
       "id": "deacon_marsh",
       "content_status": "design_only",
       "name": "Deacon Marsh",
@@ -1459,6 +1534,31 @@
       ]
     },
     {
+      "id": "the_kessler_grieving_family",
+      "content_status": "design_only",
+      "name": "The Alderman Family",
+      "age": null,
+      "role": "A grieving family whose burial dispute is the specific crisis in Prudence Kessler's hook",
+      "category": "town",
+      "location_ref": "unplaced",
+      "personality": [
+        "grieving",
+        "divided about the deceased's actual wishes",
+        "not villains, just a family under real strain"
+      ],
+      "hook": "Gives Prudence Kessler's 'burial that almost went wrong' hook a specific human situation -- a family divided by grief rather than a generic plot device.",
+      "voice_lines": [
+        "Papa never said where he wanted to rest. We're arguing about it because none of us can bear that he's actually gone.",
+        "Miss Kessler's the only one being patient with us today. We don't deserve it and she gives it anyway.",
+        "Just tell us what to do. We can't think straight enough to decide."
+      ],
+      "appearance_brief": "A grieving family gathered at a graveside, visible tension and sorrow rather than any single dramatic figure.",
+      "art_prompt": "A small family group at a fresh grave, muted colors, one figure comforting another, understated and respectful composition.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to prudence_kessler. Written to be treated with genuine respect, not as set dressing for spectacle."
+      ]
+    },
+    {
       "id": "the_split_oak_traveler",
       "content_status": "design_only",
       "name": "The man from farther west",
@@ -1819,6 +1919,54 @@
       "art_prompt": "A child apprentice handing tools to a cooper at a workbench, small and careful movements, clearly trusted with real responsibility. Keep clearly childlike and non-sexualized, a background family-adjacent character, not cast material -- same treatment as little_tam and tobias_ochoa.",
       "continuity_notes": [
         "Not implemented in scripts/. Ties to temperance_boucher. Explicitly not romance-eligible; do not add to characters.json under any circumstance."
+      ]
+    },
+    {
+      "id": "the_pym_terrier",
+      "content_status": "design_only",
+      "name": "Scrap",
+      "age": null,
+      "role": "Dorcas Pym's trained terrier, referenced in her companion record",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "fiercely loyal",
+        "genuinely excellent at the job",
+        "the actual reason half her catches succeed"
+      ],
+      "hook": "Gives Dorcas Pym's companion record its referenced dog an actual, if minimal, presence -- not a person, but named and consistent for a future writer to reference.",
+      "voice_lines": [
+        "(a dog; no dialogue -- consistent behavior only: alert, fast, single-mindedly food-and-praise motivated)"
+      ],
+      "appearance_brief": "A small, scruffy, alert terrier, clearly bred and trained for the work rather than kept as a purely decorative pet.",
+      "art_prompt": "A small wiry terrier mid-chase in a grain store, ears up, tail high, clearly working rather than playing.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to dorcas_pym. Not a human NPC; included for consistency since her companion record references the dog by implication."
+      ]
+    },
+    {
+      "id": "the_achterberg_frost_warning",
+      "content_status": "design_only",
+      "name": "Old Meredith Snow",
+      "age": 70,
+      "role": "An elderly weather-reader who warned Rosamund Achterberg about the coming frost",
+      "category": "wanderer",
+      "location_ref": "unplaced",
+      "personality": [
+        "eccentric",
+        "genuinely accurate about weather far more often than chance would explain",
+        "treated as an ordinary local expert, not a mystic"
+      ],
+      "hook": "A grounded, non-supernatural weather-prediction source who gives Rosamund Achterberg's frost crisis its early warning, matching LORE.md's preference for ordinary explanations where one suffices.",
+      "voice_lines": [
+        "My knees ache different for snow than for frost. Tonight it's frost, and it's coming hard.",
+        "Forty years reading this sky. I don't need a spirit to tell me what my own joints already know.",
+        "Achterberg listens when I talk. Most folks wait until the ice is already on the ground."
+      ],
+      "appearance_brief": "An elderly woman, weathered and slightly stooped, gazing at the sky with practiced attention rather than mystical performance.",
+      "art_prompt": "An old woman on a porch studying cloud formations, cane in hand, practical and grounded rather than eerie.",
+      "continuity_notes": [
+        "Not implemented in scripts/. Ties to rosamund_achterberg. Deliberately given a mundane explanation (experience, not supernatural gift) per LORE.md's instruction to keep the ordinary world ordinary."
       ]
     }
   ]
