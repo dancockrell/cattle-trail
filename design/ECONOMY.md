@@ -49,30 +49,30 @@ Everything here is a real character's actual trade, not an invented commodity li
 |---|---|---|---|
 | Hides and freight | Cattle hides, general freight | [Consuelo Diaz](wiki/people/consuelo_diaz.md) | Fort Griffin |
 | General trade | Dry goods, ammunition, tools | [Nettie Voss](wiki/people/nettie_voss.md) (with [Sallie Voss](wiki/people/sallie_voss.md) learning the trade) | Fort Griffin |
-| Rope and cordage | Hemp rope | [Marisol Vasquez](wiki/people/marisol_vasquez.md), via [Cyrus Boone](wiki/people/the_hemp_works_owner.md)'s hemp works; undercut by an unnamed cheaper rival | Unplaced (hemp works) |
-| Leather goods | Saddlery, tack | [Petra Kowalski](wiki/people/petra_kowalski.md) | Unplaced |
-| Tanned hide | Cured leather | [Philippa Grey](wiki/people/philippa_grey.md) | Unplaced |
-| Footwear | Boots | [Adaline Cobb](wiki/people/adaline_cobb.md) | Unplaced |
-| Wagons and wheels | Wainwright work | [Marcella Iturbe](wiki/people/marcella_iturbe.md) | Unplaced |
-| Furniture | Carpentry | [Wilhelmina Ashby](wiki/people/wilhelmina_ashby.md) | Unplaced |
-| Metalwork | General smithing | [Naomi Freeman](wiki/people/naomi_freeman.md), rivaled by [Orin Teague](wiki/people/orin_teague.md) | Unplaced |
-| Fine metalwork | Silversmithing/jewelry | [Opaline Marchetti](wiki/people/opaline_marchetti.md) | Unplaced |
+| Rope and cordage | Hemp rope | [Marisol Vasquez](wiki/people/marisol_vasquez.md), via [Cyrus Boone](wiki/people/the_hemp_works_owner.md)'s hemp works; undercut by an unnamed cheaper rival | Fort Griffin (hemp works) |
+| Leather goods | Saddlery, tack | [Petra Kowalski](wiki/people/petra_kowalski.md) | Fort Griffin |
+| Tanned hide | Cured leather | [Philippa Grey](wiki/people/philippa_grey.md) | Fort Griffin |
+| Footwear | Boots | [Adaline Cobb](wiki/people/adaline_cobb.md) | Fort Griffin |
+| Wagons and wheels | Wainwright work | [Marcella Iturbe](wiki/people/marcella_iturbe.md) | Providence |
+| Furniture | Carpentry | [Wilhelmina Ashby](wiki/people/wilhelmina_ashby.md) | Providence |
+| Metalwork | General smithing | [Naomi Freeman](wiki/people/naomi_freeman.md), rivaled by [Orin Teague](wiki/people/orin_teague.md) | Fort Griffin |
+| Fine metalwork | Silversmithing/jewelry | [Opaline Marchetti](wiki/people/opaline_marchetti.md) | Providence |
 | Precision mechanism | Clock/watch repair | [Hepzibah Thorne](wiki/people/hepzibah_thorne.md) | Fort Griffin (Judge Abernathy is a regular customer) |
 | Steam machinery | Repair and fabrication | [Ada Mercer](wiki/people/ada_mercer.md) | Clear Fork (the Outfit) |
-| Textiles | Weaving, dye | [Ingrid Lindqvist](wiki/people/ingrid_lindqvist.md) | Unplaced |
-| Millinery | Hats and trim | [Henrietta Sloane](wiki/people/henrietta_sloane.md) | Unplaced |
+| Textiles | Weaving, dye | [Ingrid Lindqvist](wiki/people/ingrid_lindqvist.md) | Providence |
+| Millinery | Hats and trim | [Henrietta Sloane](wiki/people/henrietta_sloane.md) | Providence |
 | Sewing and mending | Dressmaking | [Winnie Doyle](wiki/people/winnie_doyle.md) | Providence-adjacent |
-| Basketry | Load-bearing baskets | [Phoebe Rutledge](wiki/people/phoebe_rutledge.md) | Unplaced |
-| Barrels and cooperage | Casks | [Temperance Boucher](wiki/people/temperance_boucher.md) | Unplaced |
-| Candles and wax | Chandlery | [Verity Lang](wiki/people/verity_lang.md) | Unplaced |
-| Perfume and soap | Toiletries | [Seraphine Duval](wiki/people/seraphine_duval.md) | Unplaced |
-| Dairy | Cheese | [Briony Wexford](wiki/people/briony_wexford.md) | Unplaced (contested water with [Hosea Pruett](wiki/people/the_wexford_dairy_neighbor.md)) |
-| Confectionery | Sweets | [Sunniva Larsen](wiki/people/sunniva_larsen.md), supplied by [Old Man Prescott](wiki/people/the_larsen_supplier.md) | Unplaced |
-| Coffee and tea | Roasting | [Juniper Holloway](wiki/people/juniper_holloway.md), supplied by [Emmanuel Castro](wiki/people/the_holloway_bean_farmer.md) | Unplaced |
-| Honey | Apiary | [Faustina Achebe](wiki/people/faustina_achebe.md) | Unplaced |
-| Spirits | Distilling | [Adelheid Kraus](wiki/people/adelheid_kraus.md), regulated by [Inspector Wexler](wiki/people/the_kraus_tax_official.md) | Unplaced |
+| Basketry | Load-bearing baskets | [Phoebe Rutledge](wiki/people/phoebe_rutledge.md) | Fort Griffin |
+| Barrels and cooperage | Casks | [Temperance Boucher](wiki/people/temperance_boucher.md) | Fort Griffin |
+| Candles and wax | Chandlery | [Verity Lang](wiki/people/verity_lang.md) | Fort Griffin |
+| Perfume and soap | Toiletries | [Seraphine Duval](wiki/people/seraphine_duval.md) | Providence |
+| Dairy | Cheese | [Briony Wexford](wiki/people/briony_wexford.md) | Fort Griffin-adjacent (contested water with [Hosea Pruett](wiki/people/the_wexford_dairy_neighbor.md)) |
+| Confectionery | Sweets | [Sunniva Larsen](wiki/people/sunniva_larsen.md), supplied by [Old Man Prescott](wiki/people/the_larsen_supplier.md) | Providence |
+| Coffee and tea | Roasting | [Juniper Holloway](wiki/people/juniper_holloway.md), supplied by [Emmanuel Castro](wiki/people/the_holloway_bean_farmer.md) | Fort Griffin |
+| Honey | Apiary | [Faustina Achebe](wiki/people/faustina_achebe.md) | Split Oak Camp (her hives are along the trail itself) |
+| Spirits | Distilling | [Adelheid Kraus](wiki/people/adelheid_kraus.md), regulated by [Inspector Wexler](wiki/people/the_kraus_tax_official.md) | Bellhollow (an out-of-the-way still suits her scrutiny by the tax office) |
 | Brewing | Beer | [Georgiana Hollis](wiki/people/georgiana_hollis.md) | Providence |
-| Milling | Flour | [Romy Fenwick](wiki/people/romy_fenwick.md) | Unplaced |
+| Milling | Flour | [Romy Fenwick](wiki/people/romy_fenwick.md) | The Narrow Water (her conflict is an upstream diversion of that same water) |
 | Land | Speculative lots | [Ezra Lowry](wiki/people/ezra_lowry.md) | Providence |
 | Printed goods | News, notices | [Prisca Montaigne](wiki/people/prisca_montaigne.md) vs. [Silas Cobbett](wiki/people/the_montaigne_rival_editor.md) | Providence |
 
@@ -104,5 +104,6 @@ The [Calloway Spread](wiki/organizations/calloway-spread.md), [Hargrove Range](w
 - Whether the player can found a *second* trade relationship that competes with an existing rivalry (e.g., backing Marisol against the hemp rival) or only influence the existing one.
 - Whether goods are simulated as inventory items at all, or abstracted into a single "trade goods" resource the player allocates.
 - How land purchase (Lowry) interacts with the ranch's own footprint, if at all.
+- The trade-goods table's "Where" placements above were resolved 2026-09-10: checked `characters.json`, `npcs.json`, and the wiki organization pages first for each formerly-"Unplaced" character, found none of the twenty had a stated location anywhere (their wiki entries are trail encounters, not shop listings), and placed them deliberately per this doc's own two-market-town rule, with four exceptions where a character's own conflict names a specific place (Faustina Achebe's hives are on-trail at Split Oak Camp, Adelheid Kraus's still fits Bellhollow's isolation given the tax scrutiny on it, Romy Fenwick's mill sits on the water actually being diverted at The Narrow Water, Briony Wexford's dairy is a farm adjacent to Fort Griffin rather than in it). That leaves most craft/trade goods split between Fort Griffin and Providence, which is a real concentration rather than invented spread — a future pass could deliberately relocate a few of these (the leather-goods cluster in particular) to a third location if that reads as too crowded once the county has more built rooms to compare against.
 
 Per this project's standing rule: do not silently implement any of the above as accepted design.
