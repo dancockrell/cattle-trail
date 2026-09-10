@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "character_id": "ottilie_braun",
+  "age": 21,
+  "status": "connected_to_source_room_encounter",
+  "events": [
+    {"id":"intro","speaker":"OTTILIE","priority":2,"text":"Half that shipment's already cracked from the road, and every lamp in your outfit is going to fail dark unless someone who actually knows glass gets to it first."},
+    {"id":"glass_recovered","speaker":"OTTILIE","priority":2,"text":"Recovered, and I can work with what's left. A repaired lamp holds a flame steadier than a cheap new one ever will -- I'd stake my name on that."},
+    {"id":"recruited","speaker":"OTTILIE","priority":2,"text":"You trusted the repair over buying new. That's the whole argument I've been having with this town for years, and you just settled it in my favor."},
+    {"id":"romance_acknowledged","speaker":"OTTILIE","priority":2,"text":"I like heat and pressure and knowing exactly what a flame will do next. You're a little less predictable than that, and I find I don't mind it."}
+  ]
+}

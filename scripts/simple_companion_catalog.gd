@@ -187,6 +187,54 @@ const ROWS := [
 		"task_label": "Sit through supper", "location_label": "her boarding house",
 		"unlock_key": "birdie_recruited"
 	},
+	{
+		"id": "fina_reyes", "speaker": "FINA", "age": 21, "perk_id": "steady_herd",
+		"position_x": 300.0, "position_y": 20.0, "near_radius": 36.0,
+		"banter_path": "res://data/fina_banter.json",
+		"meet_beat": "intro", "task_beat": "colt_gentled", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "FINA, 21 / Watch her gentle the green colt without stepping in, then offer her better pay and her own say.",
+		"task_message": "Colt's gentled and loaded easy. Talk to her again to offer a place.",
+		"recruited_message": "Fina joins the outfit. Her rope answers to her alone now, same as she wanted.",
+		"idle_message": "Fina's already riding with the outfit.",
+		"task_label": "Watch her gentle the colt", "location_label": "the corral",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "willow_byrne", "speaker": "WILLOW", "age": 24, "perk_id": "steady_aim",
+		"position_x": 600.0, "position_y": 20.0, "near_radius": 36.0,
+		"banter_path": "res://data/willow_banter.json",
+		"meet_beat": "intro", "task_beat": "partner_driven_off", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "WILLOW, 24 / Drive off the rustler's partner she's been tracking, without her having to do it alone.",
+		"task_message": "Partner driven off, and the trail finally closed. Talk to her again to offer a place.",
+		"recruited_message": "Willow joins the outfit. Steady pay, straight answers, and one less name on her list.",
+		"idle_message": "Willow's already riding with the outfit.",
+		"task_label": "Drive off the partner", "location_label": "the rustler's camp",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "naomi_freeman", "speaker": "NAOMI", "age": 23, "perk_id": "field_repairs",
+		"position_x": 680.0, "position_y": 240.0, "near_radius": 36.0,
+		"banter_path": "res://data/naomi_banter.json",
+		"meet_beat": "intro", "task_beat": "repair_trusted", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "NAOMI, 23 / Trust her judgment on the cracked axle over a quicker, worse repair.",
+		"task_message": "Axle fixed right, not fast. Talk to her again to offer standing work.",
+		"recruited_message": "Naomi joins the outfit. The forge answers to her name now, and it holds.",
+		"idle_message": "Naomi's already riding with the outfit.",
+		"task_label": "Trust the repair", "location_label": "her forge",
+		"unlock_key": "birdie_recruited"
+	},
+	{
+		"id": "ottilie_braun", "speaker": "OTTILIE", "age": 21, "perk_id": "field_repairs",
+		"position_x": 200.0, "position_y": 410.0, "near_radius": 36.0,
+		"banter_path": "res://data/ottilie_banter.json",
+		"meet_beat": "intro", "task_beat": "glass_recovered", "recruited_beat": "recruited", "romance_beat": "romance_acknowledged",
+		"meet_message": "OTTILIE, 21 / Recover the shipment of cracked lamp glass and trust her repair over buying new.",
+		"task_message": "Glass recovered and every lamp holding true. Talk to her again to offer a place.",
+		"recruited_message": "Ottilie joins the outfit. Every lantern in camp burns steadier for it.",
+		"idle_message": "Ottilie's already riding with the outfit.",
+		"task_label": "Recover the glass", "location_label": "her workbench",
+		"unlock_key": "birdie_recruited"
+	},
 ]
 
 static func position_for(row: Dictionary) -> Vector2:

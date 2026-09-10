@@ -2,14 +2,11 @@
   "version": 1,
   "character_id": "willow_byrne",
   "age": 24,
-  "status": "design_only_not_wired",
+  "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"WILLOW","priority":2,"text":"His partner rode north. Yours rode into your grass. I'll take yours."},
-    {"id":"rustler_partner_driven_off","speaker":"WILLOW","priority":2,"text":"That's one file I get to close honest."},
-    {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Steady pay and a straight answer. I've worked for worse reasons."},
-    {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I don't say things twice, so listen the first time: I'm glad you asked."},
-    {"id":"old_case_mentioned","speaker":"WILLOW","priority":1,"text":"Three counties of paper on one man, and he was already in the ground. Nobody tells you that part."},
-    {"id":"hiram_cobb_mentioned","speaker":"WILLOW","priority":1,"text":"Cobb still asks if I'm coming back. I still tell him no. We're both comfortable with the ritual."},
-    {"id":"deacon_marsh_mentioned","speaker":"WILLOW","priority":1,"text":"Marsh sold me a dead man's paper once. I don't buy from him anymore. I still owe him a conversation about it."}
+    {"id":"intro","speaker":"WILLOW","priority":2,"text":"Three counties I've had this one's partner's sign. He's yours to flush and mine to finish -- don't lose him in the brush for me."},
+    {"id":"partner_driven_off","speaker":"WILLOW","priority":2,"text":"Driven off, not dead, and I didn't have to do it alone this time. Mark that down, it doesn't happen often."},
+    {"id":"recruited","speaker":"WILLOW","priority":2,"text":"Steady pay and a straight answer about what this outfit actually does. That's more honesty than most paper I've carried. I'm in."},
+    {"id":"romance_acknowledged","speaker":"WILLOW","priority":2,"text":"I've watched a lot of backs go bad on me. Yours hasn't yet. I'm allowed to notice that."}
   ]
 }

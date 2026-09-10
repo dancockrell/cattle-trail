@@ -2,13 +2,11 @@
   "version": 1,
   "character_id": "fina_reyes",
   "age": 21,
-  "status": "design_only_not_wired",
+  "status": "connected_to_source_room_encounter",
   "events": [
-    {"id":"intro","speaker":"FINA","priority":2,"text":"Easy. She's not stubborn, she's scared. Different problem, different rope."},
-    {"id":"colt_gentled","speaker":"FINA","priority":2,"text":"There. See? Nobody had to lose a hand today."},
-    {"id":"recruited","speaker":"FINA","priority":2,"text":"Better pay and my own say. I've quit for less and stayed for more."},
-    {"id":"romance_acknowledged","speaker":"FINA","priority":2,"text":"You held the string steady and didn't tell me how to do my job. That's rarer than you'd think."},
-    {"id":"calloway_mentioned","speaker":"FINA","priority":1,"text":"The Spread pays better. It just doesn't ask what I think of anything."},
-    {"id":"tomas_reyes_mentioned","speaker":"FINA","priority":1,"text":"My father taught me the rope. He'll deny teaching me the temper. He's lying."}
+    {"id":"intro","speaker":"FINA","priority":2,"text":"Stand back and stay quiet. This colt's already been fought twice today, and a rope answers to whoever asks it right, not whoever shouts loudest."},
+    {"id":"colt_gentled","speaker":"FINA","priority":2,"text":"There. Loaded easy, no whip, no rush. He'll remember being asked instead of forced, and so will I."},
+    {"id":"recruited","speaker":"FINA","priority":2,"text":"Better pay and my own say. That's the only offer I was ever going to take. My rope, my terms."},
+    {"id":"romance_acknowledged","speaker":"FINA","priority":2,"text":"I run hot and I know it. You didn't flinch and you didn't try to cool me down. Keep doing that."}
   ]
 }
