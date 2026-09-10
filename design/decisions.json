@@ -6,8 +6,14 @@
     {
       "id": "genre",
       "status": "accepted_user",
-      "decision": "Harem-lit alternate 1870s Weird West with steam robotics/mechas, ordinary accepted spirits and ambiguous occult gods battling on Earth.",
-      "consequence": "Supersedes a purely historical cattle-drive identity."
+      "decision": "Harem-lit alternate 1870s Weird West with steam robotics/mechas, ordinary accepted spirits and ambiguous occult gods battling on Earth, built on top of a real period-economics and cattle-ranching simulation (see 'simulation_pillars' below). 'Supersedes a purely historical cattle-drive identity' from the original version of this decision meant the Weird West elements are real and load-bearing, not that ranching/economics stopped being the game's core -- the two are not in tension.",
+      "consequence": "Neither half is decorative. A companion's usefulness, a rival outfit's pressure and a trade good's price are the same simulation as the ghosts and the machines, not a separate skin over it."
+    },
+    {
+      "id": "simulation_pillars",
+      "status": "accepted_user",
+      "decision": "Dan, 2026-09-10: think of the whole project first as a simulation of period economics and cattle ranching specifically, not a companion-collector with a ranch skin. The player grows through four connected levers: shrewd dealing (trade, negotiation, debt, market timing), successful cattle drives (herding, trail risk, delivery), exploration (the wider county and beyond, not one fixed room), and romance (harem-lit, unchanged). This is a reframing of priority and design lens, not a reversal of the existing scope decision below -- design work on economy and exploration can and should proceed now; committing new systems to the actual Godot room still waits for the same room-at-a-time discipline everything else has followed.",
+      "consequence": "New design work (design/ECONOMY.md, design/EXPLORATION.md) treats trade, market pricing, debt and county travel as first-class systems on the same footing as companions and madness, not optional later content. Existing trade/craft characters (Nettie Voss, Consuelo Diaz, the Widow Stroud, Cyrus Boone, Georgiana Hollis, Adelheid Kraus, and others already in design/npcs.json and design/characters.json) are the economy's actors, not flavor -- design/ECONOMY.md is written to reuse them rather than invent a parallel merchant roster."
     },
     {
       "id": "adult_cast",
