@@ -792,6 +792,1350 @@
         "duration_target_minutes": 4,
         "tuning_status": "provisional"
       }
+    },
+    {
+      "id": "delphine_cruz",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Delphine Cruz",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A card sharp who left a riverboat circuit one step ahead of a reputation she'd earned honestly.",
+        "personality": [
+          "cool-headed",
+          "sly humor",
+          "generous once she trusts you",
+          "reads people for a living"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A fitted vest over a tucked blouse, sleeves gartered for cards, a skirt cut for sitting all night at a table, a hidden card sleeve she'll show you if she likes you.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's running a game out of the back of a Fort Griffin saloon when the outfit's luck (or lack of it) catches her attention.",
+        "conditions": [
+          "Beat her fairly at a hand of cards, or catch her cheating and say nothing.",
+          "Offer her a reason to stay besides the next game.",
+          "Delphine accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "cards and reading people",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being cheated by someone she trusted.",
+        "support_preference": "A fair hand and an honest answer, in that order."
+      },
+      "recovery_offer": {
+        "id": "delphine_cruz_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_hand_she_didnt_play",
+        "title": "The Hand She Didn't Play",
+        "controlled_actor_id": "delphine_cruz",
+        "objective": "Play as Delphine talking a nervous rancher out of betting his own herd on a bad hand, without taking his money herself.",
+        "companion_skill": "Directly playable reading of tells and a persuasion beat that doesn't require a fight.",
+        "protagonist_support": "The protagonist backs her read without knowing the cards themselves.",
+        "affectionate_payoff": "A private laugh afterward about how close he came to losing everything over a pair of eights.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "winnie_doyle",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Winnifred \"Winnie\" Doyle",
+      "age": 23,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A traveling seamstress and dressmaker who reads a county's fortunes by what people can afford to wear.",
+        "personality": [
+          "observant",
+          "quietly funny",
+          "particular about her work",
+          "kinder than her first impression"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A well-fitted work dress she made herself, pincushion at her wrist, sleeves rolled for close work, a hem let out for riding when needed.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's mending trail-torn gear at a Providence stall when a piece of the outfit's own kit needs her needle.",
+        "conditions": [
+          "Bring her a torn coat or dress that matters to someone.",
+          "Notice the mending is better than the original.",
+          "Winnie accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "seamstress and mender",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Watching good cloth ruined by carelessness.",
+        "support_preference": "Something to mend, and quiet while she does it."
+      },
+      "recovery_offer": {
+        "id": "winnie_doyle_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_coat_that_mattered",
+        "title": "The Coat That Mattered",
+        "controlled_actor_id": "winnie_doyle",
+        "objective": "Play as Winnie repairing a keepsake coat well enough to be worn again, under a deadline that matters more than the stitching alone.",
+        "companion_skill": "Directly playable careful needlework under time pressure, not a menu.",
+        "protagonist_support": "The protagonist holds the lamp and keeps the story of why the coat matters going while she works.",
+        "affectionate_payoff": "She holds it up finished, and it's clearly better than new.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "louisa_okoye",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Louisa Okoye",
+      "age": 22,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A schoolteacher heading west to a post that fell through before she arrived, now teaching whoever will sit still.",
+        "personality": [
+          "patient",
+          "stubbornly hopeful",
+          "corrects grammar without meaning to",
+          "braver than she looks"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A modest traveling dress kept neat despite the trail, a satchel of books she won't leave behind, ink-stained fingers.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Her promised teaching post at a rail town evaporated when the town itself didn't materialize; she's stranded with a trunk of books and nowhere to use them.",
+        "conditions": [
+          "Help her recover a trunk of schoolbooks lost off a wagon.",
+          "Let her actually teach someone something.",
+          "Louisa accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "teacher and correspondence",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being told educating anyone out here is a waste of her time.",
+        "support_preference": "Someone actually listening to a lesson."
+      },
+      "recovery_offer": {
+        "id": "louisa_okoye_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_lesson_nobody_asked_for",
+        "title": "The Lesson Nobody Asked For",
+        "controlled_actor_id": "louisa_okoye",
+        "objective": "Play as Louisa teaching a skeptical outfit hand to read well enough to write home, one patient session at a time.",
+        "companion_skill": "Directly playable teaching beats: patience, small wins, one real breakthrough.",
+        "protagonist_support": "The protagonist volunteers to go first so nobody else has to be embarrassed alone.",
+        "affectionate_payoff": "The hand reads his own letter out loud, badly, and everyone lets him finish.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "marguerite_solis",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Marguerite Solis",
+      "age": 26,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A midwife and folk healer who trusts what she can see and touch over what anyone tells her secondhand.",
+        "personality": [
+          "unflappable",
+          "blunt",
+          "deeply competent",
+          "warm in a way that shows up in actions not words"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical dark dress, sleeves that roll up fast, a bag of instruments and herbs she's particular about, hair kept short and out of the way.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A difficult birth at a homestead near the trail needs a competent hand fast, and hers is the only one for miles.",
+        "conditions": [
+          "Get her to a birth or a bad injury in time.",
+          "Follow her instructions without arguing mid-crisis.",
+          "Marguerite accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "midwife and practical medicine",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Losing someone she was sure she could save.",
+        "support_preference": "Being useful, not comforted."
+      },
+      "recovery_offer": {
+        "id": "marguerite_solis_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. Written carefully to avoid horror-genre treatment of childbirth: the tension is competence under pressure, and the outcome is not left ambiguous or fatal.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_night_it_went_wrong",
+        "title": "The Night It Went Wrong",
+        "controlled_actor_id": "marguerite_solis",
+        "objective": "Play as Marguerite managing a genuinely difficult birth with calm, specific instructions rather than panic.",
+        "companion_skill": "Directly playable calm-under-pressure decision beats, not a horror scene.",
+        "protagonist_support": "The protagonist runs for water, light and a second pair of hands exactly when told to.",
+        "affectionate_payoff": "A newborn's first cry, and Marguerite finally sitting down.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "ottilie_braun",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Ottilie Braun",
+      "age": 21,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A glassblower and lampmaker, apprenticed in a family trade most people assume only men do.",
+        "personality": [
+          "meticulous",
+          "quietly proud",
+          "burns herself more than she'll admit",
+          "finds heat and pressure soothing"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Heavy apron over rolled sleeves, protective gloves at her belt, singed cuffs, hair bound tight against open flame.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "The outfit's lanterns are cracked and she's the only glassworker within reach who can actually fix rather than replace them.",
+        "conditions": [
+          "Recover a shipment of lamp glass damaged in transit.",
+          "Trust her repair over buying new.",
+          "Ottilie accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "glasswork and lamps",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "field_repairs",
+          "label": "Sure-Handed Tuning",
+          "description": "Reuses the existing shared repair-efficiency perk definition rather than authoring a duplicate.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Being told glasswork is a hobby, not a trade.",
+        "support_preference": "A quiet workshop and nobody rushing her flame."
+      },
+      "recovery_offer": {
+        "id": "ottilie_braun_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_lamp_that_would_not_hold",
+        "title": "The Lamp That Would Not Hold",
+        "controlled_actor_id": "ottilie_braun",
+        "objective": "Play as Ottilie reworking a cracked lantern glass under real heat and timing constraints, not a menu-based repair.",
+        "companion_skill": "Directly playable glasswork: timing, temperature, a steady hand.",
+        "protagonist_support": "The protagonist keeps the flame fed and steady while she shapes the piece.",
+        "affectionate_payoff": "A lantern that finally holds, and her visible relief when it does.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "vashti_okafor",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Vashti Okafor",
+      "age": 20,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A hunter and trapper who feeds a camp better than any outfit's usual rations.",
+        "personality": [
+          "quiet",
+          "extremely competent outdoors",
+          "unimpressed by bravado",
+          "generous with what she catches"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Fringed practical leathers built for moving quiet through brush, a well-used bow and knife, no wasted decoration.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's tracking the same game the outfit startled off its usual ground, and isn't happy about the competition until she sees they're not wasteful.",
+        "conditions": [
+          "Track something the outfit couldn't find alone.",
+          "Don't waste what she brings back.",
+          "Vashti accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "hunting and tracking",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "spirit_sense",
+          "label": "Between the Footprints",
+          "description": "Reuses the existing shared trail-hazard perk definition rather than authoring a duplicate -- a hunter's eye for sign works the same as a scout's.",
+          "activation": "field",
+          "effect": {
+            "stat": "trail_hazard_notice",
+            "operation": "add",
+            "value": 1,
+            "unit": "early warning tier"
+          },
+          "stacking_group": "trail_hazard_notice",
+          "stacking_cap": 2,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Waste -- a kill or a resource thrown away.",
+        "support_preference": "Being handed a task instead of being watched work."
+      },
+      "recovery_offer": {
+        "id": "vashti_okafor_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "what_the_ground_remembers",
+        "title": "What the Ground Remembers",
+        "controlled_actor_id": "vashti_okafor",
+        "objective": "Play as Vashti tracking a specific animal across mixed terrain, reading sign the protagonist can't see.",
+        "companion_skill": "Directly playable tracking: read hoofprints, broken brush, scent direction.",
+        "protagonist_support": "The protagonist carries gear and stays downwind on her instruction.",
+        "affectionate_payoff": "A clean, respectful kill and a shared meal that night, not a trophy.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "prudence_hale",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Prudence Hale",
+      "age": 25,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A telegraph operator who reads the county's real news before the newspapers get around to printing it.",
+        "personality": [
+          "sharp",
+          "discreet about others' business",
+          "impatient with slow thinkers",
+          "surprisingly romantic under it"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Neat practical dress suited to an office, ink-stained fingertips, a habit of tapping out rhythms without noticing.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A storm-downed telegraph line has cut her off from her post, and the outfit's route happens to run past the break.",
+        "conditions": [
+          "Help her get a line back up after storm damage.",
+          "Keep a message she sends you in confidence.",
+          "Prudence accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "telegraph and communications",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "field_repairs",
+          "label": "Sure-Handed Tuning",
+          "description": "Reuses the existing shared repair-efficiency perk definition rather than authoring a duplicate.",
+          "activation": "field",
+          "effect": {
+            "stat": "machine_repair_efficiency",
+            "operation": "multiply",
+            "value": 1.1,
+            "unit": "multiplier"
+          },
+          "stacking_group": "machine_repair_efficiency",
+          "stacking_cap": 1.25,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A message arriving too late to matter.",
+        "support_preference": "Being trusted with something before it's official."
+      },
+      "recovery_offer": {
+        "id": "prudence_hale_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_line_that_went_quiet",
+        "title": "The Line That Went Quiet",
+        "controlled_actor_id": "prudence_hale",
+        "objective": "Play as Prudence physically repairing a downed telegraph line while racing a second storm rolling in.",
+        "companion_skill": "Directly playable line-repair beats under real time pressure.",
+        "protagonist_support": "The protagonist holds the pole steady and watches the sky for her.",
+        "affectionate_payoff": "The line hums back to life, and the first message through is for the two of them, not the office.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "araceli_pena",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Araceli Pena",
+      "age": 24,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A horse doctor whose skill with animals is trusted further than most human doctors' skill with people.",
+        "personality": [
+          "calm around anything with hooves or teeth",
+          "impatient with cruelty",
+          "dry sense of humor",
+          "fiercely protective of her patients"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical riding clothes built to work close to a nervous animal, a satchel of veterinary tools, calm and unhurried movement.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "A horse the outfit needs is going lame and the usual remedies aren't working; she's the only one within reach who actually knows why.",
+        "conditions": [
+          "Trust her diagnosis over a faster, worse fix for a sick animal.",
+          "Don't rush her around an animal in pain.",
+          "Araceli accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "veterinary medicine",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_herd",
+          "label": "Trail Hand",
+          "description": "Reuses the existing rancher-family perk definition rather than authoring a duplicate.",
+          "activation": "recruited",
+          "effect": {
+            "stat": "lasso_follow_seconds",
+            "operation": "add",
+            "value": 2,
+            "unit": "extra seconds"
+          },
+          "stacking_group": "lasso_follow_seconds",
+          "stacking_cap": 4,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "An animal suffering because someone wouldn't wait for the right fix.",
+        "support_preference": "Sitting with an animal through a hard recovery."
+      },
+      "recovery_offer": {
+        "id": "araceli_pena_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_horse_nobody_could_read",
+        "title": "The Horse Nobody Could Read",
+        "controlled_actor_id": "araceli_pena",
+        "objective": "Play as Araceli diagnosing and treating a horse's real injury after everyone else guessed wrong.",
+        "companion_skill": "Directly playable diagnostic beats: read gait, temperament and injury correctly before treating.",
+        "protagonist_support": "The protagonist keeps the horse calm while she works.",
+        "affectionate_payoff": "The horse finally puts weight on the leg again, and she lets herself be pleased about it in front of you.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "constance_whitlock",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Constance Whitlock",
+      "age": 27,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A bookkeeper and accountant whose ledgers have quietly saved more outfits than anyone credits her for.",
+        "personality": [
+          "precise",
+          "dry wit",
+          "unshockable",
+          "protective of the people whose numbers she keeps"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Neat, practical clothing suited to close paperwork, spectacles she takes off to make a point, ink-stained cuffs.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She catches a discrepancy in a trade deal that would have cost the outfit dearly, uninvited and unpaid for the favor.",
+        "conditions": [
+          "Let her find the error in the outfit's own books.",
+          "Take her correction without getting defensive.",
+          "Constance accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "bookkeeping and trade",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Numbers that don't add up and nobody else noticing.",
+        "support_preference": "Being asked her opinion before a deal, not after it fails."
+      },
+      "recovery_offer": {
+        "id": "constance_whitlock_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_ledger_that_lied",
+        "title": "The Ledger That Lied",
+        "controlled_actor_id": "constance_whitlock",
+        "objective": "Play as Constance auditing a deliberately falsified set of trade books to find exactly where and how they were altered.",
+        "companion_skill": "Directly playable close-reading and cross-referencing, not a lecture about numbers.",
+        "protagonist_support": "The protagonist runs interference with the person whose books are being checked.",
+        "affectionate_payoff": "She finds the error, states it plainly, and doesn't gloat about being right.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "modesty_kane",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Modesty Kane",
+      "age": 23,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A traveling photographer chasing the Weird West with a camera instead of a gun.",
+        "personality": [
+          "patient in a way that unnerves people",
+          "fascinated by ordinary detail",
+          "underestimated because of her name",
+          "quietly fearless"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Practical traveling clothes built to carry equipment, a battered camera case she guards more than her own comfort, ink-stained hands from developing plates.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "She's trying to photograph the crossing spirit at the ford, convinced (wrongly, or not) that a plate can hold what a story can't.",
+        "conditions": [
+          "Sit still for a photograph despite yourself.",
+          "Protect her equipment through something dangerous.",
+          "Modesty accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "photography and documentation",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A photograph developing into something she didn't take.",
+        "support_preference": "Being the one who gets to look, for once, instead of being looked at."
+      },
+      "recovery_offer": {
+        "id": "modesty_kane_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_plate_that_didnt_develop_right",
+        "title": "The Plate That Didn't Develop Right",
+        "controlled_actor_id": "modesty_kane",
+        "objective": "Play as Modesty developing a photograph under time pressure before the light and chemicals ruin the plate, uncertain what will actually appear on it.",
+        "companion_skill": "Directly playable darkroom timing beats: real tension without a jump scare.",
+        "protagonist_support": "The protagonist keeps watch and keeps the tent dark while she works.",
+        "affectionate_payoff": "Whatever the plate shows, she shares it with you first, unedited.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "temperance_vane",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Temperance Vane",
+      "age": 26,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A deputized peacekeeper working the county's edges where Sheriff Dell's authority formally ends.",
+        "personality": [
+          "formal",
+          "fair to a fault",
+          "carries her badge like a promise rather than a threat",
+          "dry about the irony of her name"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "A plain but pressed coat with a deputized badge worn visibly, practical gun belt, hair kept tidy despite the work.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Her jurisdiction runs out exactly where the outfit's trouble starts, and she's decided to help anyway rather than watch it happen just past her authority.",
+        "conditions": [
+          "Help her make a lawful arrest without it turning violent.",
+          "Respect the line she draws between the law and a favor.",
+          "Temperance accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "law and peacekeeping",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "steady_aim",
+          "label": "Steady Aim",
+          "description": "Reuses the existing shared combat-range perk definition rather than authoring a duplicate.",
+          "activation": "field",
+          "effect": {
+            "stat": "shot_range_bonus",
+            "operation": "add",
+            "value": 20,
+            "unit": "world pixels"
+          },
+          "stacking_group": "shot_range_bonus",
+          "stacking_cap": 40,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "Watching the law fail someone it was supposed to protect.",
+        "support_preference": "Being trusted to be off duty without stopping being herself."
+      },
+      "recovery_offer": {
+        "id": "temperance_vane_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "past_the_jurisdiction_line",
+        "title": "Past the Jurisdiction Line",
+        "controlled_actor_id": "temperance_vane",
+        "objective": "Play as Temperance making a formal arrest that has to hold up later, not just win the moment.",
+        "companion_skill": "Directly playable procedural-correctness beats: read the situation, act within the law, document it.",
+        "protagonist_support": "The protagonist backs her play without taking the badge's authority from her.",
+        "affectionate_payoff": "Paperwork done right, and an off-duty drink she actually lets herself enjoy.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
+    },
+    {
+      "id": "concepcion_ibarra",
+      "content_status": "design_only",
+      "origin": "named",
+      "name": "Concepcion Ibarra",
+      "age": 25,
+      "gender": "woman",
+      "romance_eligible": true,
+      "identity": {
+        "background": "A freighter and teamster who has driven harder roads than this trail and rates every wagon against them.",
+        "personality": [
+          "blunt",
+          "unshakeable under pressure",
+          "loyal to her rigs and her people equally",
+          "surprisingly gentle with animals"
+        ],
+        "appearance_brief": "Clearly adult, ordinary but gorgeous woman: slim, small-chested with little or no prominent bust, attractive hip/seat silhouette, healthy and active. Charismatic, comfortable in herself and sexually confident. No approved art exists for this draft.",
+        "outfit_brief": "Heavy driving coat, gloves built for reins and rope, boots made for standing on a moving wagon box, hair braided tight and out of the way.",
+        "art_status": "unapproved_draft",
+        "seed": null
+      },
+      "recruitment": {
+        "initial_state": "available",
+        "encounter_hook": "Her own freight outfit lost a wagon to a bad crossing and she's short a team and a driver's second pair of hands to finish the run.",
+        "conditions": [
+          "Help her get a heavy wagon through a bad stretch of road.",
+          "Trust her judgment about the team over your own.",
+          "Concepcion accepts the invitation."
+        ],
+        "acceptance_requires_character_choice": true
+      },
+      "relationship": {
+        "initial_stage": "unfamiliar",
+        "trust": 0,
+        "affection": 0,
+        "agreement": "none",
+        "voluntary": true,
+        "presentation": "PG13_fade_to_black",
+        "boundaries": [
+          "Recruitment is separate from romance.",
+          "Affectionate contact requires mutual acceptance.",
+          "Multiple partners require a mutually agreed agreement.",
+          "Mutual attraction and shared play drive romance; no begging or repeated-refusal persuasion loop."
+        ]
+      },
+      "party_role": {
+        "specialty": "freighting and teamster work",
+        "initial_assignment": "none",
+        "availability": "Draft encounter availability; no current party implementation."
+      },
+      "perks": [
+        {
+          "id": "trail_company",
+          "label": "Good Company",
+          "description": "Reuses the existing shared camp-company perk definition rather than authoring a duplicate -- the closest existing fit for the teamster family archetype, since no freight-specific stat exists in the runtime yet.",
+          "activation": "camp",
+          "effect": {
+            "stat": "rest_madness_recovery",
+            "operation": "add",
+            "value": 1,
+            "unit": "madness points per eligible rest"
+          },
+          "stacking_group": "rest_madness_recovery",
+          "stacking_cap": 6,
+          "tuning_status": "provisional"
+        }
+      ],
+      "madness": {
+        "initial_value": 10,
+        "range": [
+          0,
+          100
+        ],
+        "status": "provisional",
+        "personal_stressor": "A team pushed past what they could safely give.",
+        "support_preference": "Physical work alongside someone rather than being minded."
+      },
+      "recovery_offer": {
+        "id": "concepcion_ibarra_shared_rest",
+        "label": "Quiet time together",
+        "requires_trusted_relationship": true,
+        "requires_mutual_acceptance": true,
+        "amount": 10,
+        "game_minutes": 30,
+        "daily_uses": 1,
+        "tuning_status": "provisional"
+      },
+      "continuity_notes": [
+        "Name, appearance and encounter are provisional. She is the first named companion for the 'teamster' family archetype already present in scripts/character_factory.gd's FAMILY_HOOKS.",
+        "Not implemented in scripts/. This is a design-only record awaiting a room."
+      ],
+      "playable_companion": {
+        "status": "design_only",
+        "eligible_for_authored_adventures": true,
+        "control_policy": "Transfer input to this character only during a defined adventure; preserve her own identity, skills, madness and inventory.",
+        "return_policy": "Restore the previous controlled actor at a safe return point on completion or cancellation; recover at a defined checkpoint on failure.",
+        "romance_required_for_control": false
+      },
+      "romance_adventure": {
+        "id": "the_grade_that_takes_wagons",
+        "title": "The Grade That Takes Wagons",
+        "controlled_actor_id": "concepcion_ibarra",
+        "objective": "Play as Concepcion driving a loaded wagon down a genuinely difficult grade, managing brake, team and load together.",
+        "companion_skill": "Directly playable driving-under-load beats: pace, brake timing, reading the team's strain.",
+        "protagonist_support": "The protagonist works the brake block on the protagonist's own signal from her.",
+        "affectionate_payoff": "The wagon levels out at the bottom intact, and she finally lets her shoulders down.",
+        "reward_policy": "Apply the authored relationship milestone once; replay cannot duplicate progression or recovery rewards.",
+        "failure_policy": "Recoverable retry or safe return; no loss of character identity and no forced romantic response.",
+        "duration_target_minutes": 4,
+        "tuning_status": "provisional"
+      }
     }
   ],
   "procedural_template": {
@@ -821,10 +2165,30 @@
       ],
       "background_pool_source_of_truth": "scripts/character_factory.gd's FAMILY_HOOKS keys. Keep this list in sync with that dictionary's keys, not the other way around -- the code is what actually runs.",
       "temperament": [
-        "dry wit", "bright curiosity", "quiet confidence", "playful daring", "warm directness", "patient mischief",
-        "stubborn cheer", "watchful calm", "restless energy", "unhurried patience", "sharp practicality", "gentle stubbornness",
-        "guarded warmth", "loud confidence", "quiet intensity", "easy humor", "careful precision", "reckless generosity",
-        "skeptical kindness", "steady nerve", "wry patience", "open curiosity", "measured pride", "hard-won calm"
+        "dry wit",
+        "bright curiosity",
+        "quiet confidence",
+        "playful daring",
+        "warm directness",
+        "patient mischief",
+        "stubborn cheer",
+        "watchful calm",
+        "restless energy",
+        "unhurried patience",
+        "sharp practicality",
+        "gentle stubbornness",
+        "guarded warmth",
+        "loud confidence",
+        "quiet intensity",
+        "easy humor",
+        "careful precision",
+        "reckless generosity",
+        "skeptical kindness",
+        "steady nerve",
+        "wry patience",
+        "open curiosity",
+        "measured pride",
+        "hard-won calm"
       ],
       "temperament_pool_source_of_truth": "scripts/character_factory.gd's DEFAULT_TEMPERAMENTS array (each family also draws from its own narrower FAMILY_TEMPERAMENTS slice). Keep this list byte-identical to DEFAULT_TEMPERAMENTS.",
       "appearance": [
