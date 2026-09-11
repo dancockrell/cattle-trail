@@ -1,0 +1,550 @@
+{
+  "version": 1,
+  "status": "first_pass",
+  "note": "Road encounters for travel between locations, per design/EXPLORATION.md's 'Encounters on the road' table. Every actor here is already written in design/npcs.json; no new wanderer, cult, tribe, ceremony or god is invented. Prose is house voice per design/LORE.md: work first, short, no lecturing. Resolved by scripts/encounter_table.gd, which is what bounds every number below.",
+  "schema": {
+    "id": "unique, referenced by a location file's 'encounters' array",
+    "npcs": "ids from design/npcs.json or design/characters.json; empty only for weather and country",
+    "kind": "supernatural | wanderer | human | country",
+    "flavour_only": "true means this one is deliberately atmosphere and costs at most time. Marked honestly so nobody counts it as content.",
+    "when": "day | night | either",
+    "weight": "1-100 relative pick weight among eligible encounters on a leg",
+    "where": "locations: location ids either end of the leg; terrain: tags the leg carries; open_trail: true means any open leg qualifies",
+    "max_cattle_loss_fraction": "hard per-encounter ceiling on head lost, applied by the resolver after every effect",
+    "options": "the decision. Each has outcomes with weights; perk_weight shifts an outcome's weight when the party carries that already-resolved perk flag.",
+    "effects": "minutes (int, time spent), cattle_fraction (float of current herd lost), cattle_flat (int head, negative loses, positive gains), condition (float delta on the 0-1 herd condition ECONOMY.md prices), money (int, negative pays), ammunition (int, negative spends), trust (int delta on party trust 0-5)"
+  },
+  "encounters": [
+    {
+      "id": "ford_widow",
+      "name": "The Ford Widow",
+      "npcs": ["the_ford_widow"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 40,
+      "where": {"locations": ["the_narrow_water"], "terrain": ["crossing"], "open_trail": false},
+      "max_cattle_loss_fraction": 0.14,
+      "intro": "She is standing knee deep on the good line, where the bottom is hard. The water goes through her instead of around. The lead steer stops without being asked.",
+      "options": [
+        {
+          "id": "wait_her_out",
+          "label": "Hold the herd and wait.",
+          "requires": {},
+          "outcomes": [
+            {"id": "she_steps_aside", "weight": 60, "text": "She waits until the light changes, then walks upriver. The crossing is a crossing again.", "effects": {"minutes": 180, "condition": -0.03}},
+            {"id": "she_stays_all_night", "weight": 40, "text": "She does not move. You bed the herd on the wrong bank and cross in the morning, hungry and behind.", "effects": {"minutes": 420, "condition": -0.08}, "perk_weight": {"has_spirit_sense": -25}}
+          ]
+        },
+        {
+          "id": "cross_now",
+          "label": "Push them through anyway.",
+          "requires": {},
+          "outcomes": [
+            {"id": "clean_enough", "weight": 45, "text": "You get them over wet and loud. Nothing takes hold of anything.", "effects": {"minutes": 60, "condition": -0.06}, "perk_weight": {"has_steady_herd": 35}},
+            {"id": "bank_gives", "weight": 55, "text": "The far bank goes out under the middle of the drive. You lose head to the water and the rest come up shaking.", "effects": {"minutes": 90, "cattle_fraction": 0.07, "condition": -0.14}}
+          ]
+        },
+        {
+          "id": "ask_what_she_is_owed",
+          "label": "Ask her what the water is owed.",
+          "requires": {},
+          "outcomes": [
+            {"id": "she_answers", "weight": 40, "text": "She tells you where the bottom went soft this spring. You cross where she says. It holds.", "effects": {"minutes": 120, "condition": -0.02}, "perk_weight": {"has_spirit_sense": 45}},
+            {"id": "she_does_not", "weight": 60, "text": "She says he asked the same question. You stand in cold water learning nothing, and the hands watch you do it.", "effects": {"minutes": 150, "condition": -0.05, "trust": -1}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second_shadow",
+      "name": "The Second Shadow",
+      "npcs": ["the_second_shadow", "night_herder_coy"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "night",
+      "weight": 35,
+      "where": {"locations": [], "terrain": ["timber", "plains"], "open_trail": true},
+      "max_cattle_loss_fraction": 0.18,
+      "intro": "Coy calls you over without raising his voice. There is a shadow at the treeline the fire cannot account for, laid down from a direction with no light in it.",
+      "options": [
+        {
+          "id": "build_the_fire",
+          "label": "Build the fire up and put two men on it.",
+          "requires": {"money": 3},
+          "outcomes": [
+            {"id": "it_keeps_off", "weight": 70, "text": "It stays out past the light all night. Nobody sleeps. Nothing is missing at dawn.", "effects": {"minutes": 120, "money": -3, "condition": -0.04}},
+            {"id": "it_works_the_edge", "weight": 30, "text": "It works the far side of the bedground where the light does not reach. Two head are gone and there is no blood to explain them.", "effects": {"minutes": 120, "money": -3, "cattle_flat": -2, "condition": -0.09}}
+          ]
+        },
+        {
+          "id": "move_the_herd",
+          "label": "Stand them up and move off the timber.",
+          "requires": {},
+          "outcomes": [
+            {"id": "clear_ground", "weight": 55, "text": "You put open grass under them by moonlight. It does not follow onto ground it cannot hide in.", "effects": {"minutes": 240, "condition": -0.07}, "perk_weight": {"has_steady_herd": 30}},
+            {"id": "they_scatter", "weight": 45, "text": "Moving cattle in the dark is moving cattle in the dark. They go wide and some of them keep going.", "effects": {"minutes": 300, "cattle_fraction": 0.06, "condition": -0.12}}
+          ]
+        },
+        {
+          "id": "put_a_shot_into_it",
+          "label": "Put a shot into the treeline.",
+          "requires": {"ammunition": 2},
+          "outcomes": [
+            {"id": "it_leaves", "weight": 40, "text": "The noise moves it off. It does not seem hurt. It seems bored.", "effects": {"minutes": 60, "ammunition": -2, "condition": -0.05}, "perk_weight": {"has_steady_aim": 35}},
+            {"id": "herd_goes_up", "weight": 60, "text": "You shoot at a shadow and put nine hundred head on their feet at once. That is the cost of the noise, not the shot.", "effects": {"minutes": 180, "ammunition": -2, "cattle_fraction": 0.08, "condition": -0.15, "trust": -1}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eight_legged_doe",
+      "name": "The Eight-Legged Doe",
+      "npcs": ["the_eight_legged_doe"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 40,
+      "where": {"locations": ["the_salt_flats"], "terrain": ["flats"], "open_trail": false},
+      "max_cattle_loss_fraction": 0.15,
+      "intro": "Something deer-shaped is standing out in the shimmer with more knees than a deer has. The herd sees it before you do and will not take another step toward it.",
+      "options": [
+        {
+          "id": "swing_wide",
+          "label": "Swing the drive wide around it.",
+          "requires": {},
+          "outcomes": [
+            {"id": "long_way_round", "weight": 75, "text": "Two extra hours on ground with no water on it. They walk. That is all you wanted.", "effects": {"minutes": 150, "condition": -0.05}},
+            {"id": "it_moves_too", "weight": 25, "text": "It keeps the same distance the whole way around, which is worse than if it had come at you.", "effects": {"minutes": 240, "condition": -0.10}}
+          ]
+        },
+        {
+          "id": "push_straight_through",
+          "label": "Push them straight past it.",
+          "requires": {},
+          "outcomes": [
+            {"id": "they_go", "weight": 35, "text": "They go because you make them go. Nothing happens. They are worse for it anyway.", "effects": {"minutes": 60, "condition": -0.12}, "perk_weight": {"has_steady_herd": 40}},
+            {"id": "they_break", "weight": 65, "text": "The lead turns back into the drag and the whole thing comes apart on open salt. You spend the afternoon gathering what is left.", "effects": {"minutes": 300, "cattle_fraction": 0.09, "condition": -0.16}}
+          ]
+        },
+        {
+          "id": "read_the_ground",
+          "label": "Walk out and read where it has been.",
+          "requires": {},
+          "outcomes": [
+            {"id": "tracks_end", "weight": 50, "text": "The tracks stop mid stride, both sets. You come back and route around the stretch it walked. The herd takes that line.", "effects": {"minutes": 120, "condition": -0.03}, "perk_weight": {"has_spirit_sense": 50}},
+            {"id": "nothing_to_read", "weight": 50, "text": "Salt holds nothing. You lose an hour learning that and the cattle stand in the sun while you do.", "effects": {"minutes": 90, "condition": -0.08}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drover_who_isnt",
+      "name": "The Drover Who Isn't",
+      "npcs": ["the_drover_who_isnt", "pardo"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 30,
+      "where": {"locations": [], "terrain": [], "open_trail": true},
+      "max_cattle_loss_fraction": 0.10,
+      "intro": "There is a hand riding drag who was not hired. He is good at it. Pardo counts the riders twice and gets two answers.",
+      "options": [
+        {
+          "id": "count_before_supper",
+          "label": "Count the herd before supper, out loud.",
+          "requires": {},
+          "outcomes": [
+            {"id": "count_holds", "weight": 65, "text": "You count with two men and a tally string. The number matches. He is not at the fire when you look up.", "effects": {"minutes": 90, "condition": -0.02}, "perk_weight": {"has_spirit_sense": 30}},
+            {"id": "count_short", "weight": 35, "text": "You count three times and get three numbers. You write down the smallest one because it is the only honest thing to do.", "effects": {"minutes": 150, "cattle_flat": -3, "condition": -0.05}}
+          ]
+        },
+        {
+          "id": "let_him_ride",
+          "label": "Let him work. Say nothing.",
+          "requires": {},
+          "outcomes": [
+            {"id": "free_labour", "weight": 45, "text": "He rides drag for two days and does it better than a paid man. Nothing is missing. Nobody sleeps well.", "effects": {"minutes": 0, "condition": -0.04, "trust": -1}},
+            {"id": "count_comes_up_wrong", "weight": 55, "text": "The count is off by one at Griffin, then off by one again. It is always off by one around him.", "effects": {"minutes": 0, "cattle_fraction": 0.04, "condition": -0.06}}
+          ]
+        },
+        {
+          "id": "send_him_off",
+          "label": "Ride out and tell him to go.",
+          "requires": {},
+          "outcomes": [
+            {"id": "he_goes", "weight": 55, "text": "He touches his hat and turns off the trail. The hands think you fired a working man for nothing and say so with their backs.", "effects": {"minutes": 60, "trust": -1}},
+            {"id": "he_stays_behind_you", "weight": 45, "text": "He goes. He is back at drag by evening, same distance, same posture. You do not ride out a second time.", "effects": {"minutes": 60, "cattle_flat": -1, "condition": -0.07}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split_oak_traveler",
+      "name": "The man from farther west",
+      "npcs": ["the_split_oak_traveler"],
+      "kind": "wanderer",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 45,
+      "where": {"locations": ["split_oak_camp"], "terrain": ["camp"], "open_trail": false},
+      "max_cattle_loss_fraction": 0.05,
+      "intro": "Somebody is already at the fire under the split oak. Road gear that does not belong to any county you can name. He does not ask where you are going, which is its own kind of manners.",
+      "options": [
+        {
+          "id": "buy_his_news",
+          "label": "Put coffee and coin in front of him.",
+          "requires": {"money": 5},
+          "outcomes": [
+            {"id": "worth_it", "weight": 60, "text": "Water on the middle fork, a bridge out, and which buyer at Griffin is short this month. Worth five dollars and the hour.", "effects": {"minutes": 60, "money": -5, "trust": 1}},
+            {"id": "sky_over_the_ocean", "weight": 40, "text": "He says the sky out past the coast was wrong for a week. He did not ask why. Nobody here needs the rest of that story, and you are out five dollars.", "effects": {"minutes": 60, "money": -5}}
+          ]
+        },
+        {
+          "id": "share_the_fire",
+          "label": "Share the fire and say nothing.",
+          "requires": {},
+          "outcomes": [
+            {"id": "quiet_night", "weight": 70, "text": "Two hours of somebody else's quiet. The hands rest better for a face that is not theirs.", "effects": {"minutes": 120, "condition": 0.02, "trust": 1}},
+            {"id": "he_talks_anyway", "weight": 30, "text": "He talks for free about a trail you are about to ride. Half of it you would rather not carry.", "effects": {"minutes": 120, "condition": -0.02}}
+          ]
+        },
+        {
+          "id": "ride_on_past",
+          "label": "Water and go.",
+          "requires": {},
+          "outcomes": [
+            {"id": "no_stop", "weight": 100, "text": "Same fire, different trail every time. You keep the daylight instead.", "effects": {"minutes": 15}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ketch_toll",
+      "name": "Amos Ketch's crew",
+      "npcs": ["the_hendricks_rival_crew_boss"],
+      "kind": "human",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 25,
+      "where": {"locations": [], "terrain": ["plains", "timber"], "open_trail": true},
+      "max_cattle_loss_fraction": 0.20,
+      "intro": "Four riders sitting the trail where it narrows, spread out enough that you have to decide before you get there. Ketch does the talking. He calls it a fee for the grass.",
+      "options": [
+        {
+          "id": "pay_the_fee",
+          "label": "Pay him and keep moving.",
+          "requires": {"money": 20},
+          "outcomes": [
+            {"id": "he_takes_it", "weight": 70, "text": "He counts it twice and moves his men off the trail. Cheap. The hands will remember it was cheap.", "effects": {"minutes": 45, "money": -20, "trust": -1}},
+            {"id": "he_wants_more", "weight": 30, "text": "He takes the money and a steer besides, because you already showed him you would rather pay than argue.", "effects": {"minutes": 60, "money": -20, "cattle_flat": -1, "trust": -1}}
+          ]
+        },
+        {
+          "id": "face_them_down",
+          "label": "Face them down.",
+          "requires": {"ammunition": 4},
+          "outcomes": [
+            {"id": "they_fold", "weight": 45, "text": "Two shots over their heads and a line they do not want to test. They go. It costs powder and an hour of everybody's hands shaking.", "effects": {"minutes": 60, "ammunition": -4, "condition": -0.05, "trust": 1}, "perk_weight": {"has_steady_aim": 45}},
+            {"id": "it_goes_bad", "weight": 55, "text": "It goes the way these go. They take a cut off the drag while the front of the herd runs, and somebody on your side is riding hurt by dark.", "effects": {"minutes": 150, "ammunition": -4, "cattle_fraction": 0.08, "condition": -0.14}}
+          ]
+        },
+        {
+          "id": "swing_off_the_trail",
+          "label": "Give ground and swing off the trail.",
+          "requires": {},
+          "outcomes": [
+            {"id": "long_way", "weight": 65, "text": "Half a day on worse ground. He does not follow. He does not have to.", "effects": {"minutes": 300, "condition": -0.07}},
+            {"id": "they_shadow_you", "weight": 35, "text": "They ride your flank for a day at a distance and take what strays off the back of it.", "effects": {"minutes": 300, "cattle_fraction": 0.05, "condition": -0.09}, "perk_weight": {"has_steady_herd": -20}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lantern_man_fire",
+      "name": "The Lantern Man",
+      "npcs": ["the_lantern_man"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "night",
+      "weight": 25,
+      "where": {"locations": [], "terrain": [], "open_trail": true},
+      "max_cattle_loss_fraction": 0.06,
+      "intro": "A small fire off the trail and an older man beside it who says good evening like he has said it a thousand times. He offers the lantern before you ask for anything.",
+      "options": [
+        {
+          "id": "take_the_lantern",
+          "label": "Take the lantern.",
+          "requires": {},
+          "outcomes": [
+            {"id": "good_light", "weight": 55, "text": "Good light for a night crossing, and you make ground you would not have made. It is hanging on the wagon in the morning. You did not hang it there.", "effects": {"minutes": -60, "condition": -0.03, "trust": -1}},
+            {"id": "hands_will_not_carry_it", "weight": 45, "text": "Nobody will carry it after the first hour. You lose the time you saved arguing about a lantern.", "effects": {"minutes": 60, "condition": -0.05, "trust": -1}}
+          ]
+        },
+        {
+          "id": "decline_politely",
+          "label": "Thank him and ride on.",
+          "requires": {},
+          "outcomes": [
+            {"id": "he_says_good_evening", "weight": 100, "text": "He says he keeps meaning to get back to town. He has been meaning to for some time now.", "effects": {"minutes": 20}}
+          ]
+        },
+        {
+          "id": "sit_with_him",
+          "label": "Sit with him a while.",
+          "requires": {},
+          "outcomes": [
+            {"id": "same_small_talk", "weight": 60, "text": "The same four sentences in the same order, twice. You sit through both. The hands see you do it, and it counts for something.", "effects": {"minutes": 150, "trust": 1}},
+            {"id": "he_asks_the_way", "weight": 40, "text": "He asks directions to a road that was moved before the war. You give them. You are two hours down and no wiser.", "effects": {"minutes": 150, "condition": -0.03}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "night_birds",
+      "name": "The Night Birds",
+      "npcs": ["the_night_birds", "night_herder_coy"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "night",
+      "weight": 30,
+      "where": {"locations": [], "terrain": ["plains", "flats", "timber"], "open_trail": true},
+      "max_cattle_loss_fraction": 0.12,
+      "intro": "Tall bird shapes standing at the edge of the light, too still and too high at the shoulder. The dogs will not settle and the near side of the herd is all facing one way.",
+      "options": [
+        {
+          "id": "stand_them_up",
+          "label": "Stand the herd up and move off the bedground.",
+          "requires": {},
+          "outcomes": [
+            {"id": "new_ground", "weight": 60, "text": "You bed them again two miles on. Whatever it was does not come with you.", "effects": {"minutes": 210, "condition": -0.06}, "perk_weight": {"has_steady_herd": 30}},
+            {"id": "bad_move_in_the_dark", "weight": 40, "text": "Moving a nervous herd at night is how you find out how nervous it was.", "effects": {"minutes": 270, "cattle_fraction": 0.05, "condition": -0.11}}
+          ]
+        },
+        {
+          "id": "hold_and_watch",
+          "label": "Hold where you are and double the watch.",
+          "requires": {},
+          "outcomes": [
+            {"id": "nothing_happens", "weight": 65, "text": "They stand there all night. In the morning there is nothing behind them, not one track, which is its own kind of evidence.", "effects": {"minutes": 120, "condition": -0.05}},
+            {"id": "herd_breaks_at_three", "weight": 35, "text": "Something gives at three in the morning and a piece of the herd goes out through the dark.", "effects": {"minutes": 240, "cattle_fraction": 0.06, "condition": -0.12}}
+          ]
+        },
+        {
+          "id": "walk_out_to_them",
+          "label": "Walk out and look at them properly.",
+          "requires": {},
+          "outcomes": [
+            {"id": "they_are_gone", "weight": 50, "text": "There is nothing out there when you get there. Coy says that is the whole of it, every time.", "effects": {"minutes": 60, "condition": -0.04}, "perk_weight": {"has_spirit_sense": 40}},
+            {"id": "they_do_not_move", "weight": 50, "text": "They do not move while you stand there and you find you would rather they had. You come back and nobody asks.", "effects": {"minutes": 60, "condition": -0.09, "trust": -1}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "talking_walker",
+      "name": "The Talking Walker",
+      "npcs": ["the_talking_walker", "ada_mercer"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 20,
+      "where": {"locations": [], "terrain": ["plains", "flats"], "open_trail": true},
+      "max_cattle_loss_fraction": 0.08,
+      "intro": "A farm walker idling in open grass with no operator and no outfit near it. It says the boiler is low. It says somebody should tend the boiler. It says it again.",
+      "options": [
+        {
+          "id": "shut_the_valve",
+          "label": "Shut the valve down in the right order.",
+          "requires": {},
+          "outcomes": [
+            {"id": "it_stops", "weight": 65, "text": "Valves in order, pressure off, and it stops mid sentence. A broken machine first. There is nothing sitting in the works that you can find.", "effects": {"minutes": 90, "condition": -0.02}},
+            {"id": "scalded", "weight": 35, "text": "It vents wrong and somebody gets a forearm of steam for the trouble. You shut it down anyway, one handed.", "effects": {"minutes": 150, "condition": -0.05, "trust": -1}}
+          ]
+        },
+        {
+          "id": "leave_it_idling",
+          "label": "Leave it and take the herd wide.",
+          "requires": {},
+          "outcomes": [
+            {"id": "clear_of_it", "weight": 55, "text": "You put half a mile of grass between it and the drive. It is still talking when you lose the sound of it.", "effects": {"minutes": 90, "condition": -0.03}},
+            {"id": "it_says_your_name", "weight": 45, "text": "It says it knows your name as the drag goes past, in your name, and the drag does not walk after that so much as leave.", "effects": {"minutes": 120, "cattle_fraction": 0.04, "condition": -0.10}}
+          ]
+        },
+        {
+          "id": "strip_the_brass",
+          "label": "Strip the brass off it.",
+          "requires": {},
+          "outcomes": [
+            {"id": "good_metal", "weight": 60, "text": "Fittings and a pressure gauge worth real money at Griffin. It keeps talking the whole time you work.", "effects": {"minutes": 180, "money": 35, "trust": -1}},
+            {"id": "somebody_owns_it", "weight": 40, "text": "Brass in the wagon and a stencil on the frame belonging to an outfit that will ask about it. You take the metal and the problem.", "effects": {"minutes": 180, "money": 35, "trust": -2, "condition": -0.03}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taken_brand",
+      "name": "The Second Brand",
+      "npcs": ["the_taken_brand"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "day",
+      "weight": 25,
+      "where": {"locations": [], "terrain": [], "open_trail": true},
+      "max_cattle_loss_fraction": 0.05,
+      "intro": "A calf standing off on its own with two brands on the one flank, both clean, both healed the same amount. A hide can honestly carry one.",
+      "options": [
+        {
+          "id": "carry_it_to_the_owner",
+          "label": "Cut it out and take it to whichever outfit will claim it.",
+          "requires": {},
+          "outcomes": [
+            {"id": "claimed", "weight": 60, "text": "Half a day off the route. They take it, look at the flank, and do not say much. You are remembered for bringing it back.", "effects": {"minutes": 300, "condition": -0.04, "trust": 1}},
+            {"id": "neither_claims_it", "weight": 40, "text": "Neither outfit will own the second brand and both watch you ride off with it. You are half a day down and holding somebody's argument.", "effects": {"minutes": 300, "condition": -0.05}}
+          ]
+        },
+        {
+          "id": "put_it_in_the_herd",
+          "label": "Put it in with yours.",
+          "requires": {},
+          "outcomes": [
+            {"id": "one_more_head", "weight": 55, "text": "One more head at Griffin and nobody looks that hard at a calf.", "effects": {"minutes": 30, "cattle_flat": 1, "trust": -1}},
+            {"id": "it_spreads", "weight": 45, "text": "One more head, and inside a week there is a second mark on one of yours that nobody laid.", "effects": {"minutes": 30, "cattle_flat": 1, "condition": -0.08, "trust": -2}}
+          ]
+        },
+        {
+          "id": "leave_the_calf",
+          "label": "Leave it where it stands.",
+          "requires": {},
+          "outcomes": [
+            {"id": "ride_past", "weight": 100, "text": "Not your calf, not your brand, not your argument. Pardo does not agree and does not say so.", "effects": {"minutes": 15, "trust": -1}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bellhollow_bell",
+      "name": "The bell at Bellhollow",
+      "npcs": ["bellhollow_bell", "gideon_stark", "the_stark_widow_sister"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "either",
+      "weight": 40,
+      "where": {"locations": ["bellhollow"], "terrain": ["scrub_hill"], "open_trail": false},
+      "max_cattle_loss_fraction": 0.10,
+      "intro": "The bell in the workings goes off while you are watering. Gideon Stark does not look up from what he is doing. Eulalie counts the rings under her breath and stops at six.",
+      "options": [
+        {
+          "id": "water_and_go",
+          "label": "Water fast and get off the hill.",
+          "requires": {},
+          "outcomes": [
+            {"id": "out_clean", "weight": 70, "text": "Half a tank short and moving. The bell is still going when the hill is behind you.", "effects": {"minutes": 60, "condition": -0.05}},
+            {"id": "short_water", "weight": 30, "text": "You leave short and pay for it on the dry stretch after.", "effects": {"minutes": 60, "cattle_fraction": 0.03, "condition": -0.09}}
+          ]
+        },
+        {
+          "id": "go_down_to_the_workings",
+          "label": "Go look at what is ringing it.",
+          "requires": {},
+          "outcomes": [
+            {"id": "nothing_down_there", "weight": 50, "text": "A rope, a collapsed drift, and nobody. You come back up and the bell is quiet and the hands are watching the hole.", "effects": {"minutes": 180, "condition": -0.04}, "perk_weight": {"has_spirit_sense": 35}},
+            {"id": "bad_air", "weight": 50, "text": "Bad air forty feet in and you carry a man out. Nothing learned and a day half gone.", "effects": {"minutes": 300, "condition": -0.06, "trust": -1}}
+          ]
+        },
+        {
+          "id": "pay_stark_for_the_ground",
+          "label": "Pay Stark for the graze and stay the night.",
+          "requires": {"money": 10},
+          "outcomes": [
+            {"id": "quiet_night", "weight": 55, "text": "Ten dollars, good scrub graze, and the bell does not go again. Eulalie says that means nothing. She says it twice.", "effects": {"minutes": 480, "money": -10, "condition": 0.04}},
+            {"id": "it_rings_all_night", "weight": 45, "text": "It rings at intervals all night and the herd is up at every one of them. You paid ten dollars for that.", "effects": {"minutes": 480, "money": -10, "condition": -0.10}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiet_rows_caretaker",
+      "name": "The Quiet Rows",
+      "npcs": ["quiet_rows_caretaker"],
+      "kind": "supernatural",
+      "flavour_only": false,
+      "when": "day",
+      "weight": 40,
+      "where": {"locations": ["the_quiet_rows"], "terrain": ["cemetery"], "open_trail": false},
+      "max_cattle_loss_fraction": 0.04,
+      "intro": "The fence is kept up and the grass is cut. Nobody in the outfit has met whoever does it. Ines counted eleven stones last time through.",
+      "options": [
+        {
+          "id": "count_the_stones",
+          "label": "Count them.",
+          "requires": {},
+          "outcomes": [
+            {"id": "eleven", "weight": 45, "text": "Eleven. You write it down this time so the next argument is shorter.", "effects": {"minutes": 45}},
+            {"id": "twelve", "weight": 55, "text": "Twelve, and the new one is weathered like the rest. You write that down too.", "effects": {"minutes": 45, "condition": -0.03, "trust": -1}}
+          ]
+        },
+        {
+          "id": "leave_something",
+          "label": "Leave money on the gatepost for the upkeep.",
+          "requires": {"money": 2},
+          "outcomes": [
+            {"id": "gone_by_morning", "weight": 100, "text": "Two dollars on the post. It is gone when you pass back through and the grass is still cut.", "effects": {"minutes": 30, "money": -2, "trust": 1}}
+          ]
+        },
+        {
+          "id": "water_and_move_on",
+          "label": "Water at the fence line and keep going.",
+          "requires": {},
+          "outcomes": [
+            {"id": "ordinary_plot", "weight": 100, "text": "Ordinary graves in ordinary daylight, which is what makes them sit wrong.", "effects": {"minutes": 30}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plains_weather",
+      "name": "Weather off the plains",
+      "npcs": [],
+      "kind": "country",
+      "flavour_only": true,
+      "when": "day",
+      "weight": 35,
+      "where": {"locations": [], "terrain": ["plains", "timber"], "open_trail": true},
+      "max_cattle_loss_fraction": 0.0,
+      "intro": "Weather comes off the plains faster than a man wants. It goes around you this time. You watch it go around you.",
+      "options": [
+        {
+          "id": "ride_through_it",
+          "label": "Keep riding.",
+          "requires": {},
+          "outcomes": [
+            {"id": "it_passes", "weight": 100, "text": "Wet hats, dry ground an hour later. Nothing to write down.", "effects": {"minutes": 30}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "night_coyotes",
+      "name": "Coyotes, ordinary ones",
+      "npcs": [],
+      "kind": "country",
+      "flavour_only": true,
+      "when": "night",
+      "weight": 30,
+      "where": {"locations": [], "terrain": [], "open_trail": true},
+      "max_cattle_loss_fraction": 0.0,
+      "intro": "Coyotes working a line north of the bedground, arguing about something that is already dead. Ordinary ones. You can tell by how much noise they are willing to make.",
+      "options": [
+        {
+          "id": "let_them_argue",
+          "label": "Let them argue.",
+          "requires": {},
+          "outcomes": [
+            {"id": "quiet_by_two", "weight": 100, "text": "Quiet by two. The herd never got up. Somebody says it is a good sign and nobody disagrees out loud.", "effects": {"minutes": 15}}
+          ]
+        }
+      ]
+    }
+  ]
+}
