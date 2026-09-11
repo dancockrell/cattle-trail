@@ -1,0 +1,1637 @@
+{
+  "id": "clear_fork",
+  "name": "Clear Fork",
+  "kind": "home",
+  "blurb": "Home water. Six head, a wagon, and a man on the far bank who did not ride in to help.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "bounds": {
+    "x": [
+      24,
+      616
+    ],
+    "y": [
+      71,
+      303
+    ]
+  },
+  "arrivals": {
+    "x": 199,
+    "y": 231
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "trees",
+        "frame": 1,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "position": [
+          55,
+          103
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_001"
+      },
+      {
+        "family": "trees",
+        "frame": 20,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "position": [
+          280,
+          108
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_020"
+      },
+      {
+        "family": "trees",
+        "frame": 22,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "position": [
+          436,
+          100
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_022"
+      },
+      {
+        "family": "trees",
+        "frame": 2,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "position": [
+          586,
+          104
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_002"
+      },
+      {
+        "family": "trees",
+        "frame": 14,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "position": [
+          363,
+          94
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_014"
+      },
+      {
+        "family": "rocks",
+        "frame": 16,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          32,
+          276
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_016"
+      },
+      {
+        "family": "rocks",
+        "frame": 3,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          603,
+          288
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_003"
+      },
+      {
+        "family": "rocks",
+        "frame": 9,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          437,
+          302
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_009"
+      },
+      {
+        "family": "rocks",
+        "frame": 25,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          192,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          163,
+          303
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_025"
+      },
+      {
+        "family": "rocks",
+        "frame": 1,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          360,
+          103
+        ],
+        "collision_radius": 12,
+        "source_frame_id": "rocks_001"
+      },
+      {
+        "family": "rocks",
+        "frame": 1,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "position": [
+          466,
+          124
+        ],
+        "collision_radius": 12,
+        "source_frame_id": "rocks_001"
+      },
+      {
+        "family": "scrub",
+        "frame": 0,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          50,
+          323
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_000"
+      },
+      {
+        "family": "scrub",
+        "frame": 2,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          205,
+          93
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_002"
+      },
+      {
+        "family": "scrub",
+        "frame": 4,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          464,
+          303
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_004"
+      },
+      {
+        "family": "scrub",
+        "frame": 8,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          578,
+          317
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_008"
+      },
+      {
+        "family": "scrub",
+        "frame": 12,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          322,
+          315
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_012"
+      },
+      {
+        "family": "camp",
+        "frame": 0,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          64,
+          139
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_000"
+      },
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          51,
+          119
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004"
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          108,
+          148
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009"
+      },
+      {
+        "family": "camp",
+        "frame": 7,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          125,
+          139
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_007"
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "position": [
+          49,
+          163
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012"
+      },
+      {
+        "family": "grass",
+        "frame": 0,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          76,
+          285
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_000"
+      },
+      {
+        "family": "grass",
+        "frame": 1,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          123,
+          304
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_001"
+      },
+      {
+        "family": "grass",
+        "frame": 3,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          216,
+          305
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_003"
+      },
+      {
+        "family": "grass",
+        "frame": 4,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          255,
+          318
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_004"
+      },
+      {
+        "family": "grass",
+        "frame": 5,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          346,
+          292
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_005"
+      },
+      {
+        "family": "grass",
+        "frame": 8,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          398,
+          313
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_008"
+      },
+      {
+        "family": "grass",
+        "frame": 9,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          522,
+          297
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_009"
+      },
+      {
+        "family": "grass",
+        "frame": 10,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          565,
+          277
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_010"
+      },
+      {
+        "family": "grass",
+        "frame": 12,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          598,
+          121
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_012"
+      },
+      {
+        "family": "grass",
+        "frame": 13,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          410,
+          96
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_013"
+      },
+      {
+        "family": "grass",
+        "frame": 0,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          315,
+          109
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_000"
+      },
+      {
+        "family": "grass",
+        "frame": 1,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          169,
+          97
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_001"
+      },
+      {
+        "family": "grass",
+        "frame": 3,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          234,
+          72
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_003"
+      },
+      {
+        "family": "grass",
+        "frame": 4,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          462,
+          91
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_004"
+      },
+      {
+        "family": "grass",
+        "frame": 5,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          542,
+          95
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_005"
+      },
+      {
+        "family": "grass",
+        "frame": 8,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          37,
+          205
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_008"
+      },
+      {
+        "family": "grass",
+        "frame": 9,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          611,
+          223
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_009"
+      },
+      {
+        "family": "grass",
+        "frame": 10,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          90,
+          185
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_010"
+      },
+      {
+        "family": "grass",
+        "frame": 12,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          446,
+          267
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_012"
+      },
+      {
+        "family": "grass",
+        "frame": 13,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "position": [
+          194,
+          278
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_013"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 0,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          22,
+          169
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 1,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          18,
+          245
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 2,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          39,
+          312
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_04"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 3,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          75,
+          333
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_07"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 4,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          114,
+          330
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 5,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          152,
+          340
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 6,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          194,
+          327
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_04"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 7,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          234,
+          338
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 8,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          277,
+          330
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 9,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          307,
+          345
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_03"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 10,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          349,
+          333
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_07"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 0,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          384,
+          342
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 1,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          425,
+          334
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 2,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          470,
+          344
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_04"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 3,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          0,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          511,
+          333
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "dry_grass_07"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 4,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          553,
+          341
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 5,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          598,
+          332
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 6,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          618,
+          270
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "mixed_grass_04"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 7,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          256,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          620,
+          234
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 8,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          619,
+          198
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_02"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 9,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          619,
+          156
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_03"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 10,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          608,
+          94
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "flowers_07"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 11,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          561,
+          84
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "shrubs_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 12,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          0,
+          768,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          485,
+          82
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "shrubs_03"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 13,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          256,
+          768,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          331,
+          81
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "shrubs_06"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 14,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          512,
+          768,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          236,
+          84
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "rocks_01"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 15,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          768,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          171,
+          81
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "rocks_03"
+      },
+      {
+        "family": "texas_groundcover",
+        "frame": 11,
+        "texture": "res://assets/texas-scenery.png",
+        "region": [
+          768,
+          512,
+          256,
+          256
+        ],
+        "anchor": [
+          128,
+          244
+        ],
+        "position": [
+          25,
+          121
+        ],
+        "pixels_per_world_unit": 4,
+        "ground_cover": true,
+        "collision_radius": 0,
+        "source_frame_id": "shrubs_01"
+      }
+    ]
+  },
+  "cast": [
+    {
+      "id": "wagon",
+      "role": "prop",
+      "x": 91,
+      "y": 111
+    },
+    {
+      "id": "eleanor",
+      "role": "companion",
+      "x": 148,
+      "y": 127
+    },
+    {
+      "id": "rider",
+      "role": "player"
+    },
+    {
+      "id": "rustler",
+      "role": "rustler",
+      "x": 550,
+      "y": 164
+    },
+    {
+      "id": "longhorn",
+      "role": "cattle",
+      "x": 294,
+      "y": 158
+    },
+    {
+      "id": "cream",
+      "role": "cattle",
+      "x": 350,
+      "y": 183
+    },
+    {
+      "id": "spotted",
+      "role": "cattle",
+      "x": 408,
+      "y": 155
+    },
+    {
+      "id": "longhorn",
+      "role": "cattle",
+      "x": 278,
+      "y": 240
+    },
+    {
+      "id": "cream",
+      "role": "cattle",
+      "x": 360,
+      "y": 253
+    },
+    {
+      "id": "spotted",
+      "role": "cattle",
+      "x": 421,
+      "y": 223
+    }
+  ],
+  "markers": [
+    {
+      "text": "EAST GATHERING\nBring all six here",
+      "x": 482,
+      "y": 75
+    }
+  ],
+  "goal_area": [
+    475,
+    110,
+    125,
+    155
+  ],
+  "blockers": [
+    {
+      "id": "wagon",
+      "rect": [
+        39,
+        73,
+        100,
+        42
+      ]
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "fort_griffin",
+      "providence",
+      "split_oak_camp",
+      "the_calloway_spread",
+      "the_narrow_water",
+      "the_quiet_rows",
+      "the_salt_flats"
+    ],
+    "hours": 4
+  },
+  "art_gap": "Reads as open river prairie with a camp and a wagon, which is what it is. No buildings and no water: the Clear Fork itself is not drawn. The cast carries the wagon, the rustler and the six head as art-manifest ids because the project has no written person record for a rustler."
+}

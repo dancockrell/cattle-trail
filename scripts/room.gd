@@ -4,9 +4,21 @@ const Actor = preload("res://scripts/actor.gd")
 const SpeechBubble = preload("res://scripts/speech_bubble.gd")
 const CompanionRoom = preload("res://scripts/companion_room.gd")
 const BanterQueue = preload("res://scripts/banter_queue.gd")
+const Location = preload("res://scripts/location.gd")
 const WORLD := Vector2(640, 360)
-const CORRAL := Rect2(475, 110, 125, 155)
-const WAGON_FOOTPRINT := Rect2(39,73,100,42)
+## The place this room opens on. Clear Fork is a file under data/locations like
+## every other location; there is no hardcoded room left underneath it. If that
+## file is missing or fails validation the room refuses to build and says why,
+## rather than falling back to something that only looks right.
+const HOME_LOCATION := "clear_fork"
+## Both of these used to be constants describing Clear Fork. They are now read
+## off the loaded location, so moving the gathering or the wagon is an edit to
+## a JSON file. WAGON_FOOTPRINT keeps its old name because
+## tools/cart_clearance_test.gd reads it by that name.
+var CORRAL := Rect2()
+var WAGON_FOOTPRINT := Rect2()
+var blockers: Array[Rect2] = []
+var location
 const LEAD_SECONDS := 18.0
 ## Gunplay constants. Every one of these is a decision the player can feel:
 ## how far a round carries, how big a man is to hit, what a reload costs, and
@@ -125,6 +137,12 @@ var pending_shot := false
 var pending_aim := Vector2.RIGHT
 var scenery: Node2D
 var solid_scenery: Array = []
+var ground_sprite: Sprite2D
+## Everything populate_location() put in the world, so travel can take exactly
+## that back out again and leave the rope, the shot line and the UI alone.
+var location_nodes: Array[Node] = []
+## Cast this location names that the art manifest has no sprite for.
+var unrendered_cast: Array[String] = []
 var sequence_walking := false
 var stride_subjects: Array[Node2D] = []
 var speech: Control
@@ -133,12 +151,46 @@ var pending_banter = BanterQueue.new()
 var motion_review_heading := Vector2.RIGHT
 var companion: RefCounted
 
+## The location is data, so it is read before any node exists. Headless checks
+## that build a bare Room and call limit_position() get the same bounds and the
+## same wagon the played room gets, from the same file.
+func _init() -> void:
+	adopt_location(Location.load_location(HOME_LOCATION))
+
+
+## Take a loaded location as this room's ground truth. Refuses an invalid one
+## by name: a location that failed validation must never be half applied.
+##
+## announce is false only in tools/location_test.gd, which exercises the
+## refusal on purpose: tools/verify_godot.py treats any engine ERROR line as a
+## failed run, so a deliberate refusal cannot shout through push_error. The
+## return value is the same either way, and it is the return value the caller
+## acts on.
+func adopt_location(candidate, announce := true) -> bool:
+	if candidate == null or not candidate.valid:
+		var reason: String = "no location supplied" if candidate == null else str(candidate.fault_report())
+		if announce: push_error("Room refused a location: " + reason)
+		print("ROOM LOCATION REFUSED: ", reason)
+		return false
+	location = candidate
+	CORRAL = location.goal_area
+	blockers.clear()
+	WAGON_FOOTPRINT = Rect2()
+	for blocker in location.blockers:
+		blockers.append(blocker.rect)
+		if str(blocker.id) == "wagon": WAGON_FOOTPRINT = blocker.rect
+	return true
+
+
 func _ready() -> void:
 	if "--kits" in OS.get_cmdline_user_args() and not get_tree().has_meta("kits_opened"):
 		get_tree().set_meta("kits_opened", true)
 		get_tree().change_scene_to_file.call_deferred("res://scenes/kit_browser.tscn")
 		return
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	if location == null:
+		push_error("Room cannot build: no valid location was loaded")
+		return
 	var art_path := "res://assets/sprites.json" if "--original" in OS.get_cmdline_user_args() else "res://assets/room-art.json"
 	manifest = JSON.parse_string(FileAccess.get_file_as_string(art_path))
 	ride_speed = float(manifest.sprites.rider.get("locomotion",{}).get("travel_speed",96.0))
@@ -150,32 +202,9 @@ func _ready() -> void:
 	add_child(viewport)
 	world = Node2D.new()
 	viewport.add_child(world)
-	var background := Sprite2D.new()
-	background.texture = load(manifest.get("ground", {}).get("texture", "res://assets/room.png"))
-	background.centered = false
-	world.add_child(background)
 	actors = Node2D.new()
 	actors.y_sort_enabled = true
-	world.add_child(actors)
-	place_scenery()
-	spawn("wagon", Vector2(91, 111))
-	eleanor = spawn("eleanor", Vector2(148, 127))
-	player = spawn("rider", Vector2(199, 231))
-	player.action_event.connect(on_player_action_event)
-	rustler = spawn("rustler", Vector2(550, 164))
-	for i in range(6):
-		var positions := [Vector2(294,158),Vector2(350,183),Vector2(408,155),Vector2(278,240),Vector2(360,253),Vector2(421,223)]
-		var cow := spawn(["longhorn", "cream", "spotted"][i % 3], positions[i])
-		cows.append(cow)
-	var gathering := Label.new()
-	gathering.text = "EAST GATHERING\nBring all six here"
-	gathering.position = Vector2(482, 75)
-	gathering.add_theme_font_size_override("font_size", 12)
-	gathering.add_theme_color_override("font_color", Color("fff0c4"))
-	gathering.add_theme_color_override("font_shadow_color", Color("382513"))
-	gathering.add_theme_constant_override("shadow_offset_x", 1)
-	gathering.add_theme_constant_override("shadow_offset_y", 1)
-	world.add_child(gathering)
+	populate_location()
 	rope = Line2D.new()
 	rope.width = 1.0
 	rope.default_color = Color("edcf87")
@@ -266,7 +295,97 @@ func spawn(id: String, at: Vector2) -> Node2D:
 	actor.configure(id, manifest.sprites[id])
 	actor.position = at
 	actors.add_child(actor)
+	location_nodes.append(actor)
 	return actor
+
+
+## Build the ground, the props, the cast and the map labels of whatever
+## location this room has adopted. _ready and travel_to() both come through
+## here; there is no second way to build a room, and no branch anywhere that
+## knows the word "clear_fork".
+func populate_location() -> void:
+	ground_sprite = Sprite2D.new()
+	ground_sprite.texture = load(location.ground_texture)
+	ground_sprite.centered = false
+	ground_sprite.modulate = location.ground_modulate
+	world.add_child(ground_sprite)
+	world.move_child(ground_sprite, 0)
+	location_nodes.append(ground_sprite)
+	if actors.get_parent() == null: world.add_child(actors)
+	place_scenery()
+	unrendered_cast.clear()
+	for member in location.cast:
+		var sprite_id := str(member.sprite)
+		# The county is written well ahead of the art. A person with no sprite
+		# in the art manifest is named out loud and left undrawn rather than
+		# crashing the room or being quietly dropped; each location's art_gap
+		# field is where that shortfall is meant to be recorded.
+		if not manifest.sprites.has(sprite_id):
+			unrendered_cast.append("%s (%s)" % [str(member.id), str(member.role)])
+			continue
+		var actor := spawn(sprite_id, member.position as Vector2)
+		match str(member.role):
+			"player":
+				player = actor
+				player.action_event.connect(on_player_action_event)
+			"companion": eleanor = actor
+			"rustler": rustler = actor
+			"cattle": cows.append(actor)
+	# A location need not list the player. When it does, that entry only says
+	# where in the build order the rider goes; where he stands is arrivals,
+	# either way, and there is one line that puts him there.
+	if player == null:
+		player = spawn("rider", location.arrival)
+		player.action_event.connect(on_player_action_event)
+	if not unrendered_cast.is_empty():
+		print("LOCATION ART GAP: %s has no sprite for %s" % [location.id, ", ".join(unrendered_cast)])
+	for marker in location.markers:
+		var label := Label.new()
+		label.text = str(marker.text)
+		label.position = marker.position as Vector2
+		label.add_theme_font_size_override("font_size", 12)
+		label.add_theme_color_override("font_color", Color("fff0c4"))
+		label.add_theme_color_override("font_shadow_color", Color("382513"))
+		label.add_theme_constant_override("shadow_offset_x", 1)
+		label.add_theme_constant_override("shadow_offset_y", 1)
+		world.add_child(label)
+		# Directly behind the actors node, where the hand-placed label sat.
+		world.move_child(label, actors.get_index() + 1)
+		location_nodes.append(label)
+
+
+## The seam the travel system calls. Loads the named location, refuses it by
+## name if it does not validate, and only then takes the old place apart. A
+## rejected destination leaves the player standing where they were.
+func travel_to(location_id: String) -> bool:
+	var destination = Location.load_location(location_id)
+	if destination == null or not destination.valid:
+		message = "That road does not go anywhere yet."
+		push_error("Travel refused: " + ("no location" if destination == null else destination.fault_report()))
+		return false
+	for node in location_nodes:
+		if not is_instance_valid(node): continue
+		# Out of the tree now, freed at idle. queue_free() alone would leave the
+		# old place's props and people still counted as children of the world
+		# for the rest of the frame, and the new location is built this frame.
+		if node.get_parent() != null: node.get_parent().remove_child(node)
+		node.queue_free()
+	location_nodes.clear()
+	solid_scenery.clear()
+	cows.clear()
+	player = null
+	eleanor = null
+	rustler = null
+	adopt_location(destination)
+	populate_location()
+	target = Vector2.INF
+	rope_target = null
+	rope_time = 0.0
+	talked = false
+	spoken_beats.clear()
+	if is_instance_valid(title): title.text = "CATTLE TRAIL  /  " + location.display_name.to_upper()
+	refresh()
+	return true
 
 func _process(delta: float) -> void:
 	if is_instance_valid(speech): speech.tick(delta,view)
@@ -295,7 +414,7 @@ func say_once(beat: String, actor: Node2D, name_text: String, line: String, impo
 		pending_banter.offer(beat,{"actor_id":actor.get_instance_id(),"speaker":name_text,"text":line,"height":height},importance,6.0)
 
 func place_scenery() -> void:
-	for entry in manifest.get("scenery", []):
+	for entry in location.scenery:
 		var prop := Sprite2D.new()
 		var region := AtlasTexture.new()
 		region.atlas = load(entry.texture)
@@ -313,7 +432,8 @@ func place_scenery() -> void:
 			world.move_child(prop, actors.get_index())
 		else:
 			actors.add_child(prop)
-		if float(entry.collision_radius) > 0:
+		location_nodes.append(prop)
+		if float(entry.get("collision_radius", 0)) > 0:
 			solid_scenery.append(entry)
 
 func panel_style() -> StyleBoxTexture:
@@ -326,7 +446,7 @@ func panel_style() -> StyleBoxTexture:
 
 func build_ui() -> void:
 	title = Label.new()
-	title.text = "CATTLE TRAIL  /  CLEAR FORK"
+	title.text = "CATTLE TRAIL  /  " + location.display_name.to_upper()
 	title.add_theme_font_size_override("font_size", 24)
 	title.add_theme_color_override("font_color", Color("f7d79b"))
 	add_child(title)
@@ -616,13 +736,16 @@ func _physics_process(delta: float) -> void:
 
 func limit_position(at: Vector2, extra_clearance := 0.0) -> Vector2:
 	var extra := clampf(extra_clearance,0,24) if is_finite(extra_clearance) else 0.0
-	var low := Vector2(24,71)+Vector2.ONE*extra
-	var high := Vector2(616,303)-Vector2.ONE*extra
+	# The walkable ground is the location's, not this script's.
+	var walkable: Rect2 = location.bounds
+	var low := walkable.position+Vector2.ONE*extra
+	var high := walkable.end-Vector2.ONE*extra
 	var result := at.clamp(low, high)
-	# All moving actors use the same wagon footprint, including lassoed cattle.
-	var wagon := WAGON_FOOTPRINT.grow(extra)
-	if wagon.has_point(result):
-		var exits := [Vector2(wagon.position.x-.1,result.y),Vector2(wagon.end.x+.1,result.y),Vector2(result.x,wagon.position.y-.1),Vector2(result.x,wagon.end.y+.1)]
+	# All moving actors use the same solid footprints, including lassoed cattle.
+	for footprint in blockers:
+		var box := footprint.grow(extra)
+		if not box.has_point(result): continue
+		var exits := [Vector2(box.position.x-.1,result.y),Vector2(box.end.x+.1,result.y),Vector2(result.x,box.position.y-.1),Vector2(result.x,box.end.y+.1)]
 		var closest := Vector2.INF
 		for point in exits:
 			if point != point.clamp(low,high): continue
@@ -739,15 +862,17 @@ func first_blocker(from: Vector2, to: Vector2) -> Vector2:
 		if from.distance_to(point) < best_distance:
 			best_distance = from.distance_to(point)
 			best = point
-	var corners := [WAGON_FOOTPRINT.position, Vector2(WAGON_FOOTPRINT.end.x, WAGON_FOOTPRINT.position.y),
-		WAGON_FOOTPRINT.end, Vector2(WAGON_FOOTPRINT.position.x, WAGON_FOOTPRINT.end.y)]
-	for index in range(4):
-		var crossing = Geometry2D.segment_intersects_segment(from, to, corners[index], corners[(index + 1) % 4])
-		if crossing == null: continue
-		var point: Vector2 = crossing
-		if from.distance_to(point) < best_distance:
-			best_distance = from.distance_to(point)
-			best = point
+	# Solid footprints stop a bullet the same way they stop a horse.
+	for footprint in blockers:
+		var corners := [footprint.position, Vector2(footprint.end.x, footprint.position.y),
+			footprint.end, Vector2(footprint.position.x, footprint.end.y)]
+		for index in range(4):
+			var crossing = Geometry2D.segment_intersects_segment(from, to, corners[index], corners[(index + 1) % 4])
+			if crossing == null: continue
+			var point: Vector2 = crossing
+			if from.distance_to(point) < best_distance:
+				best_distance = from.distance_to(point)
+				best = point
 	return best
 
 ## One bullet, resolved the same way for both shooters: a line from the muzzle,
@@ -1037,13 +1162,13 @@ func rustler_outcome() -> Dictionary:
 func eleanor_closing_line() -> String:
 	if rustler_fate != "": return str(RUSTLER_FATES[rustler_fate].eleanor_line)
 	if rustler_surrendered: return "Eleanor: That rustler is still sitting out there waiting on you. Say your piece."
-	return "Eleanor: Clear Fork is behind us."
+	return "Eleanor: %s is behind us." % location.display_name
 
 func refresh() -> void:
 	if not is_instance_valid(stats): return
 	var gun_state := "  RELOADING" if reload_time > 0 else ("  SHAKING %d" % strain if strain > 0 else "")
 	stats.text = "$%d    CATTLE %d/6    AMMO %d%s    %s" % [cash,secured_count(),ammo,gun_state,companion.clock_label() if companion != null else "Day 1 12:00"]
-	objective.text = "CLEAR FORK COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
+	objective.text = location.display_name.to_upper() + " COMPLETE" if won else "Talk to Eleanor  /  Clear the rustler  /  Gather six cattle east"
 	if rustler_tell > 0:
 		objective.text = "HE IS LINING UP ON YOU  /  Break his line or put the wagon between you"
 	if rustler_choice_pending():
