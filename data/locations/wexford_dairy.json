@@ -1,0 +1,563 @@
+{
+  "id": "wexford_dairy",
+  "name": "The Wexford Dairy",
+  "kind": "spread",
+  "blurb": "Milk cows on the only good water for a mile, and a neighbour who wants it.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.95,
+      1.03,
+      0.91,
+      1.0
+    ],
+    "modulate_note": "Greener than anywhere else in the county. This is watered ground and the whole argument here is about that water, so the ground has to show it."
+  },
+  "bounds": {
+    "x": [
+      40,
+      600
+    ],
+    "y": [
+      84,
+      300
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          177,
+          70
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          298,
+          286
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          40,
+          129
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          436,
+          203
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 12,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_012",
+        "position": [
+          127,
+          287
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 15,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_015",
+        "position": [
+          377,
+          197
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 2,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_002",
+        "position": [
+          488,
+          109
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 5,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_005",
+        "position": [
+          44,
+          170
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 8,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_008",
+        "position": [
+          406,
+          97
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 2,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_002",
+        "position": [
+          279,
+          138
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 5,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_005",
+        "position": [
+          389,
+          117
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 8,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_008",
+        "position": [
+          518,
+          192
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 11,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_011",
+        "position": [
+          516,
+          98
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 14,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_014",
+        "position": [
+          352,
+          211
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 17,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_017",
+        "position": [
+          371,
+          154
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 20,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_020",
+        "position": [
+          329,
+          171
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 23,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_023",
+        "position": [
+          320,
+          221
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 6,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_006",
+        "position": [
+          284,
+          208
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 9,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_009",
+        "position": [
+          113,
+          161
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 12,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_012",
+        "position": [
+          597,
+          79
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 5,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_005",
+        "position": [
+          190,
+          308
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 8,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_008",
+        "position": [
+          207,
+          154
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 11,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_011",
+        "position": [
+          364,
+          290
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 540,
+    "y": 280
+  },
+  "cast": [
+    {
+      "id": "briony_wexford",
+      "x": 378,
+      "y": 135,
+      "role": "recruit"
+    },
+    {
+      "id": "the_wexford_dairy_neighbor",
+      "x": 257,
+      "y": 105,
+      "role": "talk"
+    },
+    {
+      "id": "araceli_pena",
+      "x": 78,
+      "y": 157,
+      "role": "recruit"
+    },
+    {
+      "id": "dorcas_pym",
+      "x": 100,
+      "y": 228,
+      "role": "recruit"
+    },
+    {
+      "id": "the_pym_terrier",
+      "x": 574,
+      "y": 222,
+      "role": "talk"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "fort_griffin"
+    ],
+    "hours": 3
+  },
+  "stakes": {
+    "do": "Buy cheese and butter cheaper than Griffin. Stand in a water argument that is exactly the county's big one shrunk to two families.",
+    "lose": "Briony Wexford's season, and the outfit's standing with whichever of the two you cross.",
+    "decide": "Whether to back Briony or Hosea Pruett over the water, or refuse both and buy anyway."
+  },
+  "art_gap": "Reads as fenced grass, which is close to right. Needs a milk shed, a stock tank and dairy cows distinct from longhorns. The cattle sprite on hand is a longhorn."
+}

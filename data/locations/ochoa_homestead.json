@@ -1,0 +1,639 @@
+{
+  "id": "ochoa_homestead",
+  "name": "The Ochoa Homestead",
+  "kind": "spread",
+  "blurb": "One widow, one boy, a good garden, and whoever is sick this week.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.0,
+      0.99,
+      0.92,
+      1.0
+    ],
+    "modulate_note": "Plain working daylight, a hair warm. This place is deliberately the most ordinary ground in the county: no tint trick, because the point of it is that nothing here is strange."
+  },
+  "bounds": {
+    "x": [
+      48,
+      592
+    ],
+    "y": [
+      88,
+      298
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 4,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_004",
+        "position": [
+          62,
+          279
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 7,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_007",
+        "position": [
+          47,
+          223
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 10,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_010",
+        "position": [
+          207,
+          118
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 13,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_013",
+        "position": [
+          184,
+          160
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          424,
+          84
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          490,
+          217
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          328,
+          99
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          517,
+          296
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 7,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_007",
+        "position": [
+          127,
+          293
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 10,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_010",
+        "position": [
+          48,
+          123
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 13,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_013",
+        "position": [
+          64,
+          83
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 0,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_000",
+        "position": [
+          117,
+          232
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          428,
+          271
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 6,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_006",
+        "position": [
+          437,
+          105
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 9,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_009",
+        "position": [
+          249,
+          211
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 12,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_012",
+        "position": [
+          480,
+          191
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 15,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_015",
+        "position": [
+          403,
+          303
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 18,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_018",
+        "position": [
+          449,
+          265
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 21,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_021",
+        "position": [
+          531,
+          268
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 24,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_024",
+        "position": [
+          269,
+          227
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 27,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_027",
+        "position": [
+          290,
+          168
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 30,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_030",
+        "position": [
+          249,
+          182
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 1,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_001",
+        "position": [
+          315,
+          300
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 3,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_003",
+        "position": [
+          371,
+          174
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 6,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_006",
+        "position": [
+          155,
+          221
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 9,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_009",
+        "position": [
+          294,
+          81
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 100,
+    "y": 268
+  },
+  "cast": [
+    {
+      "id": "elena_ochoa",
+      "x": 389,
+      "y": 125,
+      "role": "talk"
+    },
+    {
+      "id": "the_ochoa_boy",
+      "x": 512,
+      "y": 250,
+      "role": "talk"
+    },
+    {
+      "id": "marguerite_solis",
+      "x": 102,
+      "y": 145,
+      "role": "recruit"
+    },
+    {
+      "id": "seraphina_oduya",
+      "x": 285,
+      "y": 233,
+      "role": "recruit"
+    },
+    {
+      "id": "the_oduya_teacher",
+      "x": 229,
+      "y": 203,
+      "role": "talk"
+    },
+    {
+      "id": "rosamund_achterberg",
+      "x": 455,
+      "y": 214,
+      "role": "recruit"
+    },
+    {
+      "id": "the_achterberg_frost_warning",
+      "x": 174,
+      "y": 109,
+      "role": "talk"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "providence",
+      "the_quiet_rows"
+    ],
+    "hours": 4
+  },
+  "stakes": {
+    "do": "Buy or trade for Rosamund Achterberg's medicine. Get a hand through a difficult birth or a bad wound with two people who disagree about how.",
+    "lose": "A patient, if the argument between Marguerite Solis's practice and Seraphina Oduya's training outlasts the emergency.",
+    "decide": "Which of the two you back in the moment, knowing they are both right about something."
+  },
+  "art_gap": "Reads as a fenced patch of grass with camp props. Needs a soddy or cabin, a kitchen garden and a well. Derived location: the homestead is written in Elena Ochoa's and Marguerite Solis's pages, its position near Providence is my inference and is recorded in LOCATIONS.md."
+}

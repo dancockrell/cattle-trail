@@ -1,0 +1,651 @@
+{
+  "id": "the_calloway_spread",
+  "name": "The Calloway Spread",
+  "kind": "spread",
+  "blurb": "Older money, better fence, and a daughter who walked off it.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.0,
+      1.0,
+      0.94,
+      1.0
+    ],
+    "modulate_note": "Near neutral, very slightly warm. The Calloways have had thirty years to get the grass even, and the light here is meant to read as the settled version of the outfit's own ground rather than a different country."
+  },
+  "bounds": {
+    "x": [
+      26,
+      614
+    ],
+    "y": [
+      72,
+      302
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          582,
+          206
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          382,
+          231
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          225,
+          196
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          107,
+          237
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 12,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_012",
+        "position": [
+          580,
+          237
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 15,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_015",
+        "position": [
+          399,
+          77
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 2,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_002",
+        "position": [
+          427,
+          160
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 5,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_005",
+        "position": [
+          257,
+          59
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 8,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_008",
+        "position": [
+          260,
+          298
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 11,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_011",
+        "position": [
+          120,
+          287
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 14,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_014",
+        "position": [
+          327,
+          96
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 1,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_001",
+        "position": [
+          433,
+          72
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          142,
+          205
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          595,
+          237
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          545,
+          207
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012",
+        "position": [
+          579,
+          74
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 15,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_015",
+        "position": [
+          400,
+          178
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 4,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_004",
+        "position": [
+          22,
+          234
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 7,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_007",
+        "position": [
+          374,
+          83
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 10,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_010",
+        "position": [
+          271,
+          270
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 13,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_013",
+        "position": [
+          109,
+          202
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 16,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_016",
+        "position": [
+          617,
+          252
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 19,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_019",
+        "position": [
+          228,
+          301
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 9,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_009",
+        "position": [
+          254,
+          118
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 12,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_012",
+        "position": [
+          325,
+          114
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 15,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_015",
+        "position": [
+          469,
+          203
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 60,
+    "y": 200
+  },
+  "cast": [
+    {
+      "id": "cole_calloway",
+      "x": 453,
+      "y": 109,
+      "role": "talk"
+    },
+    {
+      "id": "hattie_calloway",
+      "x": 189,
+      "y": 279,
+      "role": "talk"
+    },
+    {
+      "id": "whit_calloway",
+      "x": 185,
+      "y": 118,
+      "role": "talk"
+    },
+    {
+      "id": "the_calloway_foreman",
+      "x": 572,
+      "y": 95,
+      "role": "talk"
+    },
+    {
+      "id": "the_calloway_ranch_hand",
+      "x": 129,
+      "y": 263,
+      "role": "talk"
+    },
+    {
+      "id": "the_calloway_water_rights_lawyer",
+      "x": 289,
+      "y": 187,
+      "role": "law"
+    },
+    {
+      "id": "fina_reyes",
+      "x": 200,
+      "y": 178,
+      "role": "recruit"
+    },
+    {
+      "id": "tomas_reyes",
+      "x": 549,
+      "y": 228,
+      "role": "talk"
+    },
+    {
+      "id": "beatrix_lowe",
+      "x": 97,
+      "y": 168,
+      "role": "recruit"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "the_hargrove_range"
+    ],
+    "hours": 4
+  },
+  "stakes": {
+    "do": "Sell cattle direct at a worse price for better standing. Break the green colt that has already thrown two Calloway hands.",
+    "lose": "Birdie's welcome at home, if Cole hears the wrong thing from you. A hand, if the colt wins.",
+    "decide": "Whether to carry Birdie's word back to Hattie and Whit, or leave the family to it."
+  },
+  "art_gap": "Reads as the best-fenced field in the county, which is most of the point. Needs a ranch house, outbuildings, a windmill and a stock tank before it outranks the outfit's wagon camp on sight."
+}

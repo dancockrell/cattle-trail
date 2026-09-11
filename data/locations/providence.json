@@ -1,0 +1,658 @@
+{
+  "id": "providence",
+  "name": "Providence",
+  "kind": "town",
+  "blurb": "Raw lumber, canvas, and a spur line that may never come.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.11,
+      1.08,
+      1.01,
+      1.0
+    ],
+    "modulate_note": "Raw and bright, pushed past neutral. Providence is new cut lumber under midday with no shade grown yet, so it is the one place in the county that looks overexposed instead of warm."
+  },
+  "bounds": {
+    "x": [
+      22,
+      618
+    ],
+    "y": [
+      68,
+      304
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "camp",
+        "frame": 1,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_001",
+        "position": [
+          430,
+          176
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004",
+        "position": [
+          183,
+          277
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 7,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_007",
+        "position": [
+          231,
+          241
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 10,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_010",
+        "position": [
+          619,
+          262
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 13,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_013",
+        "position": [
+          91,
+          107
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 0,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_000",
+        "position": [
+          258,
+          210
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          295,
+          56
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          201,
+          223
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          63,
+          117
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012",
+        "position": [
+          561,
+          58
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 15,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_015",
+        "position": [
+          456,
+          141
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          405,
+          214
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          39,
+          285
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          16,
+          155
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          120,
+          143
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 12,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_012",
+        "position": [
+          450,
+          309
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 15,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_015",
+        "position": [
+          562,
+          276
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 5,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_005",
+        "position": [
+          355,
+          149
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 8,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_008",
+        "position": [
+          364,
+          250
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 11,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_011",
+        "position": [
+          118,
+          310
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 3,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_003",
+        "position": [
+          406,
+          294
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 6,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_006",
+        "position": [
+          55,
+          164
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 320,
+    "y": 292
+  },
+  "cast": [
+    {
+      "id": "ezra_lowry",
+      "x": 456,
+      "y": 166,
+      "role": "trade"
+    },
+    {
+      "id": "reverend_pike",
+      "x": 59,
+      "y": 142,
+      "role": "talk"
+    },
+    {
+      "id": "mrs_pruitt",
+      "x": 519,
+      "y": 275,
+      "role": "talk"
+    },
+    {
+      "id": "widow_alcott",
+      "x": 498,
+      "y": 116,
+      "role": "talk"
+    },
+    {
+      "id": "delia_frost",
+      "x": 294,
+      "y": 170,
+      "role": "trade"
+    },
+    {
+      "id": "magistrate_holt",
+      "x": 113,
+      "y": 239,
+      "role": "law"
+    },
+    {
+      "id": "prisca_montaigne",
+      "x": 553,
+      "y": 203,
+      "role": "recruit"
+    },
+    {
+      "id": "the_montaigne_rival_editor",
+      "x": 255,
+      "y": 117,
+      "role": "talk"
+    },
+    {
+      "id": "percival_wren",
+      "x": 121,
+      "y": 95,
+      "role": "talk"
+    },
+    {
+      "id": "marcella_iturbe",
+      "x": 169,
+      "y": 148,
+      "role": "trade"
+    },
+    {
+      "id": "wilhelmina_ashby",
+      "x": 389,
+      "y": 145,
+      "role": "trade"
+    },
+    {
+      "id": "opaline_marchetti",
+      "x": 240,
+      "y": 255,
+      "role": "trade"
+    },
+    {
+      "id": "ingrid_lindqvist",
+      "x": 341,
+      "y": 227,
+      "role": "trade"
+    },
+    {
+      "id": "henrietta_sloane",
+      "x": 181,
+      "y": 90,
+      "role": "trade"
+    },
+    {
+      "id": "seraphine_duval",
+      "x": 432,
+      "y": 248,
+      "role": "trade"
+    },
+    {
+      "id": "sunniva_larsen",
+      "x": 589,
+      "y": 116,
+      "role": "trade"
+    },
+    {
+      "id": "georgiana_hollis",
+      "x": 51,
+      "y": 200,
+      "role": "trade"
+    },
+    {
+      "id": "louisa_okoye",
+      "x": 169,
+      "y": 272,
+      "role": "recruit"
+    },
+    {
+      "id": "constance_whitlock",
+      "x": 319,
+      "y": 104,
+      "role": "recruit"
+    },
+    {
+      "id": "cleo_bannister",
+      "x": 49,
+      "y": 263,
+      "role": "trade"
+    },
+    {
+      "id": "wilhelmina_frost",
+      "x": 227,
+      "y": 169,
+      "role": "trade"
+    },
+    {
+      "id": "the_frost_apprentice_rival",
+      "x": 581,
+      "y": 268,
+      "role": "talk"
+    },
+    {
+      "id": "electra_finsbury",
+      "x": 439,
+      "y": 96,
+      "role": "recruit"
+    },
+    {
+      "id": "the_finsbury_skeptic",
+      "x": 183,
+      "y": 215,
+      "role": "talk"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "ochoa_homestead",
+      "the_mission"
+    ],
+    "hours": 10
+  },
+  "stakes": {
+    "do": "Buy a rail-spur lot from Ezra Lowry, sell wagon and craft work, get a dispute ruled on by Magistrate Holt.",
+    "lose": "A lot's whole purchase price if the spur never comes, which is the bet Lowry is selling and Reverend Pike has buried men over.",
+    "decide": "Whether the county hears Prisca Montaigne's true account of what happened out on the grass, or Silas Cobbett's better one."
+  },
+  "art_gap": "Reads as an open lot with camp props and new fence. Needs half-raised frame buildings, canvas tents beside finished walls, and a steepleless church. The 'boomtown' is entirely in the ground tint and the crowd right now."
+}

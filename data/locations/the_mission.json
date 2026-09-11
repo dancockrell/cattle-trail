@@ -1,0 +1,541 @@
+{
+  "id": "the_mission",
+  "name": "The Mission Chapel",
+  "kind": "camp",
+  "blurb": "An adobe chapel that remembers the county better than the county does.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.94,
+      0.92,
+      0.88,
+      1.0
+    ],
+    "modulate_note": "Slightly dimmed and desaturated, the light of a walled yard. Older and quieter than Providence's raw glare, which is the contrast the two places are for."
+  },
+  "bounds": {
+    "x": [
+      52,
+      588
+    ],
+    "y": [
+      92,
+      294
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 5,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_005",
+        "position": [
+          328,
+          168
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 8,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_008",
+        "position": [
+          99,
+          97
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 11,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_011",
+        "position": [
+          207,
+          280
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 14,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_014",
+        "position": [
+          348,
+          137
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 1,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_001",
+        "position": [
+          408,
+          215
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 4,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_004",
+        "position": [
+          314,
+          211
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 7,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_007",
+        "position": [
+          154,
+          83
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 10,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_010",
+        "position": [
+          119,
+          192
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 13,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_013",
+        "position": [
+          228,
+          221
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 0,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_000",
+        "position": [
+          477,
+          253
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          344,
+          174
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          123,
+          261
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          104,
+          280
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 2,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_002",
+        "position": [
+          458,
+          142
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 5,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_005",
+        "position": [
+          131,
+          287
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 8,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_008",
+        "position": [
+          431,
+          292
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 11,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_011",
+        "position": [
+          393,
+          100
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 7,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_007",
+        "position": [
+          48,
+          260
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 10,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_010",
+        "position": [
+          574,
+          108
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 13,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_013",
+        "position": [
+          430,
+          174
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 0,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_000",
+        "position": [
+          240,
+          135
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 300,
+    "y": 274
+  },
+  "cast": [
+    {
+      "id": "padre_ruiz",
+      "x": 298,
+      "y": 128,
+      "role": "talk"
+    },
+    {
+      "id": "winnie_doyle",
+      "x": 113,
+      "y": 250,
+      "role": "recruit"
+    },
+    {
+      "id": "dinah_okonkwo",
+      "x": 155,
+      "y": 161,
+      "role": "recruit"
+    },
+    {
+      "id": "the_okonkwo_quack",
+      "x": 451,
+      "y": 229,
+      "role": "trade"
+    },
+    {
+      "id": "marlowe_castellano",
+      "x": 344,
+      "y": 224,
+      "role": "recruit"
+    },
+    {
+      "id": "millicent_hobbes",
+      "x": 88,
+      "y": 120,
+      "role": "recruit"
+    },
+    {
+      "id": "dr_okafor_the_elder",
+      "x": 514,
+      "y": 259,
+      "role": "medicine"
+    },
+    {
+      "id": "the_larsen_supplier",
+      "x": 557,
+      "y": 115,
+      "role": "trade"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "providence",
+      "fort_griffin",
+      "the_salt_flats"
+    ],
+    "hours": 6
+  },
+  "stakes": {
+    "do": "Ask Padre Ruiz about something that happened before anyone in Providence got here. Get a straight answer about what is in Dr Thistlewood's tonic.",
+    "lose": "A hand, to the tonic, if Dinah Okonkwo's evidence arrives after the bottle does.",
+    "decide": "Whether the outfit's word is what runs the huckster off, which costs nothing and makes an enemy who travels."
+  },
+  "art_gap": "Reads as a fenced camp under trees. Needs an adobe wall and a chapel front. Derived location: Padre Ruiz's mission chapel is written in the Providence wiki page, its position between Providence and Griffin is my inference and is recorded in LOCATIONS.md."
+}

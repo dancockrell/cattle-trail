@@ -1,0 +1,763 @@
+{
+  "id": "bellhollow",
+  "name": "Bellhollow",
+  "kind": "camp",
+  "blurb": "A mine that quit paying and a bell that did not quit ringing.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.71,
+      0.73,
+      0.79,
+      1.0
+    ],
+    "modulate_note": "Shadowed, cold and drained. The hollow gets an hour of direct sun a day and the camp has been going back to the country for ten years. Darkest ground in the county without going to a horror palette."
+  },
+  "bounds": {
+    "x": [
+      44,
+      596
+    ],
+    "y": [
+      86,
+      298
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004",
+        "position": [
+          324,
+          235
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 7,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_007",
+        "position": [
+          275,
+          180
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 10,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_010",
+        "position": [
+          602,
+          167
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 13,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_013",
+        "position": [
+          546,
+          255
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 0,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_000",
+        "position": [
+          468,
+          304
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          256,
+          281
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          473,
+          218
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          49,
+          216
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012",
+        "position": [
+          445,
+          258
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 15,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_015",
+        "position": [
+          127,
+          251
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 0,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_000",
+        "position": [
+          124,
+          201
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 3,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_003",
+        "position": [
+          98,
+          127
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 6,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_006",
+        "position": [
+          461,
+          76
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 9,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_009",
+        "position": [
+          100,
+          306
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 12,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_012",
+        "position": [
+          36,
+          90
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 15,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_015",
+        "position": [
+          352,
+          200
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 18,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_018",
+        "position": [
+          595,
+          106
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 21,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          400,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_021",
+        "position": [
+          314,
+          85
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 24,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          192,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_024",
+        "position": [
+          149,
+          90
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 27,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          192,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_027",
+        "position": [
+          131,
+          281
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 30,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          192,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_030",
+        "position": [
+          373,
+          225
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 2,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_002",
+        "position": [
+          418,
+          132
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 5,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_005",
+        "position": [
+          307,
+          223
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 8,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_008",
+        "position": [
+          70,
+          248
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 11,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_011",
+        "position": [
+          409,
+          281
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 14,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_014",
+        "position": [
+          225,
+          221
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 1,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_001",
+        "position": [
+          400,
+          123
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 4,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_004",
+        "position": [
+          375,
+          263
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 7,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_007",
+        "position": [
+          500,
+          196
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 7,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_007",
+        "position": [
+          493,
+          207
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 10,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_010",
+        "position": [
+          503,
+          76
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 13,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_013",
+        "position": [
+          164,
+          156
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 300,
+    "y": 282
+  },
+  "cast": [
+    {
+      "id": "gideon_stark",
+      "x": 175,
+      "y": 130,
+      "role": "talk"
+    },
+    {
+      "id": "the_stark_widow_sister",
+      "x": 475,
+      "y": 145,
+      "role": "talk"
+    },
+    {
+      "id": "bellhollow_bell",
+      "x": 398,
+      "y": 217,
+      "role": "spirit"
+    },
+    {
+      "id": "nell_corrigan",
+      "x": 291,
+      "y": 124,
+      "role": "recruit"
+    },
+    {
+      "id": "adelheid_kraus",
+      "x": 182,
+      "y": 230,
+      "role": "recruit"
+    },
+    {
+      "id": "the_kraus_tax_official",
+      "x": 241,
+      "y": 251,
+      "role": "law"
+    }
+  ],
+  "encounters": [
+    "bellhollow_bell",
+    "second_shadow",
+    "night_coyotes"
+  ],
+  "travel": {
+    "neighbours": [
+      "the_narrow_water",
+      "thorndike_mine"
+    ],
+    "hours": 7
+  },
+  "stakes": {
+    "do": "Take shelter and a hot supper from Nell Corrigan. Go down into the workings after the bell, which nobody asks you to do.",
+    "lose": "Strain, standing too close to whatever is ringing. Adelheid Kraus's whole operation, if Inspector Wexler leaves with the wrong answer.",
+    "decide": "Whether to press Gideon Stark for a straight answer about the bell, or take Eulalie's honest 'I don't know either' and leave it."
+  },
+  "art_gap": "Reads as a grey rockfield with camp props on it. Needs leaning shacks, a collapsed headframe, one lit window and a bell tower. The lit window is the cheapest single piece of art that would change this place."
+}

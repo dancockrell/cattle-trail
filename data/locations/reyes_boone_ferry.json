@@ -1,0 +1,497 @@
+{
+  "id": "reyes_boone_ferry",
+  "name": "The Reyes-Boone Ferry",
+  "kind": "crossing",
+  "blurb": "A safe crossing at a fair price, undercut by an unsafe one.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.9,
+      0.96,
+      1.01,
+      1.0
+    ],
+    "modulate_note": "Cool but open, a shade off the Narrow Water's blue. This is the same river with the timber cut back and the sun on it, so it should read as the same water in better hands."
+  },
+  "bounds": {
+    "x": [
+      40,
+      600
+    ],
+    "y": [
+      92,
+      296
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "trees",
+        "frame": 4,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_004",
+        "position": [
+          200,
+          221
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 7,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_007",
+        "position": [
+          208,
+          136
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 10,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_010",
+        "position": [
+          231,
+          147
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 13,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_013",
+        "position": [
+          570,
+          190
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 16,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_016",
+        "position": [
+          359,
+          190
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 19,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_019",
+        "position": [
+          486,
+          186
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 22,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_022",
+        "position": [
+          388,
+          95
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 1,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_001",
+        "position": [
+          513,
+          90
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 4,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_004",
+        "position": [
+          575,
+          108
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 7,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_007",
+        "position": [
+          155,
+          250
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 10,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_010",
+        "position": [
+          397,
+          160
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 13,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          400,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_013",
+        "position": [
+          402,
+          297
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 16,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_016",
+        "position": [
+          44,
+          237
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 19,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_019",
+        "position": [
+          441,
+          204
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 8,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_008",
+        "position": [
+          118,
+          200
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 11,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_011",
+        "position": [
+          573,
+          265
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 14,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_014",
+        "position": [
+          374,
+          240
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 1,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_001",
+        "position": [
+          580,
+          137
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 2,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_002",
+        "position": [
+          551,
+          241
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 5,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_005",
+        "position": [
+          179,
+          103
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 110,
+    "y": 262
+  },
+  "cast": [
+    {
+      "id": "clementina_reyesboone",
+      "x": 429,
+      "y": 173,
+      "role": "recruit"
+    },
+    {
+      "id": "the_ferry_rival",
+      "x": 179,
+      "y": 272,
+      "role": "trade"
+    },
+    {
+      "id": "josephine_merriweather",
+      "x": 95,
+      "y": 151,
+      "role": "recruit"
+    },
+    {
+      "id": "the_riverboat_captain",
+      "x": 407,
+      "y": 267,
+      "role": "talk"
+    }
+  ],
+  "encounters": [
+    "drover_who_isnt"
+  ],
+  "travel": {
+    "neighbours": [
+      "fort_griffin",
+      "the_narrow_water"
+    ],
+    "hours": 4
+  },
+  "stakes": {
+    "do": "Pay to put wagon and herd across without reading the water yourself. Or pay Gustaf Renner less and read it yourself after all.",
+    "lose": "A wagon and whoever is on it, on Renner's boat in water he has not looked at.",
+    "decide": "Which operator gets the fare. Renner is cheaper every single time, and that is the whole trap."
+  },
+  "art_gap": "No boat, no landing, no water. Reads as a rocky clearing with camp props. Needs a ferry, a cable and a bank before the choice on offer is legible at all."
+}

@@ -1,0 +1,195 @@
+{
+  "id": "the_salt_flats",
+  "name": "The Salt Flats",
+  "kind": "wild",
+  "blurb": "White ground, wrong sound, and cattle that will not take a step onto it.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.38,
+      1.35,
+      1.31,
+      1.0
+    ],
+    "modulate_note": "Blown out almost to white and very slightly cool. This is the only location tinted brighter than the texture, and it is the strongest single visual break available with one ground image. Standing here should be uncomfortable to look at."
+  },
+  "bounds": {
+    "x": [
+      20,
+      620
+    ],
+    "y": [
+      70,
+      304
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "rocks",
+        "frame": 5,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          400,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_005",
+        "position": [
+          457,
+          260
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 8,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_008",
+        "position": [
+          554,
+          285
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 11,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_011",
+        "position": [
+          173,
+          67
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 14,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_014",
+        "position": [
+          488,
+          206
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 8,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_008",
+        "position": [
+          199,
+          237
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 11,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_011",
+        "position": [
+          603,
+          217
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 74,
+    "y": 290
+  },
+  "cast": [
+    {
+      "id": "magnolia_pruitt",
+      "x": 252,
+      "y": 279,
+      "role": "recruit"
+    },
+    {
+      "id": "the_eight_legged_doe",
+      "x": 328,
+      "y": 198,
+      "role": "spirit"
+    }
+  ],
+  "encounters": [
+    "eight_legged_doe",
+    "drover_who_isnt",
+    "taken_brand",
+    "night_birds",
+    "talking_walker"
+  ],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "the_mission"
+    ],
+    "hours": 14
+  },
+  "stakes": {
+    "do": "Cross, with Magnolia Pruitt's route or without it. The herd will not go on your say-so alone and that is the actual problem to solve.",
+    "lose": "Water, days, and cattle that lie down and do not get up. Nothing on the flats is a fight; everything on them is attrition.",
+    "decide": "Hire the guide, go around and spend the days anyway, or push the herd onto ground it has already refused."
+  },
+  "art_gap": "Six props on the whole map and a bleached tint, which is deliberate and does more than it sounds like. Needs heat shimmer and a track line vanishing at the horizon. Cracked salt pan instead of prairie ground would finish it."
+}

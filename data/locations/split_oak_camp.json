@@ -1,0 +1,598 @@
+{
+  "id": "split_oak_camp",
+  "name": "Split Oak Camp",
+  "kind": "camp",
+  "blurb": "Neutral ground under one big tree, and everything anyone nailed to it.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.93,
+      0.91,
+      0.8,
+      1.0
+    ],
+    "modulate_note": "Warm and dropped a third of a stop. Almost all of this ground is under one enormous canopy, so it is shaded without being cold. Shade is the character of the place and the tint is doing the canopy's job until the canopy exists."
+  },
+  "bounds": {
+    "x": [
+      36,
+      604
+    ],
+    "y": [
+      84,
+      300
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "trees",
+        "frame": 1,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_001",
+        "position": [
+          151,
+          194
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 4,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_004",
+        "position": [
+          274,
+          81
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 7,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_007",
+        "position": [
+          376,
+          158
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 10,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_010",
+        "position": [
+          389,
+          225
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 13,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_013",
+        "position": [
+          510,
+          142
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 16,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_016",
+        "position": [
+          453,
+          72
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 19,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_019",
+        "position": [
+          609,
+          224
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 22,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_022",
+        "position": [
+          580,
+          198
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 25,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_025",
+        "position": [
+          32,
+          235
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 5,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_005",
+        "position": [
+          154,
+          214
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 8,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_008",
+        "position": [
+          571,
+          125
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 11,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_011",
+        "position": [
+          134,
+          217
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 14,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_014",
+        "position": [
+          119,
+          79
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 1,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_001",
+        "position": [
+          306,
+          202
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004",
+        "position": [
+          41,
+          291
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 7,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_007",
+        "position": [
+          279,
+          256
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 10,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_010",
+        "position": [
+          475,
+          132
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 13,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_013",
+        "position": [
+          503,
+          181
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 16,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_016",
+        "position": [
+          99,
+          108
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 19,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_019",
+        "position": [
+          362,
+          308
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 8,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_008",
+        "position": [
+          535,
+          305
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 11,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_011",
+        "position": [
+          94,
+          135
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 14,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_014",
+        "position": [
+          587,
+          135
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 316,
+    "y": 288
+  },
+  "cast": [
+    {
+      "id": "the_split_oak_traveler",
+      "x": 66,
+      "y": 218,
+      "role": "talk"
+    },
+    {
+      "id": "hallie_brandt",
+      "x": 540,
+      "y": 197,
+      "role": "recruit"
+    },
+    {
+      "id": "faustina_achebe",
+      "x": 443,
+      "y": 212,
+      "role": "recruit"
+    },
+    {
+      "id": "clementine_osei",
+      "x": 418,
+      "y": 109,
+      "role": "recruit"
+    },
+    {
+      "id": "perpetua_calder",
+      "x": 366,
+      "y": 208,
+      "role": "recruit"
+    },
+    {
+      "id": "cordelia_sinclair",
+      "x": 176,
+      "y": 183,
+      "role": "recruit"
+    },
+    {
+      "id": "brother_amos",
+      "x": 155,
+      "y": 245,
+      "role": "talk"
+    },
+    {
+      "id": "justina_okafor",
+      "x": 273,
+      "y": 239,
+      "role": "law"
+    },
+    {
+      "id": "augustine_marchetti",
+      "x": 580,
+      "y": 242,
+      "role": "recruit"
+    },
+    {
+      "id": "little_tam",
+      "x": 295,
+      "y": 161,
+      "role": "talk"
+    }
+  ],
+  "encounters": [
+    "split_oak_traveler",
+    "drover_who_isnt"
+  ],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "timber_and_plains",
+      "hendricks_camp"
+    ],
+    "hours": 5
+  },
+  "stakes": {
+    "do": "Read the trunk. Notices, brands and warnings, including a fresh one about Amos Ketch's crew that Hallie Brandt is taking down as you ride up.",
+    "lose": "Nothing by standing here, which is the custom. Everything you say here travels, though, because this is where the county's word changes hands.",
+    "decide": "What to nail up yourself, and whether the warning about Ketch stays on the trunk or comes down."
+  },
+  "art_gap": "Reads as ordinary timber. The one enormous storm-split live oak the whole place is named for does not exist: there are nine identical ordinary trees instead. One big-tree sprite would do more for this location than anything else on this list."
+}

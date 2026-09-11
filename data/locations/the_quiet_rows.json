@@ -1,0 +1,698 @@
+{
+  "id": "the_quiet_rows",
+  "name": "The Quiet Rows",
+  "kind": "wild",
+  "blurb": "A tended family plot on a homestead that failed. The count of stones has changed.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.86,
+      0.86,
+      0.89,
+      1.0
+    ],
+    "modulate_note": "Colour pulled almost out, brightness left alone. Ordinary daylight with the warmth removed. LOCATIONS.md is explicit that no fog and no horror lighting is what makes this land, so the wrongness is in the grey, not in the dark."
+  },
+  "bounds": {
+    "x": [
+      56,
+      584
+    ],
+    "y": [
+      96,
+      292
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          139,
+          290
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          194,
+          164
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          264,
+          120
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 12,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_012",
+        "position": [
+          458,
+          152
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 15,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_015",
+        "position": [
+          168,
+          161
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 2,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_002",
+        "position": [
+          378,
+          243
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 5,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_005",
+        "position": [
+          565,
+          105
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 8,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_008",
+        "position": [
+          523,
+          279
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 11,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_011",
+        "position": [
+          234,
+          220
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 14,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_014",
+        "position": [
+          348,
+          222
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 1,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_001",
+        "position": [
+          359,
+          103
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 3,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_003",
+        "position": [
+          519,
+          207
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 6,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_006",
+        "position": [
+          165,
+          234
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 9,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_009",
+        "position": [
+          428,
+          194
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 12,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_012",
+        "position": [
+          142,
+          216
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 15,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_015",
+        "position": [
+          57,
+          272
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 18,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_018",
+        "position": [
+          360,
+          288
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 21,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_021",
+        "position": [
+          397,
+          259
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 24,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_024",
+        "position": [
+          181,
+          230
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 27,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_027",
+        "position": [
+          250,
+          89
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 6,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_006",
+        "position": [
+          85,
+          181
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 9,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_009",
+        "position": [
+          494,
+          270
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 12,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_012",
+        "position": [
+          343,
+          120
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 15,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_015",
+        "position": [
+          143,
+          120
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 18,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_018",
+        "position": [
+          246,
+          116
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 21,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          400,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_021",
+        "position": [
+          522,
+          132
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 24,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          192,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_024",
+        "position": [
+          143,
+          96
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 11,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_011",
+        "position": [
+          583,
+          170
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 14,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_014",
+        "position": [
+          229,
+          278
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 300,
+    "y": 278
+  },
+  "cast": [
+    {
+      "id": "quiet_rows_caretaker",
+      "x": 317,
+      "y": 161,
+      "role": "spirit"
+    },
+    {
+      "id": "verona_ashcombe",
+      "x": 210,
+      "y": 146,
+      "role": "recruit"
+    },
+    {
+      "id": "prudence_kessler",
+      "x": 77,
+      "y": 255,
+      "role": "recruit"
+    },
+    {
+      "id": "the_kessler_grieving_family",
+      "x": 216,
+      "y": 243,
+      "role": "talk"
+    },
+    {
+      "id": "loretta_combs",
+      "x": 396,
+      "y": 130,
+      "role": "recruit"
+    },
+    {
+      "id": "the_combs_grandmother",
+      "x": 140,
+      "y": 263,
+      "role": "talk"
+    }
+  ],
+  "encounters": [
+    "quiet_rows_caretaker"
+  ],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "ochoa_homestead"
+    ],
+    "hours": 11
+  },
+  "stakes": {
+    "do": "Count the stones. Write the count down. Come back and count again, which is the entire mechanic and the reason this place is built for return visits.",
+    "lose": "Strain, slowly, over visits. Nothing here moves at you.",
+    "decide": "Whether to tell anyone the count changed, and whether to ask Verona Ashcombe who is tending a plot with no family left to tend it."
+  },
+  "art_gap": "Reads as a fenced patch of grass with rocks in it. There are no headstones: the rocks are standing in for them and the single most important readable object in the county is missing. A headstone prop is the highest-value art on this entire page."
+}

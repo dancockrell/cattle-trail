@@ -1,0 +1,670 @@
+{
+  "id": "hendricks_camp",
+  "name": "Hendricks Camp",
+  "kind": "camp",
+  "blurb": "Another outfit's bedground, and a worse one camped too close to it.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.97,
+      0.93,
+      0.84,
+      1.0
+    ],
+    "modulate_note": "Warm and dusty, pulled down toward evening. A working bedground at the end of a day. Close to Clear Fork's own light on purpose: this is what the outfit looks like from outside."
+  },
+  "bounds": {
+    "x": [
+      34,
+      606
+    ],
+    "y": [
+      82,
+      300
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "camp",
+        "frame": 3,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_003",
+        "position": [
+          514,
+          305
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          552,
+          76
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          36,
+          293
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012",
+        "position": [
+          458,
+          275
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 15,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_015",
+        "position": [
+          566,
+          168
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 2,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_002",
+        "position": [
+          177,
+          167
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 5,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_005",
+        "position": [
+          367,
+          304
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 8,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_008",
+        "position": [
+          357,
+          68
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 11,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_011",
+        "position": [
+          113,
+          161
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 14,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_014",
+        "position": [
+          270,
+          167
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 1,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_001",
+        "position": [
+          77,
+          136
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004",
+        "position": [
+          173,
+          127
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 8,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_008",
+        "position": [
+          482,
+          209
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 11,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_011",
+        "position": [
+          528,
+          106
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 14,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_014",
+        "position": [
+          241,
+          256
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 17,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_017",
+        "position": [
+          601,
+          93
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 20,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_020",
+        "position": [
+          439,
+          133
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 23,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_023",
+        "position": [
+          565,
+          255
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 26,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_026",
+        "position": [
+          276,
+          178
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 9,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_009",
+        "position": [
+          86,
+          222
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 12,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_012",
+        "position": [
+          30,
+          177
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 15,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_015",
+        "position": [
+          443,
+          293
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 2,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_002",
+        "position": [
+          255,
+          306
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 5,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_005",
+        "position": [
+          606,
+          277
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 1,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_001",
+        "position": [
+          47,
+          109
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 4,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_004",
+        "position": [
+          139,
+          82
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 7,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_007",
+        "position": [
+          392,
+          103
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 320,
+    "y": 286
+  },
+  "cast": [
+    {
+      "id": "zilpah_hendricks",
+      "x": 555,
+      "y": 122,
+      "role": "recruit"
+    },
+    {
+      "id": "the_hendricks_rival_crew_boss",
+      "x": 524,
+      "y": 243,
+      "role": "talk"
+    },
+    {
+      "id": "dorothea_farrow",
+      "x": 71,
+      "y": 171,
+      "role": "recruit"
+    },
+    {
+      "id": "odalys_bright",
+      "x": 155,
+      "y": 270,
+      "role": "recruit"
+    },
+    {
+      "id": "yasmin_okoro",
+      "x": 421,
+      "y": 223,
+      "role": "recruit"
+    },
+    {
+      "id": "the_okoro_arena_boss",
+      "x": 183,
+      "y": 146,
+      "role": "talk"
+    },
+    {
+      "id": "birdie_holloway",
+      "x": 250,
+      "y": 150,
+      "role": "recruit"
+    },
+    {
+      "id": "cutter_boyle",
+      "x": 364,
+      "y": 250,
+      "role": "talk"
+    }
+  ],
+  "encounters": [
+    "ketch_toll",
+    "drover_who_isnt",
+    "night_coyotes"
+  ],
+  "travel": {
+    "neighbours": [
+      "split_oak_camp",
+      "timber_and_plains"
+    ],
+    "hours": 5
+  },
+  "stakes": {
+    "do": "Work a bad stretch alongside Zilpah Hendricks's crew instead of against it. Stand between Amos Ketch's roundup and Dorothea Farrow's small herd.",
+    "lose": "Cattle, absorbed into Ketch's count, fairly or not. Cutter Boyle is camped here and is for hire by whoever pays first.",
+    "decide": "Whether to buy Boyle off the job before Ketch uses him, which is cheaper than the alternative and looks worse."
+  },
+  "art_gap": "Reads as a camp, which is the one thing the existing prop set actually does well. Needs a chuckwagon and a remuda line to separate it from the outfit's own camp. Derived location: Zilpah Hendricks's and Amos Ketch's crews are written, this bedground is my inference and is recorded in LOCATIONS.md."
+}

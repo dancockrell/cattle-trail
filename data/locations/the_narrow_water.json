@@ -1,0 +1,632 @@
+{
+  "id": "the_narrow_water",
+  "name": "The Narrow Water",
+  "kind": "crossing",
+  "blurb": "The ford is honest. The bank is not.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.81,
+      0.88,
+      0.96,
+      1.0
+    ],
+    "modulate_note": "Cold and blue. Timber over the water keeps the sun off and the far bank is in shade most of the day. It is the coldest-reading ground in the county and it is meant to be uncomfortable next to Clear Fork's warm dust."
+  },
+  "bounds": {
+    "x": [
+      36,
+      604
+    ],
+    "y": [
+      88,
+      298
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "trees",
+        "frame": 0,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_000",
+        "position": [
+          492,
+          229
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 3,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_003",
+        "position": [
+          165,
+          266
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 6,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_006",
+        "position": [
+          433,
+          171
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 9,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_009",
+        "position": [
+          472,
+          251
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 12,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_012",
+        "position": [
+          179,
+          237
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 15,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_015",
+        "position": [
+          590,
+          127
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 18,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_018",
+        "position": [
+          334,
+          274
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 21,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_021",
+        "position": [
+          438,
+          196
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 24,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_024",
+        "position": [
+          469,
+          165
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 27,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_027",
+        "position": [
+          68,
+          152
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 30,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_030",
+        "position": [
+          64,
+          226
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 1,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_001",
+        "position": [
+          341,
+          100
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 4,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_004",
+        "position": [
+          199,
+          154
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 7,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_007",
+        "position": [
+          498,
+          210
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 10,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_010",
+        "position": [
+          156,
+          236
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 13,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_013",
+        "position": [
+          114,
+          169
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 16,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_016",
+        "position": [
+          106,
+          292
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 3,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_003",
+        "position": [
+          610,
+          128
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 6,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          480,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_006",
+        "position": [
+          164,
+          173
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 9,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_009",
+        "position": [
+          472,
+          202
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 12,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_012",
+        "position": [
+          42,
+          214
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 15,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_015",
+        "position": [
+          243,
+          175
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 18,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          128,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_018",
+        "position": [
+          370,
+          221
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 6,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_006",
+        "position": [
+          152,
+          141
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 9,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_009",
+        "position": [
+          448,
+          287
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 12,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_012",
+        "position": [
+          431,
+          121
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 88,
+    "y": 258
+  },
+  "cast": [
+    {
+      "id": "the_ford_widow",
+      "x": 407,
+      "y": 268,
+      "role": "spirit"
+    },
+    {
+      "id": "romy_fenwick",
+      "x": 116,
+      "y": 213,
+      "role": "recruit"
+    },
+    {
+      "id": "modesty_kane",
+      "x": 217,
+      "y": 257,
+      "role": "recruit"
+    },
+    {
+      "id": "bridget_callahan",
+      "x": 81,
+      "y": 116,
+      "role": "recruit"
+    },
+    {
+      "id": "concepcion_ibarra",
+      "x": 562,
+      "y": 121,
+      "role": "recruit"
+    }
+  ],
+  "encounters": [
+    "ford_widow",
+    "drover_who_isnt"
+  ],
+  "travel": {
+    "neighbours": [
+      "clear_fork",
+      "bellhollow",
+      "timber_and_plains",
+      "reyes_boone_ferry"
+    ],
+    "hours": 5
+  },
+  "stakes": {
+    "do": "Read the sign before committing the herd, or commit and find out. Help Romy Fenwick find who is diverting her mill water upstream.",
+    "lose": "Cattle, to a bank that gives way. A hand, if you push the crossing in the dark.",
+    "decide": "Cross here, go around, or wait for light. Waiting spends the trail clock and the clock is the other thing you are short of."
+  },
+  "art_gap": "Reads as thick timber on plain ground. There is no water art at all: the river the whole location is about is not drawn. This is the single biggest art gap in the county."
+}

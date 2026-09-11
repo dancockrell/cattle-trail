@@ -1,0 +1,793 @@
+{
+  "id": "timber_and_plains",
+  "name": "Timber and Plains",
+  "kind": "wild",
+  "blurb": "Trees arguing with open grass. Weather comes off the plains fast.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      0.91,
+      0.96,
+      0.87,
+      1.0
+    ],
+    "modulate_note": "Cooled and greened, as if a cloud shadow is crossing. LORE.md's line for this ground is that weather arrives faster than a man wants, so it is the one place lit as though the sun has just gone behind something."
+  },
+  "bounds": {
+    "x": [
+      24,
+      616
+    ],
+    "y": [
+      76,
+      302
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "trees",
+        "frame": 6,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_006",
+        "position": [
+          518,
+          88
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 9,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_009",
+        "position": [
+          391,
+          114
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 12,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_012",
+        "position": [
+          77,
+          276
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 15,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_015",
+        "position": [
+          389,
+          247
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 18,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_018",
+        "position": [
+          44,
+          132
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 21,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          640,
+          256,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_021",
+        "position": [
+          431,
+          205
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 24,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          0,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_024",
+        "position": [
+          51,
+          73
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 27,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          384,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_027",
+        "position": [
+          576,
+          253
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 30,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          768,
+          384,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_030",
+        "position": [
+          270,
+          186
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 1,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          128,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_001",
+        "position": [
+          32,
+          277
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 4,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          512,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_004",
+        "position": [
+          140,
+          140
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 7,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          896,
+          0,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_007",
+        "position": [
+          376,
+          281
+        ]
+      },
+      {
+        "family": "trees",
+        "frame": 10,
+        "texture": "res://kits/atlases/trees.png",
+        "region": [
+          256,
+          128,
+          128,
+          128
+        ],
+        "anchor": [
+          64,
+          125
+        ],
+        "collision_radius": 9,
+        "source_frame_id": "trees_010",
+        "position": [
+          33,
+          250
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 1,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_001",
+        "position": [
+          321,
+          242
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 4,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_004",
+        "position": [
+          616,
+          212
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 7,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_007",
+        "position": [
+          522,
+          291
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 10,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_010",
+        "position": [
+          597,
+          222
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 13,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          320,
+          48,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_013",
+        "position": [
+          306,
+          81
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 16,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          0,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_016",
+        "position": [
+          364,
+          207
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 19,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          192,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_019",
+        "position": [
+          378,
+          173
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 22,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          384,
+          96,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_022",
+        "position": [
+          573,
+          132
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 25,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          64,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_025",
+        "position": [
+          618,
+          91
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 28,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          256,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_028",
+        "position": [
+          474,
+          247
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 31,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          448,
+          144,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_031",
+        "position": [
+          37,
+          200
+        ]
+      },
+      {
+        "family": "grass",
+        "frame": 2,
+        "texture": "res://kits/atlases/grass.png",
+        "region": [
+          128,
+          0,
+          64,
+          48
+        ],
+        "anchor": [
+          32,
+          45
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "grass_002",
+        "position": [
+          295,
+          205
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 0,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_000",
+        "position": [
+          542,
+          155
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 3,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_003",
+        "position": [
+          188,
+          176
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 6,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_006",
+        "position": [
+          53,
+          161
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 9,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_009",
+        "position": [
+          570,
+          200
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 12,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_012",
+        "position": [
+          396,
+          225
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 15,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_015",
+        "position": [
+          461,
+          79
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 9,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          80,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_009",
+        "position": [
+          338,
+          282
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 12,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          320,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_012",
+        "position": [
+          32,
+          117
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 140,
+    "y": 284
+  },
+  "cast": [
+    {
+      "id": "the_second_shadow",
+      "x": 474,
+      "y": 104,
+      "role": "spirit"
+    },
+    {
+      "id": "vashti_okafor",
+      "x": 319,
+      "y": 160,
+      "role": "recruit"
+    },
+    {
+      "id": "artemisia_falk",
+      "x": 283,
+      "y": 230,
+      "role": "recruit"
+    },
+    {
+      "id": "the_falk_falconry_mentor",
+      "x": 94,
+      "y": 138,
+      "role": "talk"
+    },
+    {
+      "id": "prudence_hale",
+      "x": 433,
+      "y": 152,
+      "role": "recruit"
+    },
+    {
+      "id": "augusta_reinholt",
+      "x": 569,
+      "y": 149,
+      "role": "recruit"
+    },
+    {
+      "id": "the_reinholt_investor",
+      "x": 522,
+      "y": 227,
+      "role": "talk"
+    }
+  ],
+  "encounters": [
+    "second_shadow",
+    "night_birds",
+    "plains_weather",
+    "night_coyotes",
+    "drover_who_isnt"
+  ],
+  "travel": {
+    "neighbours": [
+      "split_oak_camp",
+      "the_narrow_water",
+      "hendricks_camp"
+    ],
+    "hours": 4
+  },
+  "stakes": {
+    "do": "Cut across instead of going around. Find Ingrid Lindqvist's dye plant, which only grows in this stretch, and Artemisia Falk's hawk, which is down in it somewhere.",
+    "lose": "Stock and hands after dark. The Second Shadow hunts here at night and is the reason this is a place you cross in daylight.",
+    "decide": "Whether the hours saved cutting through are worth being caught in the timber at dusk."
+  },
+  "art_gap": "Reads as mixed timber and grass, which is honestly close to correct: this is the location the existing art suits best. Needs weather, because the place is defined by a storm arriving and there is no sky."
+}

@@ -1,0 +1,683 @@
+{
+  "id": "the_hargrove_range",
+  "name": "The Hargrove Range",
+  "kind": "spread",
+  "blurb": "Fresh wire, a half-raised barn, and more debt than the buildings show.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.06,
+      1.0,
+      0.87,
+      1.0
+    ],
+    "modulate_note": "Scraped and bright. This ground was broken recently and has not grown back over, so it takes more sun and less green than the Calloway grass next door."
+  },
+  "bounds": {
+    "x": [
+      26,
+      614
+    ],
+    "y": [
+      72,
+      302
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "fence",
+        "frame": 1,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_001",
+        "position": [
+          168,
+          279
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 4,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_004",
+        "position": [
+          439,
+          154
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 7,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_007",
+        "position": [
+          128,
+          93
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 10,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_010",
+        "position": [
+          51,
+          306
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 13,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_013",
+        "position": [
+          417,
+          159
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          534,
+          256
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          172,
+          144
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 6,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_006",
+        "position": [
+          505,
+          179
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 9,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_009",
+        "position": [
+          67,
+          250
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 12,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_012",
+        "position": [
+          419,
+          263
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 15,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_015",
+        "position": [
+          446,
+          164
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 2,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_002",
+        "position": [
+          527,
+          88
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 5,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_005",
+        "position": [
+          322,
+          267
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 8,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_008",
+        "position": [
+          181,
+          137
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 6,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_006",
+        "position": [
+          357,
+          287
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 9,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_009",
+        "position": [
+          272,
+          155
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 12,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_012",
+        "position": [
+          401,
+          163
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 15,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_015",
+        "position": [
+          494,
+          86
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 2,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_002",
+        "position": [
+          433,
+          298
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 5,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          400,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_005",
+        "position": [
+          228,
+          188
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 8,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          0,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_008",
+        "position": [
+          362,
+          66
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 11,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          240,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_011",
+        "position": [
+          478,
+          96
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 4,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_004",
+        "position": [
+          71,
+          293
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 7,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_007",
+        "position": [
+          590,
+          109
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 10,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          160,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_010",
+        "position": [
+          505,
+          249
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 13,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_013",
+        "position": [
+          23,
+          309
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 0,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_000",
+        "position": [
+          392,
+          308
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 580,
+    "y": 210
+  },
+  "cast": [
+    {
+      "id": "reed_hargrove",
+      "x": 526,
+      "y": 209,
+      "role": "talk"
+    },
+    {
+      "id": "cass_hargrove",
+      "x": 57,
+      "y": 219,
+      "role": "trade"
+    },
+    {
+      "id": "the_hargrove_foreman",
+      "x": 115,
+      "y": 165,
+      "role": "talk"
+    },
+    {
+      "id": "milo_pratt",
+      "x": 455,
+      "y": 190,
+      "role": "talk"
+    },
+    {
+      "id": "hargrove_cook_ottilie",
+      "x": 337,
+      "y": 242,
+      "role": "talk"
+    },
+    {
+      "id": "hargrove_wrangler_tam",
+      "x": 489,
+      "y": 269,
+      "role": "talk"
+    },
+    {
+      "id": "hargrove_line_rider_esme",
+      "x": 385,
+      "y": 103,
+      "role": "talk"
+    },
+    {
+      "id": "hargrove_trader_owen",
+      "x": 291,
+      "y": 206,
+      "role": "trade"
+    },
+    {
+      "id": "delia_marsh",
+      "x": 571,
+      "y": 260,
+      "role": "recruit"
+    },
+    {
+      "id": "matilda_greaves",
+      "x": 344,
+      "y": 183,
+      "role": "recruit"
+    },
+    {
+      "id": "the_greaves_survey_client",
+      "x": 164,
+      "y": 217,
+      "role": "talk"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "the_calloway_spread"
+    ],
+    "hours": 3
+  },
+  "stakes": {
+    "do": "Trade off the books with Owen Balfour when the outfit is short. Deal with Cass, who is the one who actually pays.",
+    "lose": "A deal made with Reed instead of Cass, which is a deal made against a ledger that cannot cover it.",
+    "decide": "Whether to hire Delia Marsh away from a spread that owes her back pay, and whether to tell Reed what the survey actually says."
+  },
+  "art_gap": "Reads as a field with more fence than the last one. Needs a half-framed barn, surveyor's stakes and fresh-cut posts to read as newness rather than just as a second ranch."
+}

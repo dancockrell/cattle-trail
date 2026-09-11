@@ -1,0 +1,560 @@
+{
+  "id": "the_hemp_works",
+  "name": "The Hemp Works",
+  "kind": "camp",
+  "blurb": "Rope walks, barrel yards and a forge, all below the Griffin town line.",
+  "ground": {
+    "texture": "res://assets/ground-v3.png",
+    "modulate": [
+      1.0,
+      0.95,
+      0.84,
+      1.0
+    ],
+    "modulate_note": "Chaff-yellow. Hemp dust and forge smoke sit on everything in the yard; warmer and dirtier than Griffin proper, which is half a mile uphill."
+  },
+  "bounds": {
+    "x": [
+      40,
+      600
+    ],
+    "y": [
+      80,
+      300
+    ]
+  },
+  "scenery": {
+    "recipe": "authored",
+    "props": [
+      {
+        "family": "camp",
+        "frame": 2,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_002",
+        "position": [
+          143,
+          93
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 5,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_005",
+        "position": [
+          553,
+          105
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 8,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_008",
+        "position": [
+          364,
+          252
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 11,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_011",
+        "position": [
+          53,
+          149
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 14,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          160,
+          240,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_014",
+        "position": [
+          435,
+          105
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 1,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          80,
+          0,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_001",
+        "position": [
+          404,
+          256
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 4,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          0,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_004",
+        "position": [
+          540,
+          169
+        ]
+      },
+      {
+        "family": "camp",
+        "frame": 7,
+        "texture": "res://kits/atlases/camp.png",
+        "region": [
+          240,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "camp_007",
+        "position": [
+          259,
+          287
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 1,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_001",
+        "position": [
+          181,
+          281
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 4,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_004",
+        "position": [
+          608,
+          215
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 7,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          80,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_007",
+        "position": [
+          108,
+          135
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 10,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          192,
+          160,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_010",
+        "position": [
+          332,
+          69
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 13,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          96,
+          240,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_013",
+        "position": [
+          388,
+          255
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 0,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          0,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_000",
+        "position": [
+          453,
+          166
+        ]
+      },
+      {
+        "family": "fence",
+        "frame": 3,
+        "texture": "res://kits/atlases/fence.png",
+        "region": [
+          288,
+          0,
+          96,
+          80
+        ],
+        "anchor": [
+          48,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "fence_003",
+        "position": [
+          223,
+          214
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 7,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          560,
+          0,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_007",
+        "position": [
+          442,
+          292
+        ]
+      },
+      {
+        "family": "rocks",
+        "frame": 10,
+        "texture": "res://kits/atlases/rocks.png",
+        "region": [
+          160,
+          64,
+          80,
+          64
+        ],
+        "anchor": [
+          40,
+          61
+        ],
+        "collision_radius": 6,
+        "source_frame_id": "rocks_010",
+        "position": [
+          323,
+          200
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 5,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          80,
+          80,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_005",
+        "position": [
+          271,
+          302
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 8,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          0,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_008",
+        "position": [
+          143,
+          205
+        ]
+      },
+      {
+        "family": "scrub",
+        "frame": 11,
+        "texture": "res://kits/atlases/scrub.png",
+        "region": [
+          240,
+          160,
+          80,
+          80
+        ],
+        "anchor": [
+          40,
+          77
+        ],
+        "collision_radius": 0,
+        "source_frame_id": "scrub_011",
+        "position": [
+          498,
+          219
+        ]
+      }
+    ]
+  },
+  "arrivals": {
+    "x": 72,
+    "y": 268
+  },
+  "cast": [
+    {
+      "id": "the_hemp_works_owner",
+      "x": 133,
+      "y": 168,
+      "role": "trade"
+    },
+    {
+      "id": "marisol_vasquez",
+      "x": 63,
+      "y": 184,
+      "role": "recruit"
+    },
+    {
+      "id": "temperance_boucher",
+      "x": 479,
+      "y": 237,
+      "role": "recruit"
+    },
+    {
+      "id": "the_boucher_apprentice",
+      "x": 440,
+      "y": 160,
+      "role": "talk"
+    },
+    {
+      "id": "phoebe_rutledge",
+      "x": 351,
+      "y": 245,
+      "role": "trade"
+    },
+    {
+      "id": "verity_lang",
+      "x": 544,
+      "y": 129,
+      "role": "trade"
+    },
+    {
+      "id": "juniper_holloway",
+      "x": 524,
+      "y": 188,
+      "role": "trade"
+    },
+    {
+      "id": "the_holloway_bean_farmer",
+      "x": 256,
+      "y": 242,
+      "role": "talk"
+    },
+    {
+      "id": "naomi_freeman",
+      "x": 258,
+      "y": 149,
+      "role": "recruit"
+    },
+    {
+      "id": "orin_teague",
+      "x": 83,
+      "y": 106,
+      "role": "trade"
+    },
+    {
+      "id": "hollis_teague",
+      "x": 188,
+      "y": 198,
+      "role": "talk"
+    },
+    {
+      "id": "the_hollis_teague_mother",
+      "x": 121,
+      "y": 266,
+      "role": "talk"
+    },
+    {
+      "id": "philippa_grey",
+      "x": 367,
+      "y": 123,
+      "role": "trade"
+    },
+    {
+      "id": "adaline_cobb",
+      "x": 383,
+      "y": 192,
+      "role": "trade"
+    },
+    {
+      "id": "ottilie_braun",
+      "x": 548,
+      "y": 279,
+      "role": "recruit"
+    }
+  ],
+  "encounters": [],
+  "travel": {
+    "neighbours": [
+      "fort_griffin"
+    ],
+    "hours": 2
+  },
+  "stakes": {
+    "do": "Buy rope, casks, wax and boots at yard prices instead of town prices. Put a load on Marisol Vasquez's line and watch it hold or part.",
+    "lose": "A cheap line breaks under real weight and takes cattle or a hand with it. The cheaper rival's rope is what is stacked in front.",
+    "decide": "Whether to buy Marisol's rope at her price or the undercutter's, and whether Naomi Freeman or Orin Teague gets the outfit's ironwork."
+  },
+  "art_gap": "Reads as a fenced yard with camp props. Needs a rope walk, stacked barrels, a forge and a hide rack. Four Griffin-assigned trades were grouped here for room, per ECONOMY.md's own note that the Griffin cluster is movable."
+}
