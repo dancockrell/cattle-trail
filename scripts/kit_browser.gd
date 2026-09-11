@@ -43,7 +43,7 @@ func _ready() -> void:
 	clip_select.custom_minimum_size = Vector2(190,44)
 	clip_select.item_selected.connect(select_clip)
 	toolbar.add_child(clip_select)
-	for entry in [["Replay", replay], ["Pause / Play", pause_play], ["Play room", room]]:
+	for entry in [["Replay", replay], ["Pause / Play", pause_play], ["Play room", room], ["World map", func(): get_tree().change_scene_to_file("res://scenes/world_map.tscn")]]:
 		var button := Button.new()
 		button.text = entry[0]
 		button.custom_minimum_size.y = 44
